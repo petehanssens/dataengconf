@@ -6538,9 +6538,19 @@ Cards and Card content styles
     font-size: 1.2rem;
     font-weight: 600;
     color: #444F60; }
+  .feature-card .card-title-without-pad h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444F60; }
   .feature-card .card-icon img {
     height: 120px;
     margin-top: 20px; }
+  .feature-card .card-image img {
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px; }
   .feature-card .card-text {
     padding: 0 40px; }
     .feature-card .card-text p {

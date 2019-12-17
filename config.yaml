@@ -1,7 +1,7 @@
 baseURL: http://www.dataengconf.com.au/
 languageCode: en-us
 title: DataEngConf - Sydney
-theme: hugo-fresh
+theme: leo-fresh
 googleAnalytics: #Put in your tracking code without quotes like this: UA-XXXXXX...
 #Disables warningss
 disableKinds:
@@ -27,93 +27,110 @@ params:
     # Hero subtitle (optional)
     subtitle: Tuesday, 4th of August 2020 (Main conference). Workshops on the 3rd!
     # Button text
-    buttontext: Find out more
+    buttontext: Learn more
     # Where the main hero button links to
     buttonlink: "#"
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/___.svg)
-    clientlogos:
-    - systek
-    - tribe
-    - kromo
-    - infinite
-    - gutwork
+    # clientlogos:
+    # - systek
+    # - tribe
+    # - kromo
+    # - infinite
+    # - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
-    url: /
-  - title: Pricing
-    url: /
-  - title: Dropdown
-    sublinks:
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
-    button: true
-  section1:
-    title: Great power comes
-    subtitle: with great responsibility
-    tiles:
-    - title: App builder
+  - title: About
+    url: /#about
+  - title: Sponsors
+    url: /#sponsors
+  - title: Speakers
+    url: /#speakers
+  - title: Location
+    url: /#location
+  - title: Code of Conduct
+    url: /#codeconduct
+  - title: Organisers
+    url: /#organisers
+
+  
+  about:
+    title: About
+    # subtitle: Thank you!
+
+    # subtitle: Thank you! 
+    # first_column:
+    # - title: Learn
+    #   # Icon (from /images/illustrations/icons/___.svg)
+    #   icon: sydney_city.jpg
+    # - title: Create
+    #   icon: Collaborate
+    # - title: Collaborate
+    #   icon: collaborate_computer_2.jpg
+
+
+  sponsors:
+    title: Sponsors
+    # subtitle: Thank you!
+
+  speakers:
+    title: Speakers
+    # subtitle: And we know it
+    # first_column:
+    # - title: Powerful and unified interface
+    #   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    #   # Icon (from /images/illustrations/icons/___.svg)
+    #   icon: laptop-globe
+    # second_column:
+    # - title: Cross-device synchronisation
+    #   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    #   icon: doc-sync
+    # third_column:
+    # - title: Nomad system
+    #   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+    #   icon: mobile-feed
+  
+  location:
+    title: Location
+    # subtitle: Thank you!
+  
+  codeconduct:
+    title: Code Of Conduct
+    # subtitle: Thank you!
+
+  # TODO: Potentially make tiles smaller
+  organisers:
+    title: Organisers
+    subtitle: Great power comes with great responsibility
+    first_column:
+    - title: Peter Hanssens
       icon: mouse-globe
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Free trial
-    - title: Cloud integration
+      # text: This is some explanatory text that is on two rows
+    - title: Leo Hoare
       icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
-    - title: Add-ons & plugins
+      # text: This is some explanatory text that is on two rows
+    second_column:
+    - title: Karen Davis
+      icon: mouse-globe
+      # text: This is some explanatory text that is on two rows
+    - title: Yash Sharma
+      icon: laptop-cloud
+      # text: This is some explanatory text that is on two rows
+    - title: Wade Jensen
       icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Get started
-  section2:
-    title: You're here because you want the best
-    subtitle: And we know it
-    features:
-    - title: Powerful and unified interface
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      # Icon (from /images/illustrations/icons/___.svg)
-      icon: laptop-globe
-    - title: Cross-device synchronisation
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: doc-sync
-    - title: Nomad system
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      icon: mobile-feed
-  section3:
-    title: One platform
-    subtitle: To rule them all
-    image: illustrations/mockups/app-mockup.png
-    buttonText: Get started
-    buttonLink: "#"
-  section4:
-    title: Our Clients love us!
-    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-    clients:
-    - name: Irma Walters
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Accountant
-      img: 1
-    - name: John Bradley
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: Financial Analyst
-      img: 2
-    - name: Gary Blackman
-      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-      job: HR Manager
-      img: 3
-  section5: true
+      # text: This is some explanatory text that is on two rows
+    third_column:
+    - title: Simon Aubury
+      icon: mouse-globe
+      # text: This is some explanatory text that is on two rows
+    - title: David Tout
+      icon: laptop-cloud
+      # text: This is some explanatory text that is on two rows
+
+
+
+
   footer:
     # Logo (from /images/logos/___)
     logo: fresh-white-alt.svg
@@ -121,47 +138,41 @@ params:
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/lucperkins/github-fresh
-      # Icons are from Font Awesome
-      icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/lucperkins
-      icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
-    bulmalogo: true
+      - link: https://twitter.com/lucperkins
+        icon: twitter
+      - link: https://linkedin.com/dataengconfau
+        # Icons are from Font Awesome
+        icon: linkedin
+    # bulmalogo: true
     quicklinks:
       column1:
-        title: "Product"
+        title: "Sponsors"
         links:
-        - text: Discover features
+        - text: Sponsorship Prospectus
           link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
+        # - text: Why choose our product?
+        #   link: /
+        # - text: Compare features
+        #   link: /
+        # - text: Our roadmap
+        #   link: /
+        # - text: AGB
+        #   link: /agb
       column2:
-        title: "Docs"
+        title: "Venue"
         links:
-        - text: Get started
+        - text: Coming Soon!
           link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
-      column3:
-        title: "Blog"
-        links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+        # - text: User guides
+        #   link: /
+        # - text: Admin guide
+        #   link: /
+        # - text: Developers
+        #   link: /
+      # column3:
+      #   title: "Blog"
+      #   links:
+      #   - text: Latest news
+      #     link: /blog/first
+      #   - text: Tech articles
+      #     link: /blog/second
