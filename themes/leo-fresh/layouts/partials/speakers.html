@@ -1,9 +1,8 @@
 {{- $speakers := .Site.Params.speakers }}
 {{- $title    := index $speakers "title" }}
 {{- $subtitle := index $speakers "subtitle" }}
-{{- $first_column    := index $speakers "first_column" }}
-{{- $second_column   := index $speakers "second_column" }}
-{{- $third_column    := index $speakers "third_column" }}
+{{- $speaker_list    := index $speakers "speaker_list" }}
+
 <section id="speakers" class="section section-feature-light-grey is-medium">
   <div class="container">
     <div class="title-wrapper has-text-centered">
@@ -11,61 +10,14 @@
       <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
       <div class="divider is-centered"></div>
     </div>
-
-    <div class="content-wrapper">
-      <div class="columns">
-        <div class="column is-one-third" >
-          {{- range $first_column }}
-          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
-              <h4>{{ .title }}</h4>
-            </div>
-            <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </div>
-            <div class="card-text">
-                <p>{{ .text }}</p>
-            </div>
-            <!-- <div class="card-action">
-              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
-            </div> -->
-          </div>
-          <br/>
-         {{- end }}
-        </div>
-        <div class="column is-one-third" >
-          {{- range $second_column  }}
-          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
-              <h4>{{ .title }}</h4>
-            </div>
-            <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </div>
-            <div class="card-text">
-                <p>{{ .text }}</p>
-            </div>
-          </div>
-          <br/>
-         {{- end }}
-        </div>
-        <div class="column is-one-third" >
-            {{- range $third_column  }}
-            <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-              <div class="card-title">
-                <h4>{{ .title }}</h4>
-              </div>
-              <div class="card-icon">
-                  <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
-              </div>
-              <div class="card-text">
-                  <p>{{ .text }}</p>
-              </div>
-            </div>
-            <br/>
-           {{- end }}
-          </div>
-      </div>
+    <br/>
+    {{- range $speaker_list  }}
+    <div class="dynamic-box">
+        <h3 class="subtitle is-4 ">{{ .name }}</h3>
+        <img class="image-circle" src="{{ printf "/images/stock/%s" .picture | relURL }}"/>
+        <h4 class="subtitle is-5 is-muted">{{ .text | markdownify }}</h2>
     </div>
+
+    {{- end}}
   </div>
 </section>

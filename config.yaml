@@ -16,8 +16,8 @@ params:
   description: 
   navbarlogo:
   # Logo (from static/images/logos/___)
-   image: logos/fresh.svg
-   link: /
+  #  image: logos/fresh.svg
+  #  link: /
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -29,9 +29,10 @@ params:
     # Button text
     buttontext: Learn more
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: "/#about"
     # Hero image (from static/images/___)
-    image: illustrations/worker.svg
+    # image: illustrations/worker.svg
+    image: undraw/design_data.svg
     # Footer logos (from static/images/logos/clients/___.svg)
     # clientlogos:
     # - systek
@@ -53,51 +54,56 @@ params:
     url: /#codeconduct
   - title: Organisers
     url: /#organisers
+  - title: Contact
+    url: /#contact
 
   
   about:
-    title: About
-    # subtitle: Thank you!
-
-    # subtitle: Thank you! 
-    # first_column:
-    # - title: Learn
-    #   # Icon (from /images/illustrations/icons/___.svg)
-    #   icon: sydney_city.jpg
-    # - title: Create
-    #   icon: Collaborate
-    # - title: Collaborate
-    #   icon: collaborate_computer_2.jpg
-
+    title: What's DataEngConf All About?
+    additional_image: computer_sitting_transparent.png
+    text: TODO about text
+    images: 
+    - imageheader: Connect
+      image: undraw/connecting_teams.svg
+    - imageheader: Collaborate
+      image: undraw/pair_programming.svg
+    - imageheader: Learn
+      image: undraw/new_ideas.svg
 
   sponsors:
     title: Sponsors
+    subtitle: We need your help to make great things happen!
     # subtitle: Thank you!
 
   speakers:
     title: Speakers
-    # subtitle: And we know it
-    # first_column:
-    # - title: Powerful and unified interface
-    #   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-    #   # Icon (from /images/illustrations/icons/___.svg)
-    #   icon: laptop-globe
-    # second_column:
-    # - title: Cross-device synchronisation
-    #   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-    #   icon: doc-sync
-    # third_column:
-    # - title: Nomad system
-    #   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-    #   icon: mobile-feed
-  
+    subtitle: Coming Soon!
+    speaker_list:
+    - name: Rick Astley
+      picture: download.jpeg
+      text: We're no strangers to love
+    - name: Rick Astley
+      picture: download.jpeg
+      text: You know the rules and so do I
+    - name: Rick Astley
+      picture: download.jpeg
+      text: A full commitment's what I'm thinking of
+    - name: Rick Astley
+      picture: download.jpeg
+      text: You wouldn't get this from any other guy
+
+   
   location:
     title: Location
-    # subtitle: Thank you!
+    subtitle: To be confirmed!
+    MAPS_API_KEY: xxx
   
   codeconduct:
     title: Code Of Conduct
     # subtitle: Thank you!
+    image: undraw/thinker.svg
+    text: TODO - Code of Conduct text
+
 
   # TODO: Potentially make tiles smaller
   organisers:
@@ -128,51 +134,42 @@ params:
       icon: laptop-cloud
       # text: This is some explanatory text that is on two rows
 
+  contact:
+    title: Contact
+    email: sydney@dataengconf.com.au
 
 
 
-  footer:
-    # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
-    # Social Media Title
-    socialmediatitle: Follow Us
-    # Social media links (GitHub, Twitter, etc.). All are optional.
-    socialmedia:
-      - link: https://twitter.com/lucperkins
-        icon: twitter
-      - link: https://linkedin.com/dataengconfau
-        # Icons are from Font Awesome
-        icon: linkedin
-    # bulmalogo: true
-    quicklinks:
-      column1:
-        title: "Sponsors"
-        links:
-        - text: Sponsorship Prospectus
-          link: /
-        # - text: Why choose our product?
-        #   link: /
-        # - text: Compare features
-        #   link: /
-        # - text: Our roadmap
-        #   link: /
-        # - text: AGB
-        #   link: /agb
-      column2:
-        title: "Venue"
-        links:
-        - text: Coming Soon!
-          link: /
-        # - text: User guides
-        #   link: /
-        # - text: Admin guide
-        #   link: /
-        # - text: Developers
-        #   link: /
-      # column3:
-      #   title: "Blog"
-      #   links:
-      #   - text: Latest news
-      #     link: /blog/first
-      #   - text: Tech articles
-      #     link: /blog/second
+  # footer:
+  #   # Logo (from /images/logos/___)
+  #   logo: fresh-white-alt.svg
+  #   # Social Media Title
+  #   socialmediatitle: Follow Us
+  #   # Social media links (GitHub, Twitter, etc.). All are optional.
+  #   socialmedia:
+  #     - link: https://twitter.com/lucperkins
+  #       icon: twitter
+  #     - link: https://linkedin.com/dataengconfau
+  #       # Icons are from Font Awesome
+  #       icon: linkedin
+  #   # bulmalogo: true
+  #   quicklinks:
+  #     column1:
+  #       title: "Sponsors"
+  #       links:
+  #       - text: Sponsorship Prospectus
+  #         link: /
+  #       # - text: Why choose our product?
+  #       #   link: /
+  #     column2:
+  #       title: "Venue"
+  #       links:
+  #       - text: Coming Soon!
+  #         link: /
+  #       # - text: User guides
+  #       #   link: /
+  #     # column3:
+  #     #   title: "Blog"
+  #     #   links:
+  #     #   - text: Latest news
+  #     #     link: /blog/first
