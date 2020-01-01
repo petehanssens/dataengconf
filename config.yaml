@@ -1,7 +1,7 @@
 baseURL: http://www.dataengconf.com.au/
 languageCode: en-us
 title: DataEngConf - Sydney
-theme: hugo-fresh
+theme: leo-fresh
 googleAnalytics: #Put in your tracking code without quotes like this: UA-XXXXXX...
 #Disables warningss
 disableKinds:
@@ -16,8 +16,8 @@ params:
   description: 
   navbarlogo:
   # Logo (from static/images/logos/___)
-   image: logos/fresh.svg
-   link: /
+  #  image: logos/fresh.svg
+  #  link: /
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -29,9 +29,10 @@ params:
     # Button text
     buttontext: Learn more
     # Where the main hero button links to
-    buttonlink: "#"
+    buttonlink: "/#about"
     # Hero image (from static/images/___)
-    image: illustrations/worker.svg
+    # image: illustrations/worker.svg
+    image: undraw/design_data.svg
     # Footer logos (from static/images/logos/clients/___.svg)
     # clientlogos:
     # - systek
@@ -41,121 +42,135 @@ params:
     # - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+  - title: About
+    url: /#about
   - title: Sponsors
-    url: /
-  - title: Venue
-    url: /
-  # - title: Dropdown
-  #   sublinks:
-  #   - title: Dropdown item
-  #     url: /
-  #   - title: Dropdown item
-  #     url: /
-  #   - title: Dropdown item
-  #     url: /
-  # - title: Log in
-  #   url: /
-  # - title: Sign up
-  #   url: /
-  #   button: true
-  # section1:
-  #   title: Great power comes
-  #   subtitle: with great responsibility
-  #   tiles:
-  #   - title: App builder
-  #     icon: mouse-globe
-  #     text: This is some explanatory text that is on two rows
-  #     url: /
-  #     buttonText: Free trial
-  #   - title: Cloud integration
-  #     icon: laptop-cloud
-  #     text: This is some explanatory text that is on two rows
-  #     url: /
-  #     buttonText: Get started
-  #   - title: Add-ons & plugins
-  #     icon: plug-cloud
-  #     text: This is some explanatory text that is on two rows
-  #     url: /
-  #     buttonText: Get started
-  # section2:
-  #   title: You're here because you want the best
-  #   subtitle: And we know it
-  #   features:
-  #   - title: Powerful and unified interface
-  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-  #     # Icon (from /images/illustrations/icons/___.svg)
-  #     icon: laptop-globe
-  #   - title: Cross-device synchronisation
-  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-  #     icon: doc-sync
-  #   - title: Nomad system
-  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-  #     icon: mobile-feed
-  # section3:
-  #   title: One platform
-  #   subtitle: To rule them all
-  #   image: illustrations/mockups/app-mockup.png
-  #   buttonText: Get started
-  #   buttonLink: "#"
-  # section4:
-  #   title: Our Clients love us!
-  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-  #   clients:
-  #   - name: Irma Walters
-  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #     job: Accountant
-  #     img: 1
-  #   - name: John Bradley
-  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #     job: Financial Analyst
-  #     img: 2
-  #   - name: Gary Blackman
-  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #     job: HR Manager
-  #     img: 3
-  # section5: true
-  footer:
-    # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
-    # Social Media Title
-    socialmediatitle: Follow Us
-    # Social media links (GitHub, Twitter, etc.). All are optional.
-    socialmedia:
-      - link: https://twitter.com/lucperkins
-        icon: twitter
-      - link: https://linkedin.com/dataengconfau
-        # Icons are from Font Awesome
-        icon: linkedin
-    bulmalogo: true
-    quicklinks:
-      column1:
-        title: "Sponsors"
-        links:
-        - text: Sponsorship Prospectus
-          link: /
-        # - text: Why choose our product?
-        #   link: /
-        # - text: Compare features
-        #   link: /
-        # - text: Our roadmap
-        #   link: /
-        # - text: AGB
-        #   link: /agb
-      column2:
-        title: "Venue"
-        links:
-        - text: Coming Soon!
-          link: /
-        # - text: User guides
-        #   link: /
-        # - text: Admin guide
-        #   link: /
-        # - text: Developers
-        #   link: /
-      # column3:
-      #   title: "Blog"
-      #   links:
-      #   - text: Latest news
-      #     link: /blog/first
-      #   - text: Tech articles
-      #     link: /blog/second
+    url: /#sponsors
+  - title: Speakers
+    url: /#speakers
+  - title: Location
+    url: /#location
+  - title: Code of Conduct
+    url: /#codeconduct
+  - title: Organisers
+    url: /#organisers
+  - title: Contact
+    url: /#contact
+
+  
+  about:
+    title: What's DataEngConf All About?
+    additional_image: computer_sitting_transparent.png
+    text: TODO about text
+    images: 
+    - imageheader: Connect
+      image: undraw/connecting_teams.svg
+    - imageheader: Collaborate
+      image: undraw/pair_programming.svg
+    - imageheader: Learn
+      image: undraw/new_ideas.svg
+
+  sponsors:
+    title: Sponsors
+    subtitle: We need your help to make great things happen!
+    # subtitle: Thank you!
+
+  speakers:
+    title: Speakers
+    subtitle: Coming Soon!
+    speaker_list:
+    - name: Rick Astley
+      picture: download.jpeg
+      text: We're no strangers to love
+    - name: Rick Astley
+      picture: download.jpeg
+      text: You know the rules and so do I
+    - name: Rick Astley
+      picture: download.jpeg
+      text: A full commitment's what I'm thinking of
+    - name: Rick Astley
+      picture: download.jpeg
+      text: You wouldn't get this from any other guy
+
+   
+  location:
+    title: Location
+    subtitle: To be confirmed!
+    MAPS_API_KEY: xxx
+  
+  codeconduct:
+    title: Code Of Conduct
+    # subtitle: Thank you!
+    image: undraw/thinker.svg
+    text: TODO - Code of Conduct text
+
+
+  # TODO: Potentially make tiles smaller
+  organisers:
+    title: Organisers
+    subtitle: Great power comes with great responsibility
+    first_column:
+    - title: Peter Hanssens
+      icon: mouse-globe
+      # text: This is some explanatory text that is on two rows
+    - title: Leo Hoare
+      icon: laptop-cloud
+      # text: This is some explanatory text that is on two rows
+    second_column:
+    - title: Karen Davis
+      icon: mouse-globe
+      # text: This is some explanatory text that is on two rows
+    - title: Yash Sharma
+      icon: laptop-cloud
+      # text: This is some explanatory text that is on two rows
+    - title: Wade Jensen
+      icon: plug-cloud
+      # text: This is some explanatory text that is on two rows
+    third_column:
+    - title: Simon Aubury
+      icon: mouse-globe
+      # text: This is some explanatory text that is on two rows
+    - title: David Tout
+      icon: laptop-cloud
+      # text: This is some explanatory text that is on two rows
+
+  contact:
+    title: Contact
+    email: sydney@dataengconf.com.au
+
+
+
+  # footer:
+  #   # Logo (from /images/logos/___)
+  #   logo: fresh-white-alt.svg
+  #   # Social Media Title
+  #   socialmediatitle: Follow Us
+  #   # Social media links (GitHub, Twitter, etc.). All are optional.
+  #   socialmedia:
+  #     - link: https://twitter.com/lucperkins
+  #       icon: twitter
+  #     - link: https://linkedin.com/dataengconfau
+  #       # Icons are from Font Awesome
+  #       icon: linkedin
+  #   # bulmalogo: true
+  #   quicklinks:
+  #     column1:
+  #       title: "Sponsors"
+  #       links:
+  #       - text: Sponsorship Prospectus
+  #         link: /
+  #       # - text: Why choose our product?
+  #       #   link: /
+  #     column2:
+  #       title: "Venue"
+  #       links:
+  #       - text: Coming Soon!
+  #         link: /
+  #       # - text: User guides
+  #       #   link: /
+  #     # column3:
+  #     #   title: "Blog"
+  #     #   links:
+  #     #   - text: Latest news
+  #     #     link: /blog/first
+

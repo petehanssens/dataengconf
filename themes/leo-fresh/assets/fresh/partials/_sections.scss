@@ -1,0 +1,120 @@
+/* ==========================================================================
+Section Styles
+========================================================================== */
+
+//Sections
+.section {
+    &.section-light-grey {
+        background-color: $light-grey;
+    }
+    &.section-feature-grey {
+        background-color: $section-grey;
+    }
+    &.section-feature-light-grey {
+        background-color: $section-feature-light-grey;
+    }
+    &.section-yellow{
+        background-color: $section-yellow;
+    }
+    &.section-blue{
+        background-color: $section-blue;
+    }
+    &.section-secondary {
+        background-color: $secondary;
+        color: $primary!important;
+    }
+    &.section-half {
+        height: 75vh !important;
+    }
+    .title, .subtitle {
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .subtitle {
+        &.is-muted {
+            color: $muted-grey;
+        }
+    }
+}
+
+.dynamic-box {
+
+    display: inline-block;
+    text-align: center;
+    @media ( min-width: 500px) {
+        width: 49%;
+    }
+    @media ( min-width: 1000px){
+        width: 33%;
+    }
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.image-circle {
+    clip-path: circle();
+    width: 100%;
+}
+
+//Titles
+.title-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    .title, .subtitle {
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .subtitle {
+        &.is-muted {
+            color: $muted-grey;
+        }
+    }
+}
+
+//Divider
+.divider {
+    height: 3px;
+    border-radius: 50px;
+    background: $secondary;
+    width: 60px;
+    &.is-centered {
+        margin: 0 auto;
+    }
+}
+
+//Wrapper
+.content-wrapper {
+    padding: 60px 0;
+}
+
+
+//Pulled image
+img.pushed-image {
+    margin-top: -5vh;
+}
+
+//Icon box
+.media.icon-box {
+    border-top: none !important;
+    .media-content .content p {
+        span {
+            display: block;
+        }
+        .icon-box-title {
+            color: $blue-grey;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .icon-box-text {
+            color: $title-grey;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.text-box {
+    color: $title-grey;
+    font-size: 1.3rem;
+    font-weight: 400;
+}

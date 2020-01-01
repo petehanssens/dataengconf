@@ -1,0 +1,16 @@
+{{- $sponsors   := .Site.Params.sponsors }}
+{{- $title      := index $sponsors "title" }}
+{{- $subtitle      := index $sponsors "subtitle" }}
+
+<!-- {{- $image      := index $sponsors "image" }} -->
+<!-- {{- $buttonText := index $sponsors "buttontext" }} -->
+<!-- {{- $buttonLink := index $sponsors "buttonlink" }} -->
+<section id="sponsors" class="section section-yellow is-medium">
+  <div class="container">
+      <div class="title-wrapper has-text-centered">
+          <h2 class="title is-2">{{ $title }}</h2>
+          <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+          <div class="divider is-centered"></div>
+      </div>
+  </div>
+</section>
