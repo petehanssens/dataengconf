@@ -45,7 +45,7 @@ params:
   - title: About
     url: /#about
   - title: Sponsors
-    url: /static/sponsorship_prospectus.pdf
+    url: /sponsorship_prospectus.pdf
   - title: Speakers
     url: /#speakers
   - title: Location
