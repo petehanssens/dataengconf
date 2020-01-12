@@ -1,8 +1,8 @@
-baseURL: http://www.dataengconf.com.au/
+baseURL: https://dataengconf.com.au/
 languageCode: en-us
 title: DataEngConf - Sydney
 theme: leo-fresh
-googleAnalytics: #Put in your tracking code without quotes like this: UA-XXXXXX...
+googleAnalytics: UA-156065222-1
 #Disables warningss
 disableKinds:
  -taxonomy
@@ -45,7 +45,7 @@ params:
   - title: About
     url: /#about
   - title: Sponsors
-    url: /#sponsors
+    url: /static/sponsorship_prospectus.pdf
   - title: Speakers
     url: /#speakers
   - title: Location
@@ -59,9 +59,9 @@ params:
 
   
   about:
-    title: What's DataEngConf All About?
+    title: What's DataEngConfAU All About?
     additional_image: computer_sitting_transparent.png
-    text: TODO about text
+    text: DataEngConfAU
     images: 
     - imageheader: Connect
       image: undraw/connecting_teams.svg
@@ -78,37 +78,37 @@ params:
   speakers:
     title: Speakers
     subtitle: Coming Soon!
-    speaker_list:
-    - name: Rick Astley
-      picture: download.jpeg
-      text: We're no strangers to love
-    - name: Rick Astley
-      picture: download.jpeg
-      text: You know the rules and so do I
-    - name: Rick Astley
-      picture: download.jpeg
-      text: A full commitment's what I'm thinking of
-    - name: Rick Astley
-      picture: download.jpeg
-      text: You wouldn't get this from any other guy
+    # speaker_list:
+    # - name: Rick Astley
+    #   picture: download.jpeg
+    #   text: We're no strangers to love
+    # - name: Rick Astley
+    #   picture: download.jpeg
+    #   text: You know the rules and so do I
+    # - name: Rick Astley
+    #   picture: download.jpeg
+    #   text: A full commitment's what I'm thinking of
+    # - name: Rick Astley
+    #   picture: download.jpeg
+    #   text: You wouldn't get this from any other guy
 
    
-  location:
-    title: Location
-    subtitle: To be confirmed!
-    MAPS_API_KEY: xxx
+  # location:
+  #   title: Location
+  #   subtitle: To be confirmed!
+  #   MAPS_API_KEY: xxx
   
   codeconduct:
     title: Code Of Conduct
     # subtitle: Thank you!
     image: undraw/thinker.svg
-    text: TODO - Code of Conduct text
+    text: Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
 
 
   # TODO: Potentially make tiles smaller
   organisers:
     title: Organisers
-    subtitle: Great power comes with great responsibility
+    subtitle: Our awesome organisers and volunteers
     first_column:
     - title: Peter Hanssens
       icon: mouse-globe
