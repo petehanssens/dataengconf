@@ -33,23 +33,15 @@ params:
     # Hero image (from static/images/___)
     # image: illustrations/worker.svg
     image: undraw/design_data.svg
-    # Footer logos (from static/images/logos/clients/___.svg)
-    # clientlogos:
-    # - systek
-    # - tribe
-    # - kromo
-    # - infinite
-    # - gutwork
-  # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: About
     url: /#about
   - title: Sponsors
-    url: /sponsorship_prospectus.pdf
+    url: /#sponsors
   - title: Speakers
     url: /#speakers
-  - title: Location
-    url: /#location
+  # - title: Location
+  #   url: /#location
   - title: Code of Conduct
     url: /#codeconduct
   - title: Organisers
@@ -111,28 +103,22 @@ params:
     subtitle: Our awesome organisers and volunteers
     first_column:
     - title: Peter Hanssens
-      icon: mouse-globe
-      # text: This is some explanatory text that is on two rows
+      picture: peter_hanssens.jpeg
+      divider: true
     - title: Leo Hoare
-      icon: laptop-cloud
-      # text: This is some explanatory text that is on two rows
+      picture: leo_hoare.jpeg
     second_column:
     - title: Karen Davis
-      icon: mouse-globe
-      # text: This is some explanatory text that is on two rows
+      picture: karen_davis.jpeg
     - title: Yash Sharma
-      icon: laptop-cloud
-      # text: This is some explanatory text that is on two rows
+      picture: yash_sharma.jpeg
     - title: Wade Jensen
-      icon: plug-cloud
-      # text: This is some explanatory text that is on two rows
+      picture: wade_jensen.jpeg
     third_column:
     - title: Simon Aubury
-      icon: mouse-globe
-      # text: This is some explanatory text that is on two rows
+      picture: simon_aubury.jpeg
     - title: David Tout
-      icon: laptop-cloud
-      # text: This is some explanatory text that is on two rows
+      picture: david_tout.jpeg
 
   contact:
     title: Contact
