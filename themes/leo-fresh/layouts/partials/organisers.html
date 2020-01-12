@@ -20,8 +20,9 @@
             <div class="card-title">
               <h4>{{ .title }}</h4>
             </div>
-            <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+            <div class="card-image">
+                <!-- <img src=https://www.linkedin.com/in/peterhanssens/> -->
+                <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%">
             </div>
             <div class="card-text">
                 <p>{{ .text }}</p>
@@ -36,33 +37,35 @@
         <div class="column is-one-third" >
           {{- range $second_column  }}
           <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
-              <h4>{{ .title }}</h4>
-            </div>
-            <div class="card-icon">
-                <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </div>
-            <div class="card-text">
-                <p>{{ .text }}</p>
-            </div>
-          </div>
-          <br/>
-         {{- end }}
-        </div>
-        <div class="column is-one-third" >
-            {{- range $third_column  }}
-            <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
               <div class="card-title">
                 <h4>{{ .title }}</h4>
               </div>
-              <div class="card-icon">
-                  <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">
+              <div class="card-image">
+                  <!-- <img src=https://www.linkedin.com/in/peterhanssens/> -->
+                  <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%">
               </div>
               <div class="card-text">
                   <p>{{ .text }}</p>
               </div>
             </div>
             <br/>
+         {{- end }}
+        </div>
+        <div class="column is-one-third" >
+            {{- range $third_column  }}
+            <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+                <div class="card-title">
+                  <h4>{{ .title }}</h4>
+                </div>
+                <div class="card-image">
+                    <!-- <img src=https://www.linkedin.com/in/peterhanssens/> -->
+                    <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%">
+                </div>
+                <div class="card-text">
+                    <p>{{ .text }}</p>
+                </div>
+              </div>
+              <br/>
            {{- end }}
           </div>
       </div>
