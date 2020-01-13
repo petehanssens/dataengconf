@@ -104,21 +104,27 @@ params:
     first_column:
     - title: Peter Hanssens
       picture: peter_hanssens.jpeg
-      divider: true
+      text: Solution Architect
     - title: Leo Hoare
       picture: leo_hoare.jpeg
+      text: Associate Data Engineer
     second_column:
     - title: Karen Davis
       picture: karen_davis.jpeg
+      text: Senior Data Engineer
     - title: Yash Sharma
       picture: yash_sharma.jpeg
+      text: Senior Data Platform Engineer
     - title: Wade Jensen
       picture: wade_jensen.jpeg
+      text: Software Engineer - Data & Infastructure
     third_column:
     - title: Simon Aubury
       picture: simon_aubury.jpeg
+      text: Principal Data Engineer
     - title: David Tout
       picture: david_tout.jpeg
+      text: Principal Data & Cloud Architect
 
   contact:
     title: Contact
