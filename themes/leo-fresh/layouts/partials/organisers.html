@@ -22,14 +22,11 @@
             </div>
             <div class="card-image">
                 <!-- <img src=https://www.linkedin.com/in/peterhanssens/> -->
-                <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%">
+                <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%; margin-top: 10px; margin-bottom: 0px;">
             </div>
             <div class="card-text">
                 <p>{{ .text }}</p>
             </div>
-            <!-- <div class="card-action">
-              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
-            </div> -->
           </div>
           <br/>
          {{- end }}
@@ -42,7 +39,7 @@
               </div>
               <div class="card-image">
                   <!-- <img src=https://www.linkedin.com/in/peterhanssens/> -->
-                  <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%">
+                  <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%; margin-top: 10px; margin-bottom: 0px;">
               </div>
               <div class="card-text">
                   <p>{{ .text }}</p>
@@ -59,7 +56,7 @@
                 </div>
                 <div class="card-image">
                     <!-- <img src=https://www.linkedin.com/in/peterhanssens/> -->
-                    <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%">
+                    <img src="{{ printf "/images/organisers/%s" .picture | relURL }}" style="border-radius: 100%; margin-top: 10px; margin-bottom: 0px;">
                 </div>
                 <div class="card-text">
                     <p>{{ .text }}</p>
