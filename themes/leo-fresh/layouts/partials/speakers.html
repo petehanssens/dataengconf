@@ -1,0 +1,23 @@
+{{- $speakers := .Site.Params.speakers }}
+{{- $title    := index $speakers "title" }}
+{{- $subtitle := index $speakers "subtitle" }}
+{{- $speaker_list    := index $speakers "speaker_list" }}
+
+<section id="speakers" class="section section-feature-light-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <br/>
+    {{- range $speaker_list  }}
+    <div class="dynamic-box">
+        <h3 class="subtitle is-4 ">{{ .name }}</h3>
+        <img class="image-circle" src="{{ printf "/images/stock/%s" .picture | relURL }}"/>
+        <h4 class="subtitle is-5 is-muted">{{ .text | markdownify }}</h2>
+    </div>
+
+    {{- end}}
+  </div>
+</section>
