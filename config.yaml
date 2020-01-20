@@ -108,6 +108,9 @@ params:
     - title: Leo Hoare
       picture: leo_hoare.jpeg
       text: Associate Data Engineer
+    # - title: Yash Sharma
+    #   picture: yash_sharma.jpeg
+    #   text: Senior Data Engineer
     second_column:
     - title: Karen Davis
       picture: karen_davis.jpeg
