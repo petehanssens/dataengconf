@@ -6568,7 +6568,6 @@ Cards and Card content styles
   width: 90%;
   height: 320px;
   background-color: #fff;
-  border-radius: 3px;
   margin: 0 auto; }
   .feature-card .card-title h4 {
     font-family: 'Open Sans', sans-serif;
@@ -6584,7 +6583,8 @@ Cards and Card content styles
   .feature-card .card-icon img {
     height: 120px;
     margin-top: 20px; }
-  .feature-card .card-image img {
+  .feature-card .card-image img 
+    border-radius: 100% !important;
     height: 200px;
     width: 200px;
     margin-top: 30px;
@@ -6601,8 +6601,6 @@ Cards and Card content styles
 .flex-card {
   position: relative;
   background-color: #fff;
-  border: 0;
-  border-radius: 0.1875rem;
   display: inline-block;
   position: relative;
   overflow: hidden;

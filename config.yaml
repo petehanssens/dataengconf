@@ -24,8 +24,8 @@ params:
   hero:
     # Main hero title
     title: DataEngConf Sydney
-    # Hero subtitle (optional)
-    subtitle: Tuesday, 4th of August 2020 (Main conference). Workshops on the 3rd!
+    # Hero subtitle (optional)"
+    subtitle: "Conference: Tuesday, 4th of August 2020. \n Workshops: Monday, 3rd of August 2020. "
     # Button text
     buttontext: Learn more
     # Where the main hero button links to
@@ -38,8 +38,8 @@ params:
     url: /#about
   - title: Sponsors
     url: /#sponsors
-  - title: Speakers
-    url: /#speakers
+  # - title: Speakers
+  #   url: /#speakers
   # - title: Location
   #   url: /#location
   - title: Code of Conduct
@@ -53,7 +53,7 @@ params:
   about:
     title: What's DataEngConfAU All About?
     additional_image: computer_sitting_transparent.png
-    text: DataEngConfAU
+    text: "Data Engineering is a buzzword that has vegemite appeal. For some, it points to the future of how businesses do data in a post-cloud world, and for others, they struggle to understand where it fits in a world full of data science / ML and AI buzzwords. \n DataEngConf is a single track, one-day event that moves away from the hype and focuses on the reality data engineering based solutions. It’s about fostering a community locally and helping all of us learn from each other as we embrace a new way of building applications. \n DataEngConf is the evolution of the hugely popular Sydney Data Engineering meetup, and we are building on the success of it since its 2017 commencement. We are holding the day in a to be determined venue at Sydney’s CBD on 4th August 2019. \n As a community event, we aim to keep conference fees to a minimum - we don’t want to put a huge financial barrier between attendees and a great event. Sponsorship also allows us to offer a small number of free invitations to disadvantaged or underrepresented community members. "
     images: 
     - imageheader: Connect
       image: undraw/connecting_teams.svg
@@ -67,9 +67,9 @@ params:
     subtitle: We need your help to make great things happen!
     # subtitle: Thank you!
 
-  speakers:
-    title: Speakers
-    subtitle: Coming Soon!
+  # speakers:
+  #   title: Speakers
+  #   subtitle: Coming Soon!
     # speaker_list:
     # - name: Rick Astley
     #   picture: download.jpeg
@@ -104,7 +104,7 @@ params:
     first_column:
     - title: Peter Hanssens
       picture: peter_hanssens.jpeg
-      text: Solution Architect
+      text: Solutions Architect
     - title: Leo Hoare
       picture: leo_hoare.jpeg
       text: Associate Data Engineer
@@ -112,12 +112,9 @@ params:
     - title: Karen Davis
       picture: karen_davis.jpeg
       text: Senior Data Engineer
-    - title: Yash Sharma
-      picture: yash_sharma.jpeg
-      text: Senior Data Platform Engineer
-    - title: Wade Jensen
-      picture: wade_jensen.jpeg
-      text: Software Engineer - Data & Infastructure
+    - title: Katie Peterson
+      # picture: wade_jensen.jpeg
+      text: Software Developer
     third_column:
     - title: Simon Aubury
       picture: simon_aubury.jpeg
