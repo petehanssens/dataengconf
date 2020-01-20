@@ -6583,7 +6583,7 @@ Cards and Card content styles
   .feature-card .card-icon img {
     height: 120px;
     margin-top: 20px; }
-  .feature-card .card-image img {
+  .feature-card .card-image img 
     border-radius: 100% !important;
     height: 200px;
     width: 200px;
