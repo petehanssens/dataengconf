@@ -94,7 +94,9 @@ params:
     title: Code Of Conduct
     # subtitle: Thank you!
     image: undraw/thinker.svg
-    text: Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
+    text: Our conference is dedicated to providing a welcoming experience for everyone, regardless of how one identifies. We do not tolerate harassment or discrimination of anyone in any form. Inappropriate language and imagery is not permitted for any conference venue, including talks, workshops, parties, Twitter and other online media. 
+    # Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, identity, expression, age, sexual orientation, disability, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
+
 
 
   # TODO: Potentially make tiles smaller
@@ -110,10 +112,10 @@ params:
       text: Associate Data Engineer
     second_column:
     - title: Karen Davis
-      picture: karen_davis.jpeg
+      picture: karen_davis.JPG
       text: Senior Data Engineer
     - title: Katie Peterson
-      # picture: wade_jensen.jpeg
+      picture: placeholder.svg
       text: Software Developer
     third_column:
     - title: Simon Aubury
