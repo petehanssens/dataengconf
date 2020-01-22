@@ -10,10 +10,11 @@
         <div class="title-wrapper has-text-centered">
             <h2 class="title is-2">{{ $title }}</h2>
             <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+            <br/>            
             <div class="divider is-centered"></div>
             <br/>
             <h4 class="subtitle is-5 is-muted is-centered">{{$text | markdownify}}</h2>
-            <br/>
+            <br/>        
         </div>
         <div class="columns is-vcentered">
             {{- range $images  }}
