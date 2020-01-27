@@ -38,6 +38,8 @@ params:
     url: /#about
   - title: Sponsors
     url: /#sponsors
+  - title: Key Dates
+    url: /#keydates
   # - title: Speakers
   #   url: /#speakers
   # - title: Location
@@ -66,6 +68,22 @@ params:
     title: Sponsors
     subtitle: We need your help to make great things happen!
     # subtitle: Thank you!
+
+  keydates:
+    title: Key Dates
+    dates:
+    - title: Febuary 1
+      suffix: st
+      text: Call For Papers Opens
+    - title: June 1
+      suffix: st
+      text: Call For Papers Closes
+    - title: August 3
+      suffix: rd
+      text: Workshops
+    - title: August 4
+      suffix: th
+      text: Main Conference
 
   # speakers:
   #   title: Speakers
@@ -131,40 +149,10 @@ params:
   contact:
     title: Contact
     email: sydney@dataengconf.com.au
-
-
-
-  # footer:
-  #   # Logo (from /images/logos/___)
-  #   logo: fresh-white-alt.svg
-  #   # Social Media Title
-  #   socialmediatitle: Follow Us
-  #   # Social media links (GitHub, Twitter, etc.). All are optional.
-  #   socialmedia:
-  #     - link: https://twitter.com/lucperkins
-  #       icon: twitter
-  #     - link: https://linkedin.com/dataengconfau
-  #       # Icons are from Font Awesome
-  #       icon: linkedin
-  #   # bulmalogo: true
-  #   quicklinks:
-  #     column1:
-  #       title: "Sponsors"
-  #       links:
-  #       - text: Sponsorship Prospectus
-  #         link: /
-  #       # - text: Why choose our product?
-  #       #   link: /
-  #     column2:
-  #       title: "Venue"
-  #       links:
-  #       - text: Coming Soon!
-  #         link: /
-  #       # - text: User guides
-  #       #   link: /
-  #     # column3:
-  #     #   title: "Blog"
-  #     #   links:
-  #     #   - text: Latest news
-  #     #     link: /blog/first
-
+    socialMedia:
+    - social: twitter
+      link: https://twitter.com/dataengconfau
+    - social: email
+      link: mailto:sydney@dataengconf.com.au?Subject=DataEngConf
+    - social: linkedin
+      link: https://www.linkedin.com/company/dataengconfau/about/
