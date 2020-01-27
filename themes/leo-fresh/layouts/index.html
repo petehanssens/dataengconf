@@ -11,6 +11,10 @@
     {{ partial "sponsors.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.keydates }}
+    {{ partial "keydates.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.speakers }}
     {{ partial "speakers.html" . }}
     {{ end }}
@@ -31,6 +35,10 @@
     {{ if .Site.Params.contact }}
     {{ partial "contact.html" . }}
     {{ end }}
+
+    <!-- {{ if .Site.Params.footer }}
+    {{ partial "footer.html" . }}
+    {{ end }} -->
 
     <!-- Back To Top Button -->
     <div id="backtotop"><a href="#"></a></div>
