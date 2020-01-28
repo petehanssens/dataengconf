@@ -25,7 +25,8 @@ params:
     # Main hero title
     title: DataEngConfAU Sydney
     # Hero subtitle (optional)"
-    subtitle: "Conference: Tuesday, 4th of August 2020. \n Workshops: Monday, 3rd of August 2020. "
+    subtitle: "Conference: Tuesday, 4th of August 2020."
+    subtitle2: "Workshops: Monday, 3rd of August 2020."
     # Button text
     buttontext: Learn more
     # Where the main hero button links to
