@@ -28,6 +28,10 @@
     {{ partial "organisers.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.mailinglist }}
+    {{ partial "mailinglist.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.contact }}
     {{ partial "contact.html" . }}
     {{ end }}

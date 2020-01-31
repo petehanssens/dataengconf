@@ -3255,7 +3255,7 @@ a.tag:hover {
 .subtitle {
   color: #4a4a4a;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 600 !important;
   line-height: 1.25; }
   .subtitle strong {
     color: #363636;
@@ -4300,6 +4300,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
+  font-weight: 500;
   color: #4a4a4a;
   display: block;
   line-height: 1.5;
@@ -6389,7 +6390,7 @@ Section Styles
   width: 100%; }
 
 .title-wrapper {
-  max-width: 500px;
+  max-width: 1200px;
   margin: 0 auto; }
   .title-wrapper .title, .title-wrapper .subtitle {
     font-family: 'Open Sans', sans-serif; }
@@ -6583,7 +6584,7 @@ Cards and Card content styles
   .feature-card .card-icon img {
     height: 120px;
     margin-top: 20px; }
-  .feature-card .card-image img 
+  .feature-card .card-image img {
     border-radius: 100% !important;
     height: 200px;
     width: 200px;
