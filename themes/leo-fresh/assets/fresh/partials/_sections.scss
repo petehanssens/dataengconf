@@ -30,6 +30,14 @@ Section Styles
         font-family: 'Open Sans', sans-serif;
 
     }
+    .title {
+        @media (max-width: 840px) {
+            font-size: 2rem !important;
+        }
+        @media (max-width: 1200px) {
+            font-size: 2.5rem;
+        }
+    }
     .subtitle {
         &.is-muted {
             color: $muted-grey;
@@ -54,6 +62,13 @@ Section Styles
 .image-circle {
     clip-path: circle();
     width: 100%;
+}
+
+.social-icon{
+    width: 20% !important;
+    height: 20% !important;
+    max-width: 70px;
+    // padding: 30px !important;
 }
 
 //Titles

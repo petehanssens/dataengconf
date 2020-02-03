@@ -10,6 +10,12 @@ Hero styles
         font-family: 'Open Sans', sans-serif;
     }
     .title {
+        @media (max-width: 840px) {
+            font-size: 2rem !important;
+        }
+        @media (max-width: 1200px) {
+            font-size: 2.5rem;
+        }
         &.is-bold {
             font-weight: 700;
         }
