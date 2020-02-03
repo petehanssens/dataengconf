@@ -10,6 +10,7 @@
         <div class="title-wrapper has-text-centered">
             <h2 class="title is-2">{{ $title }}</h2>
             <br/>
+            <a style="color: #6c63ff"class="title is-3" href="{{ printf "mailto:%s?Subject=DataEngConfAU" $email  }}" target="_top">{{ $email }}</a>
             {{- range $socialMedia }}
             <a style="padding:10px;" href="{{ .link }}" target="_top">
                 <img class="social-icon" src="{{ printf "/images/social_icons/%s.svg" .social | relURL }}">
