@@ -1,2 +1,3 @@
-# dataengconf
-Website for the Sydney DataEngConf!
+# DataEngConfAU
+
+Website for the Sydney DataEngConfAU!

@@ -147,6 +147,9 @@ params:
       picture: david_tout.jpeg
       text: Principal Data & Cloud Architect
 
+  mailinglist:
+    title: "Register your interest"
+
   contact:
     title: Contact
     email: sydney@dataengconf.com.au
