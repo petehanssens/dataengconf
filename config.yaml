@@ -39,8 +39,8 @@ params:
     url: /#about
   - title: Sponsors
     url: /#sponsors
-  # - title: Key Dates
-  #   url: /#keydates
+  - title: Key Dates
+    url: /#keydates
   # - title: Speakers
   #   url: /#speakers
   # - title: Location
@@ -72,21 +72,21 @@ params:
     subtitle: We need your help to make great things happen!
     # subtitle: Thank you!
 
-  # keydates:
-  #   title: Key Dates
-  #   dates:
-  #   - title: Febuary 1
-  #     suffix: st
-  #     text: Call For Papers Opens
-  #   - title: June 1
-  #     suffix: st
-  #     text: Call For Papers Closes
-  #   - title: August 3
-  #     suffix: rd
-  #     text: Workshops
-  #   - title: August 4
-  #     suffix: th
-  #     text: Main Conference
+  keydates:
+    title: Key Dates
+    dates:
+    - title: Febuary 8
+      suffix: th
+      text: Call For Papers Opens
+    - title: May 1
+      suffix: st
+      text: Call For Papers Closes
+    - title: August 3
+      suffix: rd
+      text: Workshops
+    - title: August 4
+      suffix: th
+      text: Main Conference
 
   # speakers:
   #   title: Speakers
