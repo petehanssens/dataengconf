@@ -28,6 +28,10 @@
     {{ partial "codeconduct.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.cfp }}
+    {{ partial "cfp.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.organisers }}
     {{ partial "organisers.html" . }}
     {{ end }}

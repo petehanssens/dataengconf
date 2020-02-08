@@ -47,6 +47,8 @@ params:
   #   url: /#location
   - title: Code of Conduct
     url: /#codeconduct
+  - title: Call for Papers
+    url: /#cfp
   - title: Organisers
     url: /#organisers
   - title: Contact
@@ -116,6 +118,10 @@ params:
     text: Our conference is dedicated to providing a welcoming experience for everyone, regardless of how one identifies. We do not tolerate harassment or discrimination of anyone in any form. Inappropriate language and imagery is not permitted for any conference venue, including talks, workshops, parties, twitter and other online media. 
     # Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, identity, expression, age, sexual orientation, disability, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
 
+
+  cfp:
+    title: Call For Papers
+    subtitle: Share your amazing talk with this eager bunch!
 
 
   # TODO: Potentially make tiles smaller
