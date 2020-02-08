@@ -47,6 +47,8 @@ params:
   #   url: /#location
   - title: Code of Conduct
     url: /#codeconduct
+  - title: Call for Papers
+    url: /#cfp
   - title: Organisers
     url: /#organisers
   - title: Contact
@@ -69,6 +71,10 @@ params:
     title: Sponsors
     subtitle: We need your help to make great things happen!
     # subtitle: Thank you!
+
+  cfp:
+    title: Call For Papers
+    subtitle: Share your amazing talk with this eager bunch!
 
   # keydates:
   #   title: Key Dates
@@ -154,9 +160,9 @@ params:
     title: Contact
     email: sydney@dataengconf.com.au
     socialmedia:
-    - social: twitter
-      link: https://twitter.com/dataengconfau
+    # - social: twitter
+    #   link: https://twitter.com/dataengconfau
     - social: email
       link: mailto:sydney@dataengconf.com.au?Subject=DataEngConf
-    - social: linkedin
-      link: https://www.linkedin.com/company/dataengconfau/about/
+    # - social: linkedin
+    #   link: https://www.linkedin.com/company/dataengconfau/about/
