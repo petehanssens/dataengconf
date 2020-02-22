@@ -23,7 +23,7 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: DataEngConfAU Sydney
+    # title: DataEngConfAU Sydney
     # Hero subtitle (optional)"
     subtitle: "Conference: Tuesday, 4th of August 2020."
     subtitle2: "Workshops: Monday, 3rd of August 2020."
@@ -34,6 +34,8 @@ params:
     # Hero image (from static/images/___)
     # image: illustrations/worker.svg
     image: undraw/design_data.svg
+    header_image: logos/banner_2_purple.svg
+    # image: logos/purple_01.svg
   navbar:
   - title: About
     url: /#about
