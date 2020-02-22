@@ -64,6 +64,16 @@ Section Styles
     width: 100%;
 }
 
+.header-image {
+    @media ( min-width: 600px){
+        content:url("/images/logos/banner_2_purple.svg");
+    }
+    content:url("/images/logos/banner_center_purple.svg");
+
+    width: 100%;
+    padding-bottom: 10px;
+}
+
 .social-icon{
     width: 20% !important;
     height: 20% !important;
