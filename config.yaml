@@ -162,9 +162,9 @@ params:
     title: Contact
     email: sydney@dataengconf.com.au
     socialmedia:
-    # - social: twitter
-    #   link: https://twitter.com/dataengconfau
+    - social: twitter
+      link: https://twitter.com/dataengconfau
     - social: email
       link: mailto:sydney@dataengconf.com.au?Subject=DataEngConf
-    # - social: linkedin
-    #   link: https://www.linkedin.com/company/dataengconfau/about/
+    - social: linkedin
+      link: https://www.linkedin.com/company/dataengconfau/about/
