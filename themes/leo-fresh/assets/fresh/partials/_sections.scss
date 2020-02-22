@@ -39,6 +39,9 @@ Section Styles
         }
     }
     .subtitle {
+        @media (max-width: 840px) {
+            font-size: 1rem !important;
+        }
         &.is-muted {
             color: $muted-grey;
         }
@@ -62,6 +65,22 @@ Section Styles
 .image-circle {
     clip-path: circle();
     width: 100%;
+}
+
+.header-image {
+    @media ( min-width: 600px){
+        content:url("/images/logos/banner_2_purple.svg");
+    }
+    content:url("/images/logos/banner_center_purple.svg");
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.small-dont-display {
+    @media ( min-width: 800px){
+        display: flex !important;
+    }
+    display: none !important;
 }
 
 .social-icon{
