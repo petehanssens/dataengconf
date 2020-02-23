@@ -61,13 +61,20 @@ params:
     title: What's DataEngConfAU All About?
     additional_image: computer_sitting_transparent.png
     text: "Data Engineering is a buzzword that has vegemite appeal. For some, it points to the future of how businesses do data in a post-cloud world, and for others, they struggle to understand where it fits in a world full of data science / ML and AI buzzwords. \n DataEngConfAU is a single track, one-day event that moves away from the hype and focuses on the reality data engineering based solutions. It’s about fostering a community locally and helping all of us learn from each other as we embrace a new way of building applications. \n DataEngConfAU is the evolution of the hugely popular Sydney Data Engineering meetup, and we are building on the success of it since its 2017 commencement. We are holding the day in a to be determined venue at Sydney’s CBD on 4th August 2019. \n As a community event, we aim to keep conference fees to a minimum - we don’t want to put a huge financial barrier between attendees and a great event. Sponsorship also allows us to offer a small number of free invitations to disadvantaged or underrepresented community members. "
+    subtitle2: Themes
     images: 
-    - imageheader: Connect
-      image: undraw/connecting_teams.svg
-    - imageheader: Collaborate
-      image: undraw/pair_programming.svg
-    - imageheader: Learn
-      image: undraw/new_ideas.svg
+    - imageheader1: Data
+      imageheader2: at
+      imageheader3: Rest
+      image: undraw/data_at_rest.svg
+    - imageheader1: Data
+      imageheader2: in
+      imageheader3: Motion
+      image: undraw/data_in_motion.svg
+    - imageheader1: Data
+      imageheader2: for
+      imageheader3: Machine Learning 
+      image: undraw/software_engineer.svg
 
   sponsors:
     title: Sponsors
