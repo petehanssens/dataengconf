@@ -47,14 +47,16 @@ params:
   #   url: /#speakers
   - title: Location
     url: /#location
-  - title: Code of Conduct
-    url: /#codeconduct
   - title: Call for Papers
     url: /#cfp
-  - title: Organisers
-    url: /#organisers
-  - title: Contact
-    url: /#contact
+  - title: Event Info
+    sublinks:
+      - title: Code of Conduct
+        url: /#codeconduct
+      - title: Organisers
+        url: /#organisers
+      - title: Contact
+        url: /#contact
 
   
   about:

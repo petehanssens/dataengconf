@@ -4,6 +4,8 @@
 {{ $sidebarVisible = .Params.sidebar }}
 {{ end }}
 {{- $navbarLogo     := .Site.Params.navbarlogo }}
+{{- $ticket_url     := .Site.Params.ticket_url }}
+
 <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
@@ -78,6 +80,10 @@
         </a>
         {{- end }}
         {{- end }}
+        <a class="button cta rounded primary-btn raised" href="{{ printf "/sponsorship_prospectus.pdf"  | relURL }}" style="padding: 14px 20px 14px 20px !important; display: flex; justify-content: center;">
+          Tickets
+        </a>
+        </br>
         <img src="{{ printf "/images/logos/purple_01.svg" | relURL }}" alt="" width="40" height="40" style="margin-left: 10px;">
       </div>
     </div>
