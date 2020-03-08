@@ -18,7 +18,10 @@
         </div>
         <div class="small-dont-display columns is-vcentered">
             {{- range $images  }}
-                <div class="column is-one-third" style="padding-top: 0px;">                    
+                <div class="column is-one-third">                    
+                    <h3 class="subtitle is-3" style="margin-bottom: 0px; text-align: center">{{ .imageheader1 }}</h3>
+                    <h3 class="subtitle is-5" style="margin-bottom: 0px; text-align: center">{{ .imageheader2 }}</h3>
+                    <h3 class="subtitle is-4" style="text-align: center">{{ .imageheader3 }}</h3>
                     <figure class="image is-4by3" style="margin:10%">
                         <img src="{{ printf "/images/%s" .image | relURL }}" alt="Description">
                     </figure>
