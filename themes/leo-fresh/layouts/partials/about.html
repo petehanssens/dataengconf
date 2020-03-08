@@ -14,7 +14,6 @@
             <br/>
             <h4 class="subtitle is-5 is-muted is-centered">{{$text | markdownify}}</h2>
             <br/>
-            <h2 class="title is-2">Themes</h2>
         </div>
         <div class="small-dont-display columns is-vcentered">
             {{- range $images  }}
@@ -25,9 +24,6 @@
                     <figure class="image is-4by3" style="margin:10%">
                         <img src="{{ printf "/images/%s" .image | relURL }}" alt="Description">
                     </figure>
-                    <h3 class="subtitle is-2" style="margin-bottom: 0px; text-align: center">{{ .imageheader1 }}</h3>
-                    <h3 class="subtitle is-5" style="margin-bottom: 0px; text-align: center">{{ .imageheader2 }}</h3>
-                    <h3 class="subtitle is-3" style="text-align: center">{{ .imageheader3 }}</h3>
                 </div>
             {{- end}}
         </div>  
