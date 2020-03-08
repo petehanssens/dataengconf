@@ -38,6 +38,6 @@
     // 
     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key={{$MAPS_API_KEY}}&callback=myMap"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key={{ getenv "MAPS_API" }}&callback=myMap'></script>
   </div>
 </section>
