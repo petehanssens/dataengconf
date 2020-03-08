@@ -45,8 +45,8 @@ params:
     url: /#keydates
   # - title: Speakers
   #   url: /#speakers
-  # - title: Location
-  #   url: /#location
+  - title: Location
+    url: /#location
   - title: Code of Conduct
     url: /#codeconduct
   - title: Call for Papers
@@ -115,10 +115,11 @@ params:
     #   text: You wouldn't get this from any other guy
 
    
-  # location:
-  #   title: Location
-  #   subtitle: To be confirmed!
-  #   MAPS_API_KEY: xxx
+  location:
+    title: Location
+    subtitle: Wesley Conference Centre
+    MAPS_API_KEY: xxx
+    text: 220 Pitt St, Sydney NSW 2000
   
   codeconduct:
     title: Code Of Conduct
