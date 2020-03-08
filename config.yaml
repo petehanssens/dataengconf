@@ -14,7 +14,7 @@ params:
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy 
   description: DataEngConfAU - 4th of August 2020
-  navbarlogo:
+  ticket_url: "https://www.tickettailor.com/"
   # Logo (from static/images/logos/___)
   #  image: logos/fresh.svg
   #  link: /
@@ -28,9 +28,9 @@ params:
     subtitle: "Conference: Tuesday, 4th of August 2020."
     subtitle2: "Workshops: Monday, 3rd of August 2020."
     # Button text
-    buttontext: Learn more
+    buttontext: Tickets
     # Where the main hero button links to
-    buttonlink: "/#about"
+    buttonlink: "https://www.tickettailor.com/"
     # Hero image (from static/images/___)
     # image: illustrations/worker.svg
     image: undraw/design_data.svg
