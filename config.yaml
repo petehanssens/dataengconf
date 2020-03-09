@@ -118,7 +118,6 @@ params:
   location:
     title: Location
     subtitle: Wesley Conference Centre
-    MAPS_API_KEY: xxx
     text: 220 Pitt St, Sydney NSW 2000
   
   codeconduct:
