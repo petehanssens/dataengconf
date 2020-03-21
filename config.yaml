@@ -28,8 +28,12 @@ params:
 
     # subtitle: "Conference: Tuesday, 4th of August 2020."
     # subtitle2: "Workshops: Monday, 3rd of August 2020."
-    subtitle: An important update on COVID-19 (Coronavirus) 
-    subtitle2: Update for DataEngConfAU from the team.
+    subtitle: |
+      Conference: Tuesday, 4th of August 2020.
+
+      Workshops: Monday, 3rd of August 2020.
+    subtitle2: |
+      Important Update: COVID-19 (Coronavirus) and DataEngConfAU.
     
     # Button text
     buttontext: Read more
@@ -112,21 +116,21 @@ params:
     subtitle: We need your help to make great things happen!
     # subtitle: Thank you!
 
-  # keydates:
-  #   title: Key Dates
-  #   dates:
-  #   - title: Febuary 8
-  #     suffix: th
-  #     text: Call For Papers Opens
-  #   - title: May 1
-  #     suffix: st
-  #     text: Call For Papers Closes
-  #   - title: August 3
-  #     suffix: rd
-  #     text: Workshops
-  #   - title: August 4
-  #     suffix: th
-  #     text: Main Conference
+  keydates:
+    title: Key Dates
+    dates:
+    - title: Febuary 8
+      suffix: th
+      text: Call For Papers Opens
+    - title: May 1
+      suffix: st
+      text: Call For Papers Closes
+    - title: August 3
+      suffix: rd
+      text: Workshops
+    - title: August 4
+      suffix: th
+      text: Main Conference
 
   # speakers:
   #   title: Speakers
