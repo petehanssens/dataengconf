@@ -3,6 +3,10 @@
     {{ partial "hero.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.covid19 }}
+    {{ partial "covid19.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.about }}
     {{ partial "about.html" . }}
     {{ end }}

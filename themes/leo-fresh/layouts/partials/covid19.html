@@ -1,0 +1,18 @@
+{{- $covid := .Site.Params.covid19 }}
+{{- $title    := index $covid "title" }}
+{{- $subtitle    := index $covid "subtitle" }}
+{{- $text    := index $covid "text" }}
+
+<section id="covid" class="section section-light-grey is-medium">
+    <div class="container">
+        <div class="title-wrapper has-text-centered">
+            <h2 class="title is-2">{{ $title }}</h2>
+            <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+            <div class="divider is-centered"></div>
+            <br/>
+            <h4 class="subtitle is-5 is-muted is-centered">{{$text | markdownify}}</h2>
+            <br/>
+        </div>
+    </div>
+  </div>
+</section>
