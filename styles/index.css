@@ -1,6 +1,13 @@
+@import '~antd/dist/antd.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ant-layout-header {
+  background-color: #fff
+}
+
 
 body {
   @apply bg-gray-100 ;
