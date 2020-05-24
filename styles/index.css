@@ -11,7 +11,9 @@
 
 .site-page-header-ghost-wrapper {
   background-color: #f0f2f5;
-  padding: 24px;
+  padding-top: 24px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 

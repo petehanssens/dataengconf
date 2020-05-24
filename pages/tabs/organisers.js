@@ -53,9 +53,9 @@ export default class organisers extends Component {
                         grid={{
                         gutter: 16,
                         sm: 1,
-                        md: 2,
+                        md: 1,
                         lg: 2,
-                        xl: 3,
+                        xl: 2,
                         xxl: 3
                         }}
                         dataSource={data}
