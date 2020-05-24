@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd';
 import Navbar from '../components/navbar'
+
+/* tabs */ 
 import home from './tabs/home'
+import organisers from './tabs/organisers'
 
 export default class App extends Component {
     constructor(props) {
@@ -10,28 +13,30 @@ export default class App extends Component {
         this.state = {
             current: 'Home'
         };
+        this.pages = {
+            'Home': home,
+            'Organisers': organisers
+        }
     }
   
-    /* F*/
     handleNavigation = e => {
         console.log('click ', e);
-        this.setState({
-            current: e.key,
-        });
+        if (e.key in this.pages) {
+            this.setState({
+                current: e.key,
+            });
+        }
     };
 
     renderTab(){
-        const pages = {
-            'Home': home
-        }
-        return React.createElement(pages[this.state.current], {})
+        return React.createElement(this.pages[this.state.current])
     }
 
 
     render() {
         const { Header, Content, Footer } = Layout;
         return (
-            <Layout className="layout">
+            <Layout className="layout" style={{minHeight:'100vh'}}>
                 <Header theme="light" >
                     <Navbar
                         theme="dark"
@@ -43,7 +48,7 @@ export default class App extends Component {
                 <Content style={{ padding: '0 50px', backgroundColour: "white" }}>
                     {this.renderTab()}
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+                <Footer style={{ textAlign: 'center' }}>Footer blah blah</Footer>
             </Layout>
         )
     }

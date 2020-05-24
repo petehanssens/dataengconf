@@ -4,11 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .ant-layout-header {
   background-color: #fff
 }
 
+.site-page-header-ghost-wrapper {
+  background-color: #f0f2f5;
+  padding: 24px;
+}
 
-body {
-  @apply bg-gray-100 ;
+
+/* Should use not just vanilla css? */
+@media only screen and (max-width: 1000px) {
+  .site-page-header-ghost-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

@@ -6,16 +6,16 @@ import Organisers from '../../components/organisers'
 import Platform from '../../components/platform'
 import Sponsors from '../../components/sponsors'
 import Tickets from '../../components/tickets'
+import PageWrapper from '../../components/page_wrapper'
 
 export default class home extends Component {
     constructor(props) {
         super(props)
     }
 
-
     render() {
         return (
-            <div>
+            <PageWrapper title="organisers" >
                 <CFP />
                 <COC />
                 <Contact />
@@ -23,7 +23,7 @@ export default class home extends Component {
                 <Platform />
                 <Sponsors />
                 <Tickets />
-            </div>
+            </PageWrapper>
         )
     }
 }
