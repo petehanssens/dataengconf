@@ -10,11 +10,11 @@
 }
 
 .ant-page-header {
-
+  background-color: #f0f2f5;
 }
 
 .site-page-header-ghost-wrapper {
-  /* background-color: #f0f2f5; */
+  background-color: #f0f2f5;
   padding-top: 24px;
   padding-left: 10vw;
   padding-right: 10vw;
