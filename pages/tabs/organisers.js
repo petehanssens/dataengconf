@@ -41,14 +41,14 @@ const data = [
     }
   ];
 
-export default class organisers extends Component {
+export default class Organisers extends Component {
     constructor(props) {
         super(props)
     }
 
     render() {
         return (
-            <PageWrapper title="organisers" subtitle="some subtitle">
+            <PageWrapper title="Organisers">
                     <List
                         grid={{
                         gutter: 16,

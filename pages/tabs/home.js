@@ -8,21 +8,21 @@ import Sponsors from '../../components/sponsors'
 import Tickets from '../../components/tickets'
 import PageWrapper from '../../components/page_wrapper'
 
-export default class home extends Component {
+export default class Home extends Component {
     constructor(props) {
         super(props)
     }
 
     render() {
         return (
-            <PageWrapper title="organisers" >
-                <CFP />
-                <COC />
-                <Contact />
-                <Organisers />
+            <PageWrapper >
+                {/* <CFP /> */}
+                {/* <COC /> */}
+                {/* <Contact /> */}
+                {/* <Organisers /> */}
                 <Platform />
                 <Sponsors />
-                <Tickets />
+                {/* <Tickets /> */}
             </PageWrapper>
         )
     }

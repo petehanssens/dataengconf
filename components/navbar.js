@@ -18,23 +18,11 @@ export default class Navbar extends React.Component {
                 <span className="font-semibold text-xl tracking-tight text-purple-500">DataEngBites</span>
             </div>
         </Menu.Item>
-
-        <Menu.Item key="mail">
-          Navigation One
-        </Menu.Item>
-        <SubMenu title="Navigation Three - Submenu">
-          <Menu.ItemGroup title="Item 1">
-            <Menu.Item key="setting:1">Option 1</Menu.Item>
-            <Menu.Item key="setting:2">Option 2</Menu.Item>
-          </Menu.ItemGroup>
-          <Menu.ItemGroup title="Item 2">
-            <Menu.Item key="setting:3">Option 3</Menu.Item>
-            <Menu.Item key="setting:4">Option 4</Menu.Item>
-          </Menu.ItemGroup>
+        <SubMenu title="About">
+            <Menu.Item key="Organisers">Organisers</Menu.Item>
+            <Menu.Item key="CodeOfConduct">Code Of Conduct</Menu.Item>
+            <Menu.Item key="ContactUs">Contact Us</Menu.Item>
         </SubMenu>
-        <Menu.Item key="Organisers">
-            Organisers
-        </Menu.Item>
         <Menu.Item key="CFP">
           <a href="https://google.com" target="_blank" rel="noopener noreferrer">
             Call For Papers

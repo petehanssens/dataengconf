@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { PageHeader } from 'antd';
+import { Typography, Divider } from 'antd';
 
+const { Title, Paragraph, Text } = Typography;
 
 
 export default class PageWrapper extends Component {
@@ -17,6 +19,7 @@ export default class PageWrapper extends Component {
                 // title={this.props.title}
                 // subTitle={this.props.subtitle}
                 >
+                {this.props.title && <Divider orientation="left"><Title level={2}>{this.props.title}</Title></Divider>}
                 {this.props.children}
                 </PageHeader>
             </div>

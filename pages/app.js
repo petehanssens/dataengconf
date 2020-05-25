@@ -3,8 +3,12 @@ import { Layout } from 'antd';
 import Navbar from '../components/navbar'
 
 /* tabs */ 
-import home from './tabs/home'
-import organisers from './tabs/organisers'
+import Home from './tabs/home'
+import Organisers from './tabs/organisers'
+import CodeOfConduct from './tabs/code_of_conduct'
+import ContactUs from './tabs/contact_us'
+
+
 
 export default class App extends Component {
     constructor(props) {
@@ -14,8 +18,10 @@ export default class App extends Component {
             current: 'Home'
         };
         this.pages = {
-            'Home': home,
-            'Organisers': organisers
+            'Home': Home,
+            'Organisers': Organisers,
+            'CodeOfConduct': CodeOfConduct,
+            'ContactUs': ContactUs
         }
     }
   
@@ -45,7 +51,7 @@ export default class App extends Component {
                         current={this.current} 
                     />
                 </Header>
-                <Content style={{ padding: '0 50px', backgroundColour: "white" }}>
+                <Content style={{ backgroundColour: "white" }}>
                     {this.renderTab()}
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>Footer blah blah</Footer>
