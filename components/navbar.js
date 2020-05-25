@@ -18,8 +18,8 @@ export default class Navbar extends React.Component {
                 <span className="font-semibold text-xl tracking-tight text-purple-500">DataEngBites</span>
             </div>
         </Menu.Item>
-        <SubMenu title="About">
-            <Menu.Item key="Organisers">Organisers</Menu.Item>
+        <Menu.Item key="Organisers">Organisers</Menu.Item>
+        <SubMenu title="Info">
             <Menu.Item key="CodeOfConduct">Code Of Conduct</Menu.Item>
             <Menu.Item key="ContactUs">Contact Us</Menu.Item>
         </SubMenu>
