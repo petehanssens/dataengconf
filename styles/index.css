@@ -1,7 +1,37 @@
+@import '~antd/dist/antd.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-100 ;
+
+.ant-layout-header {
+  background-color: #fff
+}
+
+.ant-page-header {
+  background-color: #f0f2f5;
+}
+
+.site-page-header-ghost-wrapper {
+  background-color: #f0f2f5;
+  padding-top: 24px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.ant-layout-header {
+  padding: 0px 50px;
+}
+
+/* Should use not just vanilla css? */
+@media only screen and (max-width: 1000px) {
+  .ant-layout-content {
+    padding: 0px 0px;
+  }
+  
+  .site-page-header-ghost-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
