@@ -35,3 +35,12 @@
     padding-right: 0px;
   }
 }
+
+.ant-carousel .slick-dots-bottom li button {
+  background: rgba(0,0,0,0.65);
+  height: 10px;
+}
+
+.ant-carousel .slick-active li button {
+  background: rgba(0,0,0,0.65);
+}

@@ -15,11 +15,8 @@ export default class PageWrapper extends Component {
             <div className="site-page-header-ghost-wrapper">
                 <PageHeader
                 ghost={false}
-                // onBack={() => window.history.back()}
-                // title={this.props.title}
-                // subTitle={this.props.subtitle}
                 >
-                {this.props.title && <Divider orientation="left"><Title level={2}>{this.props.title}</Title></Divider>}
+                {this.props.title && <Divider orientation="left"><p style={{color: 'rgba(0,0,0,0.65)'}} class="text-4xl">{this.props.title}</p></Divider>}
                 {this.props.children}
                 </PageHeader>
             </div>

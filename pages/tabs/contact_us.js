@@ -5,10 +5,7 @@ import {
     MailOutlined,
     LinkedinOutlined
   } from '@ant-design/icons';
-import { Row, Col } from 'antd';
-import { Typography, Divider } from 'antd';
-
-import { List, Space, Button } from 'antd';
+import { Typography, List, Avatar } from 'antd';
 
 
 export default class ContactUs extends Component {

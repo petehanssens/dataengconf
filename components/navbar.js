@@ -24,16 +24,16 @@ export default class Navbar extends React.Component {
             <Menu.Item key="ContactUs">Contact Us</Menu.Item>
         </SubMenu>
         <Menu.Item key="CFP">
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://sessionize.com/dataengconfau-bites" target="_blank" rel="noopener noreferrer">
             Call For Papers
           </a>
         </Menu.Item>
         <Menu.Item key="Tickets">
-            <Tag color="volcano">
-                <a className="font-bold" href="https://google.com" target="_blank" rel="noopener noreferrer">
-                    Tickets
-                </a>
-            </Tag>
+            {/* <Tag color="volcano"> */}
+              <a className="font-bold" href="https://google.com" target="_blank" rel="noopener noreferrer">
+                  Tickets
+              </a>
+            {/* </Tag> */}
         </Menu.Item>
       </Menu>
     );
