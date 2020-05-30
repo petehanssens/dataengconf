@@ -5,12 +5,6 @@ import PageWrapper from '../../components/page_wrapper'
 
 import { Col, Row } from 'antd';
 
-import {
-    TwitterOutlined,
-    MailOutlined,
-    RobotOutlined
-  } from '@ant-design/icons';
-
 const themes = [
     {
         header: 'Data',
@@ -42,6 +36,7 @@ export default class Home extends Component {
             <PageWrapper >
                 <div style={{minHeight:'85vh'}}>
                     <img style={{}} className="header-image"/>
+                    <br/>
                     <span className="text-4xl">
                     <p >20<sup>th</sup> to 21<sup>st</sup> of August 2020 </p>
                     <p className="text-2xl">

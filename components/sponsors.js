@@ -54,8 +54,9 @@ const sponsors = [
 export default () => (
     <div>
         <p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl">Sponsors</p>
-        <p className="text-2xl">A huge thank you to our sponsors & partners.</p>
-        <Row>
+        <p className="text-2xl">A huge thank you to our awesome sponsors & partners. Coming soon!</p>
+
+        {/* <Row>
         {
             sponsors.map(sponsor => (
                 <Col key={sponsor.name} flex="1 1 150px">
@@ -68,7 +69,7 @@ export default () => (
                 </Col>
             ))
         }
-        </Row>
+        </Row> */}
     </div>
     
 )
