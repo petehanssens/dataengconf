@@ -1,4 +1,4 @@
 ## netlify.toml
 [build]
   command = "yarn build"
-  publish = ".next"
+  publish = "out"
