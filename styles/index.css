@@ -16,31 +16,82 @@
 .site-page-header-ghost-wrapper {
   background-color: #f0f2f5;
   padding-top: 24px;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .ant-layout-header {
   padding: 0px 50px;
 }
 
-/* Should use not just vanilla css? */
-@media only screen and (max-width: 1000px) {
-  .ant-layout-content {
-    padding: 0px 0px;
+
+.header-image {
+  content:url("./../public/images/logos/dataeng/bytes_center.svg");
+  padding-top: 0px;
+}
+.ant-layout-content {
+  padding: 0px 0px;
+}
+
+
+/* Small (sm) */
+@media (min-width: 640px) { 
+
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+  .header-image {
+    content:url("./../public/images/logos/dataeng/bytes_banner.svg");
+    padding-top: 10vh;
+    width: 100%;
+    max-width: 1200px;
   }
-  
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
   .site-page-header-ghost-wrapper {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+
+}
+
+
+/* Should use not just vanilla css? */
+/* @media only screen and (max-width: 1000px) {
+  /* .ant-layout-content {
+    padding: 0px 0px;
+  } */
+  
+  /* .site-page-header-ghost-wrapper {
     padding-left: 0px;
     padding-right: 0px;
+  } */
+
+
+  /* .header-image {
+    content:url("./../public/images/logos/dataeng/bytes_center.svg");
+    padding-top: 0px;
+  } */
+/* }  */
+
+
+/* .header-image {
+  content:url("./../public/images/logos/dataeng/bytes_banner.svg");
+  padding-top: 20vh;
+} */
+
+/* .header-image {
+  @media ( min-width: 600px){
+      content:url("/images/logos/banner_2_purple.svg");
   }
-}
-
-.ant-carousel .slick-dots-bottom li button {
-  background: rgba(0,0,0,0.65);
-  height: 10px;
-}
-
-.ant-carousel .slick-active li button {
-  background: rgba(0,0,0,0.65);
-}
+  content:url("/images/logos/banner_center_purple.svg");
+  width: 100%;
+  padding-bottom: 10px;
+} */

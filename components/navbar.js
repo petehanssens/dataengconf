@@ -15,7 +15,7 @@ export default class Navbar extends React.Component {
       <Menu onClick={this.props.handleNavigation} selectedKeys={this.props.current} mode="horizontal" >
         <Menu.Item key="Home" >
             <div className="flex items-center flex-shrink-0 text-white mr-6">
-                <span className="font-semibold text-xl tracking-tight text-purple-500">DataEngBites</span>
+                <span className="font-semibold text-xl tracking-tight text-purple-500">DataEngBytes</span>
             </div>
         </Menu.Item>
         <Menu.Item key="Organisers">Organisers</Menu.Item>
