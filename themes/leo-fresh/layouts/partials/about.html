@@ -1,0 +1,32 @@
+{{- $about := .Site.Params.about }}
+{{- $title    := index $about "title" }}
+{{- $subtitle    := index $about "subtitle" }}
+{{- $text    := index $about "text" }}
+{{- $images    := index $about "images" }}
+
+<section id="about" class="section section-light-grey is-medium">
+    <div class="container">
+        <div class="title-wrapper has-text-centered">
+            <h2 class="title is-2">{{ $title }}</h2>
+            <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+            <br/>            
+            <div class="divider is-centered"></div>
+            <br/>
+            <h4 class="subtitle is-5 is-muted is-centered">{{$text | markdownify}}</h2>
+            <br/>
+        </div>
+        <div class="small-dont-display columns is-vcentered">
+            {{- range $images  }}
+                <div class="column is-one-third">                    
+                    <h3 class="subtitle is-3" style="margin-bottom: 0px; text-align: center">{{ .imageheader1 }}</h3>
+                    <h3 class="subtitle is-5" style="margin-bottom: 0px; text-align: center">{{ .imageheader2 }}</h3>
+                    <h3 class="subtitle is-4" style="text-align: center">{{ .imageheader3 }}</h3>
+                    <figure class="image is-4by3" style="margin:10%">
+                        <img src="{{ printf "/images/%s" .image | relURL }}" alt="Description">
+                    </figure>
+                </div>
+            {{- end}}
+        </div>  
+    </div>
+  </div>
+</section>

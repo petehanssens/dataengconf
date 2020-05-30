@@ -1,0 +1,38 @@
+{{- $hero       := .Site.Params.hero }}
+{{- $title      := index $hero "title" }}
+{{- $subtitle   := index $hero "subtitle" }}
+{{- $subtitle2   := index $hero "subtitle2" }}
+{{- $buttonText := index $hero "buttontext" }}
+{{- $buttonLink := index $hero "buttonlink" }}
+{{- $image      := index $hero "image" }}
+{{- $header_image      := index $hero "header_image" }}
+
+<div class="hero-body section-light-grey">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-5 landing-caption" style="width: 100%;">
+        <img class="header-image" Description="logo">
+        {{ with $subtitle }}
+        <h2 class="subtitle is-5 is-muted" style="margin-bottom: 0px;">
+          {{ . | markdownify}}
+        </h2>
+        {{ end }}
+        {{ with $subtitle2 }}
+        <h2 class="subtitle is-5 is-muted">
+          {{ . | markdownify}}
+        </h2>
+        {{ end }}
+        <p>
+          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
+            {{ $buttonText }}
+          </a>
+        </p>
+      </div>
+      <!-- <div class="column is-5 is-offset-1">
+        <figure class="image is-4by3">
+          <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description">
+        </figure>
+      </div> -->
+    </div>
+  </div>
+</div>

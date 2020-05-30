@@ -1,0 +1,62 @@
+{{ define "main" }}
+    {{ if .Site.Params.hero }}
+    {{ partial "hero.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.covid19 }}
+    {{ partial "covid19.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.about }}
+    {{ partial "about.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.sponsors }}
+    {{ partial "sponsors.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.keydates }}
+    {{ partial "keydates.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.speakers }}
+    {{ partial "speakers.html" . }}
+    {{ end }}
+
+
+    {{ if .Site.Params.location }}
+    {{ partial "location.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.codeconduct }}
+    {{ partial "codeconduct.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.cfp }}
+    {{ partial "cfp.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.organisers }}
+    {{ partial "organisers.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.mailinglist }}
+    {{ partial "mailinglist.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.contact }}
+    {{ partial "contact.html" . }}
+    {{ end }}
+
+    <!-- {{ if .Site.Params.footer }}
+    {{ partial "footer.html" . }}
+    {{ end }} -->
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    {{ if .Site.Params.sidebar }}
+    {{ partial "sidebar.html" . }}
+    {{ end }}
+    
+{{ end }}

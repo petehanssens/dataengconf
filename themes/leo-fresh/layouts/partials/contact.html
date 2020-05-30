@@ -1,0 +1,21 @@
+{{- $contact := .Site.Params.contact }}
+{{- $title    := index $contact "title" }}
+{{- $email    := index $contact "email" }}
+{{- $socialmedia    := index $contact "socialmedia" }}
+
+
+
+<section id="contact" class="section section-light-grey is-medium" style="padding-top: 70px;">
+    <div class="container">
+        <div class="title-wrapper has-text-centered">
+            <h2 class="title is-2">{{ $title }}</h2>
+            <br/>
+            {{- range $socialmedia }}
+            <a id="{{.social}}" style="padding: 8px; display: inline;" href="{{ .link }}" target="_top">
+                <img class="social-icon" src="{{ printf "/images/social_icons/%s.svg" .social | relURL }}">
+            </a>
+            {{- end }}
+        </div> 
+    </div>
+  </div>
+</section>
