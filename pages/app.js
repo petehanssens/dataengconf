@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd';
 import Navbar from '../components/navbar'
+import FooterClass from '../components/footer'
 
 /* tabs */ 
 import Home from './tabs/home'
@@ -54,7 +55,7 @@ export default class App extends Component {
                 <Content style={{ backgroundColour: "white" }}>
                     {this.renderTab()}
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Footer blah blah</Footer>
+                <Footer style={{ textAlign: 'center' }}><FooterClass/></Footer>
             </Layout>
         )
     }

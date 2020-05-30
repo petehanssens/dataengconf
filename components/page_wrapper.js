@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { PageHeader } from 'antd';
-import { Typography, Divider } from 'antd';
-
-const { Title, Paragraph, Text } = Typography;
-
+import { Divider } from 'antd';
 
 export default class PageWrapper extends Component {
     constructor(props) {

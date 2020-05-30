@@ -5,39 +5,39 @@ import { List, Avatar, Card } from 'antd';
 const data = [
     {
         name: 'Peter Hanssens',
-        title: 'Some Title',
-        avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-        content: "Some example content"
+        title: 'Solutions Architect',
+        avatar: "./images/organisers/peter_hanssens.jpeg",
+        // content: "Some example content"
     },
     {
         name: 'Karen Davis',
-        title: 'Some Title',
-        avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-        content: "Some example content"
+        title: 'Senior Data Engineer',
+        avatar: "./images/organisers/karen_davis.JPG",
+        // content: "Some example content"
     },
     {
         name: 'Simon Aubury',
-        title: 'Some Title',
-        avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-        content: "Some example content"
+        title: 'Principal Data Engineer',
+        avatar: "./images/organisers/simon_aubury_2.jpeg",
+        // content: "Some example content"
     },
     {
         name: 'Leo Hoare',
-        title: 'Some Title',
-        avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-        content: "Some example content"
+        title: 'Data Engineer',
+        avatar: "./images/organisers/leo_hoare.jpeg",
+        // content: "Some example content"
     },
     {
         name: 'Katie Peterson',
-        title: 'Some Title',
-        avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-        content: "Some example content"
+        title: 'Software Developer',
+        avatar: "./images/organisers/katie_peterson.jpeg",
+        // content: "Passionate about creative applications that solve real-world problems and increasing female participation in STEM."
     },
     {
         name: 'Francisco Liwa',
-        title: 'Some Title',
-        avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-        content: "Some example content"
+        title: 'Data Engineer',
+        avatar: "./images/organisers/francisco_liwa.jpeg",
+        // content: "Some example content"
     }
   ];
 
@@ -53,16 +53,16 @@ export default class Organisers extends Component {
                         grid={{
                         gutter: 16,
                         sm: 1,
-                        md: 1,
+                        md: 2,
                         lg: 2,
-                        xl: 2,
+                        xl: 3,
                         xxl: 3
                         }}
                         dataSource={data}
                         renderItem={item => (
                         <List.Item>
                             <Card 
-                                hoverable 
+                                // hoverable 
                                 title={item.name}
                             >
                                 <Card.Meta
