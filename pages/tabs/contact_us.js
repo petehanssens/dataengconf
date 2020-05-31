@@ -5,7 +5,7 @@ import {
     MailOutlined,
     LinkedinOutlined
   } from '@ant-design/icons';
-import { Typography, List, Avatar } from 'antd';
+import { Typography, List } from 'antd';
 
 
 export default class ContactUs extends Component {
