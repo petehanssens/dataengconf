@@ -13,9 +13,7 @@ export default class Navbar extends React.Component {
     return (
       <Menu onClick={this.props.handleNavigation} selectedKeys={this.props.current} mode="horizontal" >
         <Menu.Item key="Home" >
-            <div className="flex items-center flex-shrink-0 text-white mr-6">
-                <span className="font-semibold text-xl tracking-tight text-purple-500">DataEngBytes</span>
-            </div>
+            <span className="font-semibold text-xl tracking-tight text-purple-500">DataEngBytes</span>
         </Menu.Item>
         <Menu.Item key="Organisers">Organisers</Menu.Item>
         <SubMenu title="Info">
@@ -27,11 +25,11 @@ export default class Navbar extends React.Component {
             Call For Papers
           </a>
         </Menu.Item>
-        {/* <Menu.Item key="Tickets">
+        <Menu.Item key="Tickets">
           <a className="font-bold" href="https://google.com" target="_blank" rel="noopener noreferrer">
               Tickets
           </a>
-        </Menu.Item> */}
+        </Menu.Item>
       </Menu>
     );
   }

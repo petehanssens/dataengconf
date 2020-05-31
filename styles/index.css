@@ -32,6 +32,10 @@
   padding: 0px 0px;
 }
 
+.ant-layout-footer {
+  padding: 50px 40px;
+}
+
 .ant-layout-footer .ant-btn{
   border: 0px;
   background-color: transparent;

@@ -16,14 +16,14 @@ export default class FooterClass extends Component {
             </Col>
             <Col span={8} style={{display: 'block'}}>
                 <p className='text-l font-bold' style={{paddingBottom:'5px'}}>Contact Us</p>
-                <Button href='https://www.linkedin.com/company/dataengconfau/about/'>LinkedIn</Button><br/>
-                <Button href='https://twitter.com/dataengconfau'>Twitter</Button><br/>
-                <Button href='mailto:sydney@dataengconf.com.au?Subject=DataEngConf'>Email</Button>
+                <Button href='https://www.linkedin.com/company/dataengconfau/about/' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>LinkedIn</Button><br/>
+                <Button href='https://twitter.com/dataengconfau' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Twitter</Button><br/>
+                <Button href='mailto:sydney@dataengconf.com.au?Subject=DataEngConf' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Email</Button>
             </Col>
             <Col span={8}>
                 <p className='text-l font-bold' style={{paddingBottom:'5px'}}>Event</p>
-                <Button href="https://sessionize.com/dataengbytes">Call For Papers</Button><br/>
-                <Button href=''>Tickets</Button><br/>
+                <Button href="https://sessionize.com/dataengbytes" style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Call For Papers</Button><br/>
+                <Button href='' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Tickets</Button><br/>
                 <MailChimp/>
             </Col>
         </Row>

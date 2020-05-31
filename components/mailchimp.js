@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Modal, Button, Input } from 'antd';
-
 import { UserOutlined } from '@ant-design/icons';
+import queryString from 'query-string';
+import jsonp from 'jsonp';
+
 
 export default class MailChimp extends Component {
   state = { visible: false, email: '' };
@@ -17,18 +19,10 @@ export default class MailChimp extends Component {
     const formData = {
         EMAIL: this.state.email,
     };
-    fetch('https://dataengconf.us19.list-manage.com/subscribe/post-json?u=7e8b6dd9f9397144daffb1870&amp;id=dbc1e3b4ec', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-    })
-    .catch((error) => {
-        console.log(error)
+    jsonp(`https://dataengconf.us19.list-manage.com/subscribe/post-json?u=7e8b6dd9f9397144daffb1870&amp;id=dbc1e3b4ec&${queryString.stringify(formData)}`, { param: 'c' }, (err, data) => {
+      console.log('err:', err);
+      console.log('data:', data);
     });
-
 
     this.setState({
       visible: false,
@@ -51,8 +45,8 @@ export default class MailChimp extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.showModal}>
-          Register Your Interst
+        <Button onClick={this.showModal} style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>
+          Register Your Interest
         </Button>
         <Modal
           title="Register Your Interest!"
