@@ -13,7 +13,7 @@ export default class PageWrapper extends Component {
                 <PageHeader
                 ghost={false}
                 >
-                {this.props.title && <Divider orientation="left"><p style={{color: 'rgba(0,0,0,0.65)'}} class="text-4xl">{this.props.title}</p></Divider>}
+                {this.props.title && <Divider orientation="left"><p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl">{this.props.title}</p></Divider>}
                 {this.props.children}
                 </PageHeader>
             </div>

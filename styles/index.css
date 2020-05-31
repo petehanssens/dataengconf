@@ -36,6 +36,11 @@
   padding: 50px 40px;
 }
 
+.ant-list-item .ant-btn{
+  border: 0px;
+  background-color: transparent;
+}
+
 .ant-layout-footer .ant-btn{
   border: 0px;
   background-color: transparent;
