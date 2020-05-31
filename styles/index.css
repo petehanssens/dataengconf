@@ -48,17 +48,17 @@
 
 /* Small (sm) */
 @media (min-width: 640px) { 
-
-}
-
-/* Medium (md) */
-@media (min-width: 768px) {
   .header-image {
     content:url("./../public/images/logos/dataeng/bytes_banner.svg");
     padding-top: 10vh;
     width: 100%;
     max-width: 1200px;
   }
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+
 }
 
 /* Large (lg) */
