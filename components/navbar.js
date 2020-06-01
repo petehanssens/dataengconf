@@ -26,7 +26,7 @@ export default class Navbar extends React.Component {
           </a>
         </Menu.Item>
         <Menu.Item key="Tickets">
-          <a className="font-bold" href="https://google.com" target="_blank" rel="noopener noreferrer">
+          <a className="font-bold" href="https://buytickets.at/dataengbytes" target="_blank" rel="noopener noreferrer">
               Tickets
           </a>
         </Menu.Item>
