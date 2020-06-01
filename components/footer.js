@@ -24,7 +24,7 @@ export default class FooterClass extends Component {
                 <p className='text-l font-bold' style={{paddingBottom:'5px'}}>Event</p>
                 <Button href="https://sessionize.com/dataengbytes" style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Call For Papers</Button><br/>
                 <Button href='' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Tickets</Button><br/>
-                <MailChimp/>
+                <MailChimp>Register Your Interest</MailChimp>
             </Col>
         </Row>
         )

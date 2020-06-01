@@ -38,9 +38,11 @@ export default class Home extends Component {
                     <img style={{}} className="header-image"/>
                     <br/>
                     <span className="text-4xl">
-                    <p >20<sup>th</sup> to 21<sup>st</sup> of August 2020 </p>
+                    <p >20<sup>th</sup> and 21<sup>st</sup> of August, 2020.</p>
                     <p className="text-2xl">
-                        DataEngConfAu - Bites! A not-for-profit virtual event centred on real world data engineering problems and solutions. It is a taster of what is to come for our in-person event which will be held in 2021.
+                        DataEngConfAu - Bites! A not-for-profit virtual event centred on real world data engineering problems and solutions.
+                        Featuring four hour sessions each day of jam packed bite sized talks. 
+                        It is a taster of what is to come for our in-person event which will be held in 2021.
                     </p>
                     </span>
                     <br/>

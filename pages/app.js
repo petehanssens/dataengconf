@@ -27,7 +27,6 @@ export default class App extends Component {
     }
   
     handleNavigation = e => {
-        console.log('click ', e);
         if (e.key in this.pages) {
             this.setState({
                 current: e.key,

@@ -46,7 +46,7 @@ export default class MailChimp extends Component {
     return (
       <div>
         <Button onClick={this.showModal} style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>
-          Register Your Interest
+          {this.props.children}
         </Button>
         <Modal
           title="Register Your Interest!"
