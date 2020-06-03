@@ -38,7 +38,7 @@ const sponsors = [
 export default () => (
     <div>
         <p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl">Sponsors</p>
-        <p className="text-2xl">A huge thank you to our awesome sponsors & partners. Coming soon!</p>
+        <p className="text-2xl">A huge thank you to our awesome sponsors & partners.</p>
         <List
             grid={{
             gutter: 16,
