@@ -28,6 +28,15 @@
   content:url("./../public/images/logos/dataeng/bytes_center.svg");
   padding-top: 0px;
 }
+
+/* .sponsor-image {
+  background-position: 'center center';
+  background-size:'contain';
+  background-repeat: 'no-repeat';
+  min-height: 300px;
+  min-width: 300px;
+} */
+
 .ant-layout-content {
   padding: 0px 0px;
 }
