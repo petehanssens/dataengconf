@@ -40,6 +40,33 @@ const data = [
         // content: "Some example content"
     }
   ];
+  
+  const committee = [
+    {
+        name: 'Ingrid Anzola',
+        title: 'Principal Data Engineer',
+        avatar: "./images/committee/ingrid.jpeg",
+        // content: "Some example content"
+    },
+    {
+        name: 'Rohan Dhupelia',
+        title: 'Data Platform Manager',
+        avatar: "./images/committee/rohan.jpeg",
+        // content: "Some example content"
+    },
+    {
+        name: 'Jessica Flanagan',
+        title: 'Head of Engineering/Data Architecture',
+        avatar: "./images/committee/jessica.jpeg",
+        // content: "Some example content"
+    },
+    {
+        name: 'Greg Roodt',
+        title: 'Software Engineer',
+        avatar: "./images/committee/greg.jpeg",
+        // content: "Some example content"
+    }
+  ];
 
 export default class Organisers extends Component {
     constructor(props) {
@@ -48,6 +75,7 @@ export default class Organisers extends Component {
 
     render() {
         return (
+            <>
             <PageWrapper title="Organisers">
                     <List
                         grid={{
@@ -77,6 +105,36 @@ export default class Organisers extends Component {
                         )}
                     />
             </PageWrapper>
+            <PageWrapper title="Committee">
+                    <List
+                        grid={{
+                        gutter: 16,
+                        sm: 1,
+                        md: 1,
+                        lg: 2,
+                        xl: 2,
+                        xxl: 2
+                        }}
+                        dataSource={committee}
+                        renderItem={item => (
+                        <List.Item>
+                            <Card 
+                                // hoverable 
+                                title={item.name}
+                            >
+                                <Card.Meta
+                                    avatar={
+                                        <Avatar size={120} src={item.avatar} />
+                                    }
+                                    title={item.title}
+                                    description={item.content}
+                                />
+                            </Card>
+                        </List.Item>
+                        )}
+                    />
+            </PageWrapper> 
+            </>
         )
     }
 }
