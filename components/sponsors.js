@@ -9,8 +9,8 @@ export default class Sponsors extends Component {
 
     sponsors = [
         {
-            name: 'cloudshuttle',
-            logo: "./images/sponsors/cloudshuttle.png",
+            name: 'snowflake',
+            logo: "./images/sponsors/snowflake.png",
         },
         {
             name: 'mongodb',
@@ -21,25 +21,14 @@ export default class Sponsors extends Component {
             logo: "./images/sponsors/fivetran.png",
         },
         {
-            name: 'snowflake',
-            logo: "./images/sponsors/snowflake.png",
-        },
-        {
             name: 'yow',
             logo: "./images/sponsors/yow.png",
         },
+        {
+            name: 'cloudshuttle',
+            logo: "./images/sponsors/cloudshuttle.png",
+        },
     ];
-
-    shuffleArray(array) {
-        let i = array.length - 1;
-        for (; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          const temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-        }
-        return array;
-    }
 
     render() {
         return (
@@ -56,7 +45,7 @@ export default class Sponsors extends Component {
                 xl: 3,
                 xxl: 3
                 }}
-                dataSource={this.shuffleArray(this.sponsors)}
+                dataSource={this.sponsors}
                 renderItem={sponsor => (
                 <List.Item>
                     <div class="sponsor-image" 
