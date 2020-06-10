@@ -11,22 +11,30 @@ export default class Sponsors extends Component {
         {
             name: 'snowflake',
             logo: "./images/sponsors/snowflake.png",
+            height: "250px",
+            url: "https://www.snowflake.com",
         },
         {
             name: 'mongodb',
             logo: "./images/sponsors/mongoDB_transparent.png",
+            height: "250px",
+            url: "https://www.mongodb.com",
         },
-        {
-            name: 'fivetran',
-            logo: "./images/sponsors/fivetran.png",
-        },
+        // {
+        //     name: 'fivetran',
+        //     logo: "./images/sponsors/fivetran.png",
+        // },
         {
             name: 'yow',
-            logo: "./images/sponsors/yow.png",
+            logo: "./images/sponsors/yow_colour_stacked.png",
+            height: "250px",
+            url: "https://yowconference.com/data/",
         },
         {
             name: 'cloudshuttle',
             logo: "./images/sponsors/cloudshuttle.png",
+            height: "250px",
+            url: "https://www.cloudshuttle.com.au",
         },
     ];
 
@@ -48,17 +56,19 @@ export default class Sponsors extends Component {
                 dataSource={this.sponsors}
                 renderItem={sponsor => (
                 <List.Item>
+                    <a href={sponsor.url} >
                     <div class="sponsor-image" 
                         style={{
                             backgroundPosition:'center center', 
                             backgroundImage: `url(${sponsor.logo})`, 
                             backgroundSize:'contain', 
                             backgroundRepeat:'no-repeat',
-                            height:'250px',
+                            height: `${sponsor.height}`,
                             margin:'0 10px 0 10px',
                             maxWidth:'300px'
                         }}
                     />
+                    </a>
                 </List.Item>
                 )}
             />
