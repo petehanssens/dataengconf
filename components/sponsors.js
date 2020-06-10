@@ -20,10 +20,12 @@ export default class Sponsors extends Component {
             height: "250px",
             url: "https://www.mongodb.com",
         },
-        // {
-        //     name: 'fivetran',
-        //     logo: "./images/sponsors/fivetran.png",
-        // },
+        {
+            name: 'fivetran',
+            logo: "./images/sponsors/fivetran.png",
+            height: "250px",
+            url: "https://fivetran.com/",
+        },
         {
             name: 'yow',
             logo: "./images/sponsors/yow_colour_stacked.png",
