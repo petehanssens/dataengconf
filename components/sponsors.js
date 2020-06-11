@@ -33,6 +33,12 @@ export default class Sponsors extends Component {
             url: "https://www.canva.com/",
         },
         {
+            name: 'instaclustr',
+            logo: "./images/sponsors/instaclustr.png",
+            height: "250px",
+            url: "https://www.instaclustr.com/",
+        },
+        {
             name: 'yow',
             logo: "./images/sponsors/yow_colour_stacked.png",
             height: "250px",
@@ -65,7 +71,7 @@ export default class Sponsors extends Component {
                 renderItem={sponsor => (
                 <List.Item>
                     <a href={sponsor.url} >
-                    <div class="sponsor-image" 
+                    <div className="sponsor-image" 
                         style={{
                             backgroundPosition:'center center', 
                             backgroundImage: `url(${sponsor.logo})`, 
