@@ -57,6 +57,12 @@ export default class Sponsors extends Component {
             url: "https://www.thoughtworks.com/",
         },
         {
+            name: 'thoughtworks',
+            logo: "./images/sponsors/thoughtworks.png",
+            height: "250px",
+            url: "https://www.thoughtworks.com/",
+        },
+        {
             name: 'instaclustr',
             logo: "./images/sponsors/instaclustr.png",
             height: "250px",
