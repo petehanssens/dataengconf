@@ -51,6 +51,12 @@ export default class Sponsors extends Component {
             url: "https://www.instaclustr.com/",
         },
         {
+            name: 'aws',
+            logo: "./images/sponsors/aws.png",
+            height: "250px",
+            url: "https://aws.amazon.com/",
+        },
+        {
             name: 'yow',
             logo: "./images/sponsors/yow_colour_stacked.png",
             height: "250px",
