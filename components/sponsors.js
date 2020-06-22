@@ -27,6 +27,12 @@ export default class Sponsors extends Component {
             url: "https://fivetran.com/",
         },
         {
+            name: 'aws',
+            logo: "./images/sponsors/aws.png",
+            height: "250px",
+            url: "https://aws.amazon.com/",
+        },
+        {
             name: 'canva',
             logo: "./images/sponsors/canva.png",
             height: "250px",
@@ -43,12 +49,6 @@ export default class Sponsors extends Component {
             logo: "./images/sponsors/instaclustr.png",
             height: "250px",
             url: "https://www.instaclustr.com/",
-        },
-        {
-            name: 'aws',
-            logo: "./images/sponsors/aws.png",
-            height: "250px",
-            url: "https://aws.amazon.com/",
         },
         {
             name: 'yow',
