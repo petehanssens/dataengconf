@@ -27,6 +27,12 @@ export default class Sponsors extends Component {
             url: "https://fivetran.com/",
         },
         {
+            name: 'aws',
+            logo: "./images/sponsors/aws.png",
+            height: "250px",
+            url: "https://aws.amazon.com/",
+        },
+        {
             name: 'canva',
             logo: "./images/sponsors/canva.png",
             height: "250px",
