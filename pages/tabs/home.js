@@ -35,7 +35,7 @@ export default class Home extends Component {
         return (
             <PageWrapper >
                 <div style={{minHeight:'85vh'}}>
-                    <img style={{}} className="header-image"/>
+                    <img style={{}} className="header-image" alt="header image"/>
                     <br/>
                     <span className="text-4xl">
                     <p style={{textAlign: 'right'}}>Thu 20<sup>th</sup> - Fri 21<sup>st</sup> August, 2020.</p>
