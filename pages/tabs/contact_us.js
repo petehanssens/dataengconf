@@ -25,14 +25,14 @@ export default class ContactUs extends Component {
                             <MailChimp><p className='text-3xl' style={{display:'inline', paddingLeft: '10px'}}>Register Your Interest</p></MailChimp>
                         </List.Item>
                         <List.Item style={{display:'block'}}>
-                            <a  href="https://twitter.com/dataengconfau">
+                            <a  href="https://twitter.com/dataengconfau" target="_blank">
                                 <TwitterOutlined style={{fontSize:50, color: '#38A1F3', paddingRight:'10px'}}/>
                             </a>
                             <Button href="https://twitter.com/dataengconfau" className='text-3xl'style={{wordWrap: 'anywhere', whiteSpace: 'normal', maxWidth:'100%'}}>@dataengconfau</Button><br/>
 
                         </List.Item>
                         <List.Item style={{display:'block'}}>
-                            <a href="https://www.linkedin.com/company/dataengconfau/about/">
+                            <a href="https://www.linkedin.com/company/dataengconfau/about/" target="_blank">
                                 <LinkedinOutlined style={{fontSize:50, color: '#0e76a8', paddingRight:'10px'}}/>
                             </a>
                             <Button href="https://www.linkedin.com/company/dataengconfau/about/" className='text-3xl' style={{wordWrap: 'anywhered', whiteSpace: 'normal', maxWidth:'100%'}}>/dataengconfau</Button><br/>
