@@ -33,6 +33,12 @@ export default class Sponsors extends Component {
             url: "https://aws.amazon.com/",
         },
         {
+            name: 'confluent',
+            logo: "./images/sponsors/confluent.png",
+            height: "250px",
+            url: "https://www.confluent.io/",
+        },
+        {
             name: 'canva',
             logo: "./images/sponsors/canva.png",
             height: "250px",
@@ -75,9 +81,9 @@ export default class Sponsors extends Component {
                 xs: 1,
                 sm: 2,
                 md: 3,
-                lg: 3,
-                xl: 3,
-                xxl: 3
+                lg: 4,
+                xl: 4,
+                xxl: 4
                 }}
                 dataSource={this.sponsors}
                 renderItem={sponsor => (
