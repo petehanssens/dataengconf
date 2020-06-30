@@ -21,10 +21,10 @@ export default class Sponsors extends Component {
             url: "https://www.mongodb.com",
         },
         {
-            name: 'fivetran',
-            logo: "./images/sponsors/fivetran.png",
+            name: 'databricks',
+            logo: "./images/sponsors/databricks.png",
             height: "250px",
-            url: "https://fivetran.com/",
+            url: "https://databricks.com/",
         },
         {
             name: 'aws',
@@ -33,10 +33,16 @@ export default class Sponsors extends Component {
             url: "https://aws.amazon.com/",
         },
         {
-            name: 'canva',
-            logo: "./images/sponsors/canva.png",
+            name: 'fivetran',
+            logo: "./images/sponsors/fivetran.png",
             height: "250px",
-            url: "https://www.canva.com/",
+            url: "https://fivetran.com/",
+        },
+        {
+            name: 'confluent',
+            logo: "./images/sponsors/confluent.png",
+            height: "250px",
+            url: "https://www.confluent.io/",
         },
         {
             name: 'thoughtworks',
@@ -49,6 +55,12 @@ export default class Sponsors extends Component {
             logo: "./images/sponsors/instaclustr.png",
             height: "250px",
             url: "https://www.instaclustr.com/",
+        },
+        {
+            name: 'canva',
+            logo: "./images/sponsors/canva.png",
+            height: "250px",
+            url: "https://www.canva.com/",
         },
         {
             name: 'yow',
@@ -75,9 +87,9 @@ export default class Sponsors extends Component {
                 xs: 1,
                 sm: 2,
                 md: 3,
-                lg: 3,
-                xl: 3,
-                xxl: 3
+                lg: 4,
+                xl: 4,
+                xxl: 4
                 }}
                 dataSource={this.sponsors}
                 renderItem={sponsor => (
