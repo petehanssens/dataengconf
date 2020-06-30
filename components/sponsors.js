@@ -39,27 +39,10 @@ export default class Sponsors extends Component {
             url: "https://fivetran.com/",
         },
         {
-<<<<<<< HEAD
             name: 'confluent',
             logo: "./images/sponsors/confluent.png",
-=======
-            name: 'aws',
-            logo: "./images/sponsors/aws.png",
-            height: "250px",
-            url: "https://aws.amazon.com/",
-        },
-        {
-            name: 'canva',
-            logo: "./images/sponsors/canva.png",
->>>>>>> 6e24cbf... reshuffling things
             height: "250px",
             url: "https://www.confluent.io/",
-        },
-        {
-            name: 'thoughtworks',
-            logo: "./images/sponsors/thoughtworks.png",
-            height: "250px",
-            url: "https://www.thoughtworks.com/",
         },
         {
             name: 'thoughtworks',
