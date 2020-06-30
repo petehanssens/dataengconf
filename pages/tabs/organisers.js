@@ -71,7 +71,7 @@ const data = [
     {
         name: 'Noel Hanssens',
         title: 'Data Engineering Manager',
-        avatar: "./images/organisers/noeL_hanssens.jpeg",
+        avatar: "./images/organisers/noel_hanssens.jpeg",
         company: "Lifeblood",
         linkedin: "https://www.linkedin.com/in/noelhanssens/",
         twitter: "https://twitter.com/noelhanssens",

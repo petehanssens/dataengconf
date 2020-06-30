@@ -21,10 +21,10 @@ export default class Sponsors extends Component {
             url: "https://www.mongodb.com",
         },
         {
-            name: 'fivetran',
-            logo: "./images/sponsors/fivetran.png",
+            name: 'databricks',
+            logo: "./images/sponsors/databricks.png",
             height: "250px",
-            url: "https://fivetran.com/",
+            url: "https://databricks.com/",
         },
         {
             name: 'aws',
@@ -33,16 +33,16 @@ export default class Sponsors extends Component {
             url: "https://aws.amazon.com/",
         },
         {
+            name: 'fivetran',
+            logo: "./images/sponsors/fivetran.png",
+            height: "250px",
+            url: "https://fivetran.com/",
+        },
+        {
             name: 'confluent',
             logo: "./images/sponsors/confluent.png",
             height: "250px",
             url: "https://www.confluent.io/",
-        },
-        {
-            name: 'canva',
-            logo: "./images/sponsors/canva.png",
-            height: "250px",
-            url: "https://www.canva.com/",
         },
         {
             name: 'thoughtworks',
@@ -55,6 +55,12 @@ export default class Sponsors extends Component {
             logo: "./images/sponsors/instaclustr.png",
             height: "250px",
             url: "https://www.instaclustr.com/",
+        },
+        {
+            name: 'canva',
+            logo: "./images/sponsors/canva.png",
+            height: "250px",
+            url: "https://www.canva.com/",
         },
         {
             name: 'yow',
