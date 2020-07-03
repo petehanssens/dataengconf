@@ -33,6 +33,12 @@ export default class Sponsors extends Component {
             url: "https://aws.amazon.com/",
         },
         {
+            name: 'microsoft',
+            logo: "./images/sponsors/microsoft.png",
+            height: "250px",
+            url: "https://azure.microsoft.com/en-au/",
+        },
+        {
             name: 'fivetran',
             logo: "./images/sponsors/fivetran.png",
             height: "250px",
