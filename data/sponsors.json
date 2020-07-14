@@ -1,0 +1,86 @@
+[
+    {
+        "name": "snowflake",
+        "logo": "./images/sponsors/snowflake.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://www.snowflake.com"
+    },
+    {
+        "name": "mongodb",
+        "logo": "./images/sponsors/mongoDB_transparent.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://www.mongodb.com"
+    },
+    {
+        "name": "databricks",
+        "logo": "./images/sponsors/databricks.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://databricks.com/"
+    },
+    {
+        "name": "aws",
+        "logo": "./images/sponsors/aws.png",
+        "height": "100px",
+        "tailwindHeight": "object-scale-down h-20 object-center align-middle",
+        "url": "https://aws.amazon.com/"
+    },
+    {
+        "name": "microsoft",
+        "logo": "./images/sponsors/microsoft.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-32",
+        "url": "https://azure.microsoft.com/en-au/"
+    },
+    {
+        "name": "fivetran",
+        "logo": "./images/sponsors/fivetran.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://fivetran.com/"
+    },
+    {
+        "name": "confluent",
+        "logo": "./images/sponsors/confluent.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://www.confluent.io/"
+    },
+    {
+        "name": "thoughtworks",
+        "logo": "./images/sponsors/thoughtworks.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://www.thoughtworks.com/"
+    },
+    {
+        "name": "instaclustr",
+        "logo": "./images/sponsors/instaclustr.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://www.instaclustr.com/"
+    },
+    {
+        "name": "canva",
+        "logo": "./images/sponsors/canva.png",
+        "height": "150px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://www.canva.com/"
+    },
+    {
+        "name": "yow",
+        "logo": "./images/sponsors/yow_colour_stacked.png",
+        "height": "150px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle",
+        "url": "https://yowconference.com/data/"
+    },
+    {
+        "name": "cloudshuttle",
+        "logo": "./images/sponsors/new-cloudshuttle-logo.png",
+        "height": "250px",
+        "tailwindHeight": "object-scale-down h-24 object-center align-middle w-full",
+        "url": "https://www.cloudshuttle.com.au"
+    }
+]

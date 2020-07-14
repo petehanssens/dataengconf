@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import PageWrapper from '../../components/page_wrapper'
+import PageWrapper from '../components/page_wrapper'
 import {
     TwitterOutlined,
     MailOutlined,
     LinkedinOutlined,
-    SmileOutlined
+    SmileOutlined,
+    LayoutTwoTone
   } from '@ant-design/icons';
 import { List, Button } from 'antd';
-import MailChimp from './../../components/mailchimp'
+import MailChimp from '../components/mailchimp';
+import Layout from '../components/layout';
 
 
 export default class ContactUs extends Component {
@@ -18,6 +20,7 @@ export default class ContactUs extends Component {
     render() {
           
         return (
+            <Layout>
             <PageWrapper title="Get in touch">
                     <List bordered={false}>
                         <List.Item style={{display:'-webkit-inline-box'}}>
@@ -45,6 +48,7 @@ export default class ContactUs extends Component {
                         </List.Item>
                     </List>
             </PageWrapper>
+        </Layout>
         )
     }
 }

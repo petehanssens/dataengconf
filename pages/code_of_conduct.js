@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
-import PageWrapper from '../../components/page_wrapper'
+import React from 'react';
+import PageWrapper from '/components/page_wrapper'
 import { Typography  } from 'antd';
 
-export default class CodeOfConduct extends Component {
-    constructor(props) {
-        super(props)
-    }
-
-    render() {
+export default function Organisers() {
         return (
             <PageWrapper title="Code of Conduct">
 
@@ -27,6 +22,5 @@ export default class CodeOfConduct extends Component {
                 </Typography.Paragraph>
             </PageWrapper>
         )
-    }
 }
 

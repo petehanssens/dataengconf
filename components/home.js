@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Sponsors from '../../components/sponsors'
-import PageWrapper from '../../components/page_wrapper'
+import Sponsors from './sponsors'
+import PageWrapper from './page_wrapper'
 
 
 import { Col, Row } from 'antd';
@@ -33,7 +33,7 @@ export default class Home extends Component {
 
     render() {
         return (
-            <PageWrapper >
+            <>
                 <div style={{minHeight:'85vh'}}>
                     <img style={{}} className="header-image" alt="header image"/>
                     <br/>
@@ -61,7 +61,7 @@ export default class Home extends Component {
                     {/* <p style={{color: 'rgba(0,0,0,0.65)'}} class="text-4xl">Themes</p> */}
                 <Sponsors/>
 
-            </PageWrapper>
+            </>
         )
     }
 }
