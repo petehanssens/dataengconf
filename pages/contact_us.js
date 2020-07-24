@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PageWrapper from '../components/page_wrapper'
 import {
     TwitterOutlined,
     MailOutlined,
@@ -12,16 +11,10 @@ import MailChimp from '../components/mailchimp';
 import Layout from '../components/layout';
 
 
-export default class ContactUs extends Component {
-    constructor(props) {
-        super(props)
-    }
-
-    render() {
-          
+export default function CodeOfConduct() {
         return (
             <Layout>
-            <PageWrapper title="Get in touch">
+                <article  style={{minHeight:'85vh'}}>
                     <List bordered={false}>
                         <List.Item style={{display:'-webkit-inline-box'}}>
                                 <SmileOutlined style={{fontSize:40, color: 'green', paddingRight:'10px'}}/>
@@ -47,9 +40,8 @@ export default class ContactUs extends Component {
                             <Button href="mailto:sydney@dataengconf.com.au?Subject=DataEngConf" className='text-3xl' style={{wordWrap: 'anywhere', whiteSpace: 'normal', maxWidth:'100%'}}>sydney@dataengconf.com.au</Button><br/>
                         </List.Item>
                     </List>
-            </PageWrapper>
-        </Layout>
+                </article>
+            </Layout>
         )
-    }
 }
 

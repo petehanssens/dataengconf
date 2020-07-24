@@ -11,8 +11,8 @@ export default function Sponsors() {
             <div className="flex mb-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4">
                     {sponsorData.map(sponsor => (
-                        <a href={sponsor.url}>
-                        <img src={sponsor.logo} class="object-scale-down h-32 w-full p-4" />
+                        <a key={sponsor.name} href={sponsor.url}>
+                        <img src={sponsor.logo} className="object-scale-down h-32 w-full p-4" />
                         </a>
                     ))}
                 </div>

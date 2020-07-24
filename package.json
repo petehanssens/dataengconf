@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.1.0",
+    "@tailwindcss/typography": "^0.2.0",
     "antd": "^4.2.4",
     "jsonp": "^0.2.1",
     "next": "^9.4.2",

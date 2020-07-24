@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Sponsors from './sponsors'
-import PageWrapper from './page_wrapper'
+import Sponsors from './sponsors';
+import Sessions from './sessions';
 
 
 import { Col, Row } from 'antd';
@@ -57,8 +57,9 @@ export default class Home extends Component {
                                 </Col>
                             ))
                 }</Row>
-                
-                    {/* <p style={{color: 'rgba(0,0,0,0.65)'}} class="text-4xl">Themes</p> */}
+
+                <Sessions />
+                    {/* <p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl">Themes</p> */}
                 <Sponsors/>
 
             </>
