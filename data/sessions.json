@@ -152,13 +152,6 @@
         },
         {
             "StartTime": "13:50",
-            "Duration": "30 mins",
-            "Description": "Talk 17",
-            "SpeakerName": "",
-            "TalkTitle": ""
-        },
-        {
-            "StartTime": "14:20",
             "Duration": "10 mins",
             "Description": "Conference close",
             "SpeakerName": "Organisers",

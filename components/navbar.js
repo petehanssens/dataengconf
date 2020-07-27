@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-const navToggle = () => document.getElementById("nav-content").classList.toggle("hidden");
-const navToggle2 = () => document.getElementById('nav-toggle').onclick = () => {navToggle};
+
 
 export default function Navbar() {
     return (

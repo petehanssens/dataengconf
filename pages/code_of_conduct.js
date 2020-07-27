@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 export default function CodeOfConduct() {
         return (
             <Layout>
-                <article className="prose lg:prose-xl" style={{minHeight:'85vh'}}>
+                <article className="prose lg:prose-xl container mx-auto" style={{minHeight:'85vh'}}>
                 <h1>Code of Conduct</h1>
                 <p>
                     The DataEngBytes Conference is dedicated to providing a harassment-free community for everyone, regardless of sex, gender identity or expression, sexual orientation, disability, physical appearance, age, body size, race, nationality, or religious beliefs. We do not tolerate harassment of community members in any form. Participants violating these rules may be sanctioned or expelled from the community at the discretion of the organisers.

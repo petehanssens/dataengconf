@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 export default function CodeOfConduct() {
         return (
             <Layout>
-                <article className="prose lg:prose-xl" style={{minHeight:'85vh'}}>
+                <article className="prose lg:prose-xl container mx-auto" style={{minHeight:'85vh'}}>
                 <h1>Contact Us</h1>
                 <p>We are on the socials - feel free to give us a follow and say hello 👋</p>
                 <a href='https://twitter.com/dataengconfau'>
