@@ -23,8 +23,8 @@ function Layout ({ children }) {
                 <link rel="icon" type="image/png" href="/public/favicon.ico" />
                 <link rel="apple-touch-icon" href="/public/favicon.ico" />
                 <link rel="stylesheet" href="" />
-                <meta property="og:image" content="" />  
-                <meta name="twitter:image" content="" />   
+                <meta property="og:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />  
+                <meta name="twitter:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />   
             </Head>
         <Navbar />
             <body  className="">

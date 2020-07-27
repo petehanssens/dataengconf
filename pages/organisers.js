@@ -11,39 +11,49 @@ export default function Organisers() {
         <Layout>
             <p className="text-gray-900 text-4xl font-bold mb-2 pl-12">Organisers</p>
             <div className="flex mb-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 w-full">
                 { OrganisingTeam.map(organiser => (
-                    <Link href={organiser.Link} >
-                    <div className="max-w-sm w-full lg:max-w-full lg:flex">                                
-                        <div className="border-t border-b border-l border-gray-400 bg-white h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" >
-                            <img src={organiser.Image} alt={organiser.Name} className="object-center rounded-full h-32 content-center" />
-                        <div className="mb-8">
-                                <div className="text-gray-900 font-bold text-xl mb-2">{organiser.Name}</div>
-                                <p className="text-gray-700 text-base">{organiser.Position}</p>
-                                <p className="text-gray-400 text-base">{organiser.Company}</p>
+                    <Link href={organiser.Link} >     
+                        <div className="border border-gray-400 bg-white h-96 lg:h-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden w-auto px-4 py-2" >
+                            <div className="text-gray-900 font-bold text-xl mb-2 flex justify-between">
+                                {organiser.Name}
+                            </div>     
+			                <div className="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-black-500 opacity-75"></div>      
+                            <div className="mb-8 grid grid-cols-2 object-center justify-center items-center content-center">
+                                <div className=" object-center justify-center items-center content-center">
+                                    <img src={organiser.Image} alt={organiser.Name} className="w-full object-center rounded-full p-4 content-center justify-center items-center" />
+                                </div>
+                                <div className="mb-8">
+                                    <div className="text-black font-bold text-xl mb-2">{organiser.Name}</div>
+                                        <p className="text-grey-darker text-base">{organiser.Position}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </Link>
                     ))}
                 </div>
             </div>
             <p className="text-gray-900 text-4xl font-bold mb-2 pl-12 pt-12">Committee</p>
             <div className="flex mb-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-4">
-                { CommitteeTeam.map(organiser => (
-                    <div className="max-w-sm w-full lg:max-w-full lg:flex">                               
-                        <div className="border-t border-b border-l border-gray-400 bg-white h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" >
-                    <div className="text-gray-900 font-bold text-xl mb-2">{organiser.Name}</div> 
-                            <img src={organiser.Image} alt={organiser.Name} className="object-center rounded-full h-32 content-center" />
-                        </div>
-                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                        <div className="mb-8">
-                                <p className="text-gray-700 text-base">{organiser.Position}</p>
-                                <p className="text-gray-400 text-base">{organiser.Company}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 w-full">
+                { CommitteeTeam.map(committee => (
+                    <Link href={committee.Link} >     
+                        <div className="border border-gray-400 bg-white h-96 lg:h-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden w-auto px-4 py-2" >
+                            <div className="text-gray-900 font-bold text-xl mb-2 flex justify-between">
+                                {committee.Name}
+                            </div>     
+			                <div className="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-black-500 opacity-75"></div>      
+                            <div className="mb-8 grid grid-cols-2 object-center justify-center items-center content-center">
+                                <div className=" object-center justify-center items-center content-center">
+                                    <img src={committee.Image} alt={committee.Name} className="w-full object-center rounded-full p-4 content-center justify-center items-center" />
+                                </div>
+                                <div className="mb-8">
+                                    <div className="text-black font-bold text-xl mb-2">{committee.Name}</div>
+                                        <p className="text-grey-darker text-base">{committee.Position}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                     ))}
                 </div>
             </div>

@@ -29,6 +29,41 @@
   padding-top: 0px;
 }
 
+.twitter {
+  content:url("./../public/images/socials/twitter.svg");
+  height: 24px;
+}
+
+.linkedin {
+  content:url("./../public/images/socials/linkedin.svg");
+  height: 24px;
+}
+
+.twitter-large {
+  content:url("./../public/images/socials/twitter.svg");
+  height: 48px;
+}
+
+.linkedin-large {
+  content:url("./../public/images/socials/linkedin.svg");
+  height: 48px;
+}
+
+.gmail-large {
+  content:url("./../public/images/socials/gmail.svg");
+  height: 48px;
+}
+
+.twitch-large {
+  content:url("./../public/images/socials/twitch.svg");
+  height: 48px;
+}
+
+.youtube-large {
+  content:url("./../public/images/socials/youtube.svg");
+  height: 48px;
+}
+
 /* .sponsor-image {
   background-position: 'center center';
   background-size:'contain';

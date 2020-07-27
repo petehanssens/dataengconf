@@ -5,9 +5,6 @@ const navToggle = () => document.getElementById("nav-content").classList.toggle(
 const navToggle2 = () => document.getElementById('nav-toggle').onclick = () => {navToggle};
 
 export default function Navbar() {
-
-
-
     return (
 <nav className="flex items-center justify-between flex-wrap bg-grey-darkest p-6  w-full z-10 pin-t  site-page-header-ghost-wrapper">
 <div className="flex items-center flex-no-shrink text-white mr-6  p-6">
@@ -25,14 +22,25 @@ export default function Navbar() {
 <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
   <ul className="list-reset lg:flex justify-end flex-1 items-center">
     <li className="mr-3">
-      <a href="code_of_conduct" className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
-          Code of Conduct
-      </a>
+      <Link href="/organisers">
+      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+          Organisers
+      </p>
+      </Link>
     </li>
     <li className="mr-3">
-      <a href="contact_us" className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+      <Link href="/code_of_conduct">
+      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+          Code of Conduct
+      </p>
+      </Link>
+    </li>
+    <li className="mr-3">
+      <Link href="/contact_us">
+      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
           Contact Us
-      </a>
+      </p>
+      </Link>
     </li>
     <li className="mr-3">
       <a href="https://buytickets.at/dataengbytes" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="ant-page-header h-48">
             <div className="flex mb-4 p-4">
                 <div className="w-1/3 h-12">
-                    <img style={{minHeight:'100px', paddingTop: '0px'}} className="header-image pt-0 "/>
+                    <img style={{minHeight:'100px', paddingTop: '0px'}} className="header-image pt-0 " alt="header image"/>
                 </div>
                 <div className="w-1/3 h-12 px-16">
                     <p className='text-l font-bold pb-5'>Contact Us</p>
@@ -18,8 +18,8 @@ export default function Footer() {
                 <div className="w-1/3 h-12">
                     <p className='text-l font-bold pb-5'>Event</p>
                     <a href='https://buytickets.at/dataengbytes'>Tickets</a><br/>
-                    <a href="https://sessionize.com/dataengbytes">Youtube</a><br/>
-                    <a href="https://sessionize.com/dataengbytes">Twitch</a><br/>
+                    <a href="https://www.youtube.com/channel/UCteq_tbr6F-KZ0JhaY9fy0g">Youtube</a><br/>
+                    <a href="https://www.twitch.tv/dataengau">Twitch</a><br/>
                 </div>
             </div>
         </div>
