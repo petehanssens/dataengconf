@@ -1,399 +1,97 @@
 [
-    {
-      "id": "4343a2ee-3117-432d-9508-d3700b604ad9",
-      "firstName": "Aiko",
-      "lastName": "Klostermann",
-      "fullName": "Aiko Klostermann",
-      "bio": "Aiko works as a consultant and developer for ThoughtWorks.\r\nHe is passionate about data science, software craftsmanship, clean code, and infrastructure engineering. While working with clients he focusses on improving the development process and code quality of the teams he's working with.\r\n\r\nNowadays working in Singapore, Aiko has previously worked with clients in Germany, the UK and India as well. He leveraged Artificial Intelligence to help clients gain a competitive advantage. Recently his focus moved onto infrastructure development for building (data) platforms to better enable client teams.",
-      "tagLine": "Technology Consultant, Problemsolver & Troublemaker @ Thoughtworks",
-      "profilePicture": "https://sessionize.com/image?f=ad960dee0642bfe0c0047ace367d60ce,400,400,1,0,ee-3117-432d-9508-d3700b604ad9.0bf675fa-8bcc-4730-8966-84bfcb573bc3.png",
-      "sessions": [
-        {
-          "id": 204103,
-          "name": "Artificial Intelligence? - more like Artificial Stupidity!"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/@AikoPath",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "Company Website",
-          "url": "http://thoughtworks.com/",
-          "linkType": "Company_Website"
-        }
-      ]
-    },
-    {
-      "id": "bfbc734c-f565-4fa4-b4ef-8e351b6ec44a",
-      "firstName": "Atif",
-      "lastName": "Shaikh",
-      "fullName": "Atif Shaikh",
-      "bio": "Atif is an independent consultant specialising in DataOps and data literacy (change management) programs. He has 15+ years of experience across BI, analytics, data engineering and data science roles with a mix of both startups and more mature organisations across 4 continents.",
-      "tagLine": "Principal at Datamantiq",
-      "profilePicture": "https://sessionize.com/image?f=ec999ae763c27cb160239746b5eb845c,400,400,1,0,4c-f565-4fa4-b4ef-8e351b6ec44a.8d7fe385-a27b-4284-9064-8e38c13bf9b9.png",
-      "sessions": [
-        {
-          "id": 208606,
-          "name": "Enabling HTAP capabilities in your existing data platform(s)"
-        }
-      ],
-      "links": [
-        {
-          "title": "LinkedIn",
-          "url": "http://linkedin.com/in/atifabdulrahman",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
-      "firstName": "Caito",
-      "lastName": "Scherr",
-      "fullName": "Caito Scherr",
-      "bio": "Caito is a software engineer in Portland, Oregon who most recently worked on New Relic's main stream processing team. She has presented about this work at various meetups and conferences (in the US and Europe). Outside of tech, she loves running, woodworking, and terrible puns.",
-      "tagLine": "Data Analytics, Stream Processing, and Terrible Puns",
-      "profilePicture": "https://sessionize.com/image?f=1669514533dc7bd88b62070a0209e741,400,400,1,0,32-a8aa-40f1-8c81-31d3421bd4e3.8068cff4-47c2-4cbb-b668-613e985e3eb6.jpg",
-      "sessions": [
-        {
-          "id": 208129,
-          "name": "Sweet Streams are Made of These: data-driven development in stream processing"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/caito_200_OK",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/caito-scherr-80aa09b6/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "265207de-63cd-4903-bad1-0d937931ae49",
-      "firstName": "Dom",
-      "lastName": "Colyer",
-      "fullName": "Dom Colyer",
-      "bio": "A passionate cloud data architect I love optimising things with automation and code generation.",
-      "tagLine": "Sales Engineer, Fivetran ",
-      "profilePicture": "https://sessionize.com/image?f=7cb062f39efdb4a44633f82f3aaa15a2,400,400,1,0,71f06977-ef55-4b79-95ca-87719e03906e.jpg",
-      "sessions": [
-        {
-          "id": 208214,
-          "name": "Building a Code Generated Data Platform"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "2eb59e6d-7d9a-41ec-86ea-ceb5c50ab2a5",
-      "firstName": "Frederico",
-      "lastName": "Pravatta Rezende",
-      "fullName": "Frederico Pravatta Rezende",
-      "bio": "Charles is a Global Program Manager in the Azure Synapse engineering team. He has been working on distributed analytics systems for over a decade to enable customers to developer highly scalable solutions to unlock new insights from disparate datasets. ",
-      "tagLine": "Global Program Manager",
-      "profilePicture": "https://sessionize.com/image?f=9a073bba837d1ea314e1f975c2210f77,400,400,1,0,6d-7d9a-41ec-86ea-ceb5c50ab2a5.88d821e7-8d9e-4a21-adce-cf432bd58472.jpg",
-      "sessions": [
-        {
-          "id": 209802,
-          "name": "Developing end-to-end analytics solutions with the latest Azure Synapse features"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
-      "firstName": "Gian",
-      "lastName": "Merlino",
-      "fullName": "Gian Merlino",
-      "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
-      "tagLine": "Co-Founder & CTO",
-      "profilePicture": "https://sessionize.com/image?f=315ed0c9151fdeec316512320b4b3c56,400,400,1,0,4a-1c9b-4c44-b4b0-80e9521509d7.d4759d97-cb44-4411-8ef9-d356d9d5d5d7.png",
-      "sessions": [
-        {
-          "id": 212228,
-          "name": "\"Some Like It Hot\""
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "bb6d379e-e652-441d-917d-df42a5e8173c",
-      "firstName": "Joel",
-      "lastName": "Roland",
-      "fullName": "Joel Roland",
-      "bio": "Joel is an experienced Big Data & Analytics consultant specialising in Big Data, BI, Reporting and Data Warehouse technologies for over 12 years. He has experience in solution design and implementation for many Industries including Manufacturing, Education, Finance, Human Resources plus Sales & Marketing.",
-      "tagLine": "Databricks Solutions Architecture Manager",
-      "profilePicture": "https://sessionize.com/image?f=5ee1a5118fa3f7499e4a3e5b544cdedc,400,400,1,0,9e-e652-441d-917d-df42a5e8173c.fca56a9b-c08c-41db-8e90-70b085d04ced.jpeg",
-      "sessions": [
-        {
-          "id": 209365,
-          "name": "ETL and Data Ingestion Made Easy"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "d7624750-2960-4d38-bede-2860d8b903bf",
-      "firstName": "Josh",
-      "lastName": "Peak",
-      "fullName": "Josh Peak",
-      "bio": "Josh is a seasoned Data Engineer and up and coming Data Scientist from Newcastle. He also co-organises the monthly Hunter Data Analytics meetup so others can share how they really feel about 3D exploding pie charts.",
-      "tagLine": "Data Scientist | Data Engineer",
-      "profilePicture": "https://sessionize.com/image?f=914f33259890fc8a5f6a38d52af2fee7,400,400,1,0,50-2960-4d38-bede-2860d8b903bf.c867d07d-ec7d-40df-a6b6-2d8adfef4ce5.jpg",
-      "sessions": [
-        {
-          "id": 208754,
-          "name": "Gentrification: Renovating Legacy Data Pipelines"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "dc869902-a2fa-473f-87a0-4a3743a3c834",
-      "firstName": "Kerry",
-      "lastName": "McRae",
-      "fullName": "Kerry McRae",
-      "bio": "TBC",
-      "tagLine": "Amazon Web Services, Solutions Architect",
-      "profilePicture": "https://sessionize.com/image?f=2777d81ef648f6ddeefc8ee34879a110,400,400,1,0,02-a2fa-473f-87a0-4a3743a3c834.870f63df-94d6-469e-af10-5f8778a6b1d4.jpg",
-      "sessions": [
-        {
-          "id": 211709,
-          "name": "Building data integration services for real-time on AWS"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "99ab0b95-df07-4220-b278-623b75b6b350",
-      "firstName": "Larene",
-      "lastName": "Le Gassick",
-      "fullName": "Larene Le Gassick",
-      "bio": "Larene is a software engineer at Datalust, creators of Seq centralized logging platform. \r\n\r\nIn 2019, she worked on various software projects that required data visualisation — from live energy usage graphs to data dashboards. Right now, she's helping to build accessibility into Seq — a centralised logging application with live, customisable dashboards and charts.\r\n\r\nHer honours thesis was in gender classification of faces using computer vision and machine learning. She runs Women Who Code Brisbane, and speaks at conferences about accessibility and inclusion.",
-      "tagLine": "Seq Engineer at Datalust",
-      "profilePicture": "https://sessionize.com/image?f=89aec7995d3beaf3006bfdc7a8e070ab,400,400,1,0,95-df07-4220-b278-623b75b6b350.6ad4cb99-cd6c-4e65-b655-0b83e9b86597.png",
-      "sessions": [
-        {
-          "id": 208414,
-          "name": "Inclusive Storytelling with Data"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/LareneLg",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://linkedin.com/in/larene/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "7672660a-5d0f-4d03-933a-70a025dfdf92",
-      "firstName": "Louis",
-      "lastName": "Lee",
-      "fullName": "Louis Lee",
-      "bio": "Louis is passionate about data analytics and associated technologies. He is a member of the Sales Engineering team in Snowflake helping customers to find meaningful insights from vast amount of data that we collect every day. Louis has 20 years of experience in the information technology industry, of which 15 years with Hyperion and Oracle. He has solid experience in software development, consulting and has supported customers across APAC. Louis holds a degree in Computer Science and a Masters in Communication Design from Queensland University of Technology. ",
-      "tagLine": "Senior Sales Engineer",
-      "profilePicture": "https://sessionize.com/image?f=69153997997901dbe95de0e9f407e57c,400,400,1,0,0a-5d0f-4d03-933a-70a025dfdf92.4f32ef3e-ffe8-4136-8d40-5483d5e64d83.jpeg",
-      "sessions": [
-        {
-          "id": 208968,
-          "name": "Snowflake Cloud Data Platform - Building a Governed Data Lake"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "3c1d5f9d-be94-4a27-a238-9d819120ad63",
-      "firstName": "Marta",
-      "lastName": "Paes Moreira",
-      "fullName": "Marta Paes Moreira",
-      "bio": "Marta is a Developer Advocate at Ververica (formerly data Artisans) and a contributor to Apache Flink. After finding her mojo in open source, she is committed to making sense of Data Engineering through the eyes of those using its by-products. Marta holds a Master’s in Biomedical Engineering, where she developed a particular taste for multi-dimensional data visualization, and previously worked as a Data Warehouse Engineer at Zalando and Accenture.",
-      "tagLine": "Developer Advocate @ Ververica",
-      "profilePicture": "https://sessionize.com/image?f=91974c195b991d4e264092c32379d768,400,400,1,0,9e90e42e-3451-4cd8-a3a7-9f61a9f7e66d.jpg",
-      "sessions": [
-        {
-          "id": 208978,
-          "name": "Change Data Capture with Flink SQL and Debezium"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/morsapaes",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/marta-paes-moreira-10722988/",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://www.ververica.com/",
-          "linkType": "Company_Website"
-        }
-      ]
-    },
-    {
-      "id": "6e87d943-5fd1-46be-9f63-88e3a333ad79",
-      "firstName": "Meg",
-      "lastName": "Wiseman",
-      "fullName": "Meg Wiseman",
-      "bio": "N/A",
-      "tagLine": "N/A",
-      "profilePicture": "https://sessionize.com/image?f=b064d506cfa2db4ebb568856fccb9b23,400,400,1,0,c0c0c7d4-954b-4575-b19c-a9032978bf91.jpg",
-      "sessions": [
-        {
-          "id": 208968,
-          "name": "Snowflake Cloud Data Platform - Building a Governed Data Lake"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "7c284b9a-23a2-42de-9757-594e6e167ec3",
-      "firstName": "Mike",
-      "lastName": "Del Balso",
-      "fullName": "Mike Del Balso",
-      "bio": "Mike Del Balso is the co-founder of Tecton.ai, where he is focused on building next-generation data infrastructure for Operational ML. Before Tecton.ai, Mike was the PM lead for the Uber Michelangelo ML platform. He was also a product manager at Google where he managed the core ML systems that power Google’s Search Ads business. Previous to that, he worked on Google Maps. He holds a BSc in Electrical and Computer Engineering summa cum laude from the University of Toronto.",
-      "tagLine": "Co-Founder & CEO, Tecton.ai",
-      "profilePicture": "https://sessionize.com/image?f=2cb526d54b32b7d9ebbecd737703dfff,400,400,1,0,52022559-8a35-4bfa-8721-cf31a578da9d.jpg",
-      "sessions": [
-        {
-          "id": 212221,
-          "name": "Feature Stores"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "9afb95ea-b792-40aa-9d39-6749ac8bd2e5",
-      "firstName": "Mike",
-      "lastName": "Gouline",
-      "fullName": "Mike Gouline",
-      "bio": "Software engineer with over 10 years of industry experience. Moving around between enterprise and startups, mobile and backend, one \"pivot\" later I landed in data. Currently leading the data practice at Assembly Payments in Sydney, building out the platform from scratch and educating the company about what \"data\" really means.",
-      "tagLine": "Lead Data Engineer at Assembly Payments",
-      "profilePicture": "https://sessionize.com/image?f=fd73c7803f2b4d218d60a3034646ba2f,400,400,1,0,ea-b792-40aa-9d39-6749ac8bd2e5.6a1c1d8e-c876-4627-8336-a620be2cb567.jpg",
-      "sessions": [
-        {
-          "id": 206381,
-          "name": "Data Team as an Optimisation Problem"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/mikestruct",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/gouline/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "e16e10b7-f905-4c95-afb6-6d54a47f577e",
-      "firstName": "Robin",
-      "lastName": "Moffatt",
-      "fullName": "Robin Moffatt",
-      "bio": "Robin is a Senior Developer Advocate at Confluent, the company founded by the original creators of Apache Kafka, as well as an Oracle Groundbreaker Ambassador and ACE Director (Alumnus). His career has always involved data, from the old worlds of COBOL and DB2, through the worlds of Oracle and Hadoop, and into the current world with Kafka. His particular interests are analytics, systems architecture, performance testing and optimization. He blogs at http://cnfl.io/rmoff and http://rmoff.net/ (and previously http://ritt.md/rmoff) and can be found tweeting grumpy geek thoughts as @rmoff. Outside of work he enjoys drinking good beer and eating fried breakfasts, although generally not at the same time. ",
-      "tagLine": "Developer Advocate, Confluent",
-      "profilePicture": "https://sessionize.com/image?f=b01217d054e21ac522f67f7d23490b0c,400,400,1,0,b7-f905-4c95-afb6-6d54a47f577e.c574b967-d842-46db-814a-f8462f6628a0.jpg",
-      "sessions": [
-        {
-          "id": 207126,
-          "name": "🤖Building a Telegram bot with Apache Kafka and ksqlDB"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/rmoff/",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/robinmoffatt/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "bb4fbc81-d4ee-4fd2-88cd-027d9605d359",
-      "firstName": "Sam",
-      "lastName": "Harley",
-      "fullName": "Sam Harley",
-      "bio": "Sam is a Senior Solutions Architect with MongoDB and is based in Sydney. Sam has worked in the IT industry for fifteen years and is recognised as a trusted advisor to customers throughout Australia, providing best-practice advice to assist in designing and building reliable and scalable solutions using MongoDB.",
-      "tagLine": "Senior Solutions Architect, MongoDB",
-      "profilePicture": "https://sessionize.com/image?f=ff7844e04899bca2f55aa3d86abcdc55,400,400,1,0,662fd3bc-9e3b-4a67-af48-c83e25dc1ef7.jpg",
-      "sessions": [
-        {
-          "id": 211140,
-          "name": "How MongoDB Enables Real-Time Data with Event-Driven Architecture"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "008222ac-89ac-4c2e-aa51-2c29688481d6",
-      "firstName": "Steve",
-      "lastName": "Lee",
-      "fullName": "Steve Lee",
-      "bio": "TBC",
-      "tagLine": "TBC",
-      "profilePicture": null,
-      "sessions": [
-        {
-          "id": 209365,
-          "name": "ETL and Data Ingestion Made Easy"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "2033f8a5-e49c-4af0-8646-8a0c92016e12",
-      "firstName": "Vidya",
-      "lastName": "Venugopal",
-      "fullName": "Vidya Venugopal",
-      "bio": "Vidya is a software engineer and the founder of thekafkanerd.io. She has years of experience developing applications for a variety of enterprises. Her area of expertise includes Distributed systems, Enterprise Integration & Event Streaming. She is currently working as a senior developer at Vanguard Australia. ",
-      "tagLine": "Vidya Venugopal - Senior Developer, Vanguard Australia",
-      "profilePicture": "https://sessionize.com/image?f=02fae7494de451139dee45b7c0c9cbbe,400,400,1,0,a5-e49c-4af0-8646-8a0c92016e12.80351cf3-a512-4040-85b2-23616e998e52.jpeg",
-      "sessions": [
-        {
-          "id": 208776,
-          "name": "Ever changing data model - Schema management for the future"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "f4414325-91ed-4cfc-8a56-bb1c3d0ea732",
-      "firstName": "Yana",
-      "lastName": "Segal",
-      "fullName": "Yana Segal",
-      "bio": "Data and ML Engineer at Nielsen, with versatile hands on experience deploying ETLs and ML pipelines using technologies like python and Spark in the cloud environment. Recent enthusiast of Go.",
-      "tagLine": "ML Engineer, Nielsen",
-      "profilePicture": "https://sessionize.com/image?f=0c6a960808f7309bb914b918810ff7b2,400,400,1,0,25-91ed-4cfc-8a56-bb1c3d0ea732.75dd819d-5bac-41e0-b1da-748f858538cb.jpeg",
-      "sessions": [
-        {
-          "id": 208981,
-          "name": "Automating ML pipelines with Kubernetes and Airflow"
-        }
-      ],
-      "links": []
-    }
-  ]
+  {
+    "name": "Zhamak Dehghani",
+    "id": "n/a",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Gian Merlino",
+    "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Aiko Klostermann",
+    "id": "4343a2ee-3117-432d-9508-d3700b604ad9",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Yana Segal",
+    "id": "f4414325-91ed-4cfc-8a56-bb1c3d0ea732",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Robin Moffatt",
+    "id": "e16e10b7-f905-4c95-afb6-6d54a47f577e",
+    "image": "./images/speakers/robbin-moffatt2.jpg"
+  },
+  {
+    "name": "Kerry McRae",
+    "id": "dc869902-a2fa-473f-87a0-4a3743a3c834",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Marta Paes Moreira",
+    "id": "3c1d5f9d-be94-4a27-a238-9d819120ad63",
+    "image": "./images/speakers/marta-paes.jpg"
+  },
+  {
+    "name": "Mike Gouline",
+    "id": "9afb95ea-b792-40aa-9d39-6749ac8bd2e5",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Charles Feddersen",
+    "id": "2eb59e6d-7d9a-41ec-86ea-ceb5c50ab2a5",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Atif Shaikh",
+    "id": "bfbc734c-f565-4fa4-b4ef-8e351b6ec44a",
+    "image": "./images/speakers/atif-shaikh.jpg"
+  },
+  {
+    "name": "Joel Roland",
+    "id": "bb6d379e-e652-441d-917d-df42a5e8173c",
+    "image": "./images/speakers/josh-peak.png"
+  },
+  {
+    "name": "Steve Lee",
+    "id": "bb6d379e-e652-441d-917d-df42a5e8173c",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Vidya Venugopal",
+    "id": "2033f8a5-e49c-4af0-8646-8a0c92016e12",
+    "image": "./images/speakers/vidya-venugopal.jpg"
+  },
+  {
+    "name": "Mike Del Balso",
+    "id": "7c284b9a-23a2-42de-9757-594e6e167ec3",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Sam Harley",
+    "id": "bb4fbc81-d4ee-4fd2-88cd-027d9605d359",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Larene Le Gassick",
+    "id": "99ab0b95-df07-4220-b278-623b75b6b350",
+    "image": "./images/speakers/larene-legassic.JPEG"
+  },
+  {
+    "name": "Louis Lee",
+    "id": "7672660a-5d0f-4d03-933a-70a025dfdf92",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Clive Astbury",
+    "id": "6e87d943-5fd1-46be-9f63-88e3a333ad79",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Caito Scherr",
+    "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
+    "image": "./images/speakers/caito-scherr.jpg"
+  }
+]
