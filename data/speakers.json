@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Zhamak Dehghani",
+    "id": "n/a",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Gian Merlino",
+    "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Aiko Klostermann",
+    "id": "4343a2ee-3117-432d-9508-d3700b604ad9",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Yana Segal",
+    "id": "f4414325-91ed-4cfc-8a56-bb1c3d0ea732",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Robin Moffatt",
+    "id": "e16e10b7-f905-4c95-afb6-6d54a47f577e",
+    "image": "./images/speakers/robbin-moffatt2.jpg"
+  },
+  {
+    "name": "Kerry McRae",
+    "id": "dc869902-a2fa-473f-87a0-4a3743a3c834",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Marta Paes Moreira",
+    "id": "3c1d5f9d-be94-4a27-a238-9d819120ad63",
+    "image": "./images/speakers/marta-paes.jpg"
+  },
+  {
+    "name": "Mike Gouline",
+    "id": "9afb95ea-b792-40aa-9d39-6749ac8bd2e5",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Charles Feddersen",
+    "id": "2eb59e6d-7d9a-41ec-86ea-ceb5c50ab2a5",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Atif Shaikh",
+    "id": "bfbc734c-f565-4fa4-b4ef-8e351b6ec44a",
+    "image": "./images/speakers/atif-shaikh.jpg"
+  },
+  {
+    "name": "Joel Roland",
+    "id": "bb6d379e-e652-441d-917d-df42a5e8173c",
+    "image": "./images/speakers/josh-peak.png"
+  },
+  {
+    "name": "Steve Lee",
+    "id": "bb6d379e-e652-441d-917d-df42a5e8173c",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Vidya Venugopal",
+    "id": "2033f8a5-e49c-4af0-8646-8a0c92016e12",
+    "image": "./images/speakers/vidya-venugopal.jpg"
+  },
+  {
+    "name": "Mike Del Balso",
+    "id": "7c284b9a-23a2-42de-9757-594e6e167ec3",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Sam Harley",
+    "id": "bb4fbc81-d4ee-4fd2-88cd-027d9605d359",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Larene Le Gassick",
+    "id": "99ab0b95-df07-4220-b278-623b75b6b350",
+    "image": "./images/speakers/larene-legassic.JPEG"
+  },
+  {
+    "name": "Louis Lee",
+    "id": "7672660a-5d0f-4d03-933a-70a025dfdf92",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Clive Astbury",
+    "id": "6e87d943-5fd1-46be-9f63-88e3a333ad79",
+    "image": "./images/speakers/download.jpeg"
+  },
+  {
+    "name": "Caito Scherr",
+    "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
+    "image": "./images/speakers/caito-scherr.jpg"
+  }
+]
