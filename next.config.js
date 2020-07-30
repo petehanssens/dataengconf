@@ -1,4 +1,5 @@
 const getPosts = require('./data/profiles.json');
+const getSpeakerPosts = require('./data/speakers.json');
 const withImages = require('next-images')
 module.exports = withImages({
     async exportPathMap(defaultPathMap) {
@@ -12,6 +13,11 @@ module.exports = withImages({
     // now get the dynamic stuff:
     getPosts.map(post => {
       pathMap[`/profile/${post.id}`] = { page: '/profile/[id]' };
+    });
+    return pathMap;
+
+    getSpeakerPosts.map(post => {
+      pathMap[`/profile/${post.id}`] = { page: '/speaker/[id]' };
     });
     return pathMap;
     },
