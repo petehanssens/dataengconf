@@ -1,12 +1,14 @@
 [
   {
     "name": "Zhamak Dehghani",
+    "role": "speaker",
     "id": "zhamak-dehghani",
     "image": "/images/speakers/download.jpeg",
     "link": "/speaker/zhamak-dehghani"
   },
   {
     "name": "Gian Merlino",
+    "role": "speaker",
     "id": "gian-merlino",
     "image": "/images/speakers/download.jpeg",
     "title": "Some Like It Hot",
@@ -15,6 +17,7 @@
   },
   {
     "name": "Aiko Klostermann",
+    "role": "speaker",
     "id": "aiko-klostermann",
     "image": "/images/speakers/download.jpeg",
     "title": "Artificial Intelligence? - more like Artificial Stupsidity!",
@@ -26,6 +29,7 @@
   },
   {
     "name": "Yana Segal",
+    "role": "speaker",
     "id": "yana-segal",
     "image": "/images/speakers/download.jpeg",
     "title": "Automating ML pipelines with Kubernetes and Airflow",
@@ -34,6 +38,7 @@
   },
   {
     "name": "Dom Colyer",
+    "role": "speaker",
     "id": "dom-colyer",
     "image": "/images/speakers/download.jpeg",
     "title": "Building a Code Generated Data Platform",
@@ -45,6 +50,7 @@
   },
   {
     "name": "Robin Moffatt",
+    "role": "speaker",
     "id": "robin-moffatt",
     "image": "/images/speakers/robbin-moffatt2.jpg",
     "title": "🤖Building a Telegram bot with Apache Kafka and ksqlDB",
@@ -53,6 +59,7 @@
   },
   {
     "name": "Kerry McRae",
+    "role": "speaker",
     "id": "kerry-mcRae",
     "image": "/images/speakers/download.jpeg",
     "title": "Building data integration services for real-time on AWS",
@@ -61,6 +68,7 @@
   },
   {
     "name": "Marta Paes Moreira",
+    "role": "speaker",
     "id": "marta-paes-moreira",
     "image": "/images/speakers/marta-paes.jpg",
     "title": "Change Data Capture with Flink SQL and Debezium",
@@ -69,6 +77,7 @@
   },
   {
     "name": "Mike Gouline",
+    "role": "speaker",
     "id": "mike-gouline",
     "image": "/images/speakers/download.jpeg",
     "title": "Data Team as an Optimisation Problem",
@@ -77,6 +86,7 @@
   },
   {
     "name": "Charles Feddersen",
+    "role": "speaker",
     "id": "charles-feddersen",
     "image": "/images/speakers/download.jpeg",
     "title": "Developing end-to-end analytics solutions with the latest Azure Synapse features",
@@ -85,6 +95,7 @@
   },
   {
     "name": "Atif Shaikh",
+    "role": "speaker",
     "id": "atif-shaikh",
     "image": "/images/speakers/atif-shaikh.jpg",
     "title": "Enabling HTAP capabilities in your existing data platform(s)",
@@ -96,6 +107,7 @@
   },
   {
     "name": "Joel Roland",
+    "role": "speaker",
     "id": "joel-roland",
     "image": "./images/speakers/josh-peak.png",
     "title": "ETL and Data Ingestion Made Easy",
@@ -104,6 +116,7 @@
   },
   {
     "name": "Steve Lee",
+    "role": "speaker",
     "id": "steve-lee",
     "image": "./images/speakers/download.jpeg",
     "title": "ETL and Data Ingestion Made Easy",
@@ -112,6 +125,7 @@
   },
   {
     "name": "Vidya Venugopal",
+    "role": "speaker",
     "id": "vidya-venugopal",
     "image": "/images/speakers/vidya-venugopal.jpg",
     "title": "Ever changing data model - Schema management for the future",
@@ -120,6 +134,7 @@
   },
   {
     "name": "Mike Del Balso",
+    "role": "speaker",
     "id": "mike-del-balso",
     "image": "/images/speakers/download.jpeg",
     "title": "Feature Stores",
@@ -128,6 +143,7 @@
   },
   {
     "name": "Sam Harley",
+    "role": "speaker",
     "id": "sam-harley",
     "image": "/images/speakers/download.jpeg",
     "title": "How MongoDB Enables Real-Time Data with Event-Driven Architecture",
@@ -136,6 +152,7 @@
   },
   {
     "name": "Larene Le Gassick",
+    "role": "speaker",
     "id": "larene-le-gassick",
     "image": "/images/speakers/larene-legassic.JPEG",
     "title": "Inclusive Storytelling with Data",
@@ -144,6 +161,7 @@
   },
   {
     "name": "Louis Lee",
+    "role": "speaker",
     "id": "louis-lee",
     "image": "/images/speakers/download.jpeg",
     "title": "Snowflake Cloud Data Platform - Building a Governed Data Lake",
@@ -152,6 +170,7 @@
   },
   {
     "name": "Clive Astbury",
+    "role": "speaker",
     "id": "clive-astbury",
     "image": "/images/speakers/download.jpeg",
     "title": "Snowflake Cloud Data Platform - Building a Governed Data Lake",
@@ -160,6 +179,7 @@
   },
   {
     "name": "Caito Scherr",
+    "role": "speaker",
     "id": "caito-scherr",
     "image": "/images/speakers/caito-scherr.jpg",
     "title": "Sweet Streams are Made of These: data-driven development in stream processing",
