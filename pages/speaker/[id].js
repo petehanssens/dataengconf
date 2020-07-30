@@ -6,7 +6,6 @@ import Layout from '../../components/layout';
 export default function Profile() {
     const router = useRouter()
     const post = posts.find(x => x.id === router.query.id)
-    console.log(post)
     if (!post) return <p></p>
 
     return (
@@ -25,10 +24,10 @@ export default function Profile() {
             <div className="w-full lg:w-2/5 flex">
 							<img src={post.image} className="rounded-full lg:rounded-lg shadow-2xl hidden lg:block" />
 						</div>
-            <p className="pt-8 text-sm">{<post className="image"></post>}</p>
-            <p className="h-4 fill-current text-teal-700 pr-4">{post.title}</p>
+            <br></br>
+            <p className="text-2xl font-bold pt-8 lg:pt-0">{post.title}</p>
 						<p className="pt-8 text-sm">{post.description}</p>
-						<p className="pt-8 text-sm">{post.bio}</p>
+						<p className="pt-8 text-sm">{post.bio} </p>
 						<p className="pt-8 text-sm">{post.tagLine}</p>
 					</div>
 				</div>
