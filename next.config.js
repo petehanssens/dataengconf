@@ -14,10 +14,9 @@ module.exports = withImages({
     getPosts.map(post => {
       pathMap[`/profile/${post.id}`] = { page: '/profile/[id]' };
     });
-    return pathMap;
 
     getSpeakerPosts.map(post => {
-      pathMap[`/profile/${post.id}`] = { page: '/speaker/[id]' };
+      pathMap[`/speaker/${post.id}`] = { page: '/speaker/[id]' };
     });
     return pathMap;
     },
