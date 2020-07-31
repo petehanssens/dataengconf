@@ -12,7 +12,7 @@ export default function Speakers() {
                     .filter(person => person.id != "gian-merlino")
                     .map(speakers => (
                         <a key={speakers.name} href={speakers.link}>
-                        <img src={speakers.image} className="rounded-full h-34 w-34 items-center justify-center" />
+                        <img key={speakers.name} src={speakers.image} className="rounded-full h-34 w-34 items-center justify-center" />
                         </a>
                     ))}
                 </div>
