@@ -2,8 +2,8 @@ import React from 'react';
 import speakerData from "../data/speakers.json";
 
 export default function Speakers() {
-        return (
-            <div>
+    return (
+        <div>
             <p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl">Speakers</p>
             <br></br>
             <div className="flex mb-4">
@@ -17,6 +17,8 @@ export default function Speakers() {
                     ))}
                 </div>
             </div>
+            <br></br>
+            <br></br>
         </div>
     )
 }

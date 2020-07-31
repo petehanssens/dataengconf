@@ -34,6 +34,8 @@ export default function Keynotes() {
                         <img src={gian[0].image} className="rounded-full h-34 w-34 items-center justify-center" />
                     </div>
                 </div>
+                <br></br>
+                <br></br>
             </div>
     )
 }

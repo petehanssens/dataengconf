@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="w-1/3 h-12">
                     <img style={{minHeight:'100px', paddingTop: '0px'}} className="header-image pt-0 " alt="header image"/>
                 </div>
-                <div className="w-1/3 h-12 px-16">
+                <div className="w-1/3 h-12 md:px-16 lg:px-16 xl:px-16">
                     <p className='text-l font-bold pb-5'>Contact Us</p>
                     <a href='https://www.linkedin.com/company/dataengconfau/about/'>LinkedIn</a><br/>
                     <a href='https://twitter.com/dataengconfau'>Twitter</a><br/>
