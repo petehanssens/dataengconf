@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 function Layout ({ children }) {
-  
+
     return (
         <>
             <Head>
@@ -15,17 +15,17 @@ function Layout ({ children }) {
                 <meta name="description" content="DataEngBytes, a community conference hosted on the 20th to the 21st of August!" />
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="DataEngBytes" />
-                <meta property="og:url" content="https://dataengconf.com.au" />  
-                <meta name="twitter:card" content="summary" /> 
+                <meta property="og:url" content="https://dataengconf.com.au" />
+                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="DataEngBytes" />
                 <meta name="twitter:site" content="https://dataengconf.com.au" />
                 <meta name="twitter:creator" content="DataEngConfAU" />
                 <link rel="icon" type="image/png" href="/public/favicon.ico" />
                 <link rel="apple-touch-icon" href="/public/favicon.ico" />
                 <link rel="stylesheet" href="" />
-                <meta property="og:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />  
-                <meta name="twitter:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />  
-                <script type="text/javascript" src="./navToggle.js"></script> 
+                <meta property="og:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
+                <meta name="twitter:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
+                {/* <script type="text/javascript" src="./navToggle.js"></script>  */}
             </Head>
         <Navbar />
             <body  className="">

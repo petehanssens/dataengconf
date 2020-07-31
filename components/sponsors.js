@@ -4,7 +4,7 @@ import sponsorData from "../data/sponsors.json";
 export default function Sponsors() {
         return (
             <div>
-            <p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl">Sponsors</p>
+            <p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl py-12">Sponsors</p>
             <p className="text-2xl">A huge thank you to our awesome sponsors & partners.</p>
 
             <div className="flex mb-4">

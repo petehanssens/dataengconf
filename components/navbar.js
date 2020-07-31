@@ -20,6 +20,13 @@ export default function Navbar() {
 
 <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
   <ul className="list-reset lg:flex justify-end flex-1 items-center">
+   <li className="mr-3">
+      <Link href="/speakers">
+      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+          Speakers
+      </p>
+      </Link>
+    </li>
     <li className="mr-3">
       <Link href="/organisers">
       <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">

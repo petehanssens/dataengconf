@@ -1,399 +1,188 @@
 [
-    {
-      "id": "4343a2ee-3117-432d-9508-d3700b604ad9",
-      "firstName": "Aiko",
-      "lastName": "Klostermann",
-      "fullName": "Aiko Klostermann",
-      "bio": "Aiko works as a consultant and developer for ThoughtWorks.\r\nHe is passionate about data science, software craftsmanship, clean code, and infrastructure engineering. While working with clients he focusses on improving the development process and code quality of the teams he's working with.\r\n\r\nNowadays working in Singapore, Aiko has previously worked with clients in Germany, the UK and India as well. He leveraged Artificial Intelligence to help clients gain a competitive advantage. Recently his focus moved onto infrastructure development for building (data) platforms to better enable client teams.",
-      "tagLine": "Technology Consultant, Problemsolver & Troublemaker @ Thoughtworks",
-      "profilePicture": "https://sessionize.com/image?f=ad960dee0642bfe0c0047ace367d60ce,400,400,1,0,ee-3117-432d-9508-d3700b604ad9.0bf675fa-8bcc-4730-8966-84bfcb573bc3.png",
-      "sessions": [
-        {
-          "id": 204103,
-          "name": "Artificial Intelligence? - more like Artificial Stupidity!"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/@AikoPath",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "Company Website",
-          "url": "http://thoughtworks.com/",
-          "linkType": "Company_Website"
-        }
-      ]
-    },
-    {
-      "id": "bfbc734c-f565-4fa4-b4ef-8e351b6ec44a",
-      "firstName": "Atif",
-      "lastName": "Shaikh",
-      "fullName": "Atif Shaikh",
-      "bio": "Atif is an independent consultant specialising in DataOps and data literacy (change management) programs. He has 15+ years of experience across BI, analytics, data engineering and data science roles with a mix of both startups and more mature organisations across 4 continents.",
-      "tagLine": "Principal at Datamantiq",
-      "profilePicture": "https://sessionize.com/image?f=ec999ae763c27cb160239746b5eb845c,400,400,1,0,4c-f565-4fa4-b4ef-8e351b6ec44a.8d7fe385-a27b-4284-9064-8e38c13bf9b9.png",
-      "sessions": [
-        {
-          "id": 208606,
-          "name": "Enabling HTAP capabilities in your existing data platform(s)"
-        }
-      ],
-      "links": [
-        {
-          "title": "LinkedIn",
-          "url": "http://linkedin.com/in/atifabdulrahman",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
-      "firstName": "Caito",
-      "lastName": "Scherr",
-      "fullName": "Caito Scherr",
-      "bio": "Caito is a software engineer in Portland, Oregon who most recently worked on New Relic's main stream processing team. She has presented about this work at various meetups and conferences (in the US and Europe). Outside of tech, she loves running, woodworking, and terrible puns.",
-      "tagLine": "Data Analytics, Stream Processing, and Terrible Puns",
-      "profilePicture": "https://sessionize.com/image?f=1669514533dc7bd88b62070a0209e741,400,400,1,0,32-a8aa-40f1-8c81-31d3421bd4e3.8068cff4-47c2-4cbb-b668-613e985e3eb6.jpg",
-      "sessions": [
-        {
-          "id": 208129,
-          "name": "Sweet Streams are Made of These: data-driven development in stream processing"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/caito_200_OK",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/caito-scherr-80aa09b6/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "265207de-63cd-4903-bad1-0d937931ae49",
-      "firstName": "Dom",
-      "lastName": "Colyer",
-      "fullName": "Dom Colyer",
-      "bio": "A passionate cloud data architect I love optimising things with automation and code generation.",
-      "tagLine": "Sales Engineer, Fivetran ",
-      "profilePicture": "https://sessionize.com/image?f=7cb062f39efdb4a44633f82f3aaa15a2,400,400,1,0,71f06977-ef55-4b79-95ca-87719e03906e.jpg",
-      "sessions": [
-        {
-          "id": 208214,
-          "name": "Building a Code Generated Data Platform"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "2eb59e6d-7d9a-41ec-86ea-ceb5c50ab2a5",
-      "firstName": "Frederico",
-      "lastName": "Pravatta Rezende",
-      "fullName": "Frederico Pravatta Rezende",
-      "bio": "Charles is a Global Program Manager in the Azure Synapse engineering team. He has been working on distributed analytics systems for over a decade to enable customers to developer highly scalable solutions to unlock new insights from disparate datasets. ",
-      "tagLine": "Global Program Manager",
-      "profilePicture": "https://sessionize.com/image?f=9a073bba837d1ea314e1f975c2210f77,400,400,1,0,6d-7d9a-41ec-86ea-ceb5c50ab2a5.88d821e7-8d9e-4a21-adce-cf432bd58472.jpg",
-      "sessions": [
-        {
-          "id": 209802,
-          "name": "Developing end-to-end analytics solutions with the latest Azure Synapse features"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
-      "firstName": "Gian",
-      "lastName": "Merlino",
-      "fullName": "Gian Merlino",
-      "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
-      "tagLine": "Co-Founder & CTO",
-      "profilePicture": "https://sessionize.com/image?f=315ed0c9151fdeec316512320b4b3c56,400,400,1,0,4a-1c9b-4c44-b4b0-80e9521509d7.d4759d97-cb44-4411-8ef9-d356d9d5d5d7.png",
-      "sessions": [
-        {
-          "id": 212228,
-          "name": "\"Some Like It Hot\""
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "bb6d379e-e652-441d-917d-df42a5e8173c",
-      "firstName": "Joel",
-      "lastName": "Roland",
-      "fullName": "Joel Roland",
-      "bio": "Joel is an experienced Big Data & Analytics consultant specialising in Big Data, BI, Reporting and Data Warehouse technologies for over 12 years. He has experience in solution design and implementation for many Industries including Manufacturing, Education, Finance, Human Resources plus Sales & Marketing.",
-      "tagLine": "Databricks Solutions Architecture Manager",
-      "profilePicture": "https://sessionize.com/image?f=5ee1a5118fa3f7499e4a3e5b544cdedc,400,400,1,0,9e-e652-441d-917d-df42a5e8173c.fca56a9b-c08c-41db-8e90-70b085d04ced.jpeg",
-      "sessions": [
-        {
-          "id": 209365,
-          "name": "ETL and Data Ingestion Made Easy"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "d7624750-2960-4d38-bede-2860d8b903bf",
-      "firstName": "Josh",
-      "lastName": "Peak",
-      "fullName": "Josh Peak",
-      "bio": "Josh is a seasoned Data Engineer and up and coming Data Scientist from Newcastle. He also co-organises the monthly Hunter Data Analytics meetup so others can share how they really feel about 3D exploding pie charts.",
-      "tagLine": "Data Scientist | Data Engineer",
-      "profilePicture": "https://sessionize.com/image?f=914f33259890fc8a5f6a38d52af2fee7,400,400,1,0,50-2960-4d38-bede-2860d8b903bf.c867d07d-ec7d-40df-a6b6-2d8adfef4ce5.jpg",
-      "sessions": [
-        {
-          "id": 208754,
-          "name": "Gentrification: Renovating Legacy Data Pipelines"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "dc869902-a2fa-473f-87a0-4a3743a3c834",
-      "firstName": "Kerry",
-      "lastName": "McRae",
-      "fullName": "Kerry McRae",
-      "bio": "TBC",
-      "tagLine": "Amazon Web Services, Solutions Architect",
-      "profilePicture": "https://sessionize.com/image?f=2777d81ef648f6ddeefc8ee34879a110,400,400,1,0,02-a2fa-473f-87a0-4a3743a3c834.870f63df-94d6-469e-af10-5f8778a6b1d4.jpg",
-      "sessions": [
-        {
-          "id": 211709,
-          "name": "Building data integration services for real-time on AWS"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "99ab0b95-df07-4220-b278-623b75b6b350",
-      "firstName": "Larene",
-      "lastName": "Le Gassick",
-      "fullName": "Larene Le Gassick",
-      "bio": "Larene is a software engineer at Datalust, creators of Seq centralized logging platform. \r\n\r\nIn 2019, she worked on various software projects that required data visualisation — from live energy usage graphs to data dashboards. Right now, she's helping to build accessibility into Seq — a centralised logging application with live, customisable dashboards and charts.\r\n\r\nHer honours thesis was in gender classification of faces using computer vision and machine learning. She runs Women Who Code Brisbane, and speaks at conferences about accessibility and inclusion.",
-      "tagLine": "Seq Engineer at Datalust",
-      "profilePicture": "https://sessionize.com/image?f=89aec7995d3beaf3006bfdc7a8e070ab,400,400,1,0,95-df07-4220-b278-623b75b6b350.6ad4cb99-cd6c-4e65-b655-0b83e9b86597.png",
-      "sessions": [
-        {
-          "id": 208414,
-          "name": "Inclusive Storytelling with Data"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/LareneLg",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://linkedin.com/in/larene/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "7672660a-5d0f-4d03-933a-70a025dfdf92",
-      "firstName": "Louis",
-      "lastName": "Lee",
-      "fullName": "Louis Lee",
-      "bio": "Louis is passionate about data analytics and associated technologies. He is a member of the Sales Engineering team in Snowflake helping customers to find meaningful insights from vast amount of data that we collect every day. Louis has 20 years of experience in the information technology industry, of which 15 years with Hyperion and Oracle. He has solid experience in software development, consulting and has supported customers across APAC. Louis holds a degree in Computer Science and a Masters in Communication Design from Queensland University of Technology. ",
-      "tagLine": "Senior Sales Engineer",
-      "profilePicture": "https://sessionize.com/image?f=69153997997901dbe95de0e9f407e57c,400,400,1,0,0a-5d0f-4d03-933a-70a025dfdf92.4f32ef3e-ffe8-4136-8d40-5483d5e64d83.jpeg",
-      "sessions": [
-        {
-          "id": 208968,
-          "name": "Snowflake Cloud Data Platform - Building a Governed Data Lake"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "3c1d5f9d-be94-4a27-a238-9d819120ad63",
-      "firstName": "Marta",
-      "lastName": "Paes Moreira",
-      "fullName": "Marta Paes Moreira",
-      "bio": "Marta is a Developer Advocate at Ververica (formerly data Artisans) and a contributor to Apache Flink. After finding her mojo in open source, she is committed to making sense of Data Engineering through the eyes of those using its by-products. Marta holds a Master’s in Biomedical Engineering, where she developed a particular taste for multi-dimensional data visualization, and previously worked as a Data Warehouse Engineer at Zalando and Accenture.",
-      "tagLine": "Developer Advocate @ Ververica",
-      "profilePicture": "https://sessionize.com/image?f=91974c195b991d4e264092c32379d768,400,400,1,0,9e90e42e-3451-4cd8-a3a7-9f61a9f7e66d.jpg",
-      "sessions": [
-        {
-          "id": 208978,
-          "name": "Change Data Capture with Flink SQL and Debezium"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/morsapaes",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/marta-paes-moreira-10722988/",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://www.ververica.com/",
-          "linkType": "Company_Website"
-        }
-      ]
-    },
-    {
-      "id": "6e87d943-5fd1-46be-9f63-88e3a333ad79",
-      "firstName": "Meg",
-      "lastName": "Wiseman",
-      "fullName": "Meg Wiseman",
-      "bio": "N/A",
-      "tagLine": "N/A",
-      "profilePicture": "https://sessionize.com/image?f=b064d506cfa2db4ebb568856fccb9b23,400,400,1,0,c0c0c7d4-954b-4575-b19c-a9032978bf91.jpg",
-      "sessions": [
-        {
-          "id": 208968,
-          "name": "Snowflake Cloud Data Platform - Building a Governed Data Lake"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "7c284b9a-23a2-42de-9757-594e6e167ec3",
-      "firstName": "Mike",
-      "lastName": "Del Balso",
-      "fullName": "Mike Del Balso",
-      "bio": "Mike Del Balso is the co-founder of Tecton.ai, where he is focused on building next-generation data infrastructure for Operational ML. Before Tecton.ai, Mike was the PM lead for the Uber Michelangelo ML platform. He was also a product manager at Google where he managed the core ML systems that power Google’s Search Ads business. Previous to that, he worked on Google Maps. He holds a BSc in Electrical and Computer Engineering summa cum laude from the University of Toronto.",
-      "tagLine": "Co-Founder & CEO, Tecton.ai",
-      "profilePicture": "https://sessionize.com/image?f=2cb526d54b32b7d9ebbecd737703dfff,400,400,1,0,52022559-8a35-4bfa-8721-cf31a578da9d.jpg",
-      "sessions": [
-        {
-          "id": 212221,
-          "name": "Feature Stores"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "9afb95ea-b792-40aa-9d39-6749ac8bd2e5",
-      "firstName": "Mike",
-      "lastName": "Gouline",
-      "fullName": "Mike Gouline",
-      "bio": "Software engineer with over 10 years of industry experience. Moving around between enterprise and startups, mobile and backend, one \"pivot\" later I landed in data. Currently leading the data practice at Assembly Payments in Sydney, building out the platform from scratch and educating the company about what \"data\" really means.",
-      "tagLine": "Lead Data Engineer at Assembly Payments",
-      "profilePicture": "https://sessionize.com/image?f=fd73c7803f2b4d218d60a3034646ba2f,400,400,1,0,ea-b792-40aa-9d39-6749ac8bd2e5.6a1c1d8e-c876-4627-8336-a620be2cb567.jpg",
-      "sessions": [
-        {
-          "id": 206381,
-          "name": "Data Team as an Optimisation Problem"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/mikestruct",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/gouline/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "e16e10b7-f905-4c95-afb6-6d54a47f577e",
-      "firstName": "Robin",
-      "lastName": "Moffatt",
-      "fullName": "Robin Moffatt",
-      "bio": "Robin is a Senior Developer Advocate at Confluent, the company founded by the original creators of Apache Kafka, as well as an Oracle Groundbreaker Ambassador and ACE Director (Alumnus). His career has always involved data, from the old worlds of COBOL and DB2, through the worlds of Oracle and Hadoop, and into the current world with Kafka. His particular interests are analytics, systems architecture, performance testing and optimization. He blogs at http://cnfl.io/rmoff and http://rmoff.net/ (and previously http://ritt.md/rmoff) and can be found tweeting grumpy geek thoughts as @rmoff. Outside of work he enjoys drinking good beer and eating fried breakfasts, although generally not at the same time. ",
-      "tagLine": "Developer Advocate, Confluent",
-      "profilePicture": "https://sessionize.com/image?f=b01217d054e21ac522f67f7d23490b0c,400,400,1,0,b7-f905-4c95-afb6-6d54a47f577e.c574b967-d842-46db-814a-f8462f6628a0.jpg",
-      "sessions": [
-        {
-          "id": 207126,
-          "name": "🤖Building a Telegram bot with Apache Kafka and ksqlDB"
-        }
-      ],
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/rmoff/",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/robinmoffatt/",
-          "linkType": "LinkedIn"
-        }
-      ]
-    },
-    {
-      "id": "bb4fbc81-d4ee-4fd2-88cd-027d9605d359",
-      "firstName": "Sam",
-      "lastName": "Harley",
-      "fullName": "Sam Harley",
-      "bio": "Sam is a Senior Solutions Architect with MongoDB and is based in Sydney. Sam has worked in the IT industry for fifteen years and is recognised as a trusted advisor to customers throughout Australia, providing best-practice advice to assist in designing and building reliable and scalable solutions using MongoDB.",
-      "tagLine": "Senior Solutions Architect, MongoDB",
-      "profilePicture": "https://sessionize.com/image?f=ff7844e04899bca2f55aa3d86abcdc55,400,400,1,0,662fd3bc-9e3b-4a67-af48-c83e25dc1ef7.jpg",
-      "sessions": [
-        {
-          "id": 211140,
-          "name": "How MongoDB Enables Real-Time Data with Event-Driven Architecture"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "008222ac-89ac-4c2e-aa51-2c29688481d6",
-      "firstName": "Steve",
-      "lastName": "Lee",
-      "fullName": "Steve Lee",
-      "bio": "TBC",
-      "tagLine": "TBC",
-      "profilePicture": null,
-      "sessions": [
-        {
-          "id": 209365,
-          "name": "ETL and Data Ingestion Made Easy"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "2033f8a5-e49c-4af0-8646-8a0c92016e12",
-      "firstName": "Vidya",
-      "lastName": "Venugopal",
-      "fullName": "Vidya Venugopal",
-      "bio": "Vidya is a software engineer and the founder of thekafkanerd.io. She has years of experience developing applications for a variety of enterprises. Her area of expertise includes Distributed systems, Enterprise Integration & Event Streaming. She is currently working as a senior developer at Vanguard Australia. ",
-      "tagLine": "Vidya Venugopal - Senior Developer, Vanguard Australia",
-      "profilePicture": "https://sessionize.com/image?f=02fae7494de451139dee45b7c0c9cbbe,400,400,1,0,a5-e49c-4af0-8646-8a0c92016e12.80351cf3-a512-4040-85b2-23616e998e52.jpeg",
-      "sessions": [
-        {
-          "id": 208776,
-          "name": "Ever changing data model - Schema management for the future"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "f4414325-91ed-4cfc-8a56-bb1c3d0ea732",
-      "firstName": "Yana",
-      "lastName": "Segal",
-      "fullName": "Yana Segal",
-      "bio": "Data and ML Engineer at Nielsen, with versatile hands on experience deploying ETLs and ML pipelines using technologies like python and Spark in the cloud environment. Recent enthusiast of Go.",
-      "tagLine": "ML Engineer, Nielsen",
-      "profilePicture": "https://sessionize.com/image?f=0c6a960808f7309bb914b918810ff7b2,400,400,1,0,25-91ed-4cfc-8a56-bb1c3d0ea732.75dd819d-5bac-41e0-b1da-748f858538cb.jpeg",
-      "sessions": [
-        {
-          "id": 208981,
-          "name": "Automating ML pipelines with Kubernetes and Airflow"
-        }
-      ],
-      "links": []
-    }
-  ]
+  {
+    "name": "Zhamak Dehghani",
+    "role": "speaker",
+    "id": "zhamak-dehghani",
+    "image": "/images/speakers/zhamak-dehghani.jpg",
+    "title": "Introduction to Data Mesh: A Paradigm Shift in Data Platform Architecture",
+    "description": "Zhamak Dehghani introduces Data Mesh, the next generation analytical data platform, that shifts to a paradigm drawing from modern distributed architecture considering domains as the first class concern, applying platform thinking to create self-serve data infrastructure, and treating data as a product. Zhamak compares data mesh to the prior big data analytics architectures, and provides some insights into how to implement this architecture in your organization.",
+    "bio": "Zhamak Dehghani is the director of emerging technologies at ThoughtWorks North America and a member of various tech advisory boards. Her focus is on technologies and architectures that by nature decentralize decision making and ultimately power. Her recent work involves applying distributed computing principles to big data management and decentralized digital identity to build in security in distributed systems.",
+    "tagLine": "Director of emerging technologies - ThoughtWorks North America",
+    "link": "/speaker/zhamak-dehghani"
+  },
+  {
+    "name": "Gian Merlino",
+    "role": "speaker",
+    "id": "gian-merlino",
+    "image": "/images/speakers/Gian_Merlino.png",
+    "title": "Some Like It Hot",
+    "description": "Today's world has no shortage of systems that claim to help with analysis of large amounts of data. Under the hood, today's popular systems have a variety of interesting and unique architectures. In this talk, we'll reflect on why you can never seem to find that single perfect system, and how to think about their capabilities on a spectrum.",
+    "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
+    "link": "/speaker/gian-merlino"
+  },
+  {
+    "name": "Aiko Klostermann",
+    "role": "speaker",
+    "id": "aiko-klostermann",
+    "image": "/images/speakers/aiko-klostermann.jpg",
+    "title": "Artificial Intelligence? - more like Artificial Stupsidity!",
+    "description": "Nowadays “Artificial Intelligence” is everywhere! And rightly so, it does enable us to do really cool things, things we couldn’t even imagine doing just a decade ago. In fact, it sometimes just feels like magic. This ‘magic’ behind it is often powered by “Machine Learning”. But even “AI” has its limitations.\r\nI’ll show examples where “AI” and ML have failed (sometimes with horrible consequences) and will explain why failures are unavosidable in ML but also mention what we can do to reduce them in the future.\r\nFurthermore, I’ll showcase how current AI implementations discriminate against minorities and how that in some cases even leads to a higher risk of death for those groups.\r\nI’ll cover the bias that humans introduce and I’ll explain how poor choice of data makes our world even more unjust than it already is.\r\n\r\nThe takeaway for the audience: AI can fail and sometimes it has horrible consequences. Why is AI so hard to “do right”? How can we make AI better?",
+    "bio": "Aiko works as a consultant and developer for ThoughtWorks.\r\nHe is passionate about data science, software craftsmanship, clean code, and infrastructure engineering. While working with clients he focusses on improving the development process and code quality of the teams he's working with.\r\n\r\nNowadays working in Singapore, Aiko has previously worked with clients in Germany, the UK and India as well. He leveraged Artificial Intelligence to help clients gain a competitive advantage. Recently his focus moved onto infrastructure development for building (data) platforms to better enable client teams.",
+    "tagLine": "Technology Consultant, Problemsolver & Troublemaker @ Thoughtworks",
+    "speakerPicture": "https://sessionize.com/image?f=ad960dee0642bfe0c0047ace367d60ce,400,400,1,0,ee-3117-432d-9508-d3700b604ad9.0bf675fa-8bcc-4730-8966-84bfcb573bc3.png",
+    "link": "/speaker/aiko-klostermann"
+  },
+  {
+    "name": "Yana Segal",
+    "role": "speaker",
+    "id": "yana-segal",
+    "image": "/images/speakers/Yana_Segal.jpeg",
+    "title": "Automating ML pipelines with Kubernetes and Airflow",
+    "description": "Recently our team has started automating our ML engineering pipelines to move from a tedious, hours long and manual procedure to a state of the art Kubernetes-based automated pipeline that places you one click away from a trained and deployed ML model. \r\nMoving from manual deployment to Kubernetes scalable and versatile environment enabled us to add multiple features that were out of reach in the manual deployment such as autoscaling (ASG), log monitoring (ELK stack) and process visibility (Grafana). Additionally, to automatically trigger our pipeline we used Airflow that produced its own series of advantages and challenges. \r\nWe believe the issues we encountered during the process represent valuables lessons. In this talk, we'll share these lessons with you, to help you in your journey towards automating ML pipelines.  \r\nTopics include:\r\n* Autoscaling in Kubernetes\r\n* Visibility and logging stacks in Kubernetes\r\n* ML pipelines scheduling with Airflow ",
+    "link": "/speaker/yana-segal"
+  },
+  {
+    "name": "Dom Colyer",
+    "role": "speaker",
+    "id": "dom-colyer",
+    "image": "/images/speakers/dom-coyler.jpg",
+    "title": "Building a Code Generated Data Platform",
+    "description": "Speed, Speed, Speed! This talk will explore using tools to dramatically improve the speed of building a data platform.  Fivetran will land the data in Snowflake from disparate sources. Then, using automatic SQL code generation views, tables and tasks will be built to move the data into a designated history area that can service a wside range of analytical use cases.",
+    "bio": "A passionate cloud data architect I love optimising things with automation and code generation.",
+    "tagLine": "Sales Engineer, Fivetran ",
+    "speakerPicture": "https://sessionize.com/image?f=7cb062f39efdb4a44633f82f3aaa15a2,400,400,1,0,71f06977-ef55-4b79-95ca-87719e03906e.jpg",
+    "link": "/speaker/dom-colyer"
+  },
+  {
+    "name": "Robin Moffatt",
+    "role": "speaker",
+    "id": "robin-moffatt",
+    "image": "/images/speakers/robbin-moffatt2.jpg",
+    "title": "🤖Building a Telegram bot with Apache Kafka and ksqlDB",
+    "description": "Imagine you’ve got a stream of data; it’s not “big data,” but it’s certainly a lot. Within the data, you’ve got some bits you’re interested in, and of those bits, you’d like to be able to query information about them at any point. Sounds fun, right? Since I mentioned “querying,” I’d hazard a guess that you’ve got in mind an additional datastore of some sort, whether relational or NoSQL.\r\n\r\nBut what if I told you...that you dsidn’t need any datastore other than Kafka itself? What if you could ingest, filter, enrich, aggregate, and query data with just Kafka? With ksqlDB we can do just this, and I want to show you exactly how.\r\n\r\nIn this hands-on talk we'll walk through an example of building a Telegram bot in which ksqlDB provsides the key/value lookups driven by a materialised view on the stream of events in Kafka. We'll take a look at what ksqlDB is and its capabilities for processing data and driving applications, as well as integrating with other systems. ",
+    "link": "/speaker/robin-moffatt"
+  },
+  {
+    "name": "Kerry McRae",
+    "role": "speaker",
+    "id": "kerry-mcrae",
+    "image": "/images/speakers/kerry_mcrae.jpeg",
+    "title": "Building data integration services for real-time on AWS",
+    "description": "For many use cases timing is critical and the value of data diminishes rapsidly. This means that every micro-second counts. In this session, learn how we provside customers with fully managed streaming options, enabling data to be collected, stored and processed as soon as it is created. Find out how to decside which of the services are best suited to your needs so you can derive insights in seconds or minutes instead of hours or days.",
+    "link": "/speaker/kerry-mcrae"
+  },
+  {
+    "name": "Marta Paes Moreira",
+    "role": "speaker",
+    "id": "marta-paes-moreira",
+    "image": "/images/speakers/marta-paes.jpg",
+    "title": "Change Data Capture with Flink SQL and Debezium",
+    "description": "Change Data Capture (CDC) has become the standard to capture and propagate committed changes from a database to downstream consumers, for example to keep multiple datastores in sync and avosid common pitfalls such as dual writes (remember? \"Friends don't let friends do dual writes\"). \r\n\r\nConsuming these changelogs with Apache Flink used to be a pain, but the latest release (Flink 1.11) introduced not only support for CDC, but support for CDC from the comfort of your SQL couch. In this talk, we'll demo how to use Flink SQL to easily process database changelog data generated with Debezium.",
+    "link": "/speaker/marta-paes-moreira"
+  },
+  {
+    "name": "Mike Gouline",
+    "role": "speaker",
+    "id": "mike-gouline",
+    "image": "/images/speakers/mike-gouline.jpg",
+    "title": "Data Team as an Optimisation Problem",
+    "description": "Many (if not most) companies reach a point when data becomes a priority. This implies building out an internal practice to integrate into existing systems and processes to deliver the sought insights. In a field so wside, relatively recent and infamous for its buzzwords-per-second count, formalising problems and making explainable decisions is the only route that won’t see you run out of resources and people’s patience.\r\n\r\nThis talk explores how we approached this challenge at Assembly armed with lessons from engineering and statistics. We start by defining the optimisation problem formally(-ish) and then applying it to actual decisions faced along the way, including technology selection, ETL, warehousing, visualisation and ML-driven insights.\r\n\r\nThe content is reasonably technical on engineering and architecture topics, but it does not go into actual statistical modelling of the optimisation problem too heavily.",
+    "link": "/speaker/mike-gouline"
+  },
+  {
+    "name": "Charles Feddersen",
+    "role": "speaker",
+    "id": "charles-feddersen",
+    "image": "/images/speakers/charles_feddersen.jpg",
+    "title": "Developing end-to-end analytics solutions with the latest Azure Synapse features",
+    "description": "In this demo-rich session we’ll develop an end-to-end Azure Synapse Analytics solution, a limitless analytics service that brings together enterprise data warehousing and Big Data analytics, that features the latest data integration, big data, and data warehousing capabilities at scale. ",
+    "link": "/speaker/charles-feddersen"
+  },
+  {
+    "name": "Atif Shaikh",
+    "role": "speaker",
+    "id": "atif-shaikh",
+    "image": "/images/speakers/atif-shaikh.jpg",
+    "title": "Enabling HTAP capabilities in your existing data platform(s)",
+    "description": "Hybrsid Transactional-Analytical Processing (HTAP) combines the power of OLTP and OLAP systems and provsides a unified engine for transactions, analytics and AI. \r\n\r\nThis talk will sidentify architectural patterns and technology enablers that you can introduce to your existing (or new) data platform(s) to brsidge some critical gaps between operations of the business and outputs from the data platform(s). \r\n\r\nTakeaway some sideas on how to serve customers ‘in the moment’ of their needs through this capability. ",
+    "bio": "Atif is an independent consultant specialising in DataOps and data literacy (change management) programs. He has 15+ years of experience across BI, analytics, data engineering and data science roles with a mix of both startups and more mature organisations across 4 continents.",
+    "tagLine": "Principal at Datamantiq",
+    "speakerPicture": "https://sessionize.com/image?f=ec999ae763c27cb160239746b5eb845c,400,400,1,0,4c-f565-4fa4-b4ef-8e351b6ec44a.8d7fe385-a27b-4284-9064-8e38c13bf9b9.png",
+    "link": "/speaker/atif-shaikh"
+  },
+  {
+    "name": "Joel Roland",
+    "role": "speaker",
+    "id": "joel-roland",
+    "image": "./images/speakers/joel-roland.JPG",
+    "title": "ETL and Data Ingestion Made Easy",
+    "description": "Organisations have a wealth of information siloed in various data sources. These could vary from databases (Oracle, MySQL, Postgres, etc) to product applications (Salesforce, Marketo, HubSpot, etc). A significant number use cases need data from these diverse data sources to produce meaningful reports and predictions. \r\n\r\nFor many years, organisations tried to centrally collect all their data in the data warehouse but these were not suited or were expensive for handling unstructured data, semi-structured data, and data with high variety, velocity, and volume. It also limited the types of analytics data teams could use; unable to do machine learning or anything more than basic SQL.\r\n\r\nDelta Lake, released and open-sourced by Databricks in 2019, is helping thousands of organisations build central data repositories in an open format much more reliably and efficiently than before. Delta Lake on Databricks provsides ACsid transactions and efficient indexing that is critical for exposing the data for various access patterns, ranging from ad-hoc SQL queries in BI tools, to scheduled ML jobs. \r\n\r\nThis session will provside the one-two step of Data Ingestion & Quality made easy with Databricks, which will feature a guest presenter from Atlassian, who will discuss how they are building a central, reliable and efficient single source of truth for data in an open format for their BI and ML use cases.",
+    "link": "/speaker/joel-roland"
+  },
+  {
+    "name": "Steve Lee",
+    "role": "speaker",
+    "id": "steve-lee",
+    "image": "./images/speakers/steve_lee.jpeg",
+    "title": "ETL and Data Ingestion Made Easy",
+    "description": "Organisations have a wealth of information siloed in various data sources. These could vary from databases (Oracle, MySQL, Postgres, etc) to product applications (Salesforce, Marketo, HubSpot, etc). A significant number use cases need data from these diverse data sources to produce meaningful reports and predictions. \r\n\r\nFor many years, organisations tried to centrally collect all their data in the data warehouse but these were not suited or were expensive for handling unstructured data, semi-structured data, and data with high variety, velocity, and volume. It also limited the types of analytics data teams could use; unable to do machine learning or anything more than basic SQL.\r\n\r\nDelta Lake, released and open-sourced by Databricks in 2019, is helping thousands of organisations build central data repositories in an open format much more reliably and efficiently than before. Delta Lake on Databricks provsides ACsid transactions and efficient indexing that is critical for exposing the data for various access patterns, ranging from ad-hoc SQL queries in BI tools, to scheduled ML jobs. \r\n\r\nThis session will provside the one-two step of Data Ingestion & Quality made easy with Databricks, which will feature a guest presenter from Atlassian, who will discuss how they are building a central, reliable and efficient single source of truth for data in an open format for their BI and ML use cases.",
+    "link": "/speaker/steve-lee"
+  },
+  {
+    "name": "Vidya Venugopal",
+    "role": "speaker",
+    "id": "vidya-venugopal",
+    "image": "/images/speakers/vidya-venugopal.jpg",
+    "title": "Ever changing data model - Schema management for the future",
+    "description": "Schema means different things, depending upon your role in IT. If you are a data analyst, schema relates to tables, or it means REST API Specification for a web developer, or Schema registry if you are using streaming technologies like Kafka. Regardless, Schemas ensure data quality, it helps introduce a contract between parties who want to share data between each other be it developers or applications. \r\n\r\nIn the beginning of the talk, let's compare how schema management has evolved over a period of time. How contracts are established using schemas, how it ensures data quality, how it helps you manage changes within or between organisations. \r\n\r\nFurther, lets particularly focus on Event Streaming.How changes can be managed in the world of fast moving data. Every event in your organisation needs a specification, It is as important as defining a REST API Spec or a Table schema. How to seamlessly manage these changes between your consumers and producers ? And what are the technology options we have? ",
+    "link": "/speaker/vidya-venugopal"
+  },
+  {
+    "name": "Mike Del Balso",
+    "role": "speaker",
+    "id": "mike-del-balso",
+    "image": "/images/speakers/Mike_Del_Balso.jpg",
+    "title": "Feature Stores",
+    "description": "First pioneered in the Michelangelo platform at Uber, Feature Stores have been core components of the ML stacks of some of the largest tech companies for many years. Today, they are emerging as key components of the production ML stack across the industry. In this talk, we introduce the Tecton Feature Store, discuss the problems it solves, and show how Feature Stores solve many of the core data engineering challenges teams face when putting ML into production today.",
+    "link": "/speaker/mike-del-balso"
+  },
+  {
+    "name": "Sam Harley",
+    "role": "speaker",
+    "id": "sam-harley",
+    "image": "/images/speakers/sam_harley.jpeg",
+    "title": "How MongoDB Enables Real-Time Data with Event-Driven Architecture",
+    "description": "Sam Harley, Senior Solutions Architect at MongoDB, will discuss why event-driven architectures are the natural evolution of how the world stores and accesses data, and show how MongoDB can assist in establishing an event-driven architecture using the MongoDB Kafka Connector.",
+    "link": "/speaker/sam-harley"
+  },
+  {
+    "name": "Larene Le Gassick",
+    "role": "speaker",
+    "id": "larene-le-gassick",
+    "image": "/images/speakers/larene-legassic.JPEG",
+    "title": "Inclusive Storytelling with Data",
+    "description": "Ever wondered how to design a bar graph for people who can't see? \r\n\r\nThe truth is, building data visualisations with accessibility in mind makes data more accessible and easier to understand for everyone — not just those with disabilities.\r\n\r\nIn this session, Larene will share a bunch of tips and examples to help you share your awesome data with the world!",
+    "link": "/speaker/larene-le-gassick"
+  },
+  {
+    "name": "Louis Lee",
+    "role": "speaker",
+    "id": "louis-lee",
+    "image": "/images/speakers/louis_lee.jpeg",
+    "title": "Snowflake Cloud Data Platform - Building a Governed Data Lake",
+    "description": "Organisations, regardless of market or mission must manage data, minimise data risk, and meet data-focused regulatory compliance mandates. Snowflake’s cloud data platform from the very beginning - with a multitude of features like encrypting data in transit and at rest, secure views, secure functions, RBAC, continuous data protection etc. - has allowed you to build a well governed data lake. \r\nA Data Lake often also involves bringing data from external parties to complement your enterprise data. That makes data sharing crucial to business operations. Unlike cloud storage and file sharing services, Snowflake Data Sharing enables immediate querying of data in a secure, governed and controlled environment.",
+    "link": "/speaker/louis-lee"
+  },
+  {
+    "name": "Caito Scherr",
+    "role": "speaker",
+    "id": "caito-scherr",
+    "image": "/images/speakers/caito-scherr.jpg",
+    "title": "Sweet Streams are Made of These: data-driven development in stream processing",
+    "description": "How do you use data-driven development tactics to leverage the strengths of stream processing? This talk will cover aspects of data-driven development in the context of building streaming systems, using successes and failures of some real world examples, specifically with Apache Beam and Apache Flink. ",
+    "bio": "Caito is a software engineer in Portland, Oregon who most recently worked on New Relic's main stream processing team. She has presented about this work at various meetups and conferences (in the US and Europe). Outsside of tech, she loves running, woodworking, and terrible puns.",
+    "tagLine": "Data Analytics, Stream Processing, and Terrible Puns",
+    "speakerPicture": "https://sessionize.com/image?f=1669514533dc7bd88b62070a0209e741,400,400,1,0,32-a8aa-40f1-8c81-31d3421bd4e3.8068cff4-47c2-4cbb-b668-613e985e3eb6.jpg",
+    "link": "/speaker/caito-scherr"
+  }
+]
