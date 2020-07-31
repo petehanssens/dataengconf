@@ -4,7 +4,7 @@ const withImages = require('next-images')
 module.exports = withImages({
     async exportPathMap(defaultPathMap) {
     const pathMap = {
-        '/': { page: '/index' },
+        '/': { page: '/' },
         '/code_of_conduct': { page: '/code_of_conduct' },
         '/contact_us': { page: '/contact_us' },
         '/organisers': { page: '/organisers' },
