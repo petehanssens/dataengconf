@@ -24,7 +24,6 @@ function Layout ({ children }) {
                 <link rel="stylesheet" href="" />
                 <meta property="og:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
                 <meta name="twitter:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
-                {/* <script type="text/javascript" src="./navToggle.js"></script>  */}
             </Head>
         <Navbar />
             <body  className="">

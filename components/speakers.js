@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import speakerData from "../data/speakers.json";
 
 export default function Speakers() {

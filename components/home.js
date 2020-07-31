@@ -1,7 +1,7 @@
 import React from 'react';
 import Sponsors from './sponsors';
 import Speakers from './speakers';
-import Keynotes from './keynotes';
+// import Keynotes from './keynotes';
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
                 <br/>
             </div>
 
-            <Keynotes />
+            {/* <Keynotes /> */}
 
             <Speakers  />
 

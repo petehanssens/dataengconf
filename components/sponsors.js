@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import sponsorData from "../data/sponsors.json"; 
 
 export default function Sponsors() {
