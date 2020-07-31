@@ -27,7 +27,7 @@ function Layout ({ children }) {
             </Head>
         <Navbar />
             <body  className="">
-                <main className="w-full container mx-auto p-6">
+                <main className="w-4/5 container mx-auto p-6">
                     {children}
                 </main>
             </body>
