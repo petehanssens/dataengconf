@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sponsors from './sponsors';
 import Sessions from './sessions';
 import Speakers from './speakers';
+import Keynotes from './keynotes';
 
 import { Col, Row } from 'antd';
 
@@ -47,7 +48,15 @@ export default class Home extends Component {
                     </span>
                     <br/>
                 </div>
-                <Row style={{paddingTop:'20px', paddingBottom:'100px'}}>{
+
+                <Keynotes />
+
+                <Speakers  />
+
+                {/* <Sessions /> */}
+                <Sponsors  />
+
+                {/* <Row style={{paddingTop:'20px', paddingBottom:'100px'}}>{
                             themes.map(theme => (
                                 <Col key={theme.subtitle} flex="1 1 250px">
                                     <div className='text-5xl' style={{textAlign:'center', lineHeight: 1}}>{theme.header}</div>
@@ -56,13 +65,7 @@ export default class Home extends Component {
                                     <img src={theme.src} style={{padding:'10px'}}/>
                                 </Col>
                             ))
-                }</Row>
-
-                <Speakers/>
-
-                <Sessions />
-                    {/* <p style={{color: 'rgba(0,0,0,0.65)'}} className="text-4xl">Themes</p> */}
-                <Sponsors/>
+                }</Row> */}
 
             </>
         )
