@@ -24,8 +24,7 @@ export default function Organisers() {
                                     <img src={organiser.Image} alt={organiser.Name} className="w-full object-center rounded-full p-4 content-center justify-center items-center" />
                                 </div>
                                 <div className="mb-8">
-                                    <div className="text-black font-bold text-xl mb-2">{organiser.Name}</div>
-                                        <p className="text-grey-darker text-base">{organiser.Position}</p>
+                                    <p className="text-grey-darker text-base">{organiser.Position}</p>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +47,7 @@ export default function Organisers() {
                                     <img src={committee.Image} alt={committee.Name} className="w-full object-center rounded-full p-4 content-center justify-center items-center" />
                                 </div>
                                 <div className="mb-8">
-                                    <div className="text-black font-bold text-xl mb-2">{committee.Name}</div>
-                                        <p className="text-grey-darker text-base">{committee.Position}</p>
+                                    <p className="text-grey-darker text-base">{committee.Position}</p>
                                 </div>
                             </div>
                         </div>
