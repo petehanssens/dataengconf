@@ -24,7 +24,6 @@ export default function Speakers() {
                                     <img src={speaker.image} alt={speaker.name} className="w-full object-center rounded-full p-4 content-center justify-center items-center" />
                                 </div>
                                 <div className="mb-8">
-                                    {/* <div className="text-black font-bold text-xl mb-2">{speaker.title}</div> */}
                                     <p className="text-grey-darker text-base">{speaker.title}</p>
                                 </div>
                             </div>

@@ -18,6 +18,7 @@
     "title": "Some Like It Hot",
     "description": "Today's world has no shortage of systems that claim to help with analysis of large amounts of data. Under the hood, today's popular systems have a variety of interesting and unique architectures. In this talk, we'll reflect on why you can never seem to find that single perfect system, and how to think about their capabilities on a spectrum.",
     "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
+    "tagLine": "",
     "link": "/speaker/gian-merlino"
   },
   {
@@ -29,7 +30,6 @@
     "description": "Nowadays “Artificial Intelligence” is everywhere! And rightly so, it does enable us to do really cool things, things we couldn’t even imagine doing just a decade ago. In fact, it sometimes just feels like magic. This ‘magic’ behind it is often powered by “Machine Learning”. But even “AI” has its limitations.\r\nI’ll show examples where “AI” and ML have failed (sometimes with horrible consequences) and will explain why failures are unavosidable in ML but also mention what we can do to reduce them in the future.\r\nFurthermore, I’ll showcase how current AI implementations discriminate against minorities and how that in some cases even leads to a higher risk of death for those groups.\r\nI’ll cover the bias that humans introduce and I’ll explain how poor choice of data makes our world even more unjust than it already is.\r\n\r\nThe takeaway for the audience: AI can fail and sometimes it has horrible consequences. Why is AI so hard to “do right”? How can we make AI better?",
     "bio": "Aiko works as a consultant and developer for ThoughtWorks.\r\nHe is passionate about data science, software craftsmanship, clean code, and infrastructure engineering. While working with clients he focusses on improving the development process and code quality of the teams he's working with.\r\n\r\nNowadays working in Singapore, Aiko has previously worked with clients in Germany, the UK and India as well. He leveraged Artificial Intelligence to help clients gain a competitive advantage. Recently his focus moved onto infrastructure development for building (data) platforms to better enable client teams.",
     "tagLine": "Technology Consultant, Problemsolver & Troublemaker @ Thoughtworks",
-    "speakerPicture": "https://sessionize.com/image?f=ad960dee0642bfe0c0047ace367d60ce,400,400,1,0,ee-3117-432d-9508-d3700b604ad9.0bf675fa-8bcc-4730-8966-84bfcb573bc3.png",
     "link": "/speaker/aiko-klostermann"
   },
   {
@@ -39,6 +39,8 @@
     "image": "/images/speakers/Yana_Segal.jpeg",
     "title": "Automating ML pipelines with Kubernetes and Airflow",
     "description": "Recently our team has started automating our ML engineering pipelines to move from a tedious, hours long and manual procedure to a state of the art Kubernetes-based automated pipeline that places you one click away from a trained and deployed ML model. \r\nMoving from manual deployment to Kubernetes scalable and versatile environment enabled us to add multiple features that were out of reach in the manual deployment such as autoscaling (ASG), log monitoring (ELK stack) and process visibility (Grafana). Additionally, to automatically trigger our pipeline we used Airflow that produced its own series of advantages and challenges. \r\nWe believe the issues we encountered during the process represent valuables lessons. In this talk, we'll share these lessons with you, to help you in your journey towards automating ML pipelines.  \r\nTopics include:\r\n* Autoscaling in Kubernetes\r\n* Visibility and logging stacks in Kubernetes\r\n* ML pipelines scheduling with Airflow ",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/yana-segal"
   },
   {
@@ -50,7 +52,6 @@
     "description": "Speed, Speed, Speed! This talk will explore using tools to dramatically improve the speed of building a data platform.  Fivetran will land the data in Snowflake from disparate sources. Then, using automatic SQL code generation views, tables and tasks will be built to move the data into a designated history area that can service a wside range of analytical use cases.",
     "bio": "A passionate cloud data architect I love optimising things with automation and code generation.",
     "tagLine": "Sales Engineer, Fivetran ",
-    "speakerPicture": "https://sessionize.com/image?f=7cb062f39efdb4a44633f82f3aaa15a2,400,400,1,0,71f06977-ef55-4b79-95ca-87719e03906e.jpg",
     "link": "/speaker/dom-colyer"
   },
   {
@@ -60,6 +61,8 @@
     "image": "/images/speakers/robbin-moffatt2.jpg",
     "title": "🤖Building a Telegram bot with Apache Kafka and ksqlDB",
     "description": "Imagine you’ve got a stream of data; it’s not “big data,” but it’s certainly a lot. Within the data, you’ve got some bits you’re interested in, and of those bits, you’d like to be able to query information about them at any point. Sounds fun, right? Since I mentioned “querying,” I’d hazard a guess that you’ve got in mind an additional datastore of some sort, whether relational or NoSQL.\r\n\r\nBut what if I told you...that you dsidn’t need any datastore other than Kafka itself? What if you could ingest, filter, enrich, aggregate, and query data with just Kafka? With ksqlDB we can do just this, and I want to show you exactly how.\r\n\r\nIn this hands-on talk we'll walk through an example of building a Telegram bot in which ksqlDB provsides the key/value lookups driven by a materialised view on the stream of events in Kafka. We'll take a look at what ksqlDB is and its capabilities for processing data and driving applications, as well as integrating with other systems. ",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/robin-moffatt"
   },
   {
@@ -69,6 +72,8 @@
     "image": "/images/speakers/kerry_mcrae.jpeg",
     "title": "Building data integration services for real-time on AWS",
     "description": "For many use cases timing is critical and the value of data diminishes rapsidly. This means that every micro-second counts. In this session, learn how we provside customers with fully managed streaming options, enabling data to be collected, stored and processed as soon as it is created. Find out how to decside which of the services are best suited to your needs so you can derive insights in seconds or minutes instead of hours or days.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/kerry-mcrae"
   },
   {
@@ -78,6 +83,8 @@
     "image": "/images/speakers/marta-paes.jpg",
     "title": "Change Data Capture with Flink SQL and Debezium",
     "description": "Change Data Capture (CDC) has become the standard to capture and propagate committed changes from a database to downstream consumers, for example to keep multiple datastores in sync and avosid common pitfalls such as dual writes (remember? \"Friends don't let friends do dual writes\"). \r\n\r\nConsuming these changelogs with Apache Flink used to be a pain, but the latest release (Flink 1.11) introduced not only support for CDC, but support for CDC from the comfort of your SQL couch. In this talk, we'll demo how to use Flink SQL to easily process database changelog data generated with Debezium.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/marta-paes-moreira"
   },
   {
@@ -87,6 +94,8 @@
     "image": "/images/speakers/mike-gouline.jpg",
     "title": "Data Team as an Optimisation Problem",
     "description": "Many (if not most) companies reach a point when data becomes a priority. This implies building out an internal practice to integrate into existing systems and processes to deliver the sought insights. In a field so wside, relatively recent and infamous for its buzzwords-per-second count, formalising problems and making explainable decisions is the only route that won’t see you run out of resources and people’s patience.\r\n\r\nThis talk explores how we approached this challenge at Assembly armed with lessons from engineering and statistics. We start by defining the optimisation problem formally(-ish) and then applying it to actual decisions faced along the way, including technology selection, ETL, warehousing, visualisation and ML-driven insights.\r\n\r\nThe content is reasonably technical on engineering and architecture topics, but it does not go into actual statistical modelling of the optimisation problem too heavily.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/mike-gouline"
   },
   {
@@ -96,6 +105,8 @@
     "image": "/images/speakers/charles_feddersen.jpg",
     "title": "Developing end-to-end analytics solutions with the latest Azure Synapse features",
     "description": "In this demo-rich session we’ll develop an end-to-end Azure Synapse Analytics solution, a limitless analytics service that brings together enterprise data warehousing and Big Data analytics, that features the latest data integration, big data, and data warehousing capabilities at scale. ",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/charles-feddersen"
   },
   {
@@ -107,7 +118,6 @@
     "description": "Hybrsid Transactional-Analytical Processing (HTAP) combines the power of OLTP and OLAP systems and provsides a unified engine for transactions, analytics and AI. \r\n\r\nThis talk will sidentify architectural patterns and technology enablers that you can introduce to your existing (or new) data platform(s) to brsidge some critical gaps between operations of the business and outputs from the data platform(s). \r\n\r\nTakeaway some sideas on how to serve customers ‘in the moment’ of their needs through this capability. ",
     "bio": "Atif is an independent consultant specialising in DataOps and data literacy (change management) programs. He has 15+ years of experience across BI, analytics, data engineering and data science roles with a mix of both startups and more mature organisations across 4 continents.",
     "tagLine": "Principal at Datamantiq",
-    "speakerPicture": "https://sessionize.com/image?f=ec999ae763c27cb160239746b5eb845c,400,400,1,0,4c-f565-4fa4-b4ef-8e351b6ec44a.8d7fe385-a27b-4284-9064-8e38c13bf9b9.png",
     "link": "/speaker/atif-shaikh"
   },
   {
@@ -117,6 +127,8 @@
     "image": "./images/speakers/joel-roland.JPG",
     "title": "ETL and Data Ingestion Made Easy",
     "description": "Organisations have a wealth of information siloed in various data sources. These could vary from databases (Oracle, MySQL, Postgres, etc) to product applications (Salesforce, Marketo, HubSpot, etc). A significant number use cases need data from these diverse data sources to produce meaningful reports and predictions. \r\n\r\nFor many years, organisations tried to centrally collect all their data in the data warehouse but these were not suited or were expensive for handling unstructured data, semi-structured data, and data with high variety, velocity, and volume. It also limited the types of analytics data teams could use; unable to do machine learning or anything more than basic SQL.\r\n\r\nDelta Lake, released and open-sourced by Databricks in 2019, is helping thousands of organisations build central data repositories in an open format much more reliably and efficiently than before. Delta Lake on Databricks provsides ACsid transactions and efficient indexing that is critical for exposing the data for various access patterns, ranging from ad-hoc SQL queries in BI tools, to scheduled ML jobs. \r\n\r\nThis session will provside the one-two step of Data Ingestion & Quality made easy with Databricks, which will feature a guest presenter from Atlassian, who will discuss how they are building a central, reliable and efficient single source of truth for data in an open format for their BI and ML use cases.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/joel-roland"
   },
   {
@@ -126,6 +138,8 @@
     "image": "./images/speakers/steve_lee.jpeg",
     "title": "ETL and Data Ingestion Made Easy",
     "description": "Organisations have a wealth of information siloed in various data sources. These could vary from databases (Oracle, MySQL, Postgres, etc) to product applications (Salesforce, Marketo, HubSpot, etc). A significant number use cases need data from these diverse data sources to produce meaningful reports and predictions. \r\n\r\nFor many years, organisations tried to centrally collect all their data in the data warehouse but these were not suited or were expensive for handling unstructured data, semi-structured data, and data with high variety, velocity, and volume. It also limited the types of analytics data teams could use; unable to do machine learning or anything more than basic SQL.\r\n\r\nDelta Lake, released and open-sourced by Databricks in 2019, is helping thousands of organisations build central data repositories in an open format much more reliably and efficiently than before. Delta Lake on Databricks provsides ACsid transactions and efficient indexing that is critical for exposing the data for various access patterns, ranging from ad-hoc SQL queries in BI tools, to scheduled ML jobs. \r\n\r\nThis session will provside the one-two step of Data Ingestion & Quality made easy with Databricks, which will feature a guest presenter from Atlassian, who will discuss how they are building a central, reliable and efficient single source of truth for data in an open format for their BI and ML use cases.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/steve-lee"
   },
   {
@@ -135,6 +149,8 @@
     "image": "/images/speakers/vidya-venugopal.jpg",
     "title": "Ever changing data model - Schema management for the future",
     "description": "Schema means different things, depending upon your role in IT. If you are a data analyst, schema relates to tables, or it means REST API Specification for a web developer, or Schema registry if you are using streaming technologies like Kafka. Regardless, Schemas ensure data quality, it helps introduce a contract between parties who want to share data between each other be it developers or applications. \r\n\r\nIn the beginning of the talk, let's compare how schema management has evolved over a period of time. How contracts are established using schemas, how it ensures data quality, how it helps you manage changes within or between organisations. \r\n\r\nFurther, lets particularly focus on Event Streaming.How changes can be managed in the world of fast moving data. Every event in your organisation needs a specification, It is as important as defining a REST API Spec or a Table schema. How to seamlessly manage these changes between your consumers and producers ? And what are the technology options we have? ",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/vidya-venugopal"
   },
   {
@@ -144,6 +160,8 @@
     "image": "/images/speakers/Mike_Del_Balso.jpg",
     "title": "Feature Stores",
     "description": "First pioneered in the Michelangelo platform at Uber, Feature Stores have been core components of the ML stacks of some of the largest tech companies for many years. Today, they are emerging as key components of the production ML stack across the industry. In this talk, we introduce the Tecton Feature Store, discuss the problems it solves, and show how Feature Stores solve many of the core data engineering challenges teams face when putting ML into production today.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/mike-del-balso"
   },
   {
@@ -153,6 +171,8 @@
     "image": "/images/speakers/sam_harley.jpeg",
     "title": "How MongoDB Enables Real-Time Data with Event-Driven Architecture",
     "description": "Sam Harley, Senior Solutions Architect at MongoDB, will discuss why event-driven architectures are the natural evolution of how the world stores and accesses data, and show how MongoDB can assist in establishing an event-driven architecture using the MongoDB Kafka Connector.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/sam-harley"
   },
   {
@@ -162,6 +182,8 @@
     "image": "/images/speakers/larene-legassic.JPEG",
     "title": "Inclusive Storytelling with Data",
     "description": "Ever wondered how to design a bar graph for people who can't see? \r\n\r\nThe truth is, building data visualisations with accessibility in mind makes data more accessible and easier to understand for everyone — not just those with disabilities.\r\n\r\nIn this session, Larene will share a bunch of tips and examples to help you share your awesome data with the world!",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/larene-le-gassick"
   },
   {
@@ -171,6 +193,8 @@
     "image": "/images/speakers/louis_lee.jpeg",
     "title": "Snowflake Cloud Data Platform - Building a Governed Data Lake",
     "description": "Organisations, regardless of market or mission must manage data, minimise data risk, and meet data-focused regulatory compliance mandates. Snowflake’s cloud data platform from the very beginning - with a multitude of features like encrypting data in transit and at rest, secure views, secure functions, RBAC, continuous data protection etc. - has allowed you to build a well governed data lake. \r\nA Data Lake often also involves bringing data from external parties to complement your enterprise data. That makes data sharing crucial to business operations. Unlike cloud storage and file sharing services, Snowflake Data Sharing enables immediate querying of data in a secure, governed and controlled environment.",
+    "bio": "",
+    "tagLine": "",
     "link": "/speaker/louis-lee"
   },
   {
@@ -182,7 +206,6 @@
     "description": "How do you use data-driven development tactics to leverage the strengths of stream processing? This talk will cover aspects of data-driven development in the context of building streaming systems, using successes and failures of some real world examples, specifically with Apache Beam and Apache Flink. ",
     "bio": "Caito is a software engineer in Portland, Oregon who most recently worked on New Relic's main stream processing team. She has presented about this work at various meetups and conferences (in the US and Europe). Outsside of tech, she loves running, woodworking, and terrible puns.",
     "tagLine": "Data Analytics, Stream Processing, and Terrible Puns",
-    "speakerPicture": "https://sessionize.com/image?f=1669514533dc7bd88b62070a0209e741,400,400,1,0,32-a8aa-40f1-8c81-31d3421bd4e3.8068cff4-47c2-4cbb-b668-613e985e3eb6.jpg",
     "link": "/speaker/caito-scherr"
   }
 ]

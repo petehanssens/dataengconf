@@ -8,6 +8,7 @@ module.exports = withImages({
         '/code_of_conduct': { page: '/code_of_conduct' },
         '/contact_us': { page: '/contact_us' },
         '/organisers': { page: '/organisers' },
+        '/speakers': { page: '/speakers' },
       };
 
     // now get the dynamic stuff:
