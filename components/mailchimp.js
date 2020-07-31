@@ -45,7 +45,7 @@ export default class MailChimp extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.showModal} style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>
+        <Button onClick={this.showModal} style={{wordWrap: 'break-word', whiteSpace: 'normal', backgroundColor: '#f0f2f5'}}>
           {this.props.children}
         </Button>
         <Modal

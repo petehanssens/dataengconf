@@ -1,0 +1,161 @@
+{
+    "Day1": [
+        {
+            "StartTime": "14:00",
+            "Duration": "10 mins",
+            "Description": "Welcome",
+            "SpeakerName": "Organisers",
+            "TalkTitle": "Welcome"
+        },
+        {
+            "StartTime": "14:10",
+            "Duration": "40 mins",
+            "Description": "Keynote",
+            "SpeakerName": "Zhamak Dehghani",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "14:50",
+            "Duration": "30 mins",
+            "Description": "Talk 1",
+            "SpeakerName": "Charles Feddersen",
+            "TalkTitle": "Developing end-to-end analytics solutions with the latest Azure Synapse features"
+        },
+        {
+            "StartTime": "15:20",
+            "Duration": "30 mins",
+            "Description": "Talk 2",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "15:50",
+            "Duration": "30 mins",
+            "Description": "Talk 3",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "16:20",
+            "Duration": "30 mins",
+            "Description": "Talk 4",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "16:50",
+            "Duration": "30 mins",
+            "Description": "Talk 5",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "17:20",
+            "Duration": "30 mins",
+            "Description": "Talk 6",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "17:50",
+            "Duration": "30 mins",
+            "Description": "Talk 7",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "18:20",
+            "Duration": "30 mins",
+            "Description": "Talk 8",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "18:50",
+            "Duration": "30 mins",
+            "Description": "Session close",
+            "SpeakerName": "Organisers",
+            "TalkTitle": "Session close"
+        }
+    ],
+    "Day2": [
+
+        {
+            "StartTime": "09:00",
+            "Duration": "10 mins",
+            "Description": "Session welcome",
+            "SpeakerName": "Organisers",
+            "TalkTitle": "Session welcome"
+        },
+        {
+            "StartTime": "09:10",
+            "Duration": "40 mins",
+            "Description": "Keynote",
+            "SpeakerName": "Gian Merlino",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "09:50",
+            "Duration": "30 mins",
+            "Description": "Talk 9",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "10:20",
+            "Duration": "30 mins",
+            "Description": "Talk 10",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "10:50",
+            "Duration": "30 mins",
+            "Description": "Talk 11",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "11:20",
+            "Duration": "30 mins",
+            "Description": "Talk 12",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "11:50",
+            "Duration": "30 mins",
+            "Description": "Talk 13",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "12:20",
+            "Duration": "30 mins",
+            "Description": "Talk 14",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "12:50",
+            "Duration": "30 mins",
+            "Description": "Talk 15",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "13:20",
+            "Duration": "30 mins",
+            "Description": "Talk 16",
+            "SpeakerName": "",
+            "TalkTitle": ""
+        },
+        {
+            "StartTime": "13:50",
+            "Duration": "10 mins",
+            "Description": "Conference close",
+            "SpeakerName": "Organisers",
+            "TalkTitle": "Conference close"
+        }
+    ]
+}

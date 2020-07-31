@@ -1,34 +1,29 @@
 import React, { Component } from 'react';
-import { Row, Col, Button } from 'antd';
-import MailChimp from './mailchimp'
+import MailChimp from './mailchimp';
 
-export default class FooterClass extends Component {
-    constructor(props) {
-        super(props);
-    }
 
-    render() {
-        return (
-        <Row>
-            <Col span={8}>
-                <img style={{maxHeight:'100px', paddingTop: '0px'}} className="header-image"/>
-                {/* <img style= src="./images/logos/dataeng/bytes_banner.svg"/> */}
-            </Col>
-            <Col span={8} style={{display: 'block'}}>
-                <p className='text-l font-bold' style={{paddingBottom:'5px'}}>Contact Us</p>
-                <Button href='https://www.linkedin.com/company/dataengconfau/about/' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>LinkedIn</Button><br/>
-                <Button href='https://twitter.com/dataengconfau' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Twitter</Button><br/>
-                <Button href='mailto:sydney@dataengconf.com.au?Subject=DataEngConf' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Email</Button>
-            </Col>
-            <Col span={8}>
-                <p className='text-l font-bold' style={{paddingBottom:'5px'}}>Event</p>
-                <Button href="https://sessionize.com/dataengbytes" style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Call For Papers</Button><br/>
-                <Button href='https://buytickets.at/dataengbytes' style={{wordWrap: 'break-word', whiteSpace: 'normal'}}>Tickets</Button><br/>
-                <MailChimp>Register Your Interest</MailChimp>
-            </Col>
-        </Row>
-        )
-    }
+export default function Footer() {
+    return (
+        <div className="ant-page-header h-48">
+            <div className="flex mb-4 p-4">
+                <div className="w-1/3 h-12">
+                    <img style={{minHeight:'100px', paddingTop: '0px'}} className="header-image pt-0 " alt="header image"/>
+                </div>
+                <div className="w-1/3 h-12 md:px-16 lg:px-16 xl:px-16">
+                    <p className='text-l font-bold pb-5'>Contact Us</p>
+                    <a href='https://www.linkedin.com/company/dataengconfau/about/'>LinkedIn</a><br/>
+                    <a href='https://twitter.com/dataengconfau'>Twitter</a><br/>
+                    <a href='mailto:sydney@dataengconf.com.au?Subject=DataEngConf'>Email</a>
+                </div>
+                <div className="w-1/3 h-12">
+                    <p className='text-l font-bold pb-5'>Event</p>
+                    <a href='https://buytickets.at/dataengbytes'>Tickets</a><br/>
+                    <a href="https://www.youtube.com/channel/UCteq_tbr6F-KZ0JhaY9fy0g">Youtube</a><br/>
+                    <a href="https://www.twitch.tv/dataengau">Twitch</a><br/>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 
