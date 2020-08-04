@@ -26,11 +26,11 @@ function Layout ({ children }) {
                 <meta name="twitter:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
             </Head>
         <Navbar />
-            <body  className="">
+            <div  className="">
                 <main className="w-4/5 container mx-auto p-6">
                     {children}
                 </main>
-            </body>
+            </div>
         <FooterClass />
         </>
     )
