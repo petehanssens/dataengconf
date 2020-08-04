@@ -19,8 +19,8 @@ function Layout ({ children }) {
                 <meta name="twitter:title" content="DataEngBytes" />
                 <meta name="twitter:site" content="https://dataengconf.com.au" />
                 <meta name="twitter:creator" content="DataEngConfAU" />
-                <link rel="icon" type="image/png" href="/public/favicon.ico" />
-                <link rel="apple-touch-icon" href="/public/favicon.ico" />
+                <link rel="icon" type="image/png" href="/favicon.ico" />
+                <link rel="apple-touch-icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="" />
                 <meta property="og:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
                 <meta name="twitter:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
