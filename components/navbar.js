@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -6,7 +6,6 @@ export default function Navbar() {
     document.getElementById("nav-content").classList.toggle("hidden");
   }
 
-  const [isNavOpen, setIsNavOpen] = useState(false)
   return (
 <nav className="flex items-center justify-between flex-wrap bg-grey-darkest p-6  w-full z-10 pin-t  site-page-header-ghost-wrapper">
 <div className="flex items-center flex-no-shrink text-white mr-6  p-6">
@@ -17,9 +16,9 @@ export default function Navbar() {
 
 <div className="block lg:hidden p-6">
   <button id="nav-toggle" className="flex items-center px-3 py-2 rounded text-grey border-grey-dark hover:text-white hover:border-white"
-  onClick={() => setIsNavOpen()}
+  onClick={toggle}
   >
-    <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><aath d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
   </button>
 </div>
 
@@ -27,37 +26,47 @@ export default function Navbar() {
   <ul className="list-reset lg:flex justify-end flex-1 items-center">
    <li className="mr-3">
       <Link href="/speakers">
-      <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+      <p>
+        <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
           Speakers
-      </a>
+        </a>
+      </p>
       </Link>
     </li>
     <li className="mr-3">
       <Link href="/organisers">
-      <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+      <p>
+        <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
           Organisers
-      </a>
+        </a>
+      </p>
       </Link>
     </li>
     <li className="mr-3">
       <Link href="/code_of_conduct">
-      <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+      <p>
+        <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
           Code of Conduct
-      </a>
+        </a>
+      </p>
       </Link>
     </li>
     <li className="mr-3">
       <Link href="/contact_us">
-      <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+      <p>
+        <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
           Contact Us
-      </a>
+        </a>
+      </p>
       </Link>
     </li>
     <li className="mr-3">
       <div className="pl-3">
-        <a href="https://buytickets.at/dataengbytes" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
+        <p>
+          <a href="https://buytickets.at/dataengbytes" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
             Tickets
-        </a>
+          </a>
+        </p>
       </div>
     </li>
   </ul>
