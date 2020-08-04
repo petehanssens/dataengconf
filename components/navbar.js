@@ -49,7 +49,7 @@ export default function Navbar() {
       </Link>
     </li>
     <li className="mr-3">
-      <a href="https://buytickets.at/dataengbytes" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
+      <a href="https://www.tickettailor.com/events/dataengbytes/377480/" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
           Tickets
       </a>
     </li>
