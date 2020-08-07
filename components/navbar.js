@@ -27,36 +27,46 @@ export default function Navbar() {
   <ul className="list-reset lg:flex justify-end flex-1 items-center">
    <li className="mr-3">
       <Link href="/speakers">
-      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
-          Speakers
+      <p >
+        <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+        Speakers
+        </a>
       </p>
       </Link>
     </li>
     <li className="mr-3">
       <Link href="/organisers">
-      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
-          Organisers
+      <p >
+        <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+        Organisers
+        </a>
       </p>
       </Link>
     </li>
     <li className="mr-3">
       <Link href="/code_of_conduct">
-      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+      <p >
+          <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
           Code of Conduct
+          </a>
       </p>
       </Link>
     </li>
     <li className="mr-3">
       <Link href="/contact_us">
-      <p className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
-          Contact Us
+      <p >
+        <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
+        Contact Us
+        </a>
       </p>
       </Link>
     </li>
     <li className="mr-3">
-      <a href="https://www.tickettailor.com/events/dataengbytes/377480/" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
-          Tickets
-      </a>
+      <p className="pl-3">
+        <a href="https://www.tickettailor.com/events/dataengbytes/377480/" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
+            Tickets
+        </a>
+      </p>
     </li>
   </ul>
 </div>
