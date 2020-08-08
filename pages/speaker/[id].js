@@ -19,6 +19,7 @@ export default function Profile() {
 							}}
 						></div>
 						<h1 className="text-3xl font-bold pt-8 lg:pt-0">{post.name}</h1>
+						<p className="text-sm">{post.tagLine}</p>
 						<div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 						<br></br>
 						<div className="lg:grid lg:grid-cols-2">
@@ -26,11 +27,10 @@ export default function Profile() {
 								<img src={post.image} className="rounded-full lg:rounded-lg shadow-2xl hidden lg:block" />
 							</div>
 							<div>
+								<p className="text-sm">{post.bio} </p>
 								<br></br>
-								<p className="text-2xl font-bold pt-8 lg:pt-0">{post.title}</p>
-								<p className="pt-8 text-sm">{post.description}</p>
-								<p className="pt-8 text-sm">{post.bio} </p>
-								<p className="pt-8 text-sm">{post.tagLine}</p>
+								<p className="text-xl font-bold pt-8 lg:pt-0">{post.title}</p>
+								<p className="text-sm">{post.description}</p>
 							</div>
 						</div>
 					</div>
