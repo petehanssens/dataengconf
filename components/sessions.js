@@ -1,5 +1,7 @@
 import React from "react";
+import Link from "next/link";
 import sessionData from "../data/conference-timing.json";
+import speakerData from "../data/speakers.json"
 
 export default function Sessions() {
   return (
@@ -14,9 +16,13 @@ export default function Sessions() {
           .filter((session) => session.day != "Friday")
           .map((session) => (
             <div className="w-400 -mx-2 px-4">
-              <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-xl">
-                {session.start_time_aest} :{" "}
-                {session.speaker_name || "DataEngBytes team"}
+              <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-lg"
+
+              >
+                <strong>{session.start_time_aest}:</strong> {" "}
+                <Link href={'speaker/'+session.link} >
+                  <a>{session.speaker_name || "DataEngBytes team"}</a>
+                </Link>
               </div>
             </div>
           ))}
@@ -31,9 +37,11 @@ export default function Sessions() {
           .filter((session) => session.day != "Thursday")
           .map((session) => (
             <div className="w-400 -mx-2 px-4">
-              <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-xl">
-                {session.start_time_aest} :{" "}
-                {session.speaker_name || "DataEngBytes team"}
+              <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-lg">
+                <strong>{session.start_time_aest}:</strong>{" "}
+                <Link href={'speaker/'+session.link} >
+                  <a>{session.speaker_name || "DataEngBytes team"}</a>
+                </Link>
               </div>
             </div>
           ))}

@@ -25,40 +25,32 @@ export default function Navbar() {
 
 <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
   <ul className="list-reset lg:flex justify-end flex-1 items-center">
-   <li className="mr-3">
+   <li className="mr-3" key="speakers">
       <Link href="/speakers">
-      <p >
         <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
         Speakers
         </a>
-      </p>
       </Link>
     </li>
-    <li className="mr-3">
+    <li className="mr-3" key="organisers">
       <Link href="/organisers">
-      <p >
         <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
         Organisers
         </a>
-      </p>
       </Link>
     </li>
-    <li className="mr-3">
+    <li className="mr-3" key="code_of_conduct">
       <Link href="/code_of_conduct">
-      <p >
           <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
           Code of Conduct
           </a>
-      </p>
       </Link>
     </li>
-    <li className="mr-3">
+    <li className="mr-3" key="contact_us">
       <Link href="/contact_us">
-      <p >
         <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
         Contact Us
         </a>
-      </p>
       </Link>
     </li>
     <li className="mr-3">
