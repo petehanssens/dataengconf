@@ -1,7 +1,7 @@
 [
   {
     "day": "Thursday",
-    "start_time_aest": "14:00pm",
+    "start_time_aest": "14:00",
     "duration": "0:02",
     "description": "Welcome to country",
     "hosts": "Peter, Simon",
@@ -15,7 +15,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "14:10pm",
+    "start_time_aest": "14:10",
     "duration": "0:40",
     "description": "Keynote",
     "hosts": "Peter, Simon",
@@ -29,7 +29,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "14:50pm",
+    "start_time_aest": "14:50",
     "duration": "0:30",
     "description": "Speaker 1",
     "hosts": "Francisco, Leo",
@@ -43,7 +43,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "15:20pm",
+    "start_time_aest": "15:20",
     "duration": "0:30",
     "description": "Speaker 2",
     "hosts": "Francisco, Leo",
@@ -57,7 +57,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "15:50pm",
+    "start_time_aest": "15:50",
     "duration": "0:30",
     "description": "Speaker 3",
     "hosts": "Francisco, Leo",
@@ -71,7 +71,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "16:20pm",
+    "start_time_aest": "16:20",
     "duration": "0:30",
     "description": "Speaker 4",
     "hosts": "Katie, Noel",

@@ -15,13 +15,13 @@ export default function Sessions() {
         {sessionData
           .filter((session) => session.day != "Friday")
           .map((session) => (
-            <div className="w-400 -mx-2 px-4">
+            <div key={session.day} className="w-400 -mx-2 px-4">
               <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-lg"
 
               >
                 <strong>{session.start_time_aest}:</strong> {" "}
                 <Link href={'speaker/'+session.link} >
-                  <a>{session.speaker_name || "DataEngBytes team"}</a>
+                  <a className="px-4">{session.speaker_name || "DataEngBytes team"}</a>
                 </Link>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function Sessions() {
               <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-lg">
                 <strong>{session.start_time_aest}:</strong>{" "}
                 <Link href={'speaker/'+session.link} >
-                  <a>{session.speaker_name || "DataEngBytes team"}</a>
+                  <a className="px-4">{session.speaker_name || "DataEngBytes team"}</a>
                 </Link>
               </div>
             </div>
