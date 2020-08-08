@@ -26,8 +26,8 @@ function Layout ({ children }) {
                 <meta name="twitter:image" content="https://dataengconf.com.au/images/logos/dataeng/bytes_center.svg" />
             </Head>
         <Navbar />
-            <body  className="">
-                <main className="w-full container mx-auto p-6">
+            <body className="">
+                <main className="w-full container mx-auto p-12">
                     {children}
                 </main>
             </body>
