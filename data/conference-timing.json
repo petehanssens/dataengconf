@@ -1,7 +1,7 @@
 [
   {
     "day": "Thursday",
-    "start_time_aest": "14:00",
+    "start_time_aest": "2:00pm",
     "duration": "0:02",
     "description": "Welcome to country",
     "hosts": "Peter, Simon",
@@ -14,20 +14,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "14:02",
-    "duration": "0:08",
-    "description": "Welcome to conference",
-    "hosts": "Peter, Simon",
-    "speaker_name": "",
-    "talk_title": "",
-    "Geo": "",
-    "Notes": "",
-    "time_san_fran": "Wed, 19 Aug 2020 21:02",
-    "time_london": "05:02"
-  },
-  {
-    "day": "Thursday",
-    "start_time_aest": "14:10",
+    "start_time_aest": "2:10pm",
     "duration": "0:40",
     "description": "Keynote",
     "hosts": "Peter, Simon",
@@ -40,7 +27,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "14:50",
+    "start_time_aest": "2:50pm",
     "duration": "0:30",
     "description": "Speaker 1",
     "hosts": "Francisco, Leo",
@@ -53,7 +40,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "15:20",
+    "start_time_aest": "3:20pm",
     "duration": "0:30",
     "description": "Speaker 2",
     "hosts": "Francisco, Leo",
@@ -66,7 +53,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "15:50",
+    "start_time_aest": "3:50pm",
     "duration": "0:30",
     "description": "Speaker 3",
     "hosts": "Francisco, Leo",
@@ -79,7 +66,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "16:20",
+    "start_time_aest": "4:20pm",
     "duration": "0:30",
     "description": "Speaker 4",
     "hosts": "Katie, Noel",
@@ -92,7 +79,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "16:50",
+    "start_time_aest": "4:50pm",
     "duration": "0:30",
     "description": "Speaker 5",
     "hosts": "Katie, Noel",
@@ -105,7 +92,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "17:20",
+    "start_time_aest": "5:20pm",
     "duration": "0:30",
     "description": "Speaker 6",
     "hosts": "Katie, Noel",
@@ -118,7 +105,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "17:50",
+    "start_time_aest": "5:50pm",
     "duration": "0:30",
     "description": "Speaker 7",
     "hosts": "Leo, Harmeet",
@@ -131,7 +118,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "18:20",
+    "start_time_aest": "6:20pm",
     "duration": "0:30",
     "description": "Speaker 8",
     "hosts": "Leo, Harmeet",
@@ -144,7 +131,7 @@
   },
   {
     "day": "Thursday",
-    "start_time_aest": "18:50",
+    "start_time_aest": "6:50pm",
     "duration": "0:10",
     "description": "Wrap up",
     "hosts": "Peter, Simon",
@@ -157,7 +144,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "09:00",
+    "start_time_aest": "09:00am",
     "duration": "0:02",
     "description": "Welcome to country",
     "hosts": "Noel, Katie",
@@ -170,20 +157,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "09:02",
-    "duration": "0:08",
-    "description": "Welcome to conference",
-    "hosts": "Noel, Katie",
-    "speaker_name": "",
-    "talk_title": "",
-    "Geo": "",
-    "Notes": "",
-    "time_san_fran": "16:02",
-    "time_london": "00:02"
-  },
-  {
-    "day": "Friday",
-    "start_time_aest": "09:10",
+    "start_time_aest": "09:10am",
     "duration": "0:40",
     "description": "Keynote",
     "hosts": "Noel, Katie",
@@ -196,7 +170,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "09:50",
+    "start_time_aest": "09:50am",
     "duration": "0:30",
     "description": "Speaker 9",
     "hosts": "Karen, Peter",
@@ -209,7 +183,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "10:20",
+    "start_time_aest": "10:20am",
     "duration": "0:30",
     "description": "Speaker 10",
     "hosts": "Karen, Peter",
@@ -222,7 +196,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "10:50",
+    "start_time_aest": "10:50am",
     "duration": "0:30",
     "description": "Speaker 11",
     "hosts": "Karen, Peter",
@@ -235,7 +209,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "11:20",
+    "start_time_aest": "11:20am",
     "duration": "0:30",
     "description": "Speaker 12",
     "hosts": "Francisco, Harmeet",
@@ -248,7 +222,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "11:50",
+    "start_time_aest": "11:50am",
     "duration": "0:30",
     "description": "Speaker 13",
     "hosts": "Francisco, Harmeet",
@@ -261,7 +235,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "12:20",
+    "start_time_aest": "12:20pm",
     "duration": "0:30",
     "description": "Speaker 14",
     "hosts": "Francisco, Harmeet",
@@ -274,7 +248,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "12:50",
+    "start_time_aest": "12:50pm",
     "duration": "0:30",
     "description": "Speaker 15",
     "hosts": "Karen, Noel",
@@ -287,7 +261,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "13:20",
+    "start_time_aest": "1:20pm",
     "duration": "0:30",
     "description": "Speaker 16",
     "hosts": "Karen, Noel",
@@ -300,7 +274,7 @@
   },
   {
     "day": "Friday",
-    "start_time_aest": "13:50",
+    "start_time_aest": "1:50pm",
     "duration": "0:10",
     "description": "Wrap up",
     "hosts": "Peter",
@@ -310,18 +284,5 @@
     "Notes": "",
     "time_san_fran": "20:50",
     "time_london": "04:50"
-  },
-  {
-    "day": "Friday",
-    "start_time_aest": "14:00",
-    "duration": "",
-    "description": "Close",
-    "hosts": "",
-    "speaker_name": "",
-    "talk_title": "",
-    "Geo": "",
-    "Notes": "",
-    "time_san_fran": "21:00",
-    "time_london": "05:00"
   }
 ]
