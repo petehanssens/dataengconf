@@ -2,6 +2,8 @@ import React from 'react';
 import Sponsors from './sponsors';
 import Speakers from './speakers';
 import Keynotes from './keynotes';
+import Sessions from './sessions';
+
 
 export default function Home() {
     return (
@@ -23,6 +25,8 @@ export default function Home() {
             <Keynotes />
 
             <Speakers  />
+
+            <Sessions />
 
             <Sponsors  />
 
