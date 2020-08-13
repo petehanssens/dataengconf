@@ -3,7 +3,8 @@ import Link from 'next/link';
 import Layout from '../components/layout';
 import SpeakerData from '../data/speakers.json';
 
-let AllSpeakers = SpeakerData.filter(speaker => speaker.role=="speaker");
+let AllSpeakers = SpeakerData.filter(speaker => speaker.role=="speaker")
+                            .sort((a, b) => a.SessionNumber - b.SessionNumber);
 
 export default function Speakers() {
     return (
@@ -24,7 +25,9 @@ export default function Speakers() {
                                     <img src={speaker.image} alt={speaker.name} className="w-full object-center rounded-full p-4 content-center justify-center items-center" />
                                 </div>
                                 <div className="mb-8">
-                                    <p className="text-grey-darker text-base">{speaker.title}</p>
+                                    <p className="text-grey-darker text-base text-left">{speaker.title}</p>
+                                    <br />
+                                    <p className="text-xs text-left font-bold">{speaker.Day} - {speaker.StartTime} (GMT+10)</p>
                                 </div>
                             </div>
                         </div>
