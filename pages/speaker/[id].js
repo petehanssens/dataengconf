@@ -20,6 +20,7 @@ export default function Profile() {
 						></div>
 						<h1 className="text-3xl font-bold pt-8 lg:pt-0">{post.name}</h1>
 						<p className="text-sm">{post.tagLine}</p>
+						<p className="text-xs font-bold">{post.Day} - {post.StartTime} (GMT+10)</p>
 						<div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
 						<br></br>
 						<div className="lg:grid lg:grid-cols-2">

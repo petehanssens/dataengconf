@@ -10,6 +10,7 @@ export default function Speakers() {
                 <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-4">
                     {speakerData.filter(person => person.id != "zhamak-dehghani")
                     .filter(person => person.id != "gian-merlino")
+                    .sort((a, b) => a.SessionNumber - b.SessionNumber)
                     .map(speakers => (
                         <a key={speakers.name} href={speakers.link}>
                         <img key={speakers.name} src={speakers.image} className="rounded-full h-34 w-34 items-center justify-center" />
