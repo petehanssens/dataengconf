@@ -160,7 +160,7 @@
     "image": "/images/speakers/Mike_Del_Balso.jpg",
     "title": "Feature Stores",
     "description": "First pioneered in the Michelangelo platform at Uber, Feature Stores have been core components of the ML stacks of some of the largest tech companies for many years. Today, they are emerging as key components of the production ML stack across the industry. In this talk, we introduce the Tecton Feature Store, discuss the problems it solves, and show how Feature Stores solve many of the core data engineering challenges teams face when putting ML into production today.",
-    "bio": "Co-Founder + CEO of Tecton, Creator of Uber Michelangelo, ex-PM of ML for ads at Google",
+    "bio": "Mike Del Balso is the co-founder of Tecton.ai, where he is focused on building next-generation data infrastructure for Operational ML. Before Tecton.ai, Mike was the PM lead for the Uber Michelangelo ML platform. He was also a product manager at Google where he managed the core ML systems that power Google’s Search Ads business. Previous to that, he worked on Google Maps. He holds a BSc in Electrical and Computer Engineering summa cum laude from the University of Toronto.",
     "tagLine": "Co-Founder & CEO at Tecton",
     "link": "/speaker/mike-del-balso"
   },
