@@ -27,6 +27,10 @@ export default function Profile() {
 							</div>
 							<div>
 								<br></br>
+                <a href= {post.LinkedIn} className="w-full lg:w-2/5 ">
+                  <img style={{}} className="linkedin" alt="linkedin image" href={post.LinkedIn}/>
+                </a>
+                <br></br>
 								<p className="text-2xl font-bold pt-8 lg:pt-0">{post.Position}</p>
 								<p className="pt-8 text-sm">{post.description}</p>
 								<p className="pt-8 text-sm">{post.Bio} </p>

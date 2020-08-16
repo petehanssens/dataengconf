@@ -20,7 +20,6 @@ export default function Sessions() {
                 <Link href={'speaker/'+session.link} >
                   <a> <strong>{session.start_time_aest}: {session.speaker_name || "DataEngBytes team"}</strong><br/>{session.talk_title}</a>
                 </Link>
-                
               </div>
             </div>
           ))}
