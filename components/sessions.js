@@ -11,18 +11,16 @@ export default function Sessions() {
       </p>
       <p className="text-2xl">Afternoon - Thursday 20 August</p>
       <br></br>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 w-full">
         {sessionData
           .filter((session) => session.day != "Friday")
           .map((session) => (
             <div className="w-400 -mx-2 px-4">
-              <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-lg"
-
-              >
-                <strong>{session.start_time_aest}:</strong> {" "}
+              <div className="bg-gray-400 w-400 h-50 h-full p-3 rounded flex items-center align-middle text-blue text-bold text-lg">
                 <Link href={'speaker/'+session.link} >
-                  <a>{session.speaker_name || "DataEngBytes team"}</a>
+                  <a> <strong>{session.start_time_aest}: {session.speaker_name || "DataEngBytes team"}</strong><br/>{session.talk_title}</a>
                 </Link>
+                
               </div>
             </div>
           ))}
@@ -32,16 +30,16 @@ export default function Sessions() {
 
       <p className="text-2xl">Morning - Friday 21 August</p>
       <br></br>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 w-full">
         {sessionData
           .filter((session) => session.day != "Thursday")
           .map((session) => (
             <div className="w-400 -mx-2 px-4">
-              <div className="bg-gray-400 w-400 h-24 rounded flex items-center justify-center align-middle text-blue text-bold text-lg">
-                <strong>{session.start_time_aest}:</strong>{" "}
+              <div className="bg-gray-400 w-400 h-50 h-full p-3 rounded flex items-center align-middle text-blue text-bold text-lg">
                 <Link href={'speaker/'+session.link} >
-                  <a>{session.speaker_name || "DataEngBytes team"}</a>
+                  <a> <strong>{session.start_time_aest}: {session.speaker_name || "DataEngBytes team"}</strong><br/>{session.talk_title}</a>
                 </Link>
+                <span>{session.TalkTitle}</span>
               </div>
             </div>
           ))}

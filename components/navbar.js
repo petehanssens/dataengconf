@@ -11,7 +11,7 @@ export default function Navbar() {
 <nav className="flex items-center justify-between flex-wrap bg-grey-darkest p-6  w-full z-10 pin-t  site-page-header-ghost-wrapper">
 <div className="flex items-center flex-no-shrink text-white mr-6  p-6">
       <Link  href='/' >
-      <span className="font-semibold text-xl tracking-tight text-purple-500">DataEngBytes</span>
+      <span className="font-semibold text-xl tracking-tight text-purple-500"><a>DataEngBytes</a></span>
       </Link>
 </div>
 
