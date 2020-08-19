@@ -41,7 +41,7 @@
     "tagLine": "Technology Consultant, Problemsolver & Troublemaker @ Thoughtworks",
     "link": "/speaker/aiko-klostermann",
     "Day": "Friday",
-    "StartTime": "12:20",
+    "StartTime": "12:10",
     "SessionNumber": "16"
   },
   {
@@ -101,7 +101,7 @@
     "tagLine": "Solutions Architect at Amazon Web Services",
     "link": "/speaker/kerry-mcrae",
     "Day": "Friday",
-    "StartTime": "13:20",
+    "StartTime": "12:45",
     "SessionNumber": "18"
   },
   {
@@ -150,21 +150,6 @@
     "SessionNumber": "02"
   },
   {
-    "name": "Atif Shaikh",
-    "role": "speaker",
-    "id": "atif-shaikh",
-    "image": "/images/speakers/atif-shaikh.jpg",
-    "linkedin": "https://www.linkedin.com/in/datamantiq/",
-    "title": "Enabling HTAP capabilities in your existing data platform(s)",
-    "description": "Hybrsid Transactional-Analytical Processing (HTAP) combines the power of OLTP and OLAP systems and provsides a unified engine for transactions, analytics and AI. \r\n\r\nThis talk will sidentify architectural patterns and technology enablers that you can introduce to your existing (or new) data platform(s) to brsidge some critical gaps between operations of the business and outputs from the data platform(s). \r\n\r\nTakeaway some sideas on how to serve customers ‘in the moment’ of their needs through this capability. ",
-    "bio": "Atif is an independent consultant specialising in DataOps and data literacy (change management) programs. He has 15+ years of experience across BI, analytics, data engineering and data science roles with a mix of both startups and more mature organisations across 4 continents.",
-    "tagLine": "Principal at Datamantiq",
-    "link": "/speaker/atif-shaikh",
-    "Day": "Friday",
-    "StartTime": "12:50",
-    "SessionNumber": "17"
-  },
-  {
     "name": "Joel Roland",
     "role": "speaker",
     "id": "joel-roland",
@@ -176,7 +161,7 @@
     "tagLine": "Solution Architecture Manager at Databricks",
     "link": "/speaker/joel-roland",
     "Day": "Friday",
-    "StartTime": "10:50",
+    "StartTime": "10:25",
     "SessionNumber": "13"
   },
   {
@@ -191,7 +176,7 @@
     "tagLine": "Principal Data Engineer at Atlassian",
     "link": "/speaker/steve-lee",
     "Day": "Friday",
-    "StartTime": "10:50",
+    "StartTime": "10:25",
     "SessionNumber": "13"
   },
   {
@@ -210,21 +195,6 @@
     "SessionNumber": "04"
   },
   {
-    "name": "Mike Del Balso",
-    "role": "speaker",
-    "id": "mike-del-balso",
-    "image": "/images/speakers/Mike_Del_Balso.jpg",
-    "linkedin": "https://www.linkedin.com/in/michaeldelbalso/",
-    "title": "Feature Stores",
-    "description": "First pioneered in the Michelangelo platform at Uber, Feature Stores have been core components of the ML stacks of some of the largest tech companies for many years. Today, they are emerging as key components of the production ML stack across the industry. In this talk, we introduce the Tecton Feature Store, discuss the problems it solves, and show how Feature Stores solve many of the core data engineering challenges teams face when putting ML into production today.",
-    "bio": "Mike Del Balso is the co-founder of Tecton.ai, where he is focused on building next-generation data infrastructure for Operational ML. Before Tecton.ai, Mike was the PM lead for the Uber Michelangelo ML platform. He was also a product manager at Google where he managed the core ML systems that power Google’s Search Ads business. Previous to that, he worked on Google Maps. He holds a BSc in Electrical and Computer Engineering summa cum laude from the University of Toronto.",
-    "tagLine": "Co-Founder & CEO at Tecton",
-    "link": "/speaker/mike-del-balso",
-    "Day": "Friday",
-    "StartTime": "10:20",
-    "SessionNumber": "12"
-  },
-  {
     "name": "Sam Harley",
     "role": "speaker",
     "id": "sam-harley",
@@ -236,7 +206,7 @@
     "tagLine": "Senior Solutions Architect at MongoDB",
     "link": "/speaker/sam-harley",
     "Day": "Friday",
-    "StartTime": "11:20",
+    "StartTime": "11:00",
     "SessionNumber": "14"
   },
   {
@@ -251,7 +221,7 @@
     "tagLine": "Engineer at Datalust",
     "link": "/speaker/larene-le-gassick",
     "Day": "Friday",
-    "StartTime": "11:50",
+    "StartTime": "11:35",
     "SessionNumber": "15"
   },
   {
