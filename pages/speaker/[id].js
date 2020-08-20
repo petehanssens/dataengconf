@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import posts from '../../data/speakers.json'
+import youtube from '../../data/youtube.json'
 import React from 'react';
 import Layout from '../../components/layout';
 
@@ -28,8 +29,11 @@ export default function Profile() {
 								<img src={post.image} className="rounded-full lg:rounded-lg shadow-2xl hidden lg:block" />
 							</div>
 							<div>
-                <a href= {post.linkedin} className="w-full lg:w-2/5 ">
+                <a href= {post.linkedin} className="inline-block py-1 pr-10">
                   <img className="linkedin" alt="linkedin image" href={post.linkedin}/>
+                </a>
+				<a href= {youtube.url} className="inline-block">
+                  <img className="youtube" alt="youtube image" href={youtube.url}/>
                 </a>
                 <br></br>
 								<p className="text-sm">{post.bio} </p>
