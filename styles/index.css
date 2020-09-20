@@ -69,6 +69,11 @@
   height: 48px;
 }
 
+.meetup-large {
+  content:url("./../public/images/socials/meetup.svg");
+  height: 48px;
+}
+
 /* .sponsor-image {
   background-position: 'center center';
   background-size:'contain';

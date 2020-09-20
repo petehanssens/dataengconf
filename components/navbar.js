@@ -55,8 +55,8 @@ export default function Navbar() {
     </li>
     <li className="mr-3">
       <p className="pl-3">
-        <a href="https://www.tickettailor.com/events/dataengbytes/377480/" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
-            Tickets
+        <a href="https://www.meetup.com/Sydney-Data-Engineering-Meetup/" className="inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded p6">
+            Meetup
         </a>
       </p>
     </li>

@@ -19,7 +19,7 @@ export default function Footer() {
                 </div>
                 <div className="w-1/4 h-12">
                     <p className='text-l font-bold pb-5'>Event</p>
-                    <a href='https://www.tickettailor.com/events/dataengbytes/377480/'>Tickets</a><br/>
+                    <a href='https://www.meetup.com/Sydney-Data-Engineering-Meetup/'>Meetup</a><br/>
                     <a href="https://www.youtube.com/channel/UCteq_tbr6F-KZ0JhaY9fy0g">Youtube</a><br/>
                     <a href="https://www.twitch.tv/dataengau">Twitch</a><br/>
                 </div>
