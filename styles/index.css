@@ -39,6 +39,11 @@
   height: 24px;
 }
 
+.youtube {
+  content:url("./../public/images/socials/youtube.svg");
+  height: 32px;
+}
+
 .twitter-large {
   content:url("./../public/images/socials/twitter.svg");
   height: 48px;
@@ -61,6 +66,11 @@
 
 .youtube-large {
   content:url("./../public/images/socials/youtube.svg");
+  height: 48px;
+}
+
+.meetup-large {
+  content:url("./../public/images/socials/meetup.svg");
   height: 48px;
 }
 

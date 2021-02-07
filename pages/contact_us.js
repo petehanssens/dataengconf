@@ -26,20 +26,31 @@ export default function CodeOfConduct() {
                         <p className="px-4">Email</p>
                     </div>
                 </a>
-                <a href='https://www.twitch.tv/dataengau' className=" fill-current text-purple-500">
-                    <div className="flex px-4">
-                        <div className="twitch-large fill-current text-purple-500"></div>
-                        <p className="px-4">Twitch</p>
-                    </div>
-                </a>
-                <a href='https://www.youtube.com/channel/UCteq_tbr6F-KZ0JhaY9fy0g' className=" fill-current text-purple-500">
+                <a href='https://www.youtube.com/dataengau' className=" fill-current text-purple-500">
                     <div className="flex px-4">
                         <div className="youtube-large fill-current text-purple-500"></div>
                         <p className="px-4">Youtube</p>
+                    </div>
+                </a>
+                <a href='https://www.meetup.com/Sydney-Data-Engineering-Meetup/' className=" fill-current text-purple-500">
+                    <div className="flex px-4">
+                        <div className="meetup-large fill-current text-purple-500"></div>
+                        <p className="px-4">Meetup - Sydney</p>
+                    </div>
+                </a>
+                <a href='https://www.meetup.com/Melbourne-Data-Engineering-Meetup/' className=" fill-current text-purple-500">
+                    <div className="flex px-4">
+                        <div className="meetup-large fill-current text-purple-500"></div>
+                        <p className="px-4">Meetup - Melbourne</p>
+                    </div>
+                </a>
+                <a href='https://www.meetup.com/Brisbane-Data-Engineering-Meetup/' className=" fill-current text-purple-500">
+                    <div className="flex px-4">
+                        <div className="meetup-large fill-current text-purple-500"></div>
+                        <p className="px-4">Meetup - Brisbane</p>
                     </div>
                 </a>
                 </article>
             </Layout>
         )
 }
-
