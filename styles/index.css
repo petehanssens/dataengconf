@@ -23,6 +23,18 @@
   padding: 0px 50px;
 }
 
+.data-eng-purple {
+  color: #671875
+}
+
+.data-eng-orange {
+  color: #FF4033
+}
+
+.data-eng-logo {
+  content:url("./../public/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png");
+  padding-top: 0px;
+}
 
 .header-image {
   content:url("./../public/images/logos/dataeng/bytes_center.svg");
