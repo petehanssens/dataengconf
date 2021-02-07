@@ -9,9 +9,9 @@ function Layout ({ children }) {
     return (
         <>
             <Head>
-                <title>DataEngBytes - DataEngConfAU</title>
-                <meta property="og:title" content="DataEngBytes - DataEngConfAU" key="title" />
-                <meta name="description" content="DataEngBytes, a community conference hosted on the 20th to the 21st of August!" />
+                <title>DataEngBytes 2021</title>
+                <meta property="og:title" content="DataEngBytes 2021" key="title" />
+                <meta name="description" content="DataEngBytes, a community conference hosted on the 26th to the 27th of August!" />
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="DataEngBytes" />
                 <meta property="og:url" content="https://dataengconf.com.au" />

@@ -11,7 +11,7 @@ export default function Navbar() {
 <nav className="flex items-center justify-between flex-wrap bg-grey-darkest p-6  w-full z-10 pin-t  site-page-header-ghost-wrapper">
 <div className="flex items-center flex-no-shrink text-white mr-6  p-6">
       <Link  href='/' >
-      <span className="font-semibold text-xl tracking-tight text-purple-500"><a>DataEngBytes</a></span>
+      <span className="font-semibold text-xl tracking-tight data-eng-purple"><a>DataEngBytes</a></span>
       </Link>
 </div>
 
@@ -25,7 +25,7 @@ export default function Navbar() {
 
 <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
   <ul className="list-reset lg:flex justify-end flex-1 items-center">
-   <li className="mr-3" key="speakers">
+   {/* <li className="mr-3" key="speakers">
       <Link href="/speakers">
         <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">
         Speakers
@@ -45,7 +45,7 @@ export default function Navbar() {
           Code of Conduct
           </a>
       </Link>
-    </li>
+    </li> */}
     <li className="mr-3" key="contact_us">
       <Link href="/contact_us">
         <a className="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4 p6">

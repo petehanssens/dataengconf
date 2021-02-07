@@ -6,8 +6,8 @@ export default function Footer() {
     return (
         <div className="ant-page-header h-48">
             <div className="flex mb-4 p-4 container mx-auto">
-                <div className="w-1/4 h-12">
-                    <img style={{minHeight:'100px', paddingTop: '0px'}} className="header-image pt-0 " alt="header image"/>
+                <div className=" w-1/4 h-12 inline">
+                    <img style={{'maxHeight': '150px'}} className="max-h-32 h-auto w-auto pt-0 data-eng-logo" alt="header image"/>
                 </div>
                 <div className="w-1/4 h-12">
                 </div>
