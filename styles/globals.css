@@ -1,26 +1,13 @@
-@import '~antd/dist/antd.css';
+/* ./styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-.ant-layout-header {
-  background-color: #fff
-}
-
-.ant-page-header {
-  background-color: #f0f2f5;
-}
 
 .site-page-header-ghost-wrapper {
   background-color: #f0f2f5;
   padding-top: 24px;
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.ant-layout-header {
-  padding: 0px 50px;
 }
 
 .data-eng-purple {
@@ -93,24 +80,6 @@
   min-height: 300px;
   min-width: 300px;
 } */
-
-.ant-layout-content {
-  padding: 0px 0px;
-}
-
-.ant-layout-footer {
-  padding: 50px 40px;
-}
-
-.ant-list-item .ant-btn{
-  border: 0px;
-  background-color: transparent;
-}
-
-.ant-layout-footer .ant-btn{
-  border: 0px;
-  background-color: transparent;
-}
 
 /* Small (sm) */
 @media (min-width: 640px) { 

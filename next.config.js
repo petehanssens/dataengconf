@@ -1,7 +1,8 @@
 const getPosts = require('./data/profiles.json');
 const getSpeakerPosts = require('./data/speakers.json');
-const withImages = require('next-images')
-module.exports = withImages({
+module.exports = ({
+    // Target must be serverless
+    target: 'serverless',
     async exportPathMap(defaultPathMap) {
     const pathMap = {
         '/': { page: '/' },
