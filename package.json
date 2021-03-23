@@ -30,6 +30,7 @@
     "encoding": "^0.1.13",
     "jsonp": "^0.2.1",
     "next": "^10.0.8",
+    "node-fetch": "^3.0.0-beta.9",
     "postcss": "^8.2.8",
     "query-string": "^6.14.1",
     "react": "^17.0.1",
