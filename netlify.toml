@@ -5,3 +5,12 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[context.production]
+  environment = { NODE_VERSION = "14" }
+
+[context.deploy-preview]
+  environment = { NODE_VERSION = "14" }
+
+[context.branch-deploy]
+  environment = { NODE_VERSION = "14" }
