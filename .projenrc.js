@@ -21,7 +21,8 @@ const project = new web.NextJsProject({
   // bundledDeps: undefined,                                                   /* List of dependencies to bundle into this module. */
   deps: [
     'jsonp',
-    'query-string'
+    'query-string',
+    'encoding'
   ],                                                                 /* Runtime dependencies of this module. */
   // description: undefined,                                                   /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],                                                              /* Build dependencies for this module. */
@@ -50,7 +51,7 @@ const project = new web.NextJsProject({
   // codeCovTokenSecret: undefined,                                            /* Define the secret name for a specified https://codecov.io/ token A secret is required to send coverage for private repositories. */
   // copyrightOwner: undefined,                                                /* License copyright owner. */
   // copyrightPeriod: undefined,                                               /* The copyright years to put in the LICENSE file. */
-  // defaultReleaseBranch: 'master',                                           /* The name of the main release branch. */
+  defaultReleaseBranch: 'main',                                           /* The name of the main release branch. */
   // dependabot: true,                                                         /* Include dependabot configuration. */
   // dependabotOptions: undefined,                                             /* Options for dependabot. */
   // gitignore: undefined,                                                     /* Additional entries to .gitignore. */
@@ -88,7 +89,7 @@ const project = new web.NextJsProject({
   // clobber: true,                                                            /* Add a `clobber` task which resets the repo to origin. */
   // devContainer: false,                                                      /* Add a VSCode development environment (used for GitHub Codespaces). */
   // gitpod: false,                                                            /* Add a Gitpod development environment. */
-  // outdir: '.',                                                              /* The root directory of the project. */
+  outdir: 'out',                                                              /* The root directory of the project. */
   // parent: undefined,                                                        /* The parent project, if this project is part of a bigger project. */
   // projectType: ProjectType.UNKNOWN,                                         /* Which type of project this is (library/app). */
   // readme: undefined,                                                        /* The README setup. */
