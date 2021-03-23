@@ -27,11 +27,11 @@ export default function Navbar() {
           </div>
           <nav className="hidden md:flex space-x-10">
   
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Pricing
+            <a href="https://sessionize.com/dataengbytes2021/" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              Call for Papers
             </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Docs
+            <a href="https://www.meetup.com/Sydney-Data-Engineering-Meetup/" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              Meetup
             </a>
   
           </nav>

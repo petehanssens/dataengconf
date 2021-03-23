@@ -3,19 +3,19 @@ import React from 'react';
 const topicDetails = [
     {
         "name": "data at rest",
-        "description": "Storing data isn't just about writing it - this topic dives into everything from data lakes to data security"
+        "description": "scaling, data warehouses, data lakes, data storage"
     },
     {
         "name": "data in motion",
-        "description": "Real time streaming to batch processing - this topic covers it all"
+        "description": "event driven architecture, data pipelines, IoT, batch, streaming"
     },
     {
         "name": "data for machine learning",
-        "description": "We take a look at data engineering through the lens of machine learning workloads"
+        "description": "getting models into production, data pipeline for machine learning, managing data artefacts, feature stores etc"
     },
     {
         "name": "data you can trust",
-        "description": "Lineage, metadata, security - this topic has it all"
+        "description": "data discovery & provenance, data testing and confidence scoring, ethical consideration and data security plus compliance obligations"
     },
 ]
 
@@ -25,12 +25,12 @@ export default function Topics() {
 <div className="py-12 bg-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="lg:text-center">
-      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Transactions</h2>
+      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Themes</h2>
       <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        A better way to send money
+        We are looking for talks aligned to our four themes
       </p>
       <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+      We are looking for a range of stories and real-world experiences from working on your side projects through to enterprise level applications. Share your learnings, experiences and best practices with us.
       </p>
     </div>
 
