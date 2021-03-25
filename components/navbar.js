@@ -35,14 +35,14 @@ export default function Navbar() {
             </a>
   
           </nav>
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+          {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
               Sign in
             </a>
             <a href="#" className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
               Sign up
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden">
@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="pt-5 pb-6 px-5">
             <div className="flex items-center justify-between">
               <div>
-                <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow" />
+                <img className="h-8 w-auto" src="images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png" alt="Workflow" />
               </div>
               <div className="-mr-2">
                 <button type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -61,7 +61,7 @@ export default function Navbar() {
                 </button>
               </div>
             </div>
-            <div>
+            {/* <div>
               <a href="#" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
                 Sign up
               </a>
@@ -71,7 +71,7 @@ export default function Navbar() {
                   Sign in
                 </a>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
