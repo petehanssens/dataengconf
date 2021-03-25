@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Modal, Button, Input } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
 import queryString from 'query-string';
 import jsonp from 'jsonp';
 
