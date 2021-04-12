@@ -2,20 +2,24 @@ import React from 'react';
 
 const topicDetails = [
     {
-        "name": "data at rest",
-        "description": "scaling, data warehouses, data lakes, data storage"
+      "id": 1,
+      "name": "data at rest",
+      "description": "scaling, data warehouses, data lakes, data storage"
     },
     {
-        "name": "data in motion",
-        "description": "event driven architecture, data pipelines, IoT, batch, streaming"
+      "id": 2,
+      "name": "data in motion",
+      "description": "event driven architecture, data pipelines, IoT, batch, streaming"
     },
     {
-        "name": "data for machine learning",
-        "description": "getting models into production, data pipeline for machine learning, managing data artefacts, feature stores etc"
+      "id": 3,
+      "name": "data for machine learning",
+      "description": "getting models into production, data pipeline for machine learning, managing data artefacts, feature stores etc"
     },
     {
-        "name": "data you can trust",
-        "description": "data discovery & provenance, data testing and confidence scoring, ethical consideration and data security plus compliance obligations"
+      "id": 4,
+      "name": "data you can trust",
+      "description": "data discovery & provenance, data testing and confidence scoring, ethical consideration and data security plus compliance obligations"
     },
 ]
 
