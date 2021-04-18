@@ -5,14 +5,14 @@ const sponsorLogo = [
       url: 'https://www.snowflake.com/',
     },
     {
-      name: 'Databricks',
-      image: 'images/sponsors/databricks.png',
-      url: 'https://databricks.com/',
-    },
-    {
       name: 'Fivetran',
       image: 'images/sponsors/fivetran.png',
       url: 'https://fivetran.com/',
+    },
+    {
+      name: 'Databricks',
+      image: 'images/sponsors/databricks.png',
+      url: 'https://databricks.com/',
     },
     {
       name: 'Imply',

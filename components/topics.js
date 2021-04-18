@@ -38,7 +38,7 @@ export default function Topics() {
       <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 
       {topicDetails.map(data => 
-        <div key={data.id} className="relative">
+        <div key={data.name} className="relative">
           <dt>
             <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
               <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
