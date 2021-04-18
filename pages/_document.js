@@ -7,7 +7,9 @@ export default class MyDocument extends Document {
 
     return (
       <Html >
-        <Head />
+        <Head>
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        </Head>
       <Layout>
         <body>
           <Main />

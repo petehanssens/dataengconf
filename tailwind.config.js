@@ -23,6 +23,9 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      // fontFamily: {
+      //   sans: ['Inter var', 'sans-serif'],
+      // },
       spacing: {
         '128': '32rem',
         '144': '36rem',
