@@ -22,44 +22,52 @@ export default function ContactUs() {
               </p>
             </div>
             <div className="mt-9">
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
-                  icon={faTwitter} />
+              <a href="https://twitter.com/dataengconfau">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                    icon={faTwitter} />
+                  </div>
+                  <div className="ml-3 text-base text-gray-500">
+                    <p>DataEngConfAU - Twitter</p>
+                  </div>
                 </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>https://twitter.com/dataengconfau</p>
+              </a>
+              <a href="mailto:sydney@dataengconf.com.au">
+                <div className="mt-6 flex">
+                  <div className="flex-shrink-0">
+                    <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                    icon={faMailBulk} />
+                  </div>
+                  <div className="ml-3 text-base text-gray-500">
+                    <p>Email Sydney @ dataengconf.com.au</p>
+                  </div>
                 </div>
-              </div>
-              <div className="mt-6 flex">
-                <div className="flex-shrink-0">
-                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
-                  icon={faMailBulk} />
+              </a>
+              <a href="https://www.youtube.com/dataengau">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                    icon={faYoutube} />
+                  </div>
+                  <div className="ml-3 text-base text-gray-500">
+                    <p>YouTube</p>
+                    <p>DataEngAu - YouTube</p>
+                  </div>
                 </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>sydney@dataengconf.com.au</p>
+              </a>
+              <a href="https://www.linkedin.com/company/dataengconfau/">
+                <div className="mt-6 flex">
+                  <div className="flex-shrink-0">
+                    <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                    icon={faLinkedin} />
+                  </div>
+                  <div className="ml-3 text-base text-gray-500">
+                    <p>LinkedIn</p>
+                    <p>DataEngConfAU - LinkedIn</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
-                  icon={faYoutube} />
-                </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>YouTube</p>
-                  <p>https://www.youtube.com/dataengau</p>
-                </div>
-              </div>
-              <div className="mt-6 flex">
-                <div className="flex-shrink-0">
-                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
-                  icon={faLinkedin} />
-                </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>LinkedIn</p>
-                  <p>https://www.linkedin.com/company/cloud-shuttle/</p>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
           <div className="mt-12 sm:mt-16 md:mt-0">
@@ -71,36 +79,39 @@ export default function ContactUs() {
               </p>
             </div>
             <div className="mt-9">
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
-                  icon={faMeetup} />
+              <a href="https://www.meetup.com/Brisbane-Data-Engineering-Meetup/">
+                <div className="flex">
+                    <div className="flex-shrink-0">
+                      <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                      icon={faMeetup} />
+                    </div>
+                    <div className="ml-3 text-base text-gray-500">
+                      <p>Brisbane</p>
+                    </div>
                 </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>Brisbane</p>
-                  <p className="mt-1">https://www.meetup.com/Brisbane-Data-Engineering-Meetup/</p>
+              </a>
+              <a href="https://www.meetup.com/Melbourne-Data-Engineering-Meetup/">  
+                <div className="flex">
+                    <div className="flex-shrink-0">
+                      <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                      icon={faMeetup} />
+                    </div>
+                    <div className="ml-3 text-base text-gray-500">
+                      <p>Melbourne</p>
+                    </div>
                 </div>
-              </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
-                  icon={faMeetup} />
+              </a>
+              <a href="https://www.meetup.com/Sydney-Data-Engineering-Meetup/">
+                <div className="flex">
+                    <div className="flex-shrink-0">
+                      <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                      icon={faMeetup} />
+                    </div>
+                    <div className="ml-3 text-base text-gray-500">
+                      <p>Sydney</p>
+                    </div>
                 </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>Melbourne</p>
-                  <p className="mt-1">https://www.meetup.com/Melbourne-Data-Engineering-Meetup/</p>
-                </div>
-              </div>
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
-                  icon={faMeetup} />
-                </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>Sydney</p>
-                  <p className="mt-1">https://www.meetup.com/Sydney-Data-Engineering-Meetup/</p>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
