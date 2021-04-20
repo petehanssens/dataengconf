@@ -27,6 +27,11 @@ const sponsorLogo = [
       url: 'https://www.versor.com.au/',
     },
     {
+      name: 'dbt',
+      image: 'images/sponsors/dbt-logo-full.png',
+      url: 'https://www.getdbt.com/',
+    },
+    {
       name: 'YOW Conferences',
       image: 'images/sponsors/yow.png',
       url: 'https://yowconference.com/data/',
