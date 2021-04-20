@@ -1,21 +1,27 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBed, faRunning, faRobot, faHandshake } from '@fortawesome/free-solid-svg-icons'
 
 const topicDetails = [
     {
         "name": "data at rest",
-        "description": "scaling, data warehouses, data lakes, data storage"
+        "description": "scaling, data warehouses, data lakes, data storage",
+        "icon": <FontAwesomeIcon icon={faBed} />
     },
     {
         "name": "data in motion",
-        "description": "event driven architecture, data pipelines, IoT, batch, streaming"
+        "description": "event driven architecture, data pipelines, IoT, batch, streaming",
+        "icon": <FontAwesomeIcon icon={faRunning} />
     },
     {
         "name": "data for machine learning",
-        "description": "getting models into production, data pipeline for machine learning, managing data artefacts, feature stores etc"
+        "description": "getting models into production, data pipeline for machine learning, managing data artefacts, feature stores etc",
+        "icon": <FontAwesomeIcon icon={faRobot} />
     },
     {
         "name": "data you can trust",
-        "description": "data discovery & provenance, data testing and confidence scoring, ethical consideration and data security plus compliance obligations"
+        "description": "data discovery & provenance, data testing and confidence scoring, ethical consideration and data security plus compliance obligations",
+        "icon": <FontAwesomeIcon icon={faHandshake} />
     },
 ]
 
@@ -37,13 +43,11 @@ export default function Topics() {
     <div className="mt-10">
       <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
 
-      {topicDetails.map(data => 
+      {topicDetails.map(data => (
         <div key={data.name} className="relative">
           <dt>
             <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-              <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-              </svg>
+              {data.icon}
             </div>
             <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{data.name}</p>
           </dt>
@@ -51,6 +55,7 @@ export default function Topics() {
           {data.description}
           </dd>
         </div>
+      )
       )}
       </dl>
     </div>

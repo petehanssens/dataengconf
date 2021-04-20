@@ -1,7 +1,16 @@
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faYoutube, faLinkedin, faMeetup } from '@fortawesome/free-brands-svg-icons' 
 
 export default function ContactUs() {
   return (
+  <Layout>
+    <SEO
+    keywords={[`DataEngBytes`,`contact us`]}
+    title="Contact Us - DataEngBytes 2021!"
+    />
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
@@ -15,7 +24,8 @@ export default function ContactUs() {
             <div className="mt-9">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <PhoneIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                  icon={faTwitter} />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>https://twitter.com/dataengconfau</p>
@@ -23,7 +33,8 @@ export default function ContactUs() {
               </div>
               <div className="mt-6 flex">
                 <div className="flex-shrink-0">
-                  <MailIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                  icon={faMailBulk} />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>sydney@dataengconf.com.au</p>
@@ -31,7 +42,8 @@ export default function ContactUs() {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <PhoneIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                  icon={faYoutube} />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>YouTube</p>
@@ -40,7 +52,8 @@ export default function ContactUs() {
               </div>
               <div className="mt-6 flex">
                 <div className="flex-shrink-0">
-                  <MailIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                  icon={faLinkedin} />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>LinkedIn</p>
@@ -60,7 +73,8 @@ export default function ContactUs() {
             <div className="mt-9">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <PhoneIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                  icon={faMeetup} />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>Brisbane</p>
@@ -69,7 +83,8 @@ export default function ContactUs() {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <PhoneIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                  icon={faMeetup} />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>Melbourne</p>
@@ -78,7 +93,8 @@ export default function ContactUs() {
               </div>
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <PhoneIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon className="h-6 w-6 text-gray-400" aria-hidden="true" 
+                  icon={faMeetup} />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>Sydney</p>
@@ -90,5 +106,6 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
+  </Layout>
   )
 }

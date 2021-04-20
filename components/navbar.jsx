@@ -4,37 +4,32 @@ import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
   CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
   MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
   SupportIcon,
-  ViewGridIcon,
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMeetup } from '@fortawesome/free-brands-svg-icons' 
 
 const meetupLinks = [
   {
     name: 'Brisbane',
-    description: 'Get all of your questions answered in our forums or contact support.',
+    description: 'Learn from local data engineers in Brisbane.',
     href: 'https://www.meetup.com/Brisbane-Data-Engineering-Meetup/',
-    icon: SupportIcon,
+    icon: <FontAwesomeIcon icon={faMeetup} />
   },
   {
     name: 'Melbourne',
-    description: 'Learn how to maximize our platform to get the most out of it.',
+    description: 'Find out who is doing the best data engineering in Melbourne.',
     href: 'https://www.meetup.com/Melbourne-Data-Engineering-Meetup/',
-    icon: BookmarkAltIcon,
+    icon: <FontAwesomeIcon icon={faMeetup} />
   },
   {
     name: 'Sydney',
-    description: 'See what meet-ups and other events we might be planning near you.',
+    description: 'See what companies are leading the field in data engineering in Sydney and beyond.',
     href: 'https://www.meetup.com/Sydney-Data-Engineering-Meetup/',
-    icon: CalendarIcon,
+    icon: <FontAwesomeIcon icon={faMeetup} />
   },
 ]
 
@@ -43,6 +38,7 @@ function classNames(...classes) {
 }
 
 export default function Navigation() {
+
   return (
     <Popover className="relative bg-white">
       {({ open }) => (
@@ -117,7 +113,9 @@ export default function Navigation() {
                                   href={item.href}
                                   className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                                 >
-                                  <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                                  <div className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true">
+                                  {item.icon}
+                                  </div>
                                   <div className="ml-4">
                                     <p className="text-base font-medium text-gray-900">{item.name}</p>
                                     <p className="mt-1 text-sm text-gray-500">{item.description}</p>

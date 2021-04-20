@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from 'react';
-import Navbar from '../components/navbar'
-import FooterClass from '../components/footer'
+import Navbar from './navbar'
+import FooterClass from './footer'
 import Head from 'next/head';
 
 function Layout ({ children }) {

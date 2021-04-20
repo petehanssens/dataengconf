@@ -1,5 +1,13 @@
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+
 export default function CodeOfConduct() {
     return (
+    <Layout>
+    <SEO
+    keywords={[`DataEngBytes`,`code of conduct`]}
+    title="Code of Conduct - DataEngBytes 2021!"
+    />
       <div className="relative py-16 bg-white overflow-hidden">
         <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
           <div className="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
@@ -94,6 +102,7 @@ export default function CodeOfConduct() {
           </div>
         </div>
       </div>
+    </Layout>
     )
   }
   
