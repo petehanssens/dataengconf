@@ -23,7 +23,7 @@ const sponsorLogo = [
     },
     {
       name: 'Versor',
-      image: 'images/sponsors/VersorWIDELogo.png',
+      image: 'images/sponsors/new-versor.png',
       url: 'https://www.versor.com.au/',
     },
     {
