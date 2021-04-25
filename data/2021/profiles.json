@@ -2,6 +2,7 @@
     {
        "full_name":"Adithya Bhat Narjala",
        "location":"Melbourne",
+       "profile_picture":"data/2021/pictures/adithya_bhat_narjala.jpeg",
        "occupation":"Data Engineer at Openpay",
        "description":"I am passionate about architecting solutions for big-data processing pipelines while considering it's domain specific constraints relating to security and usability.",
        "social_media":"https:\/\/www.linkedin.com\/in\/adithya-bhat-narjala"
