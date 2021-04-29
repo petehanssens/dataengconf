@@ -60,5 +60,13 @@
         "occupation":"Data Engineer at Culture Amp",
         "description":"I am passionate about helping startups scale their data platforms. I like to think about security and privacy and how companies productionize Machine learning.",
         "social_media":"https:\/\/www.linkedin.com\/in\/rafael-mello-035a90143; https:\/\/github.com\/RafaelAMello"
+    },
+    {
+      "full_name": "Claudia Silva-Cabrera",
+      "profile_picture":"data/2021/pictures/Headshot_Claudia.jpg",
+      "location":"Sydney",
+      "occupation":"Data engineer @Kinesso",
+      "description":"Would you like to know the secrets of data? I would like it. I'm a data advocate in all its forms.",
+      "social_media":"https:\/\/claudia-sc.live"
     }
  ]
