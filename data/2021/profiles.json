@@ -2,6 +2,7 @@
     {
        "full_name":"Adithya Bhat Narjala",
        "location":"Melbourne",
+       "profile_picture":"data/2021/pictures/adithya_bhat_narjala.jpeg",
        "occupation":"Data Engineer at Openpay",
        "description":"I am passionate about architecting solutions for big-data processing pipelines while considering it's domain specific constraints relating to security and usability.",
        "social_media":"https:\/\/www.linkedin.com\/in\/adithya-bhat-narjala"
@@ -18,7 +19,7 @@
        "full_name":"Ingrid Anzola",
        "location":"Sydney",
        "profile_picture":"data/2021/pictures/ingrid.png",
-       "occupation":"TODO",
+       "occupation":"Head of Data Platform | Shippit",
        "description":"Passionate about data for 20 years, keen to share my own experiences and learn from others, and proud of being part of such an awesome data community",
        "social_media":null
     },
@@ -59,5 +60,20 @@
         "occupation":"Data Engineer at Culture Amp",
         "description":"I am passionate about helping startups scale their data platforms. I like to think about security and privacy and how companies productionize Machine learning.",
         "social_media":"https:\/\/www.linkedin.com\/in\/rafael-mello-035a90143; https:\/\/github.com\/RafaelAMello"
+    },
+    {
+      "full_name": "Claudia Silva-Cabrera",
+      "profile_picture":"data/2021/pictures/Headshot_Claudia.jpg",
+      "location":"Sydney",
+      "occupation":"Data engineer @Kinesso",
+      "description":"Would you like to know the secrets of data? I would like it. I'm a data advocate in all its forms.",
+      "social_media":"https:\/\/claudia-sc.live"
+    },
+    {
+      "full_name": "Francisco Liwa",
+      "location":"Brisbane",
+      "occupation":"Senior Data Engineer",
+      "description":"Passionate in Data and IoT",
+      "social_media":"https:www.linkedin.com\/in\/nifrali"
     }
  ]
