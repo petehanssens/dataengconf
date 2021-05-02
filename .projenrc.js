@@ -55,14 +55,14 @@ const project = new web.NextJsProject({
   // copyrightOwner: undefined,                                                /* License copyright owner. */
   // copyrightPeriod: undefined,                                               /* The copyright years to put in the LICENSE file. */
   defaultReleaseBranch: 'main',                                           /* The name of the main release branch. */
-  // dependabot: true,                                                         /* Include dependabot configuration. */
+  dependabot: true,                                                         /* Include dependabot configuration. */
   // dependabotOptions: undefined,                                             /* Options for dependabot. */
   // gitignore: undefined,                                                     /* Additional entries to .gitignore. */
   // jest: true,                                                               /* Setup jest unit tests. */
   // jestOptions: undefined,                                                   /* Jest options. */
   // libdir: 'lib',                                                            /* Compiler artifacts output directory. */
-  // mergify: true,                                                            /* Adds mergify configuration. */
-  // mergifyAutoMergeLabel: 'auto-merge',                                      /* Automatically merge PRs that build successfully and have this label. */
+  mergify: true,                                                            /* Adds mergify configuration. */
+  mergifyAutoMergeLabel: 'auto-merge',                                      /* Automatically merge PRs that build successfully and have this label. */
   // mergifyOptions: undefined,                                                /* Options for mergify. */
   // npmDistTag: 'latest',                                                     /* The dist-tag to use when releasing to npm. */
   // npmignore: undefined,                                                     /* Additional entries to .npmignore. */
