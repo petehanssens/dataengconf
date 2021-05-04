@@ -934,8 +934,8 @@
     regenerator-runtime "^0.13.3"
 
 "@netlify/plugin-nextjs@^3.0.3":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-3.2.0.tgz#9ea7a5c42531cc0b1aa5caefdba91fa0e1d2ed8a"
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-3.2.2.tgz#d8910d8ad08d4032b3b0e2bbdbcbf40ad11de494"
   dependencies:
     "@sls-next/lambda-at-edge" "^1.5.2"
     adm-zip "^0.5.4"
