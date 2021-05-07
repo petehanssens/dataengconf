@@ -127,10 +127,42 @@ const committee = [
   }
 ]
 
+function makePersonSchema(person) {
+  return {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    name: person.full_name,
+    url: "https://dataengconf.com.au/team",
+    "image": "https://dataengconf.com.au/"+person.profile_picture,
+    "sameAs": [
+      person.twitter,
+      person.linkedin,
+      person.website,
+      person.github
+    ]  
+  }
+}
 
 export default function Team() {
     return (
+
     <Layout>
+      {organisers.map((person) => (
+    <script
+        key={`jobJSON-${person.full_name}`}
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(makePersonSchema(person)) }}
+    />
+      ))
+      }
+      {committee.map((person) => (
+    <script
+        key={`jobJSON-${person.full_name}`}
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(makePersonSchema(person)) }}
+    />
+      ))
+      }
     <SEO
     keywords={[`DataEngBytes`,`team`]}
     title="Our Team - DataEngBytes 2021!"
