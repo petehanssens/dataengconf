@@ -127,10 +127,63 @@ const committee = [
   }
 ]
 
+function makePersonSchema(person) {
+  return {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    name: person.full_name,
+    url: "https://dataengconf.com.au/team",
+    "image": "https://dataengconf.com.au/"+person.profile_picture,
+    "sameAs": [
+      person.twitter,
+      person.linkedin,
+      person.website,
+      person.github
+    ]  
+  }
+}
+
+const breadcrumb = {
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Home",
+    "item": "https://dataengconf.com.au/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "team",
+    "item": "https://dataengconf.com.au/team"  
+  }]
+}
 
 export default function Team() {
     return (
+
     <Layout>
+      <script 
+        key={`breadcrumbJSON`}
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      {organisers.map((person) => (
+    <script
+        key={`organiserJSON-${person.full_name}`}
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(makePersonSchema(person)) }}
+    />
+      ))
+      }
+      {committee.map((person) => (
+    <script
+        key={`committeeJSON-${person.full_name}`}
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(makePersonSchema(person)) }}
+    />
+      ))
+      }
     <SEO
     keywords={[`DataEngBytes`,`team`]}
     title="Our Team - DataEngBytes 2021!"
@@ -234,7 +287,7 @@ export default function Team() {
           <div className="lg:col-span-2">
             <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
               {committee.map((person) => (
-                <li key={person.name}>
+                <li key={person.full_name}>
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
                       <img className="object-cover shadow-lg rounded-lg" src={person.profile_picture} alt="" />

@@ -1,8 +1,29 @@
 import React from 'react';
 
+const eventDetails = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "DataEngBytes",
+    "description": "DataEngBytes is back on again this year and it's going to be even better... \n Join us for some incredible talks and some great networking opportunities.",
+    "image": "https://dataengconf.com.au/images/dataEngMeetupAtlassian.jpeg",
+    "startDate": "2021-08-26T10:00+10:00",
+    "endDate": "2021-08-27T17:00+10:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://youtube.com/dataengau"
+    }
+}
+
 export default function Home() {
     return (
         <>
+            <script 
+            key={`eventDetailsJSON`}
+            type='application/ld+json'
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(eventDetails) }}
+            />
             <main className="lg:relative">
                 <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
                 <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
