@@ -6,11 +6,7 @@ import { faTwitter, faYoutube, faLinkedin, faMeetup } from '@fortawesome/free-br
 
 export default function ContactUs() {
   return (
-  <Layout>
-    <SEO
-    keywords={[`DataEngBytes`,`contact us`]}
-    title="Contact Us - DataEngBytes 2021!"
-    />
+  <>
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
@@ -117,6 +113,6 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
-  </Layout>
+  </>
   )
 }

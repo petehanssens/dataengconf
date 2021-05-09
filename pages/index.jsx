@@ -7,15 +7,11 @@ import Logos from '../components/logos'
 
 export default function Home() {
     return (
-        <Layout>
-            <SEO
-            keywords={[`DataEngBytes`,`DataEng`,`DataEngConfAU`,`Data Engineering`]}
-            title="DataEngBytes 2021!"
-            />
+        <>
             <HomeLayout />
             <Topics />
             <Logos />
-        </Layout>
+        </>
     )
 }
 
