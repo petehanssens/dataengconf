@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
@@ -11,6 +11,10 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMeetup } from '@fortawesome/free-brands-svg-icons' 
+
+import Register from '../components/auth/register'
+import SignIn from '../components/auth/sign-in'
+import Confirm from '../components/auth/confirm'
 
 const meetupLinks = [
   {
@@ -38,6 +42,8 @@ function classNames(...classes) {
 }
 
 export default function Navigation() {
+  const [status, setStatus] = useState('sign-in')
+  const [user, setUser] = useState(null)
 
   return (
     <Popover className="relative bg-white">
@@ -55,6 +61,11 @@ export default function Navigation() {
                   />
                 </a>
               </div>
+                <div>
+            {status === 'sign-in' ? <SignIn setStatus={setStatus} /> : null}
+            {status === 'register' ? <Register setStatus={setStatus} setUser={setUser} /> : null}
+            {status === 'confirm' ? <Confirm setUser={setUser} user={user} /> : null}
+            </div>
               <div className="-mr-2 -my-2 md:hidden">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open menu</span>
