@@ -34,6 +34,7 @@ const project = new web.NextJsProject({
   // description: undefined,                                                   /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',
+    'netlify-plugin-contextual-env',
     "autoprefixer",
     "postcss"
   ],                                                              /* Build dependencies for this module. */

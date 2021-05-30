@@ -24,6 +24,7 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^3.0.3",
     "autoprefixer": "^10.2.5",
+    "netlify-plugin-contextual-env": "^0.3.0",
     "postcss": "^8.2.10",
     "projen": "^0.17.16",
     "standard-version": "^9.0.0",
