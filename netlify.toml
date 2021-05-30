@@ -1,5 +1,5 @@
 [[plugins]]
-package = 'netlify-plugin-contextual-env'
+package = 'netlify-plugin-env'
   [plugins.inputs]
   mode = 'prefix'
 
