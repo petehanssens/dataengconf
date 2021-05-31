@@ -2,19 +2,12 @@
 import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  BookmarkAltIcon,
-  CalendarIcon,
   MenuIcon,
-  SupportIcon,
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMeetup } from '@fortawesome/free-brands-svg-icons' 
-
-import Register from '../components/auth/register'
-import SignIn from '../components/auth/sign-in'
-import Confirm from '../components/auth/confirm'
 
 const meetupLinks = [
   {
@@ -62,9 +55,6 @@ export default function Navigation() {
                 </a>
               </div>
                 <div>
-            {status === 'sign-in' ? <SignIn setStatus={setStatus} /> : null}
-            {status === 'register' ? <Register setStatus={setStatus} setUser={setUser} /> : null}
-            {status === 'confirm' ? <Confirm setUser={setUser} user={user} /> : null}
             </div>
               <div className="-mr-2 -my-2 md:hidden">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -144,6 +134,17 @@ export default function Navigation() {
                   )}
                 </Popover>
               </Popover.Group>
+            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+              <a href="/auth" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                Sign in
+              </a>
+              <a
+                href="/auth"
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+              >
+                Sign up
+              </a>
+            </div>
             </div>
           </div>
 
@@ -203,6 +204,21 @@ export default function Navigation() {
                         {item.name}
                       </a>
                     ))}
+
+<div className="mt-6">
+                      <a
+                        href="/auth"
+                        className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                      >
+                        Sign up
+                      </a>
+                      <p className="mt-6 text-center text-base font-medium text-gray-500">
+                        Existing customer?{' '}
+                        <a href="/auth" className="text-indigo-600 hover:text-indigo-500">
+                          Sign in
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
