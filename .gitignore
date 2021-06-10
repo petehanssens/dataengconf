@@ -54,3 +54,4 @@ jspm_packages/
 # Next.js
 /.next/
 out/
+.env.local

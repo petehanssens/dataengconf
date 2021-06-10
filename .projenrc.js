@@ -23,11 +23,20 @@ const project = new web.NextJsProject({
     'jsonp',
     'query-string',
     'encoding',
-    'isomorphic-fetch'
+    'isomorphic-fetch',
+    "@aws-amplify/ui-react",
+    "@tailwindcss/forms",
+    "aws-amplify",
+    "react",
+    "react-dom",
+    "react-hook-form"
   ],                                                                 /* Runtime dependencies of this module. */
   // description: undefined,                                                   /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
-    '@netlify/plugin-nextjs'
+    '@netlify/plugin-nextjs',
+    'netlify-plugin-contextual-env',
+    "autoprefixer",
+    "postcss"
   ],                                                              /* Build dependencies for this module. */
   // entrypoint: 'lib/index.js',                                               /* Module entrypoint (`main` in `package.json`). */
   homepage: 'https://dataengconf.com.au',                                                      /* Package's Homepage / Website. */

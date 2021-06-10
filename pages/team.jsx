@@ -162,7 +162,7 @@ const breadcrumb = {
 export default function Team() {
     return (
 
-    <Layout>
+    <>
       <script 
         key={`breadcrumbJSON`}
         type='application/ld+json'
@@ -184,10 +184,6 @@ export default function Team() {
     />
       ))
       }
-    <SEO
-    keywords={[`DataEngBytes`,`team`]}
-    title="Our Team - DataEngBytes 2021!"
-    />
     <div className="bg-white">
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
@@ -362,6 +358,6 @@ export default function Team() {
         </div>
       </div>
     </div>
-  </Layout>
+  </>
   )
 }

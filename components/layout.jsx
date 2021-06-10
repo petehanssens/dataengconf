@@ -2,20 +2,19 @@ import PropTypes from "prop-types";
 import React from 'react';
 import Navbar from './navbar'
 import FooterClass from './footer'
-import Head from 'next/head';
 
-function Layout ({ children }) {
-
+function Layout (props) {
+// console.log('layout props: ', props)
     return (
-        <>
-        <Navbar />
-            <body className="">
-                <main className="w-full container mx-auto p-12">
-                    {children}
-                </main>
-            </body>
+      <>
+        <Navbar signedInUser={props.signedInUser}/>
+          <body className="">
+            <main className="w-full container mx-auto p-12">
+              {props.children}
+            </main>
+          </body>
         <FooterClass />
-        </>
+      </>
     )
 }
 
