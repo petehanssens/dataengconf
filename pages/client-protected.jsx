@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Auth } from 'aws-amplify'
 import { withAuthenticator } from '@aws-amplify/ui-react'
-import Head from 'next/head'
 
 import SignOut from '../components/auth/sign-out'
 
@@ -29,7 +28,7 @@ function ClientProtected() {
               {user && (
                 <>
                   <h1 className="my-6 text-center text-3xl font-extrabold text-gray-900">
-                    Welcome, {user.username}
+                    Welcome, {user.attributes.given_name}
                   </h1>
                   <SignOut />
                 </>

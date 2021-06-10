@@ -7,7 +7,9 @@ import {
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMeetup } from '@fortawesome/free-brands-svg-icons' 
+import { faMeetup } from '@fortawesome/free-brands-svg-icons'
+
+import SignOut from '../components/auth/sign-out'
 
 const meetupLinks = [
   {
@@ -34,7 +36,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navigation() {
+export default function Navigation(props) {
+  // console.log('navbar props: ',props)
+  const signedInUser = props.signedInUser
   const [status, setStatus] = useState('sign-in')
   const [user, setUser] = useState(null)
 
@@ -62,6 +66,8 @@ export default function Navigation() {
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
+              
+
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
                 <a href="https://sessionize.com/dataengbytes2021/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Call for Papers
@@ -133,7 +139,14 @@ export default function Navigation() {
                     </>
                   )}
                 </Popover>
-              </Popover.Group>
+              </Popover.Group>              
+             {signedInUser ? 
+              <>
+                <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                  <SignOut />
+                </div>
+              </> :
+              <>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <a href="/auth" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
                   Sign in
@@ -145,6 +158,8 @@ export default function Navigation() {
                   Sign up
                 </a>
               </div>
+
+              </>}
             </div>
           </div>
 
@@ -204,8 +219,13 @@ export default function Navigation() {
                         {item.name}
                       </a>
                     ))}
-
-<div className="mt-6">
+        
+                    {signedInUser ? 
+                      <div className="mt-6">
+                        <SignOut />
+                      </div>
+                        :
+                    <div className="mt-6">
                       <a
                         href="/auth"
                         className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
@@ -219,6 +239,7 @@ export default function Navigation() {
                         </a>
                       </p>
                     </div>
+                    }
                   </div>
                 </div>
               </div>

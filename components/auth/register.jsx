@@ -4,13 +4,15 @@ import { useForm } from "react-hook-form";
 export default function Register({ setStatus, setUser }) {
   const { register, handleSubmit } = useForm();
 
-  async function signUp({ email, username, password }) {
+  async function signUp({ email, username, password, given_name, family_name }) {
     try {
       await Auth.signUp({
         username,
         password,
         attributes: {
           email, // optional but not in this case as MFA/Verification code wil be emailed
+          given_name,
+          family_name
         }
       });
 
@@ -30,10 +32,6 @@ export default function Register({ setStatus, setUser }) {
       <input type="hidden" name="remember" value="true" />
       <div className="rounded-md shadow-sm -space-y-px">
         <div>
-          <label htmlFor="email-address" className="sr-only">Email address</label>
-          <input ref={register} id="email-address" name="email" type="email" autoComplete="email" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address" />
-        </div>
-        <div>
           <label htmlFor="username" className="sr-only">Username</label>
           <input ref={register} id="username" name="username" type="username" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Username" />
         </div>
@@ -41,16 +39,13 @@ export default function Register({ setStatus, setUser }) {
           <label htmlFor="password" className="sr-only">Password</label>
           <input ref={register} id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
         </div>
-      </div>
-
-      <div className="flex items-center justify-end">
-        <div className="text-sm">
-          <button
-            className="font-medium text-indigo-600 hover:text-indigo-500"
-            onClick={() => setStatus('sign-in')}
-          >
-            Back to Sign In
-          </button>
+        <div>
+          <label htmlFor="given_name" className="sr-only">Given Name</label>
+          <input ref={register} id="given_name" name="given_name" type="given_name" autoComplete="current-given_name" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Given Name" />
+        </div>
+        <div>
+          <label htmlFor="family_name" className="sr-only">Family Name</label>
+          <input ref={register} id="family_name" name="family_name" type="family_name" autoComplete="current-familyName" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Family Name" />
         </div>
       </div>
 
@@ -63,6 +58,17 @@ export default function Register({ setStatus, setUser }) {
           </span>
             Register
           </button>
+      </div>
+
+      <div className="flex items-center justify-end">
+        <div className="text-sm">
+          <button
+            className="font-medium text-indigo-600 hover:text-indigo-500"
+            onClick={() => setStatus('sign-in')}
+          >
+            Back to Sign In
+          </button>
+        </div>
       </div>
     </form>
   )
