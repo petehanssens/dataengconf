@@ -18,7 +18,7 @@ const organisers = [
      profile_picture:"images/organisers/kelly_hotta.jpg",
      location:"Sydney",
      occupation:"Sales at Fishtown Analytics | Makers of dbt",
-     description:"After 8yrs in solution engineering, I recently moved into sales, where I work with dbt Cloud customers across the APAC region. I love helping people solve problems and discover ways to make their working lives better. What excites me most about tech is that it breathes new life to age-old problems \ud83c\udf31 ...and there is always room for improvement!\n\nWhen I\u2019m not working, I enjoy cooking at home, surfing with my partner Chris, and being anywhere outside \u2600\ufe0f",
+     description:"After 8yrs in solution engineering, I recently moved into sales where I work with dbt Cloud customers across APAC. What excites me most about tech is that it breathes new life to age-old problems \ud83c\udf31 ...and there is always room for improvement!",
      linkedin:"https://www.linkedin.com/in/kellyhotta/"
   },
   {
