@@ -11,6 +11,27 @@ import { faMeetup } from '@fortawesome/free-brands-svg-icons'
 
 import SignOut from '../components/auth/sign-out'
 
+const aboutUs = [
+  {
+    name: 'Code of Conduct',
+    description: 'Lets create a safe space!',
+    href: '/conduct',
+    icon: <FontAwesomeIcon icon={faMeetup} />
+  },
+  {
+    name: 'FAQs',
+    description: 'Answers to your questions!',
+    href: '/faq',
+    icon: <FontAwesomeIcon icon={faMeetup} />
+  },
+  {
+    name: 'Contact Us',
+    description: 'All the links of where to find us on the socials',
+    href: '/contact',
+    icon: <FontAwesomeIcon icon={faMeetup} />
+  },
+]
+
 const meetupLinks = [
   {
     name: 'Brisbane',
@@ -72,15 +93,63 @@ export default function Navigation(props) {
                 <a href="https://sessionize.com/dataengbytes2021/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Call for Papers
                 </a>
-                <a href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Contact Us
-                </a>
-                <a href="/faq" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  FAQ's
-                </a>
-                <a href="/conduct" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Code of Conduct
-                </a>
+                <Popover className="relative">
+                  {({ open }) => (
+                    <>
+                      <Popover.Button
+                        className={classNames(
+                          open ? 'text-gray-900' : 'text-gray-500',
+                          'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                        )}
+                      >
+                        <span>About Us</span>
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? 'text-gray-600' : 'text-gray-400',
+                            'ml-2 h-5 w-5 group-hover:text-gray-500'
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Popover.Button>
+
+                      <Transition
+                        show={open}
+                        as={Fragment}
+                        enter="transition ease-out duration-200"
+                        enterFrom="opacity-0 translate-y-1"
+                        enterTo="opacity-100 translate-y-0"
+                        leave="transition ease-in duration-150"
+                        leaveFrom="opacity-100 translate-y-0"
+                        leaveTo="opacity-0 translate-y-1"
+                      >
+                        <Popover.Panel
+                          static
+                          className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0"
+                        >
+                          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                              {aboutUs.map((item) => (
+                                <a
+                                  key={item.name}
+                                  href={item.href}
+                                  className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                                >
+                                  <div className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true">
+                                  {item.icon}
+                                  </div>
+                                  <div className="ml-4">
+                                    <p className="text-base font-medium text-gray-900">{item.name}</p>
+                                    <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                                  </div>
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        </Popover.Panel>
+                      </Transition>
+                    </>
+                  )}
+                </Popover>
                 <a href="/team" className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Our Team
                 </a>
@@ -151,14 +220,11 @@ export default function Navigation(props) {
               </> :
               <>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a href="/auth" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                  Sign in
-                </a>
                 <a
-                  href="/auth"
+                  href="https://www.tickettailor.com/events/dataengbytes/505988"
                   className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                 >
-                  Sign up
+                  Buy Tickets
                 </a>
               </div>
 
@@ -204,15 +270,15 @@ export default function Navigation(props) {
                     <a href="https://sessionize.com/dataengbytes2021/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                       Call for Papers
                     </a>
-                    <a href="/contact" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Contact Us
-                    </a>
-                    <a href="/faq" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      FAQ's
-                    </a>
-                    <a href="/conduct" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Code of Conduct
-                    </a>
+                    {aboutUs.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="text-base font-medium text-gray-900 hover:text-gray-700"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
                     <a href="/team" className="text-base font-medium text-gray-900 hover:text-gray-700">
                       Our Team
                     </a>
@@ -233,17 +299,11 @@ export default function Navigation(props) {
                         :
                     <div className="mt-6">
                       <a
-                        href="/auth"
+                        href="https://www.tickettailor.com/events/dataengbytes/505988"
                         className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                       >
-                        Sign up
+                        Buy Tickets
                       </a>
-                      <p className="mt-6 text-center text-base font-medium text-gray-500">
-                        Existing customer?{' '}
-                        <a href="/auth" className="text-indigo-600 hover:text-indigo-500">
-                          Sign in
-                        </a>
-                      </p>
                     </div>
                     }
                   </div>
