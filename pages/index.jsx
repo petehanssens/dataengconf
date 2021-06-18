@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import HomeLayout from '../components/home'
 import Topics from '../components/topics'
 import Logos from '../components/logos'
+import Pricing from '../components/pricing'
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <>
             <HomeLayout />
             <Topics />
+            <Pricing />
             <Logos />
         </>
     )
