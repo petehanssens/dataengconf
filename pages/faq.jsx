@@ -25,6 +25,11 @@ const faqs = [
       "You can purchase them [here](https://www.tickettailor.com/events/dataengbytes/505988)",
   },
   {
+    question: "Can I get a refund if there's a COVID outbreak?",
+    answer:
+      "In the event of a COVID-19 related lockdown where either the in-person element of DataEngBytes is not able to take place or you are not able to attend because of a lockdown in your area, we will provide a full refund.",
+  },
+  {
     question: "Can I still participate if I don’t live in Australia?",
     answer:
       "Yes! We will provide details for online access closer to the event.  Wherever you are in the world, you can introduce a submission as a speaker or join the live streaming on the day.",
