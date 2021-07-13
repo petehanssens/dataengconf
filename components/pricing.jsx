@@ -83,12 +83,12 @@ export default function Example() {
                   <div className="bg-white rounded-t-lg px-6 pt-12 pb-10">
                     <div>
                       <h3 className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6" id="tier-growth">
-                        Super Early Bird
+                        Early Bird
                       </h3>
                       <div className="mt-4 flex items-center justify-center">
                         <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
                           <span className="mt-2 mr-2 text-4xl font-medium">$</span>
-                          <span className="font-extrabold">49</span>
+                          <span className="font-extrabold">74</span>
                         </span>
                         <span className="text-2xl font-medium text-gray-500">+ GST</span>
                       </div>

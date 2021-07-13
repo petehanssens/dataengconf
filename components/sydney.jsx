@@ -30,7 +30,7 @@ export default function Example() {
           <div className="lg:col-start-2 lg:pl-8">
             <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
               <h2 className="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
-                Sydney
+                Sydney - Tuesday, 5th October
               </h2>
               <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Wesley Conference Centre
