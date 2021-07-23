@@ -1,6 +1,6 @@
 # dataengconf
 
-Website for the Sydney DataEngConf!
+Website for the [Sydney DataEngConf](https://dataengconf.com.au/)!
 
 ## list of sections
 
@@ -8,11 +8,13 @@ Website for the Sydney DataEngConf!
 - code of conduct
 - call for papers
 - organisers
--
+
 
 # Getting started as a developer
 
 1. Clone the repo
-2. Install dependencies: yarn install
-3. Run the app: yarn dev
-4. Open the application: http://localhost:3000/
+1. Install node `brew install node` 
+1. Install yarn `npm install --global yarn`
+1. Install dependencies: `yarn install`
+1. Run the app: `yarn dev`
+1. Open the application: http://localhost:3000/
