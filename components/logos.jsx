@@ -41,7 +41,11 @@ const sponsorLogo = [
       image: 'images/sponsors/new-cloudshuttle-logo.png',
       url: 'https://www.cloudshuttle.com.au/',
     },
-]
+    {
+      name: 'Thoughtworks',
+      image: 'images/sponsors/thoughtworks_flamingo_wave.png',
+      url: 'https://www.thoughtworks.com/',
+    },]
 
 export default function Sponsors() {
     return (
