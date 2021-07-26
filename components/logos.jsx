@@ -17,6 +17,11 @@ const sponsorLogo = [
       url: 'https://databricks.com/',
     },
     {
+      name: 'Microsoft',
+      image: 'images/sponsors/MS-Azure_logo_gray.png',
+      url: 'https://azure.microsoft.com/en-au/',
+    },
+    {
       name: 'Imply',
       image: 'images/sponsors/imply.png',
       url: 'https://imply.io/',
@@ -32,6 +37,16 @@ const sponsorLogo = [
       url: 'https://www.getdbt.com/',
     },
     {
+      name: 'Thoughtworks',
+      image: 'images/sponsors/thoughtworks_flamingo_wave.png',
+      url: 'https://www.thoughtworks.com/',
+    },
+    {
+      name: 'Microsoft Reactor',
+      image: 'images/sponsors/Reactor-logo-Dark.svg',
+      url: 'https://developer.microsoft.com/en-us/reactor/location/sydney',
+    },
+    {
       name: 'YOW Conferences',
       image: 'images/sponsors/yow.png',
       url: 'https://yowconference.com/data/',
@@ -41,11 +56,7 @@ const sponsorLogo = [
       image: 'images/sponsors/new-cloudshuttle-logo.png',
       url: 'https://www.cloudshuttle.com.au/',
     },
-    {
-      name: 'Thoughtworks',
-      image: 'images/sponsors/thoughtworks_flamingo_wave.png',
-      url: 'https://www.thoughtworks.com/',
-    },]
+]
 
 export default function Sponsors() {
     return (
