@@ -32,14 +32,14 @@ const sponsorLogo = [
       url: 'https://www.versor.com.au/',
     },
     {
-      name: 'Thoughtworks',
-      image: 'images/sponsors/thoughtworks_flamingo_wave.png',
-      url: 'https://www.thoughtworks.com/',
-    },
-    {
       name: 'dbt',
       image: 'images/sponsors/dbt-logo-full.png',
       url: 'https://www.getdbt.com/',
+    },
+    {
+      name: 'Thoughtworks',
+      image: 'images/sponsors/thoughtworks_flamingo_wave.png',
+      url: 'https://www.thoughtworks.com/',
     },
     {
       name: 'Microsoft Reactor',
