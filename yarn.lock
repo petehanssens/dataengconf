@@ -1988,8 +1988,8 @@
     mini-svg-data-uri "^1.2.3"
 
 "@tailwindcss/line-clamp@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.2.0.tgz#7f30f26ed3835d64d1eb5a9b0d60cf5291dd2a3b"
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.2.1.tgz#efafe556719c26a3926f0679a98307c4bc9270d2"
 
 "@tailwindcss/typography@^0.4.0":
   version "0.4.1"
