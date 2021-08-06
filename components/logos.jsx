@@ -22,6 +22,11 @@ const sponsorLogo = [
       url: 'https://azure.microsoft.com/en-au/',
     },
     {
+      name: 'AWS',
+      image: 'images/sponsors/aws.png',
+      url: 'https://aws.amazon.com/',
+    },
+    {
       name: 'Imply',
       image: 'images/sponsors/imply.png',
       url: 'https://imply.io/',
