@@ -200,13 +200,13 @@
     "categories": []
   },
   {
-    "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
+    "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
     "firstName": "Gian",
     "lastName": "Merlino",
     "fullName": "Gian Merlino",
-    "bio": "Apache Druid PMC Chair & Imply CTO",
-    "tagLine": "Apache Druid PMC Chair & Imply CTO",
-    "profilePicture": "https://sessionize.com/image/f70e-400o400o2-E8yQyrkL3SxtUqAujBHeah.jpeg",
+    "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
+    "tagLine": "Co-Founder & CTO",
+    "profilePicture": "https://sessionize.com/image/315e-400o400o2-4a-1c9b-4c44-b4b0-80e9521509d7.d4759d97-cb44-4411-8ef9-d356d9d5d5d7.png",
     "sessions": [
       {
         "id": 252604,
@@ -214,18 +214,7 @@
       }
     ],
     "isTopSpeaker": false,
-    "links": [
-      {
-        "title": "Twitter",
-        "url": "https://twitter.com/gianmerlino",
-        "linkType": "Twitter"
-      },
-      {
-        "title": "Company Website",
-        "url": "https://imply.io/",
-        "linkType": "Company_Website"
-      }
-    ],
+    "links": [],
     "questionAnswers": [],
     "categories": []
   },
@@ -260,6 +249,25 @@
       {
         "id": 272068,
         "name": "Gone Streaming: dbt+Materialize in 10 minutes"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "69038dea-9d70-458d-8604-3b74c71e43bc",
+    "firstName": "John",
+    "lastName": "Cosgrove",
+    "fullName": "John Cosgrove",
+    "bio": "I believe that there is only one way to truly change the planet with data: put it in the hands of the people.",
+    "tagLine": "Chief Executive Officer at Lightfold",
+    "profilePicture": "https://sessionize.com/image/c17e-400o400o2-Mv5ehqNGuGYioJxfniL7Pw.png",
+    "sessions": [
+      {
+        "id": 271049,
+        "name": "Teleport Data: The future of data"
       }
     ],
     "isTopSpeaker": false,
@@ -348,13 +356,13 @@
     "firstName": "Mercedes",
     "lastName": "Speroni",
     "fullName": "Mercedes Speroni",
-    "bio": "Mercedes Speroni is a Machine Learning Engineer at MEQProbe, the first Australian AgTech StartUp that combines ML and Photonics to predict the quality of food. Prior to MEQProbe, Mercedes worked for Nasdaq as a Data Scientist and for Google in multiple Technical roles, positively impacting > 250K active users across the world in Analytics products. \r\n\r\nMercedes received her M.A. in Information Technology from the University of Technology Sydney and B.Sc. in Information Science from Austral University. She is the recipient of the Dean’s List Award, the SPLATAM M.A Scholarship, the Top Submission at the Altis Consulting and IBM Dathaton2020, and the Best Customer Success Story Award at Google, among a number of other professional recognitions. She also mentors young women in STEM and volunteers at Data4good.",
-    "tagLine": "Machine Learning Engineer at MEQProbe",
-    "profilePicture": "https://sessionize.com/image/3e4f-400o400o2-075a5e80-bc7a-485d-9b7a-4af183d791a8.jpg",
+    "bio": "Mercedes Speroni is a Machine Learning Engineer at MEQProbe, the first Australian AgTech StartUp that combines ML and Photonics to predict the quality of food. Prior to MEQProbe, Mercedes worked for Nasdaq as a Data Scientist and for Google in multiple Technical roles, positively impacting > 250K active users across the world in Analytics products. ",
+    "tagLine": "Machine Learning Engineer",
+    "profilePicture": "https://sessionize.com/image/075e-400o400o2-E4M3EbNuzRiELe45CpSmfi.jpg",
     "sessions": [
       {
         "id": 265756,
-        "name": "Chain-speed inference for Computer Vision Pipelines on portable devices with limited connectivity"
+        "name": "Chain-speed inference for Computer Vision Pipelines"
       }
     ],
     "isTopSpeaker": false,
@@ -403,25 +411,6 @@
         "linkType": "Twitter"
       }
     ],
-    "questionAnswers": [],
-    "categories": []
-  },
-  {
-    "id": "69038dea-9d70-458d-8604-3b74c71e43bc",
-    "firstName": "Neil",
-    "lastName": "Ganatra",
-    "fullName": "Neil Ganatra",
-    "bio": "TBC",
-    "tagLine": "APAC Marketing Manager | Fivetran",
-    "profilePicture": null,
-    "sessions": [
-      {
-        "id": 271049,
-        "name": "Modern Data Stack: Learnings, Pitfalls & Best Practices."
-      }
-    ],
-    "isTopSpeaker": false,
-    "links": [],
     "questionAnswers": [],
     "categories": []
   },
@@ -480,7 +469,7 @@
     "sessions": [
       {
         "id": 261511,
-        "name": "Serverless Datalake using AWS and DBT"
+        "name": "Building a Data Platform at Assembly Payments"
       }
     ],
     "isTopSpeaker": false,
@@ -631,9 +620,9 @@
   },
   {
     "id": "0e577c69-f95e-4044-a53c-d626732f2bb6",
-    "firstName": "TEJAS",
-    "lastName": "CHOPRA",
-    "fullName": "TEJAS CHOPRA",
+    "firstName": "Tejas",
+    "lastName": "Chopra",
+    "fullName": "Tejas Chopra",
     "bio": "Tejas Chopra is a Senior Software Engineer, working in the Data Storage Platform team at Netflix, where he is responsible for architecting storage solutions to support Netflix Studios and Netflix Streaming Platform. Prior to Netflix, Tejas was working on designing and implementing the storage infrastructure at Box, Inc. to support a cloud content management platform that scales to petabytes of storage & millions of users. Tejas has worked on distributed file systems & backend architectures, both in on-premise and cloud environments as part of several startups in his career. Tejas is an International Keynote Speaker and periodically conducts seminars on Software Development & Cloud Computing and has a Masters Degree in Electrical & Computer Engineering from Carnegie Mellon University, with a specialization in Computer Systems.",
     "tagLine": "Senior Software Engineer, Netflix",
     "profilePicture": "https://sessionize.com/image/c6a7-400o400o2-NL4BWWTNSwV2YY7sZEzLS8.jpeg",

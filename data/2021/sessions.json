@@ -118,8 +118,29 @@
       },
       {
         "questionAnswers": [],
+        "id": "261511",
+        "title": "Building a Data Platform at Assembly Payments",
+        "description": "- Datalake journey @ Assembly Payments.\r\n- Description of Architecture using RDS, DynamoDB, DMS, Firehose, Lambda, S3, Glue, EventBridge, Step Functions, Fargate, DBT, Snowflake and Looker\r\n- Share the benefits we felt like event driven, serverless, performance, low cost and lower operational overhead.\r\n- and share some of the learnings in the usage of step functions, glue, incremental loads and dependency management.",
+        "startsAt": null,
+        "endsAt": null,
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "88e9b4d4-cd98-48aa-9eb5-93ff5a8307c6",
+            "name": "Roopak Madhu"
+          }
+        ],
+        "categories": [],
+        "roomId": null,
+        "room": null,
+        "liveUrl": null,
+        "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
         "id": "265756",
-        "title": "Chain-speed inference for Computer Vision Pipelines on portable devices with limited connectivity",
+        "title": "Chain-speed inference for Computer Vision Pipelines",
         "description": "I will go through some best practices for minimizing real-time prediction latency for devices in processing plants. \r\n\r\nI will cover data collection, processing, data pipelines, model deployment, and monitoring. I would also like to discuss common challenges that arise in factories: a poor network connection, space limitations, and keeping up with the chain-speed.\r\n\r\n",
         "startsAt": null,
         "endsAt": null,
@@ -297,6 +318,10 @@
           {
             "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
             "name": "Gian Merlino"
+          },
+          {
+            "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
+            "name": "Gian Merlino"
           }
         ],
         "categories": [],
@@ -391,27 +416,6 @@
       },
       {
         "questionAnswers": [],
-        "id": "271049",
-        "title": "Modern Data Stack: Learnings, Pitfalls & Best Practices.",
-        "description": "Lightfold will take the audience through a journey on how they helped XXXX (Company name TBC) create Modern Data Stack. They'll share their learnings, the pitfalls and most importantly best practices that individuals can take away with them.",
-        "startsAt": null,
-        "endsAt": null,
-        "isServiceSession": false,
-        "isPlenumSession": false,
-        "speakers": [
-          {
-            "id": "69038dea-9d70-458d-8604-3b74c71e43bc",
-            "name": "Neil Ganatra"
-          }
-        ],
-        "categories": [],
-        "roomId": null,
-        "room": null,
-        "liveUrl": null,
-        "recordingUrl": null
-      },
-      {
-        "questionAnswers": [],
         "id": "260553",
         "title": "Modern Data Warehouse for Small and Medium Business",
         "description": "With many organizations in SMB sector looking at opportunity to benefit from using modern big data technologies and tools within their budget and skill set, this session overviews an opinion on appropriate architecture for this use-case. ",
@@ -443,7 +447,7 @@
         "speakers": [
           {
             "id": "0e577c69-f95e-4044-a53c-d626732f2bb6",
-            "name": "TEJAS CHOPRA"
+            "name": "Tejas Chopra"
           }
         ],
         "categories": [],
@@ -507,27 +511,6 @@
           {
             "id": "cdc549e0-9c5b-4eb2-b561-dbbecedb76af",
             "name": "Antón Rodríguez"
-          }
-        ],
-        "categories": [],
-        "roomId": null,
-        "room": null,
-        "liveUrl": null,
-        "recordingUrl": null
-      },
-      {
-        "questionAnswers": [],
-        "id": "261511",
-        "title": "Serverless Datalake using AWS and DBT",
-        "description": "- Datalake journey @ Assembly Payments.\r\n- Description of Architecture using RDS, DynamoDB, DMS, Firehose, Lambda, S3, Glue, EventBridge, Step Functions, Fargate, DBT, Snowflake and Looker\r\n- Share the benefits we felt like event driven, serverless, performance, low cost and lower operational overhead.\r\n- and share some of the learnings in the usage of step functions, glue, incremental loads and dependency management.",
-        "startsAt": null,
-        "endsAt": null,
-        "isServiceSession": false,
-        "isPlenumSession": false,
-        "speakers": [
-          {
-            "id": "88e9b4d4-cd98-48aa-9eb5-93ff5a8307c6",
-            "name": "Roopak Madhu"
           }
         ],
         "categories": [],
@@ -637,6 +620,27 @@
           {
             "id": "d4783611-1bc2-4254-b589-ccb75e28a553",
             "name": "Marta Paes"
+          }
+        ],
+        "categories": [],
+        "roomId": null,
+        "room": null,
+        "liveUrl": null,
+        "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
+        "id": "271049",
+        "title": "Teleport Data: The future of data",
+        "description": "This session will discuss:\r\n- the new data stack\r\n- challenges & problems still faced\r\n- teleport data",
+        "startsAt": null,
+        "endsAt": null,
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "69038dea-9d70-458d-8604-3b74c71e43bc",
+            "name": "John Cosgrove"
           }
         ],
         "categories": [],

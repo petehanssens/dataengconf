@@ -1,5 +1,7 @@
 import speakers from '../data/2021/speakers.json'
 
+const exclusionList = ['Chris Benson','Galina Polyakova', 'Suprabhat Sinha', 'Juliana Zhu', 'Pip Sidaway']
+
 export default function Speakers() {
 
     return (
@@ -13,7 +15,9 @@ export default function Speakers() {
       role="list"
       className="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0"
     >
-      {speakers.map((person) => (
+      {speakers.filter(
+        speaker => !exclusionList.includes(speaker.fullName)
+      ).map((person) => (
         <li key={person.id}>
           <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
             <div className="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
