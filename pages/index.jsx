@@ -7,6 +7,7 @@ import Logos from '../components/logos'
 import Pricing from '../components/pricing'
 import Sydney from '../components/sydney'
 import Melbourne from '../components/melbourne'
+import SpeakerSmall from '../components/speakersSmall'
 
 
 export default function Home() {
@@ -14,9 +15,7 @@ export default function Home() {
         <>
             <HomeLayout />
             <Topics />
-            <Pricing />
-            <Sydney />
-            <Melbourne />
+            <SpeakerSmall />
             <Logos />
         </>
     )
