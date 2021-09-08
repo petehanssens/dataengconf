@@ -286,27 +286,6 @@
       },
       {
         "questionAnswers": [],
-        "id": "265952",
-        "title": "How to make data products easy to trust and understand",
-        "description": "Data engineers are producing data products at an ever increasing pace. However the lifetime value of a data product is incredibly low.\r\n\r\nAs an enterprise data startup, we analysed thousands of data products across organisations in different industries. Through our journey we identified 5 factors that impact the trust and longevity of a data product.\r\n\r\nIn this talk, I will cover how data engineers can make their data products deliver more value to more people. ",
-        "startsAt": null,
-        "endsAt": null,
-        "isServiceSession": false,
-        "isPlenumSession": false,
-        "speakers": [
-          {
-            "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
-            "name": "Dean Nguyen"
-          }
-        ],
-        "categories": [],
-        "roomId": null,
-        "room": null,
-        "liveUrl": null,
-        "recordingUrl": null
-      },
-      {
-        "questionAnswers": [],
         "id": "252604",
         "title": "Inside Apache Druid's Storage and Query Engine",
         "description": "Apache Druid is an open-source columnar database known for high performance at scale; its largest deployments comprise thousands of servers. But no matter the scale, high performance starts with good fundamentals. This talk will dive into those fundamentals by exploring the inner workings of a single data server. We’ll cover how Apache Druid stores data, what kinds of compression it uses, how it indexes data, how the storage engine is linked with the query processing engine, and how the system handles resource management and multithreading. Together, all these pieces enable Apache Druid to process billions of records per second on a single data server.\r\n",
@@ -315,10 +294,6 @@
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
-          {
-            "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
-            "name": "Gian Merlino"
-          },
           {
             "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
             "name": "Gian Merlino"
@@ -522,7 +497,7 @@
       {
         "questionAnswers": [],
         "id": "270619",
-        "title": "Shift-left testing : Build reliable Data Pipelines",
+        "title": "Shift-left testing : Building reliable Data Pipelines",
         "description": "Unreliable data pipelines can result in data downtime. “Data downtime“refers to periods of time when your data  is partial, erroneous, missing or otherwise inaccurate. Data driven organisations may need to pay a heavy cost of low trust data. One of the challenges of building reliable  data pipelines is unexpected data coming from different sources.\r\nIn this talk we will share our  experiences of  how we  can build reliable data pipelines  by \r\n\t 1.  “Shifting Left” - testing   to the early stages of  development life cycle  as well as  \r\n         2.  “Shifting-Left” - validations using data contracts\r\nWe will then conclude by discussing  how we can we make sure that the system catches unexpected data and is able to recover from it. ",
         "startsAt": null,
         "endsAt": null,
@@ -543,7 +518,7 @@
       {
         "questionAnswers": [],
         "id": "277489",
-        "title": "Snowflake and dbt -- better title coming soon",
+        "title": "Snowflake and dbt -- Our Journey to the Cloud",
         "description": "nib's journey of using Snowflake and dbt ",
         "startsAt": null,
         "endsAt": null,
@@ -641,6 +616,27 @@
           {
             "id": "69038dea-9d70-458d-8604-3b74c71e43bc",
             "name": "John Cosgrove"
+          }
+        ],
+        "categories": [],
+        "roomId": null,
+        "room": null,
+        "liveUrl": null,
+        "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
+        "id": "265952",
+        "title": "Trust, Knowledge and your Data. Our approach at KADA to building a great data product",
+        "description": "Have you spent time building a great data product that failed to gain traction? \r\n\r\nOr found users using a legacy report despite a better report being available?\r\n\r\nIt's a common occurrence. \r\n\r\nThrough our journey at KADA, we have identified 5 factors that make a great, trusted data product. \r\n\r\nIn this talk, I will share how you can improve your data products and show you how we built these features into K, our platform for making trust & knowledge a key part of the modern data stack. ",
+        "startsAt": null,
+        "endsAt": null,
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
+            "name": "Dean Nguyen"
           }
         ],
         "categories": [],

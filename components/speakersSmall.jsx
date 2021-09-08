@@ -2,7 +2,7 @@ import React from 'react';
 
 import speakers from '../data/2021/speakers.json'
 
-const exclusionList = ['Chris Benson','Galina Polyakova', 'Suprabhat Sinha', 'Juliana Zhu', 'Pip Sidaway']
+const exclusionList = ['Chris Benson','Galina Polyakova']
 
 
 export default function Sponsors() {

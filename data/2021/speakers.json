@@ -122,13 +122,13 @@
     "firstName": "Dean",
     "lastName": "Nguyen",
     "fullName": "Dean Nguyen",
-    "bio": "Dean is the CEO & Co-founder of KADA. \r\n\r\nKADA is a data product analytics platform that helps organisations understand and improve how their data products are used. KADA is a startup based in Sydney, Australia.\r\n\r\nPrior to founding KADA, Dean was the CPO (Data) at Macquarie Bank. ",
+    "bio": "Dean is the CEO & Co-founder of KADA. \r\n\r\nKADA is a data startup based in Sydney, Australia. KADA is building a data knowledge platform that helps organisations scale their trust and knowledge in data. \r\n\r\nPrior to founding KADA, Dean was the CPO (Data) at Macquarie Bank. ",
     "tagLine": "CEO & Co-founder of KADA. ",
     "profilePicture": "https://sessionize.com/image/8c70-400o400o2-T9731SU7o1QpZgS78TzUd.jpeg",
     "sessions": [
       {
         "id": 265952,
-        "name": "How to make data products easy to trust and understand"
+        "name": "Trust, Knowledge and your Data. Our approach at KADA to building a great data product"
       }
     ],
     "isTopSpeaker": false,
@@ -225,11 +225,11 @@
     "fullName": "Harmeet Sokhi",
     "bio": "Harmeet is a Lead data consultant at ThoughtWorks Australia . She is passionate about data engineering and has years of experience developing complex architectures and designs for various data engineering solutions.She has special interest in streamlining core engineering practices in the world of data and also in designing Machine Learning architecture which is easy to scale.\r\n\r\nApart from this she is cohost of the Data Engineering Melbourne meetup\r\n\r\nShe is a mom of two kids,likes teaching and also makes a delicious keto pizza!!\r\n",
     "tagLine": "Lead Data Consultant, ThoughtWorker",
-    "profilePicture": "https://sessionize.com/image/8100-400o400o2-pBWES6YdA9kBtbTxoHaZUC.png",
+    "profilePicture": "https://sessionize.com/image/0a6a-400o400o2-3X3kKkrp9VXbrkcVFtMzef.jpg",
     "sessions": [
       {
         "id": 270619,
-        "name": "Shift-left testing : Build reliable Data Pipelines"
+        "name": "Shift-left testing : Building reliable Data Pipelines"
       }
     ],
     "isTopSpeaker": false,
@@ -286,7 +286,7 @@
     "sessions": [
       {
         "id": 277489,
-        "name": "Snowflake and dbt -- better title coming soon"
+        "name": "Snowflake and dbt -- Our Journey to the Cloud"
       }
     ],
     "isTopSpeaker": false,
@@ -425,7 +425,7 @@
     "sessions": [
       {
         "id": 277489,
-        "name": "Snowflake and dbt -- better title coming soon"
+        "name": "Snowflake and dbt -- Our Journey to the Cloud"
       }
     ],
     "isTopSpeaker": false,
@@ -606,7 +606,7 @@
     "fullName": "Suprabhat Sinha",
     "bio": "Suprabhat Sinha - love to be called Data Engineer/Nerd. Coming from a Mainframe developer background, enjoy coding in python. Sports and PS lover. ",
     "tagLine": "CMD, Senior/Data Consultant",
-    "profilePicture": "https://sessionize.com/image/10b1-400o400o2-20d9999c-cf11-4e70-997a-c5787b596f24.jpg",
+    "profilePicture": "https://sessionize.com/image/1b69-400o400o2-Dqh4McLR4Ej5WUxkJLzeF4.jpg",
     "sessions": [
       {
         "id": 271047,
