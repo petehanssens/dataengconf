@@ -187,30 +187,11 @@
     "fullName": "Galina Polyakova",
     "bio": "Software developer by trade, working as a Cloud Solution Architect in Data & AI space for customer in New Zealand.",
     "tagLine": "Cloud Solution Architect, Data & AI at Microsoft",
-    "profilePicture": null,
+    "profilePicture": "https://sessionize.com/image/b788-400o400o2-7v7x4ZtZ3CokZSqhKGbgre.PNG",
     "sessions": [
       {
         "id": 260553,
         "name": "Modern Data Warehouse for Small and Medium Business"
-      }
-    ],
-    "isTopSpeaker": false,
-    "links": [],
-    "questionAnswers": [],
-    "categories": []
-  },
-  {
-    "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
-    "firstName": "Gian",
-    "lastName": "Merlino",
-    "fullName": "Gian Merlino",
-    "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
-    "tagLine": "Co-Founder & CTO",
-    "profilePicture": "https://sessionize.com/image/315e-400o400o2-4a-1c9b-4c44-b4b0-80e9521509d7.d4759d97-cb44-4411-8ef9-d356d9d5d5d7.png",
-    "sessions": [
-      {
-        "id": 252604,
-        "name": "Inside Apache Druid's Storage and Query Engine"
       }
     ],
     "isTopSpeaker": false,
@@ -234,6 +215,36 @@
     ],
     "isTopSpeaker": false,
     "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
+    "firstName": "Jag",
+    "lastName": "Dhillon",
+    "fullName": "Jag Dhillon",
+    "bio": "Jag has been in the Data Analytics space for the past decade through his experience as one of ANZ's earliest Splunk employees & at IBM before that. Currently, Jag leads Imply's adoption across APJ as their Pre-Sales Lead for the region.",
+    "tagLine": "Pre-Sales Lead of Imply, APJ",
+    "profilePicture": "https://sessionize.com/image/f6ed-400o400o2-7dGB4MZupF8grD56gcoCcd.png",
+    "sessions": [
+      {
+        "id": 285729,
+        "name": "Situational Intelligence with Analytics in Motion"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/gianmerlino",
+        "linkType": "Twitter"
+      },
+      {
+        "title": "Company Website",
+        "url": "https://imply.io/",
+        "linkType": "Company_Website"
+      }
+    ],
     "questionAnswers": [],
     "categories": []
   },

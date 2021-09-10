@@ -286,27 +286,6 @@
       },
       {
         "questionAnswers": [],
-        "id": "252604",
-        "title": "Inside Apache Druid's Storage and Query Engine",
-        "description": "Apache Druid is an open-source columnar database known for high performance at scale; its largest deployments comprise thousands of servers. But no matter the scale, high performance starts with good fundamentals. This talk will dive into those fundamentals by exploring the inner workings of a single data server. We’ll cover how Apache Druid stores data, what kinds of compression it uses, how it indexes data, how the storage engine is linked with the query processing engine, and how the system handles resource management and multithreading. Together, all these pieces enable Apache Druid to process billions of records per second on a single data server.\r\n",
-        "startsAt": null,
-        "endsAt": null,
-        "isServiceSession": false,
-        "isPlenumSession": false,
-        "speakers": [
-          {
-            "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
-            "name": "Gian Merlino"
-          }
-        ],
-        "categories": [],
-        "roomId": null,
-        "room": null,
-        "liveUrl": null,
-        "recordingUrl": null
-      },
-      {
-        "questionAnswers": [],
         "id": "270738",
         "title": "Intelligent Serverless and Scalable Real-Time Data Pipeline using Kinesis, Fargate and CFN",
         "description": "This session is about a real case study of an intelligent serverless real-time data pipeline. This is implemented for a big digital media client. The session will cover business problems, approach to cater the problem, architecture, implemented solution, and value created out from the implemented solution. The solution is based on the AWS serverless approach in a highly scalable manner following all well architect principles.\r\npresentation- https://www.slideshare.net/YogeshSharma208/intelligent-serverlessstreamingpipelineusingkinesisfargatecfn\r\n",
@@ -507,6 +486,27 @@
           {
             "id": "87766859-1911-4965-b57d-26682d22ff3a",
             "name": "Harmeet Sokhi"
+          }
+        ],
+        "categories": [],
+        "roomId": null,
+        "room": null,
+        "liveUrl": null,
+        "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
+        "id": "285729",
+        "title": "Situational Intelligence with Analytics in Motion",
+        "description": "The growth of streaming data is a massive industry trend in enterprise tech. This movement towards streaming data provides organizations new intelligence, connecting applications with streaming data can unlock all these insights about what's happening in your business in real-time. However, being able to consume data in real-time only gets you halfway. You've got to have analytics to help you drive intelligence, not only to tell you what is happening, and more importantly, why it is happening. Harnessing this potential for intelligence from streaming data requires a new approach to analytics, i.e., Analytics in Motion. \r\n\r\nIn this talk, we will share how this new data architecture can help organizations unlock the potential of data by enabling them to have rapid interactive conversations and the ability to process massive data in real-time across all of their data. \r\n",
+        "startsAt": null,
+        "endsAt": null,
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
+            "name": "Jag Dhillon"
           }
         ],
         "categories": [],
