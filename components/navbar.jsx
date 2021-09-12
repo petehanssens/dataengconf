@@ -90,8 +90,8 @@ export default function Navigation(props) {
               
 
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                <a href="https://sessionize.com/dataengbytes2021/" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Call for Papers
+                <a href="/speakers" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  Speakers
                 </a>
                 <Popover className="relative">
                   {({ open }) => (

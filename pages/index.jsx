@@ -8,13 +8,14 @@ import Pricing from '../components/pricing'
 import Sydney from '../components/sydney'
 import Melbourne from '../components/melbourne'
 import SpeakerSmall from '../components/speakersSmall'
+import Keynotes from '../components/keynotes'
 
 
 export default function Home() {
     return (
         <>
             <HomeLayout />
-            <Topics />
+            <Keynotes />
             <SpeakerSmall />
             <Logos />
         </>
