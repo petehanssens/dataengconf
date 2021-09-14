@@ -59,6 +59,25 @@
     "categories": []
   },
   {
+    "id": "714ae128-ae5c-4634-a70f-5de9c68aebc7",
+    "firstName": "Barr",
+    "lastName": "Moses",
+    "fullName": "Barr Moses",
+    "bio": "Barr Moses is CEO & Co-Founder of Monte Carlo, a data reliability company and creator of the industry’s first Data Observability Platform, backed by Accel, GGV, Redpoint, ICONIQ Growth, Salesforce Ventures, and other top Silicon Valley investors. Previously, she was VP Customer Operations at customer success company Gainsight, where she helped scale the company 10x in revenue and, among other functions, built the data/analytics team. Prior to that, she was a management consultant at Bain & Company and a research assistant at the Statistics Department at Stanford University. She also served in the Israeli Air Force as a commander of an intelligence data analyst unit. Barr graduated from Stanford with a B.Sc. in Mathematical and Computational Science.",
+    "tagLine": "CEO and co-founder of Monte Carlo, the data reliability company",
+    "profilePicture": "https://sessionize.com/image/226b-400o400o2-RDkK1J7hqpMkjahLKprj2s.png",
+    "sessions": [
+      {
+        "id": 286627,
+        "name": "What is a Data Mesh - And How Not To Mesh it Up"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
     "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
     "firstName": "Caito",
     "lastName": "Scherr",
@@ -274,7 +293,7 @@
     "fullName": "John Cosgrove",
     "bio": "I believe that there is only one way to truly change the planet with data: put it in the hands of the people.",
     "tagLine": "Chief Executive Officer at Lightfold",
-    "profilePicture": "https://sessionize.com/image/c17e-400o400o2-Mv5ehqNGuGYioJxfniL7Pw.png",
+    "profilePicture": "https://sessionize.com/image/42cd-400o400o2-hLK868NTRNDZ2eQumEqYER.png",
     "sessions": [
       {
         "id": 271049,
@@ -329,7 +348,7 @@
     "firstName": "Marta",
     "lastName": "Paes",
     "fullName": "Marta Paes",
-    "bio": "Marta is a Senior Developer Advocate at Materialize, and was previously a contributor to Apache Flink. Before finding her mojo in data streaming, she worked as a Data Warehouse engineer for 4+ years (Zalando, Accenture).",
+    "bio": "Marta is a Senior Developer Advocate at Materialize, and was previously a contributor to Apache Flink. Before finding her mojo in data streaming, she worked as a Data Warehouse engineer for 4+ years.",
     "tagLine": "Sr. Developer Advocate @Materialize",
     "profilePicture": "https://sessionize.com/image/d23f-400o400o2-PeLkvGfrr4F8RgUZJL1ZCN.JPG",
     "sessions": [

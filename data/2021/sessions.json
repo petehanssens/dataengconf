@@ -644,6 +644,27 @@
         "room": null,
         "liveUrl": null,
         "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
+        "id": "286627",
+        "title": "What is a Data Mesh - And How Not To Mesh it Up",
+        "description": "Nowadays, it seems like every data person falls into two camps: those who understand the data mesh and those who don’t. \r\n\r\nRarely in recent memory has a topic taken the data world by storm, spawning hundreds of blog articles, lively discussion on Twitter, and a thriving Slack community.\r\n\r\nBut with this new adoption comes new opportunities for misunderstanding around the data mesh – and how to build one with data trust and reliability in mind. \r\n\r\nIn this talk, Barr Moses, CEO and co-founder of Monte Carlo, will explain what a data mesh is (and isn't) and how teams can get started.",
+        "startsAt": null,
+        "endsAt": null,
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "714ae128-ae5c-4634-a70f-5de9c68aebc7",
+            "name": "Barr Moses"
+          }
+        ],
+        "categories": [],
+        "roomId": null,
+        "room": null,
+        "liveUrl": null,
+        "recordingUrl": null
       }
     ]
   }

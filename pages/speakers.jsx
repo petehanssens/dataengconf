@@ -1,6 +1,6 @@
 import speakers from '../data/2021/speakers.json'
 
-const exclusionList = ['Chris Benson','John Cosgrove']
+const exclusionList = ['Chris Benson']
 
 export default function Speakers() {
 
