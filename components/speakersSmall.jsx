@@ -2,7 +2,7 @@ import React from 'react';
 
 import speakers from '../data/2021/speakers.json'
 
-const exclusionList = ['Chris Benson','Simon O\'Toole','Barr Moses']
+const exclusionList = ['Simon O\'Toole','Barr Moses']
 
 
 export default function Speakers() {

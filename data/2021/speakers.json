@@ -19,46 +19,6 @@
     "categories": []
   },
   {
-    "id": "cdc549e0-9c5b-4eb2-b561-dbbecedb76af",
-    "firstName": "Antón",
-    "lastName": "Rodríguez",
-    "fullName": "Antón Rodríguez",
-    "bio": "Antón is a Principal Software Engineer focused on Data in motion. He has experience working with different message brokers, event streaming platforms and stream processing frameworks. During his career, he specialised in building internal SaaS in big corporations to make complex technologies easily used and adopted by teams so they can build solutions to real business use cases. He’s also a JUG organiser, blogger, podcaster and speaker.",
-    "tagLine": "Principal Software Engineer",
-    "profilePicture": "https://sessionize.com/image/ee55-400o400o2-e0-9c5b-4eb2-b561-dbbecedb76af.86a12880-4233-413c-90d5-c22ce24a5440.jpg",
-    "sessions": [
-      {
-        "id": 269058,
-        "name": "Schema Management: the elephant in the Cloud room"
-      }
-    ],
-    "isTopSpeaker": false,
-    "links": [
-      {
-        "title": "Twitter",
-        "url": "https://www.twitter.com/antonmry",
-        "linkType": "Twitter"
-      },
-      {
-        "title": "LinkedIn",
-        "url": "https://www.linkedin.com/in/antonmry/",
-        "linkType": "LinkedIn"
-      },
-      {
-        "title": "Blog",
-        "url": "https://www.galiglobal.com",
-        "linkType": "Blog"
-      },
-      {
-        "title": "Company Website",
-        "url": "https://newrelic.com/",
-        "linkType": "Company_Website"
-      }
-    ],
-    "questionAnswers": [],
-    "categories": []
-  },
-  {
     "id": "714ae128-ae5c-4634-a70f-5de9c68aebc7",
     "firstName": "Barr",
     "lastName": "Moses",
@@ -124,7 +84,7 @@
     "fullName": "Chris Benson",
     "bio": "Director of Data Analytics & AI with 25 Years’ Experience of providing Data Analytics and Data Platform Expertise With Extensive Consulting Experience (Aust. & Global) Senior Analytics Roles ASX50) ",
     "tagLine": "Chris Benson - Versor - Director of Data Analytics ",
-    "profilePicture": null,
+    "profilePicture": "https://sessionize.com/image/a86f-400o400o2-QXwihbw21DsWTZuacKyXJM.jpeg",
     "sessions": [
       {
         "id": 274291,
@@ -336,25 +296,6 @@
       {
         "id": 267957,
         "name": "Reliable data engineering made easy"
-      }
-    ],
-    "isTopSpeaker": false,
-    "links": [],
-    "questionAnswers": [],
-    "categories": []
-  },
-  {
-    "id": "d4783611-1bc2-4254-b589-ccb75e28a553",
-    "firstName": "Marta",
-    "lastName": "Paes",
-    "fullName": "Marta Paes",
-    "bio": "Marta is a Senior Developer Advocate at Materialize, and was previously a contributor to Apache Flink. Before finding her mojo in data streaming, she worked as a Data Warehouse engineer for 4+ years.",
-    "tagLine": "Sr. Developer Advocate @Materialize",
-    "profilePicture": "https://sessionize.com/image/d23f-400o400o2-PeLkvGfrr4F8RgUZJL1ZCN.JPG",
-    "sessions": [
-      {
-        "id": 272235,
-        "name": "Streams, SQL, Action! Up & Running with Materialize"
       }
     ],
     "isTopSpeaker": false,
@@ -672,31 +613,6 @@
       {
         "title": "LinkedIn",
         "url": "https://www.linkedin.com/in/chopratejas",
-        "linkType": "LinkedIn"
-      }
-    ],
-    "questionAnswers": [],
-    "categories": []
-  },
-  {
-    "id": "d82d31c9-3c59-4ee5-af07-5778caf0e5dc",
-    "firstName": "Timothy",
-    "lastName": "Downs",
-    "fullName": "Timothy Downs",
-    "bio": "Pushing strings around since 1990",
-    "tagLine": "AWS Solution Architect",
-    "profilePicture": "https://sessionize.com/image/beda-400o400o2-npGm9MhX78FcHuar2U6kCn.jfif",
-    "sessions": [
-      {
-        "id": 273972,
-        "name": "An open data platform without the learning curve"
-      }
-    ],
-    "isTopSpeaker": false,
-    "links": [
-      {
-        "title": "LinkedIn",
-        "url": "https://www.linkedin.com/in/timothy-downs-05718573/?originalSubdomain=au",
         "linkType": "LinkedIn"
       }
     ],
