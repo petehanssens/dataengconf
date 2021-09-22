@@ -1,12 +1,105 @@
 [
-    {
-      "date": "2021-10-04T00:00:00Z",
-      "rooms": [
-        {
-          "id": 21024,
-          "name": "Online",
-          "sessions": [
-            {
+  {
+    "date": "2021-10-04T00:00:00Z",
+    "rooms": [
+      {
+        "id": 21024,
+        "name": "Online",
+        "sessions": [
+          {
+            "id": "98e9d887-7736-4db8-b546-1a51f09d53ee",
+            "title": "Day 1 - Welcome",
+            "description": "The DataEngBytes team will welcome you to the conference and take you through what to expect on day 1.",
+            "startsAt": "2021-10-04T23:00:00Z",
+            "endsAt": "2021-10-04T23:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "288125",
+            "title": "The Rise & Downfall of the Data Engineer REVISITED",
+            "description": "In 2017, I wrote two blog posts about data engineering: \"The Rise of the Data Engineer\" was an attempt at defining the emerging role , and \"The Downfall of the Data Engineer\" was exposing some of the challenges [and opportunities] around the role. 4 years later, it's a good time to revisit all of this and explore what has changed, from the tool landscape to the role & responsabilities.",
+            "startsAt": "2021-10-04T23:10:00Z",
+            "endsAt": "2021-10-05T00:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "5795773b-ed1a-4958-a03e-22f27445fcac",
+                "name": "Maxime Beauchemin"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      },
+      {
+        "id": 21025,
+        "name": "On-demand",
+        "sessions": [
+          {
+            "id": "270738",
+            "title": "Intelligent Serverless and Scalable Real-Time Data Pipeline using Kinesis, Fargate and CFN",
+            "description": "This session is about a real case study of an intelligent serverless real-time data pipeline. This is implemented for a big digital media client. The session will cover business problems, approach to cater the problem, architecture, implemented solution, and value created out from the implemented solution. The solution is based on the AWS serverless approach in a highly scalable manner following all well architect principles.\r\npresentation- https://www.slideshare.net/YogeshSharma208/intelligent-serverlessstreamingpipelineusingkinesisfargatecfn\r\n",
+            "startsAt": "2021-10-04T23:00:00Z",
+            "endsAt": "2021-10-04T23:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "8cfa8e05-dcf8-464b-9d3b-1743cacdc0ed",
+                "name": "Yogesh Sharma"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "271311",
+            "title": "Better, Faster, Stronger Streaming: Your First Dive into Flink SQL",
+            "description": "For the most flexible, powerful stream processing engines, it seems like the barrier to entry has never been higher than it is now. If you’ve tried, or have been interested in leveraging the strengths of real-time data processing - maybe for machine learning, IoT, anomaly detection or data analysis - but you’ve been held back: I’ve been there, and it’s frustrating. And that’s why this talk is for you. \r\n\r\nThat being said, this talk is also for you if you ARE experienced with stream processing but you want an easy (and if I say so myself, pretty fun) way to add some of the newest, bleeding edge features to your toolbelt.\r\n\r\nThis session will be about getting started with Flink SQL. Apache Flink’s high level SQL language has the familiarity of the SQL you know and love (or at least, know…), but with some powerful new functionality, and of course, the benefit of being able to be used with Flink and PyFlink. \r\n\r\nMore specifically, this will be a pragmatic entry into creating data pipelines with Flink SQL, as well as a sneak peek into some of its newest and most interesting features.\r\n\r\n",
+            "startsAt": "2021-10-04T23:30:00Z",
+            "endsAt": "2021-10-05T00:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
+                "name": "Caito Scherr"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "23:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "98e9d887-7736-4db8-b546-1a51f09d53ee",
               "title": "Day 1 - Welcome",
               "description": "The DataEngBytes team will welcome you to the conference and take you through what to expect on day 1.",
@@ -21,34 +114,12 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
-              "id": "271937",
-              "title": "From telescope to data centre: adventures in astronomical data pipelines",
-              "description": "I will describe the data flow we have developed to move astronomical data from Siding Spring Observatory in central west NSW to data centres in Sydney and Canberra, and the subsequent processing stages to produce science-ready data. This is a story that involves the coupling of Apache Nifi, MongoDB and Docker with astronomical data reduction software to allow researchers to explore some of the most violent phenomena in the Universe: colliding black holes and exploding stars. I’ll also look at some of the related future data engineering challenges involved in the Square Kilometre Array and the European Southern Observatory. ",
-              "startsAt": "2021-10-04T23:10:00Z",
-              "endsAt": "2021-10-05T00:00:00Z",
-              "isServiceSession": false,
-              "isPlenumSession": false,
-              "speakers": [
-                {
-                  "id": "06417bf4-83bb-4535-b2ff-cfda644efb96",
-                  "name": "Simon O'Toole"
-                }
-              ],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            }
-          ],
-          "hasOnlyPlenumSessions": false
-        },
-        {
-          "id": 21025,
-          "name": "On-demand",
-          "sessions": [
-            {
+            "index": 0
+          },
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "270738",
               "title": "Intelligent Serverless and Scalable Real-Time Data Pipeline using Kinesis, Fargate and CFN",
               "description": "This session is about a real case study of an intelligent serverless real-time data pipeline. This is implemented for a big digital media client. The session will cover business problems, approach to cater the problem, architecture, implemented solution, and value created out from the implemented solution. The solution is based on the AWS serverless approach in a highly scalable manner following all well architect principles.\r\npresentation- https://www.slideshare.net/YogeshSharma208/intelligent-serverlessstreamingpipelineusingkinesisfargatecfn\r\n",
@@ -68,7 +139,47 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "23:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "288125",
+              "title": "The Rise & Downfall of the Data Engineer REVISITED",
+              "description": "In 2017, I wrote two blog posts about data engineering: \"The Rise of the Data Engineer\" was an attempt at defining the emerging role , and \"The Downfall of the Data Engineer\" was exposing some of the challenges [and opportunities] around the role. 4 years later, it's a good time to revisit all of this and explore what has changed, from the tool landscape to the role & responsabilities.",
+              "startsAt": "2021-10-04T23:10:00Z",
+              "endsAt": "2021-10-05T00:00:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "5795773b-ed1a-4958-a03e-22f27445fcac",
+                  "name": "Maxime Beauchemin"
+                }
+              ],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "23:30:00",
+        "rooms": [
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "271311",
               "title": "Better, Faster, Stronger Streaming: Your First Dive into Flink SQL",
               "description": "For the most flexible, powerful stream processing engines, it seems like the barrier to entry has never been higher than it is now. If you’ve tried, or have been interested in leveraging the strengths of real-time data processing - maybe for machine learning, IoT, anomaly detection or data analysis - but you’ve been held back: I’ve been there, and it’s frustrating. And that’s why this talk is for you. \r\n\r\nThat being said, this talk is also for you if you ARE experienced with stream processing but you want an easy (and if I say so myself, pretty fun) way to add some of the newest, bleeding edge features to your toolbelt.\r\n\r\nThis session will be about getting started with Flink SQL. Apache Flink’s high level SQL language has the familiarity of the SQL you know and love (or at least, know…), but with some powerful new functionality, and of course, the benefit of being able to be used with Flink and PyFlink. \r\n\r\nMore specifically, this will be a pragmatic entry into creating data pipelines with Flink SQL, as well as a sneak peek into some of its newest and most interesting features.\r\n\r\n",
@@ -87,132 +198,374 @@
               "room": "On-demand",
               "liveUrl": null,
               "recordingUrl": null
-            }
-          ],
-          "hasOnlyPlenumSessions": false
-        }
-      ],
-      "timeSlots": [
-        {
-          "slotStart": "23:00:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "98e9d887-7736-4db8-b546-1a51f09d53ee",
-                "title": "Day 1 - Welcome",
-                "description": "The DataEngBytes team will welcome you to the conference and take you through what to expect on day 1.",
-                "startsAt": "2021-10-04T23:00:00Z",
-                "endsAt": "2021-10-04T23:10:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
             },
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "270738",
-                "title": "Intelligent Serverless and Scalable Real-Time Data Pipeline using Kinesis, Fargate and CFN",
-                "description": "This session is about a real case study of an intelligent serverless real-time data pipeline. This is implemented for a big digital media client. The session will cover business problems, approach to cater the problem, architecture, implemented solution, and value created out from the implemented solution. The solution is based on the AWS serverless approach in a highly scalable manner following all well architect principles.\r\npresentation- https://www.slideshare.net/YogeshSharma208/intelligent-serverlessstreamingpipelineusingkinesisfargatecfn\r\n",
-                "startsAt": "2021-10-04T23:00:00Z",
-                "endsAt": "2021-10-04T23:30:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "8cfa8e05-dcf8-464b-9d3b-1743cacdc0ed",
-                    "name": "Yogesh Sharma"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "23:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "271937",
-                "title": "From telescope to data centre: adventures in astronomical data pipelines",
-                "description": "I will describe the data flow we have developed to move astronomical data from Siding Spring Observatory in central west NSW to data centres in Sydney and Canberra, and the subsequent processing stages to produce science-ready data. This is a story that involves the coupling of Apache Nifi, MongoDB and Docker with astronomical data reduction software to allow researchers to explore some of the most violent phenomena in the Universe: colliding black holes and exploding stars. I’ll also look at some of the related future data engineering challenges involved in the Square Kilometre Array and the European Southern Observatory. ",
-                "startsAt": "2021-10-04T23:10:00Z",
-                "endsAt": "2021-10-05T00:00:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "06417bf4-83bb-4535-b2ff-cfda644efb96",
-                    "name": "Simon O'Toole"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "23:30:00",
-          "rooms": [
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "271311",
-                "title": "Better, Faster, Stronger Streaming: Your First Dive into Flink SQL",
-                "description": "For the most flexible, powerful stream processing engines, it seems like the barrier to entry has never been higher than it is now. If you’ve tried, or have been interested in leveraging the strengths of real-time data processing - maybe for machine learning, IoT, anomaly detection or data analysis - but you’ve been held back: I’ve been there, and it’s frustrating. And that’s why this talk is for you. \r\n\r\nThat being said, this talk is also for you if you ARE experienced with stream processing but you want an easy (and if I say so myself, pretty fun) way to add some of the newest, bleeding edge features to your toolbelt.\r\n\r\nThis session will be about getting started with Flink SQL. Apache Flink’s high level SQL language has the familiarity of the SQL you know and love (or at least, know…), but with some powerful new functionality, and of course, the benefit of being able to be used with Flink and PyFlink. \r\n\r\nMore specifically, this will be a pragmatic entry into creating data pipelines with Flink SQL, as well as a sneak peek into some of its newest and most interesting features.\r\n\r\n",
-                "startsAt": "2021-10-04T23:30:00Z",
-                "endsAt": "2021-10-05T00:00:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
-                    "name": "Caito Scherr"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2021-10-05T00:00:00Z",
-      "rooms": [
-        {
-          "id": 21024,
-          "name": "Online",
-          "sessions": [
-            {
+            "index": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2021-10-05T00:00:00Z",
+    "rooms": [
+      {
+        "id": 21024,
+        "name": "Online",
+        "sessions": [
+          {
+            "id": "272064",
+            "title": "Data Engineers: Privacy Is Your Problem",
+            "description": "Data has the ability to transform and automate business processes. But data also comes with a responsibility to keep people’s personal information protected and ensure it is used in an ethical manner. It is the responsibility of data engineers to instinctively identify and separate dangerous data from the benign.\r\n\r\nIn this session, Stephen Bailey PhD, director of data and analytics for Immuta, will discuss the need for data engineers to take on the responsibility of data privacy. While all organizations working with data understand the seriousness of data privacy, many aren’t sure who is responsible for protecting it. Stephen will explain why managing privacy loss is something only data engineers can solve, as data engineers are the ones who created the systems. \r\n\r\nHe will outline a suggested new set of engineering best practices that go beyond the domains of security and system design. These best practices will include understanding the strengths and weaknesses of data masking, learning anonymization techniques like k-anonymization and differential privacy,. Ultimately, data engineers should know the practice of privacy by design as intuitively as they do the principle of least privilege. \r\n\r\nAttendees of this educational session will walk away with a better understanding of how they can improve data privacy without compromising data access control. Threats to data aren’t slowing down, so it’s time to fight against them. \r\n",
+            "startsAt": "2021-10-05T00:00:00Z",
+            "endsAt": "2021-10-05T00:40:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "b7ff99fc-1f9f-4c6f-9e9e-1cb46898791c",
+                "name": "Stephen  Bailey"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "0dd6766b-a5c5-4d52-8500-43a5d21fa39c",
+            "title": "Break",
+            "description": "Time to freshen up and grab that next cup of coffee!",
+            "startsAt": "2021-10-05T00:40:00Z",
+            "endsAt": "2021-10-05T00:50:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "270127",
+            "title": "From experiment to production - a journey of a machine learning model",
+            "description": "Machine learning has a wider and wider adoption in the industry as a technology to build intelligent and data enriched systems. However, the reality is that machine learning practice often stops at the end of rapid experiments before its value can be harvested in the real world. This is because the process and the culture of taking ML models from experiment to production is lacking.\r\n\r\nA machine learning project typically consists of experiment, development and deployment three main phrases. Correspondingly, a machine learning system consists of processes and components that facilitate the operations and data flows in those three main phrases. This system provides a framework and best practices for machine learning practitioners to develop models from experiment to production.\r\n\r\nThis talk explores the process pattern of getting a machine learning model into production and the system to support this operation. An example of productionising a natural language processing model will be used to illustrate how a model travels through experiment tracking, data artifacts management, data / machine learning pipelines and goes into production. The talk will also provide examples of tooling and patterns to be used at each stage.\r\n",
+            "startsAt": "2021-10-05T00:50:00Z",
+            "endsAt": "2021-10-05T01:20:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "34d4e7a6-895c-4c67-a69f-e01bda9dc109",
+                "name": "Xin Liang"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "265756",
+            "title": "Chain-speed inference for Computer Vision Pipelines",
+            "description": "I will go through some best practices for minimizing real-time prediction latency for devices in processing plants. \r\n\r\nI will cover data collection, processing, data pipelines, model deployment, and monitoring. I would also like to discuss common challenges that arise in factories: a poor network connection, space limitations, and keeping up with the chain-speed.\r\n\r\n",
+            "startsAt": "2021-10-05T01:20:00Z",
+            "endsAt": "2021-10-05T01:50:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "03147c4d-27f7-4575-b577-eb80be446935",
+                "name": "Mercedes Speroni"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "0fb053e0-921a-4e4f-8af8-cf7c916488b8",
+            "title": "Lunch",
+            "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
+            "startsAt": "2021-10-05T01:50:00Z",
+            "endsAt": "2021-10-05T02:20:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "d0dd51f8-0076-4df1-88dd-9a9ae20803fe",
+            "title": "The startup panel",
+            "description": "Whether you're doing it all by yourself or trying to rapidly grow your data team faster than you can take on VC capital... this session is a discussion of experts who've been there and survived to tell the tale!",
+            "startsAt": "2021-10-05T02:20:00Z",
+            "endsAt": "2021-10-05T03:00:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "265952",
+            "title": "Trust, Knowledge and your Data. Our approach at KADA to building a great data product",
+            "description": "Have you spent time building a great data product that failed to gain traction? \r\n\r\nOr found users using a legacy report despite a better report being available?\r\n\r\nIt's a common occurrence. \r\n\r\nThrough our journey at KADA, we have identified 5 factors that make a great, trusted data product. \r\n\r\nIn this talk, I will share how you can improve your data products and show you how we built these features into K, our platform for making trust & knowledge a key part of the modern data stack. ",
+            "startsAt": "2021-10-05T03:00:00Z",
+            "endsAt": "2021-10-05T03:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
+                "name": "Dean Nguyen"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "270619",
+            "title": "Shift-left testing : Building reliable Data Pipelines",
+            "description": "Unreliable data pipelines can result in data downtime. “Data downtime“refers to periods of time when your data  is partial, erroneous, missing or otherwise inaccurate. Data driven organisations may need to pay a heavy cost of low trust data. One of the challenges of building reliable  data pipelines is unexpected data coming from different sources.\r\nIn this talk we will share our  experiences of  how we  can build reliable data pipelines  by \r\n\t 1.  “Shifting Left” - testing   to the early stages of  development life cycle  as well as  \r\n         2.  “Shifting-Left” - validations using data contracts\r\nWe will then conclude by discussing  how we can we make sure that the system catches unexpected data and is able to recover from it. ",
+            "startsAt": "2021-10-05T03:30:00Z",
+            "endsAt": "2021-10-05T04:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "87766859-1911-4965-b57d-26682d22ff3a",
+                "name": "Harmeet Sokhi"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "274291",
+            "title": "Beginners guide to Azure MLOps",
+            "description": "A commercial scenario and example of work we have recently done for a Large engineering client and lessons learned around implementing Azure MLOps. \r\n\r\nWith a Technical how-to of:\r\n\r\n•\tCreate reproducible ML pipelines.\r\n•\tCreate reusable software environments \r\n•\tRegister, package, and deploy models from anywhere. \r\n•\tCapture the governance data for the end-to-end ML lifecycle. \r\n•\tNotify and alert on events in the ML lifecycle. \r\n•\tMonitor ML applications for operational and ML-related\r\nissues. \r\n•\tAutomate the end-to-end ML lifecycle with Azure Machine Learning and Azure Pipelines. \r\n",
+            "startsAt": "2021-10-05T04:00:00Z",
+            "endsAt": "2021-10-05T04:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "300098b5-576f-4028-8014-51a562193190",
+                "name": "Chris Benson"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "c2f015b4-b1ef-454b-983a-b20b65d9dbfd",
+            "title": "Day 1 Close",
+            "description": "A wrap of day 1 and what to expect tomorrow!",
+            "startsAt": "2021-10-05T04:30:00Z",
+            "endsAt": "2021-10-05T04:35:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "a5c08fd3-5888-4602-a550-389d542c2cfd",
+            "title": "Welcome to Day 2",
+            "description": "The DataEngBytes team return to welcome you to an action packed day 2... strap yourselves in for some awesome talks!",
+            "startsAt": "2021-10-05T23:00:00Z",
+            "endsAt": "2021-10-05T23:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "286627",
+            "title": "What is a Data Mesh - And How Not To Mesh it Up",
+            "description": "Nowadays, it seems like every data person falls into two camps: those who understand the data mesh and those who don’t. \r\n\r\nRarely in recent memory has a topic taken the data world by storm, spawning hundreds of blog articles, lively discussion on Twitter, and a thriving Slack community.\r\n\r\nBut with this new adoption comes new opportunities for misunderstanding around the data mesh – and how to build one with data trust and reliability in mind. \r\n\r\nIn this talk, Barr Moses, CEO and co-founder of Monte Carlo, will explain what a data mesh is (and isn't) and how teams can get started.",
+            "startsAt": "2021-10-05T23:10:00Z",
+            "endsAt": "2021-10-06T00:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "714ae128-ae5c-4634-a70f-5de9c68aebc7",
+                "name": "Barr Moses"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      },
+      {
+        "id": 21025,
+        "name": "On-demand",
+        "sessions": [
+          {
+            "id": "272193",
+            "title": "Metrics-driven Data Architectures",
+            "description": "The gravitational pull of cloud data warehouses is a powerful force on data platform architecture. This is evidenced by the growing use of data warehouses to build and serve data products and the well-established shift from ETL to ELT transformation patterns. More recently the trend of pushing data transformations to inside the data warehouse is playing out on the consumption side, with business metric definition and calculation being shifted from fragmented locations across multiple BI tools and data science notebooks into the data warehouse, where they can be published for use across the organisation by a range of consumers.   \r\n\r\nThis trend has recently coalesced around the notion of a metrics layer within the modern data stack. In this talk I will unpack the challenges motivating this change in data architecture and identify the core features of the metrics layer that meets these needs. I will look at different flavours of data architecture that enable these features by surveying existing OSS tools and vendor offerings. In doing so, I will address the questions of how this notion of a metrics layer differs from existing approaches to OLAP databases, and whether data warehouses are the appropriate place to be building metric layers. ",
+            "startsAt": "2021-10-05T00:00:00Z",
+            "endsAt": "2021-10-05T00:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "8f2f01ec-4972-49fe-a204-8f226fa209cb",
+                "name": "Ned Letcher"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "260553",
+            "title": "Modern Data Warehouse for Small and Medium Business",
+            "description": "With many organizations in SMB sector looking at opportunity to benefit from using modern big data technologies and tools within their budget and skill set, this session overviews an opinion on appropriate architecture for this use-case. ",
+            "startsAt": "2021-10-05T00:30:00Z",
+            "endsAt": "2021-10-05T01:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "23f8221e-bfb9-40ec-af09-a724b5ec9aa3",
+                "name": "Galina Polyakova"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "271198",
+            "title": "Logging Apache Spark - How we made it easy",
+            "description": "Looking at our metrics on Graphite is pretty nice, but what about our logs? How do you improve the visibility of your logs while running Spark on EMR? If you're tired of ssh-ing into your servers and searching log files, this architecture design is exactly for you. ",
+            "startsAt": "2021-10-05T01:00:00Z",
+            "endsAt": "2021-10-05T01:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "7aae10e0-5083-42fa-a1d2-bb8d3b56c55c",
+                "name": "Simona Meriam"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "260573",
+            "title": "Object Compaction in Cloud for High Yield",
+            "description": "In file systems, large sequential writes are more beneficial than small random writes, and hence many storage systems implement a log structured file system. In the same way, the cloud favors large objects more than small objects. Cloud providers place throttling limits on PUTs and GETs, and so it takes significantly longer time to upload a bunch of small objects than a large object of the aggregate size. Moreover, there are per-PUT calls associated with uploading smaller objects.\r\nIn Netflix, a lot of media assets and their relevant metadata is generated and pushed to cloud. Most of these files are between 10s of bytes to 10s of kilobytes and are saved as small objects on Cloud.\r\nIn this talk, we would like to propose a strategy to compact these small objects into larger blobs before uploading them to Cloud. We will discuss the policies to select relevant smaller objects, and how to manage the indexing of these objects within the blob. We will also discuss how different cloud storage operations such as reads and deletes would be implemented for such objects. This includes recycling blobs that have dead small objects - due to overwrites, etc.\r\nFinally, we would showcase the potential impact of such a strategy on Netflix assets in terms of cost and performance.\r\n",
+            "startsAt": "2021-10-05T01:30:00Z",
+            "endsAt": "2021-10-05T02:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "0e577c69-f95e-4044-a53c-d626732f2bb6",
+                "name": "Tejas Chopra"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "261783",
+            "title": "Kickstarting a greenfield data project",
+            "description": "My takeaways building a data platform from the ground up",
+            "startsAt": "2021-10-05T06:45:00Z",
+            "endsAt": "2021-10-05T07:45:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "0d2ed788-6375-4e75-b724-0f28e0ea568d",
+                "name": "Vinay Kulkarni"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "271047",
+            "title": "Snowpipe Integration via Yaml",
+            "description": "Snowpipe Integration via Yaml\r\n\r\n\r\nElevator Pitch(Short Description)...\r\nIf a project uses AWS and Snowflake, Snowpipe is by far the best way for continuous integration. While working  with one of our clients (who happens to be a fan of AWS and Snowflake) we came up with a revolutionary way to set up snowpipe integration for any project using just 10 to 15 lines of Yaml file. Yes, you heard me correctly a yaml to deploy snowpipe not SQL.\r\n\r\n\r\nAbstract(Long Description)...\r\nLeverage Snowpipe’s continuous integration property.. \r\nIn this presentation I’ll share techniques to overcome:-\r\nYou are running SQL every time you run a pipeline, hence unnecessary SQL execution.\r\nHard to maintain SQL queries if a project doesn't have any SQL platform.\r\nThis was very specific for this project, with every new changes/branch we end up in creating a number of artifacts and when we merge the changes to master we literally destroy everything and recreate the same stuff again which ends up causing downtime for customer heavy projects.\r\nEveryone likes less bits of code whether it's SQL, code etc.\r\nWhat problems does it solved:-\r\nBeautiful is better than ugly. YAML really looks more niche than SQL.\r\nFlags used saved us lot of time and execution if already pipe exits when it Create or if Update only run necessary SQL and Delete for housekeeping \r\nThe happiest of them all where the people whole were devops, they love yaml more than anything.\r\nNo outage if no changes made to the snowpipe artifacts.\r\n",
+            "startsAt": "2021-10-05T08:25:00Z",
+            "endsAt": "2021-10-05T09:25:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "e2cbe151-a432-48ba-9526-4539d3ed36dd",
+                "name": "Suprabhat Sinha"
+              }
+            ],
+            "categories": [],
+            "roomId": 21025,
+            "room": "On-demand",
+            "liveUrl": null,
+            "recordingUrl": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "00:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "272064",
               "title": "Data Engineers: Privacy Is Your Problem",
               "description": "Data has the ability to transform and automate business processes. But data also comes with a responsibility to keep people’s personal information protected and ensure it is used in an ethical manner. It is the responsibility of data engineers to instinctively identify and separate dangerous data from the benign.\r\n\r\nIn this session, Stephen Bailey PhD, director of data and analytics for Immuta, will discuss the need for data engineers to take on the responsibility of data privacy. While all organizations working with data understand the seriousness of data privacy, many aren’t sure who is responsible for protecting it. Stephen will explain why managing privacy loss is something only data engineers can solve, as data engineers are the ones who created the systems. \r\n\r\nHe will outline a suggested new set of engineering best practices that go beyond the domains of security and system design. These best practices will include understanding the strengths and weaknesses of data masking, learning anonymization techniques like k-anonymization and differential privacy,. Ultimately, data engineers should know the practice of privacy by design as intuitively as they do the principle of least privilege. \r\n\r\nAttendees of this educational session will walk away with a better understanding of how they can improve data privacy without compromising data access control. Threats to data aren’t slowing down, so it’s time to fight against them. \r\n",
@@ -232,189 +585,12 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
-              "id": "0dd6766b-a5c5-4d52-8500-43a5d21fa39c",
-              "title": "Break",
-              "description": "Time to freshen up and grab that next cup of coffee!",
-              "startsAt": "2021-10-05T00:40:00Z",
-              "endsAt": "2021-10-05T00:50:00Z",
-              "isServiceSession": true,
-              "isPlenumSession": false,
-              "speakers": [],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "270127",
-              "title": "From experiment to production - a journey of a machine learning model",
-              "description": "Machine learning has a wider and wider adoption in the industry as a technology to build intelligent and data enriched systems. However, the reality is that machine learning practice often stops at the end of rapid experiments before its value can be harvested in the real world. This is because the process and the culture of taking ML models from experiment to production is lacking.\r\n\r\nA machine learning project typically consists of experiment, development and deployment three main phrases. Correspondingly, a machine learning system consists of processes and components that facilitate the operations and data flows in those three main phrases. This system provides a framework and best practices for machine learning practitioners to develop models from experiment to production.\r\n\r\nThis talk explores the process pattern of getting a machine learning model into production and the system to support this operation. An example of productionising a natural language processing model will be used to illustrate how a model travels through experiment tracking, data artifacts management, data / machine learning pipelines and goes into production. The talk will also provide examples of tooling and patterns to be used at each stage.\r\n",
-              "startsAt": "2021-10-05T00:50:00Z",
-              "endsAt": "2021-10-05T01:20:00Z",
-              "isServiceSession": false,
-              "isPlenumSession": false,
-              "speakers": [
-                {
-                  "id": "34d4e7a6-895c-4c67-a69f-e01bda9dc109",
-                  "name": "Xin Liang"
-                }
-              ],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "265756",
-              "title": "Chain-speed inference for Computer Vision Pipelines",
-              "description": "I will go through some best practices for minimizing real-time prediction latency for devices in processing plants. \r\n\r\nI will cover data collection, processing, data pipelines, model deployment, and monitoring. I would also like to discuss common challenges that arise in factories: a poor network connection, space limitations, and keeping up with the chain-speed.\r\n\r\n",
-              "startsAt": "2021-10-05T01:20:00Z",
-              "endsAt": "2021-10-05T01:50:00Z",
-              "isServiceSession": false,
-              "isPlenumSession": false,
-              "speakers": [
-                {
-                  "id": "03147c4d-27f7-4575-b577-eb80be446935",
-                  "name": "Mercedes Speroni"
-                }
-              ],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "0fb053e0-921a-4e4f-8af8-cf7c916488b8",
-              "title": "Lunch",
-              "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
-              "startsAt": "2021-10-05T01:50:00Z",
-              "endsAt": "2021-10-05T02:20:00Z",
-              "isServiceSession": true,
-              "isPlenumSession": false,
-              "speakers": [],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "265952",
-              "title": "Trust, Knowledge and your Data. Our approach at KADA to building a great data product",
-              "description": "Have you spent time building a great data product that failed to gain traction? \r\n\r\nOr found users using a legacy report despite a better report being available?\r\n\r\nIt's a common occurrence. \r\n\r\nThrough our journey at KADA, we have identified 5 factors that make a great, trusted data product. \r\n\r\nIn this talk, I will share how you can improve your data products and show you how we built these features into K, our platform for making trust & knowledge a key part of the modern data stack. ",
-              "startsAt": "2021-10-05T02:20:00Z",
-              "endsAt": "2021-10-05T02:50:00Z",
-              "isServiceSession": false,
-              "isPlenumSession": false,
-              "speakers": [
-                {
-                  "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
-                  "name": "Dean Nguyen"
-                }
-              ],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "285729",
-              "title": "Situational Intelligence with Analytics in Motion",
-              "description": "The growth of streaming data is a massive industry trend in enterprise tech. This movement towards streaming data provides organizations new intelligence, connecting applications with streaming data can unlock all these insights about what's happening in your business in real-time. However, being able to consume data in real-time only gets you halfway. You've got to have analytics to help you drive intelligence, not only to tell you what is happening, and more importantly, why it is happening. Harnessing this potential for intelligence from streaming data requires a new approach to analytics, i.e., Analytics in Motion. \r\n\r\nIn this talk, we will share how this new data architecture can help organizations unlock the potential of data by enabling them to have rapid interactive conversations and the ability to process massive data in real-time across all of their data. \r\n",
-              "startsAt": "2021-10-05T02:45:00Z",
-              "endsAt": "2021-10-05T03:15:00Z",
-              "isServiceSession": false,
-              "isPlenumSession": false,
-              "speakers": [
-                {
-                  "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
-                  "name": "Jag Dhillon"
-                }
-              ],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "d0dd51f8-0076-4df1-88dd-9a9ae20803fe",
-              "title": "The startup panel",
-              "description": "Whether you're doing it all by yourself or trying to rapidly grow your data team faster than you can take on VC capital... this session is a discussion of experts who've been there and survived to tell the tale!",
-              "startsAt": "2021-10-05T03:15:00Z",
-              "endsAt": "2021-10-05T03:55:00Z",
-              "isServiceSession": true,
-              "isPlenumSession": false,
-              "speakers": [],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "c2f015b4-b1ef-454b-983a-b20b65d9dbfd",
-              "title": "Day 1 Close",
-              "description": "A wrap of day 1 and what to expect tomorrow!",
-              "startsAt": "2021-10-05T03:55:00Z",
-              "endsAt": "2021-10-05T04:00:00Z",
-              "isServiceSession": true,
-              "isPlenumSession": false,
-              "speakers": [],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "a5c08fd3-5888-4602-a550-389d542c2cfd",
-              "title": "Welcome to Day 2",
-              "description": "The DataEngBytes team return to welcome you to an action packed day 2... strap yourselves in for some awesome talks!",
-              "startsAt": "2021-10-05T23:00:00Z",
-              "endsAt": "2021-10-05T23:10:00Z",
-              "isServiceSession": true,
-              "isPlenumSession": false,
-              "speakers": [],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            {
-              "id": "286627",
-              "title": "What is a Data Mesh - And How Not To Mesh it Up",
-              "description": "Nowadays, it seems like every data person falls into two camps: those who understand the data mesh and those who don’t. \r\n\r\nRarely in recent memory has a topic taken the data world by storm, spawning hundreds of blog articles, lively discussion on Twitter, and a thriving Slack community.\r\n\r\nBut with this new adoption comes new opportunities for misunderstanding around the data mesh – and how to build one with data trust and reliability in mind. \r\n\r\nIn this talk, Barr Moses, CEO and co-founder of Monte Carlo, will explain what a data mesh is (and isn't) and how teams can get started.",
-              "startsAt": "2021-10-05T23:10:00Z",
-              "endsAt": "2021-10-06T00:00:00Z",
-              "isServiceSession": false,
-              "isPlenumSession": false,
-              "speakers": [
-                {
-                  "id": "714ae128-ae5c-4634-a70f-5de9c68aebc7",
-                  "name": "Barr Moses"
-                }
-              ],
-              "categories": [],
-              "roomId": 21024,
-              "room": "Online",
-              "liveUrl": null,
-              "recordingUrl": null
-            }
-          ],
-          "hasOnlyPlenumSessions": false
-        },
-        {
-          "id": 21025,
-          "name": "On-demand",
-          "sessions": [
-            {
+            "index": 0
+          },
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "272193",
               "title": "Metrics-driven Data Architectures",
               "description": "The gravitational pull of cloud data warehouses is a powerful force on data platform architecture. This is evidenced by the growing use of data warehouses to build and serve data products and the well-established shift from ETL to ELT transformation patterns. More recently the trend of pushing data transformations to inside the data warehouse is playing out on the consumption side, with business metric definition and calculation being shifted from fragmented locations across multiple BI tools and data science notebooks into the data warehouse, where they can be published for use across the organisation by a range of consumers.   \r\n\r\nThis trend has recently coalesced around the notion of a metrics layer within the modern data stack. In this talk I will unpack the challenges motivating this change in data architecture and identify the core features of the metrics layer that meets these needs. I will look at different flavours of data architecture that enable these features by surveying existing OSS tools and vendor offerings. In doing so, I will address the questions of how this notion of a metrics layer differs from existing approaches to OLAP databases, and whether data warehouses are the appropriate place to be building metric layers. ",
@@ -434,7 +610,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "00:30:00",
+        "rooms": [
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "260553",
               "title": "Modern Data Warehouse for Small and Medium Business",
               "description": "With many organizations in SMB sector looking at opportunity to benefit from using modern big data technologies and tools within their budget and skill set, this session overviews an opinion on appropriate architecture for this use-case. ",
@@ -454,7 +640,72 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "00:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "0dd6766b-a5c5-4d52-8500-43a5d21fa39c",
+              "title": "Break",
+              "description": "Time to freshen up and grab that next cup of coffee!",
+              "startsAt": "2021-10-05T00:40:00Z",
+              "endsAt": "2021-10-05T00:50:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "00:50:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "270127",
+              "title": "From experiment to production - a journey of a machine learning model",
+              "description": "Machine learning has a wider and wider adoption in the industry as a technology to build intelligent and data enriched systems. However, the reality is that machine learning practice often stops at the end of rapid experiments before its value can be harvested in the real world. This is because the process and the culture of taking ML models from experiment to production is lacking.\r\n\r\nA machine learning project typically consists of experiment, development and deployment three main phrases. Correspondingly, a machine learning system consists of processes and components that facilitate the operations and data flows in those three main phrases. This system provides a framework and best practices for machine learning practitioners to develop models from experiment to production.\r\n\r\nThis talk explores the process pattern of getting a machine learning model into production and the system to support this operation. An example of productionising a natural language processing model will be used to illustrate how a model travels through experiment tracking, data artifacts management, data / machine learning pipelines and goes into production. The talk will also provide examples of tooling and patterns to be used at each stage.\r\n",
+              "startsAt": "2021-10-05T00:50:00Z",
+              "endsAt": "2021-10-05T01:20:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "34d4e7a6-895c-4c67-a69f-e01bda9dc109",
+                  "name": "Xin Liang"
+                }
+              ],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "01:00:00",
+        "rooms": [
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "271198",
               "title": "Logging Apache Spark - How we made it easy",
               "description": "Looking at our metrics on Graphite is pretty nice, but what about our logs? How do you improve the visibility of your logs while running Spark on EMR? If you're tired of ssh-ing into your servers and searching log files, this architecture design is exactly for you. ",
@@ -474,32 +725,52 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
-              "id": "274291",
-              "title": "Beginners guide to Azure MLOps",
-              "description": "A commercial scenario and example of work we have recently done for a Large engineering client and lessons learned around implementing Azure MLOps. \r\n\r\nWith a Technical how-to of:\r\n\r\n•\tCreate reproducible ML pipelines.\r\n•\tCreate reusable software environments \r\n•\tRegister, package, and deploy models from anywhere. \r\n•\tCapture the governance data for the end-to-end ML lifecycle. \r\n•\tNotify and alert on events in the ML lifecycle. \r\n•\tMonitor ML applications for operational and ML-related\r\nissues. \r\n•\tAutomate the end-to-end ML lifecycle with Azure Machine Learning and Azure Pipelines. \r\n",
-              "startsAt": "2021-10-05T01:30:00Z",
-              "endsAt": "2021-10-05T02:00:00Z",
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "01:20:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "265756",
+              "title": "Chain-speed inference for Computer Vision Pipelines",
+              "description": "I will go through some best practices for minimizing real-time prediction latency for devices in processing plants. \r\n\r\nI will cover data collection, processing, data pipelines, model deployment, and monitoring. I would also like to discuss common challenges that arise in factories: a poor network connection, space limitations, and keeping up with the chain-speed.\r\n\r\n",
+              "startsAt": "2021-10-05T01:20:00Z",
+              "endsAt": "2021-10-05T01:50:00Z",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
                 {
-                  "id": "300098b5-576f-4028-8014-51a562193190",
-                  "name": "Chris Benson"
+                  "id": "03147c4d-27f7-4575-b577-eb80be446935",
+                  "name": "Mercedes Speroni"
                 }
               ],
               "categories": [],
-              "roomId": 21025,
-              "room": "On-demand",
+              "roomId": 21024,
+              "room": "Online",
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "01:30:00",
+        "rooms": [
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "260573",
               "title": "Object Compaction in Cloud for High Yield",
               "description": "In file systems, large sequential writes are more beneficial than small random writes, and hence many storage systems implement a log structured file system. In the same way, the cloud favors large objects more than small objects. Cloud providers place throttling limits on PUTs and GETs, and so it takes significantly longer time to upload a bunch of small objects than a large object of the aggregate size. Moreover, there are per-PUT calls associated with uploading smaller objects.\r\nIn Netflix, a lot of media assets and their relevant metadata is generated and pushed to cloud. Most of these files are between 10s of bytes to 10s of kilobytes and are saved as small objects on Cloud.\r\nIn this talk, we would like to propose a strategy to compact these small objects into larger blobs before uploading them to Cloud. We will discuss the policies to select relevant smaller objects, and how to manage the indexing of these objects within the blob. We will also discuss how different cloud storage operations such as reads and deletes would be implemented for such objects. This includes recycling blobs that have dead small objects - due to overwrites, etc.\r\nFinally, we would showcase the potential impact of such a strategy on Netflix assets in terms of cost and performance.\r\n",
-              "startsAt": "2021-10-05T02:00:00Z",
-              "endsAt": "2021-10-05T02:30:00Z",
+              "startsAt": "2021-10-05T01:30:00Z",
+              "endsAt": "2021-10-05T02:00:00Z",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -514,7 +785,182 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "01:50:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "0fb053e0-921a-4e4f-8af8-cf7c916488b8",
+              "title": "Lunch",
+              "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
+              "startsAt": "2021-10-05T01:50:00Z",
+              "endsAt": "2021-10-05T02:20:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "02:20:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "d0dd51f8-0076-4df1-88dd-9a9ae20803fe",
+              "title": "The startup panel",
+              "description": "Whether you're doing it all by yourself or trying to rapidly grow your data team faster than you can take on VC capital... this session is a discussion of experts who've been there and survived to tell the tale!",
+              "startsAt": "2021-10-05T02:20:00Z",
+              "endsAt": "2021-10-05T03:00:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "03:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "265952",
+              "title": "Trust, Knowledge and your Data. Our approach at KADA to building a great data product",
+              "description": "Have you spent time building a great data product that failed to gain traction? \r\n\r\nOr found users using a legacy report despite a better report being available?\r\n\r\nIt's a common occurrence. \r\n\r\nThrough our journey at KADA, we have identified 5 factors that make a great, trusted data product. \r\n\r\nIn this talk, I will share how you can improve your data products and show you how we built these features into K, our platform for making trust & knowledge a key part of the modern data stack. ",
+              "startsAt": "2021-10-05T03:00:00Z",
+              "endsAt": "2021-10-05T03:30:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
+                  "name": "Dean Nguyen"
+                }
+              ],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "03:30:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "270619",
+              "title": "Shift-left testing : Building reliable Data Pipelines",
+              "description": "Unreliable data pipelines can result in data downtime. “Data downtime“refers to periods of time when your data  is partial, erroneous, missing or otherwise inaccurate. Data driven organisations may need to pay a heavy cost of low trust data. One of the challenges of building reliable  data pipelines is unexpected data coming from different sources.\r\nIn this talk we will share our  experiences of  how we  can build reliable data pipelines  by \r\n\t 1.  “Shifting Left” - testing   to the early stages of  development life cycle  as well as  \r\n         2.  “Shifting-Left” - validations using data contracts\r\nWe will then conclude by discussing  how we can we make sure that the system catches unexpected data and is able to recover from it. ",
+              "startsAt": "2021-10-05T03:30:00Z",
+              "endsAt": "2021-10-05T04:00:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "87766859-1911-4965-b57d-26682d22ff3a",
+                  "name": "Harmeet Sokhi"
+                }
+              ],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "04:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "274291",
+              "title": "Beginners guide to Azure MLOps",
+              "description": "A commercial scenario and example of work we have recently done for a Large engineering client and lessons learned around implementing Azure MLOps. \r\n\r\nWith a Technical how-to of:\r\n\r\n•\tCreate reproducible ML pipelines.\r\n•\tCreate reusable software environments \r\n•\tRegister, package, and deploy models from anywhere. \r\n•\tCapture the governance data for the end-to-end ML lifecycle. \r\n•\tNotify and alert on events in the ML lifecycle. \r\n•\tMonitor ML applications for operational and ML-related\r\nissues. \r\n•\tAutomate the end-to-end ML lifecycle with Azure Machine Learning and Azure Pipelines. \r\n",
+              "startsAt": "2021-10-05T04:00:00Z",
+              "endsAt": "2021-10-05T04:30:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "300098b5-576f-4028-8014-51a562193190",
+                  "name": "Chris Benson"
+                }
+              ],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "04:30:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "c2f015b4-b1ef-454b-983a-b20b65d9dbfd",
+              "title": "Day 1 Close",
+              "description": "A wrap of day 1 and what to expect tomorrow!",
+              "startsAt": "2021-10-05T04:30:00Z",
+              "endsAt": "2021-10-05T04:35:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "06:45:00",
+        "rooms": [
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "261783",
               "title": "Kickstarting a greenfield data project",
               "description": "My takeaways building a data platform from the ground up",
@@ -534,7 +980,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "08:25:00",
+        "rooms": [
+          {
+            "id": 21025,
+            "name": "On-demand",
+            "session": {
               "id": "271047",
               "title": "Snowpipe Integration via Yaml",
               "description": "Snowpipe Integration via Yaml\r\n\r\n\r\nElevator Pitch(Short Description)...\r\nIf a project uses AWS and Snowflake, Snowpipe is by far the best way for continuous integration. While working  with one of our clients (who happens to be a fan of AWS and Snowflake) we came up with a revolutionary way to set up snowpipe integration for any project using just 10 to 15 lines of Yaml file. Yes, you heard me correctly a yaml to deploy snowpipe not SQL.\r\n\r\n\r\nAbstract(Long Description)...\r\nLeverage Snowpipe’s continuous integration property.. \r\nIn this presentation I’ll share techniques to overcome:-\r\nYou are running SQL every time you run a pipeline, hence unnecessary SQL execution.\r\nHard to maintain SQL queries if a project doesn't have any SQL platform.\r\nThis was very specific for this project, with every new changes/branch we end up in creating a number of artifacts and when we merge the changes to master we literally destroy everything and recreate the same stuff again which ends up causing downtime for customer heavy projects.\r\nEveryone likes less bits of code whether it's SQL, code etc.\r\nWhat problems does it solved:-\r\nBeautiful is better than ugly. YAML really looks more niche than SQL.\r\nFlags used saved us lot of time and execution if already pipe exits when it Create or if Update only run necessary SQL and Delete for housekeeping \r\nThe happiest of them all where the people whole were devops, they love yaml more than anything.\r\nNo outage if no changes made to the snowpipe artifacts.\r\n",
@@ -553,532 +1009,302 @@
               "room": "On-demand",
               "liveUrl": null,
               "recordingUrl": null
-            }
-          ],
-          "hasOnlyPlenumSessions": false
-        }
-      ],
-      "timeSlots": [
-        {
-          "slotStart": "00:00:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "272064",
-                "title": "Data Engineers: Privacy Is Your Problem",
-                "description": "Data has the ability to transform and automate business processes. But data also comes with a responsibility to keep people’s personal information protected and ensure it is used in an ethical manner. It is the responsibility of data engineers to instinctively identify and separate dangerous data from the benign.\r\n\r\nIn this session, Stephen Bailey PhD, director of data and analytics for Immuta, will discuss the need for data engineers to take on the responsibility of data privacy. While all organizations working with data understand the seriousness of data privacy, many aren’t sure who is responsible for protecting it. Stephen will explain why managing privacy loss is something only data engineers can solve, as data engineers are the ones who created the systems. \r\n\r\nHe will outline a suggested new set of engineering best practices that go beyond the domains of security and system design. These best practices will include understanding the strengths and weaknesses of data masking, learning anonymization techniques like k-anonymization and differential privacy,. Ultimately, data engineers should know the practice of privacy by design as intuitively as they do the principle of least privilege. \r\n\r\nAttendees of this educational session will walk away with a better understanding of how they can improve data privacy without compromising data access control. Threats to data aren’t slowing down, so it’s time to fight against them. \r\n",
-                "startsAt": "2021-10-05T00:00:00Z",
-                "endsAt": "2021-10-05T00:40:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "b7ff99fc-1f9f-4c6f-9e9e-1cb46898791c",
-                    "name": "Stephen  Bailey"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
             },
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "272193",
-                "title": "Metrics-driven Data Architectures",
-                "description": "The gravitational pull of cloud data warehouses is a powerful force on data platform architecture. This is evidenced by the growing use of data warehouses to build and serve data products and the well-established shift from ETL to ELT transformation patterns. More recently the trend of pushing data transformations to inside the data warehouse is playing out on the consumption side, with business metric definition and calculation being shifted from fragmented locations across multiple BI tools and data science notebooks into the data warehouse, where they can be published for use across the organisation by a range of consumers.   \r\n\r\nThis trend has recently coalesced around the notion of a metrics layer within the modern data stack. In this talk I will unpack the challenges motivating this change in data architecture and identify the core features of the metrics layer that meets these needs. I will look at different flavours of data architecture that enable these features by surveying existing OSS tools and vendor offerings. In doing so, I will address the questions of how this notion of a metrics layer differs from existing approaches to OLAP databases, and whether data warehouses are the appropriate place to be building metric layers. ",
-                "startsAt": "2021-10-05T00:00:00Z",
-                "endsAt": "2021-10-05T00:30:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "8f2f01ec-4972-49fe-a204-8f226fa209cb",
-                    "name": "Ned Letcher"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "00:30:00",
-          "rooms": [
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "260553",
-                "title": "Modern Data Warehouse for Small and Medium Business",
-                "description": "With many organizations in SMB sector looking at opportunity to benefit from using modern big data technologies and tools within their budget and skill set, this session overviews an opinion on appropriate architecture for this use-case. ",
-                "startsAt": "2021-10-05T00:30:00Z",
-                "endsAt": "2021-10-05T01:00:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "23f8221e-bfb9-40ec-af09-a724b5ec9aa3",
-                    "name": "Galina Polyakova"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "00:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "0dd6766b-a5c5-4d52-8500-43a5d21fa39c",
-                "title": "Break",
-                "description": "Time to freshen up and grab that next cup of coffee!",
-                "startsAt": "2021-10-05T00:40:00Z",
-                "endsAt": "2021-10-05T00:50:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "00:50:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "270127",
-                "title": "From experiment to production - a journey of a machine learning model",
-                "description": "Machine learning has a wider and wider adoption in the industry as a technology to build intelligent and data enriched systems. However, the reality is that machine learning practice often stops at the end of rapid experiments before its value can be harvested in the real world. This is because the process and the culture of taking ML models from experiment to production is lacking.\r\n\r\nA machine learning project typically consists of experiment, development and deployment three main phrases. Correspondingly, a machine learning system consists of processes and components that facilitate the operations and data flows in those three main phrases. This system provides a framework and best practices for machine learning practitioners to develop models from experiment to production.\r\n\r\nThis talk explores the process pattern of getting a machine learning model into production and the system to support this operation. An example of productionising a natural language processing model will be used to illustrate how a model travels through experiment tracking, data artifacts management, data / machine learning pipelines and goes into production. The talk will also provide examples of tooling and patterns to be used at each stage.\r\n",
-                "startsAt": "2021-10-05T00:50:00Z",
-                "endsAt": "2021-10-05T01:20:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "34d4e7a6-895c-4c67-a69f-e01bda9dc109",
-                    "name": "Xin Liang"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "01:00:00",
-          "rooms": [
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "271198",
-                "title": "Logging Apache Spark - How we made it easy",
-                "description": "Looking at our metrics on Graphite is pretty nice, but what about our logs? How do you improve the visibility of your logs while running Spark on EMR? If you're tired of ssh-ing into your servers and searching log files, this architecture design is exactly for you. ",
-                "startsAt": "2021-10-05T01:00:00Z",
-                "endsAt": "2021-10-05T01:30:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "7aae10e0-5083-42fa-a1d2-bb8d3b56c55c",
-                    "name": "Simona Meriam"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "01:20:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "265756",
-                "title": "Chain-speed inference for Computer Vision Pipelines",
-                "description": "I will go through some best practices for minimizing real-time prediction latency for devices in processing plants. \r\n\r\nI will cover data collection, processing, data pipelines, model deployment, and monitoring. I would also like to discuss common challenges that arise in factories: a poor network connection, space limitations, and keeping up with the chain-speed.\r\n\r\n",
-                "startsAt": "2021-10-05T01:20:00Z",
-                "endsAt": "2021-10-05T01:50:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "03147c4d-27f7-4575-b577-eb80be446935",
-                    "name": "Mercedes Speroni"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "01:30:00",
-          "rooms": [
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "274291",
-                "title": "Beginners guide to Azure MLOps",
-                "description": "A commercial scenario and example of work we have recently done for a Large engineering client and lessons learned around implementing Azure MLOps. \r\n\r\nWith a Technical how-to of:\r\n\r\n•\tCreate reproducible ML pipelines.\r\n•\tCreate reusable software environments \r\n•\tRegister, package, and deploy models from anywhere. \r\n•\tCapture the governance data for the end-to-end ML lifecycle. \r\n•\tNotify and alert on events in the ML lifecycle. \r\n•\tMonitor ML applications for operational and ML-related\r\nissues. \r\n•\tAutomate the end-to-end ML lifecycle with Azure Machine Learning and Azure Pipelines. \r\n",
-                "startsAt": "2021-10-05T01:30:00Z",
-                "endsAt": "2021-10-05T02:00:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "300098b5-576f-4028-8014-51a562193190",
-                    "name": "Chris Benson"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "01:50:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "0fb053e0-921a-4e4f-8af8-cf7c916488b8",
-                "title": "Lunch",
-                "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
-                "startsAt": "2021-10-05T01:50:00Z",
-                "endsAt": "2021-10-05T02:20:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "02:00:00",
-          "rooms": [
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "260573",
-                "title": "Object Compaction in Cloud for High Yield",
-                "description": "In file systems, large sequential writes are more beneficial than small random writes, and hence many storage systems implement a log structured file system. In the same way, the cloud favors large objects more than small objects. Cloud providers place throttling limits on PUTs and GETs, and so it takes significantly longer time to upload a bunch of small objects than a large object of the aggregate size. Moreover, there are per-PUT calls associated with uploading smaller objects.\r\nIn Netflix, a lot of media assets and their relevant metadata is generated and pushed to cloud. Most of these files are between 10s of bytes to 10s of kilobytes and are saved as small objects on Cloud.\r\nIn this talk, we would like to propose a strategy to compact these small objects into larger blobs before uploading them to Cloud. We will discuss the policies to select relevant smaller objects, and how to manage the indexing of these objects within the blob. We will also discuss how different cloud storage operations such as reads and deletes would be implemented for such objects. This includes recycling blobs that have dead small objects - due to overwrites, etc.\r\nFinally, we would showcase the potential impact of such a strategy on Netflix assets in terms of cost and performance.\r\n",
-                "startsAt": "2021-10-05T02:00:00Z",
-                "endsAt": "2021-10-05T02:30:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "0e577c69-f95e-4044-a53c-d626732f2bb6",
-                    "name": "Tejas Chopra"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "02:20:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "265952",
-                "title": "Trust, Knowledge and your Data. Our approach at KADA to building a great data product",
-                "description": "Have you spent time building a great data product that failed to gain traction? \r\n\r\nOr found users using a legacy report despite a better report being available?\r\n\r\nIt's a common occurrence. \r\n\r\nThrough our journey at KADA, we have identified 5 factors that make a great, trusted data product. \r\n\r\nIn this talk, I will share how you can improve your data products and show you how we built these features into K, our platform for making trust & knowledge a key part of the modern data stack. ",
-                "startsAt": "2021-10-05T02:20:00Z",
-                "endsAt": "2021-10-05T02:50:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
-                    "name": "Dean Nguyen"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "02:45:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "285729",
-                "title": "Situational Intelligence with Analytics in Motion",
-                "description": "The growth of streaming data is a massive industry trend in enterprise tech. This movement towards streaming data provides organizations new intelligence, connecting applications with streaming data can unlock all these insights about what's happening in your business in real-time. However, being able to consume data in real-time only gets you halfway. You've got to have analytics to help you drive intelligence, not only to tell you what is happening, and more importantly, why it is happening. Harnessing this potential for intelligence from streaming data requires a new approach to analytics, i.e., Analytics in Motion. \r\n\r\nIn this talk, we will share how this new data architecture can help organizations unlock the potential of data by enabling them to have rapid interactive conversations and the ability to process massive data in real-time across all of their data. \r\n",
-                "startsAt": "2021-10-05T02:45:00Z",
-                "endsAt": "2021-10-05T03:15:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
-                    "name": "Jag Dhillon"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "03:15:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "d0dd51f8-0076-4df1-88dd-9a9ae20803fe",
-                "title": "The startup panel",
-                "description": "Whether you're doing it all by yourself or trying to rapidly grow your data team faster than you can take on VC capital... this session is a discussion of experts who've been there and survived to tell the tale!",
-                "startsAt": "2021-10-05T03:15:00Z",
-                "endsAt": "2021-10-05T03:55:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "03:55:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "c2f015b4-b1ef-454b-983a-b20b65d9dbfd",
-                "title": "Day 1 Close",
-                "description": "A wrap of day 1 and what to expect tomorrow!",
-                "startsAt": "2021-10-05T03:55:00Z",
-                "endsAt": "2021-10-05T04:00:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "06:45:00",
-          "rooms": [
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "261783",
-                "title": "Kickstarting a greenfield data project",
-                "description": "My takeaways building a data platform from the ground up",
-                "startsAt": "2021-10-05T06:45:00Z",
-                "endsAt": "2021-10-05T07:45:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "0d2ed788-6375-4e75-b724-0f28e0ea568d",
-                    "name": "Vinay Kulkarni"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "08:25:00",
-          "rooms": [
-            {
-              "id": 21025,
-              "name": "On-demand",
-              "session": {
-                "id": "271047",
-                "title": "Snowpipe Integration via Yaml",
-                "description": "Snowpipe Integration via Yaml\r\n\r\n\r\nElevator Pitch(Short Description)...\r\nIf a project uses AWS and Snowflake, Snowpipe is by far the best way for continuous integration. While working  with one of our clients (who happens to be a fan of AWS and Snowflake) we came up with a revolutionary way to set up snowpipe integration for any project using just 10 to 15 lines of Yaml file. Yes, you heard me correctly a yaml to deploy snowpipe not SQL.\r\n\r\n\r\nAbstract(Long Description)...\r\nLeverage Snowpipe’s continuous integration property.. \r\nIn this presentation I’ll share techniques to overcome:-\r\nYou are running SQL every time you run a pipeline, hence unnecessary SQL execution.\r\nHard to maintain SQL queries if a project doesn't have any SQL platform.\r\nThis was very specific for this project, with every new changes/branch we end up in creating a number of artifacts and when we merge the changes to master we literally destroy everything and recreate the same stuff again which ends up causing downtime for customer heavy projects.\r\nEveryone likes less bits of code whether it's SQL, code etc.\r\nWhat problems does it solved:-\r\nBeautiful is better than ugly. YAML really looks more niche than SQL.\r\nFlags used saved us lot of time and execution if already pipe exits when it Create or if Update only run necessary SQL and Delete for housekeeping \r\nThe happiest of them all where the people whole were devops, they love yaml more than anything.\r\nNo outage if no changes made to the snowpipe artifacts.\r\n",
-                "startsAt": "2021-10-05T08:25:00Z",
-                "endsAt": "2021-10-05T09:25:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "e2cbe151-a432-48ba-9526-4539d3ed36dd",
-                    "name": "Suprabhat Sinha"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21025,
-                "room": "On-demand",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 1
-            }
-          ]
-        },
-        {
-          "slotStart": "23:00:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "a5c08fd3-5888-4602-a550-389d542c2cfd",
-                "title": "Welcome to Day 2",
-                "description": "The DataEngBytes team return to welcome you to an action packed day 2... strap yourselves in for some awesome talks!",
-                "startsAt": "2021-10-05T23:00:00Z",
-                "endsAt": "2021-10-05T23:10:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "23:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "286627",
-                "title": "What is a Data Mesh - And How Not To Mesh it Up",
-                "description": "Nowadays, it seems like every data person falls into two camps: those who understand the data mesh and those who don’t. \r\n\r\nRarely in recent memory has a topic taken the data world by storm, spawning hundreds of blog articles, lively discussion on Twitter, and a thriving Slack community.\r\n\r\nBut with this new adoption comes new opportunities for misunderstanding around the data mesh – and how to build one with data trust and reliability in mind. \r\n\r\nIn this talk, Barr Moses, CEO and co-founder of Monte Carlo, will explain what a data mesh is (and isn't) and how teams can get started.",
-                "startsAt": "2021-10-05T23:10:00Z",
-                "endsAt": "2021-10-06T00:00:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "714ae128-ae5c-4634-a70f-5de9c68aebc7",
-                    "name": "Barr Moses"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2021-10-06T00:00:00Z",
-      "rooms": [
-        {
-          "id": 21024,
-          "name": "Online",
-          "sessions": [
-            {
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "23:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "a5c08fd3-5888-4602-a550-389d542c2cfd",
+              "title": "Welcome to Day 2",
+              "description": "The DataEngBytes team return to welcome you to an action packed day 2... strap yourselves in for some awesome talks!",
+              "startsAt": "2021-10-05T23:00:00Z",
+              "endsAt": "2021-10-05T23:10:00Z",
+              "isServiceSession": true,
+              "isPlenumSession": false,
+              "speakers": [],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "23:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "286627",
+              "title": "What is a Data Mesh - And How Not To Mesh it Up",
+              "description": "Nowadays, it seems like every data person falls into two camps: those who understand the data mesh and those who don’t. \r\n\r\nRarely in recent memory has a topic taken the data world by storm, spawning hundreds of blog articles, lively discussion on Twitter, and a thriving Slack community.\r\n\r\nBut with this new adoption comes new opportunities for misunderstanding around the data mesh – and how to build one with data trust and reliability in mind. \r\n\r\nIn this talk, Barr Moses, CEO and co-founder of Monte Carlo, will explain what a data mesh is (and isn't) and how teams can get started.",
+              "startsAt": "2021-10-05T23:10:00Z",
+              "endsAt": "2021-10-06T00:00:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "714ae128-ae5c-4634-a70f-5de9c68aebc7",
+                  "name": "Barr Moses"
+                }
+              ],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2021-10-06T00:00:00Z",
+    "rooms": [
+      {
+        "id": 21024,
+        "name": "Online",
+        "sessions": [
+          {
+            "id": "272068",
+            "title": "Gone Streaming: dbt+Materialize in 10 minutes",
+            "description": "dbt is great for batch, but it can only approximate transforming streaming data. Together with the dbt community, we’ve worked on an adapter that allows you to transform your streaming data in real-time using Materialize as your data warehouse. What does this mean in practice? The first time you run a dbt model on top of Materialize…well, you never have to run it again! No matter how much or how frequently your data arrives, your model will stay up to date. No matter when you query your view, it will always return a fresh answer. Excited? Skeptical? Cautiously optimistic? Join us to see it for yourself as we walk you through a demo!",
+            "startsAt": "2021-10-06T00:00:00Z",
+            "endsAt": "2021-10-06T00:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "41a79c57-29ee-4f51-9410-548f320f0160",
+                "name": "Jessica Laughlin"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "760ddacf-89d9-462d-800d-accfbd323c82",
+            "title": "Break",
+            "description": "Time to freshen up and grab that next cup of coffee!",
+            "startsAt": "2021-10-06T00:30:00Z",
+            "endsAt": "2021-10-06T00:40:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "267957",
+            "title": "Reliable data engineering made easy",
+            "description": "Organisations have a wealth of information siloed in various data sources. These could vary from databases (Oracle, MySQL, Postgres, etc) to product applications (Salesforce, Marketo, HubSpot, etc). A significant number of use-cases need data from these diverse data sources to produce meaningful reports and predictions. \r\nFor many years, organisations tried to centrally collect all their data in the data warehouse but these were not suited or were too expensive for handling unstructured data, semi-structured data, and data with high variety, velocity, and volume. It also limited the types of analytics data teams could use; unable to do machine learning or anything more than basic SQL.\r\n\r\nDelta Lake, released and open-sourced in 2019, is helping thousands of organisations build central data repositories in an open format much more reliably and efficiently than before. Delta Lake provides ACID transactions and efficient indexing that is critical for exposing the data for various access patterns, ranging from ad-hoc SQL queries in BI tools, to scheduled ML jobs. \r\nThis session will provide the one-two step of Data Ingestion & Quality made easy with DELTA Live Tables.\r\n",
+            "startsAt": "2021-10-06T00:40:00Z",
+            "endsAt": "2021-10-06T01:10:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "6a4d6c7e-4d03-4cc6-8beb-3b21225f681e",
+                "name": "Mahdi Askari"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "272212",
+            "title": "Data quality: the key to long term happiness",
+            "description": "The advent of modern data warehousing has equalled the playing field and pivoted a focus from data volume to data quality instead. This talk aims to practically explore approaches to quantify data quality at various stages in the collection and processing lifecycle and to present tools that can be implemented to help in the fight against erroneous data.",
+            "startsAt": "2021-10-06T01:10:00Z",
+            "endsAt": "2021-10-06T01:40:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "5fce6ed5-e1cc-46e0-adec-dc5aa9a039f5",
+                "name": "Mike Robins"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "e5a93fe3-365a-4488-8a7a-48d6a1527ebf",
+            "title": "Lunch",
+            "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
+            "startsAt": "2021-10-06T01:40:00Z",
+            "endsAt": "2021-10-06T02:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "261511",
+            "title": "Building a Data Platform at Assembly Payments",
+            "description": "- Datalake journey @ Assembly Payments.\r\n- Description of Architecture using RDS, DynamoDB, DMS, Firehose, Lambda, S3, Glue, EventBridge, Step Functions, Fargate, DBT, Snowflake and Looker\r\n- Share the benefits we felt like event driven, serverless, performance, low cost and lower operational overhead.\r\n- and share some of the learnings in the usage of step functions, glue, incremental loads and dependency management.",
+            "startsAt": "2021-10-06T02:10:00Z",
+            "endsAt": "2021-10-06T02:40:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "88e9b4d4-cd98-48aa-9eb5-93ff5a8307c6",
+                "name": "Roopak Madhu"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "264570",
+            "title": "Streaming data analytics with Apache Flink",
+            "description": "Real-time analytics are on the rise. Apache Flink is a popular purpose-built framework and distributed processing engine for large scale low latency data processing in real-time. In this session, we will give you a brief overview of this popular framework, and a demo to build your first stream processing application with Apache Flink on Amazon Kinesis Data Analytics Studio. ",
+            "startsAt": "2021-10-06T02:40:00Z",
+            "endsAt": "2021-10-06T03:10:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "38aa4954-1171-43f1-b9ec-dc6778fea6b8",
+                "name": "Masudur Rahaman Sayem"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "271049",
+            "title": "Teleport Data: The future of data",
+            "description": "This session will discuss:\r\n- the new data stack\r\n- challenges & problems still faced\r\n- teleport data",
+            "startsAt": "2021-10-06T03:10:00Z",
+            "endsAt": "2021-10-06T03:40:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "69038dea-9d70-458d-8604-3b74c71e43bc",
+                "name": "John Cosgrove"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "9e05732a-90fc-4e24-82a7-154c7ec1be05",
+            "title": "The Enterprise Panel",
+            "description": "Join us for a discussion of all those wacky enterprise things like data governance, lineage and meshing with things!",
+            "startsAt": "2021-10-06T03:40:00Z",
+            "endsAt": "2021-10-06T04:20:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "62af2530-a0df-4226-8b08-ee041f410843",
+            "title": "Day 2 Close",
+            "description": "A wrap of all the day 2 action and a preview of our 3rd and final day!",
+            "startsAt": "2021-10-06T04:15:00Z",
+            "endsAt": "2021-10-06T04:25:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "06c1705b-614b-4696-949f-badbc2ceb4d3",
+            "title": "Welcome to Day 3",
+            "description": "The DataEngBytes team return to welcome you to an action packed day 3... strap yourselves in for some awesome talks!",
+            "startsAt": "2021-10-06T23:00:00Z",
+            "endsAt": "2021-10-06T23:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "271937",
+            "title": "From telescope to data centre: adventures in astronomical data pipelines",
+            "description": "I will describe the data flow we have developed to move astronomical data from Siding Spring Observatory in central west NSW to data centres in Sydney and Canberra, and the subsequent processing stages to produce science-ready data. This is a story that involves the coupling of Apache Nifi, MongoDB and Docker with astronomical data reduction software to allow researchers to explore some of the most violent phenomena in the Universe: colliding black holes and exploding stars. I’ll also look at some of the related future data engineering challenges involved in the Square Kilometre Array and the European Southern Observatory. ",
+            "startsAt": "2021-10-06T23:10:00Z",
+            "endsAt": "2021-10-07T00:00:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "06417bf4-83bb-4535-b2ff-cfda644efb96",
+                "name": "Simon O'Toole"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "00:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "272068",
               "title": "Gone Streaming: dbt+Materialize in 10 minutes",
               "description": "dbt is great for batch, but it can only approximate transforming streaming data. Together with the dbt community, we’ve worked on an adapter that allows you to transform your streaming data in real-time using Materialize as your data warehouse. What does this mean in practice? The first time you run a dbt model on top of Materialize…well, you never have to run it again! No matter how much or how frequently your data arrives, your model will stay up to date. No matter when you query your view, it will always return a fresh answer. Excited? Skeptical? Cautiously optimistic? Join us to see it for yourself as we walk you through a demo!",
@@ -1098,7 +1324,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "00:30:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "760ddacf-89d9-462d-800d-accfbd323c82",
               "title": "Break",
               "description": "Time to freshen up and grab that next cup of coffee!",
@@ -1113,7 +1349,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "00:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "267957",
               "title": "Reliable data engineering made easy",
               "description": "Organisations have a wealth of information siloed in various data sources. These could vary from databases (Oracle, MySQL, Postgres, etc) to product applications (Salesforce, Marketo, HubSpot, etc). A significant number of use-cases need data from these diverse data sources to produce meaningful reports and predictions. \r\nFor many years, organisations tried to centrally collect all their data in the data warehouse but these were not suited or were too expensive for handling unstructured data, semi-structured data, and data with high variety, velocity, and volume. It also limited the types of analytics data teams could use; unable to do machine learning or anything more than basic SQL.\r\n\r\nDelta Lake, released and open-sourced in 2019, is helping thousands of organisations build central data repositories in an open format much more reliably and efficiently than before. Delta Lake provides ACID transactions and efficient indexing that is critical for exposing the data for various access patterns, ranging from ad-hoc SQL queries in BI tools, to scheduled ML jobs. \r\nThis session will provide the one-two step of Data Ingestion & Quality made easy with DELTA Live Tables.\r\n",
@@ -1133,7 +1379,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "01:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "272212",
               "title": "Data quality: the key to long term happiness",
               "description": "The advent of modern data warehousing has equalled the playing field and pivoted a focus from data volume to data quality instead. This talk aims to practically explore approaches to quantify data quality at various stages in the collection and processing lifecycle and to present tools that can be implemented to help in the fight against erroneous data.",
@@ -1153,7 +1409,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "01:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "e5a93fe3-365a-4488-8a7a-48d6a1527ebf",
               "title": "Lunch",
               "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
@@ -1168,7 +1434,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "02:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "261511",
               "title": "Building a Data Platform at Assembly Payments",
               "description": "- Datalake journey @ Assembly Payments.\r\n- Description of Architecture using RDS, DynamoDB, DMS, Firehose, Lambda, S3, Glue, EventBridge, Step Functions, Fargate, DBT, Snowflake and Looker\r\n- Share the benefits we felt like event driven, serverless, performance, low cost and lower operational overhead.\r\n- and share some of the learnings in the usage of step functions, glue, incremental loads and dependency management.",
@@ -1188,7 +1464,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "02:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "264570",
               "title": "Streaming data analytics with Apache Flink",
               "description": "Real-time analytics are on the rise. Apache Flink is a popular purpose-built framework and distributed processing engine for large scale low latency data processing in real-time. In this session, we will give you a brief overview of this popular framework, and a demo to build your first stream processing application with Apache Flink on Amazon Kinesis Data Analytics Studio. ",
@@ -1208,7 +1494,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "03:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "271049",
               "title": "Teleport Data: The future of data",
               "description": "This session will discuss:\r\n- the new data stack\r\n- challenges & problems still faced\r\n- teleport data",
@@ -1228,7 +1524,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "03:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "9e05732a-90fc-4e24-82a7-154c7ec1be05",
               "title": "The Enterprise Panel",
               "description": "Join us for a discussion of all those wacky enterprise things like data governance, lineage and meshing with things!",
@@ -1243,7 +1549,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "04:15:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "62af2530-a0df-4226-8b08-ee041f410843",
               "title": "Day 2 Close",
               "description": "A wrap of all the day 2 action and a preview of our 3rd and final day!",
@@ -1258,7 +1574,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "23:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "06c1705b-614b-4696-949f-badbc2ceb4d3",
               "title": "Welcome to Day 3",
               "description": "The DataEngBytes team return to welcome you to an action packed day 3... strap yourselves in for some awesome talks!",
@@ -1273,366 +1599,247 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
-              "id": "7ad71d54-d2b9-48f4-a579-e52b607319eb",
-              "title": "Placeholder - keynote",
-              "description": null,
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "23:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "271937",
+              "title": "From telescope to data centre: adventures in astronomical data pipelines",
+              "description": "I will describe the data flow we have developed to move astronomical data from Siding Spring Observatory in central west NSW to data centres in Sydney and Canberra, and the subsequent processing stages to produce science-ready data. This is a story that involves the coupling of Apache Nifi, MongoDB and Docker with astronomical data reduction software to allow researchers to explore some of the most violent phenomena in the Universe: colliding black holes and exploding stars. I’ll also look at some of the related future data engineering challenges involved in the Square Kilometre Array and the European Southern Observatory. ",
               "startsAt": "2021-10-06T23:10:00Z",
               "endsAt": "2021-10-07T00:00:00Z",
-              "isServiceSession": true,
+              "isServiceSession": false,
               "isPlenumSession": false,
-              "speakers": [],
+              "speakers": [
+                {
+                  "id": "06417bf4-83bb-4535-b2ff-cfda644efb96",
+                  "name": "Simon O'Toole"
+                }
+              ],
               "categories": [],
               "roomId": 21024,
               "room": "Online",
               "liveUrl": null,
               "recordingUrl": null
-            }
-          ],
-          "hasOnlyPlenumSessions": false
-        }
-      ],
-      "timeSlots": [
-        {
-          "slotStart": "00:00:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "272068",
-                "title": "Gone Streaming: dbt+Materialize in 10 minutes",
-                "description": "dbt is great for batch, but it can only approximate transforming streaming data. Together with the dbt community, we’ve worked on an adapter that allows you to transform your streaming data in real-time using Materialize as your data warehouse. What does this mean in practice? The first time you run a dbt model on top of Materialize…well, you never have to run it again! No matter how much or how frequently your data arrives, your model will stay up to date. No matter when you query your view, it will always return a fresh answer. Excited? Skeptical? Cautiously optimistic? Join us to see it for yourself as we walk you through a demo!",
-                "startsAt": "2021-10-06T00:00:00Z",
-                "endsAt": "2021-10-06T00:30:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "41a79c57-29ee-4f51-9410-548f320f0160",
-                    "name": "Jessica Laughlin"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2021-10-07T00:00:00Z",
+    "rooms": [
+      {
+        "id": 21024,
+        "name": "Online",
+        "sessions": [
+          {
+            "id": "262076",
+            "title": "Data Quality with Great Expectations and Airflow in a Reverse-ETL World",
+            "description": "Data-driven companies are asking their analytics teams to expose information in the data warehouse to third-party applications used by others in the organization. With analytics workflows having increasing downstream dependencies, data quality testing becomes of utmost importance. In this talk, we’ll walk through leveraging the Great Expectations library within a data processing workflow in Airflow. With this architecture, we will establish a gateway to ensure bad data is not exposed downstream while also notifying the team when data quality tests fail.",
+            "startsAt": "2021-10-07T00:00:00Z",
+            "endsAt": "2021-10-07T00:30:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "fc85e3db-bf1d-48f2-89b2-d06c49485f12",
+                "name": "Sarah Krasnik"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "72bde1d7-1ebe-4cc1-850b-b059039979c2",
+            "title": "Break",
+            "description": "Time to freshen up and grab that next cup of coffee!",
+            "startsAt": "2021-10-07T00:30:00Z",
+            "endsAt": "2021-10-07T00:40:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "272217",
+            "title": "A Single Data Platform for All of Your Workloads",
+            "description": "Organisations struggle to balance the competing requirements of the business, data scientists, data engineers, data analysts, risk and security experts, and the finance department.  Maintaining multiple data platforms to try to keep everyone happy often leaves many people unhappy.  Learn how customers are using Snowflake to simplify their data at rest, data in motion, and data science workloads on a single and secure data platform.   ",
+            "startsAt": "2021-10-07T00:40:00Z",
+            "endsAt": "2021-10-07T01:10:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "0d41131c-4737-4725-a37d-7ca1493b08ec",
+                "name": "Stephen Weingartner"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "287892",
+            "title": "Putting your data warehouse to work - Reverse ETL & Operational Analytics",
+            "description": "Today, the center of gravity for data has shifted into data warehouses, mostly for BI & analytics purposes. But why stop there? Through a new approach called Reverse ETL, you can activate your modeled data by moving it from your warehouse to your SaaS tools to power key business workflows. Learn how top companies like Autotrader, CircleCI & CompareClub are using Reverse ETL to power their business",
+            "startsAt": "2021-10-07T01:10:00Z",
+            "endsAt": "2021-10-07T01:40:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "71a91d4e-b181-451e-b099-ccf3914d76bd",
+                "name": "Tejas Manohar"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "bd80411a-baa3-4b4e-86e1-ffcdf72cc042",
+            "title": "Lunch",
+            "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
+            "startsAt": "2021-10-07T01:40:00Z",
+            "endsAt": "2021-10-07T02:10:00Z",
+            "isServiceSession": true,
+            "isPlenumSession": false,
+            "speakers": [],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "277489",
+            "title": "Snowflake and dbt -- Our Journey to the Cloud",
+            "description": "nib's journey of using Snowflake and dbt ",
+            "startsAt": "2021-10-07T02:10:00Z",
+            "endsAt": "2021-10-07T02:40:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "980689f0-3583-4527-8f05-8b97bcf77512",
+                "name": "Pip Sidaway"
               },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "00:30:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "760ddacf-89d9-462d-800d-accfbd323c82",
-                "title": "Break",
-                "description": "Time to freshen up and grab that next cup of coffee!",
-                "startsAt": "2021-10-06T00:30:00Z",
-                "endsAt": "2021-10-06T00:40:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
+              {
+                "id": "9e4787a5-3943-41c7-bcc9-13f96e908993",
+                "name": "Juliana Zhu"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "285729",
+            "title": "Situational Intelligence with Analytics in Motion",
+            "description": "The growth of streaming data is a massive industry trend in enterprise tech. This movement towards streaming data provides organizations new intelligence, connecting applications with streaming data can unlock all these insights about what's happening in your business in real-time. However, being able to consume data in real-time only gets you halfway. You've got to have analytics to help you drive intelligence, not only to tell you what is happening, and more importantly, why it is happening. Harnessing this potential for intelligence from streaming data requires a new approach to analytics, i.e., Analytics in Motion. \r\n\r\nIn this talk, we will share how this new data architecture can help organizations unlock the potential of data by enabling them to have rapid interactive conversations and the ability to process massive data in real-time across all of their data. \r\n",
+            "startsAt": "2021-10-07T02:40:00Z",
+            "endsAt": "2021-10-07T03:10:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
+                "name": "Jag Dhillon"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "271932",
+            "title": "Albero - Decision Tree “when to use what – the full Azure data estate",
+            "description": "This year a lot of attention is focused on data and data services. Microsoft is doing their absolute best to help our customers benefit from the wide portfolio of Azure Data Services. But what if this amount of services is a bit too many for many of us not to mention our customers? We have more than 20 main data services plus SKUs. Navigation across such a wide range of technologies and answering simple question: “When to choose what data technology?” suddenly became quite a complex task even for experts.  Andrei, Elizabeth and Eleni joined hands in creating universal and easy to consume bird-eye view of the entire Azure data services. This decision tree helps customers/partners to define and shape their thought process around selection of the certain data technologies and using them together in building data solutions.",
+            "startsAt": "2021-10-07T03:10:00Z",
+            "endsAt": "2021-10-07T03:40:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "a7126dd4-e7b6-4bca-a348-e722c63d6f23",
+                "name": "Elizabeth Antoine"
               },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "00:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "267957",
-                "title": "Reliable data engineering made easy",
-                "description": "Organisations have a wealth of information siloed in various data sources. These could vary from databases (Oracle, MySQL, Postgres, etc) to product applications (Salesforce, Marketo, HubSpot, etc). A significant number of use-cases need data from these diverse data sources to produce meaningful reports and predictions. \r\nFor many years, organisations tried to centrally collect all their data in the data warehouse but these were not suited or were too expensive for handling unstructured data, semi-structured data, and data with high variety, velocity, and volume. It also limited the types of analytics data teams could use; unable to do machine learning or anything more than basic SQL.\r\n\r\nDelta Lake, released and open-sourced in 2019, is helping thousands of organisations build central data repositories in an open format much more reliably and efficiently than before. Delta Lake provides ACID transactions and efficient indexing that is critical for exposing the data for various access patterns, ranging from ad-hoc SQL queries in BI tools, to scheduled ML jobs. \r\nThis session will provide the one-two step of Data Ingestion & Quality made easy with DELTA Live Tables.\r\n",
-                "startsAt": "2021-10-06T00:40:00Z",
-                "endsAt": "2021-10-06T01:10:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "6a4d6c7e-4d03-4cc6-8beb-3b21225f681e",
-                    "name": "Mahdi Askari"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
+              {
+                "id": "06bb0e75-cae8-4216-83c8-0a2e7288b6da",
+                "name": "Andrei Zaichikov"
               },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "01:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "272212",
-                "title": "Data quality: the key to long term happiness",
-                "description": "The advent of modern data warehousing has equalled the playing field and pivoted a focus from data volume to data quality instead. This talk aims to practically explore approaches to quantify data quality at various stages in the collection and processing lifecycle and to present tools that can be implemented to help in the fight against erroneous data.",
-                "startsAt": "2021-10-06T01:10:00Z",
-                "endsAt": "2021-10-06T01:40:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "5fce6ed5-e1cc-46e0-adec-dc5aa9a039f5",
-                    "name": "Mike Robins"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
+              {
+                "id": "3c8bc5ec-15a8-4026-b4d7-f5857e3cf1fa",
+                "name": "Eleni Santorinaiou"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "259218",
+            "title": "Scaling Proximity Targeting via Delta Lakehouse based Data Platforms Ecosystem",
+            "description": "Proximity Targeting is a marketing technique that uses mobile location services to reach consumers in real-time when they are around a store location or point of interest. This is done by defining a radius around a specific location. If a consumer has opted into location services on their mobile phone and enters within this radius, proximity targeting helps in triggering an advertisement or message to consumers in an effort to influence their behaviour. This can be combined with the ability to purchase impressions through programmatic ad platforms that are powered by real-time bidding which can help businesses formulate the right strategy of influencing their users on a particular geographical area. They can build user groups based on certain characteristics (such as neighbourhoods, demographics, interests, and other data), and subsequently launch another campaign that targets anyone with those characteristics.\r\nThe growth of mobile devices has led to enormous data generation which offers tremendous potential when used effectively for business. Thus we need an efficient platform where we can process such huge data efficiently and with minimum latency and cost. This talk describes MIQ's journey into building a fast, scalable & cost effective processing platform using Spar, MLLib, Kafka's Event Driven microservices, Delta Lakehouse architecture, delivering faster and actionable insights for Proximity targeting which has empowered the creation of a product generating ~30 million dollar revenue on a year to year basis.",
+            "startsAt": "2021-10-07T03:40:00Z",
+            "endsAt": "2021-10-07T04:10:00Z",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "d8609cd7-b406-4dda-a464-07ddd00183f9",
+                "name": "Rohit Srivastava"
               },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "01:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "e5a93fe3-365a-4488-8a7a-48d6a1527ebf",
-                "title": "Lunch",
-                "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
-                "startsAt": "2021-10-06T01:40:00Z",
-                "endsAt": "2021-10-06T02:10:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "02:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "261511",
-                "title": "Building a Data Platform at Assembly Payments",
-                "description": "- Datalake journey @ Assembly Payments.\r\n- Description of Architecture using RDS, DynamoDB, DMS, Firehose, Lambda, S3, Glue, EventBridge, Step Functions, Fargate, DBT, Snowflake and Looker\r\n- Share the benefits we felt like event driven, serverless, performance, low cost and lower operational overhead.\r\n- and share some of the learnings in the usage of step functions, glue, incremental loads and dependency management.",
-                "startsAt": "2021-10-06T02:10:00Z",
-                "endsAt": "2021-10-06T02:40:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "88e9b4d4-cd98-48aa-9eb5-93ff5a8307c6",
-                    "name": "Roopak Madhu"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "02:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "264570",
-                "title": "Streaming data analytics with Apache Flink",
-                "description": "Real-time analytics are on the rise. Apache Flink is a popular purpose-built framework and distributed processing engine for large scale low latency data processing in real-time. In this session, we will give you a brief overview of this popular framework, and a demo to build your first stream processing application with Apache Flink on Amazon Kinesis Data Analytics Studio. ",
-                "startsAt": "2021-10-06T02:40:00Z",
-                "endsAt": "2021-10-06T03:10:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "38aa4954-1171-43f1-b9ec-dc6778fea6b8",
-                    "name": "Masudur Rahaman Sayem"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "03:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "271049",
-                "title": "Teleport Data: The future of data",
-                "description": "This session will discuss:\r\n- the new data stack\r\n- challenges & problems still faced\r\n- teleport data",
-                "startsAt": "2021-10-06T03:10:00Z",
-                "endsAt": "2021-10-06T03:40:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "69038dea-9d70-458d-8604-3b74c71e43bc",
-                    "name": "John Cosgrove"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "03:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "9e05732a-90fc-4e24-82a7-154c7ec1be05",
-                "title": "The Enterprise Panel",
-                "description": "Join us for a discussion of all those wacky enterprise things like data governance, lineage and meshing with things!",
-                "startsAt": "2021-10-06T03:40:00Z",
-                "endsAt": "2021-10-06T04:20:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "04:15:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "62af2530-a0df-4226-8b08-ee041f410843",
-                "title": "Day 2 Close",
-                "description": "A wrap of all the day 2 action and a preview of our 3rd and final day!",
-                "startsAt": "2021-10-06T04:15:00Z",
-                "endsAt": "2021-10-06T04:25:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "23:00:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "06c1705b-614b-4696-949f-badbc2ceb4d3",
-                "title": "Welcome to Day 3",
-                "description": "The DataEngBytes team return to welcome you to an action packed day 3... strap yourselves in for some awesome talks!",
-                "startsAt": "2021-10-06T23:00:00Z",
-                "endsAt": "2021-10-06T23:10:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "23:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "7ad71d54-d2b9-48f4-a579-e52b607319eb",
-                "title": "Placeholder - keynote",
-                "description": null,
-                "startsAt": "2021-10-06T23:10:00Z",
-                "endsAt": "2021-10-07T00:00:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2021-10-07T00:00:00Z",
-      "rooms": [
-        {
-          "id": 21024,
-          "name": "Online",
-          "sessions": [
-            {
+              {
+                "id": "9ac3e76d-05e4-4085-8729-bf3e90cad2d7",
+                "name": "Bikash Singh"
+              }
+            ],
+            "categories": [],
+            "roomId": 21024,
+            "room": "Online",
+            "liveUrl": null,
+            "recordingUrl": null
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "00:00:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "262076",
               "title": "Data Quality with Great Expectations and Airflow in a Reverse-ETL World",
               "description": "Data-driven companies are asking their analytics teams to expose information in the data warehouse to third-party applications used by others in the organization. With analytics workflows having increasing downstream dependencies, data quality testing becomes of utmost importance. In this talk, we’ll walk through leveraging the Great Expectations library within a data processing workflow in Airflow. With this architecture, we will establish a gateway to ensure bad data is not exposed downstream while also notifying the team when data quality tests fail.",
@@ -1652,7 +1859,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "00:30:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "72bde1d7-1ebe-4cc1-850b-b059039979c2",
               "title": "Break",
               "description": "Time to freshen up and grab that next cup of coffee!",
@@ -1667,12 +1884,22 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "00:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "272217",
               "title": "A Single Data Platform for All of Your Workloads",
               "description": "Organisations struggle to balance the competing requirements of the business, data scientists, data engineers, data analysts, risk and security experts, and the finance department.  Maintaining multiple data platforms to try to keep everyone happy often leaves many people unhappy.  Learn how customers are using Snowflake to simplify their data at rest, data in motion, and data science workloads on a single and secure data platform.   ",
               "startsAt": "2021-10-07T00:40:00Z",
-              "endsAt": "2021-10-07T01:20:00Z",
+              "endsAt": "2021-10-07T01:10:00Z",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1687,18 +1914,28 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
-              "id": "270619",
-              "title": "Shift-left testing : Building reliable Data Pipelines",
-              "description": "Unreliable data pipelines can result in data downtime. “Data downtime“refers to periods of time when your data  is partial, erroneous, missing or otherwise inaccurate. Data driven organisations may need to pay a heavy cost of low trust data. One of the challenges of building reliable  data pipelines is unexpected data coming from different sources.\r\nIn this talk we will share our  experiences of  how we  can build reliable data pipelines  by \r\n\t 1.  “Shifting Left” - testing   to the early stages of  development life cycle  as well as  \r\n         2.  “Shifting-Left” - validations using data contracts\r\nWe will then conclude by discussing  how we can we make sure that the system catches unexpected data and is able to recover from it. ",
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "01:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "287892",
+              "title": "Putting your data warehouse to work - Reverse ETL & Operational Analytics",
+              "description": "Today, the center of gravity for data has shifted into data warehouses, mostly for BI & analytics purposes. But why stop there? Through a new approach called Reverse ETL, you can activate your modeled data by moving it from your warehouse to your SaaS tools to power key business workflows. Learn how top companies like Autotrader, CircleCI & CompareClub are using Reverse ETL to power their business",
               "startsAt": "2021-10-07T01:10:00Z",
               "endsAt": "2021-10-07T01:40:00Z",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
                 {
-                  "id": "87766859-1911-4965-b57d-26682d22ff3a",
-                  "name": "Harmeet Sokhi"
+                  "id": "71a91d4e-b181-451e-b099-ccf3914d76bd",
+                  "name": "Tejas Manohar"
                 }
               ],
               "categories": [],
@@ -1707,7 +1944,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "01:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "bd80411a-baa3-4b4e-86e1-ffcdf72cc042",
               "title": "Lunch",
               "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
@@ -1722,7 +1969,17 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "02:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "277489",
               "title": "Snowflake and dbt -- Our Journey to the Cloud",
               "description": "nib's journey of using Snowflake and dbt ",
@@ -1746,12 +2003,52 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "02:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
+              "id": "285729",
+              "title": "Situational Intelligence with Analytics in Motion",
+              "description": "The growth of streaming data is a massive industry trend in enterprise tech. This movement towards streaming data provides organizations new intelligence, connecting applications with streaming data can unlock all these insights about what's happening in your business in real-time. However, being able to consume data in real-time only gets you halfway. You've got to have analytics to help you drive intelligence, not only to tell you what is happening, and more importantly, why it is happening. Harnessing this potential for intelligence from streaming data requires a new approach to analytics, i.e., Analytics in Motion. \r\n\r\nIn this talk, we will share how this new data architecture can help organizations unlock the potential of data by enabling them to have rapid interactive conversations and the ability to process massive data in real-time across all of their data. \r\n",
+              "startsAt": "2021-10-07T02:40:00Z",
+              "endsAt": "2021-10-07T03:10:00Z",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
+                  "name": "Jag Dhillon"
+                }
+              ],
+              "categories": [],
+              "roomId": 21024,
+              "room": "Online",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "03:10:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "271932",
               "title": "Albero - Decision Tree “when to use what – the full Azure data estate",
               "description": "This year a lot of attention is focused on data and data services. Microsoft is doing their absolute best to help our customers benefit from the wide portfolio of Azure Data Services. But what if this amount of services is a bit too many for many of us not to mention our customers? We have more than 20 main data services plus SKUs. Navigation across such a wide range of technologies and answering simple question: “When to choose what data technology?” suddenly became quite a complex task even for experts.  Andrei, Elizabeth and Eleni joined hands in creating universal and easy to consume bird-eye view of the entire Azure data services. This decision tree helps customers/partners to define and shape their thought process around selection of the certain data technologies and using them together in building data solutions.",
-              "startsAt": "2021-10-07T02:40:00Z",
-              "endsAt": "2021-10-07T03:10:00Z",
+              "startsAt": "2021-10-07T03:10:00Z",
+              "endsAt": "2021-10-07T03:40:00Z",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -1774,18 +2071,32 @@
               "liveUrl": null,
               "recordingUrl": null
             },
-            {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "03:40:00",
+        "rooms": [
+          {
+            "id": 21024,
+            "name": "Online",
+            "session": {
               "id": "259218",
               "title": "Scaling Proximity Targeting via Delta Lakehouse based Data Platforms Ecosystem",
               "description": "Proximity Targeting is a marketing technique that uses mobile location services to reach consumers in real-time when they are around a store location or point of interest. This is done by defining a radius around a specific location. If a consumer has opted into location services on their mobile phone and enters within this radius, proximity targeting helps in triggering an advertisement or message to consumers in an effort to influence their behaviour. This can be combined with the ability to purchase impressions through programmatic ad platforms that are powered by real-time bidding which can help businesses formulate the right strategy of influencing their users on a particular geographical area. They can build user groups based on certain characteristics (such as neighbourhoods, demographics, interests, and other data), and subsequently launch another campaign that targets anyone with those characteristics.\r\nThe growth of mobile devices has led to enormous data generation which offers tremendous potential when used effectively for business. Thus we need an efficient platform where we can process such huge data efficiently and with minimum latency and cost. This talk describes MIQ's journey into building a fast, scalable & cost effective processing platform using Spar, MLLib, Kafka's Event Driven microservices, Delta Lakehouse architecture, delivering faster and actionable insights for Proximity targeting which has empowered the creation of a product generating ~30 million dollar revenue on a year to year basis.",
-              "startsAt": "2021-10-07T03:10:00Z",
-              "endsAt": "2021-10-07T03:40:00Z",
+              "startsAt": "2021-10-07T03:40:00Z",
+              "endsAt": "2021-10-07T04:10:00Z",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
                 {
                   "id": "d8609cd7-b406-4dda-a464-07ddd00183f9",
                   "name": "Rohit Srivastava"
+                },
+                {
+                  "id": "9ac3e76d-05e4-4085-8729-bf3e90cad2d7",
+                  "name": "Bikash Singh"
                 }
               ],
               "categories": [],
@@ -1793,254 +2104,11 @@
               "room": "Online",
               "liveUrl": null,
               "recordingUrl": null
-            }
-          ],
-          "hasOnlyPlenumSessions": false
-        }
-      ],
-      "timeSlots": [
-        {
-          "slotStart": "00:00:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "262076",
-                "title": "Data Quality with Great Expectations and Airflow in a Reverse-ETL World",
-                "description": "Data-driven companies are asking their analytics teams to expose information in the data warehouse to third-party applications used by others in the organization. With analytics workflows having increasing downstream dependencies, data quality testing becomes of utmost importance. In this talk, we’ll walk through leveraging the Great Expectations library within a data processing workflow in Airflow. With this architecture, we will establish a gateway to ensure bad data is not exposed downstream while also notifying the team when data quality tests fail.",
-                "startsAt": "2021-10-07T00:00:00Z",
-                "endsAt": "2021-10-07T00:30:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "fc85e3db-bf1d-48f2-89b2-d06c49485f12",
-                    "name": "Sarah Krasnik"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "00:30:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "72bde1d7-1ebe-4cc1-850b-b059039979c2",
-                "title": "Break",
-                "description": "Time to freshen up and grab that next cup of coffee!",
-                "startsAt": "2021-10-07T00:30:00Z",
-                "endsAt": "2021-10-07T00:40:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "00:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "272217",
-                "title": "A Single Data Platform for All of Your Workloads",
-                "description": "Organisations struggle to balance the competing requirements of the business, data scientists, data engineers, data analysts, risk and security experts, and the finance department.  Maintaining multiple data platforms to try to keep everyone happy often leaves many people unhappy.  Learn how customers are using Snowflake to simplify their data at rest, data in motion, and data science workloads on a single and secure data platform.   ",
-                "startsAt": "2021-10-07T00:40:00Z",
-                "endsAt": "2021-10-07T01:20:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "0d41131c-4737-4725-a37d-7ca1493b08ec",
-                    "name": "Stephen Weingartner"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "01:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "270619",
-                "title": "Shift-left testing : Building reliable Data Pipelines",
-                "description": "Unreliable data pipelines can result in data downtime. “Data downtime“refers to periods of time when your data  is partial, erroneous, missing or otherwise inaccurate. Data driven organisations may need to pay a heavy cost of low trust data. One of the challenges of building reliable  data pipelines is unexpected data coming from different sources.\r\nIn this talk we will share our  experiences of  how we  can build reliable data pipelines  by \r\n\t 1.  “Shifting Left” - testing   to the early stages of  development life cycle  as well as  \r\n         2.  “Shifting-Left” - validations using data contracts\r\nWe will then conclude by discussing  how we can we make sure that the system catches unexpected data and is able to recover from it. ",
-                "startsAt": "2021-10-07T01:10:00Z",
-                "endsAt": "2021-10-07T01:40:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "87766859-1911-4965-b57d-26682d22ff3a",
-                    "name": "Harmeet Sokhi"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "01:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "bd80411a-baa3-4b4e-86e1-ffcdf72cc042",
-                "title": "Lunch",
-                "description": "Time to fuel that body of yours after fuelling your mind with all this great DataEng knowledge!",
-                "startsAt": "2021-10-07T01:40:00Z",
-                "endsAt": "2021-10-07T02:10:00Z",
-                "isServiceSession": true,
-                "isPlenumSession": false,
-                "speakers": [],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "02:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "277489",
-                "title": "Snowflake and dbt -- Our Journey to the Cloud",
-                "description": "nib's journey of using Snowflake and dbt ",
-                "startsAt": "2021-10-07T02:10:00Z",
-                "endsAt": "2021-10-07T02:40:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "980689f0-3583-4527-8f05-8b97bcf77512",
-                    "name": "Pip Sidaway"
-                  },
-                  {
-                    "id": "9e4787a5-3943-41c7-bcc9-13f96e908993",
-                    "name": "Juliana Zhu"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "02:40:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "271932",
-                "title": "Albero - Decision Tree “when to use what – the full Azure data estate",
-                "description": "This year a lot of attention is focused on data and data services. Microsoft is doing their absolute best to help our customers benefit from the wide portfolio of Azure Data Services. But what if this amount of services is a bit too many for many of us not to mention our customers? We have more than 20 main data services plus SKUs. Navigation across such a wide range of technologies and answering simple question: “When to choose what data technology?” suddenly became quite a complex task even for experts.  Andrei, Elizabeth and Eleni joined hands in creating universal and easy to consume bird-eye view of the entire Azure data services. This decision tree helps customers/partners to define and shape their thought process around selection of the certain data technologies and using them together in building data solutions.",
-                "startsAt": "2021-10-07T02:40:00Z",
-                "endsAt": "2021-10-07T03:10:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "a7126dd4-e7b6-4bca-a348-e722c63d6f23",
-                    "name": "Elizabeth Antoine"
-                  },
-                  {
-                    "id": "06bb0e75-cae8-4216-83c8-0a2e7288b6da",
-                    "name": "Andrei Zaichikov"
-                  },
-                  {
-                    "id": "3c8bc5ec-15a8-4026-b4d7-f5857e3cf1fa",
-                    "name": "Eleni Santorinaiou"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        },
-        {
-          "slotStart": "03:10:00",
-          "rooms": [
-            {
-              "id": 21024,
-              "name": "Online",
-              "session": {
-                "id": "259218",
-                "title": "Scaling Proximity Targeting via Delta Lakehouse based Data Platforms Ecosystem",
-                "description": "Proximity Targeting is a marketing technique that uses mobile location services to reach consumers in real-time when they are around a store location or point of interest. This is done by defining a radius around a specific location. If a consumer has opted into location services on their mobile phone and enters within this radius, proximity targeting helps in triggering an advertisement or message to consumers in an effort to influence their behaviour. This can be combined with the ability to purchase impressions through programmatic ad platforms that are powered by real-time bidding which can help businesses formulate the right strategy of influencing their users on a particular geographical area. They can build user groups based on certain characteristics (such as neighbourhoods, demographics, interests, and other data), and subsequently launch another campaign that targets anyone with those characteristics.\r\nThe growth of mobile devices has led to enormous data generation which offers tremendous potential when used effectively for business. Thus we need an efficient platform where we can process such huge data efficiently and with minimum latency and cost. This talk describes MIQ's journey into building a fast, scalable & cost effective processing platform using Spar, MLLib, Kafka's Event Driven microservices, Delta Lakehouse architecture, delivering faster and actionable insights for Proximity targeting which has empowered the creation of a product generating ~30 million dollar revenue on a year to year basis.",
-                "startsAt": "2021-10-07T03:10:00Z",
-                "endsAt": "2021-10-07T03:40:00Z",
-                "isServiceSession": false,
-                "isPlenumSession": false,
-                "speakers": [
-                  {
-                    "id": "d8609cd7-b406-4dda-a464-07ddd00183f9",
-                    "name": "Rohit Srivastava"
-                  }
-                ],
-                "categories": [],
-                "roomId": 21024,
-                "room": "Online",
-                "liveUrl": null,
-                "recordingUrl": null
-              },
-              "index": 0
-            }
-          ]
-        }
-      ]
-    }
-  ]
+            },
+            "index": 0
+          }
+        ]
+      }
+    ]
+  }
+]

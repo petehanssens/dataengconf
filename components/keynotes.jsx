@@ -2,7 +2,7 @@ import React from 'react';
 
 import speakers from '../data/2021/speakers.json'
 
-const exclusionList = ['Simon O\'Toole','Barr Moses']
+const exclusionList = ['Simon O\'Toole','Barr Moses','Maxime Beauchemin']
 
 
 export default function Keynotes() {

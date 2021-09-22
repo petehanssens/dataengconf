@@ -38,6 +38,31 @@
     "categories": []
   },
   {
+    "id": "9ac3e76d-05e4-4085-8729-bf3e90cad2d7",
+    "firstName": "Bikash",
+    "lastName": "Singh",
+    "fullName": "Bikash Singh",
+    "bio": "Engineering Lead with an expertise in working on Programmatic Media Buying space for Ad-Tech domain.\r\n\r\nSkilled in Application Development and building a highly scalable Big Data Analytics platform. Data Pipeline builder responsible for optimizing data stores and building Big Data solutions from the ground up.\r\n\r\nExperienced in performing root cause analysis and optimizing Data Pipelines at scale with cost effective approach.",
+    "tagLine": "MIQ Digital India Pvt Ltd - Technical Lead",
+    "profilePicture": "https://sessionize.com/image/f51f-400o400o2-SodZQN4JrynS2Ae2g17inj.jpg",
+    "sessions": [
+      {
+        "id": 259218,
+        "name": "Scaling Proximity Targeting via Delta Lakehouse based Data Platforms Ecosystem"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/bikash-singh-3384b9106/",
+        "linkType": "LinkedIn"
+      }
+    ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
     "id": "509cd132-a8aa-40f1-8c81-31d3421bd4e3",
     "firstName": "Caito",
     "lastName": "Scherr",
@@ -315,6 +340,25 @@
       {
         "id": 264570,
         "name": "Streaming data analytics with Apache Flink"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "5795773b-ed1a-4958-a03e-22f27445fcac",
+    "firstName": "Maxime",
+    "lastName": "Beauchemin",
+    "fullName": "Maxime Beauchemin",
+    "bio": "Founder & CEO Preset. Original creator of Apache Superset and Apache Airflow.\r\n",
+    "tagLine": "Creator of Superset and Airflow, Founder and CEO at Preset",
+    "profilePicture": "https://sessionize.com/image/65e0-400o400o2-HjhnFQVSu9NZgztRgE7xMn.png",
+    "sessions": [
+      {
+        "id": 288125,
+        "name": "The Rise & Downfall of the Data Engineer REVISITED"
       }
     ],
     "isTopSpeaker": false,
@@ -616,6 +660,25 @@
         "linkType": "LinkedIn"
       }
     ],
+    "questionAnswers": [],
+    "categories": []
+  },
+  {
+    "id": "71a91d4e-b181-451e-b099-ccf3914d76bd",
+    "firstName": "Tejas",
+    "lastName": "Manohar",
+    "fullName": "Tejas Manohar",
+    "bio": "Tejas is a cofounder and Co-CEO at Hightouch. Prior to Hightouch, he was the 7th engineer at Segment, where he was introduced to the importance of the data warehouse and to the many use cases that data can solve for all teams",
+    "tagLine": "Co-CEO of Hightouch",
+    "profilePicture": "https://sessionize.com/image/a4e1-400o400o2-UmnEoxrAyv4mDh9hdpjb8u.png",
+    "sessions": [
+      {
+        "id": 287892,
+        "name": "Putting your data warehouse to work - Reverse ETL & Operational Analytics"
+      }
+    ],
+    "isTopSpeaker": false,
+    "links": [],
     "questionAnswers": [],
     "categories": []
   },

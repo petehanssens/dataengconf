@@ -26,17 +26,17 @@
       },
       {
         "questionAnswers": [],
-        "id": "271937",
-        "title": "From telescope to data centre: adventures in astronomical data pipelines",
-        "description": "I will describe the data flow we have developed to move astronomical data from Siding Spring Observatory in central west NSW to data centres in Sydney and Canberra, and the subsequent processing stages to produce science-ready data. This is a story that involves the coupling of Apache Nifi, MongoDB and Docker with astronomical data reduction software to allow researchers to explore some of the most violent phenomena in the Universe: colliding black holes and exploding stars. I’ll also look at some of the related future data engineering challenges involved in the Square Kilometre Array and the European Southern Observatory. ",
+        "id": "288125",
+        "title": "The Rise & Downfall of the Data Engineer REVISITED",
+        "description": "In 2017, I wrote two blog posts about data engineering: \"The Rise of the Data Engineer\" was an attempt at defining the emerging role , and \"The Downfall of the Data Engineer\" was exposing some of the challenges [and opportunities] around the role. 4 years later, it's a good time to revisit all of this and explore what has changed, from the tool landscape to the role & responsabilities.",
         "startsAt": "2021-10-04T23:10:00Z",
         "endsAt": "2021-10-05T00:00:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
           {
-            "id": "06417bf4-83bb-4535-b2ff-cfda644efb96",
-            "name": "Simon O'Toole"
+            "id": "5795773b-ed1a-4958-a03e-22f27445fcac",
+            "name": "Maxime Beauchemin"
           }
         ],
         "categories": [],
@@ -194,32 +194,11 @@
       },
       {
         "questionAnswers": [],
-        "id": "274291",
-        "title": "Beginners guide to Azure MLOps",
-        "description": "A commercial scenario and example of work we have recently done for a Large engineering client and lessons learned around implementing Azure MLOps. \r\n\r\nWith a Technical how-to of:\r\n\r\n•\tCreate reproducible ML pipelines.\r\n•\tCreate reusable software environments \r\n•\tRegister, package, and deploy models from anywhere. \r\n•\tCapture the governance data for the end-to-end ML lifecycle. \r\n•\tNotify and alert on events in the ML lifecycle. \r\n•\tMonitor ML applications for operational and ML-related\r\nissues. \r\n•\tAutomate the end-to-end ML lifecycle with Azure Machine Learning and Azure Pipelines. \r\n",
-        "startsAt": "2021-10-05T01:30:00Z",
-        "endsAt": "2021-10-05T02:00:00Z",
-        "isServiceSession": false,
-        "isPlenumSession": false,
-        "speakers": [
-          {
-            "id": "300098b5-576f-4028-8014-51a562193190",
-            "name": "Chris Benson"
-          }
-        ],
-        "categories": [],
-        "roomId": 21025,
-        "room": "On-demand",
-        "liveUrl": null,
-        "recordingUrl": null
-      },
-      {
-        "questionAnswers": [],
         "id": "260573",
         "title": "Object Compaction in Cloud for High Yield",
         "description": "In file systems, large sequential writes are more beneficial than small random writes, and hence many storage systems implement a log structured file system. In the same way, the cloud favors large objects more than small objects. Cloud providers place throttling limits on PUTs and GETs, and so it takes significantly longer time to upload a bunch of small objects than a large object of the aggregate size. Moreover, there are per-PUT calls associated with uploading smaller objects.\r\nIn Netflix, a lot of media assets and their relevant metadata is generated and pushed to cloud. Most of these files are between 10s of bytes to 10s of kilobytes and are saved as small objects on Cloud.\r\nIn this talk, we would like to propose a strategy to compact these small objects into larger blobs before uploading them to Cloud. We will discuss the policies to select relevant smaller objects, and how to manage the indexing of these objects within the blob. We will also discuss how different cloud storage operations such as reads and deletes would be implemented for such objects. This includes recycling blobs that have dead small objects - due to overwrites, etc.\r\nFinally, we would showcase the potential impact of such a strategy on Netflix assets in terms of cost and performance.\r\n",
-        "startsAt": "2021-10-05T02:00:00Z",
-        "endsAt": "2021-10-05T02:30:00Z",
+        "startsAt": "2021-10-05T01:30:00Z",
+        "endsAt": "2021-10-05T02:00:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
@@ -239,8 +218,8 @@
         "id": "265952",
         "title": "Trust, Knowledge and your Data. Our approach at KADA to building a great data product",
         "description": "Have you spent time building a great data product that failed to gain traction? \r\n\r\nOr found users using a legacy report despite a better report being available?\r\n\r\nIt's a common occurrence. \r\n\r\nThrough our journey at KADA, we have identified 5 factors that make a great, trusted data product. \r\n\r\nIn this talk, I will share how you can improve your data products and show you how we built these features into K, our platform for making trust & knowledge a key part of the modern data stack. ",
-        "startsAt": "2021-10-05T02:20:00Z",
-        "endsAt": "2021-10-05T02:50:00Z",
+        "startsAt": "2021-10-05T03:00:00Z",
+        "endsAt": "2021-10-05T03:30:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
@@ -257,17 +236,38 @@
       },
       {
         "questionAnswers": [],
-        "id": "285729",
-        "title": "Situational Intelligence with Analytics in Motion",
-        "description": "The growth of streaming data is a massive industry trend in enterprise tech. This movement towards streaming data provides organizations new intelligence, connecting applications with streaming data can unlock all these insights about what's happening in your business in real-time. However, being able to consume data in real-time only gets you halfway. You've got to have analytics to help you drive intelligence, not only to tell you what is happening, and more importantly, why it is happening. Harnessing this potential for intelligence from streaming data requires a new approach to analytics, i.e., Analytics in Motion. \r\n\r\nIn this talk, we will share how this new data architecture can help organizations unlock the potential of data by enabling them to have rapid interactive conversations and the ability to process massive data in real-time across all of their data. \r\n",
-        "startsAt": "2021-10-05T02:45:00Z",
-        "endsAt": "2021-10-05T03:15:00Z",
+        "id": "270619",
+        "title": "Shift-left testing : Building reliable Data Pipelines",
+        "description": "Unreliable data pipelines can result in data downtime. “Data downtime“refers to periods of time when your data  is partial, erroneous, missing or otherwise inaccurate. Data driven organisations may need to pay a heavy cost of low trust data. One of the challenges of building reliable  data pipelines is unexpected data coming from different sources.\r\nIn this talk we will share our  experiences of  how we  can build reliable data pipelines  by \r\n\t 1.  “Shifting Left” - testing   to the early stages of  development life cycle  as well as  \r\n         2.  “Shifting-Left” - validations using data contracts\r\nWe will then conclude by discussing  how we can we make sure that the system catches unexpected data and is able to recover from it. ",
+        "startsAt": "2021-10-05T03:30:00Z",
+        "endsAt": "2021-10-05T04:00:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
           {
-            "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
-            "name": "Jag Dhillon"
+            "id": "87766859-1911-4965-b57d-26682d22ff3a",
+            "name": "Harmeet Sokhi"
+          }
+        ],
+        "categories": [],
+        "roomId": 21024,
+        "room": "Online",
+        "liveUrl": null,
+        "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
+        "id": "274291",
+        "title": "Beginners guide to Azure MLOps",
+        "description": "A commercial scenario and example of work we have recently done for a Large engineering client and lessons learned around implementing Azure MLOps. \r\n\r\nWith a Technical how-to of:\r\n\r\n•\tCreate reproducible ML pipelines.\r\n•\tCreate reusable software environments \r\n•\tRegister, package, and deploy models from anywhere. \r\n•\tCapture the governance data for the end-to-end ML lifecycle. \r\n•\tNotify and alert on events in the ML lifecycle. \r\n•\tMonitor ML applications for operational and ML-related\r\nissues. \r\n•\tAutomate the end-to-end ML lifecycle with Azure Machine Learning and Azure Pipelines. \r\n",
+        "startsAt": "2021-10-05T04:00:00Z",
+        "endsAt": "2021-10-05T04:30:00Z",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "300098b5-576f-4028-8014-51a562193190",
+            "name": "Chris Benson"
           }
         ],
         "categories": [],
@@ -467,6 +467,27 @@
       },
       {
         "questionAnswers": [],
+        "id": "271937",
+        "title": "From telescope to data centre: adventures in astronomical data pipelines",
+        "description": "I will describe the data flow we have developed to move astronomical data from Siding Spring Observatory in central west NSW to data centres in Sydney and Canberra, and the subsequent processing stages to produce science-ready data. This is a story that involves the coupling of Apache Nifi, MongoDB and Docker with astronomical data reduction software to allow researchers to explore some of the most violent phenomena in the Universe: colliding black holes and exploding stars. I’ll also look at some of the related future data engineering challenges involved in the Square Kilometre Array and the European Southern Observatory. ",
+        "startsAt": "2021-10-06T23:10:00Z",
+        "endsAt": "2021-10-07T00:00:00Z",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "06417bf4-83bb-4535-b2ff-cfda644efb96",
+            "name": "Simon O'Toole"
+          }
+        ],
+        "categories": [],
+        "roomId": 21024,
+        "room": "Online",
+        "liveUrl": null,
+        "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
         "id": "262076",
         "title": "Data Quality with Great Expectations and Airflow in a Reverse-ETL World",
         "description": "Data-driven companies are asking their analytics teams to expose information in the data warehouse to third-party applications used by others in the organization. With analytics workflows having increasing downstream dependencies, data quality testing becomes of utmost importance. In this talk, we’ll walk through leveraging the Great Expectations library within a data processing workflow in Airflow. With this architecture, we will establish a gateway to ensure bad data is not exposed downstream while also notifying the team when data quality tests fail.",
@@ -492,7 +513,7 @@
         "title": "A Single Data Platform for All of Your Workloads",
         "description": "Organisations struggle to balance the competing requirements of the business, data scientists, data engineers, data analysts, risk and security experts, and the finance department.  Maintaining multiple data platforms to try to keep everyone happy often leaves many people unhappy.  Learn how customers are using Snowflake to simplify their data at rest, data in motion, and data science workloads on a single and secure data platform.   ",
         "startsAt": "2021-10-07T00:40:00Z",
-        "endsAt": "2021-10-07T01:20:00Z",
+        "endsAt": "2021-10-07T01:10:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
@@ -509,17 +530,17 @@
       },
       {
         "questionAnswers": [],
-        "id": "270619",
-        "title": "Shift-left testing : Building reliable Data Pipelines",
-        "description": "Unreliable data pipelines can result in data downtime. “Data downtime“refers to periods of time when your data  is partial, erroneous, missing or otherwise inaccurate. Data driven organisations may need to pay a heavy cost of low trust data. One of the challenges of building reliable  data pipelines is unexpected data coming from different sources.\r\nIn this talk we will share our  experiences of  how we  can build reliable data pipelines  by \r\n\t 1.  “Shifting Left” - testing   to the early stages of  development life cycle  as well as  \r\n         2.  “Shifting-Left” - validations using data contracts\r\nWe will then conclude by discussing  how we can we make sure that the system catches unexpected data and is able to recover from it. ",
+        "id": "287892",
+        "title": "Putting your data warehouse to work - Reverse ETL & Operational Analytics",
+        "description": "Today, the center of gravity for data has shifted into data warehouses, mostly for BI & analytics purposes. But why stop there? Through a new approach called Reverse ETL, you can activate your modeled data by moving it from your warehouse to your SaaS tools to power key business workflows. Learn how top companies like Autotrader, CircleCI & CompareClub are using Reverse ETL to power their business",
         "startsAt": "2021-10-07T01:10:00Z",
         "endsAt": "2021-10-07T01:40:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
           {
-            "id": "87766859-1911-4965-b57d-26682d22ff3a",
-            "name": "Harmeet Sokhi"
+            "id": "71a91d4e-b181-451e-b099-ccf3914d76bd",
+            "name": "Tejas Manohar"
           }
         ],
         "categories": [],
@@ -555,11 +576,32 @@
       },
       {
         "questionAnswers": [],
+        "id": "285729",
+        "title": "Situational Intelligence with Analytics in Motion",
+        "description": "The growth of streaming data is a massive industry trend in enterprise tech. This movement towards streaming data provides organizations new intelligence, connecting applications with streaming data can unlock all these insights about what's happening in your business in real-time. However, being able to consume data in real-time only gets you halfway. You've got to have analytics to help you drive intelligence, not only to tell you what is happening, and more importantly, why it is happening. Harnessing this potential for intelligence from streaming data requires a new approach to analytics, i.e., Analytics in Motion. \r\n\r\nIn this talk, we will share how this new data architecture can help organizations unlock the potential of data by enabling them to have rapid interactive conversations and the ability to process massive data in real-time across all of their data. \r\n",
+        "startsAt": "2021-10-07T02:40:00Z",
+        "endsAt": "2021-10-07T03:10:00Z",
+        "isServiceSession": false,
+        "isPlenumSession": false,
+        "speakers": [
+          {
+            "id": "d6fc2853-f551-450a-9323-7163d2191bf7",
+            "name": "Jag Dhillon"
+          }
+        ],
+        "categories": [],
+        "roomId": 21024,
+        "room": "Online",
+        "liveUrl": null,
+        "recordingUrl": null
+      },
+      {
+        "questionAnswers": [],
         "id": "271932",
         "title": "Albero - Decision Tree “when to use what – the full Azure data estate",
         "description": "This year a lot of attention is focused on data and data services. Microsoft is doing their absolute best to help our customers benefit from the wide portfolio of Azure Data Services. But what if this amount of services is a bit too many for many of us not to mention our customers? We have more than 20 main data services plus SKUs. Navigation across such a wide range of technologies and answering simple question: “When to choose what data technology?” suddenly became quite a complex task even for experts.  Andrei, Elizabeth and Eleni joined hands in creating universal and easy to consume bird-eye view of the entire Azure data services. This decision tree helps customers/partners to define and shape their thought process around selection of the certain data technologies and using them together in building data solutions.",
-        "startsAt": "2021-10-07T02:40:00Z",
-        "endsAt": "2021-10-07T03:10:00Z",
+        "startsAt": "2021-10-07T03:10:00Z",
+        "endsAt": "2021-10-07T03:40:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
@@ -587,14 +629,18 @@
         "id": "259218",
         "title": "Scaling Proximity Targeting via Delta Lakehouse based Data Platforms Ecosystem",
         "description": "Proximity Targeting is a marketing technique that uses mobile location services to reach consumers in real-time when they are around a store location or point of interest. This is done by defining a radius around a specific location. If a consumer has opted into location services on their mobile phone and enters within this radius, proximity targeting helps in triggering an advertisement or message to consumers in an effort to influence their behaviour. This can be combined with the ability to purchase impressions through programmatic ad platforms that are powered by real-time bidding which can help businesses formulate the right strategy of influencing their users on a particular geographical area. They can build user groups based on certain characteristics (such as neighbourhoods, demographics, interests, and other data), and subsequently launch another campaign that targets anyone with those characteristics.\r\nThe growth of mobile devices has led to enormous data generation which offers tremendous potential when used effectively for business. Thus we need an efficient platform where we can process such huge data efficiently and with minimum latency and cost. This talk describes MIQ's journey into building a fast, scalable & cost effective processing platform using Spar, MLLib, Kafka's Event Driven microservices, Delta Lakehouse architecture, delivering faster and actionable insights for Proximity targeting which has empowered the creation of a product generating ~30 million dollar revenue on a year to year basis.",
-        "startsAt": "2021-10-07T03:10:00Z",
-        "endsAt": "2021-10-07T03:40:00Z",
+        "startsAt": "2021-10-07T03:40:00Z",
+        "endsAt": "2021-10-07T04:10:00Z",
         "isServiceSession": false,
         "isPlenumSession": false,
         "speakers": [
           {
             "id": "d8609cd7-b406-4dda-a464-07ddd00183f9",
             "name": "Rohit Srivastava"
+          },
+          {
+            "id": "9ac3e76d-05e4-4085-8729-bf3e90cad2d7",
+            "name": "Bikash Singh"
           }
         ],
         "categories": [],

@@ -47,6 +47,11 @@ const sponsorLogo = [
       url: 'https://www.thoughtworks.com/',
     },
     {
+      name: 'hightouch',
+      image: 'images/sponsors/hightouch/logo.png',
+      url: 'https://www.hightouch.io/',
+    },
+    {
       name: 'Microsoft Reactor',
       image: 'images/sponsors/Reactor-logo-Dark.svg',
       url: 'https://developer.microsoft.com/en-us/reactor/location/sydney',
