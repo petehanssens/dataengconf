@@ -90,6 +90,9 @@ export default function Navigation(props) {
               
 
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
+                <a href="/sessions" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  Sessions
+                </a>
                 <a href="/speakers" className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Speakers
                 </a>
