@@ -9,6 +9,7 @@ import Sydney from '../components/sydney'
 import Melbourne from '../components/melbourne'
 import SpeakerSmall from '../components/speakersSmall'
 import Keynotes from '../components/keynotes'
+import Schedule from '../components/schedule'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <>
             <HomeLayout />
             <Keynotes />
+            <Schedule />
             <SpeakerSmall />
             <Logos />
         </>
