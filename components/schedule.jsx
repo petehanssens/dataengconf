@@ -47,6 +47,7 @@ export default function Example() {
           </div>
         ))}
       </div>
+    <div className="space-y-6"></div>       
       <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
         <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Wednesday, 6th October</h2>
       </div>
@@ -74,8 +75,9 @@ export default function Example() {
           </div>
         ))}
       </div>
+    <div className="space-y-6"></div>       
       <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-        <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Thursday, 8th October</h2>
+        <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Thursday, 7th October</h2>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {sessions.filter(
