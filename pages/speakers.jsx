@@ -1,4 +1,4 @@
-import speakers from '../data/2021/speakers.json'
+import { speakers } from '../data/2021/all.json'
 
 const exclusionList = []
 

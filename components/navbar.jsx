@@ -274,8 +274,14 @@ export default function Navigation(props) {
                 </div>
                 <div className="py-6 px-5 space-y-6">
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                    <a href="https://sessionize.com/dataengbytes2021/" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Call for Papers
+                    <a href="/schedule" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    Schedule
+                    </a>
+                    <a href="/sessions" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Sessions
+                    </a>
+                    <a href="/speakers" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Speakers
                     </a>
                     {aboutUs.map((item) => (
                       <a

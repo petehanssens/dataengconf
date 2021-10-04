@@ -224,7 +224,6 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "6ed69375-e530-445d-86c8-bc1459d94ca4",
         "caf6327f-0ffb-4e3c-a079-c81380082b44",
         "8839717c-2cc6-4365-841c-c8a819f74336",
         "0314947a-700f-46ed-a443-243d7020a744",
@@ -509,7 +508,6 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "6ed69375-e530-445d-86c8-bc1459d94ca4",
         "a02ad74d-9ddb-4edb-9325-5c57078085bc",
         "8e002909-1ba1-4662-b233-7b0aa4e791d0",
         "f86b1726-a392-45e9-9dde-660b15661ec1",
@@ -1204,34 +1202,6 @@
         272193
       ],
       "fullName": "Ned Letcher",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
-    {
-      "id": "6ed69375-e530-445d-86c8-bc1459d94ca4",
-      "firstName": "Peter",
-      "lastName": "Hanssens",
-      "bio": "A big fan of all things Serverless and Data Engineering.",
-      "tagLine": "Solutions Architect, Cloud Shuttle",
-      "profilePicture": "https://sessionize.com/image/d0fe-400o400o2-WxQ22VRBXHZ7cywiVSsnrh.jpg",
-      "isTopSpeaker": false,
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/petehanssens",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/peterhanssens/",
-          "linkType": "LinkedIn"
-        }
-      ],
-      "sessions": [
-        288850,
-        288852
-      ],
-      "fullName": "Peter Hanssens",
       "categoryItems": [],
       "questionAnswers": []
     },

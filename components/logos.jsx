@@ -38,7 +38,7 @@ const sponsorLogo = [
     },
     {
       name: 'dbt',
-      image: 'images/sponsors/dbt-logo-full.png',
+      image: 'images/sponsors/dbt-labs.png',
       url: 'https://www.getdbt.com/',
     },
     {

@@ -41,7 +41,7 @@ export default function Example() {
                 <img className="h-10 w-10 rounded-full" src={speakers.find(x => x.id === session.speakers[0]).profilePicture} alt="" />
               </div>
               <div className="flex-1 min-w-0">
-                <a href="#" className="focus:outline-none">
+                <a href="./sessions" className="focus:outline-none">
                   <span className="absolute inset-0" aria-hidden="true" />
                   <p className="text-indigo-600">{formatTime(session.startsAt)}</p>
                   <h3 className="text-sm font-medium text-gray-900">{session.title}</h3>
@@ -54,7 +54,7 @@ export default function Example() {
                 <img className="h-10 w-10 rounded-full" src="./images/dataEngLogos/DataEng.Slack512x512.option1.v1.jpg" alt="" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <a href="#" className="focus:outline-none">
+                  <a href="./sessions" className="focus:outline-none">
                     <span className="absolute inset-0" aria-hidden="true" />
                     <p className="text-indigo-600">{formatTime(session.startsAt)}</p>
                     <h3 className="text-sm font-medium text-gray-900">{session.title}</h3>
@@ -88,7 +88,7 @@ export default function Example() {
               <img className="h-10 w-10 rounded-full" src={speakers.find(x => x.id === session.speakers[0]).profilePicture} alt="" />
             </div>
             <div className="flex-1 min-w-0">
-              <a href="#" className="focus:outline-none">
+              <a href="./sessions" className="focus:outline-none">
                 <span className="absolute inset-0" aria-hidden="true" />
                 <p className="text-indigo-600">{formatTime(session.startsAt)}</p>
                 <h3 className="text-sm font-medium text-gray-900">{session.title}</h3>
@@ -101,7 +101,7 @@ export default function Example() {
                 <img className="h-10 w-10 rounded-full" src="./images/dataEngLogos/DataEng.Slack512x512.option1.v1.jpg" alt="" />
               </div>
               <div className="flex-1 min-w-0">
-                <a href="#" className="focus:outline-none">
+                <a href="./sessions" className="focus:outline-none">
                   <span className="absolute inset-0" aria-hidden="true" />
                   <p className="text-indigo-600">{formatTime(session.startsAt)}</p>
                   <h3 className="text-sm font-medium text-gray-900">{session.title}</h3>
@@ -135,7 +135,7 @@ export default function Example() {
               <img className="h-10 w-10 rounded-full" src={speakers.find(x => x.id === session.speakers[0]).profilePicture} alt="" />
             </div>
             <div className="flex-1 min-w-0">
-              <a href="#" className="focus:outline-none">
+              <a href="./sessions" className="focus:outline-none">
                 <span className="absolute inset-0" aria-hidden="true" />
                 <p className="text-indigo-600">{formatTime(session.startsAt)}</p>
                 <h3 className="text-sm font-medium text-gray-900">{session.title}</h3>
@@ -148,7 +148,7 @@ export default function Example() {
                 <img className="h-10 w-10 rounded-full" src="./images/dataEngLogos/DataEng.Slack512x512.option1.v1.jpg" alt="" />
               </div>
               <div className="flex-1 min-w-0">
-                <a href="#" className="focus:outline-none">
+                <a href="./sessions" className="focus:outline-none">
                   <span className="absolute inset-0" aria-hidden="true" />
                   <p className="text-indigo-600">{formatTime(session.startsAt)}</p>
                   <h3 className="text-sm font-medium text-gray-900">{session.title}</h3>
