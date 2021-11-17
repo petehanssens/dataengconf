@@ -133,18 +133,18 @@
     events "^3.1.0"
     sinon "^7.5.0"
 
-"@aws-amplify/ui-components@1.7.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/ui-components/-/ui-components-1.7.4.tgz#7639958e448b5236467c04b43369925fc1841fb9"
+"@aws-amplify/ui-components@1.9.5":
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/@aws-amplify/ui-components/-/ui-components-1.9.5.tgz#66738b9d696178ca0557d0250d46c02b69f42d8d"
   dependencies:
     qrcode "^1.4.4"
     uuid "^8.2.0"
 
 "@aws-amplify/ui-react@^1.0.3":
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/ui-react/-/ui-react-1.2.11.tgz#ae9c4e993f2dbabbf77ead1965727edc6ef3c922"
+  version "1.2.25"
+  resolved "https://registry.yarnpkg.com/@aws-amplify/ui-react/-/ui-react-1.2.25.tgz#3feea1886741f9dc259910eb8dfab641174c5301"
   dependencies:
-    "@aws-amplify/ui-components" "1.7.4"
+    "@aws-amplify/ui-components" "1.9.5"
 
 "@aws-amplify/ui@2.0.2":
   version "2.0.2"
