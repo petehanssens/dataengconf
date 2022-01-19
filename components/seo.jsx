@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           property: `og:image`,
-          content: image || "/images/cloud_shuttle_logo_awesome.png",
+          content: image || "/images/meetupLogos/SydneyDataEngMeetup.png",
         },
         {
           name: `twitter:card`,
