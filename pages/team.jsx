@@ -163,6 +163,11 @@ export default function Team() {
     return (
 
     <>
+      <SEO
+        keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
+        title="Team - DataEngBytes!"
+        description="Meet the organisers of DataEngBytes"
+      />
       <script 
         key={`breadcrumbJSON`}
         type='application/ld+json'
