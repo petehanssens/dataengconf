@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           property: `og:image`,
-          content: image || "/images/meetupLogos/SydneyDataEngMeetup.png",
+          content: image || "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png",
         },
         {
           name: `twitter:card`,
