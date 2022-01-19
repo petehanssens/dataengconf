@@ -10,7 +10,6 @@ import Melbourne from '../components/melbourne'
 import SpeakerSmall from '../components/speakersSmall'
 import Keynotes from '../components/keynotes'
 import Schedule from '../components/schedule'
-import SEO from "../components/seo";
 
 export default function Home() {
     return (
