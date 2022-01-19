@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           name: `twitter:creator`,
-          content: "Peter Hanssens",
+          content: "DataEngBytes",
         },
         {
           name: `twitter:title`,
