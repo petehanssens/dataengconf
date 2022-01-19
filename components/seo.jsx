@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import Head from 'next/head'
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, image }) {
 
   return (
     <Head
@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png",
+          content: image || "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png",
         },
         {
           name: `twitter:card`,
@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:creator`,
-          content: "DataEngBytees",
+          content: "DataEngBytes",
         },
         {
           name: `twitter:title`,
@@ -58,7 +58,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(meta)}
       title={title}
     >
-    <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/img/favicon.ico" />
+      <title>{title}</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
   );
 }

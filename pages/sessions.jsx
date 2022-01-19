@@ -1,4 +1,5 @@
 import { sessions, speakers, rooms } from '../data/2021/all.json'
+import SEO from "../components/seo";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -15,6 +16,11 @@ export default function Speakers() {
 
     return (
 <>
+      <SEO
+      keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
+      title="Sessions - DataEngBytes!"
+      description="Find out who is speaking at DataEngBytes"
+      />
     <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
       <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
         <div>

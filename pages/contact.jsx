@@ -7,6 +7,11 @@ import { faTwitter, faYoutube, faLinkedin, faMeetup } from '@fortawesome/free-br
 export default function ContactUs() {
   return (
   <>
+  <SEO
+    keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
+    title="Contact Us - DataEngBytes!"
+    description="Reach out if you have a question, DataEngBytes"
+  />
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8">
