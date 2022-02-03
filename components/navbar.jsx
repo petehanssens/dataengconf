@@ -46,6 +46,12 @@ const meetupLinks = [
     icon: <FontAwesomeIcon icon={faMeetup} />
   },
   {
+    name: 'Perth',
+    description: 'Find out who is doing the best data engineering in Perth.',
+    href: 'https://www.meetup.com/Perth-Data-Engineering-Meetup/',
+    icon: <FontAwesomeIcon icon={faMeetup} />
+  },
+  {
     name: 'Sydney',
     description: 'See what companies are leading the field in data engineering in Sydney and beyond.',
     href: 'https://www.meetup.com/Sydney-Data-Engineering-Meetup/',
@@ -91,14 +97,14 @@ export default function Navigation(props) {
 
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
                 
-                <a href="/schedule" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Schedule
+                <a href="/sponsorship" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  Sponsor Us
                 </a>
-                <a href="/sessions" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Sessions
+                <a href="https://2021.dataengconf.com.au" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  2021
                 </a>
-                <a href="/speakers" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Speakers
+                <a href="https://2020.dataengconf.com.au" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  2020
                 </a>
                 <Popover className="relative">
                   {({ open }) => (
@@ -228,10 +234,10 @@ export default function Navigation(props) {
               <>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <a
-                  href="https://www.tickettailor.com/events/dataengbytes/505988"
+                  href="/"
                   className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                 >
-                  Buy Tickets
+                  Find out more
                 </a>
               </div>
 
@@ -274,14 +280,14 @@ export default function Navigation(props) {
                 </div>
                 <div className="py-6 px-5 space-y-6">
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                    <a href="/schedule" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                    Schedule
+                    <a href="/sponsorship" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      Sponsor Us
                     </a>
-                    <a href="/sessions" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Sessions
+                    <a href="/2021" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      2021
                     </a>
-                    <a href="/speakers" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Speakers
+                    <a href="/2020" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                      2020
                     </a>
                     {aboutUs.map((item) => (
                       <a
@@ -312,10 +318,10 @@ export default function Navigation(props) {
                         :
                     <div className="mt-6">
                       <a
-                        href="https://www.tickettailor.com/events/dataengbytes/505988"
+                        href="/"
                         className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                       >
-                        Buy Tickets
+                        Find out more
                       </a>
                     </div>
                     }
