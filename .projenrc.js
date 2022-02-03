@@ -1,4 +1,5 @@
 const { web } = require('projen');
+const { NodePackageManager } = require('projen/lib/javascript');
 
 const project = new web.NextJsProject({
   name: 'dataengconf',
@@ -46,7 +47,7 @@ const project = new web.NextJsProject({
   // maxNodeVersion: undefined,                                                /* Minimum node.js version to require via `engines` (inclusive). */
   // minNodeVersion: undefined,                                                /* Minimum Node.js version to require via package.json `engines` (inclusive). */
   // npmTaskExecution: NpmTaskExecution.PROJEN,                                /* Determines how tasks are executed when invoked as npm scripts (yarn/npm run xyz). */
-  // packageManager: NodePackageManager.YARN,                                  /* The Node Package Manager used to execute scripts. */
+  packageManager: NodePackageManager.NPM,                                  /* The Node Package Manager used to execute scripts. */
   // packageName: undefined,                                                   /* The "name" in package.json. */
   // peerDependencyOptions: undefined,                                         /* Options for `peerDeps`. */
   // peerDeps: [],                                                             /* Peer dependencies for this module. */
