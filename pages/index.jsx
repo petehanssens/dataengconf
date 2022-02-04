@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import HomeLayout from '../components/home'
+import HomeLayout from '../components/home';
+import Stats from '../components/stats';
 import Topics from '../components/topics'
 import Logos from '../components/logos'
 import Pricing from '../components/pricing'
@@ -20,9 +21,7 @@ export default function Home() {
             description="A community run Data Engineering conference in Australia and New Zealand"
             />
             <HomeLayout />
-            <Keynotes />
-            <Schedule />
-            <SpeakerSmall />
+            <Stats />
             <Logos />
         </>
     )
