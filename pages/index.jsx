@@ -11,6 +11,7 @@ import Melbourne from '../components/melbourne'
 import SpeakerSmall from '../components/speakersSmall'
 import Keynotes from '../components/keynotes'
 import Schedule from '../components/schedule'
+import Hackathon from '../components/hackathon'
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             description="A community run Data Engineering conference in Australia and New Zealand"
             />
             <HomeLayout />
+            <Hackathon />
             <Stats />
             <Logos />
         </>
