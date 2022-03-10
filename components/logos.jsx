@@ -2,6 +2,11 @@ import React from 'react';
 
 const sponsorLogo = [
     {
+      name: 'Neo4j',
+      image: 'images/sponsors/neo4j_colour.png',
+      url: 'https://neo4j.com/',
+    },
+    {
       name: 'Snowflake',
       image: 'images/sponsors/snowflake.png',
       url: 'https://www.snowflake.com/',
