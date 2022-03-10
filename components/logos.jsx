@@ -3,7 +3,7 @@ import React from 'react';
 const sponsorLogo = [
     {
       name: 'Neo4j',
-      image: 'images/sponsors/Neo4j-logo_color.png',
+      image: 'images/sponsors/neo4j_colour.png',
       url: 'https://neo4j.com/',
     },
     {
