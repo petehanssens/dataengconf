@@ -2,6 +2,11 @@ import React from 'react';
 
 const sponsorLogo = [
     {
+      name: 'DataStax',
+      image: 'images/sponsors/datastax.png',
+      url: 'https://datastax.com/',
+    },
+    {
       name: 'Neo4j',
       image: 'images/sponsors/neo4j_colour.png',
       url: 'https://neo4j.com/',
@@ -37,11 +42,6 @@ const sponsorLogo = [
       url: 'https://imply.io/',
     },
     {
-      name: 'Versor',
-      image: 'images/sponsors/new-versor.png',
-      url: 'https://www.versor.com.au/',
-    },
-    {
       name: 'dbt',
       image: 'images/sponsors/dbt-labs.png',
       url: 'https://www.getdbt.com/',
@@ -52,24 +52,19 @@ const sponsorLogo = [
       url: 'https://www.thoughtworks.com/',
     },
     {
-      name: 'hightouch',
-      image: 'images/sponsors/hightouch/logo.png',
-      url: 'https://www.hightouch.io/',
-    },
-    {
       name: 'Microsoft Reactor',
       image: 'images/sponsors/Reactor-logo-Dark.svg',
       url: 'https://developer.microsoft.com/en-us/reactor/location/sydney',
     },
     {
-      name: 'YOW Conferences',
-      image: 'images/sponsors/yow.png',
-      url: 'https://yowconference.com/data/',
-    },
-    {
       name: 'Cloud Shuttle',
       image: 'images/sponsors/new-cloudshuttle-logo.png',
       url: 'https://www.cloudshuttle.com.au/',
+    },
+    {
+      name: 'cloudseeder',
+      image: 'images/sponsors/cs-white.png',
+      url: 'https://www.cloudseeder.com.au/',
     },
 ]
 
