@@ -58,7 +58,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         .concat(meta)}
       title={title}
     >
-      <link rel="icon" href="/images/favicon.ico" />
+      <link rel="icon" href="/favicon.ico" />
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
