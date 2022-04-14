@@ -7,5 +7,5 @@ module.exports = ({
     AWS_USER_POOLS_ID: process.env.AWS_USER_POOLS_ID,
     AWS_USER_POOLS_WEB_CLIENT_ID: process.env.AWS_USER_POOLS_WEB_CLIENT_ID,
     AWS_APPSYNC_GRAPHQLENDPOINT: process.env.AWS_APPSYNC_GRAPHQLENDPOINT
-  },
+  }
 })
