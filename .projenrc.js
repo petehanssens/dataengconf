@@ -15,7 +15,7 @@ const project = new web.NextJsProject({
     '@aws-amplify/ui-react',
     '@tailwindcss/forms',
     'aws-amplify',
-    'react',
+    'react@">=16.x <=17.x"',
     'react-dom',
     'react-hook-form',
     'postcss',
@@ -26,7 +26,7 @@ const project = new web.NextJsProject({
     'prop-types',
     '@heroicons/react',
     'axios',
-    'next-mdx-remote',
+    'next-mdx-remote@4.0.1',
     'gray-matter',
     'react-syntax-highlighter',
     'highlight.js',
@@ -37,7 +37,8 @@ const project = new web.NextJsProject({
     '@headlessui/react',
     '@tailwindcss/line-clamp',
     'graphql-tag',
-    'swr'
+    'swr',
+    'next-compose-plugins'
   ],                                                                             /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',

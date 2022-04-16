@@ -35,7 +35,7 @@ const Blog = ({ posts }) => {
                   <div className="flex-1">
                     <p className="text-sm font-medium text-indigo-600">{post.frontMatter.category}
                     </p>
-                    <a href={'/blog/' + post.slug} passHref key={index} className="block mt-2">
+                    <a href={'/blog/' + post.slug} passhref="true" key={index} className="block mt-2">
                       <p className="text-xl font-semibold text-gray-900">{post.frontMatter.title}</p>
                       <p className="mt-3 text-base text-gray-500">{post.frontMatter.description}</p>
                     </a>
@@ -63,7 +63,7 @@ const Blog = ({ posts }) => {
     </>
     // <div className="mt-5">
     //   {posts.map((post, index) => (
-    //     <Link href={'/blog/' + post.slug} passHref key={index}>
+    //     <Link href={'/blog/' + post.slug} passhref key={index}>
     //       <div className="card mb-3 pointer" style={{ maxWidth: '540px' }}>
     //         <div className="row g-0">
     //           <div className="col-md-8">

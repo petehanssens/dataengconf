@@ -115,6 +115,10 @@
       "type": "runtime"
     },
     {
+      "name": "next-compose-plugins",
+      "type": "runtime"
+    },
+    {
       "name": "next-mdx-remote",
       "type": "runtime"
     },

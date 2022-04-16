@@ -30,16 +30,18 @@ const PostPage = ({ frontMatter: { title, date, category, description, thumbnail
                 {title}
               </span>
             </h1>
-            <p><span className="mt-2 block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+            <p>
+              <span className="mt-2 block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
                 Category: {category}
-              </span></p>
+              </span>
+            </p>
             <p><span className="mt-2 block text-base text-center text-indigo-600 font-small tracking-wide">
                 {date} by {author}          
               </span>
             </p>
-            <p className="prose-img:rounded-2xl prose-img:border-4 mt-8 text-xl text-gray-500 leading-8">
+            <div className="prose-img:rounded-2xl prose-img:border-4 mt-8 text-xl text-gray-500 leading-8">
               <MDXRemote {...mdxSource} components={components}/>
-            </p>
+            </div>
           </div>
         </div>
       </div>

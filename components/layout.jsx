@@ -8,11 +8,9 @@ function Layout (props) {
     return (
       <>
         <Navbar signedInUser={props.signedInUser}/>
-          <body className="">
             <main className="w-full container mx-auto p-12">
               {props.children}
             </main>
-          </body>
         <FooterClass />
       </>
     )
