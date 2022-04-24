@@ -28,12 +28,12 @@
     "organization": false
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.3.2",
-    "autoprefixer": "^10.4.4",
+    "@netlify/plugin-nextjs": "^4.4.2",
+    "autoprefixer": "^10.4.5",
     "netlify-plugin-contextual-env": "^0.3.0",
     "npm-check-updates": "^12",
     "postcss": "^8.4.12",
-    "projen": "^0.54.11",
+    "projen": "^0.54.41",
     "standard-version": "^9"
   },
   "dependencies": {
@@ -48,27 +48,27 @@
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/line-clamp": "^0.3.1",
     "@tailwindcss/typography": "^0.5.2",
-    "autoprefixer": "^10.4.4",
-    "aws-amplify": "^4.3.19",
+    "autoprefixer": "^10.4.5",
+    "aws-amplify": "^4.3.20",
     "axios": "^0.26.1",
     "encoding": "^0.1.13",
     "graphql-tag": "^2.12.6",
     "gray-matter": "^4.0.3",
-    "highlight.js": "^11.5.0",
+    "highlight.js": "^11.5.1",
     "isomorphic-fetch": "^3.0.0",
     "jsonp": "^0.2.1",
-    "next": "^12.1.4",
+    "next": "^12.1.5",
     "next-compose-plugins": "^2.2.1",
-    "next-mdx-remote": "4.0.2",
+    "next-mdx-remote": "4.0.1",
     "postcss": "^8.4.12",
     "prop-types": "^15.8.1",
     "query-string": "^7.1.1",
     "react": ">=16.x <=17.x",
     "react-dom": ">=16.x <=17.x",
-    "react-hook-form": "^7.29.0",
+    "react-hook-form": "^7.30.0",
     "react-syntax-highlighter": "^15.5.0",
-    "swr": "^1.2.2",
-    "tailwindcss": "^3.0.23"
+    "swr": "^1.3.0",
+    "tailwindcss": "^3.0.24"
   },
   "engines": {
     "node": ">= 14"
