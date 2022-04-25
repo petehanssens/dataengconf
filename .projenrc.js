@@ -53,7 +53,6 @@ const project = new web.NextJsProject({
   // release: undefined,      /* Add release management to this project. */
   tailwind: true,          /* Setup Tailwind CSS as a PostCSS plugin. */
   packageManager: NodePackageManager.NPM,
-  outdir: 'out',
 });
 
 project.gitignore.addPatterns('out/')
