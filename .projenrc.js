@@ -6,7 +6,7 @@ const project = new web.NextJsProject({
   authorName: 'DataEngBytes',
   authorEmail: 'sydney@dataengconf.com.au',
   authorUrl: 'https://dataengconf.com.au',
-  minNodeVersion: 16,                                                  /* List of dependencies to bundle into this module. */
+  minNodeVersion: 17,                                                  /* List of dependencies to bundle into this module. */
   deps: [
     'jsonp',
     'query-string',
