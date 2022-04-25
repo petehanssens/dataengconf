@@ -5,20 +5,12 @@
       "type": "build"
     },
     {
-      "name": "autoprefixer",
-      "type": "build"
-    },
-    {
       "name": "netlify-plugin-contextual-env",
       "type": "build"
     },
     {
       "name": "npm-check-updates",
       "version": "^12",
-      "type": "build"
-    },
-    {
-      "name": "postcss",
       "type": "build"
     },
     {
@@ -108,6 +100,10 @@
     },
     {
       "name": "jsonp",
+      "type": "runtime"
+    },
+    {
+      "name": "mapbox-gl",
       "type": "runtime"
     },
     {

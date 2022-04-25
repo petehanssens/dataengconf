@@ -6,7 +6,7 @@ const project = new web.NextJsProject({
   authorName: 'DataEngBytes',
   authorEmail: 'sydney@dataengconf.com.au',
   authorUrl: 'https://dataengconf.com.au',
-  minNodeVersion: 14,                                                  /* List of dependencies to bundle into this module. */
+  minNodeVersion: 16,                                                  /* List of dependencies to bundle into this module. */
   deps: [
     'jsonp',
     'query-string',
@@ -39,8 +39,9 @@ const project = new web.NextJsProject({
     'graphql-tag',
     'swr',
     'next-compose-plugins',
-    "autoprefixer",
-    "postcss"
+    'autoprefixer',
+    'postcss',
+    'mapbox-gl'
   ],                                                                             /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',
