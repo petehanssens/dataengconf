@@ -38,13 +38,13 @@ const project = new web.NextJsProject({
     '@tailwindcss/line-clamp',
     'graphql-tag',
     'swr',
-    'next-compose-plugins'
+    'next-compose-plugins',
+    "autoprefixer",
+    "postcss"
   ],                                                                             /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',
-    'netlify-plugin-contextual-env',
-    "autoprefixer",
-    "postcss"
+    'netlify-plugin-contextual-env'
   ],          /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
