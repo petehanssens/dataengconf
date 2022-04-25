@@ -26,7 +26,7 @@ export default function Register({ user, setUser }) {
       <div className="rounded-md shadow-sm -space-y-px">
         <div>
           <label htmlFor="code" className="sr-only">Code</label>
-          <input ref={register} id="code" name="code" type="number" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Enter verification code" />
+          <input {...register('code', { required: true })} id="code" name="code" type="number" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Enter verification code" />
         </div>
       </div>
 
