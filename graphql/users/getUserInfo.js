@@ -6,8 +6,12 @@ query getUserInfo  {
     pk
     sk 
     user {
+      email
       first_name
       last_name
+      linkedin
+      preferred_meetup
+      country
     }
   }
 }

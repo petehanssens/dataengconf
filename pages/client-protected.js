@@ -3,6 +3,7 @@ import { Auth } from 'aws-amplify'
 import { withAuthenticator } from '@aws-amplify/ui-react'
 
 import SignOut from '../components/auth/sign-out'
+import UpdateUser from '../components/signup/updateProfile'
 
 function ClientProtected() {
   const [user, setUser] = useState(null)
@@ -30,6 +31,7 @@ function ClientProtected() {
                   <h1 className="my-6 text-center text-3xl font-extrabold text-gray-900">
                     Welcome, {user.attributes.given_name}
                   </h1>
+                  <UpdateUser />
                   <SignOut />
                 </>
               )}
