@@ -20,10 +20,10 @@ module.exports = (phase, { defaultConfig }) =>
     },
     swcMinify: true,
     reactStrictMode: true,
-    experimental: {
-      runtime: "nodejs",
-      serverComponents: true,
-    },
+    // experimental: {
+    //   runtime: "nodejs",
+    //   serverComponents: true,
+    // },
     trailingSlash: true,
     productionBrowserSourceMaps: true,
     images: {

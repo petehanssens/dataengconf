@@ -15,7 +15,7 @@ const project = new web.NextJsProject({
     '@aws-amplify/ui-react',
     '@tailwindcss/forms',
     'aws-amplify',
-    'react@">=16.x <=17.x"',
+    'react',
     'react-dom',
     'react-hook-form',
     'postcss',
@@ -52,6 +52,12 @@ const project = new web.NextJsProject({
   // release: undefined,      /* Add release management to this project. */
   tailwind: true,          /* Setup Tailwind CSS as a PostCSS plugin. */
   packageManager: NodePackageManager.NPM,
+  exports: {
+    ".": "./index.js",
+    "./jsx-dev-runtime": "./jsx-dev-runtime.js",
+    "./jsx-runtime": "./jsx-runtime.js",
+    "./": "./"
+  }
 });
 
 project.gitignore.addPatterns('out/')
