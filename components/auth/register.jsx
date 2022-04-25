@@ -4,15 +4,13 @@ import { useForm } from "react-hook-form";
 export default function Register({ setStatus, setUser }) {
   const { register, handleSubmit } = useForm();
 
-  async function signUp({ email, username, password, given_name, family_name }) {
+  async function signUp({ email, username, password }) {
     try {
       await Auth.signUp({
         username,
         password,
         attributes: {
-          email, // optional but not in this case as MFA/Verification code wil be emailed
-          given_name,
-          family_name
+          email, 
         }
       });
 
@@ -33,19 +31,11 @@ export default function Register({ setStatus, setUser }) {
       <div className="rounded-md shadow-sm -space-y-px">
         <div>
           <label htmlFor="username" className="sr-only">Username</label>
-          <input ref={register} id="username" name="username" type="username" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Username" />
+          <input {...register('username', { required: true })} id="username" name="username" type="username" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Username" />
         </div>
         <div>
           <label htmlFor="password" className="sr-only">Password</label>
-          <input ref={register} id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
-        </div>
-        <div>
-          <label htmlFor="given_name" className="sr-only">Given Name</label>
-          <input ref={register} id="given_name" name="given_name" type="given_name" autoComplete="current-given_name" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Given Name" />
-        </div>
-        <div>
-          <label htmlFor="family_name" className="sr-only">Family Name</label>
-          <input ref={register} id="family_name" name="family_name" type="family_name" autoComplete="current-familyName" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Family Name" />
+          <input {...register('password', { required: true })} id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
         </div>
       </div>
 

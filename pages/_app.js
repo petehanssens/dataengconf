@@ -1,5 +1,6 @@
 // pages/_app.js
-import '../styles/globals.css';
+import "../styles/globals.css"
+import React from 'react';
 import Layout from '../components/layout';
 import { Amplify } from "aws-amplify";
 import checkUser from '../helpers/checkUser';
@@ -18,14 +19,14 @@ let myAppConfig = {
 
 Amplify.configure({ ...myAppConfig, ssr: true });
 
-function DataEngBytesApp({ Component, pageProps }) {
+function WebApp({ Component, pageProps }) {
   const user = checkUser();
-  // console.log('_app user: ',user)
+  console.log('user: ',user)
   return (
         <Layout signedInUser={user}>
-          <Component {...pageProps} />
+          <Component {...pageProps} signedInUser={user} />
         </Layout>
   )
 }
 
-export default DataEngBytesApp
+export default WebApp

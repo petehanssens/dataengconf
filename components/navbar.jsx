@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   MenuIcon,
@@ -10,6 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMeetup } from '@fortawesome/free-brands-svg-icons'
 
 import SignOut from '../components/auth/sign-out'
+
+const dataEngLogo = "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png"
 
 const aboutUs = [
   {
@@ -68,6 +70,8 @@ export default function Navigation(props) {
   const signedInUser = props.signedInUser
   const [status, setStatus] = useState('sign-in')
   const [user, setUser] = useState(null)
+  // useEffect(() => setStatus(useState('sign-in')), [])
+  // useEffect(() => setUser(useState(null)), [])
 
   return (
     <Popover className="relative bg-white">
@@ -80,8 +84,8 @@ export default function Navigation(props) {
                   <span className="sr-only">DataEngBytes</span>
                   <img
                     className="h-8 w-auto sm:h-10"
-                    src="images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png"
-                    alt="DataEngBytes logo"
+                    src={dataEngLogo}
+                    alt="DataEngBytes"
                   />
                 </a>
               </div>
@@ -266,8 +270,8 @@ export default function Navigation(props) {
                     <div>
                       <img
                         className="h-8 w-auto"
-                        src="images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png"
-                        alt="DataEngBytes logo"
+                        src={dataEngLogo}
+                        alt="DataEngBytes"
                       />
                     </div>
                     <div className="-mr-2">
