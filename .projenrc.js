@@ -53,6 +53,7 @@ const project = new web.NextJsProject({
   // release: undefined,      /* Add release management to this project. */
   tailwind: true,          /* Setup Tailwind CSS as a PostCSS plugin. */
   packageManager: NodePackageManager.NPM,
+  outdir: 'out',                     
   exports: {
     ".": "./index.js",
     "./jsx-dev-runtime": "./jsx-dev-runtime.js",
@@ -65,4 +66,5 @@ project.gitignore.addPatterns('out/')
 project.gitignore.addPatterns('.env.local')
 project.gitignore.addPatterns('.DS_Store')
 project.gitignore.addPatterns('.dccache')
+
 project.synth();
