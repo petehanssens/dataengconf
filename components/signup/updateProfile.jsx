@@ -13,7 +13,7 @@ export default function Register({ user, setUser }) {
     // console.log('attributes: ',attr)
     const user = await Auth.currentUserInfo()
 
-    console.log('hey: ',user.attributes.email)
+    // console.log('hey: ',user.attributes.email)
     try {
       await API.graphql({
         query: createInitialUser,
@@ -28,7 +28,7 @@ export default function Register({ user, setUser }) {
         authMode: "AMAZON_COGNITO_USER_POOLS"
       })
       const message = 'Updated cognito user!'
-      console.log(message)
+      // console.log(message)
       return message
     } catch (err) {
       console.log({ err })
