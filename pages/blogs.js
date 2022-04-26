@@ -22,7 +22,7 @@ const Blog = ({ posts }) => {
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">From the blog</h2>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              Our team of cloud experts share their insights!
+              Here from our amazing community experts and organisers!
             </p>
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
@@ -61,35 +61,6 @@ const Blog = ({ posts }) => {
         </div>
       </div>
     </>
-    // <div className="mt-5">
-    //   {posts.map((post, index) => (
-    //     <Link href={'/blog/' + post.slug} passhref key={index}>
-    //       <div className="card mb-3 pointer" style={{ maxWidth: '540px' }}>
-    //         <div className="row g-0">
-    //           <div className="col-md-8">
-    //             <div className="card-body">
-    //               <h5 className="card-title">{post.frontMatter.title}</h5>
-    //               <p className="card-text">{post.frontMatter.description}</p>
-    //               <p className="card-text">
-    //                 <small className="text-muted">{post.frontMatter.date}</small>
-    //               </p>
-    //             </div>
-    //           </div>
-    //           <div className="col-md-4 m-auto">
-    //             <Image
-    //               src={post.frontMatter.thumbnailUrl}
-    //               className="img-fluid mt-1 rounded-start"
-    //               alt="thumbnail"
-    //               width={500}
-    //               height={400}
-    //               objectFit="cover"
-    //             />
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </Link>
-    //   ))}
-    // </div>
   )
 }
 
@@ -114,7 +85,7 @@ export const getStaticProps = async () => {
   // const files = fs.readdirSync(path.join('posts'))
 
   const posts = files.map(filename => {
-    console.log('filename: ',filename)
+    // console.log('filename: ',filename)
     const cleanPath = filename.replace('posts/','')
     const markdownWithMeta = fs.readFileSync(filename, 'utf-8')
     const { data: frontMatter } = matter(markdownWithMeta)
