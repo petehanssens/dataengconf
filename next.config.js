@@ -16,7 +16,9 @@ module.exports = (phase, { defaultConfig }) =>
       AWS_COGNITO_IDENTITY_POOL_ID: process.env.AWS_COGNITO_IDENTITY_POOL_ID,
       AWS_USER_POOLS_ID: process.env.AWS_USER_POOLS_ID,
       AWS_USER_POOLS_WEB_CLIENT_ID: process.env.AWS_USER_POOLS_WEB_CLIENT_ID,
-      AWS_APPSYNC_GRAPHQLENDPOINT: process.env.AWS_APPSYNC_GRAPHQLENDPOINT
+      AWS_APPSYNC_GRAPHQLENDPOINT: process.env.AWS_APPSYNC_GRAPHQLENDPOINT,
+      NEXT_PUBLIC_GOOGLE_ANALYTICS: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS,
+      DATAENGAU_API_GW: process.env.DATAENGAU_API_GW
     },
     swcMinify: false,
     reactStrictMode: true,
