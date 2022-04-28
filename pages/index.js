@@ -5,6 +5,7 @@ import Stats from '../components/stats';
 import Logos from '../components/logos'
 import Trophy from '../components/hackathon/trophy'
 import Personas from '../components/hackathon/personas'
+import HackSignUp from '../components/hackathon/hackSignUp'
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             />
             <HomeLayout />
             {/* <Hackathon /> */}
+            <HackSignUp />
             <Personas />
             <Trophy />
             <Stats />

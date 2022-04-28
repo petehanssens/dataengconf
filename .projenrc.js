@@ -41,7 +41,8 @@ const project = new web.NextJsProject({
     'next-compose-plugins',
     'autoprefixer',
     'postcss',
-    'mapbox-gl'
+    'mapbox-gl',
+    'axios',
   ],                                                                             /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',

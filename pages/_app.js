@@ -21,7 +21,6 @@ Amplify.configure({ ...myAppConfig, ssr: true });
 
 function WebApp({ Component, pageProps }) {
   const user = checkUser();
-  console.log('user: ',user)
   return (
         <Layout signedInUser={user}>
           <Component {...pageProps} signedInUser={user} />
