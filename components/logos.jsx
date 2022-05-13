@@ -57,6 +57,11 @@ const sponsorLogo = [
       url: 'https://developer.microsoft.com/en-us/reactor/location/sydney',
     },
     {
+      name: 'Skills Matter',
+      image: 'images/sponsors/SkillsMatter-logo-2020-braces-RGB-blue.png',
+      url: 'https://skillsmatter.com/conferences/13659-yow-data-2022',
+    },
+    {
       name: 'Cloud Shuttle',
       image: 'images/sponsors/new-cloudshuttle-logo.png',
       url: 'https://www.cloudshuttle.com.au/',
