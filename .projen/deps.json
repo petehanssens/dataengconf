@@ -136,6 +136,10 @@
       "type": "runtime"
     },
     {
+      "name": "react-canvas-confetti",
+      "type": "runtime"
+    },
+    {
       "name": "react-dom",
       "type": "runtime"
     },
