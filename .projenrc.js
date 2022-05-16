@@ -43,6 +43,7 @@ const project = new web.NextJsProject({
     'postcss',
     'mapbox-gl',
     'axios',
+    'react-canvas-confetti'
   ],                                                                             /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',
