@@ -1,3 +1,5 @@
+import { serialize } from 'next-mdx-remote/serialize';
+import { MDXRemote } from 'next-mdx-remote';
 import SEO from "../components/seo";
 
 const faqs = [
@@ -57,7 +59,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function FAQ() {
   return (
     <>
       <SEO
@@ -74,7 +76,12 @@ export default function Example() {
                   <div key={faq.id} className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8">
                     <dt className="text-base font-medium text-gray-900 md:col-span-5">{faq.question}</dt>
                     <dd className="mt-2 md:mt-0 md:col-span-7">
-                      <p className="text-base text-gray-500">{faq.answer}</p>
+                      {
+                        (1 === 0) ?
+                        <MDXRemote {...serializedAnswer(faq.answer)}/> :
+                        <p>hello test</p>
+                      }
+                      
                     </dd>
                   </div>
                 ))}
@@ -84,4 +91,8 @@ export default function Example() {
         </div>
       </>
     )
+}
+export async function serializedAnswer(source) {
+  const mdxSource = await serialize(source);
+  return { props: { source: mdxSource } };
 }
