@@ -60,7 +60,11 @@
     "next": "^12.1.6",
     "next-compose-plugins": "^2.2.1",
     "next-mdx-remote": "4.0.3",
+<<<<<<< HEAD
     "postcss": "^8.4.14",
+=======
+    "postcss": "^8.4.12",
+>>>>>>> 77f81bd (updating packages)
     "prop-types": "^15.8.1",
     "query-string": "^7.1.1",
     "react": "^18.1.0",
