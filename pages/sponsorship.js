@@ -1,6 +1,6 @@
 import React from 'react'
 import SEO from "../components/seo";
-import SponsorPricing from "../components/sponsorPricing";
+import SponsorPricing from "../components/sponsors/sponsorPricing";
 
 export default function Home() {
     return (
