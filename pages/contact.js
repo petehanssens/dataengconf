@@ -1,4 +1,3 @@
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
