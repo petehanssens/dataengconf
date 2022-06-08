@@ -15,13 +15,13 @@ export default function Example() {
           <div className="lg:col-start-2 lg:pl-8">
             <div className="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
               <h2 className="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
-                Sydney - Tuesday, 5th October
+                Sydney - Thursday, 29th September
               </h2>
               <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Wesley Conference Centre
+                To Be Confirmed
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                Conveniently located in the heart of Sydney's CBD, Wesley Conference Centre offers a range of modern, flexible spaces for large gatherings.
+                Our venue will be conveniently located in the CBD close to public transport and local Sydney attractions.
               </p>
               <div className="mt-5 prose prose-indigo text-gray-500">
                 <p>
