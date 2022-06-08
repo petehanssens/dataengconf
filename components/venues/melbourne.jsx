@@ -6,7 +6,7 @@ export default function Example() {
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-                Melbourne - Wednesday, 6th October
+                Melbourne - Tuesday, 27th September
             </h2>
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               State Library Victoria
@@ -52,7 +52,7 @@ export default function Example() {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-500">
-                We are have secured the spectacular Village Roadshow Theatrette and Conversation Quarter for DataEngBytes in 2021.
+                We are have secured the spectacular Village Roadshow Theatrette and Conversation Quarter for DataEngBytes in 2022.
               </p>
             </div>
             <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">

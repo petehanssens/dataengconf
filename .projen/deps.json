@@ -83,6 +83,10 @@
       "type": "runtime"
     },
     {
+      "name": "graphql",
+      "type": "runtime"
+    },
+    {
       "name": "graphql-tag",
       "type": "runtime"
     },
