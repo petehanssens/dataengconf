@@ -29,7 +29,11 @@ const Blog = ({ posts }) => {
             {posts.map((post, index) => (
               <div key={index} className="flex flex-col rounded-2xl shadow-lg hover:shadow-xl overflow-hidden transition duration-200 ease-in">
                 <div className="flex-shrink-0">
-                  <img className="h-48 w-full object-cover" src={post.frontMatter.thumbnailUrl} alt="" />
+                  <Image className="h-48 w-full object-cover" 
+                    src={post.frontMatter.thumbnailUrl} 
+                    alt={post.frontMatter.title}
+                    width='500'
+                    height='300' />
                 </div>
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
@@ -42,7 +46,12 @@ const Blog = ({ posts }) => {
                   </div>
                   <div className="mt-6 flex items-center">
                     <div className="flex-shrink-0">
-                        <img className="h-10 w-10 rounded-full" src={post.frontMatter.AuthorImage} alt="" />
+                        <Image className="h-10 w-10 rounded-full" 
+                          src={post.frontMatter.AuthorImage} 
+                          alt={post.frontMatter.author}
+                          height='100%'
+                          width='100%'
+                          />
                     </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">{post.frontMatter.author}

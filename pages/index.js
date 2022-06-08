@@ -17,7 +17,7 @@ export default function Home() {
             title="Welcome to DataEngBytes!"
             description="A community run Data Engineering conference in Australia and New Zealand"
             />
-            {/* <HomeLayout /> */}
+            <HomeLayout />
             <Melbourne />
             <Sydney />
             {/* <Hackathon /> */}

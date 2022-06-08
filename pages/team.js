@@ -1,11 +1,12 @@
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Image from 'next/image'
 
 const organisers = [
   {
     full_name:"Peter Hanssens",
     location:"Sydney",
-    profile_picture:"images/organisers/peter_hanssens_new.jpg",
+    profile_picture:"/images/organisers/peter_hanssens_new.jpg",
     occupation:"Founder and Solutions Architect, Cloud Shuttle",
     description:"Peter is a Solutions Architect and Founder of Cloud Shuttle, a community-focused cloud consultancy. He counts his major interests on the intersection between Serverless and Data Engineering.",
     github:"https://github.com/petehanssens",
@@ -15,7 +16,7 @@ const organisers = [
   },
   {
      full_name:"Kelly Hotta",
-     profile_picture:"images/organisers/kelly_hotta.jpg",
+     profile_picture:"/images/organisers/kelly_hotta.jpg",
      location:"Sydney",
      occupation:"Sales at Fishtown Analytics | Makers of dbt",
      description:"After 8yrs in solution engineering, I recently moved into sales where I work with dbt Cloud customers across APAC. What excites me most about tech is that it breathes new life to age-old problems \ud83c\udf31 ...and there is always room for improvement!",
@@ -24,7 +25,7 @@ const organisers = [
   {
     full_name:"Simon Aubury",
     location:"Sydney",
-    profile_picture:"images/organisers/simon_aubury_2.jpeg",
+    profile_picture:"/images/organisers/simon_aubury_2.jpeg",
     occupation:"Principal Data Engineer / ThoughtWorks",
     description:"Day job: data steaming & system architecture. Night gig: IoT and random project hacking.",
     twitter:"https://twitter.com/SimonAubury",
@@ -32,7 +33,7 @@ const organisers = [
   },
   {
     full_name:"Leo Hoare",
-    profile_picture:"images/organisers/leo_hoare.jpeg",
+    profile_picture:"/images/organisers/leo_hoare.jpeg",
     location:"Sydney",
     occupation:"Data Engineer at Itoc",
     description:"I'm enthusiastic about all things data. I love spending time in a range of different areas of the data stack including machine learning, real time streaming and DataOps.",
@@ -40,7 +41,7 @@ const organisers = [
   },
   {
     full_name:"Helen Anderson",
-    profile_picture:"images/organisers/hero-helen-anderson.jpeg",
+    profile_picture:"/images/organisers/hero-helen-anderson.jpeg",
     location:"Wellington",
     occupation:"Digital Product Analyst, KiwiBank",
     description:"Helen is a Business Intelligence Consultant based out of Wellington, New Zealand. She focuses on leading projects that use AWS services to empower users and improve efficiencies.",
@@ -58,7 +59,7 @@ const organisers = [
   },
   {
     full_name: "Rafael Athayde Mello",
-    profile_picture:"images/organisers/rafael_athayde_mello.jpeg",
+    profile_picture:"/images/organisers/rafael_athayde_mello.jpeg",
     location:"Melbourne",
     occupation:"Data Engineer at Culture Amp",
     description:"I am passionate about helping startups scale their data platforms. I like to think about security and privacy and how companies productionize Machine learning.",
@@ -67,7 +68,7 @@ const organisers = [
   },
   {
     full_name: "Claudia Silva-Cabrera",
-    profile_picture:"images/organisers/Headshot_Claudia.jpg",
+    profile_picture:"/images/organisers/Headshot_Claudia.jpg",
     location:"Sydney",
     occupation:"Data engineer @Kinesso",
     description:"Would you like to know the secrets of data? I would like it. I'm a data advocate in all its forms.",
@@ -76,7 +77,7 @@ const organisers = [
   {
     full_name:"Adithya Bhat Narjala",
     location:"Melbourne",
-    profile_picture:"images/organisers/adithya_bhat_narjala.jpeg",
+    profile_picture:"/images/organisers/adithya_bhat_narjala.jpeg",
     occupation:"Data Engineer at Openpay",
     description:"I am passionate about architecting solutions for big-data processing pipelines while considering it's domain specific constraints relating to security and usability.",
     linkedin:"https://www.linkedin.com/in/adithya-bhat-narjala"
@@ -84,7 +85,7 @@ const organisers = [
   {
     full_name: "Francisco Liwa",
     location:"Brisbane",
-    profile_picture: "images/organisers/francisco_liwa.jpeg",
+    profile_picture:"/images/organisers/francisco_liwa.jpeg",
     occupation:"Senior Data Engineer",
     description:"Passionate in Data and IoT",
     linkedin:"https:www.linkedin.com/in/nifrali"
@@ -94,7 +95,7 @@ const organisers = [
 const committee = [
   {
      full_name:"Nitish Mathew",
-     profile_picture:"images/committee/Nitish_Mathew_Small.png",
+     profile_picture:"/images/committee/Nitish_Mathew_Small.png",
      location:"Melbourne",
      occupation:"Global Head of Data Engineering, Afterpay",
      description:"I am passionate about coaching leaders build, nurture, and inspire engineering teams deliver tangible business outcomes with simple and useful data products, and have fun along the way.",
@@ -103,7 +104,7 @@ const committee = [
   {
      full_name:"Ingrid Anzola",
      location:"Sydney",
-     profile_picture:"images/committee/ingrid.png",
+     profile_picture:"/images/committee/ingrid.png",
      occupation:"Head of Data Platform | Shippit",
      description:"Passionate about data for 20 years, keen to share my own experiences and learn from others, and proud of being part of such an awesome data community",
   },
@@ -203,7 +204,10 @@ export default function Team() {
               <li key={organiser.full_name}>
                 <div className="space-y-4">
                   <div className="aspect-w-3 aspect-h-2">
-                    <img className="object-cover shadow-lg rounded-lg" src={organiser.profile_picture} alt="" />
+                    <Image className="object-cover shadow-lg rounded-lg" 
+                    src={organiser.profile_picture} 
+                    alt={organiser.full_name}
+                    layout='fill' />
                   </div>
 
                   <div className="space-y-2">
@@ -291,7 +295,10 @@ export default function Team() {
                 <li key={person.full_name}>
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
-                      <img className="object-cover shadow-lg rounded-lg" src={person.profile_picture} alt="" />
+                      <Image className="object-cover shadow-lg rounded-lg" 
+                          src={person.profile_picture}
+                          alt={person.full_name}
+                          layout='fill' />
                     </div>
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <h3>{person.full_name}</h3>

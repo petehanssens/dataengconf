@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 
 const eventDetails = {
     "@context": "https://schema.org",
@@ -50,7 +51,12 @@ export default function Home() {
                 </div>
                 </div>
                 <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-                <img className="absolute inset-0 w-full h-full object-cover" src="./images/hackathon/main.jpg" alt="" />
+                    <Image className="absolute inset-0 w-full h-full object-cover"
+                        src="/images/hackathon/main.jpg"
+                        alt="Hackathon"
+                        layout='fill'
+                        objectFit='contain'
+                    />
                 </div>
             </main>
 
