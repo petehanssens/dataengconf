@@ -6,7 +6,6 @@ const project = new web.NextJsProject({
   authorName: 'DataEngBytes',
   authorEmail: 'sydney@dataengconf.com.au',
   authorUrl: 'https://dataengconf.com.au',
-  minNodeVersion: 17,                                                  /* List of dependencies to bundle into this module. */
   deps: [
     'jsonp',
     'query-string',
@@ -26,7 +25,7 @@ const project = new web.NextJsProject({
     'prop-types',
     '@heroicons/react',
     'axios',
-    'next-mdx-remote@4.0.1',
+    'next-mdx-remote',
     'gray-matter',
     'react-syntax-highlighter',
     'highlight.js',
@@ -48,12 +47,8 @@ const project = new web.NextJsProject({
   devDeps: [
     '@netlify/plugin-nextjs',
     'netlify-plugin-contextual-env'
-  ],          /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
-  // release: undefined,      /* Add release management to this project. */
-  tailwind: true,          /* Setup Tailwind CSS as a PostCSS plugin. */
+  ], 
+  tailwind: true, 
   packageManager: NodePackageManager.NPM,
 });
 

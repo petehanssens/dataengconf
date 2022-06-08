@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "Can I still participate if I don’t live in Australia?",
     answer:
-      "Yes! We will provide details for online access closer to the event.  Wherever you are in the world, you can introduce a submission as a speaker or join the live streaming on the day.",
+      "Yes! We will provide details for online access closer to the event.  Wherever you are in the world, you can introduce a submission as a speaker or join the live streaming on the day.",
   },
   {
     question: "Is this a virtual event?",
@@ -49,7 +49,7 @@ const faqs = [
   {
     question: "Can I speak at the conference?",
     answer:
-      "Applications are open! And you can find more information  [here](https://sessionize.com/dataengbytes2021/). \n \n We are looking for a range of stories and real-world experiences from working on your side projects through to enterprise level applications. Share your learnings, experiences and best practices with us.",
+      "Applications are open! And you can find more information  [here](https://sessionize.com/dataengbytes2021/). \n \n We are looking for a range of stories and real-world experiences from working on your side projects through to enterprise level applications. Share your learnings, experiences and best practices with us.",
   },
 ]
 
