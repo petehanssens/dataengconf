@@ -1,4 +1,5 @@
 const { web } = require("projen");
+const { NodePackageManager } = require("projen/lib/javascript");
 const project = new web.NextJsProject({
   defaultReleaseBranch: "main",
   name: "dataengconf",
@@ -48,7 +49,7 @@ const project = new web.NextJsProject({
     'netlify-plugin-contextual-env'
   ], 
   tailwind: true, 
-  packageManager: NodePackageManager.NPM, 
+  packageManager: NodePackageManager.NPM,
 });
 
 project.gitignore.addPatterns('out/')
