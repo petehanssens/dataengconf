@@ -1,5 +1,3 @@
-import { serialize } from 'next-mdx-remote/serialize';
-import { MDXRemote } from 'next-mdx-remote';
 import SEO from "../components/seo";
 
 const faqs = [
@@ -36,7 +34,7 @@ const faqs = [
   {
     question: "Can I still participate if I don’t live in Australia?",
     answer:
-      "Yes! We will provide details for online access closer to the event.  Wherever you are in the world, you can introduce a submission as a speaker or join the live streaming on the day.",
+      "Yes! We will provide details for online access closer to the event.  Wherever you are in the world, you can introduce a submission as a speaker or join the live streaming on the day.",
   },
   {
     question: "Is this a virtual event?",
@@ -51,7 +49,7 @@ const faqs = [
   {
     question: "Can I speak at the conference?",
     answer:
-      "Applications are open! And you can find more information  [here](https://sessionize.com/dataengbytes2021/). \n \n We are looking for a range of stories and real-world experiences from working on your side projects through to enterprise level applications. Share your learnings, experiences and best practices with us.",
+      "Applications are open! And you can find more information  [here](https://sessionize.com/dataengbytes2021/). \n \n We are looking for a range of stories and real-world experiences from working on your side projects through to enterprise level applications. Share your learnings, experiences and best practices with us.",
   },
 ]
 
@@ -59,7 +57,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function FAQ() {
+export default function Example() {
   return (
     <>
       <SEO
@@ -76,12 +74,7 @@ export default function FAQ() {
                   <div key={faq.id} className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8">
                     <dt className="text-base font-medium text-gray-900 md:col-span-5">{faq.question}</dt>
                     <dd className="mt-2 md:mt-0 md:col-span-7">
-                      {
-                        (1 === 0) ?
-                        <MDXRemote {...serializedAnswer(faq.answer)}/> :
-                        <p>hello test</p>
-                      }
-                      
+                      <p className="text-base text-gray-500">{faq.answer}</p>
                     </dd>
                   </div>
                 ))}
@@ -91,8 +84,4 @@ export default function FAQ() {
         </div>
       </>
     )
-}
-export async function serializedAnswer(source) {
-  const mdxSource = await serialize(source);
-  return { props: { source: mdxSource } };
 }
