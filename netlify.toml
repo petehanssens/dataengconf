@@ -4,7 +4,7 @@ package = 'netlify-plugin-contextual-env'
   mode = 'prefix'
 
 [build]
-  command   = "npm run build"
+  command   = "npm i -f && npm run build"
   functions = "out_functions"
   publish   = ".next"
 
