@@ -36,6 +36,7 @@ const project = new web.NextJsProject({
     '@headlessui/react',
     '@tailwindcss/line-clamp',
     'graphql-tag',
+    'graphql',
     'swr',
     'next-compose-plugins',
     'autoprefixer',
