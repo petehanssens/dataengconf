@@ -6,6 +6,8 @@ const project = new web.NextJsProject({
   authorName: 'DataEngBytes',
   authorEmail: 'sydney@dataengconf.com.au',
   authorUrl: 'https://dataengconf.com.au',
+  minNodeVersion: 16,
+  maxNodeVersion: 16,
   deps: [
     'jsonp',
     'query-string',
