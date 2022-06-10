@@ -4,7 +4,7 @@ import { CheckIcon } from '@heroicons/react/solid'
 const tiers = [
   {
     name: 'ANZ Startups',
-    href: 'mailto:sydney@dataengconf.com.au?subject=ANZ Startups Sponsorship!&body=Hi there, \n\n I\'d like to sponsor DataEngBytes - can you send me a contract!',
+    href: 'mailto:sydney@dataengconf.com.au?subject=DataEngBytes ANZ Startups Sponsorship!&body=Hi there, I\'d like to sponsor DataEngBytes - can you send me a contract!',
     priceMonthly: 500,
     description: 'All the basics for starting a new business',
     includedFeatures: [
@@ -14,7 +14,7 @@ const tiers = [
   },
   {
     name: 'Online',
-    href: 'mailto:sydney@dataengconf.com.au?subject=Online Sponsorship!&body=Hi there, \n\n I\'d like to sponsor DataEngBytes - can you send me a contract!',
+    href: 'mailto:sydney@dataengconf.com.au?subject=DataEngBytes Online Sponsorship!&body=Hi there, I\'d like to sponsor DataEngBytes - can you send me a contract!',
     priceMonthly: 2000,
     description: 'Get your brand out there and known to a technical audience',
     includedFeatures: [
@@ -25,7 +25,7 @@ const tiers = [
   },
   {
     name: '1x Major Event',
-    href: 'mailto:sydney@dataengconf.com.au?subject=1x Major Event Sponsorship!&body=Hi there, \n\n I\'d like to sponsor DataEngBytes - can you send me a contract!',
+    href: 'mailto:sydney@dataengconf.com.au?subject=DataEngBytes 1x Major Event Sponsorship!&body=Hi there, I\'d like to sponsor DataEngBytes - can you send me a contract!',
     priceMonthly: 6000,
     description: 'Sponsor us in person and connect with your core audience',
     includedFeatures: [
@@ -37,7 +37,7 @@ const tiers = [
   },
   {
     name: 'All Major Events',
-    href: 'mailto:sydney@dataengconf.com.au?subject=2x Major Events Sponsorship!&body=Hi there, \n\n I\'d like to sponsor DataEngBytes - can you send me a contract!',
+    href: 'mailto:sydney@dataengconf.com.au?subject=DataEngBytes 2x Major Events Sponsorship!&body=Hi there, I\'d like to sponsor DataEngBytes - can you send me a contract!',
     priceMonthly: 8000,
     description: 'Be top of mind wherever our data engineers gather',
     includedFeatures: [
