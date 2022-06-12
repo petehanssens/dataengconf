@@ -32,6 +32,7 @@ module.exports = (phase, { defaultConfig }) =>
       deviceSizes: [640, 750, 828, 1080, 1200, 1920],
       formats: ["image/avif", "image/webp"],
       minimumCacheTTL: 43200,
+      domains: ['dev.to','dataengconf.com.au','res.cloudinary.com'],
     },
     webpack: (config) => {
       config.resolve.alias = {
