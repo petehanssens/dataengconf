@@ -151,6 +151,10 @@
       "type": "runtime"
     },
     {
+      "name": "react-player",
+      "type": "runtime"
+    },
+    {
       "name": "react-syntax-highlighter",
       "type": "runtime"
     },
