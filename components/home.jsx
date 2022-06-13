@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import ReactPlayer from 'react-player/youtube';
 
 const eventDetails = {
     "@context": "https://schema.org",
@@ -51,10 +52,14 @@ export default function Home() {
                 </div>
                 </div>
                 <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-                    <Image className="absolute inset-0 w-full h-full object-cover"
-                        src="/images/heroes/conference-hall.jpg"
-                        alt="DataEngBytes 2022 Conference"
-                        layout='fill'
+
+                    <ReactPlayer 
+                      url='https://youtu.be/c1oVXuTH0Kg'
+                      playing
+                      loop
+                      muted
+                      width="100%"
+                      height="100%" 
                     />
                 </div>
             </main>

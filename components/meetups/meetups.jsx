@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 const products = [
     {
@@ -49,9 +50,10 @@ const products = [
             {products.map((product) => (
               <div key={product.id} className="group relative">
                 <div className="w-full h-96 rounded-lg overflow-hidden group-hover:opacity-75 sm:h-auto sm:aspect-w-3 sm:aspect-h-2">
-                  <img
+                  <Image
                     src={product.imageSrc}
                     alt={product.imageAlt}
+                    layout='fill'
                     className="w-full h-full object-center object-cover"
                   />
                 </div>
@@ -65,11 +67,6 @@ const products = [
             ))}
           </div>
   
-          <div className="mt-6 sm:hidden">
-            <a href="#" className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
-              Browse all favorites<span aria-hidden="true"> &rarr;</span>
-            </a>
-          </div>
         </div>
       </div>
     )
