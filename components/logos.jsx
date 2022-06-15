@@ -2,6 +2,16 @@ import React from 'react';
 
 const sponsorLogo = [
     {
+      name: 'Confluent',
+      image: 'images/sponsors/confluent-denim.png',
+      url: 'https://www.confluent.io/',
+    },
+    {
+      name: 'Mantel Group',
+      image: 'images/sponsors/mantel-group.png',
+      url: 'https://mantelgroup.com.au/',
+    },
+    {
       name: 'DataStax',
       image: 'images/sponsors/datastax.png',
       url: 'https://datastax.com/',
