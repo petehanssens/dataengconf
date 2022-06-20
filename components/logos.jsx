@@ -3,12 +3,12 @@ import React from 'react';
 const sponsorLogo = [
     {
       name: 'Confluent',
-      image: 'images/sponsors/confluent-denim.png',
+      image: 'images/sponsors/confluent-denim-big.png',
       url: 'https://www.confluent.io/',
     },
     {
       name: 'Mantel Group',
-      image: 'images/sponsors/mantel-group.png',
+      image: 'images/sponsors/mantel-group-big.png',
       url: 'https://mantelgroup.com.au/',
     },
     {
