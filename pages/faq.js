@@ -14,17 +14,17 @@ const faqs = [
   {
     question: "When is the conference?",
     answer:
-      "Mark your calendar for August 26th-27th and get ready for a great day!",
+      "Mark your calendar for September 27th (Melbourne) and 29th (Sydney) and get ready for a great day!",
   },
   {
     question: "How much does the conference cost?",
     answer:
-      "Super early bird tickets start at $49 + GST. Full price tickets will be $99 + GST!",
+      "Super dooper early bird tickets start at $99 + GST. Full price tickets will be $199 + GST!",
   },
   {
     question: "How do I register/purchase my ticket?",
     answer:
-      "You can purchase them [here](https://www.tickettailor.com/events/dataengbytes/505988)",
+      "You can purchase them [here](https://www.tickettailor.com/events/dataengbytes/)",
   },
   {
     question: "Can I get a refund if there's a COVID outbreak?",
@@ -44,12 +44,12 @@ const faqs = [
   {
     question: "Where will the conference be held?",
     answer:
-      "We are organising venues in Sydney and Melbourne. We will add more information as soon as we can confirm the venues.",
+      "Sydney's venue is the Museum of Contemporary Art in the Rocks and Melbourne will be hosted at the State Library Victoria in the Conversation Quarter and the Village Roadshow Theatrette.",
   },
   {
     question: "Can I speak at the conference?",
     answer:
-      "Applications are open! And you can find more information  [here](https://sessionize.com/dataengbytes2021/). \n \n We are looking for a range of stories and real-world experiences from working on your side projects through to enterprise level applications. Share your learnings, experiences and best practices with us.",
+      "Applications are open! And you can find more information  [here](https://sessionize.com/dataengbytes-2022/). \n \n We are looking for a range of stories and real-world experiences from working on your side projects through to enterprise level applications. Share your learnings, experiences and best practices with us.",
   },
 ]
 
