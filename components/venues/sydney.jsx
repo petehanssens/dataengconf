@@ -6,7 +6,7 @@ export default function Example() {
           <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
             <img
               className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src="images/venues/wesley-conference-centre.jpeg"
+              src="images/venues/sydney-venue.jpg"
               alt=""
             />
           </div>
@@ -18,10 +18,10 @@ export default function Example() {
                 Sydney - Thursday, 29th September
               </h2>
               <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                To Be Confirmed
+                Museum of Contemporary Art  
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                Our venue will be conveniently located in the CBD close to public transport and local Sydney attractions.
+                For this year's, DataEngBytes conference in Sydney, the Museum of Contemporary Art Australia has been secured as a venue.
               </p>
               <div className="mt-5 prose prose-indigo text-gray-500">
                 <p>
