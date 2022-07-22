@@ -3,12 +3,12 @@ import { Auth, API } from 'aws-amplify';
 import fetchMeetups from '../graphql/meetup/fetchMeetups';
 
 export default function fetchTableData() {
-  const [posts, setPosts] = useState([]);
+  const [meetups, setMeetups] = useState([]);
   const [attributes, setAttributes] = useState({});
   useEffect(() => {
-    fetchPosts()
+    fetchmeetups()
   }, [])
-  async function fetchPosts() {
+  async function fetchmeetups() {
     const { attributes, username } = await Auth.currentAuthenticatedUser()
     setAttributes(attributes)
     setAttributes({...attributes,username})
@@ -16,7 +16,7 @@ export default function fetchTableData() {
       query: fetchMeetups,
       authMode: "AMAZON_COGNITO_USER_POOLS"
     })
-    setPosts(postData.data.getCustomers)
+    setMeetups(postData.data.getCustomers)
   }
-  return posts;
+  return meetups;
 }

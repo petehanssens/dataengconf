@@ -1,17 +1,15 @@
 import gql from 'graphql-tag'
 
 const fetchMeetups = gql`
-query fetchMeetups  {
-    fetchMeetups { 
-      meetup {
-        email
-        first_name
-        last_name
-        linkedin
-        preferred_meetup
-        country
-      }
-    }
+query MyQuery {
+  fetchMeetupInfo(city: "Sydney") {
+    title
+    endtime
+    eventurl
+    isonline
+    starttime
+    timezone
   }
+}
 `
 export default fetchMeetups;
