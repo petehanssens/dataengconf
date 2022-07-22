@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Auth, API } from 'aws-amplify';
 import fetchMeetups from '../graphql/meetup/fetchMeetups';
 
-export default function fetchTableData() {
+export default function MeetupData(city) {
   const [meetups, setMeetups] = useState([]);
   const [attributes, setAttributes] = useState({});
   useEffect(() => {
@@ -14,7 +14,8 @@ export default function fetchTableData() {
     setAttributes({...attributes,username})
     const meetupData = await API.graphql({
       query: fetchMeetups,
-      authMode: "AMAZON_COGNITO_USER_POOLS"
+      authMode: "AMAZON_COGNITO_USER_POOLS",
+      variables: { city: city }
     })
     setMeetups(meetupData.data.fetchMeetupInfo)
   }

@@ -51,8 +51,6 @@ const meetupEvents = [
 ]
 export default function Meetups() {
     const meetupData = MeetupData('Sydney');
-    console.log(`meeetupData: `, meetupData)
-    
 
     return (
       <div className="bg-white">
@@ -61,7 +59,7 @@ export default function Meetups() {
             Here is a list of other Meetups:
           </p>
           <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-          {meetupEvents.map((meetup) => (
+          {meetupData.map((meetup) => (
             <div key={meetup.title}
               className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <p>{meetup.title}</p>
