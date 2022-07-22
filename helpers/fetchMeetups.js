@@ -12,11 +12,11 @@ export default function fetchTableData() {
     const { attributes, username } = await Auth.currentAuthenticatedUser()
     setAttributes(attributes)
     setAttributes({...attributes,username})
-    const postData = await API.graphql({
+    const meetupData = await API.graphql({
       query: fetchMeetups,
       authMode: "AMAZON_COGNITO_USER_POOLS"
     })
-    setMeetups(postData.data.getCustomers)
+    setMeetups(meetupData.data.fetchMeetupInfo)
   }
   return meetups;
 }
