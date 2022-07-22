@@ -1,4 +1,5 @@
 import React from 'react';
+import { DateUtils } from '@aws-amplify/core';
 
 import MeetupData from '../helpers/fetchMeetups';
 
@@ -49,26 +50,67 @@ const meetupEvents = [
       isOnline: true
     }
 ]
-export default function Meetups() {
-    const meetupData = MeetupData('Sydney');
+
+function boolString(boolval){
+  if(boolval===true){
+    return "Event is online."
+  }
+  else
+    return "Event is in person."
+}
+
+function stripDate(dateTimeVal){
+  return dateTimeVal.split('+')[0].split('T')
+}
+
+export default function Meetups(props) {
+    console.log(props.city)
+    const meetupData = MeetupData(props.city);
 
     return (
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
-            Here is a list of other Meetups:
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-          {meetupData.map((meetup) => (
-            <div key={meetup.title}
-              className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <p>{meetup.title}</p>
-              <a href={meetup.eventurl}>Click me for event</a>
-              <p>Start time: {meetup.dateTime}</p>
-              <p>End time: {meetup.endTime}</p>
-              <p>Is Online?: {meetup.isOnline}</p>
+        <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+          <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+            <div className="space-y-5 sm:space-y-4">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Past Meetups</h2>
+              <p className="text-xl text-gray-500">
+                Here is a list of meetups that occured in {props.city}:
+              </p>
             </div>
-          ))}
+            <div className="lg:col-span-2">
+              <ul
+                role="list"
+                className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0"
+              >
+                {meetupData.map((meetup) => (
+                  <li key={meetup.title} className="sm:py-8">
+                    <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                      <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                        <img className="object-cover shadow-lg rounded-lg" src="../images/meetupLogos/sydney.jpg" alt="" />
+                      </div>
+                      <div className="sm:col-span-2">
+                        <div className="space-y-4">
+                          <div className="text-lg"><a href={meetup.eventurl}>{meetup.title}</a>
+                          </div>
+                          <div className="text-lg">
+                            <p className="text-gray-500">Event Date: {stripDate(meetup.starttime)[0]}</p>
+                          </div>
+                          <div className="text-lg">
+                            <p className="text-gray-500">Start Time: {stripDate(meetup.starttime)[1]}</p>
+                          </div>
+                          <div className="text-lg">
+                            <p className="text-gray-500">End Time: {stripDate(meetup.endtime)[1]}</p>
+                          </div>
+                          <div className="text-lg">
+                            <p className="text-gray-500">{boolString(meetup.isonline)}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

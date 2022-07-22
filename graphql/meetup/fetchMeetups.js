@@ -1,8 +1,8 @@
 import gql from 'graphql-tag'
 
 const fetchMeetups = gql`
-query MyQuery {
-  fetchMeetupInfo(city: "Sydney") {
+query MyQuery($city: String = "") {
+  fetchMeetupInfo(city: $city) {
     title
     endtime
     eventurl
