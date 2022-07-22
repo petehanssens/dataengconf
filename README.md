@@ -2,6 +2,62 @@
 
 Website for the [Sydney DataEngConf](https://dataengconf.com.au/)!
 
+## reatjs
+
+[tutorial](https://reactjs.org/tutorial/tutorial.html)
+
+[Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
+
+[React Hooks - w3c shcool](https://www.w3schools.com/react/react_hooks.asp)
+
+[React Hooks - turorial](https://www.javatpoint.com/react-hooks#:~:text=Hooks%20are%20the%20new%20feature,does%20not%20work%20inside%20classes.)
+
+[Hooks API](https://reactjs.org/docs/hooks-reference.html)
+
+- Basic Hooks
+
+    - useState
+
+    - useEffect
+
+    - useContext
+
+- Additional Hooks
+
+    - useReducer
+
+    - useCallback
+
+    - useMemo
+
+    - useRef
+
+    - useImperativeHandle
+
+    - useLayoutEffect
+
+    - useDebugValue
+
+    - useDeferredValue
+
+    - useTransition
+
+    - useId
+
+- Library Hooks
+
+    - useSyncExternalStore
+
+    - useInsertionEffect
+
+## Graphsql
+
+[Queries and Mutations](https://graphql.org/learn/queries/)
+
+## Aws amplify
+
+[AWS Amplify](https://aws.amazon.com/amplify/#:~:text=AWS%20Amplify%20is%20a%20set,as%20your%20use%20cases%20evolve.)
+
 ## list of sections
 
 - sponsors
