@@ -50,7 +50,7 @@ const meetupEvents = [
     }
 ]
 export default function Meetups() {
-    const meetupData = MeetupData();
+    const meetupData = MeetupData('Sydney');
     console.log(`meeetupData: `, meetupData)
     
 
