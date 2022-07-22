@@ -50,45 +50,9 @@ const meetupEvents = [
     }
 ]
 export default function Meetups() {
-    const tableData = TableData();
-    const customerData = CustomerData();
-
-    const [siteDropDown, setSiteDropDown] = useState('All')
-    const [alertDropDown, setAlertDropDown] = useState('All')
-    const alertArray = ['All']
-    tableData.map((data) => {
-      data.alerts.map((alert) => {
-        alertArray.push(alert)
-      })
-    })
-    const arrayElements =  alertArray.filter((q, idx) =>
-      alertArray.indexOf(q) === idx)
-    const siteList = ['All']
-    tableData.map((data) => (
-      siteList.push(data.site_name)
-    ))
-    const uniqueSites = siteList.filter((q, idx) =>
-        siteList.indexOf(q) === idx)
-
-    const handleSetSiteDropDown = (item) => {
-        console.log(item);
-        setSiteDropDown(item)
-    }
-
-    const handleSetAlertDropDown = (item) => {
-        console.log(item);
-        setAlertDropDown(item)
-    }
-
-    const [user, setUser] = useState(null)
-
-    useEffect(() => {
-      Auth.currentAuthenticatedUser()
-        .then(user => {
-          setUser(user)
-        })
-        .catch(err => setUser(null))
-    }, [])
+    const meetupData = MeetupData();
+    console.log(`meeetupData: `, meetupData)
+    
 
     return (
       <div className="bg-white">

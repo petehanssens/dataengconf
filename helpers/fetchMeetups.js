@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Auth, API } from 'aws-amplify';
-import getCustomers from '../graphql/customer/getCustomers';
+import fetchMeetups from '../graphql/meetup/fetchMeetups';
 
 export default function fetchTableData() {
   const [posts, setPosts] = useState([]);
