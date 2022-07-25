@@ -20,7 +20,7 @@ export default function Home() {
             />
             <CityBar onClick={callback} />
             <Meetups 
-            city={cityName}
+            city="Sydney"
             />
         </>
     )

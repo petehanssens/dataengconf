@@ -14,7 +14,7 @@ export default function MeetupData(city) {
     setAttributes({...attributes,username})
     const meetupData = await API.graphql({
       query: fetchMeetups,
-      authMode: "AMAZON_COGNITO_USER_POOLS",
+      authMode: "AWS_IAM",
       variables: { city: city }
     })
     setMeetups(meetupData.data.fetchMeetupInfo)
