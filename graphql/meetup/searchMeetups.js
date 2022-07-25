@@ -1,15 +1,11 @@
 import gql from 'graphql-tag'
 
-const fetchMeetups = gql`
-query MyQuery($city: String = "") {
-  fetchMeetupInfo(city: $city) {
+const searchMeetups = gql`
+query MyQuery($queryString: String = "") {
+  searchMeetups(filter: {title: { match: $queryString }}) {
     title
-    endtime
-    eventurl
-    isonline
-    starttime
-    timezone
   }
 }
 `
-export default fetchMeetups;
+filter: { title: { match: "Stream" }}
+export default searchMeetups;
