@@ -7,5 +7,4 @@ query MyQuery($queryString: String = "") {
   }
 }
 `
-filter: { title: { match: "Stream" }}
 export default searchMeetups;
