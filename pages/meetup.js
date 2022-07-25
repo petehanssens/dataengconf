@@ -2,11 +2,12 @@ import React from 'react'
 import SEO from "../components/seo";
 import Meetups from "../components/meetups";
 import CityBar from "../components/citybar";
+import { useState } from 'react';
 
 export default function Home() {
-    const [cityName, setCityName] = useState();
-    const callback = (cityName) => {
-        setCityName(cityName)
+    const [cityName, setCityName] = useState('Sydney');
+    const callback = cityName => {
+        setCityName(current => cityName)
     }
     return (
         

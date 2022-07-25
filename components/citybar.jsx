@@ -1,3 +1,4 @@
+import { checkPropTypes } from "prop-types"
 /*
   This example requires Tailwind CSS v2.0+ 
   
@@ -26,7 +27,11 @@ const tabs = [
     return classes.filter(Boolean).join(' ')
   }
   
-  export default function CityBar() {
+  export default function CityBar(props) {
+    const onButtonPress = (tab) => {
+        props.onClick(tab.name)
+        tab.current = true
+    }
     return (
       <div>
         <div className="sm:hidden">
@@ -51,6 +56,7 @@ const tabs = [
               <a
                 key={tab.name}
                 href={tab.href}
+                onClick={onButtonPress(tab)}
                 className={classNames(
                   tab.current ? 'text-gray-900' : 'text-gray-500 hover:text-gray-700',
                   tabIdx === 0 ? 'rounded-l-lg' : '',

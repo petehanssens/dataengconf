@@ -64,7 +64,7 @@ function stripDate(dateTimeVal){
 }
 
 export default function Meetups(props) {
-    console.log(props.city)
+    console.log("Current city:", props.city)
     const meetupData = MeetupData(props.city);
     meetupData.sort((a,b) => {return new Date(stripDate(b.starttime)[0]) - new Date(stripDate(a.starttime)[0]);})
 
