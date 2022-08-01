@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
-// import Image from 'next/future/image'
-import { Tab } from '@headlessui/react'
-// import clsx from 'clsx'
 
-// import { Container } from '@/components/Container'
-// import backgroundImage from '@/images/background.jpg'
+import { Tab } from '@headlessui/react'
+import clsx from 'clsx'
+import Image from 'next/image'
 
 const schedule = [
   {
@@ -24,37 +22,7 @@ const schedule = [
         description: 'The finer print',
         start: '10:00AM',
         end: '11:00AM',
-      },
-      {
-        name: 'Dianne Guilianelli',
-        description: 'Post-purchase blackmail',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Ronni Cantadore',
-        description: 'Buy or die',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Erhart Cockrin',
-        description: 'In-person cancellation',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Parker Johnson',
-        description: 'The pay/cancel switcheroo',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
+      }
     ],
   },
   {
@@ -80,31 +48,7 @@ const schedule = [
         description: 'Voting machines',
         start: '11:00AM',
         end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Rinaldo Beynon',
-        description: 'Blackhat SEO that works',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Waylon Hyden',
-        description: 'Turning your audience into a botnet',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Giordano Sagucio',
-        description: 'Fly phishing',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
+      }
     ],
   },
   {
@@ -130,34 +74,26 @@ const schedule = [
         description: 'Quantum password cracking',
         start: '11:00AM',
         end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
+      }
     ],
   },
 ]
+
+function Container({ className, ...props }) {
+  return (
+    <div
+      className={clsx('mx-auto max-w-7xl px-4 sm:px-6 lg:px-8', className)}
+      {...props}
+    />
+  )
+}
+function DiamondIcon(props) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 6 6" {...props}>
+      <path d="M3 0L6 3L3 6L0 3Z" strokeWidth={2} strokeLinejoin="round" />
+    </svg>
+  )
+}
 
 function ScheduleTabbed() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -289,7 +225,7 @@ function ScheduleStatic() {
   )
 }
 
-export function Schedule() {
+export default function Schedule() {
   return (
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
@@ -307,14 +243,14 @@ export function Schedule() {
       </Container>
       <div className="relative mt-14 sm:mt-24">
         <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
-          <Image
+          {/* <Image
             className="absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
             src={backgroundImage}
             alt=""
             width={918}
             height={1495}
             unoptimized
-          />
+          /> */}
           <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
         </div>

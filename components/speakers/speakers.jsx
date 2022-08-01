@@ -11,43 +11,100 @@ const days = [
       dateTime: '2022-09-27',
       speakers: [
         {
-          "id": "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84",
-          "firstName": "Akira",
-          "lastName": "Takihara Wang",
-          "fullName": "Akira Takihara Wang",
-          "bio": "Hey there! \r\n\r\nI'm a Data Engineer at Afterpay and teach at The University of Melbourne in my spare time.\r\n\r\nI like to spend my spare time gaming, watching the footy (go Collingwood!), and teaching.",
-          "tagLine": "Data Engineer, Afterpay (Block)",
-          "profilePicture": "https://sessionize.com/image/1241-400o400o2-Q2x5ywUK5BZbn3VuZQRoye.jpg",
-          "sessions": [
-            {
-              "id": '362261',
-              "name": "Metadata driven framework for data discovery and data quality"
-            }
-          ],
-          "isTopSpeaker": 'false',
-          "links": [],
-          "questionAnswers": [],
-          "categories": []
-        },
-        {
-          "id": "42089591-8913-4dba-b615-93332091dd97",
-          "firstName": "Ann",
-          "lastName": "Clark",
-          "fullName": "Ann Clark",
-          "bio": "Ann has over 7 years' experience in lexicography, data quality, semantic metadata & knowledge management; and is excited to work on semantic systems at Nearmap.",
-          "tagLine": "AI Ontologist, Nearmap",
-          "profilePicture": "https://sessionize.com/image/bdb4-400o400o2-wadAckBioYc9W4VQs763s3.jpg",
-          "sessions": [
-            {
-              "id": '360256',
-              "name": "Building a Scalable, Reproducible Ontology System to Improve Deep Learning Data"
-            }
-          ],
-          "isTopSpeaker": 'false',
-          "links": [],
-          "questionAnswers": [],
-          "categories": []
-        },
+            "id": "e96010a2-e660-4eb1-acf7-b2dcaeb6522f",
+            "firstName": "Xinwei",
+            "lastName": "Jiang",
+            "fullName": "Xinwei Jiang",
+            "bio": "I am data engineer working in the Afterpay Data engineering and governance team. I did my master from ANU specialising in data processing and AI. I have been work for Afterpay for the last 2 years. I live in Melbourne and enjoy hiking and boxing to keep myself fit. ",
+            "tagLine": "Data engineer, Afterpay (Block)",
+            "profilePicture": "https://sessionize.com/image/47dc-400o400o2-YGX5Q1WDCTm4TXmQM8rsd8.jpg",
+            "sessions": [
+              {
+                "id": 362261,
+                "name": "Metadata driven framework for data discovery and data quality"
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
+          {
+            "id": "1aa17ca9-c570-453e-8039-492ef552cdef",
+            "firstName": "Xuanyi",
+            "lastName": "Chew",
+            "fullName": "Xuanyi Chew",
+            "bio": "Xuanyi is a data scientist by day, explorer of various notions of intelligences and entropy by night. Feel free to nerdsnipe him in his areas of interests: ranging from programming language theory to artificial intelligence in the computer sciences; linguistics - computational and traditional; neuroscience and cognition; information theory and entropy; explanations of theories and causality, maths puzzles and many more. He enjoys tinkering and making his thoughts a reality. ",
+            "tagLine": "Human. Enthusiast of intelligences. ",
+            "profilePicture": "https://sessionize.com/image/201b-400o400o2-ngMf8xcHquHUBBwWJRC8zC.jpg",
+            "sessions": [
+              {
+                "id": 362633,
+                "name": "Change the way you write. Change the way you think."
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
+          {
+            "id": "be31cb9f-ba18-4428-aadf-821d2d2821d8",
+            "firstName": "Zachary",
+            "lastName": "Zeus",
+            "fullName": "Zachary Zeus",
+            "bio": "Zach has more than 20 years of experience delivering data driven programs of work. He was originally trained as an engineer and approaches technology with a robust and systematic mindset. He has an MBA from NYU where he studied Finance, Entrepreneurship and Management. Zach’s unique balance of technical capability, strategic vision, and commercial sensibility make him an exceptionally fit leader in today’s digital landscape. He co-owns BizCubed with his wife Rebecca, with whom he has 4 children.",
+            "tagLine": "Engineer, Father, CEO of BizCubed",
+            "profilePicture": "https://sessionize.com/image/871c-400o400o2-EPSRs65iJpCqNbpegTqJs5.jpg",
+            "sessions": [
+              {
+                "id": 363280,
+                "name": "Engineering Trust in Data"
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
+          {
+            "id": "e34e2722-02d0-471e-87f1-afd67d050e92",
+            "firstName": "Zainab",
+            "lastName": "Maleki",
+            "fullName": "Zainab Maleki",
+            "bio": "As a full-stack developer and principal DevOps/ Data engineer at Mechanical Rock, Australia's leading cloud native consultancy, Zainab works with progressive tools and practices like serverless technologies and infrastructure-as-code. Cloud native data platforms are her current passion, and she is fast becoming one of Western Australia's leading practitioners. A regular conference presenter, AWS Community Hero and 2020 WiTWA Tech [+] 20 Award winner, Zainab is also passionate about teaching young people the joys of mobile app development.",
+            "tagLine": "AWS Community Hero | Principal Consultant at Mechanical Rock | DevOps, Data and Serverless Enthusiast",
+            "profilePicture": "https://sessionize.com/image/5eee-400o400o2-wm3k5ndcmZaMT92eNKMvS9.jpg",
+            "sessions": [
+              {
+                "id": 359919,
+                "name": "Bringing Software Engineering Rigour to Data"
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
+          {
+            "id": "2ae15249-123f-4d1e-9492-79e5a549f50c",
+            "firstName": "Zeph",
+            "lastName": "Yap",
+            "fullName": "Zeph Yap",
+            "bio": "For the past two years, Zeph has been helping the AI Model Systems team at Nearmap develop tools to improve the model-training process, with a focus on improving the quality of the training data. Besides the ontology system, Zeph has also created a verification module which tracks the quality of the labels entering the training dataset. He speaks three languages with a goal of eventually getting to nine.",
+            "tagLine": "Machine Learning Engineer, Nearmap",
+            "profilePicture": "https://sessionize.com/image/6a75-400o400o2-DfsKRCab36bYDaUUR2zFkH.jpg",
+            "sessions": [
+              {
+                "id": 360256,
+                "name": "Building a Scalable, Reproducible Ontology System to Improve Deep Learning Data"
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
       ],
     },
     {
@@ -56,43 +113,62 @@ const days = [
       dateTime: '2022-09-29',
       speakers: [
         {
-          "id": "42089591-8913-4dba-b615-93332091dd97",
-          "firstName": "Ann",
-          "lastName": "Clark",
-          "fullName": "Ann Clark",
-          "bio": "Ann has over 7 years' experience in lexicography, data quality, semantic metadata & knowledge management; and is excited to work on semantic systems at Nearmap.",
-          "tagLine": "AI Ontologist, Nearmap",
-          "profilePicture": "https://sessionize.com/image/bdb4-400o400o2-wadAckBioYc9W4VQs763s3.jpg",
-          "sessions": [
-            {
-              "id": '360256',
-              "name": "Building a Scalable, Reproducible Ontology System to Improve Deep Learning Data"
-            }
-          ],
-          "isTopSpeaker": 'false',
-          "links": [],
-          "questionAnswers": [],
-          "categories": []
-        },
-        {
-          "id": "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84",
-          "firstName": "Akira",
-          "lastName": "Takihara Wang",
-          "fullName": "Akira Takihara Wang",
-          "bio": "Hey there! \r\n\r\nI'm a Data Engineer at Afterpay and teach at The University of Melbourne in my spare time.\r\n\r\nI like to spend my spare time gaming, watching the footy (go Collingwood!), and teaching.",
-          "tagLine": "Data Engineer, Afterpay (Block)",
-          "profilePicture": "https://sessionize.com/image/1241-400o400o2-Q2x5ywUK5BZbn3VuZQRoye.jpg",
-          "sessions": [
-            {
-              "id": '362261',
-              "name": "Metadata driven framework for data discovery and data quality"
-            }
-          ],
-          "isTopSpeaker": 'false',
-          "links": [],
-          "questionAnswers": [],
-          "categories": []
-        },
+            "id": "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84",
+            "firstName": "Akira",
+            "lastName": "Takihara Wang",
+            "fullName": "Akira Takihara Wang",
+            "bio": "Hey there! \r\n\r\nI'm a Data Engineer at Afterpay and teach at The University of Melbourne in my spare time.\r\n\r\nI like to spend my spare time gaming, watching the footy (go Collingwood!), and teaching.",
+            "tagLine": "Data Engineer, Afterpay (Block)",
+            "profilePicture": "https://sessionize.com/image/1241-400o400o2-Q2x5ywUK5BZbn3VuZQRoye.jpg",
+            "sessions": [
+              {
+                "id": 362261,
+                "name": "Metadata driven framework for data discovery and data quality"
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
+          {
+            "id": "42089591-8913-4dba-b615-93332091dd97",
+            "firstName": "Ann",
+            "lastName": "Clark",
+            "fullName": "Ann Clark",
+            "bio": "Ann has over 7 years' experience in lexicography, data quality, semantic metadata & knowledge management; and is excited to work on semantic systems at Nearmap.",
+            "tagLine": "AI Ontologist, Nearmap",
+            "profilePicture": "https://sessionize.com/image/bdb4-400o400o2-wadAckBioYc9W4VQs763s3.jpg",
+            "sessions": [
+              {
+                "id": 360256,
+                "name": "Building a Scalable, Reproducible Ontology System to Improve Deep Learning Data"
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
+          {
+            "id": "f7d130b3-f2a6-42b3-8a04-9bf4f9c3d9e9",
+            "firstName": "Ashika",
+            "lastName": "Hettitantirige",
+            "fullName": "Ashika Hettitantirige",
+            "bio": "Ashika is a graduate engineer in the Data and Analytics R&D team at the Commonwealth Bank of Australia. Within this role, Ashika has gained exposure to work in data engineering, cloud and collaborative analytics. Ashika is passionate about working with data and AI. ",
+            "tagLine": "Graduate Engineer, Data Analytics R&D, Commonwealth Bank of Australia",
+            "profilePicture": "https://sessionize.com/image/8c77-400o400o2-9KoFz1nt9YbPRRugptH1N2.jpg",
+            "sessions": [
+              {
+                "id": 363283,
+                "name": "Data Privacy Engineering to power Responsible Enterprise AI"
+              }
+            ],
+            "isTopSpeaker": false,
+            "links": [],
+            "questionAnswers": [],
+            "categories": []
+          },
       ],
     },
 ]
@@ -222,7 +298,7 @@ export default function Speakers() {
                     className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 md:grid-cols-3 [&:not(:focus-visible)]:focus:outline-none"
                     unmount={false}
                   >
-                    {days[0].speakers.map((speaker) => (
+                    {day.speakers.map((speaker) => (
                       <div key={speaker.id}>
                         <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                           <div
@@ -237,7 +313,7 @@ export default function Speakers() {
                           />
                           <div
                             className="absolute inset-0 bg-indigo-50"
-                            // style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
+                            style={{ clipPath: `url(#${id}-${speaker.id % 3})` }}
                           >
                             <Image
                               className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"

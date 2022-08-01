@@ -23,7 +23,7 @@ export default function Home() {
       <Stats />
       <Meetups />
       <Speakers />
-      {/* <Schedule /> */}
+      <Schedule />
       <Logos />
     </>
   )
