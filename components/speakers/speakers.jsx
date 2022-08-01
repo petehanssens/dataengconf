@@ -1,142 +1,447 @@
 import { useEffect, useId, useState } from 'react'
-import Image from 'next/future/image'
+// import Image from 'next/future/image'
 import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
-
-import { Container } from '@/components/Container'
-import { DiamondIcon } from '@/components/DiamondIcon'
-import andrewGreeneImage from '@/images/avatars/andrew-greene.jpg'
-import cathleneBurrageImage from '@/images/avatars/cathlene-burrage.jpg'
-import damarisKimuraImage from '@/images/avatars/damaris-kimura.jpg'
-import dianneGuilianelliImage from '@/images/avatars/dianne-guilianelli.jpg'
-import erhartCockrinImage from '@/images/avatars/erhart-cockrin.jpg'
-import giordanoSagucioImage from '@/images/avatars/giordano-sagucio.jpg'
-import gordonSandersonImage from '@/images/avatars/gordon-sanderson.jpg'
-import heatherTerryImage from '@/images/avatars/heather-terry.jpg'
-import ibrahimFraschImage from '@/images/avatars/ibrahim-frasch.jpg'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import kimberlyParsonsImage from '@/images/avatars/kimberly-parsons.jpg'
-import parkerJohnsonImage from '@/images/avatars/parker-johnson.jpg'
-import piersWilkinsImage from '@/images/avatars/piers-wilkins.jpg'
-import richardAstley from '@/images/avatars/richard-astley.jpg'
-import rinaldoBeynonImage from '@/images/avatars/rinaldo-beynon.jpg'
-import ronniCantadoreImage from '@/images/avatars/ronni-cantadore.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
-import waylonHydenImage from '@/images/avatars/waylon-hyden.jpg'
+// import clsx from 'clsx'
 
 const days = [
-  {
-    name: 'Opening Day',
-    date: 'April 4',
-    dateTime: '2022-04-04',
-    speakers: [
-      {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: stevenMchailImage,
-      },
-      {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: jaquelinIschImage,
-      },
-      {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        image: dianneGuilianelliImage,
-      },
-      {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        image: ronniCantadoreImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        image: parkerJohnsonImage,
-      },
-    ],
-  },
-  {
-    name: 'Speakers & Workshops',
-    date: 'April 5',
-    dateTime: '2022-04-05',
-    speakers: [
-      {
-        name: 'Damaris Kimura',
-        role: 'Senior Engineer at OCP',
-        image: damarisKimuraImage,
-      },
-      {
-        name: 'Ibrahim Frasch',
-        role: 'Programmer at Umbrella Corp',
-        image: ibrahimFraschImage,
-      },
-      {
-        name: 'Cathlene Burrage',
-        role: 'Frontend Developer at Buy n Large',
-        image: cathleneBurrageImage,
-      },
-      {
-        name: 'Rinaldo Beynon',
-        role: 'Data Scientist at Rekall',
-        image: rinaldoBeynonImage,
-      },
-      {
-        name: 'Waylon Hyden',
-        role: 'DevOps at RDA Corporation',
-        image: waylonHydenImage,
-      },
-      {
-        name: 'Giordano Sagucio',
-        role: 'Game Developer at Soylent Corp',
-        image: giordanoSagucioImage,
-      },
-    ],
-  },
-  {
-    name: 'Interviews',
-    date: 'April 6',
-    dateTime: '2022-04-06',
-    speakers: [
-      {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        image: andrewGreeneImage,
-      },
-      {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        image: heatherTerryImage,
-      },
-      {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        image: piersWilkinsImage,
-      },
-      {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        image: gordonSandersonImage,
-      },
-      {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        image: kimberlyParsonsImage,
-      },
-      {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        image: richardAstley,
-      },
-    ],
-  },
-]
+    {
+      "id": "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84",
+      "firstName": "Akira",
+      "lastName": "Takihara Wang",
+      "fullName": "Akira Takihara Wang",
+      "bio": "Hey there! \r\n\r\nI'm a Data Engineer at Afterpay and teach at The University of Melbourne in my spare time.\r\n\r\nI like to spend my spare time gaming, watching the footy (go Collingwood!), and teaching.",
+      "tagLine": "Data Engineer, Afterpay (Block)",
+      "profilePicture": "https://sessionize.com/image/1241-400o400o2-Q2x5ywUK5BZbn3VuZQRoye.jpg",
+      "sessions": [
+        {
+          "id": 362261,
+          "name": "Metadata driven framework for data discovery and data quality"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "42089591-8913-4dba-b615-93332091dd97",
+      "firstName": "Ann",
+      "lastName": "Clark",
+      "fullName": "Ann Clark",
+      "bio": "Ann has over 7 years' experience in lexicography, data quality, semantic metadata & knowledge management; and is excited to work on semantic systems at Nearmap.",
+      "tagLine": "AI Ontologist, Nearmap",
+      "profilePicture": "https://sessionize.com/image/bdb4-400o400o2-wadAckBioYc9W4VQs763s3.jpg",
+      "sessions": [
+        {
+          "id": 360256,
+          "name": "Building a Scalable, Reproducible Ontology System to Improve Deep Learning Data"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "f7d130b3-f2a6-42b3-8a04-9bf4f9c3d9e9",
+      "firstName": "Ashika",
+      "lastName": "Hettitantirige",
+      "fullName": "Ashika Hettitantirige",
+      "bio": "Ashika is a graduate engineer in the Data and Analytics R&D team at the Commonwealth Bank of Australia. Within this role, Ashika has gained exposure to work in data engineering, cloud and collaborative analytics. Ashika is passionate about working with data and AI. ",
+      "tagLine": "Graduate Engineer, Data Analytics R&D, Commonwealth Bank of Australia",
+      "profilePicture": "https://sessionize.com/image/8c77-400o400o2-9KoFz1nt9YbPRRugptH1N2.jpg",
+      "sessions": [
+        {
+          "id": 363283,
+          "name": "Data Privacy Engineering to power Responsible Enterprise AI"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "491e40d9-e5f2-4336-93f1-6e543f275caa",
+      "firstName": "Clara",
+      "lastName": "So",
+      "fullName": "Clara So",
+      "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Apache Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
+      "tagLine": "Gian Merlino, Apache Druid® committer and co-founder of Imply",
+      "profilePicture": "https://sessionize.com/image/5e79-400o400o2-9QYDxrcviJ7ukUu42BNFKd.jpg",
+      "sessions": [
+        {
+          "id": 353078,
+          "name": "Best of Stream + Batch: When Streaming Analytics Isn’t"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "98d417d3-36e8-44c3-8131-6bb3b67637bd",
+      "firstName": "Duana",
+      "lastName": "Stanley",
+      "fullName": "Duana Stanley",
+      "bio": "Duana has 16 years experience as a software engineer, 5 years of agile software development at ThoughtWorks, 5 years of microservices-at-scale at SoundCloud, and recently transitioned to data engineering and ML at Cash App. She does @boutiquemaths as a hobby and would love to do more math at work.",
+      "tagLine": "Data Engineer, Cash App",
+      "profilePicture": "https://sessionize.com/image/280e-400o400o2-EnWKVnyd8Z4upqGECBeiJi.jpg",
+      "sessions": [
+        {
+          "id": 363029,
+          "name": "What is the MVP for Data Engineering projects?"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "2b583bbd-2202-4fd8-9429-97f085cf3923",
+      "firstName": "Gian",
+      "lastName": "Merlino",
+      "fullName": "Gian Merlino",
+      "bio": "Gian is a co-author of the open-source Apache Druid® project and co-founder and CTO at Imply. Gian is also the Apache Druid® Committee (PMC) Chair. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
+      "tagLine": "CTO",
+      "profilePicture": "https://sessionize.com/image/6deb-400o400o2-nuZ6kFs564ZLABfp35RJ3W.jpg",
+      "sessions": [
+        {
+          "id": 353078,
+          "name": "Best of Stream + Batch: When Streaming Analytics Isn’t"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "40cb614a-1c9b-4c44-b4b0-80e9521509d7",
+      "firstName": "Gian",
+      "lastName": "Merlino",
+      "fullName": "Gian Merlino",
+      "bio": "Gian is a co-founder and CTO of Imply. Gian is also one of the main committers of Druid. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
+      "tagLine": "Co-Founder & CTO",
+      "profilePicture": "https://sessionize.com/image/315e-400o400o2-4a-1c9b-4c44-b4b0-80e9521509d7.d4759d97-cb44-4411-8ef9-d356d9d5d5d7.png",
+      "sessions": [
+        {
+          "id": 353078,
+          "name": "Best of Stream + Batch: When Streaming Analytics Isn’t"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "8b01d36b-a1dd-4843-9cbf-ae6194ec53cf",
+      "firstName": "Jane",
+      "lastName": "Ooi",
+      "fullName": "Jane Ooi",
+      "bio": "Solution Architect @ AWS",
+      "tagLine": "Solution Architect @ AWS",
+      "profilePicture": "https://sessionize.com/image/e20a-400o400o2-e1061d6b-aea5-4a09-8839-b2e7ceb71d3a.jpg",
+      "sessions": [
+        {
+          "id": 362624,
+          "name": "Data Manifold - Simplified Data Management on AWS"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "ad891e9b-98e7-4062-85f3-9c7f345baf5c",
+      "firstName": "Jenna",
+      "lastName": "Olovcic",
+      "fullName": "Jenna Olovcic",
+      "bio": "Numerous years in AdTech across Agency, Publisher & Vendor, 4 years in End to End Business Intelligence at News Corp and Woolworths, Security Enthusiast and Solutions Architect at Fivetran",
+      "tagLine": "Fivetran, Solutions Architect",
+      "profilePicture": "https://sessionize.com/image/fc04-400o400o2-f9VXXWyRPehWGzJeztANhL.jpg",
+      "sessions": [
+        {
+          "id": 363257,
+          "name": "Data Security for Data Engineers"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "5b2d91c2-17cc-4f23-a1e4-df2989eb9a71",
+      "firstName": "Karen",
+      "lastName": "Davis",
+      "fullName": "Karen Davis",
+      "bio": "Karen is a Principal Data Engineer at Thoughtworks. Her background is software engineering, data engineering and machine learning. While at Thoughtworks she has worked with numerous clients building large scale data platforms. She is passionate about all things data and is especially interested in data architecture and ways to apply software engineering best practices to data and machine learning.",
+      "tagLine": "Principal Data Engineer @ ThoughtWorks",
+      "profilePicture": "https://sessionize.com/image/d741-400o400o2-c2-17cc-4f23-a1e4-df2989eb9a71.49b04bf1-8249-4659-ab68-bfb930cd5443.jpg",
+      "sessions": [
+        {
+          "id": 363313,
+          "name": "Data replication patterns 101"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "328c297b-cef9-428d-8452-c5b015d09967",
+      "firstName": "Lalit",
+      "lastName": "Pant",
+      "fullName": "Lalit Pant",
+      "bio": "Lalit is a Staff Engineer in Data & Analytics R&D team at Commonwealth Bank of Australia. In his current role, Lalit experiments with, develops prototypes and informs next set of decisions on many emerging problem spaces in the bank; from customer data privacy to secure data exchange with partners and cloud collaborative analytics & apps. He has 14 years experience as a data & systems engineer, leading engineering teams across geographies. \r\nHe is passionate about delivering value to customer through data & analytics. Besides work, Lalit is inching towards completing a Masters in Computer Science from Georgia Tech.",
+      "tagLine": "Staff Engineer, Data Analytics R&D, Commonwealth Bank of Australia",
+      "profilePicture": "https://sessionize.com/image/2733-400o400o2-JtsxZ4xxLG7bJAMYeZbTvw.jpg",
+      "sessions": [
+        {
+          "id": 363283,
+          "name": "Data Privacy Engineering to power Responsible Enterprise AI"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "ea4e794f-a166-4bc4-8a34-07e70dcb0196",
+      "firstName": "Lizzie",
+      "lastName": "Reid",
+      "fullName": "Lizzie Reid",
+      "bio": "Lizzie is a Senior Data Engineer at Kasna, where she builds solutions using Google Cloud technology to help customers harness the power of their data. She volunteers for The Good Data Institute to build data capabilities within NFP organisations so they can increase their impact.",
+      "tagLine": "Senior Data Engineer at Kasna & Fellow at The Good Data Institute",
+      "profilePicture": "https://sessionize.com/image/0db0-400o400o2-DuHEVudVnED1i8c8b1bfpA.jpg",
+      "sessions": [
+        {
+          "id": 363312,
+          "name": "Data Engineering for Social Good"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "8f2f01ec-4972-49fe-a204-8f226fa209cb",
+      "firstName": "Ned",
+      "lastName": "Letcher",
+      "fullName": "Ned Letcher",
+      "bio": "Ned is a data scientist and engineer at ThoughtWorks, where he helps organisations manage and gain value from their data.",
+      "tagLine": "Data specialist at ThoughtWorks",
+      "profilePicture": "https://sessionize.com/image/829d-400o400o2-ec-4972-49fe-a204-8f226fa209cb.b72e68b3-91e7-46d2-8291-916fe7f0b5ba.jpg",
+      "sessions": [
+        {
+          "id": 363244,
+          "name": "Data Poker not Data Chess - thinking in Bets for Data Teams"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "c3df4dfc-6b55-4eeb-8c88-172584700a76",
+      "firstName": "Nigel",
+      "lastName": "Dalton",
+      "fullName": "Nigel Dalton",
+      "bio": "In a technosocial era, Nigel combines his skills as social scientist, writer, business consultant, podcaster, conference host and presenter to thread together new views of our world.",
+      "tagLine": "Social Scientist, Thoughtworks",
+      "profilePicture": "https://sessionize.com/image/9a00-400o400o2-e2f4c359-6755-42a0-8028-5f89bf68fccf.jpg",
+      "sessions": [
+        {
+          "id": 363244,
+          "name": "Data Poker not Data Chess - thinking in Bets for Data Teams"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "40a23d61-be96-4367-8bc9-37dd39b793f5",
+      "firstName": "Thiago",
+      "lastName": "Baldim",
+      "fullName": "Thiago Baldim",
+      "bio": "Data Engineer since 2015, experience with Banking, Investments, Telco and SaaS.",
+      "tagLine": "Senior Data Engineer at SafetyCulture",
+      "profilePicture": "https://sessionize.com/image/df27-400o400o2-avw4L2Se1B4bvctSZ4GE43.png",
+      "sessions": [
+        {
+          "id": 353187,
+          "name": "Data Incidents - When things goes wrong"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "83598392-ed1b-4375-936f-5520dcfd7291",
+      "firstName": "Timothy",
+      "lastName": "Downs",
+      "fullName": "Timothy Downs",
+      "bio": "Pushing strings since 1990. SA @ AWS since 2020.",
+      "tagLine": "Solution Architect @ AWS",
+      "profilePicture": "https://sessionize.com/image/c827-400o400o2-RCLBFJjHU29ys2p5WNQf9e.jpg",
+      "sessions": [
+        {
+          "id": 362624,
+          "name": "Data Manifold - Simplified Data Management on AWS"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "f5b51983-23b9-429b-8e86-aff4c630a423",
+      "firstName": "Vikas",
+      "lastName": "Rajput",
+      "fullName": "Vikas Rajput",
+      "bio": "Speaks Data, Architecture, Automation.  \r\nService-leadership and Fail-fast believer. ",
+      "tagLine": "Tinkler at heart. Principal (Data/AI) Engineer @ Microsoft.",
+      "profilePicture": "https://sessionize.com/image/b8ed-400o400o2-Tw6CmeU4Wr8f53edZW8iwL.jpg",
+      "sessions": [
+        {
+          "id": 357656,
+          "name": "Well-Architecture Framework for Machine Learning"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "e4a87ff3-7c55-4f76-a24e-48c7c4bda4bd",
+      "firstName": "Vinoaj",
+      "lastName": "Vijeyakumaar",
+      "fullName": "Vinoaj Vijeyakumaar",
+      "bio": "Vinny is a Senior Solutions Architect at Databricks, where he consults with businesses big & small on maximising value from their data. Vinny has been in the data space for 15+ years. His data experience has taken him from scaling MySQL databases for startups, driving Google Analytics adoption in Southeast Asia, running analytics consultancies, being a smart analytics specialist at Google Cloud, and now building out Lakehouses with Databricks. Come say hi, as Vinny is always up for a chat on how to make data & ML as effortless as possible!",
+      "tagLine": "Senior Solutions Architect, Databricks",
+      "profilePicture": "https://sessionize.com/image/a1de-400o400o2-DNgNbeafFt4o7f149VoGbG.jpg",
+      "sessions": [
+        {
+          "id": 363332,
+          "name": "Delta Lake: Turn your Data Lake into a Lakehouse"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "e96010a2-e660-4eb1-acf7-b2dcaeb6522f",
+      "firstName": "Xinwei",
+      "lastName": "Jiang",
+      "fullName": "Xinwei Jiang",
+      "bio": "I am data engineer working in the Afterpay Data engineering and governance team. I did my master from ANU specialising in data processing and AI. I have been work for Afterpay for the last 2 years. I live in Melbourne and enjoy hiking and boxing to keep myself fit. ",
+      "tagLine": "Data engineer, Afterpay (Block)",
+      "profilePicture": "https://sessionize.com/image/47dc-400o400o2-YGX5Q1WDCTm4TXmQM8rsd8.jpg",
+      "sessions": [
+        {
+          "id": 362261,
+          "name": "Metadata driven framework for data discovery and data quality"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "1aa17ca9-c570-453e-8039-492ef552cdef",
+      "firstName": "Xuanyi",
+      "lastName": "Chew",
+      "fullName": "Xuanyi Chew",
+      "bio": "Xuanyi is a data scientist by day, explorer of various notions of intelligences and entropy by night. Feel free to nerdsnipe him in his areas of interests: ranging from programming language theory to artificial intelligence in the computer sciences; linguistics - computational and traditional; neuroscience and cognition; information theory and entropy; explanations of theories and causality, maths puzzles and many more. He enjoys tinkering and making his thoughts a reality. ",
+      "tagLine": "Human. Enthusiast of intelligences. ",
+      "profilePicture": "https://sessionize.com/image/201b-400o400o2-ngMf8xcHquHUBBwWJRC8zC.jpg",
+      "sessions": [
+        {
+          "id": 362633,
+          "name": "Change the way you write. Change the way you think."
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "be31cb9f-ba18-4428-aadf-821d2d2821d8",
+      "firstName": "Zachary",
+      "lastName": "Zeus",
+      "fullName": "Zachary Zeus",
+      "bio": "Zach has more than 20 years of experience delivering data driven programs of work. He was originally trained as an engineer and approaches technology with a robust and systematic mindset. He has an MBA from NYU where he studied Finance, Entrepreneurship and Management. Zach’s unique balance of technical capability, strategic vision, and commercial sensibility make him an exceptionally fit leader in today’s digital landscape. He co-owns BizCubed with his wife Rebecca, with whom he has 4 children.",
+      "tagLine": "Engineer, Father, CEO of BizCubed",
+      "profilePicture": "https://sessionize.com/image/871c-400o400o2-EPSRs65iJpCqNbpegTqJs5.jpg",
+      "sessions": [
+        {
+          "id": 363280,
+          "name": "Engineering Trust in Data"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "e34e2722-02d0-471e-87f1-afd67d050e92",
+      "firstName": "Zainab",
+      "lastName": "Maleki",
+      "fullName": "Zainab Maleki",
+      "bio": "As a full-stack developer and principal DevOps/ Data engineer at Mechanical Rock, Australia's leading cloud native consultancy, Zainab works with progressive tools and practices like serverless technologies and infrastructure-as-code. Cloud native data platforms are her current passion, and she is fast becoming one of Western Australia's leading practitioners. A regular conference presenter, AWS Community Hero and 2020 WiTWA Tech [+] 20 Award winner, Zainab is also passionate about teaching young people the joys of mobile app development.",
+      "tagLine": "AWS Community Hero | Principal Consultant at Mechanical Rock | DevOps, Data and Serverless Enthusiast",
+      "profilePicture": "https://sessionize.com/image/5eee-400o400o2-wm3k5ndcmZaMT92eNKMvS9.jpg",
+      "sessions": [
+        {
+          "id": 359919,
+          "name": "Bringing Software Engineering Rigour to Data"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    },
+    {
+      "id": "2ae15249-123f-4d1e-9492-79e5a549f50c",
+      "firstName": "Zeph",
+      "lastName": "Yap",
+      "fullName": "Zeph Yap",
+      "bio": "For the past two years, Zeph has been helping the AI Model Systems team at Nearmap develop tools to improve the model-training process, with a focus on improving the quality of the training data. Besides the ontology system, Zeph has also created a verification module which tracks the quality of the labels entering the training dataset. He speaks three languages with a goal of eventually getting to nine.",
+      "tagLine": "Machine Learning Engineer, Nearmap",
+      "profilePicture": "https://sessionize.com/image/6a75-400o400o2-DfsKRCab36bYDaUUR2zFkH.jpg",
+      "sessions": [
+        {
+          "id": 360256,
+          "name": "Building a Scalable, Reproducible Ontology System to Improve Deep Learning Data"
+        }
+      ],
+      "isTopSpeaker": false,
+      "links": [],
+      "questionAnswers": [],
+      "categories": []
+    }
+  ]
 
 function ImageClipPaths({ id, ...props }) {
   return (
