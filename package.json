@@ -49,6 +49,7 @@
     "autoprefixer": "^10.4.7",
     "aws-amplify": "^4.3.24",
     "axios": "^0.27.2",
+    "clsx": "^1.2.1",
     "encoding": "^0.1.13",
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
