@@ -46,7 +46,8 @@ const project = new web.NextJsProject({
     'mapbox-gl',
     'axios',
     'react-canvas-confetti',
-    'react-player'
+    'react-player',
+    'clsx'
   ],                                                                             /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',
