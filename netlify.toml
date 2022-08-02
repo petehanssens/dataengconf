@@ -12,10 +12,10 @@ package = 'netlify-plugin-contextual-env'
   package = "@netlify/plugin-nextjs"
 
 [context.production]
-  environment = { NODE_VERSION = "16" }
+  environment = { NODE_VERSION = "18" }
 
 [context.deploy-preview]
-  environment = { NODE_VERSION = "16" }
+  environment = { NODE_VERSION = "18" }
 
 [context.branch-deploy]
-  environment = { NODE_VERSION = "16" }
+  environment = { NODE_VERSION = "18" }
