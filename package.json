@@ -30,7 +30,7 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.8.0",
     "netlify-plugin-contextual-env": "^0.3.0",
-    "npm-check-updates": "^12",
+    "npm-check-updates": "^16.0.5",
     "projen": "^0.58.1",
     "standard-version": "^9"
   },
