@@ -9,72 +9,351 @@ const schedule = [
     date: 'September 27th',
     dateTime: '2022-09-27',
     summary:
-      'The first day of the conference is focused on dark patterns for ecommerce.',
+      'DataEngBytes 2022, Melbourne',
     timeSlots: [
       {
-        name: 'Steven McHail',
-        description: 'Not so one-time payments',
+        name: 'Welcome',
+        description: 'House-keeping | Welcome to Country | Agenda | Socials',
         start: '9:00AM',
-        end: '10:00AM',
+        end: '09:10AM',
       },
       {
-        name: 'Jaquelin Isch',
-        description: 'The finer print',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Speaker Melbourne 1',
+        description: '45 Minutes - Keynote',
+        start: '09:10AM',
+        end: '09:55AM',
+      },
+      {
+        name: 'Speaker Melbourne 2',
+        description: '35 Minutes - Keynote',
+        start: '09:55AM',
+        end: '10:30AM',
+      },
+      {
+        name: 'Speaker Melbourne 3',
+        description: '35 Minutes - Keynote',
+        start: '10:30AM',
+        end: '11:05AM',
+      },
+      {
+        name: 'Morning Break',
+        description: '20 Minutes',
+        start: '11:05AM',
+        end: '11:25AM',
+      },
+      {
+        name: 'Speaker Melbourne 4',
+        description: '35 Minutes - Keynote',
+        start: '11:25',
+        end: '12:00',
+      },
+      {
+        name: 'Speaker Melbourne 5',
+        description: '35 Minutes - Keynote',
+        start: '12:00',
+        end: '12:35',
+      },
+      {
+        name: 'Speaker Melbourne 6',
+        description: '35 Minutes - Keynote',
+        start: '12:35',
+        end: '13:10',
+      },
+      {
+        name: 'Lunch',
+        description: '40 Minutes',
+        start: '13:10',
+        end: '13:50',
+      },
+      {
+        name: 'Speaker Melbourne 7',
+        description: '20 Minutes - Mini Keynote',
+        start: '13:50',
+        end: '14:10AM',
+      },
+      {
+        name: 'Speaker Melbourne 8',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:10',
+        end: '14:30',
+      },
+      {
+        name: 'Speaker Melbourne 9',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:30',
+        end: '14:50',
+      },
+      {
+        name: 'Speaker Melbourne 10',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:50',
+        end: '15:10',
+      },
+      {
+        name: 'Afternoon Break',
+        description: '20 Minutes',
+        start: '15:10AM',
+        end: '15:30',
+      },
+      {
+        name: 'Speaker Melbourne 11',
+        description: '20 Minutes - Mini Keynote',
+        start: '15:30',
+        end: '15:50',
+      },
+      {
+        name: 'Speaker Melbourne 12',
+        description: '35 Minutes - Keynote',
+        start: '15:50',
+        end: '16:25',
+      },
+      {
+        name: 'Panel Discussion',
+        description: '40 Minutes',
+        start: '16:25',
+        end: '17:05',
+      },
+      {
+        name: 'Thanks',
+        description: '10 Minutes - Wrap Up',
+        start: '17:05',
+        end: '17:15',
       }
+      
     ],
   },
   {
     date: 'September 28th',
     dateTime: '2022-09-28',
     summary:
-      'Next we spend the day talking about deceiving people with technology.',
+      'DataEngBytes 2022, Melbourne',
     timeSlots: [
       {
-        name: 'Damaris Kimura',
-        description: 'The invisible card reader',
+        name: 'Welcome',
+        description: 'House-keeping | Welcome to Country | Agenda | Socials',
         start: '9:00AM',
-        end: '10:00AM',
+        end: '09:10AM',
       },
       {
-        name: 'Ibrahim Frasch',
-        description: 'Stealing fingerprints',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Speaker Melbourne 1',
+        description: '45 Minutes - Keynote',
+        start: '09:10AM',
+        end: '09:55AM',
       },
       {
-        name: 'Cathlene Burrage',
-        description: 'Voting machines',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Speaker Melbourne 2',
+        description: '35 Minutes - Keynote',
+        start: '09:55AM',
+        end: '10:30AM',
+      },
+      {
+        name: 'Speaker Melbourne 3',
+        description: '35 Minutes - Keynote',
+        start: '10:30AM',
+        end: '11:05AM',
+      },
+      {
+        name: 'Morning Break',
+        description: '20 Minutes',
+        start: '11:05AM',
+        end: '11:25AM',
+      },
+      {
+        name: 'Speaker Melbourne 4',
+        description: '35 Minutes - Keynote',
+        start: '11:25',
+        end: '12:00',
+      },
+      {
+        name: 'Speaker Melbourne 5',
+        description: '35 Minutes - Keynote',
+        start: '12:00',
+        end: '12:35',
+      },
+      {
+        name: 'Speaker Melbourne 6',
+        description: '35 Minutes - Keynote',
+        start: '12:35',
+        end: '13:10',
+      },
+      {
+        name: 'Lunch',
+        description: '40 Minutes',
+        start: '13:10',
+        end: '13:50',
+      },
+      {
+        name: 'Speaker Melbourne 7',
+        description: '20 Minutes - Mini Keynote',
+        start: '13:50',
+        end: '14:10AM',
+      },
+      {
+        name: 'Speaker Melbourne 8',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:10',
+        end: '14:30',
+      },
+      {
+        name: 'Speaker Melbourne 9',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:30',
+        end: '14:50',
+      },
+      {
+        name: 'Speaker Melbourne 10',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:50',
+        end: '15:10',
+      },
+      {
+        name: 'Afternoon Break',
+        description: '20 Minutes',
+        start: '15:10AM',
+        end: '15:30',
+      },
+      {
+        name: 'Speaker Melbourne 11',
+        description: '20 Minutes - Mini Keynote',
+        start: '15:30',
+        end: '15:50',
+      },
+      {
+        name: 'Speaker Melbourne 12',
+        description: '35 Minutes - Keynote',
+        start: '15:50',
+        end: '16:25',
+      },
+      {
+        name: 'Panel Discussion',
+        description: '40 Minutes',
+        start: '16:25',
+        end: '17:05',
+      },
+      {
+        name: 'Thanks',
+        description: '10 Minutes - Wrap Up',
+        start: '17:05',
+        end: '17:15',
       }
+      
     ],
   },
   {
     date: 'September 29th',
     dateTime: '2022-09-29',
     summary:
-      'We close out the event previewing new techniques that are still in development.',
+      'DataEngBytes 2022, Sydney',
     timeSlots: [
       {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
+        name: 'Welcome',
+        description: 'House-keeping | Welcome to Country | Agenda | Socials',
         start: '9:00AM',
-        end: '10:00AM',
+        end: '09:10AM',
       },
       {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: 'Speaker Sydney 1',
+        description: '45 Minutes - Keynote',
+        start: '09:10AM',
+        end: '09:55AM',
       },
       {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Speaker Sydney 2',
+        description: '35 Minutes - Keynote',
+        start: '09:55AM',
+        end: '10:30AM',
+      },
+      {
+        name: 'Speaker Sydney 3',
+        description: '35 Minutes - Keynote',
+        start: '10:30AM',
+        end: '11:05AM',
+      },
+      {
+        name: 'Morning Break',
+        description: '20 Minutes',
+        start: '11:05AM',
+        end: '11:25AM',
+      },
+      {
+        name: 'Speaker Sydney 4',
+        description: '35 Minutes - Keynote',
+        start: '11:25',
+        end: '12:00',
+      },
+      {
+        name: 'Speaker Sydney 5',
+        description: '35 Minutes - Keynote',
+        start: '12:00',
+        end: '12:35',
+      },
+      {
+        name: 'Speaker Sydney 6',
+        description: '35 Minutes - Keynote',
+        start: '12:35',
+        end: '13:10',
+      },
+      {
+        name: 'Lunch',
+        description: '40 Minutes',
+        start: '13:10',
+        end: '13:50',
+      },
+      {
+        name: 'Speaker Sydney 7',
+        description: '20 Minutes - Mini Keynote',
+        start: '13:50',
+        end: '14:10AM',
+      },
+      {
+        name: 'Speaker Sydney 8',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:10',
+        end: '14:30',
+      },
+      {
+        name: 'Speaker Sydney 9',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:30',
+        end: '14:50',
+      },
+      {
+        name: 'Speaker Sydney 10',
+        description: '20 Minutes - Mini Keynote',
+        start: '14:50',
+        end: '15:10',
+      },
+      {
+        name: 'Afternoon Break',
+        description: '20 Minutes',
+        start: '15:10AM',
+        end: '15:30',
+      },
+      {
+        name: 'Speaker Sydney 11',
+        description: '20 Minutes - Mini Keynote',
+        start: '15:30',
+        end: '15:50',
+      },
+      {
+        name: 'Speaker Sydney 12',
+        description: '35 Minutes - Keynote',
+        start: '15:50',
+        end: '16:25',
+      },
+      {
+        name: 'Panel Discussion',
+        description: '40 Minutes',
+        start: '16:25',
+        end: '17:05',
+      },
+      {
+        name: 'Thanks',
+        description: '10 Minutes - Wrap Up',
+        start: '17:05',
+        end: '17:15',
       }
+      
     ],
   },
 ]
@@ -231,13 +510,12 @@ export default function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+            Our three day schedule is jam-packed with brilliant, creative, innovative
+            geniuses in the field of Data Engineering.
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+            The smartest people in our industry giving the best talks you’ve ever
+            seen. Grab your tickets today to get to hear from these pioneers
           </p>
         </div>
       </Container>
