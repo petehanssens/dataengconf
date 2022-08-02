@@ -79,6 +79,10 @@
       "type": "runtime"
     },
     {
+      "name": "clsx",
+      "type": "runtime"
+    },
+    {
       "name": "encoding",
       "type": "runtime"
     },
