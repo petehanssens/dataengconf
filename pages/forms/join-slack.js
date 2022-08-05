@@ -57,7 +57,7 @@ function SpeakingForm() {
     });
   }, [makeShot]);
     
-    let hackAPIGW = process.env.DATAENGAU_API_GW + '/speaker';
+    let hackAPIGW = process.env.DATAENGAU_API_GW + '/slack';
     const [formStatus, setFormStatus] = useState(false);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
@@ -115,123 +115,134 @@ function SpeakingForm() {
                     placeholder="What is your LinkedIn Profile" />
                   <label className="sr-only">LinkedIn Profile</label>
 
-                  <label>What warehouse do you use</label>
+                  <fieldset>
+                  <label>What warehouse do you use</label><br/>
                   <label for="redshift">
-                  <input type="checkbox" id="redshift" name="redshift" value="yes"/> Redshift 
-                  </label>
+                  <input type="checkbox" id="redshift" name="warehouse" value="redshift"/> Redshift 
+                  </label> <br/>
                   <label for="snowflake">
-                  <input type="checkbox" id="snowflake" name="snowflake" value="yes"/> Snowflake 
-                  </label> 
+                  <input type="checkbox" id="snowflake" name="warehouse" value="snowflake"/> Snowflake 
+                  </label> <br/>
                   <label for="s3">
-                  <input type="checkbox" id="s3" name="s3" value="yes"/> S3 
-                  </label>
+                  <input type="checkbox" id="s3" name="warehouse" value="s3"/> S3 
+                  </label><br/>
                   <label for="emr">
-                  <input type="checkbox" id="emr" name="emr" value="yes"/> EMR 
-                  </label>
+                  <input type="checkbox" id="emr" name="warehouse" value="emr"/> EMR 
+                  </label><br/>
                   <label for="big_query">
-                  <input type="checkbox" id="big_query" name="big_query" value="yes"/> Big Query 
-                  </label>
+                  <input type="checkbox" id="big_query" name="warehouse" value="big_query"/> Big Query 
+                  </label><br/>
                   <label for="azure_data_warehouse">
-                  <input type="checkbox" id="azure_data_warehouse" name="azure_data_warehouse" value="yes"/> Azure Data Warehouse
-                  </label>
+                  <input type="checkbox" id="azure_data_warehouse" name="warehouse" value="azure_data_warehouse"/> Azure Data Warehouse
+                  </label><br/>
                   <label for="other">
-                  <input type="checkbox" id="other" name="other" value="yes"/> Other 
-                  </label>
-
-                  <label>What languages you use to do data engineering</label>
+                  <input type="checkbox" id="other" name="warehouse" value="other"/> Other 
+                  </label><br/>
+                  </fieldset>
+                  
+                  <fieldset>
+                  <label>What languages you use to do data engineering</label><br/>
                   <label for="python">
-                  <input type="checkbox" id="python" name="python" value="yes"/> Python 
-                  </label>
+                  <input type="checkbox" id="python" name="languages" value="python"/> Python 
+                  </label><br/>
                   <label for="scala">
-                  <input type="checkbox" id="scala" name="scala" value="yes"/> Scala 
-                  </label>
+                  <input type="checkbox" id="scala" name="languages" value="scala"/> Scala 
+                  </label><br/>
                   <label for="java">
-                  <input type="checkbox" id="java" name="java" value="yes"/> Java 
-                  </label>
+                  <input type="checkbox" id="java" name="languages" value="java"/> Java 
+                  </label><br/>
                   <label for="go">
-                  <input type="checkbox" id="go" name="go" value="yes"/> Go 
-                  </label>
+                  <input type="checkbox" id="go" name="languages" value="go"/> Go 
+                  </label><br/>
                   <label for="node.js">
-                  <input type="checkbox" id="node.js" name="node.js" value="yes"/> Node.js 
-                  </label>
+                  <input type="checkbox" id="node.js" name="languages" value="node.js"/> Node.js 
+                  </label><br/>
                   <label for="r">
-                  <input type="checkbox" id="r" name="r" value="yes"/> R 
-                  </label>
+                  <input type="checkbox" id="r" name="languages" value="r"/> R 
+                  </label><br/>
                   <label for="other">
-                  <input type="checkbox" id="other" name="other" value="yes"/> Other 
-                  </label>
+                  <input type="checkbox" id="other" name="languages" value="other"/> Other 
+                  </label><br/>
+                  </fieldset>
 
-                  <label>What frameworks do you use to do data engineering?</label>
+                  <fieldset>
+                  <label>What frameworks do you use to do data engineering?</label><br/>
                   <label for="airflow">
-                  <input type="checkbox" id="airflow" name="airflow" value="yes"/> Airflow 
-                  </label>
+                  <input type="checkbox" id="airflow" name="frameworks" value="airflow"/> Airflow 
+                  </label><br/>
                   <label for="luigi">
-                  <input type="checkbox" id="luigi" name="luigi" value="yes"/> Luigi 
-                  </label>
+                  <input type="checkbox" id="luigi" name="frameworks" value="luigi"/> Luigi 
+                  </label><br/>
                   <label for="spark">
-                  <input type="checkbox" id="spark" name="spark" value="yes"/> Spark 
-                  </label>
+                  <input type="checkbox" id="spark" name="frameworks" value="spark"/> Spark 
+                  </label><br/>
                   <label for="dbt">
-                  <input type="checkbox" id="dbt" name="dbt" value="yes"/> dbt 
-                  </label>
+                  <input type="checkbox" id="dbt" name="frameworks" value="dbt"/> dbt 
+                  </label><br/>
                   <label for="kafka">
-                  <input type="checkbox" id="kafka" name="kafka" value="yes"/> Kafka 
-                  </label>
+                  <input type="checkbox" id="kafka" name="frameworks" value="kafka"/> Kafka 
+                  </label><br/>
                   <label for="other">
-                  <input type="checkbox" id="other" name="other" value="yes"/> Other 
-                  </label>
+                  <input type="checkbox" id="other" name="frameworks" value="other"/> Other 
+                  </label><br/>
+                  </fieldset>
 
-                  <label>What clouds do you use</label>
+                  <fieldset>
+                  <label>What clouds do you use</label><br/>
                   <label for="aws">
-                  <input type="checkbox" id="aws" name="aws" value="yes"/> AWS 
-                  </label>
+                  <input type="checkbox" id="aws" name="clouds" value="aws"/> AWS 
+                  </label><br/>
                   <label for="gcp">
-                  <input type="checkbox" id="gcp" name="gcp" value="yes"/> GCP 
-                  </label>
+                  <input type="checkbox" id="gcp" name="clouds" value="gcp"/> GCP 
+                  </label><br/>
                   <label for="azure">
-                  <input type="checkbox" id="azure" name="azure" value="yes"/> Azure 
-                  </label>
+                  <input type="checkbox" id="azure" name="clouds" value="azure"/> Azure 
+                  </label><br/>
                   <label for="oracle">
-                  <input type="checkbox" id="oracle" name="oracle" value="yes"/> Oracle 
-                  </label>
+                  <input type="checkbox" id="oracle" name="clouds" value="oracle"/> Oracle 
+                  </label><br/>
                   <label for="alicloud">
-                  <input type="checkbox" id="alicloud" name="alicloud" value="yes"/> AliCloud 
-                  </label>
+                  <input type="checkbox" id="alicloud" name="clouds" value="alicloud"/> AliCloud 
+                  </label><br/>
                   <label for="onprem">
-                  <input type="checkbox" id="onprem" name="onprem" value="yes"/> On Prem 
-                  </label>
+                  <input type="checkbox" id="onprem" name="clouds" value="onprem"/> On Prem 
+                  </label><br/>
                   <label for="other">
-                  <input type="checkbox" id="other" name="other" value="yes"/> Other 
-                  </label>
+                  <input type="checkbox" id="other" name="clouds" value="other"/> Other 
+                  </label><br/>
+                  </fieldset>
 
-                  <label>What vendors do you use</label>
+                  <fieldset>
+                  <label>What vendors do you use</label><br/>
                   <label for="confluent">
-                  <input type="checkbox" id="confluent" name="confluent" value="yes"/> Confluent 
-                  </label>
+                  <input type="checkbox" id="confluent" name="vendors" value="confluent"/> Confluent 
+                  </label><br/>
                   <label for="databricks">
-                  <input type="checkbox" id="databricks" name="databricks" value="yes"/> Databricks 
-                  </label>
+                  <input type="checkbox" id="databricks" name="vendors" value="databricks"/> Databricks 
+                  </label><br/>
                   <label for="fivetran">
-                  <input type="checkbox" id="fivetran" name="fivetran" value="yes"/> fivetran 
-                  </label>
+                  <input type="checkbox" id="fivetran" name="vendors" value="fivetran"/> fivetran 
+                  </label><br/>
                   <label for="matillion">
-                  <input type="checkbox" id="matillion" name="matillion" value="yes"/> Matillion 
-                  </label>
+                  <input type="checkbox" id="matillion" name="vendors" value="matillion"/> Matillion 
+                  </label><br/>
                   <label for="cloudera">
-                  <input type="checkbox" id="cloudera" name="cloudera" value="yes"/> cloudera 
-                  </label>
+                  <input type="checkbox" id="cloudera" name="vendors" value="cloudera"/> cloudera 
+                  </label><br/>
                   <label for="mapr">
-                  <input type="checkbox" id="mapr" name="mapr" value="yes"/> Mapr 
-                  </label>
+                  <input type="checkbox" id="mapr" name="vendors" value="mapr"/> Mapr 
+                  </label><br/>
                   <label for="pentaho">
-                  <input type="checkbox" id="pentaho" name="pentaho" value="yes"/> Pentaho 
-                  </label>
+                  <input type="checkbox" id="pentaho" name="vendors" value="pentaho"/> Pentaho 
+                  </label><br/>
                   <label for="talend">
-                  <input type="checkbox" id="talend" name="talend" value="yes"/> Talend 
-                  </label>
+                  <input type="checkbox" id="talend" name="vendors" value="talend"/> Talend 
+                  </label><br/>
                   <label for="other">
-                  <input type="checkbox" id="other" name="other" value="yes"/> Other 
-                  </label>
+                  <input type="checkbox" id="other" name="vendors" value="other"/> Other 
+                  </label><br/>
+                  </fieldset>
+                  
                   <button type="submit" className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
                     Submit
                   </button>
