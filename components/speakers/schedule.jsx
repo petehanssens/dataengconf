@@ -4,7 +4,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
 
-import { sessions as schedule } from '../../data/2022/allData.json'
+import { grid as schedule } from '../../data/2022/allData.json'
 
 function Container({ className, ...props }) {
   return (
