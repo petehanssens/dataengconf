@@ -117,6 +117,7 @@ function SpeakingForm() {
                     autoComplete="linkedin-profile" 
                     required className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white rounded-md" 
                     placeholder="What is your LinkedIn Profile" />
+
                   <fieldset>
                   <label>What warehouse do you use</label><br/>
                   <input type="checkbox" id="redshift" {...register("warehouse")} name="warehouse" value="redshift"/><label> Redshift</label>
@@ -167,6 +168,7 @@ function SpeakingForm() {
 
                   <fieldset>
                   <label>What frameworks do you use to do data engineering?</label><br/>
+
                   <label>
                   <input type="checkbox" id="airflow" {...register("frameworks")} name="frameworks" value="airflow"/> Airflow 
                   </label><br/>
@@ -189,6 +191,7 @@ function SpeakingForm() {
 
                   <fieldset>
                   <label>What clouds do you use</label><br/>
+
                   <label>
                   <input type="checkbox" id="aws" {...register("clouds")} name="clouds" value="aws"/> AWS 
                   </label><br/>
@@ -214,6 +217,7 @@ function SpeakingForm() {
 
                   <fieldset>
                   <label>What vendors do you use</label><br/>
+
                   <label>
                   <input type="checkbox" id="confluent" {...register("vendors")} name="vendors" value="confluent"/> Confluent 
                   </label><br/>
