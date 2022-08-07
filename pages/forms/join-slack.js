@@ -12,6 +12,9 @@ const canvasStyles = {
   left: 0
 };
 
+const warehouses = ["Redshift", "Snowflake", "S3", "EMR", "Big Query", "Azure Data Warehouse", "Other"]
+const languages = ["Python", ""]
+
 function SpeakingForm() {
   const refAnimationInstance = useRef(null);
 
@@ -61,6 +64,7 @@ function SpeakingForm() {
     const [formStatus, setFormStatus] = useState(false);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
+      console.log(data)
       fire();
        axios
         .post(
@@ -113,133 +117,133 @@ function SpeakingForm() {
                     autoComplete="linkedin-profile" 
                     required className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white rounded-md" 
                     placeholder="What is your LinkedIn Profile" />
-                  <label className="sr-only">LinkedIn Profile</label>
 
                   <fieldset>
                   <label>What warehouse do you use</label><br/>
-                  <label for="redshift">
-                  <input type="checkbox" id="redshift" name="warehouse" value="redshift"/> Redshift 
+                  <input type="checkbox" id="redshift" {...register("warehouse")} name="warehouse" value="redshift"/><label> Redshift</label>
+                  <br/>
+                  <label>
+                  <input type="checkbox" id="snowflake" {...register("warehouse")} name="warehouse" value="snowflake"/> Snowflake 
                   </label> <br/>
-                  <label for="snowflake">
-                  <input type="checkbox" id="snowflake" name="warehouse" value="snowflake"/> Snowflake 
-                  </label> <br/>
-                  <label for="s3">
-                  <input type="checkbox" id="s3" name="warehouse" value="s3"/> S3 
+                  <label>
+                  <input type="checkbox" id="s3" {...register("warehouse")} name="warehouse" value="s3"/> S3 
                   </label><br/>
-                  <label for="emr">
-                  <input type="checkbox" id="emr" name="warehouse" value="emr"/> EMR 
+                  <label>
+                  <input type="checkbox" id="emr" {...register("warehouse")} name="warehouse" value="emr"/> EMR 
                   </label><br/>
-                  <label for="big_query">
-                  <input type="checkbox" id="big_query" name="warehouse" value="big_query"/> Big Query 
+                  <label>
+                  <input type="checkbox" id="big_query" {...register("warehouse")} name="warehouse" value="big_query"/> Big Query 
                   </label><br/>
-                  <label for="azure_data_warehouse">
-                  <input type="checkbox" id="azure_data_warehouse" name="warehouse" value="azure_data_warehouse"/> Azure Data Warehouse
+                  <label>
+                  <input type="checkbox" id="azure_data_warehouse" {...register("warehouse")} name="warehouse" value="azure_data_warehouse"/> Azure Data Warehouse
                   </label><br/>
-                  <label for="other">
-                  <input type="checkbox" id="other" name="warehouse" value="other"/> Other 
+                  <label>
+                  <input type="checkbox" id="other" {...register("warehouse")} name="warehouse" value="other"/> Other 
                   </label><br/>
                   </fieldset>
-                  
                   <fieldset>
                   <label>What languages you use to do data engineering</label><br/>
-                  <label for="python">
-                  <input type="checkbox" id="python" name="languages" value="python"/> Python 
+                  <label>
+                  <input type="checkbox" id="python" {...register("languages")} name="languages" value="python"/> Python 
                   </label><br/>
-                  <label for="scala">
-                  <input type="checkbox" id="scala" name="languages" value="scala"/> Scala 
+                  <label>
+                  <input type="checkbox" id="scala" {...register("languages")} name="languages" value="scala"/> Scala 
                   </label><br/>
-                  <label for="java">
-                  <input type="checkbox" id="java" name="languages" value="java"/> Java 
+                  <label>
+                  <input type="checkbox" id="java" {...register("languages")} name="languages" value="java"/> Java 
                   </label><br/>
-                  <label for="go">
-                  <input type="checkbox" id="go" name="languages" value="go"/> Go 
+                  <label>
+                  <input type="checkbox" id="go" {...register("languages")} name="languages" value="go"/> Go 
                   </label><br/>
-                  <label for="node.js">
-                  <input type="checkbox" id="node.js" name="languages" value="node.js"/> Node.js 
+                  <label>
+                  <input type="checkbox" id="node.js" {...register("languages")} name="languages" value="node.js"/> Node.js 
                   </label><br/>
-                  <label for="r">
-                  <input type="checkbox" id="r" name="languages" value="r"/> R 
+                  <label>
+                  <input type="checkbox" id="r" {...register("languages")} name="languages" value="r"/> R 
                   </label><br/>
-                  <label for="other">
-                  <input type="checkbox" id="other" name="languages" value="other"/> Other 
+                  <label>
+                  <input type="checkbox" id="other" {...register("languages")} name="languages" value="other"/> Other 
                   </label><br/>
                   </fieldset>
 
                   <fieldset>
                   <label>What frameworks do you use to do data engineering?</label><br/>
-                  <label for="airflow">
-                  <input type="checkbox" id="airflow" name="frameworks" value="airflow"/> Airflow 
+
+                  <label>
+                  <input type="checkbox" id="airflow" {...register("frameworks")} name="frameworks" value="airflow"/> Airflow 
                   </label><br/>
-                  <label for="luigi">
-                  <input type="checkbox" id="luigi" name="frameworks" value="luigi"/> Luigi 
+                  <label>
+                  <input type="checkbox" id="luigi" {...register("frameworks")} name="frameworks" value="luigi"/> Luigi 
                   </label><br/>
-                  <label for="spark">
-                  <input type="checkbox" id="spark" name="frameworks" value="spark"/> Spark 
+                  <label>
+                  <input type="checkbox" id="spark" {...register("frameworks")} name="frameworks" value="spark"/> Spark 
                   </label><br/>
-                  <label for="dbt">
-                  <input type="checkbox" id="dbt" name="frameworks" value="dbt"/> dbt 
+                  <label>
+                  <input type="checkbox" id="dbt" {...register("frameworks")} name="frameworks" value="dbt"/> dbt 
                   </label><br/>
-                  <label for="kafka">
-                  <input type="checkbox" id="kafka" name="frameworks" value="kafka"/> Kafka 
+                  <label>
+                  <input type="checkbox" id="kafka" {...register("frameworks")} name="frameworks" value="kafka"/> Kafka 
                   </label><br/>
-                  <label for="other">
-                  <input type="checkbox" id="other" name="frameworks" value="other"/> Other 
+                  <label>
+                  <input type="checkbox" id="other" {...register("frameworks")} name="frameworks" value="other"/> Other 
                   </label><br/>
                   </fieldset>
 
                   <fieldset>
                   <label>What clouds do you use</label><br/>
-                  <label for="aws">
-                  <input type="checkbox" id="aws" name="clouds" value="aws"/> AWS 
+
+                  <label>
+                  <input type="checkbox" id="aws" {...register("clouds")} name="clouds" value="aws"/> AWS 
                   </label><br/>
-                  <label for="gcp">
-                  <input type="checkbox" id="gcp" name="clouds" value="gcp"/> GCP 
+                  <label>
+                  <input type="checkbox" id="gcp" {...register("clouds")} name="clouds" value="gcp"/> GCP 
                   </label><br/>
-                  <label for="azure">
-                  <input type="checkbox" id="azure" name="clouds" value="azure"/> Azure 
+                  <label>
+                  <input type="checkbox" id="azure" {...register("clouds")} name="clouds" value="azure"/> Azure 
                   </label><br/>
-                  <label for="oracle">
-                  <input type="checkbox" id="oracle" name="clouds" value="oracle"/> Oracle 
+                  <label>
+                  <input type="checkbox" id="oracle" {...register("clouds")} name="clouds" value="oracle"/> Oracle 
                   </label><br/>
-                  <label for="alicloud">
-                  <input type="checkbox" id="alicloud" name="clouds" value="alicloud"/> AliCloud 
+                  <label>
+                  <input type="checkbox" id="alicloud" {...register("clouds")} name="clouds" value="alicloud"/> AliCloud 
                   </label><br/>
-                  <label for="onprem">
-                  <input type="checkbox" id="onprem" name="clouds" value="onprem"/> On Prem 
+                  <label>
+                  <input type="checkbox" id="onprem" {...register("clouds")} name="clouds" value="onprem"/> On Prem 
                   </label><br/>
-                  <label for="other">
-                  <input type="checkbox" id="other" name="clouds" value="other"/> Other 
+                  <label>
+                  <input type="checkbox" id="other" {...register("clouds")} name="clouds" value="other"/> Other 
                   </label><br/>
                   </fieldset>
 
                   <fieldset>
                   <label>What vendors do you use</label><br/>
-                  <label for="confluent">
-                  <input type="checkbox" id="confluent" name="vendors" value="confluent"/> Confluent 
+
+                  <label>
+                  <input type="checkbox" id="confluent" {...register("vendors")} name="vendors" value="confluent"/> Confluent 
                   </label><br/>
-                  <label for="databricks">
-                  <input type="checkbox" id="databricks" name="vendors" value="databricks"/> Databricks 
+                  <label>
+                  <input type="checkbox" id="databricks" {...register("vendors")} name="vendors" value="databricks"/> Databricks 
                   </label><br/>
-                  <label for="fivetran">
-                  <input type="checkbox" id="fivetran" name="vendors" value="fivetran"/> fivetran 
+                  <label>
+                  <input type="checkbox" id="fivetran" {...register("vendors")} name="vendors" value="fivetran"/> fivetran 
                   </label><br/>
-                  <label for="matillion">
-                  <input type="checkbox" id="matillion" name="vendors" value="matillion"/> Matillion 
+                  <label>
+                  <input type="checkbox" id="matillion" {...register("vendors")} name="vendors" value="matillion"/> Matillion 
                   </label><br/>
-                  <label for="cloudera">
-                  <input type="checkbox" id="cloudera" name="vendors" value="cloudera"/> cloudera 
+                  <label>
+                  <input type="checkbox" id="cloudera" {...register("vendors")} name="vendors" value="cloudera"/> cloudera 
                   </label><br/>
-                  <label for="mapr">
-                  <input type="checkbox" id="mapr" name="vendors" value="mapr"/> Mapr 
+                  <label>
+                  <input type="checkbox" id="mapr" {...register("vendors")} name="vendors" value="mapr"/> Mapr 
                   </label><br/>
-                  <label for="pentaho">
-                  <input type="checkbox" id="pentaho" name="vendors" value="pentaho"/> Pentaho 
+                  <label>
+                  <input type="checkbox" id="pentaho" {...register("vendors")} name="vendors" value="pentaho"/> Pentaho 
                   </label><br/>
-                  <label for="talend">
-                  <input type="checkbox" id="talend" name="vendors" value="talend"/> Talend 
+                  <label>
+                  <input type="checkbox" id="talend" {...register("vendors")} name="vendors" value="talend"/> Talend 
                   </label><br/>
-                  <label for="other">
-                  <input type="checkbox" id="other" name="vendors" value="other"/> Other 
+                  <label>
+                  <input type="checkbox" id="other" {...register("vendors")} name="vendors" value="other"/> Other 
                   </label><br/>
                   </fieldset>
                   
