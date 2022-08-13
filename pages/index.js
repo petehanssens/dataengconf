@@ -17,13 +17,13 @@ export default function Home() {
         title="Welcome to DataEngBytes!"
         description="A community run Data Engineering conference in Australia and New Zealand"
       />
-      <HomeLayout />
-      <Melbourne />
-      <Sydney />
-      <Stats />
-      <Meetups />
-      <Speakers />
-      <Schedule />
+      {/* <HomeLayout /> */}
+      {/* <Melbourne /> */}
+      {/* <Sydney /> */}
+      {/* <Stats /> */}
+      {/* <Meetups /> */}
+      {/* <Speakers /> */}
+      {/* <Schedule /> */}
       <Logos />
     </>
   )

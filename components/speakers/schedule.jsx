@@ -50,7 +50,7 @@ function ScheduleTabbed() {
         {({ selectedIndex }) =>
           schedule.map((day, dayIndex) => (
             <div
-              key={day.dateTime}
+              key={day.date}
               className={clsx(
                 'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
                 dayIndex !== selectedIndex && 'opacity-70'
@@ -74,7 +74,7 @@ function ScheduleTabbed() {
       <Tab.Panels>
         {schedule.map((day) => (
           <Tab.Panel
-            key={day.dateTime}
+            key={day.date}
             className="[&:not(:focus-visible)]:focus:outline-none"
           >
             <TimeSlots day={day} />
@@ -89,7 +89,7 @@ function DaySummary({ day }) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
-        <time dateTime={day.dateTime}>{day.date}</time>
+        <time dateTime={day.date}>{new Date(day.date).toDateString()}</time>
       </h3>
       <p className="mt-1.5 text-base tracking-tight text-blue-900">
         {day.summary}
@@ -107,29 +107,29 @@ function TimeSlots({ day, className }) {
         'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
       )}
     >
-      {day.timeSlots.map((timeSlot, timeSlotIndex) => (
+      {day.rooms[0].sessions.map((timeSlot, timeSlotIndex) => (
         <li
-          key={timeSlot.start}
-          aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} AEST`}
+          key={timeSlot.startsAt}
+          aria-label={`${timeSlot.speakers[0]?.name} talking about ${timeSlot.title} at ${timeSlot.startsAt} - ${timeSlot.endsAt} AEST`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
           <h4 className="text-lg font-semibold tracking-tight text-blue-900">
-            {timeSlot.name}
+            {timeSlot.speakers[0]?.name}
           </h4>
-          {timeSlot.description && (
+          {timeSlot.title && (
             <p className="mt-1 tracking-tight text-blue-900">
-              {timeSlot.description}
+              {timeSlot.title}
             </p>
           )}
           <p className="mt-1 font-mono text-sm text-slate-500">
-            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
-              {timeSlot.start}
+            <time dateTime={`${day.date}T${timeSlot.startsAt}-08:00`}>
+              {new Date(timeSlot.startsAt).toLocaleTimeString()}
             </time>{' '}
             -{' '}
-            <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
-              {timeSlot.end}
+            <time dateTime={`${day.date}T${timeSlot.endsAt}-08:00`}>
+              {new Date(timeSlot.endsAt).toLocaleTimeString()}
             </time>{' '}
             AEST
           </p>
