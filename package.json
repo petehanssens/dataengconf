@@ -30,15 +30,15 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.8.0",
     "netlify-plugin-contextual-env": "^0.3.0",
-    "npm-check-updates": "^15",
+    "npm-check-updates": "^12",
     "projen": "^0.58.1",
     "standard-version": "^9"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "*",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "*",
+    "@fortawesome/free-solid-svg-icons": "*",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@headlessui/react": "*",
     "@heroicons/react": "^1.0.6",
