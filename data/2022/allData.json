@@ -1,0 +1,1039 @@
+{
+  "sessions": [
+    {
+      "id": "359919",
+      "title": "Bringing Software Engineering Rigour to Data",
+      "description": "As a consultant with a software background, I get to see a lot of gaps in the data engineering world. The gap of maturity between the data and software communities in engineering rigour is the most prominent one.  \r\n\r\nIn software engineering, we have learnt that building robust and stable applications has a direct correlation with overall organisation performance as outlined in the industry leading Accelerate State of DevOps research by DevOps Research and Assessment (DORA). This is achieved through practices like infrastructure-as-code for deployments, automated testing, application observability, and end-to-end application lifecycle ownership. \r\n\r\nAlthough the data community is scratching the surfaces of possibility and striving to incorporate the core concepts, it is far from reaching its full potential.\r\n\r\nIn this talk, I will go through ways to leverage software engineering good practices into data engineering and demonstrate how measuring key performance metrics could help build more robust and reliable data pipelines.",
+      "startsAt": "2022-09-27T09:55:00",
+      "endsAt": "2022-09-27T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "e34e2722-02d0-471e-87f1-afd67d050e92"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363244",
+      "title": "Data Poker not Data Chess - thinking in Bets for Data Teams",
+      "description": "Data science and machine learning are deep into their business hype cycle - in 2023, every CEO wants to be “data-driven” in their strategy. As data practitioners, we are regularly relied upon to contribute to key strategic decisions:\r\n\r\n- Will this dataset support an ML use-case we think our customers want?\r\n- Do we need a streaming architecture? \r\n- Should we self-host Spark, or go with a vendor-managed service?\r\n- Is it worth uplifting our simple ML model to use a shiny deep learning technique?\r\n- When should we embed our data analysts and scientists in cross functional teams vs locating them in an enabling team that provides org-wide support?\r\n- Are there even times it just isn’t appropriate to apply data science thinking?\r\n\r\nGet enough of these decisions right, and you will be on the road to enabling your teams to build high-performing data products, and share valuable insights across your organisation. Get them wrong, and you will start to see a pattern of data-dependent projects under-delivering, gain a reputation for spending like drunken (data) sailors, experience runaway total cost-of-ownership, and face ongoing challenges unlocking the value of your organisation’s data. \r\n\r\nIn this talk we will attempt to persuade you that all strategic decisions (including those made by data practitioners) should be thought of as bets, and that decision quality should not be evaluated by outcomes alone, as outcomes of past decisions are determined by a combination of skill & luck. \r\n\r\nWe need to cultivate the ability to differentiate between skill and luck, so that we can make appropriately sized bets that are proportionate with our degree of uncertainty, and so we can push the right feedback from decision outcomes into our learning loops.\r\n\r\nThe DIBBs Framework, popularised by Spotify (based on work by Annie Duke) is a structured process for decomposing strategic decisions into Data, Insight, then Belief, to support appropriately sized Bets. This talk will take you through the framework, and show you ways in which you can use it to make better decisions both within your data teams and at the broader data strategy level of your organisation. A structured approach like DIBBs, acknowledging luck and uncertainty, will likely improve progress towards an organisational North Star over time.",
+      "startsAt": "2022-09-27T10:30:00",
+      "endsAt": "2022-09-27T11:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "8f2f01ec-4972-49fe-a204-8f226fa209cb",
+        "c3df4dfc-6b55-4eeb-8c88-172584700a76"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "362261",
+      "title": "Metadata driven framework for data discovery and data quality",
+      "description": "In this session, we will present a metadata driven rule based framework that allows us to capture and classify the policies/checks, translate them into executable rules and incorporates a weighted scoring model for reporting and analytics purposes. \r\nThe main points of this session would be:  \r\n1. The foundation framework.\r\n2. How it integrates with any tools/technologies with open API architecture.\r\n3. The tools/tech stack we used - Amundsen (data discovery) and Anomalo (data quality)",
+      "startsAt": "2022-09-27T11:25:00",
+      "endsAt": "2022-09-27T12:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "e96010a2-e660-4eb1-acf7-b2dcaeb6522f",
+        "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363359",
+      "title": "Shifting Data Left",
+      "description": "With several engineering teams building components autonomously, Kafka was selected as the single platform for cross-domain business event communication.\r\n\r\nWhile one problem was solved, i.e. real-time access to events, quite quickly many more challenges arose as the complexity grew - and a plan was hatched to bring analytical Data Products as a 1st class concern of the engineering teams.\r\n\r\nThis talk outlines the early stage and WIP journey of a greenfields product build at a large enterprise, building a new digital business.",
+      "startsAt": "2022-09-27T12:00:00",
+      "endsAt": "2022-09-27T12:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "4503680f-a6ba-4c6b-aa41-a8f48b9958f9"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363693",
+      "title": "Designing Data Governance Framework",
+      "description": "Data Governance is an emerging trend in enterprise information management. This is mainly because organizations are becoming increasingly serious about the notion of \"data as a strategic asset\" as they face increasing pressure for reporting a \"single source of the truth.\" \r\n\r\nAlso, pursuant to legislative compliance mandates such as the Sarbanes-Oxley (SOX) Act and Basel II, Data Governance has recently gained significant prominence in practitioners' conferences, such as TDWI (The Data Warehousing Institute) World Conference and DAMA (Data Management Association) International Symposium. Research has evidenced the need for Data Governance in organisations to manage data effectively. It is only by effective data management that organisations can ensure good quality data which can be measured by its accuracy, timeliness, relevance, completeness, trustworthiness and contextual definition. \r\n\r\nHowever, studies have also revealed that large organisation that\r\nhas adopted an ad-hoc Data Governance model to manage its data found that its data management efforts were hampered by the lack of clear roles and responsibilities and the lack of mandate to carry out data quality improvement initiatives. \r\n\r\nThe objective of this paper is to provide an overall framework for data governance that can be used by organisations to develop an effective data governance approach, strategy and design. \r\n",
+      "startsAt": "2022-09-27T12:35:00",
+      "endsAt": "2022-09-27T13:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "b3370646-0f4c-469b-9a3e-5700ac268a8d"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363257",
+      "title": "Data Security for Data Engineers",
+      "description": "Everybody forgets data engineers are in the thick of it. They are handling, transforming piping the data into something or somewhere.\r\nSince attending a cybersecurity bootcamp over the past almost 6 months, (no I'm not all of a sudden a security expert), but with increased awareness of the vulnerabilities exploited, I have been talking to data architects/engineers about their current security practices and how they contribute to or implement data security… e.g leveraging their CI/CD pipelines to include security tests etc, vetting packages/dependencies etc",
+      "startsAt": "2022-09-27T13:50:00",
+      "endsAt": "2022-09-27T14:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "ad891e9b-98e7-4062-85f3-9c7f345baf5c"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "357656",
+      "title": "Well-Architecture Framework for Machine Learning",
+      "description": "Well Architecture Framework is considered to be more suited to well-set Solution Patterns. Whilst Machine Learning could have many moving parts, join me in understanding how you can leverage WAF principles with ML Workloads in Cloud. \r\n\r\nWe will start with typical moving parts in (any) ML Project, and then will see the solution from WAF lens. \r\n",
+      "startsAt": "2022-09-27T14:10:00",
+      "endsAt": "2022-09-27T14:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "f5b51983-23b9-429b-8e86-aff4c630a423"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "362624",
+      "title": "Data Manifold - Simplified Data Management on AWS",
+      "description": "A new open source solution from AWS, simplified data management and analytics experience using AWS native services.\r\n\r\nAnalysts can combine multiple disparate source of data and produce insights from external analytics systems with ease, without the need for custom development. Data Manifold is easily deployed within a customer’s AWS account as a CloudFormation template, reducing the effort needed to build a traditional data lake or purchase costly proprietary software.\r\n\r\nThrough an intuitive interface, users can seamlessly ingest, transform, govern, and query diverse data sources using familiar SQL syntax.",
+      "startsAt": "2022-09-27T14:30:00",
+      "endsAt": "2022-09-27T14:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "83598392-ed1b-4375-936f-5520dcfd7291",
+        "8b01d36b-a1dd-4843-9cbf-ae6194ec53cf"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "361465",
+      "title": "Customer Journey Analytics using Neo4j Graph Platform",
+      "description": "Today we live in a highly connected world where customers have several touchpoints to interact with the service or product providers. Customer journey represents every customer engagement with a service or product provider. Enabling the customer journey puts the organisation directly in the consumer's mind, so they can see and understand their customer's lifecycle, needs, and perceptions.\r\n\r\nIn this session, we aim to show customer journey in action and:\r\n1. Introduce Neo4j and the concept of graph\r\n2. Model, structure and represent customer journey in Neo4j\r\n3. Visualise and influence customers' journeys using a trigger event model",
+      "startsAt": "2022-09-27T15:30:00",
+      "endsAt": "2022-09-27T15:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "8226969d-7964-4e21-8e33-78188e8f6423"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "353078",
+      "title": "Best of Stream + Batch: When Streaming Analytics Isn’t",
+      "description": "As data streams have moved from a niche technology to the new normal, the need to analyze streams has become ever-greater. Many stream processors, led by Apache Spark™, and simple stream analyzers, such as ksql for Kafka and Amazon Kinesis Analytics, claim to fill this gap. But they are missing key functions to provide useful real-time analytics. \r\n\r\nGian Merlino, Apache Druid® committer and co-founder of Imply will show how real-time analytics combines stream and batch data at scale, with low latency, high concurrency, and reliable resilience. See how real-time analytics enables the best of stream + batch.\r\n",
+      "startsAt": "2022-09-27T15:50:00",
+      "endsAt": "2022-09-27T16:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "2b583bbd-2202-4fd8-9429-97f085cf3923"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363283",
+      "title": "Data Privacy Engineering to power Responsible Enterprise AI",
+      "description": "Have you ever wondered how to protect customer data privacy when enabling large-scale AI systems. What if the insights generated by AI could be used to re-identify your customers. This is where data privacy engineering comes in. \r\nThis talk will give an overview of different technologies including Data Clean Rooms, Homomorphic Encryption, Differential Privacy and AI Fairness which help enable responsible enterprise AI, while sharing data & insights within and outside organisational boundaries.",
+      "startsAt": "2022-09-29T09:55:00",
+      "endsAt": "2022-09-29T10:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "328c297b-cef9-428d-8452-c5b015d09967",
+        "f7d130b3-f2a6-42b3-8a04-9bf4f9c3d9e9"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "360256",
+      "title": "Building a Scalable, Reproducible Ontology System to Improve Deep Learning Data",
+      "description": "Artificial Intelligence (AI) requires large amounts of labelled training data for models to be accurately trained. In semantic segmentation, each pixel is assigned a value based on which class or classes it belongs to. On the other hand, an ontology is a collection of classes, their properties and the relationships between them. Semantic segmentation, then, lends itself quite naturally to integration with an ontology, where insights from the direct and indirect relationships between classes can be used to enhance the training data.\r\n\r\nRecently, Nearmap has introduced an ontology system, which integrates directly into our labelling software, linking labelled data directly to the definitions in the ontology. Preliminary work on the system has already helped identify conflicts between labels in the production dataset.\r\n\r\nAlong the way, a number of challenges unique to managing Nearmap’s large geospatial dataset had to be overcome. We present our solution which handles reproducibility, version tracking, multiple perspectives in the source imagery and the storage of image examples as part of the class definitions.",
+      "startsAt": "2022-09-29T10:30:00",
+      "endsAt": "2022-09-29T11:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "2ae15249-123f-4d1e-9492-79e5a549f50c",
+        "42089591-8913-4dba-b615-93332091dd97"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363280",
+      "title": "Engineering Trust in Data",
+      "description": "Is building trust a technical problem? How will an organisation know when data is trusted? Who is the arbiter of trust, and how do they communicate their confidence in the data? These are some of the many questions that inevitably arise when organisations move from data strategies to data operations. \r\n\r\nUnfortunately, most organisations are simply not in a position to know that the market has consistently overcomplicated the technical delivery of data solutions whilst simultaneously underserving the complex and ever-evolving needs of business teams. This dichotomy effectively undermines organisational trust in data and dooms the vast majority of data initiatives to failure.  By contrast, an organisation that starts small and moves quickly, matches investment and technology to value delivered, and continuously improves upon its capabilities builds confidence in data and accelerates the time-to-value of data solutions.\r\n\r\nIn this talk a rigorous, engineering-led methodology for building trust in data will be presented. Key components of a continuous improvement framework for data solutions will be shared and tools for implementing them will be discussed. These frameworks and methodologies leverage lessons gathered over the course of 15 years of delivering data solutions in Australia and will be supported by three real-world case studies that have delivered billions of dollars in combined value back to their organisations.",
+      "startsAt": "2022-09-29T11:25:00",
+      "endsAt": "2022-09-29T12:00:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "be31cb9f-ba18-4428-aadf-821d2d2821d8"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363313",
+      "title": "Data replication patterns 101",
+      "description": "At the core of data engineering is the need to move data from one source to another. To do this successfully there are multiple architectural decisions a data engineer has to make: Batch, micro batch or streaming? What data storage to use? How to solve for idempotency? It can be difficult to navigate these decisions without understanding the relationship and dependencies between data use cases, replication patterns and supporting data infrastructure.\r\n\r\nIn this talk we will outline some common data replication patterns and their associated use cases. We will describe the constraints of each of the patterns, break them down into their core components and describe how to apply them to real world problems. We will share principles you can apply when choosing data infrastructure and detail what to consider when solving for idempotency.\r\n",
+      "startsAt": "2022-09-29T12:00:00",
+      "endsAt": "2022-09-29T12:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "5b2d91c2-17cc-4f23-a1e4-df2989eb9a71"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "352689",
+      "title": "Data Engineering simplified with Snowpark for Python on Snowflake",
+      "description": "Snowpark brings deeply integrated, DataFrame-style programming to the languages developers like to use – as well as functions to help them expand more data use cases easily. It enables data engineers, data scientists, and developers coding in languages like Python to take advantage of Snowflake’s powerful platform without having to first move data out of Snowflake.\r\n\r\nDuring this hands-on session, you’ll learn:\r\n\r\n- Setting up your favorite IDE (e.g. Jupyter, VSCode) for Snowpark\r\n- Analyzing data and performing data engineering tasks using Snowpark DataFrames\r\n- Using open-source Python libraries with near-zero maintenance or overhead\r\n- Deploying ML model training code to Snowflake using Python Stored Procedures\r\n- Creating and registering Python User-Defined Functions (UDFs) for inference",
+      "startsAt": "2022-09-29T12:35:00",
+      "endsAt": "2022-09-29T13:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "8f54ae5e-d169-44b0-a460-d9b10257d54c"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363029",
+      "title": "What is the MVP for Data Engineering projects?",
+      "description": "The Minimum Viable Product is a central technique in software development to get products out asap for feedback. How do we do this for Data Engineering initiatives, which often involve complex pipelines spanning multiple teams? This lightning talk is a cautionary tale based on two large Data Engineering projects I’ve been on at different companies where I failed to establish fast feedback cycles. I will present some ideas on how we can do agile Data Engineering and would love to hear yours.",
+      "startsAt": "2022-09-29T13:50:00",
+      "endsAt": "2022-09-29T14:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "98d417d3-36e8-44c3-8131-6bb3b67637bd"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363332",
+      "title": "Delta Lake: Turn your Data Lake into a Lakehouse",
+      "description": "With Databricks open-sourcing all of Delta Lake in July, now is a great time to explore how open source Delta Lake enables a Lakehouse. In this session we'll look at how Delta Lake brings data warehouse capabilities (e.g. ACID guarantees, fast SQL execution, governance controls, etc.) to your data lake; and best practices for managing a secure, performant, and cost-effective Lakehouse\r\n\r\nIn this session we will use live examples to deep-dive on:\r\n- What Delta Lake is doing under the hood\r\n- Deconstructing Delta Lake's transaction logs\r\n- Getting the best out of Delta Lake\r\n-- Optimise file-skipping with OPTIMIZE, ZORDER, and VACUUM\r\n-- Time travel semantics\r\n-- DEEP & SHALLOW CLONEs\r\n-- Tuning stats\r\n-- CDC with Change Data Feeds (CDFs)\r\n\r\nQ&A",
+      "startsAt": "2022-09-29T14:10:00",
+      "endsAt": "2022-09-29T14:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "e4a87ff3-7c55-4f76-a24e-48c7c4bda4bd"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "363312",
+      "title": "Data Engineering for Social Good",
+      "description": "It is no secret that data driven decision making can significantly increase the effectiveness of charities. However, the non-profit sector is often left behind in the pursuit of data insights due to lack of resources, time and know-how. This session will explore some of the unique challenges that non-profits face when establishing a data capability, and how simple solutions can create impact and drive social good.",
+      "startsAt": "2022-09-29T14:30:00",
+      "endsAt": "2022-09-29T14:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "ea4e794f-a166-4bc4-8a34-07e70dcb0196"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "361339",
+      "title": "AI as an API",
+      "description": "Train a ML Model and turn it into a REST API using Jupyter, TensorFlow, DataStax Astra DB and FastAPI.\r\n\r\nIn this talk we apply Machine Learning to the problem of Spam filtering. We will create a deep learning model from multiple spam datasets and make that available as an API. The talk is broken down into the following stages:\r\n- Combining 2 open source spam datasets curated by The University of California, Irvine (UCI).\r\n- Preparing a new dataset to be fully ready for training a model. \r\n- Building and training an LSTM model leveraging Keras.\r\n- Creating an API to expose the model for use leveraging FastAPI\r\n- Storing inference data for improving future predictions\r\n",
+      "startsAt": "2022-09-29T14:50:00",
+      "endsAt": "2022-09-29T15:10:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "07c0a219-71ad-404c-97b9-bf220da2ed2c"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "353187",
+      "title": "Data Incidents - When things goes wrong",
+      "description": "After you build all your alarms, your test coverage is in place, observability tools running. Things can still goes wrong. So how to deal with Data Incidents?\r\n\r\nIncidents are a huge part of the daily work of any software engineering team, but when it reach the data teams where we have, data analysts, analytics engineers and data scientists. How to identify an incident, how to communicate and how to ensure continuous improvement? This talk will share the experience of SafetyCulture dealing with Incidents in the Data Analytics Team.",
+      "startsAt": "2022-09-29T15:30:00",
+      "endsAt": "2022-09-29T15:50:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "40a23d61-be96-4367-8bc9-37dd39b793f5"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "362633",
+      "title": "Change the way you write. Change the way you think.",
+      "description": "Many data engineering problems stem from not being able to see the real problem from the correct angle. In fact the burgeoning industry of data engineering stems from our inability to tackle things at the simplest form. \r\n\r\nIn this talk, I show a different way to think about problems and how it would lead to simplified data engineering processes everywhere.\r\n\r\nThis of course, isn't new. The games industry frequently use the same technique I will introduce in this talk to solve problems. \r\n\r\nBy the end of this talk, I hope that you will join me in chanting: \r\n DEATH TO YAML",
+      "startsAt": "2022-09-29T15:50:00",
+      "endsAt": "2022-09-29T16:25:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "1aa17ca9-c570-453e-8039-492ef552cdef"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    }
+  ],
+  "speakers": [
+    {
+      "id": "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84",
+      "firstName": "Akira",
+      "lastName": "Takihara Wang",
+      "bio": "Hey there! \r\n\r\nI'm a Data Engineer at Afterpay and teach at The University of Melbourne in my spare time.\r\n\r\nI like to spend my spare time gaming, watching the footy (go Collingwood!), and teaching.",
+      "tagLine": "Data Engineer, Afterpay (Block)",
+      "profilePicture": "https://sessionize.com/image/1241-400o400o2-Q2x5ywUK5BZbn3VuZQRoye.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        362261
+      ],
+      "fullName": "Akira Takihara Wang",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "42089591-8913-4dba-b615-93332091dd97",
+      "firstName": "Ann",
+      "lastName": "Clark",
+      "bio": "Ann has over 7 years' experience in lexicography, data quality, semantic metadata & knowledge management; and is excited to work on semantic systems at Nearmap.",
+      "tagLine": "AI Ontologist, Nearmap",
+      "profilePicture": "https://sessionize.com/image/bdb4-400o400o2-wadAckBioYc9W4VQs763s3.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        360256
+      ],
+      "fullName": "Ann Clark",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "b3370646-0f4c-469b-9a3e-5700ac268a8d",
+      "firstName": "Arpita",
+      "lastName": "Adhicary",
+      "bio": "Arpita Adhicary is “Data Governance - Initiative Lead” for Enterprise Finance division at ANZ Bank. In this role, she’s responsible for establishing and leading a data governance function within the Finance division which includes leading implementation of data governance policies & standards, establishing effective data management practices and embedding a data quality mindset/culture. Prior to this role, Arpita has accumulated rich and diverse consulting experience via delivering change/transformation Programs with various Banks across multiple geographies. \r\nArpita is committed to public speaking, mentoring, influencing, and cultivating a growth mindset in the broader community. In her free time, Arpita enjoys reading, writing, practicing yoga, hiking, driving, cooking, and gardening.",
+      "tagLine": "Data Governance - Initiative Lead, Finance Systems, ANZ Bank",
+      "profilePicture": "https://sessionize.com/image/1b3f-400o400o2-sqEbAnUYvc9HCDVLRrzmnr.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/arpitaadhicary/?originalSubdomain=au",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        363693
+      ],
+      "fullName": "Arpita Adhicary",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "f7d130b3-f2a6-42b3-8a04-9bf4f9c3d9e9",
+      "firstName": "Ashika",
+      "lastName": "Hettitantirige",
+      "bio": "Ashika is a graduate engineer in the Data and Analytics R&D team at the Commonwealth Bank of Australia. Within this role, Ashika has gained exposure to work in data engineering, cloud and collaborative analytics. Ashika is passionate about working with data and AI. ",
+      "tagLine": "Graduate Engineer, Data Analytics R&D, Commonwealth Bank of Australia",
+      "profilePicture": "https://sessionize.com/image/8c77-400o400o2-9KoFz1nt9YbPRRugptH1N2.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://au.linkedin.com/in/ashika-hettitantirige-13b8091b0",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        363283
+      ],
+      "fullName": "Ashika Hettitantirige",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "8f54ae5e-d169-44b0-a460-d9b10257d54c",
+      "firstName": "Dash",
+      "lastName": "Desai",
+      "bio": "With experience in big data, data science, and machine learning Dash is able to apply 18+ years of full-stack, hands-on software engineering skills to help build solutions that solve business problems and surface trends that shape markets in new ways than imagined before. As a developer advocate, he is passionate about evaluating new ideas, trends, and helping articulate how technology can address a given business problem.\r\n\r\nDash has worked for global enterprises and in agile environments–for tech startups in the Bay Area in varying verticals, such as VoIP, Online Gaming, Digital Health, NoSQL database, and Data Cloud platforms.",
+      "tagLine": "Senior Developer Advocate, AWS Machine Learning Specialty, Snowflake",
+      "profilePicture": "https://sessionize.com/image/f02b-400o400o2-TZ3KjLYsrVpyrbf7x1h7Yr.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/iamontheinet",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/dash-desai/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.snowflake.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        352689
+      ],
+      "fullName": "Dash Desai",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "98d417d3-36e8-44c3-8131-6bb3b67637bd",
+      "firstName": "Duana",
+      "lastName": "Stanley",
+      "bio": "Duana has 16 years experience as a software engineer, 5 years of agile software development at ThoughtWorks, 5 years of microservices-at-scale at SoundCloud, and recently transitioned to data engineering and ML at Cash App. She does @boutiquemaths as a hobby and would love to do more math at work.",
+      "tagLine": "Data Engineer, Cash App",
+      "profilePicture": "https://sessionize.com/image/280e-400o400o2-EnWKVnyd8Z4upqGECBeiJi.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        363029
+      ],
+      "fullName": "Duana Stanley",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "8226969d-7964-4e21-8e33-78188e8f6423",
+      "firstName": "Emil",
+      "lastName": "Pastor",
+      "bio": "Emil Pastor is a Solution Architect at Neo4j based in Sydney. He has been a data and AI professional enabling organisations in various industries through strategy, architecture, use case delivery, and capability building to support stakeholders and client data professionals in leveraging their data assets. Prior to working at Neo4j, he worked as an Architect and Consultant for organisations like Microsoft, McKinsey & Company (QuantumBlack), EY and Teradata.",
+      "tagLine": "Solution Architect, Neo4j",
+      "profilePicture": "https://sessionize.com/image/1b2f-400o400o2-BeaUVuCFYEMz9B9MU31gwV.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/emillaurencepastor/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://neo4j.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        361465
+      ],
+      "fullName": "Emil Pastor",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "2b583bbd-2202-4fd8-9429-97f085cf3923",
+      "firstName": "Gian",
+      "lastName": "Merlino",
+      "bio": "Gian is a co-author of the open-source Apache Druid® project and co-founder and CTO at Imply. Gian is also the Apache Druid® Committee (PMC) Chair. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
+      "tagLine": "CTO",
+      "profilePicture": "https://sessionize.com/image/6deb-400o400o2-nuZ6kFs564ZLABfp35RJ3W.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/gianmerlino",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/gianmerlino/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://imply.io/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        353078
+      ],
+      "fullName": "Gian Merlino",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "07c0a219-71ad-404c-97b9-bf220da2ed2c",
+      "firstName": "Hilton",
+      "lastName": "Rosenfeld",
+      "bio": "I am a technologist at heart, starting from my youth as a HAM radio operator and growing into a profession. Over my career I have worked in many IT roles, from System Administrator to Mobile App Developer to IT Manager to Pre-Sales Consultant. Prior to DataStax, I worked at ServiceNow where I focused on IT Operations Management solutions. Outside of work I enjoy sailing in club racing and cruising. One day I hope to circumnavigate the planet.",
+      "tagLine": "DataStax, Data Architect",
+      "profilePicture": "https://sessionize.com/image/e913-400o400o2-nNCUvStKuq4PEHgZhw7Je9.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/hiltonrosenfeld/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.datastax.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        361339
+      ],
+      "fullName": "Hilton Rosenfeld",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "8b01d36b-a1dd-4843-9cbf-ae6194ec53cf",
+      "firstName": "Jane",
+      "lastName": "Ooi",
+      "bio": "Solution Architect @ AWS",
+      "tagLine": "Solution Architect @ AWS",
+      "profilePicture": "https://sessionize.com/image/e20a-400o400o2-e1061d6b-aea5-4a09-8839-b2e7ceb71d3a.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "http://twitter.com/",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jane-ooi/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://aws.amazon.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        362624
+      ],
+      "fullName": "Jane Ooi",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "ad891e9b-98e7-4062-85f3-9c7f345baf5c",
+      "firstName": "Jenna",
+      "lastName": "Olovcic",
+      "bio": "Numerous years in AdTech across Agency, Publisher & Vendor, 4 years in End to End Business Intelligence at News Corp and Woolworths, Security Enthusiast and Solutions Architect at Fivetran",
+      "tagLine": "Fivetran, Solutions Architect",
+      "profilePicture": "https://sessionize.com/image/fc04-400o400o2-f9VXXWyRPehWGzJeztANhL.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jenna-loo/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.fivetran.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363257
+      ],
+      "fullName": "Jenna Olovcic",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "4503680f-a6ba-4c6b-aa41-a8f48b9958f9",
+      "firstName": "Jonathan",
+      "lastName": "Gomez",
+      "bio": "Principal Engineer, Data @ Wesfarmers OneDigital | Tech Leadership | Obsessed with Platforms as Products\r\n\r\n(will update)",
+      "tagLine": "Principal Engineer, Data, Wesfarmers OneDigital",
+      "profilePicture": "https://sessionize.com/image/f71e-400o400o2-Mv4Vqn85i3bPEuyjJ8Ki6Z.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jonathanbgomez/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.wesfarmers.com.au",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363359
+      ],
+      "fullName": "Jonathan Gomez",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "5b2d91c2-17cc-4f23-a1e4-df2989eb9a71",
+      "firstName": "Karen",
+      "lastName": "Davis",
+      "bio": "Karen is a Principal Data Engineer at Thoughtworks. Her background is software engineering, data engineering and machine learning. While at Thoughtworks she has worked with numerous clients building large scale data platforms. She is passionate about all things data and is especially interested in data architecture and ways to apply software engineering best practices to data and machine learning.",
+      "tagLine": "Principal Data Engineer @ ThoughtWorks",
+      "profilePicture": "https://sessionize.com/image/d741-400o400o2-c2-17cc-4f23-a1e4-df2989eb9a71.49b04bf1-8249-4659-ab68-bfb930cd5443.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        363313
+      ],
+      "fullName": "Karen Davis",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "328c297b-cef9-428d-8452-c5b015d09967",
+      "firstName": "Lalit",
+      "lastName": "Pant",
+      "bio": "Lalit is a Staff Engineer in Data & Analytics R&D team at Commonwealth Bank of Australia. In his current role, Lalit experiments with, develops prototypes and informs next set of decisions on many emerging problem spaces in the bank; from customer data privacy to secure data exchange with partners and cloud collaborative analytics & apps. He has 14 years experience as a data & systems engineer, leading engineering teams across geographies. \r\nHe is passionate about delivering value to customer through data & analytics. Besides work, Lalit is inching towards completing a Masters in Computer Science from Georgia Tech.",
+      "tagLine": "Staff Engineer, Data Analytics R&D, Commonwealth Bank of Australia",
+      "profilePicture": "https://sessionize.com/image/2733-400o400o2-JtsxZ4xxLG7bJAMYeZbTvw.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/lalit-pant/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.commbank.com.au/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363283
+      ],
+      "fullName": "Lalit Pant",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "ea4e794f-a166-4bc4-8a34-07e70dcb0196",
+      "firstName": "Lizzie",
+      "lastName": "Reid",
+      "bio": "Lizzie is a Senior Data Engineer at Kasna, where she builds solutions using Google Cloud technology to help customers harness the power of their data. She volunteers for The Good Data Institute to build data capabilities within NFP organisations so they can increase their impact.",
+      "tagLine": "Senior Data Engineer at Kasna & Fellow at The Good Data Institute",
+      "profilePicture": "https://sessionize.com/image/0db0-400o400o2-DuHEVudVnED1i8c8b1bfpA.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/lizzie-reid-2b2160117/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://kasna.com.au/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363312
+      ],
+      "fullName": "Lizzie Reid",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "8f2f01ec-4972-49fe-a204-8f226fa209cb",
+      "firstName": "Ned",
+      "lastName": "Letcher",
+      "bio": "Ned is a data scientist and engineer at ThoughtWorks, where he helps organisations manage and gain value from their data.",
+      "tagLine": "Data specialist at ThoughtWorks",
+      "profilePicture": "https://sessionize.com/image/829d-400o400o2-ec-4972-49fe-a204-8f226fa209cb.b72e68b3-91e7-46d2-8291-916fe7f0b5ba.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/nletcher",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/nletcher",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.thoughtworks.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363244
+      ],
+      "fullName": "Ned Letcher",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "c3df4dfc-6b55-4eeb-8c88-172584700a76",
+      "firstName": "Nigel",
+      "lastName": "Dalton",
+      "bio": "In a technosocial era, Nigel combines his skills as social scientist, writer, business consultant, podcaster, conference host and presenter to thread together new views of our world.",
+      "tagLine": "Social Scientist, Thoughtworks",
+      "profilePicture": "https://sessionize.com/image/9a00-400o400o2-e2f4c359-6755-42a0-8028-5f89bf68fccf.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/nxdnz/",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.thoughtworks.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363244
+      ],
+      "fullName": "Nigel Dalton",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "40a23d61-be96-4367-8bc9-37dd39b793f5",
+      "firstName": "Thiago",
+      "lastName": "Baldim",
+      "bio": "Data Engineer since 2015, experience with Banking, Investments, Telco and SaaS.",
+      "tagLine": "Senior Data Engineer at SafetyCulture",
+      "profilePicture": "https://sessionize.com/image/df27-400o400o2-avw4L2Se1B4bvctSZ4GE43.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/TRBaldim",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/thiago-baldim-11282913b/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://safetyculture.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        353187
+      ],
+      "fullName": "Thiago Baldim",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "83598392-ed1b-4375-936f-5520dcfd7291",
+      "firstName": "Timothy",
+      "lastName": "Downs",
+      "bio": "Pushing strings since 1990. SA @ AWS since 2020.",
+      "tagLine": "Solution Architect @ AWS",
+      "profilePicture": "https://sessionize.com/image/c827-400o400o2-RCLBFJjHU29ys2p5WNQf9e.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/timothy-downs-05718573/",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        362624
+      ],
+      "fullName": "Timothy Downs",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "f5b51983-23b9-429b-8e86-aff4c630a423",
+      "firstName": "Vikas",
+      "lastName": "Rajput",
+      "bio": "Speaks Data, Architecture, Automation.  \r\nService-leadership and Fail-fast believer. ",
+      "tagLine": "Tinkler at heart. Principal (Data/AI) Engineer @ Microsoft.",
+      "profilePicture": "https://sessionize.com/image/b8ed-400o400o2-Tw6CmeU4Wr8f53edZW8iwL.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://linkedin.com/in/rajputsvikas",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://aka.ms/architecture",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        357656
+      ],
+      "fullName": "Vikas Rajput",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "e4a87ff3-7c55-4f76-a24e-48c7c4bda4bd",
+      "firstName": "Vinoaj",
+      "lastName": "Vijeyakumaar",
+      "bio": "Vinny is a Senior Solutions Architect at Databricks, where he consults with businesses big & small on maximising value from their data. Vinny has been in the data space for 15+ years. His data experience has taken him from scaling MySQL databases for startups, driving Google Analytics adoption in Southeast Asia, running analytics consultancies, being a smart analytics specialist at Google Cloud, and now building out Lakehouses with Databricks. Come say hi, as Vinny is always up for a chat on how to make data & ML as effortless as possible!",
+      "tagLine": "Senior Solutions Architect, Databricks",
+      "profilePicture": "https://sessionize.com/image/a1de-400o400o2-DNgNbeafFt4o7f149VoGbG.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/vinoaj",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/vinoaj",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://Databricks.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363332
+      ],
+      "fullName": "Vinoaj Vijeyakumaar",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "e96010a2-e660-4eb1-acf7-b2dcaeb6522f",
+      "firstName": "Xinwei",
+      "lastName": "Jiang",
+      "bio": "I am data engineer working in the Afterpay Data engineering and governance team. I did my master from ANU specialising in data processing and AI. I have been work for Afterpay for the last 2 years. I live in Melbourne and enjoy hiking and boxing to keep myself fit. ",
+      "tagLine": "Data engineer, Afterpay (Block)",
+      "profilePicture": "https://sessionize.com/image/47dc-400o400o2-YGX5Q1WDCTm4TXmQM8rsd8.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/xinwei-jiang-selene/",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        362261
+      ],
+      "fullName": "Xinwei Jiang",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "1aa17ca9-c570-453e-8039-492ef552cdef",
+      "firstName": "Xuanyi",
+      "lastName": "Chew",
+      "bio": "Xuanyi is a data scientist by day, explorer of various notions of intelligences and entropy by night. Feel free to nerdsnipe him in his areas of interests: ranging from programming language theory to artificial intelligence in the computer sciences; linguistics - computational and traditional; neuroscience and cognition; information theory and entropy; explanations of theories and causality, maths puzzles and many more. He enjoys tinkering and making his thoughts a reality. ",
+      "tagLine": "Human. Enthusiast of intelligences. ",
+      "profilePicture": "https://sessionize.com/image/201b-400o400o2-ngMf8xcHquHUBBwWJRC8zC.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/chewxy",
+          "linkType": "Twitter"
+        }
+      ],
+      "sessions": [
+        362633
+      ],
+      "fullName": "Xuanyi Chew",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "be31cb9f-ba18-4428-aadf-821d2d2821d8",
+      "firstName": "Zachary",
+      "lastName": "Zeus",
+      "bio": "Zach has more than 20 years of experience delivering data driven programs of work. He was originally trained as an engineer and approaches technology with a robust and systematic mindset. He has an MBA from NYU where he studied Finance, Entrepreneurship and Management. Zach’s unique balance of technical capability, strategic vision, and commercial sensibility make him an exceptionally fit leader in today’s digital landscape. He co-owns BizCubed with his wife Rebecca, with whom he has 4 children.",
+      "tagLine": "Engineer, Father, CEO of BizCubed",
+      "profilePicture": "https://sessionize.com/image/871c-400o400o2-EPSRs65iJpCqNbpegTqJs5.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/zacharyzeus",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/zachary-zeus/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://bizcubed.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        363280
+      ],
+      "fullName": "Zachary Zeus",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "e34e2722-02d0-471e-87f1-afd67d050e92",
+      "firstName": "Zainab",
+      "lastName": "Maleki",
+      "bio": "As a full-stack developer and principal DevOps/ Data engineer at Mechanical Rock, Australia's leading cloud native consultancy, Zainab works with progressive tools and practices like serverless technologies and infrastructure-as-code. Cloud native data platforms are her current passion, and she is fast becoming one of Western Australia's leading practitioners. A regular conference presenter, AWS Community Hero and 2020 WiTWA Tech [+] 20 Award winner, Zainab is also passionate about teaching young people the joys of mobile app development.",
+      "tagLine": "AWS Community Hero | Principal Consultant at Mechanical Rock | DevOps, Data and Serverless Enthusiast",
+      "profilePicture": "https://sessionize.com/image/5eee-400o400o2-wm3k5ndcmZaMT92eNKMvS9.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/MalekiZainab",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/zainab-maleki-8644a3101/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://mechanicalrock.io/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        359919
+      ],
+      "fullName": "Zainab Maleki",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "2ae15249-123f-4d1e-9492-79e5a549f50c",
+      "firstName": "Zeph",
+      "lastName": "Yap",
+      "bio": "For the past two years, Zeph has been helping the AI Model Systems team at Nearmap develop tools to improve the model-training process, with a focus on improving the quality of the training data. Besides the ontology system, Zeph has also created a verification module which tracks the quality of the labels entering the training dataset. He speaks three languages with a goal of eventually getting to nine.",
+      "tagLine": "Machine Learning Engineer, Nearmap",
+      "profilePicture": "https://sessionize.com/image/6a75-400o400o2-DfsKRCab36bYDaUUR2zFkH.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        360256
+      ],
+      "fullName": "Zeph Yap",
+      "categoryItems": [],
+      "questionAnswers": []
+    }
+  ],
+  "questions": [],
+  "categories": [],
+  "rooms": [
+    {
+      "id": 26523,
+      "name": "Room 1",
+      "sort": 0
+    }
+  ]
+}
