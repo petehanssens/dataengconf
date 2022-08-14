@@ -46,8 +46,7 @@ function ImageClipPaths({ id, ...props }) {
 export default function Speakers() {
   let id = useId()
   let [tabOrientation, setTabOrientation] = useState('horizontal')
-
-  console.log(confDetails())
+  
   useEffect(() => {
     let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
 

@@ -5,32 +5,10 @@ import getSpeaker from '../../../helpers/getSpeaker'
 import { speakers } from '../../../data/2022/allData.json'
 
 const Post = () => {
-    // const [speaker, setSpeaker] = useState({
-    //     id: ""
-    // })
-    // const [loading, setLoading] = useState(false)
-
+    
     const { query } = useRouter();
     const currentSpeakerId = query.spid
- 
-    // const getSpeakerDetails = async () => {
-    //     try {
-    //         setLoading(true);
-    //         console.log('page id: ',currentSpeakerId)
-    //         const blah = getSpeaker(currentSpeakerId)
-    //         setSpeaker(blah);
-    //     } catch (error) {
-    //         setLoading(false);
-    //         console.log(error);
-    //     }
-    // };
-
-
-    // useEffect(() => {
-    //     getSpeakerDetails();
-    // }, []);
     const speakerDetails = getSpeaker(currentSpeakerId)[0]
-    console.log('blah: ',speakerDetails)
 
     return (
 

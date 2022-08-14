@@ -6,7 +6,6 @@ const Post = () => {
     const { query } = useRouter();
     const currentSessionId = query.seid
     const sessionDetails = getSession(currentSessionId)[0]
-    console.log('blah: ',sessionDetails)
 
     return (
 
