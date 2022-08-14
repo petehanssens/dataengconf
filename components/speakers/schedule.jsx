@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
-import { grid as schedule } from '../../data/2022/allData.json'
+import getConfSessionDetails from '../../helpers/getConferenceSessions'
+const sessionDetails = getConfSessionDetails()
 
 function Container({ className, ...props }) {
   return (
@@ -46,7 +47,7 @@ function ScheduleTabbed() {
     >
       <Tab.List className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pl-4 pb-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
         {({ selectedIndex }) =>
-          schedule.map((day, dayIndex) => (
+          sessionDetails.map((day, dayIndex) => (
             <div
               key={day.date}
               className={clsx(
@@ -70,7 +71,7 @@ function ScheduleTabbed() {
         }
       </Tab.List>
       <Tab.Panels>
-        {schedule.map((day) => (
+        {sessionDetails.map((day) => (
           <Tab.Panel
             key={day.date}
             className="[&:not(:focus-visible)]:focus:outline-none"
@@ -87,7 +88,7 @@ function DaySummary({ day }) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
-        <time dateTime={day.date}>{new Date(day.date).toDateString()}</time>
+        <time dateTime={day.goodDate}>{new Date(day.goodDate).toDateString()}</time>
       </h3>
       <p className="mt-1.5 text-base tracking-tight text-blue-900">
         {day.summary}
@@ -105,16 +106,16 @@ function TimeSlots({ day, className }) {
         'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
       )}
     >
-      {day.rooms[0].sessions.map((timeSlot, timeSlotIndex) => (
+      {day.sessions.map((timeSlot, timeSlotIndex) => (
         <li
           key={timeSlot.startsAt}
-          aria-label={`${timeSlot.speakers[0]?.name} talking about ${timeSlot.title} at ${timeSlot.startsAt} - ${timeSlot.endsAt} AEST`}
+          aria-label={`${timeSlot.speakerObject[0].fullName} talking about ${timeSlot.title} at ${timeSlot.startsAt} - ${timeSlot.endsAt} AEST`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
           )}
           <h4 className="text-lg font-semibold tracking-tight text-blue-900">
-            {timeSlot.speakers[0]?.name}
+            {timeSlot.speakerObject[0]?.fullName}
           </h4>
           {timeSlot.title && (
             <p className="mt-1 tracking-tight text-blue-900">
@@ -140,7 +141,7 @@ function TimeSlots({ day, className }) {
 function ScheduleStatic() {
   return (
     <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
-      {schedule.map((day) => (
+      {sessionDetails.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
           <TimeSlots day={day} className="mt-10" />

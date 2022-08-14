@@ -28,7 +28,7 @@ export default function getConfDetails() {
 
   const groupedSessions = Object.entries(
     // What you have done
-    sessions.reduce((acc, { id, title, goodDate, speakerObject }) => {
+    sessions.reduce((acc, { id, title, description, startsAt, endsAt, isServiceSession, goodDate, speakerObject }) => {
       // Group initialization
       if (!acc[goodDate]) {
         acc[goodDate] = [];
@@ -36,7 +36,7 @@ export default function getConfDetails() {
       
       // Grouping
       // FIX: only pushing the object that contains id and value
-      acc[goodDate].push({ id, title, speakerObject });
+      acc[goodDate].push({ id, title, description, startsAt, endsAt, isServiceSession, speakerObject });
   
       return acc;
     }, {})
