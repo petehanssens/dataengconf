@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
-
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
-import Image from 'next/image'
 
 import { grid as schedule } from '../../data/2022/allData.json'
 
@@ -141,7 +139,7 @@ function TimeSlots({ day, className }) {
 
 function ScheduleStatic() {
   return (
-    <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
       {schedule.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
@@ -158,11 +156,10 @@ export default function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, innovative
-            geniuses in the field of Data Engineering.
+            Our three day schedule is jam-packed with some of the smartest minds in the field of Data Engineering.
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            The smartest people in our industry giving the best talks you’ve ever
+            Learn from some of the best people in our industry giving the most incredible talks you’ve ever
             seen. Grab your tickets today to get to hear from these pioneers
           </p>
         </div>

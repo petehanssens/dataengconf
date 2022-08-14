@@ -1,4 +1,4 @@
-import React from 'react'
+import {Fragment} from 'react'
 import SEO from "../components/seo";
 import HomeLayout from '../components/home';
 import Stats from '../components/stats';
@@ -11,21 +11,21 @@ import Schedule from '../components/speakers/schedule'
 
 export default function Home() {
   return (
-    <>
+    <Fragment>
       <SEO
         keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
         title="Welcome to DataEngBytes!"
         description="A community run Data Engineering conference in Australia and New Zealand"
       />
-      {/* <HomeLayout /> */}
-      {/* <Melbourne /> */}
-      {/* <Sydney /> */}
-      {/* <Stats /> */}
-      {/* <Meetups /> */}
-      {/* <Speakers /> */}
-      {/* <Schedule /> */}
+      <HomeLayout />
+      <Stats />
+      <Melbourne />
+      <Sydney />
       <Logos />
-    </>
+      <Speakers />
+      <Schedule />
+      <Meetups />
+    </Fragment>
   )
 }
 

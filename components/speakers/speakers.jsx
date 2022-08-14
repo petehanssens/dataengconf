@@ -4,6 +4,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
 import confDetails from '../../helpers/getConferenceSpeakers'
+import Link from 'next/link'
 
 const theConfDetails = confDetails()
 
@@ -78,8 +79,7 @@ export default function Speakers() {
             Speakers
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+            Learn from expert Data Engineers from Australia and Beyond.
           </p>
         </div>
         <Tab.Group
@@ -135,6 +135,7 @@ export default function Speakers() {
                 unmount={false}
               >
                 {day.speakers.map((speaker, speakerIndex) => (
+                    <Link href={`/conference/speaker/${encodeURIComponent(speaker.id)}`}>
                   <div key={speakerIndex}>
                     <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                       <div
@@ -161,13 +162,14 @@ export default function Speakers() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
-                      {speaker.fullName}
-                    </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.tagLine}
-                    </p>
+                      <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
+                        {speaker.fullName}
+                      </h3>
+                      <p className="mt-1 text-base tracking-tight text-slate-500">
+                        {speaker.tagLine}
+                      </p>
                   </div>
+                    </Link>
                 ))}
               </Tab.Panel>
             ))}
