@@ -127,7 +127,7 @@ export default function Speakers() {
                         </Tab>
                       </div>
                       <time
-                        dateTime={day.date}
+                        dateTime={day.simpleDate}
                         className="mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900"
                       >
                         {day.simpleDate}
