@@ -8,6 +8,18 @@ import Link from 'next/link'
 
 const theConfDetails = confDetails()
 
+function addCity(date) {
+  let city = ""
+  if (date == "2022-09-27") {
+    city = "Melbourne";
+  } else if (date == "2022-09-29") {
+    city = "Sydney"
+  } else {
+    city = "Unknown"
+  }
+  return city
+}
+
 function Container({ className, ...props }) {
     return (
       <div
@@ -111,14 +123,14 @@ export default function Speakers() {
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                           <span className="absolute inset-0" />
-                          {day.simpleDate}
+                          {addCity(day.simpleDate)}
                         </Tab>
                       </div>
                       <time
                         dateTime={day.date}
                         className="mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900"
                       >
-                        {JSON.stringify(day.simpleDate)}
+                        {day.simpleDate}
                       </time>
                     </div>
                   </div>

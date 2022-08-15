@@ -18,6 +18,13 @@ export default function getConfDetails() {
     e.goodDate = result
     e.prettyDate = newDate
     e.simpleDate = simpleDate
+    if (result == "2022-09-27") {
+      e.city = "Melbourne";
+    } else if (result == "2022-09-29") {
+      e.city = "Sydney"
+    } else {
+      e.city = "Unknown"
+    }
     e.date = new Date(e.startsAt).toLocaleDateString()
     e.speakerObject = []
     e.speakers.map((s) => {
@@ -28,7 +35,7 @@ export default function getConfDetails() {
 
   const groupedSessions = Object.entries(
     // What you have done
-    sessions.reduce((acc, { id, title, description, startsAt, endsAt, isServiceSession, goodDate, speakerObject }) => {
+    sessions.reduce((acc, { id, title, city, description, startsAt, endsAt, isServiceSession, goodDate, speakerObject }) => {
       // Group initialization
       if (!acc[goodDate]) {
         acc[goodDate] = [];
@@ -36,7 +43,7 @@ export default function getConfDetails() {
       
       // Grouping
       // FIX: only pushing the object that contains id and value
-      acc[goodDate].push({ id, title, description, startsAt, endsAt, isServiceSession, speakerObject });
+      acc[goodDate].push({ id, title, city, description, startsAt, endsAt, isServiceSession, speakerObject });
   
       return acc;
     }, {})
