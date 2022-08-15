@@ -1,14 +1,13 @@
-import { speakers, sessions } from '../data/2022/allData.json'
+import conferenceData from '../data/2022/allData.json'
 
 function FetchSessionDetails(id) {
-  return sessions.filter(obj => {
+  return conferenceData.sessions.filter(obj => {
     return obj.id == id
   })[0]
 }
 
-export default function getConfDetails() {
-  
-  speakers.map((e) => {
+export default function getConfDetails() {  
+  conferenceData.speakers.map((e) => {
     e.sessionObject = []
     e.sessions.map((s) => {
       const details = FetchSessionDetails(s)
@@ -21,7 +20,7 @@ export default function getConfDetails() {
 
   const groupedSpeakers = Object.entries(
     // What you have done
-    speakers.reduce((acc, { id, fullName, tagLine, profilePicture, simpleDate, sessionObject }) => {
+    conferenceData.speakers.reduce((acc, { id, fullName, tagLine, profilePicture, simpleDate, sessionObject }) => {
       // Group initialization
       if (!acc[simpleDate]) {
         acc[simpleDate] = [];

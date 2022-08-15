@@ -1,14 +1,14 @@
-import { speakers, sessions } from '../data/2022/allData.json'
+import conferenceData from '../data/2022/allData.json'
 
 function FetchSpeakerDetails(id) {
-  return speakers.filter(obj => {
+  return conferenceData.speakers.filter(obj => {
     return obj.id == id
   })[0]
 }
 
 export default function getConfDetails() {
   
-  sessions.map((e) => {
+  conferenceData.sessions.map((e) => {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const simpleOptions = {  year: 'numeric', month: 'numeric', day: 'numeric', };
     const newDate = new Date(e.startsAt).toLocaleDateString("en-AU", options)
@@ -35,7 +35,7 @@ export default function getConfDetails() {
 
   const groupedSessions = Object.entries(
     // What you have done
-    sessions.reduce((acc, { id, title, city, description, startsAt, endsAt, isServiceSession, goodDate, speakerObject }) => {
+    conferenceData.sessions.reduce((acc, { id, title, city, description, startsAt, endsAt, isServiceSession, goodDate, speakerObject }) => {
       // Group initialization
       if (!acc[goodDate]) {
         acc[goodDate] = [];
