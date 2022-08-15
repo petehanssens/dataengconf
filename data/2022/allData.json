@@ -148,7 +148,7 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "8226969d-7964-4e21-8e33-78188e8f6423"
+        "b3e01cd1-cd88-4d89-95c7-edb0d34dfad9"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -381,6 +381,33 @@
       "questionAnswers": []
     },
     {
+      "id": "b3e01cd1-cd88-4d89-95c7-edb0d34dfad9",
+      "firstName": "Andrew",
+      "lastName": "Conacher",
+      "bio": "Andrew Conacher is 34 year veteran of the IT industry and holds a Master of Information Management & Systems from Monash University. Andrew has spent the majority of his career in the data space, working in data integration, databases and business intelligence, Andrew has worked at organisations such as Hyperion, IBM New Relic and now Neo4j. In his career, Andrew has worked with many businesses including Telstra, Service NSW, NBN, Petronas and ANZ Bank.",
+      "tagLine": "Andrew Conacher, Solution Consultant, Neo4j",
+      "profilePicture": "https://sessionize.com/image/cb27-400o400o2-P6pkanh9pwv3efm441wkZJ.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/andrew-conacher-216aa22/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.neo4j.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        361465
+      ],
+      "fullName": "Andrew Conacher",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "42089591-8913-4dba-b615-93332091dd97",
       "firstName": "Ann",
       "lastName": "Clark",
@@ -485,33 +512,6 @@
         363029
       ],
       "fullName": "Duana Stanley",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
-    {
-      "id": "8226969d-7964-4e21-8e33-78188e8f6423",
-      "firstName": "Emil",
-      "lastName": "Pastor",
-      "bio": "Emil Pastor is a Solution Architect at Neo4j based in Sydney. He has been a data and AI professional enabling organisations in various industries through strategy, architecture, use case delivery, and capability building to support stakeholders and client data professionals in leveraging their data assets. Prior to working at Neo4j, he worked as an Architect and Consultant for organisations like Microsoft, McKinsey & Company (QuantumBlack), EY and Teradata.",
-      "tagLine": "Solution Architect, Neo4j",
-      "profilePicture": "https://sessionize.com/image/1b2f-400o400o2-BeaUVuCFYEMz9B9MU31gwV.jpg",
-      "isTopSpeaker": false,
-      "links": [
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/emillaurencepastor/",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://neo4j.com/",
-          "linkType": "Company_Website"
-        }
-      ],
-      "sessions": [
-        361465
-      ],
-      "fullName": "Emil Pastor",
       "categoryItems": [],
       "questionAnswers": []
     },
