@@ -75,6 +75,9 @@ Website for the [Sydney DataEngConf](https://dataengconf.com.au/)!
 5. Run the app: `yarn dev`
 6. Open the application: http://localhost:3000/
 
+## Helpful tools
+- [Chrome React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+
 ## Setup SSH key on github profile with WSL installed
 
 1. Make sure SSH is Installed by `sudo apt install openssh-client`

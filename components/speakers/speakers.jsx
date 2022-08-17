@@ -146,7 +146,7 @@ export default function Speakers() {
                 unmount={false}
               >
                 {day.speakers.map((speaker, speakerIndex) => (
-                    <Link href={`/conference/speaker/${encodeURIComponent(speaker.id)}`}>
+                    <Link href={`/conference/speaker/${encodeURIComponent(speaker.id)}`} key={speaker.id}>
                   <div key={speakerIndex}>
                     <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
                       <div
