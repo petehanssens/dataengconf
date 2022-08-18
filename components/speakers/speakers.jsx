@@ -3,10 +3,10 @@ import { useEffect, useId, useState } from 'react'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
-import confDetails from '../../helpers/getConferenceSpeakers'
+import getConferenceSpeakersDetails from '../../helpers/getConferenceSpeakers'
 import Link from 'next/link'
 
-const theConfDetails = confDetails()
+const theConfDetails = getConferenceSpeakersDetails()
 
 function addCity(date) {
   let city = ""

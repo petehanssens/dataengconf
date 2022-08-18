@@ -6,7 +6,7 @@ function FetchSpeakerDetails(id) {
   })[0]
 }
 
-export default function getConfDetails() {
+export default function getConferenceSessionsDetails() {
   
   conferenceData.sessions.map((e) => {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

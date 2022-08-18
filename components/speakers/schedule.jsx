@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
-
-import getConfSessionDetails from '../../helpers/getConferenceSessions'
-const sessionDetails = getConfSessionDetails()
+import clsx from 'clsx' // TODO remove
 
 function addCity(date) {
   let city = ""
@@ -33,7 +30,7 @@ function DiamondIcon(props) {
   )
 }
 
-function ScheduleTabbed() {
+function ScheduleTabbed({ sessionsDetails }) {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
   useEffect(() => {
@@ -59,13 +56,13 @@ function ScheduleTabbed() {
     >
       <Tab.List className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pl-4 pb-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
         {({ selectedIndex }) =>
-          sessionDetails.map((day, dayIndex) => (
+          sessionsDetails.map((day, dayIndex) => (
             <div
               key={day.goodDate}
-              className={clsx(
-                'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
-                dayIndex !== selectedIndex && 'opacity-70'
-              )}
+              className={
+                'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0 ' + 
+                dayIndex !== selectedIndex ? 'opacity-70' : ''
+              }
             >
               <DaySummary
                 day={{
@@ -83,7 +80,7 @@ function ScheduleTabbed() {
         }
       </Tab.List>
       <Tab.Panels>
-        {sessionDetails.map((day) => (
+        {sessionsDetails.map((day) => (
           <Tab.Panel
             key={day.goodDate}
             className="[&:not(:focus-visible)]:focus:outline-none"
@@ -113,10 +110,10 @@ function TimeSlots({ day, className }) {
   return (
     <ol
       role="list"
-      className={clsx(
-        className,
+      className={
+        className +
         'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
-      )}
+      }
     >
       {day.sessions.map((timeSlot, timeSlotIndex) => (
         <li
@@ -150,10 +147,10 @@ function TimeSlots({ day, className }) {
   )
 }
 
-function ScheduleStatic() {
+function ScheduleStatic({ sessionsDetails }) {
   return (
     <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
-      {sessionDetails.map((day) => (
+      {sessionsDetails.map((day) => (
         <section key={day.goodDate}>
           <DaySummary day={day} />
           <TimeSlots day={day} className="mt-10" />
@@ -163,10 +160,10 @@ function ScheduleStatic() {
   )
 }
 
-export default function Schedule() {
+export default function Schedule({ sessionsDetails }) {
   return (
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
-      <Container className="relative z-10">
+      <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
             Our two day schedule is jam-packed with some of the smartest minds in the field of Data Engineering.
@@ -177,6 +174,7 @@ export default function Schedule() {
           </p>
         </div>
       </Container>
+
       <div className="relative mt-14 sm:mt-24">
         <div className="absolute inset-x-0 -top-40 -bottom-32 overflow-hidden bg-indigo-50">
           {/* <Image
@@ -191,10 +189,11 @@ export default function Schedule() {
           <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
         </div>
         <Container className="relative">
-          <ScheduleTabbed />
-          <ScheduleStatic />
+          {/* <ScheduleTabbed sessionsDetails={sessionsDetails} /> */}
+          <ScheduleStatic sessionsDetails={sessionsDetails} />
         </Container>
       </div>
+      
     </section>
   )
 }

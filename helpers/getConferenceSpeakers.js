@@ -6,7 +6,7 @@ function FetchSessionDetails(id) {
   })[0]
 }
 
-export default function getConfDetails() {  
+export default function getConferenceSpeakersDetails() {  
   conferenceData.speakers.map((e) => {
     e.sessionObject = []
     e.sessions.map((s) => {
