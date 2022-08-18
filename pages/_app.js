@@ -2,6 +2,7 @@
 import "../styles/globals.css"
 import React from 'react';
 import Layout from '../components/layout';
+import ErrorBoundary from '../components/errorboundary';
 import { Amplify } from "aws-amplify";
 import checkUser from '../helpers/checkUser';
 
@@ -23,7 +24,9 @@ function WebApp({ Component, pageProps }) {
   const user = checkUser();
   return (
         <Layout signedInUser={user}>
-          <Component {...pageProps} signedInUser={user} />
+          <ErrorBoundary>
+            <Component {...pageProps} signedInUser={user} />
+          </ErrorBoundary>
         </Layout>
   )
 }
