@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Tab } from '@headlessui/react'
-import clsx from 'clsx' // TODO remove
+import clsx from 'clsx' // TODO remove, not needed with JSX
+import getConferenceSessionsDetails from '../../helpers/getConferenceSessions'
 
 function addCity(date) {
   let city = ""
@@ -133,11 +134,13 @@ function TimeSlots({ day, className }) {
           )}
           <p className="mt-1 font-mono text-sm text-slate-500">
             <time dateTime={`${day.goodDate}T${timeSlot.startsAt}-08:00`}>
-              {new Date(timeSlot.startsAt).toLocaleTimeString()}
+            {timeSlot.localStartDateTime}
+              {/* {timeSlot.localStartDateTime} */}
             </time>{' '}
             -{' '}
             <time dateTime={`${day.goodDate}T${timeSlot.endsAt}-08:00`}>
-              {new Date(timeSlot.endsAt).toLocaleTimeString()}
+              {/* {new Date(timeSlot.endsAt).toLocaleTimeString()} */}
+              {timeSlot.localEndDateTime}
             </time>{' '}
             AEST
           </p>

@@ -5,10 +5,16 @@ import getConferenceSessionsDetails from '../../helpers/getConferenceSessions'
 
 export function getStaticProps() {
   const sessionsDetails = getConferenceSessionsDetails()
+  const localisedSessionDetails = sessionsDetails.map((day) => day.sessions.map((session) => { // put your client-side localisations here
+    // session.localStartDateTime = new Date(session.startsAt).toLocaleTimeString()
+    // session.localEndDateTime = new Date(session.endsAt).toLocaleTimeString()
+    // TODO remove this, useEffect
+  })) 
 
   return {
     props: {
       sessionsDetails,
+      // localisedSessionDetails,
     },
   }
 }
