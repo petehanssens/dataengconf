@@ -12,8 +12,11 @@ const canvasStyles = {
   left: 0
 };
 
-const warehouses = ["Redshift", "Snowflake", "S3", "EMR", "Big Query", "Azure Data Warehouse", "Other"]
-const languages = ["Python", ""]
+const warehouses = ["redshift", "snowflake", "databricks", "big_query", "synapse", "other"]
+const languages = ["python", "scala", "java", "go", "node.js", "r", "other"]
+const ETL = ["hevo", "fivetran", "informatica", "ssis", "adf", "other"]
+const datatrans = ["dbt", "spark", "athena", "coalesce", "other"]
+
 
 function SpeakingForm() {
   const refAnimationInstance = useRef(null);
@@ -30,6 +33,11 @@ function SpeakingForm() {
         particleCount: Math.floor(200 * particleRatio)
       });
   }, []);
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  
 
   const fire = useCallback(() => {
     makeShot(0.25, {
@@ -82,7 +90,7 @@ function SpeakingForm() {
     return (
         <div className="bg-white">
           <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-            <div className="bg-yellow-300 rounded-3xl sm:py-10 sm:px-12 lg:p-10 lg:flex col flex-col lg:items-center">
+            <div className="bg-emerald-400 rounded-3xl sm:py-10 sm:px-12 lg:p-10 lg:flex col flex-col lg:items-center">
               
               <div className="lg:flex-1">
                 <h2 className="text-3xl font-extrabold tracking-tight text-slate-700">Join the Data Engineers Slack Channel</h2>
@@ -97,7 +105,7 @@ function SpeakingForm() {
                     </div>
                 ) : (
                 <form className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-1 sm:gap-x-8" onSubmit={handleSubmit(onSubmit)}>
-                  <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Choose technology:</h3>
+                  {/* <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">Choose technology:</h3>
                   <ul class="grid gap-6 w-full md:grid-cols-3">
                       <li>
                           <input type="checkbox" id="react-option" value="" class="hidden peer" required=""/>
@@ -129,7 +137,7 @@ function SpeakingForm() {
                               </div>
                           </label>
                       </li>
-                  </ul>
+                  </ul> */}
                   <label className="sr-only">Full Name</label>
                   <input id="full-name" {...register("full-name",{required: true})}
                     name="full-name" 
@@ -153,43 +161,39 @@ function SpeakingForm() {
                     placeholder="What is your LinkedIn Profile" />
 
                   <fieldset>
-                  <label>What warehouses technologies are you familiar with?</label><br/>
-                  <input type="checkbox" id="redshift" {...register("warehouse")} name="warehouse" value="redshift"/><label> Redshift</label>
-                  <br/>
-                  <input type="checkbox" id="snowflake" {...register("warehouse")} name="warehouse" value="snowflake"/><label> Snowflake</label>
-                  <br/>
-                  <input type="checkbox" id="databricks" {...register("warehouse")} name="warehouse" value="databricks"/><label> Databricks</label>
-                  <br/>
-                  <input type="checkbox" id="big_query" {...register("warehouse")} name="warehouse" value="big_query"/><label> Big Query</label>
-                  <br/>
-                  <input type="checkbox" id="azure_data_warehouse" {...register("warehouse")} name="warehouse" value="azure_data_warehouse"/><label> Synapse</label>
-                  <br/>
-                  <input type="checkbox" id="other" {...register("warehouse")} name="warehouse" value="other"/><label> Other</label> 
-                  <br/>
+                    <label className="mt-4 max-w-3xl text-lg text-slate-700">What warehouse technologies are you familiar with?</label><br/>
+                    <div class="flex">
+                    {warehouses.map((each)=>(
+                        <div class="flex space-x-1 items-center mr-4">
+                        <input className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" type="checkbox" id={each} {...register("warehouse")} name="warehouse" value={each}/><label className="font-medium text-gray-700"> {capitalizeFirstLetter(each)}</label><br/>
+                        </div>
+                      ))
+                    }
+                    </div>
                   </fieldset>
+
                   <fieldset>
-                  <label>What languages you use to do data engineering</label><br/>
-                  <label>
-                  <input type="checkbox" id="python" {...register("languages")} name="languages" value="python"/> Python 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="scala" {...register("languages")} name="languages" value="scala"/> Scala 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="java" {...register("languages")} name="languages" value="java"/> Java 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="go" {...register("languages")} name="languages" value="go"/> Go 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="node.js" {...register("languages")} name="languages" value="node.js"/> Node.js 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="r" {...register("languages")} name="languages" value="r"/> R 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="other" {...register("languages")} name="languages" value="other"/> Other 
-                  </label><br/>
+                    <label className="mt-4 max-w-3xl text-lg text-slate-700">What programming languages do you use for Data Engineering?</label><br/>
+                    <div class="flex">
+                    {languages.map((each)=>(
+                        <div class="flex space-x-1 items-center mr-4">
+                        <input className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" type="checkbox" id={each} {...register("warehouse")} name="warehouse" value={each}/><label className="font-medium text-gray-700"> {capitalizeFirstLetter(each)}</label><br/>
+                        </div>
+                      ))
+                    }
+                    </div>
+                  </fieldset>
+
+                  <fieldset>
+                    <label className="mt-4 max-w-3xl text-lg text-slate-700">What programming languages do you use for Data Engineering?</label><br/>
+                    <div class="flex">
+                    {languages.map((each)=>(
+                        <div class="flex space-x-1 items-center mr-4">
+                        <input className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" type="checkbox" id={each} {...register("warehouse")} name="warehouse" value={each}/><label className="font-medium text-gray-700"> {capitalizeFirstLetter(each)}</label><br/>
+                        </div>
+                      ))
+                    }
+                    </div>
                   </fieldset>
 
                   <fieldset>
