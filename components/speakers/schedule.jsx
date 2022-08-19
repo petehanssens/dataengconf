@@ -5,18 +5,6 @@ import clsx from 'clsx'
 import getConfSessionDetails from '../../helpers/getConferenceSessions'
 const sessionDetails = getConfSessionDetails()
 
-function addCity(date) {
-  let city = ""
-  if (date == "2022-09-27") {
-    city = "Melbourne, State Library Victoria";
-  } else if (date == "2022-09-29") {
-    city = "Sydney, Museum of Contemporary Art"
-  } else {
-    city = "Unknown"
-  }
-  return city
-}
-
 function Container({ className, ...props }) {
   return (
     <div
@@ -100,10 +88,12 @@ function DaySummary({ day }) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
-        <time dateTime={day.goodDate}>{new Date(day.goodDate).toDateString()}</time>
+        <time dateTime={day.goodDate}>{new Date(day.goodDate.replace(/-/g, "/")).toDateString()}</time>
       </h3>
       <p className="mt-1.5 text-base tracking-tight text-blue-900">
-        {addCity(day.goodDate)}
+        { /* Quick hack. Generally we prefer Date() object so it's universal, exact comparison - otherwise this conversion bug happens where [year, month, day].join('-'); results in 2022-9-27 */}
+        {day.goodDate === "2022-9-27" && "Melbourne, State Library Victoria"}
+        {day.goodDate === "2022-9-29" && "Sydney, Museum of Contemporary Art"}
       </p>
     </>
   )
