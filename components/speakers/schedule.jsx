@@ -156,7 +156,7 @@ function ScheduleStatic() {
 export default function Schedule() {
   return (
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
-      <Container className="relative z-10">
+      <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
             Our two day schedule is jam-packed with some of the smartest minds in the field of Data Engineering.
