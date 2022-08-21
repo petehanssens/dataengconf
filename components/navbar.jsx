@@ -25,6 +25,12 @@ const aboutUs = [
     icon: <FontAwesomeIcon icon={faMeetup} />,
   },
   {
+    name: "Blogs",
+    description: "Our awesome blogs!",
+    href: "/blogs",
+    icon: <FontAwesomeIcon icon={faMeetup} />,
+  },
+  {
     name: "FAQs",
     description: "Answers to your questions!",
     href: "/faq",
@@ -241,12 +247,6 @@ export default function Navigation(props) {
                   </a>
                 ))}
                 <a
-                  href="/blogs"
-                  className="text-base font-medium text-gray-500 hover:text-gray-900"
-                >
-                  Blogs
-                </a>
-                <a
                   href="/sponsorship"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
@@ -330,12 +330,6 @@ export default function Navigation(props) {
                         {item.name}
                       </a>
                     ))}
-                    <a
-                      href="/blogs"
-                      className="text-base font-medium text-gray-900 hover:text-gray-700"
-                    >
-                      Blogs
-                    </a>
                     <a
                       href="/sponsorship"
                       className="text-base font-medium text-gray-900 hover:text-gray-700"
