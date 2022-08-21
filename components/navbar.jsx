@@ -38,19 +38,37 @@ const aboutUs = [
   },
 ];
 
-const conferenceLinks = [
+const currentConferenceLinks = [
   {
-    name: "Speakers",
+    name: "2022 Speakers",
+    description: "Our awesome speakers for 2022!",
+    href: "/#speakers",
+    icon: <FontAwesomeIcon icon={faMeetup} />,
+  },
+  {
+    name: "2022 Schedule",
+    description: "Our awesome schedule for 2022!",
+    href: "/#schedule",
+    icon: <FontAwesomeIcon icon={faMeetup} />,
+  },
+]
+
+// TODO this is a hack. The current mobile dropdown does not close on href: "/#speakers" to the same page.
+const mobileCurrentConferenceLinks = [
+  {
+    name: "2022 Speakers",
     description: "Our awesome speakers for 2022!",
     href: "/conference/speakers",
     icon: <FontAwesomeIcon icon={faMeetup} />,
   },
   {
-    name: "Schedule",
+    name: "2022 Schedule",
     description: "Our awesome schedule for 2022!",
     href: "/conference/schedule",
     icon: <FontAwesomeIcon icon={faMeetup} />,
   },
+]
+const conferenceLinks = [
   {
     name: "2020",
     description: "Our first ever conference!",
@@ -98,7 +116,15 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-function NavbarItem(label, list) {
+// Dropdown item definition
+// TODO style fix: line up the drop down box with the nav bar height.
+/**
+ * 
+ * @param {label} Main label that shows up on the NavBar.
+ * @param {list} (Optional) Dropdown list items. 
+ * @returns 
+ */
+function NavbarItem(label, list=[]) {
   return (
     <Popover className="relative">
       {({ open }) => (
@@ -180,7 +206,7 @@ export default function Navigation(props) {
   // useEffect(() => setUser(useState(null)), [])
 
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-white z-10">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -196,6 +222,8 @@ export default function Navigation(props) {
                 </a>
               </div>
               <div></div>
+              {/* What's this for? If we're not using it, better not have it */}
+              {/* If we are to use it, please leave comments what it's planned for w/ TODO comments. */}
               <div className="-mr-2 -my-2 md:hidden">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open menu</span>
@@ -204,7 +232,14 @@ export default function Navigation(props) {
               </div>
 
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                { NavbarItem("Conference", conferenceLinks) }
+                { currentConferenceLinks.map((conference) => (
+                  <a
+                    href={conference.href}
+                    className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  >
+                    {conference.name}
+                  </a>
+                ))}
                 <a
                   href="/blogs"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
@@ -218,6 +253,7 @@ export default function Navigation(props) {
                   Sponsor Us
                 </a>
                 { NavbarItem("About Us", aboutUs) }
+                { NavbarItem("Past Conferences", conferenceLinks) }
                 { NavbarItem("Meetups", meetupLinks) }
               </Popover.Group>
               {signedInUser ? (
@@ -276,6 +312,15 @@ export default function Navigation(props) {
                 </div>
                 <div className="py-6 px-5 space-y-6">
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8">
+                    {mobileCurrentConferenceLinks.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="text-base font-medium text-gray-900 hover:text-gray-700"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
                     {conferenceLinks.map((item) => (
                       <a
                         key={item.name}
