@@ -15,7 +15,7 @@ const canvasStyles = {
 const survey_tools = [
   {
     "category":"warehouses",
-    "tools":["redshift", "snowflake", "databricks", "big_query", "synapse", "other"],
+    "tools":["redshift", "snowflake", "databricks", "big query", "synapse", "other"],
     "question":"What warehouse technologies are you familiar with?"
   },
   {
@@ -35,12 +35,12 @@ const survey_tools = [
   },
   {
     "category":"datacat",
-    "tools":["amundsen","atlan","immuta","tableau","qlikview","other"],
+    "tools":["amundsen","atlan","immuta","tableau","qlikview","kada","other"],
     "question":"Which data cataloging tools are you familiar with?"
   },
   {
     "category":"revetl",
-    "tools":["rudderstack","census","weld","restapp","other"],
+    "tools":["rudderstack","census","weld","restapp","omnata","other"],
     "question":"Do you have any experience with reverse ETL tools?"
   },
   {
@@ -50,7 +50,7 @@ const survey_tools = [
   },
   {
     "category":"dataquality",
-    "tools":["great_expectations", "data_fold","soda","nexus_data","sas","other"],
+    "tools":["great expectations", "data fold","soda","nexus data","sas","other"],
     "question":"Are you familiar with data quality testing?"
   }
 ]
@@ -140,7 +140,7 @@ function SpeakingForm() {
               <div className="mt-12 pl-20 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
                 {formStatus ? (
                     <div className="text-success mb-2">
-                        <h2 className="text-3xl font-extrabold tracking-tight text-white">Well done on signing up!</h2>
+                        <h2 className="text-3xl py-10 font-extrabold tracking-tight text-white">Well done on signing up!</h2>
                     </div>
                 ) : (
                 <form className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-1 sm:gap-x-8" onSubmit={handleSubmit(onSubmit)}>
@@ -183,16 +183,13 @@ function SpeakingForm() {
                   <button type="submit" className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
                     Submit
                   </button>
+                  <p className="mt-3 text-sm text-slate-700">
+                I can confirm I have read and agree to the Data Engineers&nbsp;<a href="https://sydneydataengineers.github.io/code-of-conduct.html" className="text-white font-medium underline">Code of Conduct</a>. 
+                We care about the protection of your data. Read our&nbsp;
+                  <a href="/privacy" className="text-white font-medium underline">Privacy Policy</a>.
+                </p>
                 </form>
                 )}
-                <p className="mt-3 text-sm text-indigo-100">
-                I can confirm I have read and agree to the Data Engineers Code of Conduct which can be found here:
-                  <a href="https://sydneydataengineers.github.io/code-of-conduct.html" className="text-white font-medium underline"> Code of Conduct </a>
-                </p>
-                <p className="mt-3 text-sm text-indigo-100">
-                  We care about the protection of your data. Read our
-                  <a href="/privacy" className="text-white font-medium underline"> Privacy Policy. </a>
-                </p>
               </div>
             </div>
           </div>
