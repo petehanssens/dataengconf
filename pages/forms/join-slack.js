@@ -12,8 +12,50 @@ const canvasStyles = {
   left: 0
 };
 
-const warehouses = ["Redshift", "Snowflake", "S3", "EMR", "Big Query", "Azure Data Warehouse", "Other"]
-const languages = ["Python", ""]
+const survey_tools = [
+  {
+    "category":"warehouses",
+    "tools":["redshift", "snowflake", "databricks", "big query", "synapse", "other"],
+    "question":"What warehouse technologies are you familiar with?"
+  },
+  {
+    "category":"languages",
+    "tools":["python", "scala", "java", "go", "node.js", "r", "other"],
+    "question":"What programming languages do you use for Data Engineering?"
+  },
+  {
+    "category":"ETL",
+    "tools":["hevo", "fivetran", "informatica", "ssis", "adf", "other"],
+    "question":"Which ETL tools are you familiar with?"
+  },
+  {
+    "category":"datatrans",
+    "tools":["dbt", "spark", "athena", "coalesce", "other"],
+    "question":"Which data modelling and transformation tools have you used?"
+  },
+  {
+    "category":"datacat",
+    "tools":["amundsen","atlan","immuta","tableau","qlikview","kada","other"],
+    "question":"Which data cataloging tools are you familiar with?"
+  },
+  {
+    "category":"revetl",
+    "tools":["rudderstack","census","weld","restapp","omnata","other"],
+    "question":"Do you have any experience with reverse ETL tools?"
+  },
+  {
+    "category":"datalakes",
+    "tools":["databricks","google","azure","aws","other"],
+    "question":"Which datalake platforms have you used?"
+  },
+  {
+    "category":"dataquality",
+    "tools":["great expectations", "data fold","soda","nexus data","sas","other"],
+    "question":"Are you familiar with data quality testing?"
+  }
+]
+
+
 
 function SpeakingForm() {
   const refAnimationInstance = useRef(null);
@@ -30,6 +72,11 @@ function SpeakingForm() {
         particleCount: Math.floor(200 * particleRatio)
       });
   }, []);
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  
 
   const fire = useCallback(() => {
     makeShot(0.25, {
@@ -82,17 +129,18 @@ function SpeakingForm() {
     return (
         <div className="bg-white">
           <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-            <div className="py-10 px-6 bg-indigo-700 rounded-3xl sm:py-16 sm:px-12 lg:p-20 lg:flex lg:items-center">
-              <div className="lg:w-0 lg:flex-1">
-                <h2 className="text-3xl font-extrabold tracking-tight text-white">Join the Data Engineers Slack Channel</h2>
-                <p className="mt-4 max-w-3xl text-lg text-indigo-100">
+            <div className="bg-emerald-400 rounded-3xl sm:py-10 sm:px-12 lg:p-10 lg:flex-col lg:items-stretch">
+              
+              <div className="pl-20 flex-1">
+                <h2 className="text-3xl font-extrabold tracking-tight text-slate-700">Join the Data Engineers Slack Channel</h2>
+                <p className="mt-4 max-w-3xl text-lg text-slate-700">
                 By filling out this form and accepting the code of conduct, you will receive an invite shortly afterwards to join the Data Engineers slack channel.
                 </p>
               </div>
-              <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
+              <div className="mt-12 pl-20 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
                 {formStatus ? (
                     <div className="text-success mb-2">
-                        <h2 className="text-3xl font-extrabold tracking-tight text-white">Well done on signing up!</h2>
+                        <h2 className="text-3xl py-10 font-extrabold tracking-tight text-white">Well done on signing up!</h2>
                     </div>
                 ) : (
                 <form className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-1 sm:gap-x-8" onSubmit={handleSubmit(onSubmit)}>
@@ -118,148 +166,30 @@ function SpeakingForm() {
                     required className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white rounded-md" 
                     placeholder="What is your LinkedIn Profile" />
 
-                  <fieldset>
-                  <label>What warehouse do you use</label><br/>
-                  <input type="checkbox" id="redshift" {...register("warehouse")} name="warehouse" value="redshift"/><label> Redshift</label>
-                  <br/>
-                  <label>
-                  <input type="checkbox" id="snowflake" {...register("warehouse")} name="warehouse" value="snowflake"/> Snowflake 
-                  </label> <br/>
-                  <label>
-                  <input type="checkbox" id="s3" {...register("warehouse")} name="warehouse" value="s3"/> S3 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="emr" {...register("warehouse")} name="warehouse" value="emr"/> EMR 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="big_query" {...register("warehouse")} name="warehouse" value="big_query"/> Big Query 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="azure_data_warehouse" {...register("warehouse")} name="warehouse" value="azure_data_warehouse"/> Azure Data Warehouse
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="other" {...register("warehouse")} name="warehouse" value="other"/> Other 
-                  </label><br/>
-                  </fieldset>
-                  <fieldset>
-                  <label>What languages you use to do data engineering</label><br/>
-                  <label>
-                  <input type="checkbox" id="python" {...register("languages")} name="languages" value="python"/> Python 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="scala" {...register("languages")} name="languages" value="scala"/> Scala 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="java" {...register("languages")} name="languages" value="java"/> Java 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="go" {...register("languages")} name="languages" value="go"/> Go 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="node.js" {...register("languages")} name="languages" value="node.js"/> Node.js 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="r" {...register("languages")} name="languages" value="r"/> R 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="other" {...register("languages")} name="languages" value="other"/> Other 
-                  </label><br/>
-                  </fieldset>
-
-                  <fieldset>
-                  <label>What frameworks do you use to do data engineering?</label><br/>
-
-                  <label>
-                  <input type="checkbox" id="airflow" {...register("frameworks")} name="frameworks" value="airflow"/> Airflow 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="luigi" {...register("frameworks")} name="frameworks" value="luigi"/> Luigi 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="spark" {...register("frameworks")} name="frameworks" value="spark"/> Spark 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="dbt" {...register("frameworks")} name="frameworks" value="dbt"/> dbt 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="kafka" {...register("frameworks")} name="frameworks" value="kafka"/> Kafka 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="other" {...register("frameworks")} name="frameworks" value="other"/> Other 
-                  </label><br/>
-                  </fieldset>
-
-                  <fieldset>
-                  <label>What clouds do you use</label><br/>
-
-                  <label>
-                  <input type="checkbox" id="aws" {...register("clouds")} name="clouds" value="aws"/> AWS 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="gcp" {...register("clouds")} name="clouds" value="gcp"/> GCP 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="azure" {...register("clouds")} name="clouds" value="azure"/> Azure 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="oracle" {...register("clouds")} name="clouds" value="oracle"/> Oracle 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="alicloud" {...register("clouds")} name="clouds" value="alicloud"/> AliCloud 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="onprem" {...register("clouds")} name="clouds" value="onprem"/> On Prem 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="other" {...register("clouds")} name="clouds" value="other"/> Other 
-                  </label><br/>
-                  </fieldset>
-
-                  <fieldset>
-                  <label>What vendors do you use</label><br/>
-
-                  <label>
-                  <input type="checkbox" id="confluent" {...register("vendors")} name="vendors" value="confluent"/> Confluent 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="databricks" {...register("vendors")} name="vendors" value="databricks"/> Databricks 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="fivetran" {...register("vendors")} name="vendors" value="fivetran"/> fivetran 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="matillion" {...register("vendors")} name="vendors" value="matillion"/> Matillion 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="cloudera" {...register("vendors")} name="vendors" value="cloudera"/> cloudera 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="mapr" {...register("vendors")} name="vendors" value="mapr"/> Mapr 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="pentaho" {...register("vendors")} name="vendors" value="pentaho"/> Pentaho 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="talend" {...register("vendors")} name="vendors" value="talend"/> Talend 
-                  </label><br/>
-                  <label>
-                  <input type="checkbox" id="other" {...register("vendors")} name="vendors" value="other"/> Other 
-                  </label><br/>
-                  </fieldset>
+                  {survey_tools.map((survey_tool)=>(
+                    <fieldset>
+                      <label className="lg:flex-1 mt-4 max-w-3xl text-lg text-slate-700">{survey_tool.question}</label><br/>
+                      <div class="flex">
+                      {survey_tool.tools.map((tool)=>(
+                        <div class="flex items-center mr-4">
+                            <input id={tool} {...register(survey_tool.category)} type="checkbox" name={survey_tool.category} value={tool} class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label for={tool} class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">{capitalizeFirstLetter(tool)}</label>
+                        </div>
+                      ))}
+                      </div>
+                    </fieldset>
+                  ))}
                   
                   <button type="submit" className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">
                     Submit
                   </button>
+                  <p className="mt-3 text-sm text-slate-700">
+                I can confirm I have read and agree to the Data Engineers&nbsp;<a href="https://sydneydataengineers.github.io/code-of-conduct.html" className="text-white font-medium underline">Code of Conduct</a>. 
+                We care about the protection of your data. Read our&nbsp;
+                  <a href="/privacy" className="text-white font-medium underline">Privacy Policy</a>.
+                </p>
                 </form>
                 )}
-                <p className="mt-3 text-sm text-indigo-100">
-                I can confirm I have read and agree to the Data Engineers Code of Conduct which can be found here:
-                  <a href="https://sydneydataengineers.github.io/code-of-conduct.html" className="text-white font-medium underline"> Code of Conduct </a>
-                </p>
-                <p className="mt-3 text-sm text-indigo-100">
-                  We care about the protection of your data. Read our
-                  <a href="/privacy" className="text-white font-medium underline"> Privacy Policy. </a>
-                </p>
               </div>
             </div>
           </div>
