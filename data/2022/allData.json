@@ -123,8 +123,8 @@
     },
     {
       "id": "362624",
-      "title": "Data Manifold - Simplified Data Management on AWS",
-      "description": "A new open source solution from AWS, simplified data management and analytics experience using AWS native services.\r\n\r\nAnalysts can combine multiple disparate source of data and produce insights from external analytics systems with ease, without the need for custom development. Data Manifold is easily deployed within a customer’s AWS account as a CloudFormation template, reducing the effort needed to build a traditional data lake or purchase costly proprietary software.\r\n\r\nThrough an intuitive interface, users can seamlessly ingest, transform, govern, and query diverse data sources using familiar SQL syntax.",
+      "title": "Automated Data Analytics (ADA) - Simplified Data Management on AWS",
+      "description": "A new open source solution from AWS, simplified data management and analytics experience using AWS native services.\r\n\r\nAnalysts can combine multiple disparate source of data and produce insights from external analytics systems with ease, without the need for custom development. ADA is easily deployed within a customer’s AWS account as a CloudFormation template, reducing the effort needed to build a traditional data lake or purchase costly proprietary software.\r\n\r\nThrough an intuitive interface, users can seamlessly ingest, transform, govern, and query diverse data sources using familiar SQL syntax.",
       "startsAt": "2022-09-27T14:30:00",
       "endsAt": "2022-09-27T14:50:00",
       "isServiceSession": false,
@@ -166,6 +166,41 @@
       "isPlenumSession": false,
       "speakers": [
         "2b583bbd-2202-4fd8-9429-97f085cf3923"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "374658",
+      "title": "Panel discussion - Melbourne",
+      "description": "Learn from the experts, ask your questions, hear about their war stories in this candid session to close out the conference.",
+      "startsAt": "2022-09-27T16:25:00",
+      "endsAt": "2022-09-27T17:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "60edb78e-dc7d-4b7f-8a56-207f7033ce5d",
+        "ab646f99-e69d-4d3b-afca-5c304f84c515"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "377669",
+      "title": "Sydney Keynote",
+      "description": "A thought leadership session from Joe Reis, Author of Fundamentals of Data Engineering: Plan and Build Robust Data Systems",
+      "startsAt": "2022-09-29T09:10:00",
+      "endsAt": "2022-09-29T09:55:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "ab646f99-e69d-4d3b-afca-5c304f84c515"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -355,6 +390,23 @@
       "isPlenumSession": false,
       "speakers": [
         "1aa17ca9-c570-453e-8039-492ef552cdef"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "374657",
+      "title": "Panel discussion - Sydney",
+      "description": "Learn from the experts, ask your questions, hear about their war stories in this candid session to close out the conference.",
+      "startsAt": "2022-09-29T16:25:00",
+      "endsAt": "2022-09-29T17:05:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "eaa25218-cdfa-42da-897b-33bc1c8e0e85"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -634,6 +686,34 @@
       "questionAnswers": []
     },
     {
+      "id": "ab646f99-e69d-4d3b-afca-5c304f84c515",
+      "firstName": "Joe",
+      "lastName": "Reis",
+      "bio": "Joe Reis is a \"recovering data scientist\" who's worked in a variety of data roles (analytics, machine learning, engineering, architecture, etc) since the early 2000s. Joe is the Co-Founder and CEO of Ternary Data, a data engineering/architecture consulting firm with a global client and partner base, and teaches data at the University of Utah. He's also the co-founder of The Utah Data Engineering Meetup and SLC Python, the host of some popular podcasts (The Monday Morning Data Chat, The Data Nerd Herd, Let's Talk Data Engineering), a blogger, speaker at global data conferences, and co-author of The Fundamentals of Data Engineering (O'Reilly, 2022).",
+      "tagLine": "\"Recovering Data Scientist\", Co-Founder/CEO of Ternary Data",
+      "profilePicture": "https://sessionize.com/image/87a1-400o400o2-VWckt8JLAZC8ewoZU2F4W8.png",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/josephreis/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://ternarydata.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        374658,
+        377669
+      ],
+      "fullName": "Joe Reis",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "4503680f-a6ba-4c6b-aa41-a8f48b9958f9",
       "firstName": "Jonathan",
       "lastName": "Gomez",
@@ -786,6 +866,60 @@
         363244
       ],
       "fullName": "Nigel Dalton",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "60edb78e-dc7d-4b7f-8a56-207f7033ce5d",
+      "firstName": "Nitish",
+      "lastName": "Mathew",
+      "bio": "Nitish Mathew is the Senior Director of Data Engineering and Governance at Afterpay, now part of Block. He built the engineering program that brings together data from 50+ sources and is the foundation for their executive decision making, sales enablement, marketing campaigns, fraud monitoring, risk analytics, machine learning development, financial reporting etc. A graduate of College of Engineering, Trivandrum, and the Pennsylvania State University, he has been working in Analytics, Business Intelligence, Technology Leadership and Data Platforms, across the US and Australia, since 2002.",
+      "tagLine": "Senior Director of Data Engineering & Governance, Afterpay",
+      "profilePicture": "https://sessionize.com/image/5acc-400o400o2-b6cdcfb0-3228-422f-a7c1-97308ee2e90c.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/nmathew/",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        374658
+      ],
+      "fullName": "Nitish Mathew",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "eaa25218-cdfa-42da-897b-33bc1c8e0e85",
+      "firstName": "Simon",
+      "lastName": "Aubury",
+      "bio": "Day job: data steaming & system architecture. Night gig: IoT and random project hacking. Far too long working with massive data processing, ingest and enterprise applications",
+      "tagLine": "Data Geek at ThoughtWorks",
+      "profilePicture": "https://sessionize.com/image/b702-400o400o2-18-cdfa-42da-897b-33bc1c8e0e85.454fb897-aef2-455f-9194-38241e50b6f8.JPG",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/SimonAubury",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/simonaubury",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.thoughtworks.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        374657
+      ],
+      "fullName": "Simon Aubury",
       "categoryItems": [],
       "questionAnswers": []
     },
