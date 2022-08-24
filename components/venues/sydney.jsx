@@ -21,11 +21,11 @@ export default function Example() {
                 Museum of Contemporary Art  
               </h3>
               <p className="mt-8 text-lg text-gray-500">
-                For this year's, DataEngBytes conference in Sydney, the Museum of Contemporary Art Australia has been secured as a venue.
+                The Foundation Hall inside the Museum of Contemporary Art Australia has been secured for this years DataEngBytes Sydney conference.
               </p>
               <div className="mt-5 prose prose-indigo text-gray-500">
                 <p>
-                  Close to public transport options including Town Hall Station, the tram on George St as well as ammenities at the Pitt St Mall, this venue is both central and well appointed.
+                  Situated in The Rocks, close to public transport options including Circular Quay Station, the tram coming off George St as well as the Sydney Harbour Bridge and Opera House, it's a stunning location that will provide a fun backdrop for an amazing day of data engineering.
                 </p>
               </div>
             </div>
