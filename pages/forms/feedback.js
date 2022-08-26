@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useRef } from "react";
+import StarRating from "../star_rating";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import ReactCanvasConfetti from "react-canvas-confetti";
@@ -14,7 +15,7 @@ const canvasStyles = {
 
 function SpeakingForm() {
   const refAnimationInstance = useRef(null);
-
+  const [rating, setRating] = useState(0);
   const getInstance = useCallback((instance) => {
     refAnimationInstance.current = instance;
   }, []);
@@ -104,16 +105,9 @@ function SpeakingForm() {
                 onSubmit={handleSubmit(onSubmit)}
               >
                 <label className="sr-only">Rating</label>
-                <input
-                  id="rating"
-                  {...register("rating", { required: true })}
-                  name="rating"
-                  type="text"
-                  autoComplete="rating"
-                  required
-                  className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white rounded-md"
-                  placeholder="Rate Us Here!"
-                />
+                <div className="w-full text-center">
+                  <StarRating rating={rating} setRating={setRating} />
+                </div>
                 <label className="sr-only">Reason</label>
                 <textarea
                   id="rating_reason"
@@ -174,7 +168,7 @@ function SpeakingForm() {
                   type="submit"
                   className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-500 hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
                 >
-                  Submit talk
+                  Submit
                 </button>
               </form>
             )}
