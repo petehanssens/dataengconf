@@ -57,7 +57,7 @@ function SpeakingForm() {
     });
   }, [makeShot]);
 
-  let hackAPIGW = process.env.DATAENGAU_API_GW + "/speaker";
+  let hackAPIGW = process.env.DATAENGAU_API_GW + "/FavDataEngineer";
   const [formStatus, setFormStatus] = useState(false);
   const {
     register,

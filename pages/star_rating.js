@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const StarRating = ({ rating, setRating }) => {
   const [hover, setHover] = useState(0);
+
   return (
     <div className="cursor-pointer w-full justify-center text-4xl">
       {[...Array(5)].map((star, index) => {

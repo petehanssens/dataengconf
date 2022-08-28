@@ -3,6 +3,7 @@ import StarRating from "../star_rating";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import ReactCanvasConfetti from "react-canvas-confetti";
+import { IconAirlineSeatIndividualSuite } from "@aws-amplify/ui-react";
 
 const canvasStyles = {
   position: "fixed",
@@ -16,6 +17,7 @@ const canvasStyles = {
 function SpeakingForm() {
   const refAnimationInstance = useRef(null);
   const [rating, setRating] = useState(0);
+  console.log(rating);
   const getInstance = useCallback((instance) => {
     refAnimationInstance.current = instance;
   }, []);
@@ -58,14 +60,16 @@ function SpeakingForm() {
     });
   }, [makeShot]);
 
-  let hackAPIGW = process.env.DATAENGAU_API_GW + "/speaker";
+  let hackAPIGW = process.env.DATAENGAU_API_GW + "/feedback";
   const [formStatus, setFormStatus] = useState(false);
   const {
     register,
+    setValue,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
+    console.log(data);
     fire();
     axios
       .post(hackAPIGW, data, {
@@ -108,6 +112,7 @@ function SpeakingForm() {
                 <div className="w-full text-center">
                   <StarRating rating={rating} setRating={setRating} />
                 </div>
+
                 <label className="sr-only">Reason</label>
                 <textarea
                   id="rating_reason"
@@ -120,7 +125,6 @@ function SpeakingForm() {
                   className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white rounded-md"
                   placeholder="Please provide a brief feedback here!"
                 />
-
                 <label className="sr-only">Meetup City</label>
                 <select
                   id="meetup-city"
@@ -163,9 +167,12 @@ function SpeakingForm() {
                   className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white rounded-md"
                   placeholder="Enter your Email Address"
                 />
-
                 <button
                   type="submit"
+                  {...register("rating", { required: true })}
+                  onClick={() => {
+                    setValue("rating", rating);
+                  }}
                   className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-500 hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
                 >
                   Submit
