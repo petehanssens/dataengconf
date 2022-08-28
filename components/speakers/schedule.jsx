@@ -111,7 +111,7 @@ function TimeSlots({ day, className }) {
       {day.sessions.map((timeSlot, timeSlotIndex) => (
         <li
           key={timeSlot.startsAt}
-          aria-label={`${timeSlot.speakerObject[0].fullName} talking about ${timeSlot.title} at ${timeSlot.startsAt} - ${timeSlot.endsAt} AEST`}
+          aria-label={`${timeSlot.speakerObject[0]?.fullName} talking about ${timeSlot.title} at ${timeSlot.startsAt} - ${timeSlot.endsAt} AEST`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />

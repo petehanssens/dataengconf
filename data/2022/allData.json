@@ -1,6 +1,36 @@
 {
   "sessions": [
     {
+      "id": "8faf9b91-e2f8-4be6-90b5-eeee870a5643",
+      "title": "Welcome",
+      "description": "A warm welcome to country and welcome to the conference from our organisers",
+      "startsAt": "2022-09-27T09:00:00",
+      "endsAt": "2022-09-27T09:10:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "23906fc5-e49f-4bdb-88f0-a7155420f5af",
+      "title": "Melbourne Keynote",
+      "description": "Hear from one of the best in Data Engineering",
+      "startsAt": "2022-09-27T09:10:00",
+      "endsAt": "2022-09-27T09:55:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
       "id": "359919",
       "title": "Bringing Software Engineering Rigour to Data",
       "description": "As a consultant with a software background, I get to see a lot of gaps in the data engineering world. The gap of maturity between the data and software communities in engineering rigour is the most prominent one.  \r\n\r\nIn software engineering, we have learnt that building robust and stable applications has a direct correlation with overall organisation performance as outlined in the industry leading Accelerate State of DevOps research by DevOps Research and Assessment (DORA). This is achieved through practices like infrastructure-as-code for deployments, automated testing, application observability, and end-to-end application lifecycle ownership. \r\n\r\nAlthough the data community is scratching the surfaces of possibility and striving to incorporate the core concepts, it is far from reaching its full potential.\r\n\r\nIn this talk, I will go through ways to leverage software engineering good practices into data engineering and demonstrate how measuring key performance metrics could help build more robust and reliable data pipelines.",
@@ -29,6 +59,21 @@
         "8f2f01ec-4972-49fe-a204-8f226fa209cb",
         "c3df4dfc-6b55-4eeb-8c88-172584700a76"
       ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "9db6b29a-8bd2-4428-82bb-9606b8b4705f",
+      "title": "Morning tea",
+      "description": null,
+      "startsAt": "2022-09-27T11:05:00",
+      "endsAt": "2022-09-27T11:25:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -88,6 +133,21 @@
       "recordingUrl": null
     },
     {
+      "id": "beb4a15d-7ee7-425e-b8f3-6bf19663396c",
+      "title": "Lunch",
+      "description": null,
+      "startsAt": "2022-09-27T13:10:00",
+      "endsAt": "2022-09-27T13:50:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
       "id": "363257",
       "title": "Data Security for Data Engineers",
       "description": "Everybody forgets data engineers are in the thick of it. They are handling, transforming piping the data into something or somewhere.\r\nSince attending a cybersecurity bootcamp over the past almost 6 months, (no I'm not all of a sudden a security expert), but with increased awareness of the vulnerabilities exploited, I have been talking to data architects/engineers about their current security practices and how they contribute to or implement data security… e.g leveraging their CI/CD pipelines to include security tests etc, vetting packages/dependencies etc",
@@ -140,6 +200,36 @@
       "recordingUrl": null
     },
     {
+      "id": "fc32722d-884c-4227-83dc-be96a5aab0fb",
+      "title": "Placeholder session",
+      "description": null,
+      "startsAt": "2022-09-27T14:50:00",
+      "endsAt": "2022-09-27T15:10:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "1e4a2af1-d78a-4429-83ac-f72bc0dcad78",
+      "title": "Afternoon Tea",
+      "description": null,
+      "startsAt": "2022-09-27T15:10:00",
+      "endsAt": "2022-09-27T15:30:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
       "id": "361465",
       "title": "Customer Journey Analytics using Neo4j Graph Platform",
       "description": "Today we live in a highly connected world where customers have several touchpoints to interact with the service or product providers. Customer journey represents every customer engagement with a service or product provider. Enabling the customer journey puts the organisation directly in the consumer's mind, so they can see and understand their customer's lifecycle, needs, and perceptions.\r\n\r\nIn this session, we aim to show customer journey in action and:\r\n1. Introduce Neo4j and the concept of graph\r\n2. Model, structure and represent customer journey in Neo4j\r\n3. Visualise and influence customers' journeys using a trigger event model",
@@ -185,6 +275,36 @@
         "60edb78e-dc7d-4b7f-8a56-207f7033ce5d",
         "ab646f99-e69d-4d3b-afca-5c304f84c515"
       ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "9c34c8e9-7a29-4e84-b08c-faac4ceac417",
+      "title": "Wrap up",
+      "description": null,
+      "startsAt": "2022-09-27T17:05:00",
+      "endsAt": "2022-09-27T17:15:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "90ae8990-f9f7-4062-98c1-1acf34027c63",
+      "title": "Welcome",
+      "description": null,
+      "startsAt": "2022-09-29T09:00:00",
+      "endsAt": "2022-09-29T09:10:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -245,6 +365,21 @@
       "recordingUrl": null
     },
     {
+      "id": "1e1df790-459e-455e-94bc-6e574d43989a",
+      "title": "Morning tea",
+      "description": null,
+      "startsAt": "2022-09-29T11:05:00",
+      "endsAt": "2022-09-29T11:25:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
       "id": "363280",
       "title": "Engineering Trust in Data",
       "description": "Is building trust a technical problem? How will an organisation know when data is trusted? Who is the arbiter of trust, and how do they communicate their confidence in the data? These are some of the many questions that inevitably arise when organisations move from data strategies to data operations. \r\n\r\nUnfortunately, most organisations are simply not in a position to know that the market has consistently overcomplicated the technical delivery of data solutions whilst simultaneously underserving the complex and ever-evolving needs of business teams. This dichotomy effectively undermines organisational trust in data and dooms the vast majority of data initiatives to failure.  By contrast, an organisation that starts small and moves quickly, matches investment and technology to value delivered, and continuously improves upon its capabilities builds confidence in data and accelerates the time-to-value of data solutions.\r\n\r\nIn this talk a rigorous, engineering-led methodology for building trust in data will be presented. Key components of a continuous improvement framework for data solutions will be shared and tools for implementing them will be discussed. These frameworks and methodologies leverage lessons gathered over the course of 15 years of delivering data solutions in Australia and will be supported by three real-world case studies that have delivered billions of dollars in combined value back to their organisations.",
@@ -289,6 +424,21 @@
       "speakers": [
         "8f54ae5e-d169-44b0-a460-d9b10257d54c"
       ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "a3fb9fe1-53f2-4aaa-84ee-64925affd70a",
+      "title": "Lunch",
+      "description": null,
+      "startsAt": "2022-09-29T13:10:00",
+      "endsAt": "2022-09-29T13:50:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -364,6 +514,21 @@
       "recordingUrl": null
     },
     {
+      "id": "ddafab03-3f24-4b7f-8610-8cc9e9547c96",
+      "title": "Afternoon tea",
+      "description": null,
+      "startsAt": "2022-09-29T15:10:00",
+      "endsAt": "2022-09-29T15:30:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
       "id": "353187",
       "title": "Data Incidents - When things goes wrong",
       "description": "After you build all your alarms, your test coverage is in place, observability tools running. Things can still goes wrong. So how to deal with Data Incidents?\r\n\r\nIncidents are a huge part of the daily work of any software engineering team, but when it reach the data teams where we have, data analysts, analytics engineers and data scientists. How to identify an incident, how to communicate and how to ensure continuous improvement? This talk will share the experience of SafetyCulture dealing with Incidents in the Data Analytics Team.",
@@ -408,6 +573,21 @@
       "speakers": [
         "eaa25218-cdfa-42da-897b-33bc1c8e0e85"
       ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "a7650f1f-7f96-4afe-8e06-dfb645bdf115",
+      "title": "Wrap up",
+      "description": null,
+      "startsAt": "2022-09-29T17:05:00",
+      "endsAt": "2022-09-29T17:15:00",
+      "isServiceSession": true,
+      "isPlenumSession": false,
+      "speakers": [],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
