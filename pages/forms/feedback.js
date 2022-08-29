@@ -158,11 +158,11 @@ function SpeakingForm() {
                 </select>
                 <label className="sr-only">Email</label>
                 <input
-                  id="email"
-                  {...register("email")}
-                  name="email"
+                  id="emailaddress"
+                  {...register("emailaddress")}
+                  name="emailaddress"
                   type="text"
-                  autoComplete="email"
+                  autoComplete="emailaddress"
                   required
                   className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-700 focus:ring-white rounded-md"
                   placeholder="Enter your Email Address"
