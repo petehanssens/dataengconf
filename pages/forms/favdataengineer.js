@@ -65,6 +65,7 @@ function SpeakingForm() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
+    console.log(data);
     fire();
     axios
       .post(hackAPIGW, data, {
@@ -128,12 +129,12 @@ function SpeakingForm() {
                 />
                 <label className="sr-only">Reason</label>
                 <textarea
-                  id="rating_reason"
-                  {...register("rating_reason", { required: true })}
-                  name="rating_reason"
+                  id="reason"
+                  {...register("reason", { required: true })}
+                  name="reason"
                   type="textarea"
                   rows={3}
-                  autoComplete="rating_reason"
+                  autoComplete="reason"
                   required
                   className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-pink-900 focus:ring-white rounded-md"
                   placeholder="Tell us why they are your favourite?"
@@ -152,11 +153,11 @@ function SpeakingForm() {
                 />
                 <label className="sr-only">Email</label>
                 <input
-                  id="email"
-                  {...register("email", { required: true })}
-                  name="email"
+                  id="emailaddress"
+                  {...register("emailaddress", { required: true })}
+                  name="emailaddress"
                   type="text"
-                  autoComplete="email"
+                  autoComplete="emailaddress"
                   required
                   className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-pink-900 focus:ring-white rounded-md"
                   placeholder="Enter your Email Address"
@@ -164,7 +165,7 @@ function SpeakingForm() {
 
                 <button
                   type="submit"
-                  className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-700 hover:bg-pink-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-pink-900 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
+                  className="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-700 hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-pink-900 focus:ring-white sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
                 >
                   Submit
                 </button>
