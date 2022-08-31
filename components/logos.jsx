@@ -1,99 +1,111 @@
-import React from 'react';
+import React from "react";
 
 const sponsorLogo = [
-    {
-      name: 'Confluent',
-      image: 'images/sponsors/confluent-denim-big.png',
-      url: 'https://www.confluent.io/',
-    },
-    {
-      name: 'Mantel Group',
-      image: 'images/sponsors/mantel-group-big.png',
-      url: 'https://mantelgroup.com.au/',
-    },
-    {
-      name: 'DataStax',
-      image: 'images/sponsors/datastax.png',
-      url: 'https://datastax.com/',
-    },
-    {
-      name: 'Neo4j',
-      image: 'images/sponsors/neo4j_colour.png',
-      url: 'https://neo4j.com/',
-    },
-    {
-      name: 'Snowflake',
-      image: 'images/sponsors/snowflake.png',
-      url: 'https://www.snowflake.com/',
-    },
-    {
-      name: 'Fivetran',
-      image: 'images/sponsors/fivetran.png',
-      url: 'https://fivetran.com/',
-    },
-    {
-      name: 'Databricks',
-      image: 'images/sponsors/databricks.png',
-      url: 'https://databricks.com/',
-    },
-    {
-      name: 'Microsoft',
-      image: 'images/sponsors/MS-Azure_logo_gray.png',
-      url: 'https://azure.microsoft.com/en-au/',
-    },
-    {
-      name: 'AWS',
-      image: 'images/sponsors/aws.png',
-      url: 'https://aws.amazon.com/',
-    },
-    {
-      name: 'Imply',
-      image: 'images/sponsors/imply.png',
-      url: 'https://imply.io/',
-    },
-    {
-      name: 'dbt',
-      image: 'images/sponsors/dbt-labs.png',
-      url: 'https://www.getdbt.com/',
-    },
-    {
-      name: 'Thoughtworks',
-      image: 'images/sponsors/thoughtworks_flamingo_wave.png',
-      url: 'https://www.thoughtworks.com/',
-    },
-    {
-      name: 'Microsoft Reactor',
-      image: 'images/sponsors/Reactor-logo-Dark.svg',
-      url: 'https://developer.microsoft.com/en-us/reactor/location/sydney',
-    },
-    {
-      name: 'Skills Matter',
-      image: 'images/sponsors/SkillsMatter-logo-2020-braces-RGB-blue.png',
-      url: 'https://skillsmatter.com/conferences/13659-yow-data-2022',
-    },
-    {
-      name: 'Cloud Shuttle',
-      image: 'images/sponsors/new-cloudshuttle-logo.png',
-      url: 'https://www.cloudshuttle.com.au/',
-    },
-    {
-      name: 'cloudseeder',
-      image: 'images/sponsors/cs-white.png',
-      url: 'https://www.cloudseeder.com.au/',
-    },
-]
+  {
+    name: "Immuta",
+    image: "images/sponsors/Immuta.png",
+    url: "https://www.immuta.com",
+  },
+  {
+    name: "StreamSets",
+    image: "images/sponsors/StreamSets.png",
+    url: "https://streamsets.com",
+  },
+  {
+    name: "Confluent",
+    image: "images/sponsors/confluent-denim-big.png",
+    url: "https://www.confluent.io/",
+  },
+  {
+    name: "Mantel Group",
+    image: "images/sponsors/mantel-group-big.png",
+    url: "https://mantelgroup.com.au/",
+  },
+  {
+    name: "DataStax",
+    image: "images/sponsors/datastax.png",
+    url: "https://datastax.com/",
+  },
+  {
+    name: "Neo4j",
+    image: "images/sponsors/neo4j_colour.png",
+    url: "https://neo4j.com/",
+  },
+  {
+    name: "Snowflake",
+    image: "images/sponsors/snowflake.png",
+    url: "https://www.snowflake.com/",
+  },
+  {
+    name: "Fivetran",
+    image: "images/sponsors/fivetran.png",
+    url: "https://fivetran.com/",
+  },
+  {
+    name: "Databricks",
+    image: "images/sponsors/databricks.png",
+    url: "https://databricks.com/",
+  },
+  {
+    name: "Microsoft",
+    image: "images/sponsors/MS-Azure_logo_gray.png",
+    url: "https://azure.microsoft.com/en-au/",
+  },
+  {
+    name: "AWS",
+    image: "images/sponsors/aws.png",
+    url: "https://aws.amazon.com/",
+  },
+  {
+    name: "Imply",
+    image: "images/sponsors/imply.png",
+    url: "https://imply.io/",
+  },
+  {
+    name: "dbt",
+    image: "images/sponsors/dbt-labs.png",
+    url: "https://www.getdbt.com/",
+  },
+  {
+    name: "Thoughtworks",
+    image: "images/sponsors/thoughtworks_flamingo_wave.png",
+    url: "https://www.thoughtworks.com/",
+  },
+  {
+    name: "Microsoft Reactor",
+    image: "images/sponsors/Reactor-logo-Dark.svg",
+    url: "https://developer.microsoft.com/en-us/reactor/location/sydney",
+  },
+  {
+    name: "Skills Matter",
+    image: "images/sponsors/SkillsMatter-logo-2020-braces-RGB-blue.png",
+    url: "https://skillsmatter.com/conferences/13659-yow-data-2022",
+  },
+  {
+    name: "Cloud Shuttle",
+    image: "images/sponsors/new-cloudshuttle-logo.png",
+    url: "https://www.cloudshuttle.com.au/",
+  },
+  {
+    name: "cloudseeder",
+    image: "images/sponsors/cs-white.png",
+    url: "https://www.cloudseeder.com.au/",
+  },
+];
 
 export default function Sponsors() {
-    return (
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
-            Special thanks to our amazing sponsors!
-          </p>
-          <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
+  return (
+    <div className="bg-white">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
+          Special thanks to our amazing sponsors!
+        </p>
+        <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
           {sponsorLogo.map((sponsor) => (
-            <div key={sponsor.name}
-              className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+            <div
+              key={sponsor.name}
+              className="col-span-1 flex justify-center py-8 px-8 bg-gray-50"
+            >
               <a href={sponsor.url}>
                 <img
                   className="max-h-12"
@@ -103,9 +115,8 @@ export default function Sponsors() {
               </a>
             </div>
           ))}
-          </div>
         </div>
       </div>
-    )
-  }
-  
+    </div>
+  );
+}
