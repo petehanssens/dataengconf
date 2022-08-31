@@ -3,7 +3,13 @@ import { useForm } from "react-hook-form";
 const dataEngLogo =
   "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png";
 export default function Register({ setStatus, setUser }) {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    setError,
+    clearErrors,
+    formState: { errors },
+  } = useForm();
 
   async function signUp({ email, username, password }) {
     try {
@@ -22,6 +28,10 @@ export default function Register({ setStatus, setUser }) {
       });
     } catch (error) {
       console.log("error signing up:", error);
+      setError("signupform", {
+        type: "server",
+        message: "User already exists or wrong Email Address",
+      });
     }
   }
 
@@ -65,6 +75,7 @@ export default function Register({ setStatus, setUser }) {
 
           <div className="pb-1">
             <button
+              onClick={() => clearErrors()}
               type="submit"
               className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
@@ -85,6 +96,9 @@ export default function Register({ setStatus, setUser }) {
               </span>
               Register
             </button>
+            <div className="text-red-700 mt-3; text-center pb-2">
+              {errors.signupform?.message}
+            </div>
           </div>
 
           <div className="flex items-center justify-end">

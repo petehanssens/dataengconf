@@ -4,7 +4,13 @@ import { useForm } from "react-hook-form";
 const dataEngLogo =
   "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png";
 export default function SignIn({ setStatus }) {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    setError,
+    clearErrors,
+    formState: { errors },
+  } = useForm();
   const router = useRouter();
 
   async function signIn({ username, password }) {
@@ -14,6 +20,10 @@ export default function SignIn({ setStatus }) {
       router.push("/client-protected");
     } catch (error) {
       console.log("error signing in", error);
+      setError("signInform", {
+        type: "server",
+        message: "Incorrect username or password.",
+      });
     }
   }
 
@@ -61,9 +71,9 @@ export default function SignIn({ setStatus }) {
               />
             </div>
           </div>
-
           <div className="pb-1">
             <button
+              onClick={() => clearErrors()}
               type="submit"
               className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
@@ -85,7 +95,9 @@ export default function SignIn({ setStatus }) {
               Sign in
             </button>
           </div>
-
+          <div className="text-red-700 mt-3; text-center pb-2">
+            {errors.signInform?.message}
+          </div>
           <div className="flex items-center justify-end">
             <div className="text-sm">
               <button
