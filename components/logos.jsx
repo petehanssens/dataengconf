@@ -3,7 +3,7 @@ import React from "react";
 const sponsorLogo = [
   {
     name: "Immuta",
-    image: "images/sponsors/Immuta.png",
+    image: "images/sponsors/immuta.jpg",
     url: "https://www.immuta.com",
   },
   {
