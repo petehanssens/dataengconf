@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Image from 'next/image'
+import { Fragment } from "react";
 
 const organisers = [
   {
@@ -163,7 +164,7 @@ const breadcrumb = {
 export default function Team() {
     return (
 
-    <>
+    <Fragment>
       <SEO
         keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
         title="Team - DataEngBytes!"
@@ -370,6 +371,6 @@ export default function Team() {
         </div>
       </div>
     </div>
-  </>
+  </Fragment>
   )
 }

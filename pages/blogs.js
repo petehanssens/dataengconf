@@ -4,10 +4,11 @@ import matter from 'gray-matter'
 import Link from 'next/link'
 import Image from 'next/image'
 import SEO from "../components/seo";
+import { Fragment } from 'react'
 
 const Blog = ({ posts }) => {
   return (
-    <>
+    <Fragment>
       <SEO
       keywords={[`dataengbytes`]}
       title="From the blog: Our team of data engineering experts share their insights"
@@ -69,7 +70,7 @@ const Blog = ({ posts }) => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   )
 }
 

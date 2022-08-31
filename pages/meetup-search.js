@@ -1,6 +1,6 @@
 import { SearchField } from '@aws-amplify/ui-react';
 import SEO from "../components/seo";
-import React from 'react';
+import React, { Fragment } from 'react';
 
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
   }, [onClick]);
 
     return (
-      <>
+      <Fragment>
         <SEO
           keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
           title="FAQs - DataEngBytes!"
@@ -37,6 +37,6 @@ export default function Home() {
           ref={inputRef}
           searchButtonRef={searchButtonRef}
         />
-        </>
+        </Fragment>
       )
   }

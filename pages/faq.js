@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import SEO from "../components/seo";
 
 const faqs = [
@@ -59,7 +60,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <>
+    <Fragment>
       <SEO
         keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
         title="FAQs - DataEngBytes!"
@@ -82,6 +83,6 @@ export default function Example() {
             </div>
           </div>
         </div>
-      </>
+      </Fragment>
     )
 }
