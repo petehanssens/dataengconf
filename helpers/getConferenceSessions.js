@@ -13,7 +13,7 @@ export default function getConfDetails() {
     const simpleOptions = {  year: 'numeric', month: 'numeric', day: 'numeric', };
     const newDate = new Date(e.startsAt).toLocaleDateString("en-AU", options)
     const simpleDate = new Date(e.startsAt).toLocaleDateString("en-AU", simpleOptions)
-    const [day, month, year] = new Date(e.startsAt).toLocaleDateString().split('/');
+    const [day, month, year] = new Date(e.startsAt).toLocaleDateString('en-AU').split('/');
     const result = [year, month, day].join('-');
     e.goodDate = result
     e.prettyDate = newDate
@@ -25,7 +25,7 @@ export default function getConfDetails() {
     } else {
       e.city = "Unknown"
     }
-    e.date = new Date(e.startsAt).toLocaleDateString()
+    e.date = new Date(e.startsAt).toLocaleDateString('en-AU')
     e.speakerObject = []
     e.speakers.map((s) => {
       const details = FetchSpeakerDetails(s)

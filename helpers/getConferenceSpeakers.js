@@ -13,7 +13,7 @@ export default function getConfDetails() {
       const details = FetchSessionDetails(s)
       e.sessionObject = details
     })
-    const [day, month, year] = new Date(e.sessionObject.startsAt).toLocaleDateString().split('/');
+    const [day, month, year] = new Date(e.sessionObject.startsAt).toLocaleDateString('en-AU').split('/');
     const result = [year, month, day].join('-');
     e.simpleDate = result
   })
