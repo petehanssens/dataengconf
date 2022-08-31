@@ -82,7 +82,7 @@ function SEO({ description, meta, keywords, title, image }) {
     },
     {
       property: `og:image`,
-      content: image || "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png",
+      content: image || "/images/2022/DataEngbytes.jpg",
     },
     {
       name: `twitter:card`,

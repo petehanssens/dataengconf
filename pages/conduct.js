@@ -1,9 +1,10 @@
+import { Fragment } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 export default function CodeOfConduct() {
     return (
-    <>
+    <Fragment>
     <SEO
       keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
       title="Code of Conduct - DataEngBytes!"
@@ -103,6 +104,6 @@ export default function CodeOfConduct() {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
     )
   }

@@ -2,10 +2,11 @@ import SEO from "../components/seo";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faYoutube, faLinkedin, faMeetup } from '@fortawesome/free-brands-svg-icons' 
+import { Fragment } from "react";
 
 export default function ContactUs() {
   return (
-  <>
+  <Fragment>
   <SEO
     keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
     title="Contact Us - DataEngBytes!"
@@ -117,6 +118,6 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
-  </>
+  </Fragment>
   )
 }

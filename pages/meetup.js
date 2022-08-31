@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import SEO from "../components/seo";
 import Meetups from "../components/meetups";
 import CityBar from "../components/citybar";
@@ -11,7 +11,7 @@ export default function Home() {
     }
     return (
         
-        <>
+        <Fragment>
             
             <SEO
             keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
@@ -22,7 +22,7 @@ export default function Home() {
             <Meetups 
             city="Sydney"
             />
-        </>
+        </Fragment>
     )
 
 }
