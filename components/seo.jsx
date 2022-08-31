@@ -82,7 +82,7 @@ function SEO({ description, meta, keywords, title, image }) {
     },
     {
       property: `og:image`,
-      content: image || "/images/2022/DataEngbytes.jpg",
+      content: image || "https://dataengconf.com.au/images/2022/DataEngbytes.jpg",
     },
     {
       name: `twitter:card`,
