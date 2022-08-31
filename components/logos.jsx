@@ -3,7 +3,11 @@ import React from "react";
 const sponsorLogo = [
   {
     name: "Immuta",
+<<<<<<< HEAD
     image: "images/sponsors/immuta.jpg",
+=======
+    image: "images/sponsors/Immuta.png",
+>>>>>>> 32482c3 (update-logos)
     url: "https://www.immuta.com",
   },
   {
