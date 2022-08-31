@@ -126,11 +126,11 @@ function TimeSlots({ day, className }) {
           )}
           <p className="mt-1 font-mono text-sm text-slate-500">
             <time dateTime={`${day.goodDate}T${timeSlot.startsAt}-08:00`}>
-              {new Date(timeSlot.startsAt).toLocaleTimeString()}
+              {new Date(timeSlot.startsAt).toLocaleTimeString('en-AU')}
             </time>{' '}
             -{' '}
             <time dateTime={`${day.goodDate}T${timeSlot.endsAt}-08:00`}>
-              {new Date(timeSlot.endsAt).toLocaleTimeString()}
+              {new Date(timeSlot.endsAt).toLocaleTimeString('en-AU')}
             </time>{' '}
             AEST
           </p>

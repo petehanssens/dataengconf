@@ -249,7 +249,7 @@
     {
       "id": "353078",
       "title": "Best of Stream + Batch: When Streaming Analytics Isn’t",
-      "description": "As data streams have moved from a niche technology to the new normal, the need to analyze streams has become ever-greater. Many stream processors, led by Apache Spark™, and simple stream analyzers, such as ksql for Kafka and Amazon Kinesis Analytics, claim to fill this gap. But they are missing key functions to provide useful real-time analytics. \r\n\r\nGian Merlino, Apache Druid® committer and co-founder of Imply will show how real-time analytics combines stream and batch data at scale, with low latency, high concurrency, and reliable resilience. See how real-time analytics enables the best of stream + batch.\r\n",
+      "description": "As data streams have moved from a niche technology to the new normal, the need to analyze streams has become ever-greater. Many stream processors, led by Apache Spark™, and simple stream analyzers, such as ksql for Kafka and Amazon Kinesis Analytics, claim to fill this gap. But they are missing key functions to provide useful real-time analytics.\r\n\r\nRohan Garg, Apache Druid® committer and Software Engineer at Imply, will show how real-time analytics combines stream and batch data at scale, with low latency, high concurrency, and reliable resilience. See how real-time analytics enables the best of stream + batch.",
       "startsAt": "2022-09-27T15:50:00",
       "endsAt": "2022-09-27T16:25:00",
       "isServiceSession": false,
@@ -530,7 +530,7 @@
     },
     {
       "id": "353187",
-      "title": "Data Incidents - When things goes wrong",
+      "title": "Data Incidents - When things go wrong",
       "description": "After you build all your alarms, your test coverage is in place, observability tools running. Things can still goes wrong. So how to deal with Data Incidents?\r\n\r\nIncidents are a huge part of the daily work of any software engineering team, but when it reach the data teams where we have, data analysts, analytics engineers and data scientists. How to identify an incident, how to communicate and how to ensure continuous improvement? This talk will share the experience of SafetyCulture dealing with Incidents in the Data Analytics Team.",
       "startsAt": "2022-09-29T15:30:00",
       "endsAt": "2022-09-29T15:50:00",
@@ -571,7 +571,9 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "eaa25218-cdfa-42da-897b-33bc1c8e0e85"
+        "eaa25218-cdfa-42da-897b-33bc1c8e0e85",
+        "4181ff45-641d-4542-9b8a-e6e274ce486f",
+        "097c2b76-b71c-46f1-9e3e-1c0045f02ee9"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -732,6 +734,33 @@
       "questionAnswers": []
     },
     {
+      "id": "097c2b76-b71c-46f1-9e3e-1c0045f02ee9",
+      "firstName": "David",
+      "lastName": "Ndukwu",
+      "bio": "I have extensive experience leading complex Software & Data Engineering program initiatives. I've worked for some of the large brands across Australia including being part of the team that delivered Australia's first big data streaming pipelines on AWS. I hold a doctorate in Computer Science from Macquarie University, Australia.",
+      "tagLine": "Head of Data Engineering at Metigy",
+      "profilePicture": "https://sessionize.com/image/9cfc-400o400o2-H5BzSm4gQbexzA5FDCtvQB.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/david-u-ndukwu-3277a24/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://metigy.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        374657
+      ],
+      "fullName": "David Ndukwu",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "98d417d3-36e8-44c3-8131-6bb3b67637bd",
       "firstName": "Duana",
       "lastName": "Stanley",
@@ -812,7 +841,7 @@
       "lastName": "Ooi",
       "bio": "Solution Architect @ AWS",
       "tagLine": "Solution Architect @ AWS",
-      "profilePicture": "https://sessionize.com/image/e20a-400o400o2-e1061d6b-aea5-4a09-8839-b2e7ceb71d3a.jpg",
+      "profilePicture": "https://sessionize.com/image/cbc0-400o400o2-EwmEVTzWJz9ZSLFa3xgFmQ.jpg",
       "isTopSpeaker": false,
       "links": [
         {
@@ -1168,13 +1197,8 @@
       "links": [
         {
           "title": "LinkedIn",
-          "url": "https://linkedin.com/in/rajputsvikas",
+          "url": "https://www.linkedin.com/in/rajputsvikas/",
           "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://aka.ms/architecture",
-          "linkType": "Company_Website"
         }
       ],
       "sessions": [
@@ -1213,6 +1237,38 @@
         363332
       ],
       "fullName": "Vinoaj Vijeyakumaar",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "4181ff45-641d-4542-9b8a-e6e274ce486f",
+      "firstName": "Wendy",
+      "lastName": "Wong",
+      "bio": "AWS Community Builder and Data Scientist\r\n\r\nWendy is a Data Scientist, Senior Data Analyst, Business Analyst/Data Engineer, AWS Community Builder and Analytics Mentor with a demonstrated track record delivering strong results in customer success, digital projects and senior leadership. Wendy worked across multiple industries in disruptive market environments. Strong values based, innovative leader with differentiation in consumer/people led business transformation and digital growth.\r\n\r\nWendy has provided data science consulting at the Australian Taxation Office, PwC Australia, Jobgetter and Lend Lease.\r\nMost recently Wendy was a Data Scientist for the AI startup Eliza and also consulted at University of Technology Sydney in Smart Cities.\r\n\r\nWendy graduated with a Masters of Data Science and Innovation degree from the University of Technology, Sydney with Distinction-Average and a Graduate Certificate in Editing and Publishing.\r\n\r\nWendy is honored to be an AWS Community Builder in the specialty area of data.\r\n\r\nWendy is passionate about technology and is a former Stanford University Women in Data Science Sydney Ambassador in 2018 and 2020 and a Women in Big Data Sydney Chapter Lead.\r\n\r\nWendy was a mentor for Dalyell Scholars at The University of Sydney and a former data analytics instructor at Academy Xi.\r\n\r\nWendy is passionate about Conversational AI, natural language understanding and data engineering in the Public Sector.\r\n",
+      "tagLine": "AWS Community Builder and Data Scientist",
+      "profilePicture": "https://sessionize.com/image/4552-400o400o2-nV6XaKV5dNJYWp3tD54Kpo.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/abc_wendsss",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/wendywong7/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.semanticscholar.org/paper/Taxpayer-Behavior-Prediction-in-SMS-Campaigns-Cao-Downes/8a3bbb1aeca87042b46e0781d4aaa0fc8a9e62e7",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        374657
+      ],
+      "fullName": "Wendy Wong",
       "categoryItems": [],
       "questionAnswers": []
     },

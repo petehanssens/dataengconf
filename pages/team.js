@@ -196,7 +196,7 @@ export default function Team() {
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Our Organisers</h2>
             <p className="text-xl text-gray-500">
-            Meet the organisers working hard to bring you DataEngBytes 2021!
+            Meet the organisers working hard to bring you DataEngBytes 2022!
             </p>
           </div>
           <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
@@ -286,7 +286,7 @@ export default function Team() {
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Our Committee</h2>
             <p className="text-xl text-gray-500">
-              Meet the committee who are setting the direction and helping to guide the ship that is DataEngBytes 2021!
+              Meet the committee who are setting the direction and helping to guide the ship that is DataEngBytes 2022!
             </p>
           </div>
           <div className="lg:col-span-2">
