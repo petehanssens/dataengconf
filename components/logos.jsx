@@ -4,10 +4,14 @@ const sponsorLogo = [
   {
     name: "Immuta",
 <<<<<<< HEAD
+<<<<<<< HEAD
     image: "images/sponsors/immuta.jpg",
 =======
     image: "images/sponsors/Immuta.png",
 >>>>>>> 32482c3 (update-logos)
+=======
+    image: "images/sponsors/immuta.jpg",
+>>>>>>> 77161d7 (logo-update)
     url: "https://www.immuta.com",
   },
   {
