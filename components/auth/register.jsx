@@ -91,7 +91,7 @@ export default function Register({ setStatus, setUser }) {
               Register
             </button>
             <div className="text-red-700 mt-3; text-center pb-2">
-              {errors.signupform?.message}
+              {/* {errors.signupform?.message} */}
             </div>
           </div>
 
