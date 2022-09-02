@@ -8,18 +8,6 @@ import Link from 'next/link'
 
 const theConfDetails = confDetails()
 
-function addCity(date) {
-  let city = ""
-  if (date == "2022-09-27") {
-    city = "Melbourne";
-  } else if (date == "2022-09-29") {
-    city = "Sydney"
-  } else {
-    city = "Unknown"
-  }
-  return city
-}
-
 function Container({ className, ...props }) {
     return (
       <div
@@ -103,6 +91,7 @@ export default function Speakers() {
             <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({ selectedIndex }) =>
                 theConfDetails.map((day, dayIndex) => (
+                  console.log('day: ',day),
                   <div key={day.simpleDate} className="relative lg:pl-8">
                     <DiamondIcon
                       className={clsx(
@@ -123,7 +112,7 @@ export default function Speakers() {
                       >
                         <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                           <span className="absolute inset-0" />
-                          {addCity(day.simpleDate)}
+                          {day.city}
                         </Tab>
                       </div>
                       <time
@@ -177,7 +166,7 @@ export default function Speakers() {
                         {speaker.fullName}
                       </h3>
                       <p className="mt-1 text-base tracking-tight text-slate-500">
-                        {speaker.tagLine}
+                        {speaker.tagLine || ''}
                       </p>
                   </div>
                     </Link>

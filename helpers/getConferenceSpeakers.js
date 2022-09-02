@@ -6,6 +6,18 @@ function FetchSessionDetails(id) {
   })[0]
 }
 
+function addCity(date) {
+  let city = ""
+  if (date == "2022-09-27") {
+    city = "Melbourne";
+  } else if (date == "2022-09-29") {
+    city = "Sydney"
+  } else {
+    city = "Unknown"
+  }
+  return city
+}
+
 export default function getConfDetails() {  
   conferenceData.speakers.map((e) => {
     e.sessionObject = []
@@ -16,11 +28,14 @@ export default function getConfDetails() {
     const [day, month, year] = new Date(e.sessionObject.startsAt).toLocaleDateString('en-AU').split('/');
     const result = [year, month, day].join('-');
     e.simpleDate = result
+    e.city = addCity(result)
   })
+
+  // console.log('conferenceData: ',conferenceData)
 
   const groupedSpeakers = Object.entries(
     // What you have done
-    conferenceData.speakers.reduce((acc, { id, fullName, tagLine, profilePicture, simpleDate, sessionObject }) => {
+    conferenceData.speakers.reduce((acc, { id, fullName, tagLine, profilePicture, simpleDate, city, sessionObject }) => {
       // Group initialization
       if (!acc[simpleDate]) {
         acc[simpleDate] = [];
@@ -28,13 +43,12 @@ export default function getConfDetails() {
       
       // Grouping
       // FIX: only pushing the object that contains id and value
-      acc[simpleDate].push({ id, fullName, tagLine, profilePicture, simpleDate });
+      acc[simpleDate].push({ id, fullName, tagLine, profilePicture, simpleDate, city });
   
       return acc;
     }, {})
-  ).map(([simpleDate, speakers]) => ({ simpleDate, speakers }));
+  ).map(([simpleDate, speakers, city]) => ({ simpleDate, speakers, city }))
 
   return groupedSpeakers;
-
 
 }

@@ -1,14 +1,17 @@
 {
   "sessions": [
     {
-      "id": "8faf9b91-e2f8-4be6-90b5-eeee870a5643",
-      "title": "Welcome",
-      "description": "A warm welcome to country and welcome to the conference from our organisers",
+      "id": "380284",
+      "title": "Welcome to Melbourne DataEngBytes",
+      "description": "A warm welcome to the conference from your hosts and founder of DataEngBytes, Peter Hanssens",
       "startsAt": "2022-09-27T09:00:00",
       "endsAt": "2022-09-27T09:10:00",
-      "isServiceSession": true,
+      "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [],
+      "speakers": [
+        "6ed69375-e530-445d-86c8-bc1459d94ca4",
+        "59798a0e-509a-440f-9f48-5a0c992cb5a3"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -255,7 +258,7 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "2b583bbd-2202-4fd8-9429-97f085cf3923"
+        "7b375732-c95e-4ab3-b965-0b1ddecd81f9"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -282,14 +285,17 @@
       "recordingUrl": null
     },
     {
-      "id": "9c34c8e9-7a29-4e84-b08c-faac4ceac417",
-      "title": "Wrap up",
-      "description": null,
+      "id": "380286",
+      "title": "Thanks & Wrap-Up, Melbourne",
+      "description": "A big thank you for all of your amazing support throughout the day",
       "startsAt": "2022-09-27T17:05:00",
       "endsAt": "2022-09-27T17:15:00",
-      "isServiceSession": true,
+      "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [],
+      "speakers": [
+        "59798a0e-509a-440f-9f48-5a0c992cb5a3",
+        "dcb768db-d3a0-4be9-9b8c-d216015cbfca"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -297,14 +303,18 @@
       "recordingUrl": null
     },
     {
-      "id": "90ae8990-f9f7-4062-98c1-1acf34027c63",
-      "title": "Welcome",
-      "description": null,
+      "id": "381653",
+      "title": "Welcome to Sydney DataEngBytes",
+      "description": "A warm welcome from your hosts and founder of DataEngBytes, Peter Hanssens",
       "startsAt": "2022-09-29T09:00:00",
       "endsAt": "2022-09-29T09:10:00",
-      "isServiceSession": true,
+      "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [],
+      "speakers": [
+        "8839717c-2cc6-4365-841c-c8a819f74336",
+        "eaa25218-cdfa-42da-897b-33bc1c8e0e85",
+        "6ed69375-e530-445d-86c8-bc1459d94ca4"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -573,7 +583,8 @@
       "speakers": [
         "eaa25218-cdfa-42da-897b-33bc1c8e0e85",
         "4181ff45-641d-4542-9b8a-e6e274ce486f",
-        "097c2b76-b71c-46f1-9e3e-1c0045f02ee9"
+        "097c2b76-b71c-46f1-9e3e-1c0045f02ee9",
+        "8e002909-1ba1-4662-b233-7b0aa4e791d0"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -582,14 +593,19 @@
       "recordingUrl": null
     },
     {
-      "id": "a7650f1f-7f96-4afe-8e06-dfb645bdf115",
-      "title": "Wrap up",
-      "description": null,
-      "startsAt": "2022-09-29T17:05:00",
-      "endsAt": "2022-09-29T17:15:00",
-      "isServiceSession": true,
+      "id": "381654",
+      "title": "Thanks & Wrap-Up, Sydney",
+      "description": "A big thank you for all of your amazing support throughout the day",
+      "startsAt": "2022-09-29T17:00:00",
+      "endsAt": "2022-09-29T17:10:00",
+      "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [],
+      "speakers": [
+        "8839717c-2cc6-4365-841c-c8a819f74336",
+        "2994c6dc-5a80-4cd7-a674-08bb19e16328",
+        "eaa25218-cdfa-42da-897b-33bc1c8e0e85",
+        "6ed69375-e530-445d-86c8-bc1459d94ca4"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -598,6 +614,33 @@
     }
   ],
   "speakers": [
+    {
+      "id": "dcb768db-d3a0-4be9-9b8c-d216015cbfca",
+      "firstName": "Adithya",
+      "lastName": "Narjala",
+      "bio": "Passionate about solving and architecting data platforms for various business problems. ",
+      "tagLine": "Senior Data Consultant at CMD Solutions",
+      "profilePicture": "https://sessionize.com/image/df41-400o400o2-88a9ccd8-7f7b-44b2-91ed-f351a2b6c09d.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adithya-bhat-narjala",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.cmdsolutions.com.au/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        380286
+      ],
+      "fullName": "Adithya Narjala",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
     {
       "id": "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84",
       "firstName": "Akira",
@@ -761,6 +804,38 @@
       "questionAnswers": []
     },
     {
+      "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
+      "firstName": "Dean",
+      "lastName": "Nguyen",
+      "bio": "Dean is the CEO & Co-founder of KADA. \r\n\r\nKADA is a data product analytics platform that helps organisations understand and improve how their data products are used. KADA is a startup based in Sydney, Australia.\r\n\r\nPrior to founding KADA, Dean was the CPO (Data) at Macquarie Bank. ",
+      "tagLine": "CEO & Co-founder of KADA. ",
+      "profilePicture": "https://sessionize.com/image/4a7b-400o400o2-4caa45ed-b7f6-4770-939a-5de964f386d4.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/kada_ai",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/dean-nguyen/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.kada.ai",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        374657
+      ],
+      "fullName": "Dean Nguyen",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "98d417d3-36e8-44c3-8131-6bb3b67637bd",
       "firstName": "Duana",
       "lastName": "Stanley",
@@ -773,38 +848,6 @@
         363029
       ],
       "fullName": "Duana Stanley",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
-    {
-      "id": "2b583bbd-2202-4fd8-9429-97f085cf3923",
-      "firstName": "Gian",
-      "lastName": "Merlino",
-      "bio": "Gian is a co-author of the open-source Apache Druid® project and co-founder and CTO at Imply. Gian is also the Apache Druid® Committee (PMC) Chair. Previously, Gian led the data ingestion team at Metamarkets and held senior engineering positions at Yahoo. He holds a B.S. in Computer Science from Caltech.",
-      "tagLine": "CTO",
-      "profilePicture": "https://sessionize.com/image/6deb-400o400o2-nuZ6kFs564ZLABfp35RJ3W.jpg",
-      "isTopSpeaker": false,
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/gianmerlino",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/gianmerlino/",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://imply.io/",
-          "linkType": "Company_Website"
-        }
-      ],
-      "sessions": [
-        353078
-      ],
-      "fullName": "Gian Merlino",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -832,6 +875,23 @@
         361339
       ],
       "fullName": "Hilton Rosenfeld",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "8839717c-2cc6-4365-841c-c8a819f74336",
+      "firstName": "Ingrid",
+      "lastName": "Anzola",
+      "bio": "Passionate about data for 20 years, keen to share my own experiences and learn from others, and proud of being part of such an awesome data community. Data never stops flowing; my purpose is to help decision makers shift from ad hoc analysis to an ongoing conversation with data",
+      "tagLine": "Head of Data Platform, Shippit",
+      "profilePicture": "https://sessionize.com/image/f104-400o400o2-HVu42FNTdDbCj3MR5XpyEE.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        381653,
+        381654
+      ],
+      "fullName": "Ingrid Anzola",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1101,6 +1161,84 @@
       "questionAnswers": []
     },
     {
+      "id": "6ed69375-e530-445d-86c8-bc1459d94ca4",
+      "firstName": "Peter",
+      "lastName": "Hanssens",
+      "bio": "A big fan of all things Serverless and Data Engineering.",
+      "tagLine": "Solutions Architect, Cloud Shuttle",
+      "profilePicture": "https://sessionize.com/image/d0fe-400o400o2-WxQ22VRBXHZ7cywiVSsnrh.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/petehanssens",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/peterhanssens/",
+          "linkType": "LinkedIn"
+        }
+      ],
+      "sessions": [
+        380284,
+        381653,
+        381654
+      ],
+      "fullName": "Peter Hanssens",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "59798a0e-509a-440f-9f48-5a0c992cb5a3",
+      "firstName": "Revathi",
+      "lastName": "Kanduri",
+      "bio": "Solution Architect @Databricks",
+      "tagLine": "Solution Architect @Databricks",
+      "profilePicture": "https://sessionize.com/image/000d-400o400o2-SVVfANewFeTk3wx4b211Jd.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        380284,
+        380286
+      ],
+      "fullName": "Revathi Kanduri",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "7b375732-c95e-4ab3-b965-0b1ddecd81f9",
+      "firstName": "Rohan",
+      "lastName": "Garg",
+      "bio": "Rohan is an Apache Druid® project committer and a Software Engineer at Imply. Previously, he has worked as an engineer on Trino and Apache Hadoop YARN projects at Qubole.",
+      "tagLine": "Software Engineer, Imply",
+      "profilePicture": "https://sessionize.com/image/d328-400o400o2-LmRsqT6K4Yo7gaZMqQM5bt.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/rohangarg_411",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/rohangarg411",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.imply.io",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        353078
+      ],
+      "fullName": "Rohan Garg",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "eaa25218-cdfa-42da-897b-33bc1c8e0e85",
       "firstName": "Simon",
       "lastName": "Aubury",
@@ -1126,7 +1264,9 @@
         }
       ],
       "sessions": [
-        374657
+        381653,
+        374657,
+        381654
       ],
       "fullName": "Simon Aubury",
       "categoryItems": [],
@@ -1269,6 +1409,22 @@
         374657
       ],
       "fullName": "Wendy Wong",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "2994c6dc-5a80-4cd7-a674-08bb19e16328",
+      "firstName": "Wenny",
+      "lastName": "Hidayat",
+      "bio": "Senior Software Engineer at DigIO",
+      "tagLine": "Senior Software Engineer at DigIO",
+      "profilePicture": "https://sessionize.com/image/583e-400o400o2-W81B7LfeC2nFj1S8ychP3K.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        381654
+      ],
+      "fullName": "Wenny Hidayat",
       "categoryItems": [],
       "questionAnswers": []
     },
