@@ -8,7 +8,7 @@ import Sydney from '../components/venues/sydney'
 import Meetups from '../components/meetups/meetups'
 import Speakers from '../components/speakers/speakers'
 import Schedule from '../components/speakers/schedule'
-
+import Keynotes from '../components/speakers/keynotes'
 const eventDetails = {
   "@context": "https://schema.org",
   "@type": "Conference",
@@ -83,6 +83,7 @@ export default function Home() {
       />
       <HomeLayout />
       <Stats />
+      <Keynotes />
       <Melbourne />
       <Sydney />
       <Logos />

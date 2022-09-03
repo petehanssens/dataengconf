@@ -1,7 +1,7 @@
 import { useState, Fragment, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import getSpeaker from '../../../helpers/getSpeaker'
-
+import SEO from '../../../components/seo'
 import { speakers } from '../../../data/2022/allData.json'
 
 const Post = () => {
@@ -13,6 +13,11 @@ const Post = () => {
     return (
 
         <Fragment>
+          <SEO
+            keywords={[`Data Engineering`,`DataEng`,`DataEngBytes`]}
+            title={speakerDetails ? speakerDetails.fullName : 'Speaker at DataEngBytes 2022!'}
+            description={speakerDetails ? speakerDetails.tagLine : 'Another one of our amazing speakers at DataEngBytes 2022!'}
+          />
             <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
                     <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
                       <img className="object-cover shadow-lg rounded-lg" src={speakerDetails ? speakerDetails.profilePicture : ''} alt="" />
@@ -20,7 +25,7 @@ const Post = () => {
                     <div className="sm:col-span-2">
                       <div className="space-y-4">
                         <div className="text-lg leading-6 font-medium space-y-1">
-                          <h3>{speakerDetails ? speakerDetails.fullName : ''}</h3>
+                          <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">{speakerDetails ? speakerDetails.fullName : ''}</h3>
                           <p className="text-indigo-600">{speakerDetails ? speakerDetails.tagLine : ''}</p>
                         </div>
                         <div className="text-lg">
