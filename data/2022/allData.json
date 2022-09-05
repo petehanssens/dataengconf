@@ -10,7 +10,7 @@
       "isPlenumSession": false,
       "speakers": [
         "6ed69375-e530-445d-86c8-bc1459d94ca4",
-        "59798a0e-509a-440f-9f48-5a0c992cb5a3"
+        "107b5f73-89c6-446e-8235-981aef0a9639"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -293,8 +293,8 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "59798a0e-509a-440f-9f48-5a0c992cb5a3",
-        "dcb768db-d3a0-4be9-9b8c-d216015cbfca"
+        "dcb768db-d3a0-4be9-9b8c-d216015cbfca",
+        "107b5f73-89c6-446e-8235-981aef0a9639"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -432,7 +432,8 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "8f54ae5e-d169-44b0-a460-d9b10257d54c"
+        "8f54ae5e-d169-44b0-a460-d9b10257d54c",
+        "7b65a443-0a0b-400c-a75a-d071a74193fe"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -807,9 +808,9 @@
       "id": "8e002909-1ba1-4662-b233-7b0aa4e791d0",
       "firstName": "Dean",
       "lastName": "Nguyen",
-      "bio": "Dean is the CEO & Co-founder of KADA. \r\n\r\nKADA is a data product analytics platform that helps organisations understand and improve how their data products are used. KADA is a startup based in Sydney, Australia.\r\n\r\nPrior to founding KADA, Dean was the CPO (Data) at Macquarie Bank. ",
-      "tagLine": "CEO & Co-founder of KADA. ",
-      "profilePicture": "https://sessionize.com/image/4a7b-400o400o2-4caa45ed-b7f6-4770-939a-5de964f386d4.jpg",
+      "bio": "Dean is the CEO & Co-founder of KADA. \r\n\r\nKADA (www.kada.ai) is a Sydney based startup building a metadata platform that helps organisations to discover, monitor and understand how their data is used. \r\n\r\nPrior to founding KADA, Dean was the Chief Product Owner at (Data) at Macquarie Bank. ",
+      "tagLine": "Co-founder & CEO at KADA. ",
+      "profilePicture": "https://sessionize.com/image/66e2-400o400o2-ntWvzKLrdrsMqgsvXYBWRy.jpg",
       "isTopSpeaker": false,
       "links": [
         {
@@ -1190,19 +1191,52 @@
       "questionAnswers": []
     },
     {
-      "id": "59798a0e-509a-440f-9f48-5a0c992cb5a3",
+      "id": "107b5f73-89c6-446e-8235-981aef0a9639",
       "firstName": "Revathi",
       "lastName": "Kanduri",
-      "bio": "Solution Architect @Databricks",
+      "bio": "Hey, this is Reva here- Solution Architect @Databricks. I am passionate about helping communities come together for knowledge sharing as that's what helped me to switch lanes from an embedded software engineer to the world of Data & Analytics. I wish you all to have sparking conversations with your fellow member during the event. ",
       "tagLine": "Solution Architect @Databricks",
-      "profilePicture": "https://sessionize.com/image/000d-400o400o2-SVVfANewFeTk3wx4b211Jd.jpg",
+      "profilePicture": "https://sessionize.com/image/93c4-400o400o2-MKzfXprJJiN2yvfoFgELmz.png",
       "isTopSpeaker": false,
-      "links": [],
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/revathikanduri",
+          "linkType": "LinkedIn"
+        }
+      ],
       "sessions": [
         380284,
         380286
       ],
       "fullName": "Revathi Kanduri",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "7b65a443-0a0b-400c-a75a-d071a74193fe",
+      "firstName": "Rishu",
+      "lastName": "Saxena",
+      "bio": "Rishu has 19+ years of Information Technology experience in the solution design and architecture, strategic design of future data platforms and roadmaps, predominantly focused on data and Information Management – particularly cloud native data platforms and technologies, big data, analytics, Machine Learning, Business Intelligence capabilities, Data Management and Artificial Intelligence. Rishu has worked within the financial services, medical device manufacturing, government and telecommunication industries in Big Data Analytics, Data Architecture, Data Modelling, Data Governance, Data Migration, Project Management, Delivery Management, Account Management, Solution Designing and Architecture and Pre-sales roles in Australia, Asia, East Africa and UAE throughout his career.",
+      "tagLine": "Field CTO, Snowflake",
+      "profilePicture": "https://sessionize.com/image/d26a-400o400o2-N6SvJQxfK3jq6cQ3KYFdsx.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/rishu-saxena/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.snowflake.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        352689
+      ],
+      "fullName": "Rishu Saxena",
       "categoryItems": [],
       "questionAnswers": []
     },
