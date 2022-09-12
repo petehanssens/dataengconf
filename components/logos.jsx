@@ -2,6 +2,11 @@ import React from "react";
 
 const sponsorLogo = [
   {
+    name: "Rokt",
+    image: "images/sponsors/rokt_black_beetroot.png",
+    url: "https://www.rokt.com/careers/",
+  },
+  {
     name: "Immuta",
     image: "images/sponsors/immuta.jpg",
     url: "https://www.immuta.com",
@@ -62,14 +67,29 @@ const sponsorLogo = [
     url: "https://imply.io/",
   },
   {
+    name: "Thoughtworks",
+    image: "images/sponsors/thoughtworks_flamingo_wave.png",
+    url: "https://www.thoughtworks.com/",
+  },
+  {
     name: "dbt",
     image: "images/sponsors/dbt-labs.png",
     url: "https://www.getdbt.com/",
   },
   {
-    name: "Thoughtworks",
-    image: "images/sponsors/thoughtworks_flamingo_wave.png",
-    url: "https://www.thoughtworks.com/",
+    name: "hightouch",
+    image: "images/sponsors/hightouch_logo_dark.png",
+    url: "https://hightouch.com/",
+  },
+  {
+    name: "hazelcast",
+    image: "images/sponsors/Hazelcast_Flat_HOR_POS_RGB.png",
+    url: "https://hazelcast.com/",
+  },
+  {
+    name: "Kada",
+    image: "images/sponsors/KADA_website.png",
+    url: "https://kada.ai/",
   },
   {
     name: "Microsoft Reactor",

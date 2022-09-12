@@ -203,14 +203,16 @@
       "recordingUrl": null
     },
     {
-      "id": "fc32722d-884c-4227-83dc-be96a5aab0fb",
-      "title": "Placeholder session",
-      "description": null,
+      "id": "361465",
+      "title": "Customer Journey Analytics using Neo4j Graph Platform",
+      "description": "Today we live in a highly connected world where customers have several touchpoints to interact with the service or product providers. Customer journey represents every customer engagement with a service or product provider. Enabling the customer journey puts the organisation directly in the consumer's mind, so they can see and understand their customer's lifecycle, needs, and perceptions.\r\n\r\nIn this session, we aim to show customer journey in action and:\r\n1. Introduce Neo4j and the concept of graph\r\n2. Model, structure and represent customer journey in Neo4j\r\n3. Visualise and influence customers' journeys using a trigger event model",
       "startsAt": "2022-09-27T14:50:00",
       "endsAt": "2022-09-27T15:10:00",
-      "isServiceSession": true,
+      "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [],
+      "speakers": [
+        "b3e01cd1-cd88-4d89-95c7-edb0d34dfad9"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -233,15 +235,15 @@
       "recordingUrl": null
     },
     {
-      "id": "361465",
-      "title": "Customer Journey Analytics using Neo4j Graph Platform",
-      "description": "Today we live in a highly connected world where customers have several touchpoints to interact with the service or product providers. Customer journey represents every customer engagement with a service or product provider. Enabling the customer journey puts the organisation directly in the consumer's mind, so they can see and understand their customer's lifecycle, needs, and perceptions.\r\n\r\nIn this session, we aim to show customer journey in action and:\r\n1. Introduce Neo4j and the concept of graph\r\n2. Model, structure and represent customer journey in Neo4j\r\n3. Visualise and influence customers' journeys using a trigger event model",
+      "id": "381885",
+      "title": "Set your data streams in motion in the ocean!",
+      "description": "In this session, Warren will demo an interesting application of real-time event streaming at the edge.\r\nProcessing event streams at the edge is becoming critical and in this demo, we will see how running Confluent on a Raspberry PI on a 3D printed ship can be used to control LEDs in real-time. The combination of Apache Kafka, ksqlDB and Schema Registry can be used for real-time analytics and preventative maintenance use-cases on remote devices with limited connectivity. After all, who doesn't love flashing LEDs?",
       "startsAt": "2022-09-27T15:30:00",
       "endsAt": "2022-09-27T15:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "b3e01cd1-cd88-4d89-95c7-edb0d34dfad9"
+        "0994496a-6e81-4b9f-b27f-a1e3cac1654e"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -294,7 +296,8 @@
       "isPlenumSession": false,
       "speakers": [
         "dcb768db-d3a0-4be9-9b8c-d216015cbfca",
-        "107b5f73-89c6-446e-8235-981aef0a9639"
+        "107b5f73-89c6-446e-8235-981aef0a9639",
+        "9bda94a3-50a1-4ee9-9080-63f14d3caa2b"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -432,7 +435,6 @@
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "8f54ae5e-d169-44b0-a460-d9b10257d54c",
         "7b65a443-0a0b-400c-a75a-d071a74193fe"
       ],
       "categoryItems": [],
@@ -597,8 +599,8 @@
       "id": "381654",
       "title": "Thanks & Wrap-Up, Sydney",
       "description": "A big thank you for all of your amazing support throughout the day",
-      "startsAt": "2022-09-29T17:00:00",
-      "endsAt": "2022-09-29T17:10:00",
+      "startsAt": "2022-09-29T17:05:00",
+      "endsAt": "2022-09-29T17:15:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
@@ -742,38 +744,6 @@
         363283
       ],
       "fullName": "Ashika Hettitantirige",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
-    {
-      "id": "8f54ae5e-d169-44b0-a460-d9b10257d54c",
-      "firstName": "Dash",
-      "lastName": "Desai",
-      "bio": "With experience in big data, data science, and machine learning Dash is able to apply 18+ years of full-stack, hands-on software engineering skills to help build solutions that solve business problems and surface trends that shape markets in new ways than imagined before. As a developer advocate, he is passionate about evaluating new ideas, trends, and helping articulate how technology can address a given business problem.\r\n\r\nDash has worked for global enterprises and in agile environments–for tech startups in the Bay Area in varying verticals, such as VoIP, Online Gaming, Digital Health, NoSQL database, and Data Cloud platforms.",
-      "tagLine": "Senior Developer Advocate, AWS Machine Learning Specialty, Snowflake",
-      "profilePicture": "https://sessionize.com/image/f02b-400o400o2-TZ3KjLYsrVpyrbf7x1h7Yr.jpg",
-      "isTopSpeaker": false,
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/iamontheinet",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "LinkedIn",
-          "url": "https://www.linkedin.com/in/dash-desai/",
-          "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://www.snowflake.com/",
-          "linkType": "Company_Website"
-        }
-      ],
-      "sessions": [
-        352689
-      ],
-      "fullName": "Dash Desai",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1162,11 +1132,27 @@
       "questionAnswers": []
     },
     {
+      "id": "9bda94a3-50a1-4ee9-9080-63f14d3caa2b",
+      "firstName": "Noel",
+      "lastName": "Hanssens",
+      "bio": "Everything about data blows my hair back. I am a data professional with 20 years experience, leading teams, setting data strategy and uplifting organisational data capabilities. I run the Melbourne Data Engineering Meetup, have an International MBA, have written for the Financial Times, and founded a TEDx.",
+      "tagLine": "Data Engineering Manager, Lifeblood",
+      "profilePicture": "https://sessionize.com/image/fb7e-400o400o2-ndTzsvVaRqhSsDGF4aUnp3.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        380286
+      ],
+      "fullName": "Noel Hanssens",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "6ed69375-e530-445d-86c8-bc1459d94ca4",
       "firstName": "Peter",
       "lastName": "Hanssens",
-      "bio": "A big fan of all things Serverless and Data Engineering.",
-      "tagLine": "Solutions Architect, Cloud Shuttle",
+      "bio": "Peter is the founder and solutions architect at Cloud Shuttle. He is also an AWS Serverless Hero and Sydney based community leader, organising 6 data engineering and serverless meetups across Australia as well as two conferences, DataEngBytes and ServerlessDays ANZ. His day job involves running two data and cloud consultancies, Cloud Shuttle and cloudseeder which focus on enablement and upskilling.\r\nIn his free time, he enjoys coaching his sons soccer team and spending time with his family in the southern region of Sydney.\r\n",
+      "tagLine": "Founder & Solutions Architect, Cloud Shuttle",
       "profilePicture": "https://sessionize.com/image/d0fe-400o400o2-WxQ22VRBXHZ7cywiVSsnrh.jpg",
       "isTopSpeaker": false,
       "links": [
@@ -1411,6 +1397,38 @@
         363332
       ],
       "fullName": "Vinoaj Vijeyakumaar",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "0994496a-6e81-4b9f-b27f-a1e3cac1654e",
+      "firstName": "Warren",
+      "lastName": "Vella",
+      "bio": "Having spent more than 13 years in various operations and enterprise architecture roles, Warren is now a Solutions Engineer at Confluent helping customers set their data in motion.",
+      "tagLine": "Set your data streams in motion!",
+      "profilePicture": "https://sessionize.com/image/c71b-400o400o2-46f2uPYmeBQoHXskoe65pr.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/wvella",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/warrenvella/",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://confluent.io",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        381885
+      ],
+      "fullName": "Warren Vella",
       "categoryItems": [],
       "questionAnswers": []
     },

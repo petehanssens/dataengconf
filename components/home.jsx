@@ -2,6 +2,10 @@ import { Fragment} from 'react';
 import Image from 'next/image'
 import ReactPlayer from 'react-player/youtube';
 
+const myLoader = ({ src, width, quality }) => {
+    return `https://dataengconf.com.au/${src}?w=${width}&q=${quality || 75}`
+}
+
 export default function Home() {
     return (
     <Fragment>
@@ -36,13 +40,19 @@ export default function Home() {
                 </div>
             </div>
             <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-                <ReactPlayer 
+                {/* <ReactPlayer 
                     url='https://youtu.be/c1oVXuTH0Kg'
                     playing
                     loop
                     muted
                     width="100%"
                     height="100%" 
+                /> */}
+                <Image className="absolute inset-0 h-full w-full object-cover"
+                    loader={myLoader}
+                    src="/images/dataEngLogos/DataEng.MeetUp600x450.option1.v1.jpg"
+                    alt="DataEngBytes"
+                    layout='fill'
                 />
             </div>
         </div>

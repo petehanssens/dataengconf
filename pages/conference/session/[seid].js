@@ -10,11 +10,12 @@ const Post = () => {
     return (
 
         <Fragment>
-            <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
-                    <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="space-y-4 sm:grid sm:grid-cols-2 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div className="aspect-w-2 aspect-h-2 sm:aspect-w-4 sm:aspect-h-4">
                       <img className="object-cover shadow-lg rounded-lg" src={`/images/2022/speakers/${currentSessionId}.jpeg` || ''} alt="" />
                     </div>
-                    <div className="sm:col-span-2">
+                    <div className="sm:col-span-1">
                       <div className="space-y-4">
                         <div className="text-3xl font-bold tracking-tight sm:text-4xl">
                           <h3>{sessionDetails ? sessionDetails.title : ''}</h3>
@@ -48,6 +49,7 @@ const Post = () => {
                       </div>
                     </div>
                   </div>
+                </div>
         </Fragment>
     )
 }
