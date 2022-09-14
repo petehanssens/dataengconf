@@ -17,6 +17,25 @@ export default function Home() {
       {/* <CitySessions />
       <CitySpeakers /> */}
       <MelbournePanel />
+      <div className="mx-5 m-h-40">
+        <div className="justify-center flex w-full p-5 ">
+          <img
+            className="rounded-lg object-contain mx-2 shadow-lg h-44 hover:scale-150 transition delay-450"
+            src="/images/venues/village-roadshow-theatrette.jpeg"
+            alt=""
+          />
+          <img
+            className="rounded-lg object-contain mx-2 shadow-lg h-44 hover:scale-150 transition delay-450"
+            src="/images/venues/vic_state_lib_20191206_192350.jpeg"
+            alt=""
+          />
+          <img
+            className="rounded-lg object-contain mx-2 shadow-lg h-44 hover:scale-150 transition delay-450"
+            src="/images/venues/State_Library_of_Victoria,_Melbourne,_Australia_-_20090418.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
     </Fragment>
   );
 }
