@@ -31,7 +31,7 @@ export default function Home() {
           />
           <img
             className="rounded-lg object-contain mx-2 shadow-lg h-44 hover:scale-150 transition delay-450"
-            src="/images/venues/State_Library_of_Victoria,_Melbourne,_Australia_-_20090418.jpeg"
+            src="/images/venues/state-library.jpeg"
             alt=""
           />
         </div>
