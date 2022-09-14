@@ -19,14 +19,16 @@
       "recordingUrl": null
     },
     {
-      "id": "23906fc5-e49f-4bdb-88f0-a7155420f5af",
-      "title": "Melbourne Keynote",
-      "description": "Hear from one of the best in Data Engineering",
+      "id": "359919",
+      "title": "Bringing Software Engineering Rigour to Data",
+      "description": "As a consultant with a software background, I get to see a lot of gaps in the data engineering world. The gap of maturity between the data and software communities in engineering rigour is the most prominent one.  \r\n\r\nIn software engineering, we have learnt that building robust and stable applications has a direct correlation with overall organisation performance as outlined in the industry leading Accelerate State of DevOps research by DevOps Research and Assessment (DORA). This is achieved through practices like infrastructure-as-code for deployments, automated testing, application observability, and end-to-end application lifecycle ownership. \r\n\r\nAlthough the data community is scratching the surfaces of possibility and striving to incorporate the core concepts, it is far from reaching its full potential.\r\n\r\nIn this talk, I will go through ways to leverage software engineering good practices into data engineering and demonstrate how measuring key performance metrics could help build more robust and reliable data pipelines.",
       "startsAt": "2022-09-27T09:10:00",
       "endsAt": "2022-09-27T09:55:00",
-      "isServiceSession": true,
+      "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [],
+      "speakers": [
+        "e34e2722-02d0-471e-87f1-afd67d050e92"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -34,16 +36,14 @@
       "recordingUrl": null
     },
     {
-      "id": "359919",
-      "title": "Bringing Software Engineering Rigour to Data",
-      "description": "As a consultant with a software background, I get to see a lot of gaps in the data engineering world. The gap of maturity between the data and software communities in engineering rigour is the most prominent one.  \r\n\r\nIn software engineering, we have learnt that building robust and stable applications has a direct correlation with overall organisation performance as outlined in the industry leading Accelerate State of DevOps research by DevOps Research and Assessment (DORA). This is achieved through practices like infrastructure-as-code for deployments, automated testing, application observability, and end-to-end application lifecycle ownership. \r\n\r\nAlthough the data community is scratching the surfaces of possibility and striving to incorporate the core concepts, it is far from reaching its full potential.\r\n\r\nIn this talk, I will go through ways to leverage software engineering good practices into data engineering and demonstrate how measuring key performance metrics could help build more robust and reliable data pipelines.",
+      "id": "ade6357e-0e37-413d-aeae-38d6e9c0a9bb",
+      "title": "Placeholder session",
+      "description": "Details to come shortly",
       "startsAt": "2022-09-27T09:55:00",
       "endsAt": "2022-09-27T10:30:00",
-      "isServiceSession": false,
+      "isServiceSession": true,
       "isPlenumSession": false,
-      "speakers": [
-        "e34e2722-02d0-471e-87f1-afd67d050e92"
-      ],
+      "speakers": [],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -326,8 +326,8 @@
     },
     {
       "id": "377669",
-      "title": "Sydney Keynote",
-      "description": "A thought leadership session from Joe Reis, Author of Fundamentals of Data Engineering: Plan and Build Robust Data Systems",
+      "title": "Data Engineering in a Rapidly Changing World",
+      "description": "Data engineering is growing rapidly leaving many new and existing data engineers confused about how to evolve their careers. At the same time, the world is also rapidly changing on nearly every front. What to do? \r\n\r\nJoe Reis discusses ways to get into data engineering, and if you’re a data engineer, how to stay relevant and ahead of the curve. Along the way, he discusses his journey into data engineering, how he wrote Fundamentals of Data Engineering and practical suggestions from talking with many luminaries in the data field.",
       "startsAt": "2022-09-29T09:10:00",
       "endsAt": "2022-09-29T09:55:00",
       "isServiceSession": false,
@@ -929,8 +929,8 @@
       "id": "ab646f99-e69d-4d3b-afca-5c304f84c515",
       "firstName": "Joe",
       "lastName": "Reis",
-      "bio": "Joe Reis is a \"recovering data scientist\" who's worked in a variety of data roles (analytics, machine learning, engineering, architecture, etc) since the early 2000s. Joe is the Co-Founder and CEO of Ternary Data, a data engineering/architecture consulting firm with a global client and partner base, and teaches data at the University of Utah. He's also the co-founder of The Utah Data Engineering Meetup and SLC Python, the host of some popular podcasts (The Monday Morning Data Chat, The Data Nerd Herd, Let's Talk Data Engineering), a blogger, speaker at global data conferences, and co-author of The Fundamentals of Data Engineering (O'Reilly, 2022).",
-      "tagLine": "\"Recovering Data Scientist\", Co-Founder/CEO of Ternary Data",
+      "bio": "Joe Reis is a “recovering data scientist”, co-founder & CEO of Ternary Data, and co-author of the best-selling O’Reilly book. He’s a business-minded data nerd who’s worked in the data industry for over 20 years, with responsibilities ranging from statistical modeling, forecasting, machine learning, data engineering, data architecture, and almost everything else in between. \r\n\r\nJoe hosts the popular data show, The Monday Morning Data Chat, runs several meetups, including The Utah Data Engineering Meetup and SLC Python, and is often found speaking at and keynoting conferences. In his spare time, he also teaches at the University of Utah.\r\n\r\nWhen he’s not busy running a company, teaching, or creating content, Joe often finds himself rock climbing or trail running in the mountains around Salt Lake City, Utah.",
+      "tagLine": "\"Recovering Data Scientist\", Fundamentals of Data Engineering Co-Author, Data Engineer and Architect",
       "profilePicture": "https://sessionize.com/image/87a1-400o400o2-VWckt8JLAZC8ewoZU2F4W8.png",
       "isTopSpeaker": false,
       "links": [
