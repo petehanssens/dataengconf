@@ -36,14 +36,17 @@
       "recordingUrl": null
     },
     {
-      "id": "ade6357e-0e37-413d-aeae-38d6e9c0a9bb",
-      "title": "Placeholder session",
-      "description": "Details to come shortly",
+      "id": "363244",
+      "title": "Data Poker not Data Chess - thinking in Bets for Data Teams",
+      "description": "Data science and machine learning are deep into their business hype cycle - in 2023, every CEO wants to be “data-driven” in their strategy. As data practitioners, we are regularly relied upon to contribute to key strategic decisions:\r\n\r\n- Will this dataset support an ML use-case we think our customers want?\r\n- Do we need a streaming architecture? \r\n- Should we self-host Spark, or go with a vendor-managed service?\r\n- Is it worth uplifting our simple ML model to use a shiny deep learning technique?\r\n- When should we embed our data analysts and scientists in cross functional teams vs locating them in an enabling team that provides org-wide support?\r\n- Are there even times it just isn’t appropriate to apply data science thinking?\r\n\r\nGet enough of these decisions right, and you will be on the road to enabling your teams to build high-performing data products, and share valuable insights across your organisation. Get them wrong, and you will start to see a pattern of data-dependent projects under-delivering, gain a reputation for spending like drunken (data) sailors, experience runaway total cost-of-ownership, and face ongoing challenges unlocking the value of your organisation’s data. \r\n\r\nIn this talk we will attempt to persuade you that all strategic decisions (including those made by data practitioners) should be thought of as bets, and that decision quality should not be evaluated by outcomes alone, as outcomes of past decisions are determined by a combination of skill & luck. \r\n\r\nWe need to cultivate the ability to differentiate between skill and luck, so that we can make appropriately sized bets that are proportionate with our degree of uncertainty, and so we can push the right feedback from decision outcomes into our learning loops.\r\n\r\nThe DIBBs Framework, popularised by Spotify (based on work by Annie Duke) is a structured process for decomposing strategic decisions into Data, Insight, then Belief, to support appropriately sized Bets. This talk will take you through the framework, and show you ways in which you can use it to make better decisions both within your data teams and at the broader data strategy level of your organisation. A structured approach like DIBBs, acknowledging luck and uncertainty, will likely improve progress towards an organisational North Star over time.",
       "startsAt": "2022-09-27T09:55:00",
       "endsAt": "2022-09-27T10:30:00",
-      "isServiceSession": true,
+      "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [],
+      "speakers": [
+        "8f2f01ec-4972-49fe-a204-8f226fa209cb",
+        "c3df4dfc-6b55-4eeb-8c88-172584700a76"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -51,16 +54,16 @@
       "recordingUrl": null
     },
     {
-      "id": "363244",
-      "title": "Data Poker not Data Chess - thinking in Bets for Data Teams",
-      "description": "Data science and machine learning are deep into their business hype cycle - in 2023, every CEO wants to be “data-driven” in their strategy. As data practitioners, we are regularly relied upon to contribute to key strategic decisions:\r\n\r\n- Will this dataset support an ML use-case we think our customers want?\r\n- Do we need a streaming architecture? \r\n- Should we self-host Spark, or go with a vendor-managed service?\r\n- Is it worth uplifting our simple ML model to use a shiny deep learning technique?\r\n- When should we embed our data analysts and scientists in cross functional teams vs locating them in an enabling team that provides org-wide support?\r\n- Are there even times it just isn’t appropriate to apply data science thinking?\r\n\r\nGet enough of these decisions right, and you will be on the road to enabling your teams to build high-performing data products, and share valuable insights across your organisation. Get them wrong, and you will start to see a pattern of data-dependent projects under-delivering, gain a reputation for spending like drunken (data) sailors, experience runaway total cost-of-ownership, and face ongoing challenges unlocking the value of your organisation’s data. \r\n\r\nIn this talk we will attempt to persuade you that all strategic decisions (including those made by data practitioners) should be thought of as bets, and that decision quality should not be evaluated by outcomes alone, as outcomes of past decisions are determined by a combination of skill & luck. \r\n\r\nWe need to cultivate the ability to differentiate between skill and luck, so that we can make appropriately sized bets that are proportionate with our degree of uncertainty, and so we can push the right feedback from decision outcomes into our learning loops.\r\n\r\nThe DIBBs Framework, popularised by Spotify (based on work by Annie Duke) is a structured process for decomposing strategic decisions into Data, Insight, then Belief, to support appropriately sized Bets. This talk will take you through the framework, and show you ways in which you can use it to make better decisions both within your data teams and at the broader data strategy level of your organisation. A structured approach like DIBBs, acknowledging luck and uncertainty, will likely improve progress towards an organisational North Star over time.",
+      "id": "362261",
+      "title": "Metadata driven framework for data discovery and data quality",
+      "description": "In this session, we will present a metadata driven rule based framework that allows us to capture and classify the policies/checks, translate them into executable rules and incorporates a weighted scoring model for reporting and analytics purposes. \r\nThe main points of this session would be:  \r\n1. The foundation framework.\r\n2. How it integrates with any tools/technologies with open API architecture.\r\n3. The tools/tech stack we used - Amundsen (data discovery) and Anomalo (data quality)",
       "startsAt": "2022-09-27T10:30:00",
       "endsAt": "2022-09-27T11:05:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "8f2f01ec-4972-49fe-a204-8f226fa209cb",
-        "c3df4dfc-6b55-4eeb-8c88-172584700a76"
+        "e96010a2-e660-4eb1-acf7-b2dcaeb6522f",
+        "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -84,29 +87,11 @@
       "recordingUrl": null
     },
     {
-      "id": "362261",
-      "title": "Metadata driven framework for data discovery and data quality",
-      "description": "In this session, we will present a metadata driven rule based framework that allows us to capture and classify the policies/checks, translate them into executable rules and incorporates a weighted scoring model for reporting and analytics purposes. \r\nThe main points of this session would be:  \r\n1. The foundation framework.\r\n2. How it integrates with any tools/technologies with open API architecture.\r\n3. The tools/tech stack we used - Amundsen (data discovery) and Anomalo (data quality)",
-      "startsAt": "2022-09-27T11:25:00",
-      "endsAt": "2022-09-27T12:00:00",
-      "isServiceSession": false,
-      "isPlenumSession": false,
-      "speakers": [
-        "e96010a2-e660-4eb1-acf7-b2dcaeb6522f",
-        "40d0a78e-f139-4fc7-a5a0-d6f388dbdc84"
-      ],
-      "categoryItems": [],
-      "questionAnswers": [],
-      "roomId": 26523,
-      "liveUrl": null,
-      "recordingUrl": null
-    },
-    {
       "id": "363359",
       "title": "Shifting Data Left",
       "description": "With several engineering teams building components autonomously, Kafka was selected as the single platform for cross-domain business event communication.\r\n\r\nWhile one problem was solved, i.e. real-time access to events, quite quickly many more challenges arose as the complexity grew - and a plan was hatched to bring analytical Data Products as a 1st class concern of the engineering teams.\r\n\r\nThis talk outlines the early stage and WIP journey of a greenfields product build at a large enterprise, building a new digital business.",
-      "startsAt": "2022-09-27T12:00:00",
-      "endsAt": "2022-09-27T12:35:00",
+      "startsAt": "2022-09-27T11:25:00",
+      "endsAt": "2022-09-27T12:00:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
@@ -122,12 +107,29 @@
       "id": "363693",
       "title": "Designing Data Governance Framework",
       "description": "Data Governance is an emerging trend in enterprise information management. This is mainly because organizations are becoming increasingly serious about the notion of \"data as a strategic asset\" as they face increasing pressure for reporting a \"single source of the truth.\" \r\n\r\nAlso, pursuant to legislative compliance mandates such as the Sarbanes-Oxley (SOX) Act and Basel II, Data Governance has recently gained significant prominence in practitioners' conferences, such as TDWI (The Data Warehousing Institute) World Conference and DAMA (Data Management Association) International Symposium. Research has evidenced the need for Data Governance in organisations to manage data effectively. It is only by effective data management that organisations can ensure good quality data which can be measured by its accuracy, timeliness, relevance, completeness, trustworthiness and contextual definition. \r\n\r\nHowever, studies have also revealed that large organisation that\r\nhas adopted an ad-hoc Data Governance model to manage its data found that its data management efforts were hampered by the lack of clear roles and responsibilities and the lack of mandate to carry out data quality improvement initiatives. \r\n\r\nThe objective of this paper is to provide an overall framework for data governance that can be used by organisations to develop an effective data governance approach, strategy and design. \r\n",
+      "startsAt": "2022-09-27T12:00:00",
+      "endsAt": "2022-09-27T12:35:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": [
+        "b3370646-0f4c-469b-9a3e-5700ac268a8d"
+      ],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 26523,
+      "liveUrl": null,
+      "recordingUrl": null
+    },
+    {
+      "id": "382201",
+      "title": "Buy or Build: Understanding Data Engineering Tradeoffs",
+      "description": "As engineers we love to build things, but when should we be purchasing instead? Are data pipelines becoming commodities, and if so are we all going to be out of jobs soon? In this talk, Josh Devlin examines how to examine the tradeoffs around buy vs build and what it means for our industry.",
       "startsAt": "2022-09-27T12:35:00",
       "endsAt": "2022-09-27T13:10:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "b3370646-0f4c-469b-9a3e-5700ac268a8d"
+        "2931b099-e7ea-490d-9cd0-c185347b53a7"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -587,7 +589,8 @@
         "eaa25218-cdfa-42da-897b-33bc1c8e0e85",
         "4181ff45-641d-4542-9b8a-e6e274ce486f",
         "097c2b76-b71c-46f1-9e3e-1c0045f02ee9",
-        "8e002909-1ba1-4662-b233-7b0aa4e791d0"
+        "8e002909-1ba1-4662-b233-7b0aa4e791d0",
+        "8839717c-2cc6-4365-841c-c8a819f74336"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -854,12 +857,13 @@
       "firstName": "Ingrid",
       "lastName": "Anzola",
       "bio": "Passionate about data for 20 years, keen to share my own experiences and learn from others, and proud of being part of such an awesome data community. Data never stops flowing; my purpose is to help decision makers shift from ad hoc analysis to an ongoing conversation with data",
-      "tagLine": "Head of Data Platform, Shippit",
+      "tagLine": "Head of Data, Stake",
       "profilePicture": "https://sessionize.com/image/f104-400o400o2-HVu42FNTdDbCj3MR5XpyEE.png",
       "isTopSpeaker": false,
       "links": [],
       "sessions": [
         381653,
+        374657,
         381654
       ],
       "fullName": "Ingrid Anzola",
@@ -977,6 +981,33 @@
         363359
       ],
       "fullName": "Jonathan Gomez",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "2931b099-e7ea-490d-9cd0-c185347b53a7",
+      "firstName": "Josh",
+      "lastName": "Devlin",
+      "bio": "Josh loves designing data models and then using SQL to wrangle raw data to match his designs. When he’s not elbow deep in SQL, you can find him in online sharing his knowledge!",
+      "tagLine": "Senior Analytics Engineer, Brooklyn Data Co.",
+      "profilePicture": "https://sessionize.com/image/56fe-400o400o2-9deTE4Tc8X3XcM86LaSxXd.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/jaypeedevlin",
+          "linkType": "Twitter"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://joshdevlin.com/",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        382201
+      ],
+      "fullName": "Josh Devlin",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1436,8 +1467,8 @@
       "id": "4181ff45-641d-4542-9b8a-e6e274ce486f",
       "firstName": "Wendy",
       "lastName": "Wong",
-      "bio": "AWS Community Builder and Data Scientist\r\n\r\nWendy is a Data Scientist, Senior Data Analyst, Business Analyst/Data Engineer, AWS Community Builder and Analytics Mentor with a demonstrated track record delivering strong results in customer success, digital projects and senior leadership. Wendy worked across multiple industries in disruptive market environments. Strong values based, innovative leader with differentiation in consumer/people led business transformation and digital growth.\r\n\r\nWendy has provided data science consulting at the Australian Taxation Office, PwC Australia, Jobgetter and Lend Lease.\r\nMost recently Wendy was a Data Scientist for the AI startup Eliza and also consulted at University of Technology Sydney in Smart Cities.\r\n\r\nWendy graduated with a Masters of Data Science and Innovation degree from the University of Technology, Sydney with Distinction-Average and a Graduate Certificate in Editing and Publishing.\r\n\r\nWendy is honored to be an AWS Community Builder in the specialty area of data.\r\n\r\nWendy is passionate about technology and is a former Stanford University Women in Data Science Sydney Ambassador in 2018 and 2020 and a Women in Big Data Sydney Chapter Lead.\r\n\r\nWendy was a mentor for Dalyell Scholars at The University of Sydney and a former data analytics instructor at Academy Xi.\r\n\r\nWendy is passionate about Conversational AI, natural language understanding and data engineering in the Public Sector.\r\n",
-      "tagLine": "AWS Community Builder and Data Scientist",
+      "bio": "AWS Community Builder and Data Scientist\r\n\r\nWendy is a Data Scientist, Senior Data Analyst, Business Analyst/Data Engineer, AWS Community Builder and Analytics Mentor with a demonstrated track record delivering strong results in customer success, digital projects and senior leadership. Wendy worked across multiple industries in disruptive market environments. Strong values based, innovative leader with differentiation in consumer/people led business transformation and digital growth.\r\n\r\nWendy has provided data science consulting at the Australian Taxation Office, PwC Australia, Jobgetter and Lend Lease.\r\nMost recently Wendy was a Data Scientist for the AI startup Eliza and also consulted at University of Technology Sydney in Smart Cities.\r\n\r\nWendy graduated with a Masters of Data Science and Innovation degree from the University of Technology, Sydney with Distinction-Average and a Graduate Certificate in Editing and Publishing.\r\n\r\nWendy is honored to be an AWS Community Builder in the specialty area of data.\r\n\r\nWendy is passionate about technology and is a former Stanford University Women in Data Science Sydney Ambassador in 2018 and 2020 and a Women in Big Data Sydney Chapter Lead.\r\n\r\nWendy was a mentor for Dalyell Scholars at The University of Sydney and a former data analytics instructor at Academy Xi.\r\n\r\nWendy is a Lead Instructor in Data Analytics at General Assembly Sydney.\r\n\r\nWendy is passionate about Conversational AI, natural language understanding and data engineering in the Public Sector.\r\n",
+      "tagLine": "AWS Data Community Builder and Data Scientist",
       "profilePicture": "https://sessionize.com/image/4552-400o400o2-nV6XaKV5dNJYWp3tD54Kpo.jpg",
       "isTopSpeaker": false,
       "links": [
