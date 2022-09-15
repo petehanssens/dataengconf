@@ -280,7 +280,8 @@
       "isPlenumSession": false,
       "speakers": [
         "60edb78e-dc7d-4b7f-8a56-207f7033ce5d",
-        "ab646f99-e69d-4d3b-afca-5c304f84c515"
+        "ab646f99-e69d-4d3b-afca-5c304f84c515",
+        "3b2156a7-44e2-47c8-bb0f-f0b30e1ee033"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -747,6 +748,22 @@
         363283
       ],
       "fullName": "Ashika Hettitantirige",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "3b2156a7-44e2-47c8-bb0f-f0b30e1ee033",
+      "firstName": "Caroline",
+      "lastName": "Even",
+      "bio": "Caroline is a software engineer with 8 years in backend engineering and 3 years in Big Data. While at Rokt, Caroline has worked in many large-scale solutions to support fast data ingestion, retrieval, and ETL processes. ",
+      "tagLine": "Software Engineer, Big Data, ROKT",
+      "profilePicture": "https://sessionize.com/image/181e-400o400o2-DB1791bVciNfKARD6zojmo.png",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [
+        374658
+      ],
+      "fullName": "Caroline Even",
       "categoryItems": [],
       "questionAnswers": []
     },
