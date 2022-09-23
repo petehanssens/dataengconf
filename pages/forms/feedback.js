@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useRef } from "react";
-import StarRating from "../star_rating";
+import StarRating from "../../components/star_rating";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import ReactCanvasConfetti from "react-canvas-confetti";

@@ -121,15 +121,15 @@
       "recordingUrl": null
     },
     {
-      "id": "382201",
-      "title": "Buy or Build: Understanding Data Engineering Tradeoffs",
-      "description": "As engineers we love to build things, but when should we be purchasing instead? Are data pipelines becoming commodities, and if so are we all going to be out of jobs soon? In this talk, Josh Devlin examines how to examine the tradeoffs around buy vs build and what it means for our industry.",
+      "id": "386624",
+      "title": "How to automate data governance and access",
+      "description": "The task of managing data governance and access grows in effort and complexity as your data grows. The traditional methods of securing data is no longer able to keep pace with your business needs. Learn how this process can be automated and integrated with your existing tools. The session will include LIVE demo's showing how Immuta natively integrates with DBx and Snowflake",
       "startsAt": "2022-09-27T12:35:00",
-      "endsAt": "2022-09-27T13:10:00",
+      "endsAt": "2022-09-27T12:55:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
-        "2931b099-e7ea-490d-9cd0-c185347b53a7"
+        "d003d3ec-5450-438b-b808-50eccd591d16"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -141,7 +141,7 @@
       "id": "beb4a15d-7ee7-425e-b8f3-6bf19663396c",
       "title": "Lunch",
       "description": null,
-      "startsAt": "2022-09-27T13:10:00",
+      "startsAt": "2022-09-27T12:55:00",
       "endsAt": "2022-09-27T13:50:00",
       "isServiceSession": true,
       "isPlenumSession": false,
@@ -281,7 +281,8 @@
       "speakers": [
         "60edb78e-dc7d-4b7f-8a56-207f7033ce5d",
         "ab646f99-e69d-4d3b-afca-5c304f84c515",
-        "3b2156a7-44e2-47c8-bb0f-f0b30e1ee033"
+        "3b2156a7-44e2-47c8-bb0f-f0b30e1ee033",
+        "e34e2722-02d0-471e-87f1-afd67d050e92"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -665,6 +666,33 @@
       "questionAnswers": []
     },
     {
+      "id": "d003d3ec-5450-438b-b808-50eccd591d16",
+      "firstName": "Alan",
+      "lastName": "Clarke",
+      "bio": "Been working in a number of different roles from support to architecture within technology for the past 17 years. I find it energising discussing all things tech and applying it to real life problems.",
+      "tagLine": "Immuta - Solution Architect ",
+      "profilePicture": "https://sessionize.com/image/9d05-400o400o2-974b1b3c-e784-4889-a368-2026f1c40dd8.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://linkedin.com/in/alan-clarke-aa499321",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.immuta.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [
+        386624
+      ],
+      "fullName": "Alan Clarke",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
       "id": "b3e01cd1-cd88-4d89-95c7-edb0d34dfad9",
       "firstName": "Andrew",
       "lastName": "Conacher",
@@ -998,33 +1026,6 @@
         363359
       ],
       "fullName": "Jonathan Gomez",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
-    {
-      "id": "2931b099-e7ea-490d-9cd0-c185347b53a7",
-      "firstName": "Josh",
-      "lastName": "Devlin",
-      "bio": "Josh loves designing data models and then using SQL to wrangle raw data to match his designs. When he’s not elbow deep in SQL, you can find him in online sharing his knowledge!",
-      "tagLine": "Senior Analytics Engineer, Brooklyn Data Co.",
-      "profilePicture": "https://sessionize.com/image/56fe-400o400o2-9deTE4Tc8X3XcM86LaSxXd.jpg",
-      "isTopSpeaker": false,
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/jaypeedevlin",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://joshdevlin.com/",
-          "linkType": "Company_Website"
-        }
-      ],
-      "sessions": [
-        382201
-      ],
-      "fullName": "Josh Devlin",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1498,11 +1499,6 @@
           "title": "LinkedIn",
           "url": "https://www.linkedin.com/in/wendywong7/",
           "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://www.semanticscholar.org/paper/Taxpayer-Behavior-Prediction-in-SMS-Campaigns-Cao-Downes/8a3bbb1aeca87042b46e0781d4aaa0fc8a9e62e7",
-          "linkType": "Company_Website"
         }
       ],
       "sessions": [
@@ -1630,7 +1626,8 @@
         }
       ],
       "sessions": [
-        359919
+        359919,
+        374658
       ],
       "fullName": "Zainab Maleki",
       "categoryItems": [],

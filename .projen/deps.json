@@ -5,6 +5,10 @@
       "type": "build"
     },
     {
+      "name": "cypress",
+      "type": "build"
+    },
+    {
       "name": "netlify-plugin-contextual-env",
       "type": "build"
     },
@@ -156,6 +160,10 @@
     },
     {
       "name": "react-player",
+      "type": "runtime"
+    },
+    {
+      "name": "react-qr-reader",
       "type": "runtime"
     },
     {

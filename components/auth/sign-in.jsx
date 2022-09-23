@@ -11,7 +11,7 @@ export default function SignIn({ setStatus }) {
     try {
       await Auth.signIn(username, password);
 
-      router.push("/client-protected");
+      router.push("/app");
     } catch (error) {
       console.log("error signing in", error);
       setError("signInform", {

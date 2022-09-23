@@ -14,7 +14,7 @@ export default function Register({ user, setUser }) {
 
       setUser(null)
 
-      router.push('/client-protected')
+      router.push('/app')
     } catch (error) {
       console.log('error confirming sign up', error);
     }

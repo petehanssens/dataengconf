@@ -65,7 +65,7 @@ function SpeakingForm() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     fire();
     axios
       .post(hackAPIGW, data, {
@@ -73,7 +73,7 @@ function SpeakingForm() {
       })
       .then((response) => {
         setFormStatus(true);
-        console.log(response.data);
+        // console.log(response.data);
       })
       .catch((error) => {
         console.log(error.data);

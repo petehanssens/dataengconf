@@ -47,11 +47,13 @@ const project = new web.NextJsProject({
     'axios',
     'react-canvas-confetti',
     'react-player',
-    'clsx'
+    'clsx',
+    'react-qr-reader'
   ],                                                                             /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@netlify/plugin-nextjs',
-    'netlify-plugin-contextual-env'
+    'netlify-plugin-contextual-env',
+    'cypress'
   ], 
   tailwind: true, 
   packageManager: NodePackageManager.NPM,
