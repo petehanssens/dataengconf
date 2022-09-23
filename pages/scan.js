@@ -23,21 +23,22 @@ export default function App() {
     );
   };
 
-  const loadCameraPermissions = () => {
-    let params = {
-      audio: true,
-      video: { facingMode: { exact: faceMode } },
-    };
-    global.navigator.mediaDevices.getUserMedia(params).then((stream) => {
-      stream.getTracks().forEach((track) => {
-        console.log(track);
-      });
-    });
-  };
+  //   const loadCameraPermissions = () => {
+  //     let params = {
+  //       audio: true,
+  //       video: { facingMode: { exact: faceMode } },
+  //     };
+
+  //     navigator.mediaDevices.getUserMedia(params).then((stream) => {
+  //       stream.getTracks().forEach((track) => {
+  //         console.log(track);
+  //       });
+  //     });
+  //   };
 
   return (
     <div>
-      {loadCameraPermissions()}
+      {/* {loadCameraPermissions()} */}
       <h1>Hello QR Code Reader</h1>
       <button onClick={() => cameraButtonClick(faceMode)}>{faceMode}</button>
       {faceMode === "environment" ? QRWithRearCam() : null}

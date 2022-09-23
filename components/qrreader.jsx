@@ -8,9 +8,12 @@ class QRScan extends React.Component {
   };
 
   handleScan = (data) => {
-    this.setState({
-      result: data,
-    });
+    this.setState(
+      {
+        result: data,
+      },
+      console.log(this.state.result)
+    );
   };
 
   handleError = (err) => {
@@ -20,13 +23,13 @@ class QRScan extends React.Component {
   render() {
     return (
       <div>
+        <p>Entering here</p>
         <QrReader
           delay={this.state.delay}
           //style={previewStyle}
           onError={this.handleError}
           onScan={this.handleScan}
         />
-        <p>{this.state.result}</p>
       </div>
     );
   }
