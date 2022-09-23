@@ -10,7 +10,7 @@
     },
     {
       "name": "npm-check-updates",
-      "version": "^15",
+      "version": "^12",
       "type": "build"
     },
     {
@@ -156,6 +156,10 @@
     },
     {
       "name": "react-player",
+      "type": "runtime"
+    },
+    {
+      "name": "react-qr-scanner",
       "type": "runtime"
     },
     {
