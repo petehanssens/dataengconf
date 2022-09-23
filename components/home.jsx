@@ -50,7 +50,7 @@ export default function Home() {
                 /> */}
                 <Image className="absolute inset-0 h-full w-full object-cover"
                     loader={myLoader}
-                    src="/images/dataEngLogos/DataEng.MeetUp600x450.option1.v1.jpg"
+                    src="/images/2022/slides/01.png"
                     alt="DataEngBytes"
                     layout='fill'
                 />
