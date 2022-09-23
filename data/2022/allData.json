@@ -26,9 +26,7 @@
       "endsAt": "2022-09-27T09:55:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "e34e2722-02d0-471e-87f1-afd67d050e92"
-      ],
+      "speakers": ["e34e2722-02d0-471e-87f1-afd67d050e92"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -94,9 +92,7 @@
       "endsAt": "2022-09-27T12:00:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "4503680f-a6ba-4c6b-aa41-a8f48b9958f9"
-      ],
+      "speakers": ["4503680f-a6ba-4c6b-aa41-a8f48b9958f9"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -111,9 +107,7 @@
       "endsAt": "2022-09-27T12:35:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "b3370646-0f4c-469b-9a3e-5700ac268a8d"
-      ],
+      "speakers": ["b3370646-0f4c-469b-9a3e-5700ac268a8d"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -121,16 +115,14 @@
       "recordingUrl": null
     },
     {
-      "id": "382201",
-      "title": "Buy or Build: Understanding Data Engineering Tradeoffs",
-      "description": "As engineers we love to build things, but when should we be purchasing instead? Are data pipelines becoming commodities, and if so are we all going to be out of jobs soon? In this talk, Josh Devlin examines how to examine the tradeoffs around buy vs build and what it means for our industry.",
+      "id": "386624",
+      "title": "How to automate data governance and access",
+      "description": "The task of managing data governance and access grows in effort and complexity as your data grows. The traditional methods of securing data is no longer able to keep pace with your business needs. Learn how this process can be automated and integrated with your existing tools. The session will include LIVE demo's showing how Immuta natively integrates with DBx and Snowflake",
       "startsAt": "2022-09-27T12:35:00",
-      "endsAt": "2022-09-27T13:10:00",
+      "endsAt": "2022-09-27T12:55:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "2931b099-e7ea-490d-9cd0-c185347b53a7"
-      ],
+      "speakers": ["d003d3ec-5450-438b-b808-50eccd591d16"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -141,7 +133,7 @@
       "id": "beb4a15d-7ee7-425e-b8f3-6bf19663396c",
       "title": "Lunch",
       "description": null,
-      "startsAt": "2022-09-27T13:10:00",
+      "startsAt": "2022-09-27T12:55:00",
       "endsAt": "2022-09-27T13:50:00",
       "isServiceSession": true,
       "isPlenumSession": false,
@@ -160,9 +152,7 @@
       "endsAt": "2022-09-27T14:10:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "ad891e9b-98e7-4062-85f3-9c7f345baf5c"
-      ],
+      "speakers": ["ad891e9b-98e7-4062-85f3-9c7f345baf5c"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -177,9 +167,7 @@
       "endsAt": "2022-09-27T14:30:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "f5b51983-23b9-429b-8e86-aff4c630a423"
-      ],
+      "speakers": ["f5b51983-23b9-429b-8e86-aff4c630a423"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -212,9 +200,7 @@
       "endsAt": "2022-09-27T15:10:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "b3e01cd1-cd88-4d89-95c7-edb0d34dfad9"
-      ],
+      "speakers": ["b3e01cd1-cd88-4d89-95c7-edb0d34dfad9"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -244,9 +230,7 @@
       "endsAt": "2022-09-27T15:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "0994496a-6e81-4b9f-b27f-a1e3cac1654e"
-      ],
+      "speakers": ["0994496a-6e81-4b9f-b27f-a1e3cac1654e"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -261,9 +245,7 @@
       "endsAt": "2022-09-27T16:25:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "7b375732-c95e-4ab3-b965-0b1ddecd81f9"
-      ],
+      "speakers": ["7b375732-c95e-4ab3-b965-0b1ddecd81f9"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -281,7 +263,8 @@
       "speakers": [
         "60edb78e-dc7d-4b7f-8a56-207f7033ce5d",
         "ab646f99-e69d-4d3b-afca-5c304f84c515",
-        "3b2156a7-44e2-47c8-bb0f-f0b30e1ee033"
+        "3b2156a7-44e2-47c8-bb0f-f0b30e1ee033",
+        "e34e2722-02d0-471e-87f1-afd67d050e92"
       ],
       "categoryItems": [],
       "questionAnswers": [],
@@ -335,9 +318,7 @@
       "endsAt": "2022-09-29T09:55:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "ab646f99-e69d-4d3b-afca-5c304f84c515"
-      ],
+      "speakers": ["ab646f99-e69d-4d3b-afca-5c304f84c515"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -403,9 +384,7 @@
       "endsAt": "2022-09-29T12:00:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "be31cb9f-ba18-4428-aadf-821d2d2821d8"
-      ],
+      "speakers": ["be31cb9f-ba18-4428-aadf-821d2d2821d8"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -420,9 +399,7 @@
       "endsAt": "2022-09-29T12:35:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "5b2d91c2-17cc-4f23-a1e4-df2989eb9a71"
-      ],
+      "speakers": ["5b2d91c2-17cc-4f23-a1e4-df2989eb9a71"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -437,9 +414,7 @@
       "endsAt": "2022-09-29T13:10:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "7b65a443-0a0b-400c-a75a-d071a74193fe"
-      ],
+      "speakers": ["7b65a443-0a0b-400c-a75a-d071a74193fe"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -469,9 +444,7 @@
       "endsAt": "2022-09-29T14:10:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "98d417d3-36e8-44c3-8131-6bb3b67637bd"
-      ],
+      "speakers": ["98d417d3-36e8-44c3-8131-6bb3b67637bd"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -486,9 +459,7 @@
       "endsAt": "2022-09-29T14:30:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "e4a87ff3-7c55-4f76-a24e-48c7c4bda4bd"
-      ],
+      "speakers": ["e4a87ff3-7c55-4f76-a24e-48c7c4bda4bd"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -503,9 +474,7 @@
       "endsAt": "2022-09-29T14:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "ea4e794f-a166-4bc4-8a34-07e70dcb0196"
-      ],
+      "speakers": ["ea4e794f-a166-4bc4-8a34-07e70dcb0196"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -520,9 +489,7 @@
       "endsAt": "2022-09-29T15:10:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "07c0a219-71ad-404c-97b9-bf220da2ed2c"
-      ],
+      "speakers": ["07c0a219-71ad-404c-97b9-bf220da2ed2c"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -552,9 +519,7 @@
       "endsAt": "2022-09-29T15:50:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "40a23d61-be96-4367-8bc9-37dd39b793f5"
-      ],
+      "speakers": ["40a23d61-be96-4367-8bc9-37dd39b793f5"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -569,9 +534,7 @@
       "endsAt": "2022-09-29T16:25:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": [
-        "1aa17ca9-c570-453e-8039-492ef552cdef"
-      ],
+      "speakers": ["1aa17ca9-c570-453e-8039-492ef552cdef"],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 26523,
@@ -641,9 +604,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        380286
-      ],
+      "sessions": [380286],
       "fullName": "Adithya Narjala",
       "categoryItems": [],
       "questionAnswers": []
@@ -657,10 +618,33 @@
       "profilePicture": "https://sessionize.com/image/1241-400o400o2-Q2x5ywUK5BZbn3VuZQRoye.jpg",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        362261
-      ],
+      "sessions": [362261],
       "fullName": "Akira Takihara Wang",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "d003d3ec-5450-438b-b808-50eccd591d16",
+      "firstName": "Alan",
+      "lastName": "Clarke",
+      "bio": "Been working in a number of different roles from support to architecture within technology for the past 17 years. I find it energising discussing all things tech and applying it to real life problems.",
+      "tagLine": "Immuta - Solution Architect ",
+      "profilePicture": "https://sessionize.com/image/9d05-400o400o2-974b1b3c-e784-4889-a368-2026f1c40dd8.jpg",
+      "isTopSpeaker": false,
+      "links": [
+        {
+          "title": "LinkedIn",
+          "url": "https://linkedin.com/in/alan-clarke-aa499321",
+          "linkType": "LinkedIn"
+        },
+        {
+          "title": "Company Website",
+          "url": "https://www.immuta.com",
+          "linkType": "Company_Website"
+        }
+      ],
+      "sessions": [386624],
+      "fullName": "Alan Clarke",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -684,9 +668,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        361465
-      ],
+      "sessions": [361465],
       "fullName": "Andrew Conacher",
       "categoryItems": [],
       "questionAnswers": []
@@ -700,9 +682,7 @@
       "profilePicture": "https://sessionize.com/image/bdb4-400o400o2-wadAckBioYc9W4VQs763s3.jpg",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        360256
-      ],
+      "sessions": [360256],
       "fullName": "Ann Clark",
       "categoryItems": [],
       "questionAnswers": []
@@ -722,9 +702,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        363693
-      ],
+      "sessions": [363693],
       "fullName": "Arpita Adhicary",
       "categoryItems": [],
       "questionAnswers": []
@@ -744,9 +722,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        363283
-      ],
+      "sessions": [363283],
       "fullName": "Ashika Hettitantirige",
       "categoryItems": [],
       "questionAnswers": []
@@ -760,9 +736,7 @@
       "profilePicture": "https://sessionize.com/image/181e-400o400o2-DB1791bVciNfKARD6zojmo.png",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        374658
-      ],
+      "sessions": [374658],
       "fullName": "Caroline Even",
       "categoryItems": [],
       "questionAnswers": []
@@ -787,9 +761,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        374657
-      ],
+      "sessions": [374657],
       "fullName": "David Ndukwu",
       "categoryItems": [],
       "questionAnswers": []
@@ -819,9 +791,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        374657
-      ],
+      "sessions": [374657],
       "fullName": "Dean Nguyen",
       "categoryItems": [],
       "questionAnswers": []
@@ -835,9 +805,7 @@
       "profilePicture": "https://sessionize.com/image/280e-400o400o2-EnWKVnyd8Z4upqGECBeiJi.jpg",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        363029
-      ],
+      "sessions": [363029],
       "fullName": "Duana Stanley",
       "categoryItems": [],
       "questionAnswers": []
@@ -862,9 +830,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        361339
-      ],
+      "sessions": [361339],
       "fullName": "Hilton Rosenfeld",
       "categoryItems": [],
       "questionAnswers": []
@@ -878,11 +844,7 @@
       "profilePicture": "https://sessionize.com/image/f104-400o400o2-HVu42FNTdDbCj3MR5XpyEE.png",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        381653,
-        374657,
-        381654
-      ],
+      "sessions": [381653, 374657, 381654],
       "fullName": "Ingrid Anzola",
       "categoryItems": [],
       "questionAnswers": []
@@ -912,9 +874,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        362624
-      ],
+      "sessions": [362624],
       "fullName": "Jane Ooi",
       "categoryItems": [],
       "questionAnswers": []
@@ -939,9 +899,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363257
-      ],
+      "sessions": [363257],
       "fullName": "Jenna Olovcic",
       "categoryItems": [],
       "questionAnswers": []
@@ -966,10 +924,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        374658,
-        377669
-      ],
+      "sessions": [374658, 377669],
       "fullName": "Joe Reis",
       "categoryItems": [],
       "questionAnswers": []
@@ -994,37 +949,8 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363359
-      ],
+      "sessions": [363359],
       "fullName": "Jonathan Gomez",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
-    {
-      "id": "2931b099-e7ea-490d-9cd0-c185347b53a7",
-      "firstName": "Josh",
-      "lastName": "Devlin",
-      "bio": "Josh loves designing data models and then using SQL to wrangle raw data to match his designs. When he’s not elbow deep in SQL, you can find him in online sharing his knowledge!",
-      "tagLine": "Senior Analytics Engineer, Brooklyn Data Co.",
-      "profilePicture": "https://sessionize.com/image/56fe-400o400o2-9deTE4Tc8X3XcM86LaSxXd.jpg",
-      "isTopSpeaker": false,
-      "links": [
-        {
-          "title": "Twitter",
-          "url": "https://twitter.com/jaypeedevlin",
-          "linkType": "Twitter"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://joshdevlin.com/",
-          "linkType": "Company_Website"
-        }
-      ],
-      "sessions": [
-        382201
-      ],
-      "fullName": "Josh Devlin",
       "categoryItems": [],
       "questionAnswers": []
     },
@@ -1037,9 +963,7 @@
       "profilePicture": "https://sessionize.com/image/d741-400o400o2-c2-17cc-4f23-a1e4-df2989eb9a71.49b04bf1-8249-4659-ab68-bfb930cd5443.jpg",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        363313
-      ],
+      "sessions": [363313],
       "fullName": "Karen Davis",
       "categoryItems": [],
       "questionAnswers": []
@@ -1064,9 +988,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363283
-      ],
+      "sessions": [363283],
       "fullName": "Lalit Pant",
       "categoryItems": [],
       "questionAnswers": []
@@ -1091,9 +1013,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363312
-      ],
+      "sessions": [363312],
       "fullName": "Lizzie Reid",
       "categoryItems": [],
       "questionAnswers": []
@@ -1123,9 +1043,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363244
-      ],
+      "sessions": [363244],
       "fullName": "Ned Letcher",
       "categoryItems": [],
       "questionAnswers": []
@@ -1150,9 +1068,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363244
-      ],
+      "sessions": [363244],
       "fullName": "Nigel Dalton",
       "categoryItems": [],
       "questionAnswers": []
@@ -1172,9 +1088,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        374658
-      ],
+      "sessions": [374658],
       "fullName": "Nitish Mathew",
       "categoryItems": [],
       "questionAnswers": []
@@ -1188,9 +1102,7 @@
       "profilePicture": "https://sessionize.com/image/fb7e-400o400o2-ndTzsvVaRqhSsDGF4aUnp3.jpg",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        380286
-      ],
+      "sessions": [380286],
       "fullName": "Noel Hanssens",
       "categoryItems": [],
       "questionAnswers": []
@@ -1215,11 +1127,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        380284,
-        381653,
-        381654
-      ],
+      "sessions": [380284, 381653, 381654],
       "fullName": "Peter Hanssens",
       "categoryItems": [],
       "questionAnswers": []
@@ -1239,10 +1147,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        380284,
-        380286
-      ],
+      "sessions": [380284, 380286],
       "fullName": "Revathi Kanduri",
       "categoryItems": [],
       "questionAnswers": []
@@ -1267,9 +1172,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        352689
-      ],
+      "sessions": [352689],
       "fullName": "Rishu Saxena",
       "categoryItems": [],
       "questionAnswers": []
@@ -1299,9 +1202,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        353078
-      ],
+      "sessions": [353078],
       "fullName": "Rohan Garg",
       "categoryItems": [],
       "questionAnswers": []
@@ -1331,11 +1232,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        381653,
-        374657,
-        381654
-      ],
+      "sessions": [381653, 374657, 381654],
       "fullName": "Simon Aubury",
       "categoryItems": [],
       "questionAnswers": []
@@ -1365,9 +1262,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        353187
-      ],
+      "sessions": [353187],
       "fullName": "Thiago Baldim",
       "categoryItems": [],
       "questionAnswers": []
@@ -1387,9 +1282,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        362624
-      ],
+      "sessions": [362624],
       "fullName": "Timothy Downs",
       "categoryItems": [],
       "questionAnswers": []
@@ -1409,9 +1302,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        357656
-      ],
+      "sessions": [357656],
       "fullName": "Vikas Rajput",
       "categoryItems": [],
       "questionAnswers": []
@@ -1441,9 +1332,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363332
-      ],
+      "sessions": [363332],
       "fullName": "Vinoaj Vijeyakumaar",
       "categoryItems": [],
       "questionAnswers": []
@@ -1473,9 +1362,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        381885
-      ],
+      "sessions": [381885],
       "fullName": "Warren Vella",
       "categoryItems": [],
       "questionAnswers": []
@@ -1498,16 +1385,9 @@
           "title": "LinkedIn",
           "url": "https://www.linkedin.com/in/wendywong7/",
           "linkType": "LinkedIn"
-        },
-        {
-          "title": "Company Website",
-          "url": "https://www.semanticscholar.org/paper/Taxpayer-Behavior-Prediction-in-SMS-Campaigns-Cao-Downes/8a3bbb1aeca87042b46e0781d4aaa0fc8a9e62e7",
-          "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        374657
-      ],
+      "sessions": [374657],
       "fullName": "Wendy Wong",
       "categoryItems": [],
       "questionAnswers": []
@@ -1521,9 +1401,7 @@
       "profilePicture": "https://sessionize.com/image/583e-400o400o2-W81B7LfeC2nFj1S8ychP3K.jpg",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        381654
-      ],
+      "sessions": [381654],
       "fullName": "Wenny Hidayat",
       "categoryItems": [],
       "questionAnswers": []
@@ -1543,9 +1421,7 @@
           "linkType": "LinkedIn"
         }
       ],
-      "sessions": [
-        362261
-      ],
+      "sessions": [362261],
       "fullName": "Xinwei Jiang",
       "categoryItems": [],
       "questionAnswers": []
@@ -1565,9 +1441,7 @@
           "linkType": "Twitter"
         }
       ],
-      "sessions": [
-        362633
-      ],
+      "sessions": [362633],
       "fullName": "Xuanyi Chew",
       "categoryItems": [],
       "questionAnswers": []
@@ -1597,9 +1471,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        363280
-      ],
+      "sessions": [363280],
       "fullName": "Zachary Zeus",
       "categoryItems": [],
       "questionAnswers": []
@@ -1629,9 +1501,7 @@
           "linkType": "Company_Website"
         }
       ],
-      "sessions": [
-        359919
-      ],
+      "sessions": [359919, 374658],
       "fullName": "Zainab Maleki",
       "categoryItems": [],
       "questionAnswers": []
@@ -1645,9 +1515,7 @@
       "profilePicture": "https://sessionize.com/image/6a75-400o400o2-DfsKRCab36bYDaUUR2zFkH.jpg",
       "isTopSpeaker": false,
       "links": [],
-      "sessions": [
-        360256
-      ],
+      "sessions": [360256],
       "fullName": "Zeph Yap",
       "categoryItems": [],
       "questionAnswers": []
