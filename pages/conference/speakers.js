@@ -2,7 +2,7 @@ import {Fragment} from 'react'
 import SEO from "../../components/seo";
 import Speakers from '../../components/speakers/speakers'
 
-export default function Home() {
+export default function SpeakersPage() {
   return (
     <Fragment>
       <SEO
