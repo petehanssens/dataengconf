@@ -1,41 +1,62 @@
-import React, { useState } from "react";
-import SEO from "../components/seo";
-import QRScan from "../components/qrreader";
-import { Fragment } from "react";
-export default function App() {
-  const [faceMode, setFaceMode] = useState("user");
+// versi "react-qr-reader" 1.0.0. component API harus disesuaikan dengan yg baru
 
-  const cameraButtonClick = (f) => {
-    if (f === "environment") {
-      setFaceMode("user");
-    } else {
-      setFaceMode("environment");
+import { useState } from "react";
+import QrReader from "react-qr-scanner";
+
+const QRscan = () => {
+  const [selected, setSelected] = useState("environment");
+  const [startScan, setStartScan] = useState(false);
+  const [loadingScan, setLoadingScan] = useState(false);
+  const [data, setData] = useState("");
+
+  const handleScan = async (scanData) => {
+    setLoadingScan(true);
+    console.log(`loaded data data`, scanData);
+    if (scanData && scanData !== "") {
+      console.log(`loaded >>>`, scanData);
+      setData(scanData);
+      setStartScan(false);
+      setLoadingScan(false);
+      // setPrecScan(scanData);
     }
   };
-
-  const QRWithRearCam = () => {
-    return (
-      <QRScan
-        constraints={{
-          facingMode: faceMode,
-        }}
-      />
-    );
+  const handleError = (err) => {
+    console.error(err);
   };
-
   return (
-    <Fragment>
-      <SEO
-        keywords={[`Data Engineering`, `DataEng`, `DataEngBytes`]}
-        title="Scan QR Code - DataEngBytes!"
-        description="Reach out if you have a question, DataEngBytes"
-      />
-      <div>
-        {/* {loadCameraPermissions()} */}
-        <h1>Hello QR Code Reader</h1>
-        <button onClick={() => cameraButtonClick(faceMode)}>{faceMode}</button>
-        {faceMode === "user" ? QRWithRearCam() : null}
-      </div>
-    </Fragment>
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>
+        Last Scan:
+        {selected}
+      </h2>
+
+      <button
+        onClick={() => {
+          setStartScan(!startScan);
+        }}
+      >
+        {startScan ? "Stop Scan" : "Start Scan"}
+      </button>
+      {startScan && (
+        <>
+          <select onChange={(e) => setSelected(e.target.value)}>
+            <option value={"environment"}>Back Camera</option>
+            <option value={"user"}>Front Camera</option>
+          </select>
+          <QrReader
+            facingMode={selected}
+            delay={1000}
+            onError={handleError}
+            onScan={handleScan}
+            // chooseDeviceId={()=>selected}
+            style={{ width: "300px" }}
+          />
+        </>
+      )}
+      {loadingScan && <p>Loading</p>}
+    </div>
   );
-}
+};
+
+export default QRscan;
