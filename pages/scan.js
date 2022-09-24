@@ -4,16 +4,16 @@ import { useState } from "react";
 import QrReader from "react-qr-scanner";
 
 const QRscan = () => {
-  const [selected, setSelected] = useState("environment");
+  const [selected, setSelected] = useState("user");
   const [startScan, setStartScan] = useState(false);
   const [loadingScan, setLoadingScan] = useState(false);
   const [data, setData] = useState("");
 
   const handleScan = async (scanData) => {
     setLoadingScan(true);
-    console.log(`loaded data data`, scanData);
+    console.log(`loaded data data`, scanData, selected);
     if (scanData && scanData !== "") {
-      console.log(`loaded >>>`, scanData);
+      console.log(`loaded >>>`, scanData, selected);
       setData(scanData);
       setStartScan(false);
       setLoadingScan(false);
