@@ -10,6 +10,7 @@ const mutation = gql`
     $linkedin: String
     $preferred_meetup: String
     $country: String
+    $user_type: String
   ) {
     createInitialUser(
       email: $email
@@ -20,6 +21,7 @@ const mutation = gql`
       linkedin: $linkedin
       preferred_meetup: $preferred_meetup
       country: $country
+      user_type: $user_type
     ) {
       email
     }
