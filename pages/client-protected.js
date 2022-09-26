@@ -46,6 +46,7 @@ function ClientProtected() {
         width={450}
         height={300}
     />
+
     {getUserInfo.user.user_type && getUserInfo.user.user_type=="sponsor" ?
     <button
       type="submit"
