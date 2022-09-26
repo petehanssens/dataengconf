@@ -10,7 +10,6 @@ const getUserInfo = gql`
         last_name
         linkedin
         preferred_meetup
-        country
         user_type
       }
     }
