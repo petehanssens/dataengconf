@@ -9,8 +9,10 @@ const QRscan = () => {
   const [startScan, setStartScan] = useState(false);
   const [loadingScan, setLoadingScan] = useState(false);
   const [data, setData] = useState("");
+  const qrRef = useRef(null);
 
   const handleScan = async (scanData) => {
+    qrRef.current.openImageDialog();
     setLoadingScan(true);
     console.log(`loaded data data`, scanData, selected);
     if (scanData && scanData !== "") {
