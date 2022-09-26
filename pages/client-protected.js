@@ -4,6 +4,7 @@ import { withAuthenticator } from "@aws-amplify/ui-react";
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 
+import ReactPlayer from 'react-player/youtube';
 import SignOut from "../components/auth/sign-out";
 import UpdateUser from "../components/signup/updateProfile";
 import GetUserInfo from "../helpers/getUserInfo";
@@ -36,8 +37,17 @@ function ClientProtected() {
   let displayForUser;
   if (getUserInfo && getUserInfo.user) {
     displayForUser = <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left"><h1 className="my-6 text-center text-3xl font-extrabold text-gray-900">
-    Live stream details coming soon
+    Live stream
   </h1>
+
+    <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <ReactPlayer 
+          url='https://www.youtube.com/watch?v=_t9_7E9bXvE'
+          playing
+          loop
+          muted
+      />
+    </div>
     <Image className="absolute inset-0 h-full w-full object-cover"
         loader={myLoader}
         src="/images/2022/slides/01.png"
