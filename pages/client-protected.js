@@ -35,7 +35,7 @@ function ClientProtected() {
         loader={myLoader}
         src="/images/2022/slides/01.png"
         alt="DataEngBytes"
-        layout='fill'
+        layout='fixed'
     /></div>
   } else {
     displayForUser = <UpdateUser />
