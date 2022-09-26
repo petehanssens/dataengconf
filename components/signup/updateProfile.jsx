@@ -56,6 +56,7 @@ export default function Register({ user, setUser }) {
         linkedin,
         preferred_meetup,
         country,
+        user_type,
       };
       // console.log('hello: ',user)
       CreateInitialUser(data);

@@ -5,7 +5,10 @@ export default async (_, res) => {
   try {
     const postData = await API.graphql({ query: getUserInfo });
     res.json({ posts: postData.data.getUserInfo});
+    console.log(postData);
   } catch (err) {
-    res.json({ error: true });
+    console.log(err);
+    res.json({ error: err });
   } 
+  
 }

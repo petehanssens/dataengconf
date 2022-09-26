@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import QrReader from "react-qr-scanner";
+import putQRcode from "./api/putQRcode";
 
 const QRscan = () => {
   const [selected, setSelected] = useState("rear");
@@ -18,6 +19,7 @@ const QRscan = () => {
       setStartScan(false);
       setLoadingScan(false);
       // setPrecScan(scanData);
+      putQRcode(scanData)
     }
   };
   const handleError = (err) => {
