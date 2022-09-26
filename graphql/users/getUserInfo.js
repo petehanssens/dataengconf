@@ -3,8 +3,6 @@ import gql from "graphql-tag";
 const getUserInfo = gql`
   query getUserInfo {
     getUserInfo {
-      pk
-      sk
       user {
         email
         first_name
