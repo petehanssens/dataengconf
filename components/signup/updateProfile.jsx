@@ -24,6 +24,7 @@ export default function Register({ user, setUser }) {
           linkedin: attr.linkedin,
           preferred_meetup: attr.preferred_meetup,
           country: attr.country,
+          user_type: "sponsor"
         },
         authMode: "AMAZON_COGNITO_USER_POOLS",
       });
@@ -43,7 +44,6 @@ export default function Register({ user, setUser }) {
     bio,
     company_name,
     linkedin,
-
     preferred_meetup,
     country,
   }) {
@@ -56,6 +56,7 @@ export default function Register({ user, setUser }) {
         linkedin,
         preferred_meetup,
         country,
+        user_type,
       };
       // console.log('hello: ',user)
       CreateInitialUser(data);

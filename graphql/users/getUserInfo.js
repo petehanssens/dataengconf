@@ -12,6 +12,7 @@ const getUserInfo = gql`
         linkedin
         preferred_meetup
         country
+        user_type
       }
     }
   }
