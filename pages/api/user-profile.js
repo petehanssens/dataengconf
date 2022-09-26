@@ -10,4 +10,5 @@ export default async (_, res) => {
     console.log(err);
     res.json({ error: err });
   } 
+  
 }
