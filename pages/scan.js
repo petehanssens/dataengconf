@@ -3,7 +3,16 @@
 import { useState, useRef } from "react";
 import QrReader from "react-qr-scanner";
 import putQRcode from "./api/putQRcode";
+import Image from 'next/image'
 
+const myLoader = ({ src, width, quality }) => {
+  return `https://dataengconf.com.au/${src}?w=${width}&q=${quality || 75}`
+}
+
+const dataEngLogo =
+  "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png";
+
+  
 const QRscan = () => {
   const [selected, setSelected] = useState("rear");
   const [startScan, setStartScan] = useState(false);
@@ -28,8 +37,15 @@ const QRscan = () => {
     console.error(err);
   };
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
+
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8">
+        <div>
+          <img
+            className="mx-auto h-20 w-auto"
+            src={dataEngLogo}
+            alt="Workflow"
+          />
       <h2>
         Last Scan:
         {selected}
@@ -59,6 +75,8 @@ const QRscan = () => {
         </>
       )}
       {loadingScan && <p>Loading</p>}
+    </div>
+    </div>
     </div>
   );
 };
