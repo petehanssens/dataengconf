@@ -5,10 +5,9 @@ const getUserInfo = gql`
     getUserInfo {
       user {
         email
+        country
         first_name
         last_name
-        bio
-        company_name
         linkedin
         preferred_meetup
         country

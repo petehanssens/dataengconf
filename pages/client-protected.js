@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
 import { Auth } from "aws-amplify";
 import { withAuthenticator } from "@aws-amplify/ui-react";
+import Image from 'next/image'
 
 import SignOut from "../components/auth/sign-out";
 import UpdateUser from "../components/signup/updateProfile";
+import GetUserInfo from "../helpers/getUserInfo";
+
+const myLoader = ({ src, width, quality }) => {
+  return `https://dataengconf.com.au/${src}?w=${width}&q=${quality || 75}`
+}
 
 const dataEngLogo =
   "/images/dataEngLogos/DataEng.MeetUp600x450.transparent.v1.png";
@@ -18,6 +24,22 @@ function ClientProtected() {
       .catch((err) => setUser(null));
   }, []);
 
+  const getUserInfo = GetUserInfo();
+  console.log('getUserInfo: ',getUserInfo)
+  let displayForUser;
+  if (getUserInfo && getUserInfo.user) {
+    displayForUser = <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left"><h1 className="my-6 text-center text-3xl font-extrabold text-gray-900">
+    Live stream details coming soon
+  </h1>
+    <Image className="absolute inset-0 h-full w-full object-cover"
+        loader={myLoader}
+        src="/images/2022/slides/01.png"
+        alt="DataEngBytes"
+        layout='fill'
+    /></div>
+  } else {
+    displayForUser = <UpdateUser />
+  }
   return (
     <div>
       <main>
@@ -32,9 +54,10 @@ function ClientProtected() {
               {user && (
                 <>
                   <h1 className="my-6 text-center text-3xl font-extrabold text-gray-900">
-                    Welcome, {user.attributes.given_name}
+                    Welcome, {getUserInfo && getUserInfo.user && getUserInfo.user.first_name}
                   </h1>
-                  <UpdateUser />
+                  {displayForUser}
+                  
                   <SignOut />
                 </>
               )}
