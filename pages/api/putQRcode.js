@@ -1,18 +1,17 @@
 import { API } from 'aws-amplify';
-import scanQRcode from '../../graphql/users/scanQRcode';
+import scanQRCode from '../../graphql/users/scanQRCode';
 
 export default async (scanData, res) => {
+    console.log("putQRcode:", scanData.text)
     try {
         const postData = await API.graphql({
-            query: scanQRcode,
+            query: scanQRCode,
             variables: {
                 qr_code: scanData.text
             }
         });
-        res.json({ posts: postData.data.scanQRcode });
-        console.log(postData);
+        console.log(postData)
     } catch (err) {
         console.log(err);
-        res.json({ error: err });
     }
 }
