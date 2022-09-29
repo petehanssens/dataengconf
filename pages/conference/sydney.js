@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import SEO from "../../components/seo";
 import Sydney from "../../components/venues/sydney";
 import SydneyPanel from "../../components/speakers/sydney-panel";
+import SydneySession from "../../components/speakers/sydney-lineup"
 export default function Home() {
   return (
     <Fragment>
@@ -12,6 +13,7 @@ export default function Home() {
       />
       <Sydney />
       <SydneyPanel />
+      <SydneySession />
 
       <div className="py-24 relative bg-white">
         <div className=" lg:absolute lg:inset-0">
