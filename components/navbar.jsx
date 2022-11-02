@@ -338,7 +338,7 @@ export default function Navigation(props) {
                   )}
                 </Popover>
               </Popover.Group>
-              {signedInUser ? (
+              {/* {signedInUser ? (
                 <>
                   <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                     <SignOut />
@@ -355,7 +355,7 @@ export default function Navigation(props) {
                     </a>
                   </div>
                 </>
-              )}
+              )} */}
             </div>
           </div>
 
