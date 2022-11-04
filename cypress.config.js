@@ -15,6 +15,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
+    supportfile: false,
     video: false,
     screenshotOnRunFailure: false,
     baseUrl: "http://localhost:3000",
