@@ -18,6 +18,6 @@ module.exports = defineConfig({
     video: false,
     screenshotOnRunFailure: false,
     baseUrl: "http://localhost:3000",
-    specPattern: ["cypress/e2e/**/*.*.js", "cypress/integration/**/*.*.js"],
+    specPattern: ["cypress/e2e/*.*.js", "cypress/integration/**/*.*.js"],
   },
 });
