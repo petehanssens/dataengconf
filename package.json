@@ -16,7 +16,7 @@
     "release": "npx projen release",
     "server": "npx projen server",
     "telemetry": "npx projen telemetry",
-    "test": "jest --watch",
+    "test": "jest --verbose ./__test__",
     "unbump": "npx projen unbump",
     "upgrade": "npx projen upgrade",
     "projen": "npx projen",
