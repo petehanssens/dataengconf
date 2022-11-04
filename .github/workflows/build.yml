@@ -27,6 +27,15 @@ jobs:
         run: npm install
       - name: build
         run: npx projen build
+      - name: Testing
+        run: npm test
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          config-file: cypress.config.js
+          install: true
+          start: npm run dev
+          wait-on: "http://localhost:3000"
       - id: self_mutation
         name: Find mutations
         run: |-

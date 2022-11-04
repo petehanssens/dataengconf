@@ -16,10 +16,14 @@
     "release": "npx projen release",
     "server": "npx projen server",
     "telemetry": "npx projen telemetry",
-    "test": "npx projen test",
+    "test": "jest --verbose ./__test__",
     "unbump": "npx projen unbump",
     "upgrade": "npx projen upgrade",
-    "projen": "npx projen"
+    "projen": "npx projen",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "author": {
     "name": "DataEngBytes",
@@ -32,7 +36,14 @@
     "netlify-plugin-contextual-env": "^0.3.0",
     "npm-check-updates": "^12",
     "projen": "^0.58.1",
-    "standard-version": "^9"
+    "standard-version": "^9",
+    "cypress": "^10.9.0",
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "babel-jest": "^29.1.2",
+    "identity-obj-proxy": "^3.0.0"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "*",
