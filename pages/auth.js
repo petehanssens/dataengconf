@@ -1,24 +1,41 @@
-import { useState } from "react";
-import SignIn from "../components/auth/sign-in";
-import Register from "../components/auth/register";
-import Confirm from "../components/auth/confirm";
+import First from "../components/auth/registration/first";
+import Second from "../components/auth/registration/second";
+import Third from "../components/auth/registration/third";
+import Fourth from "../components/auth/registration/fourth";
+import Fifth from "../components/auth/registration/fifth";
+import Sixth from "../components/auth/registration/sixth";
+import React, { useState } from "react";
 
-export default function Index() {
-  const [status, setStatus] = useState("sign-in");
-  const [user, setUser] = useState(null);
+export default function Form() {
+  const [page, setPage] = useState(0);
+  function handleSubmit() {
+    setPage(page + 1);
+  }
+  const conditionalComponent = () => {
+    switch (page) {
+      case 0:
+        return <First />;
+      case 1:
+        return <Second />;
+      case 2:
+        return <Third />;
+      case 3:
+        return <Fourth />;
+      case 4:
+        return <Fifth />;
+      case 5:
+        return <Sixth />;
+      default:
+        return <First />;
+    }
+  };
+
   return (
-    <div className="bg-white">
-      <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-        <div className="space-y-12">
-          {status === "sign-in" ? <SignIn setStatus={setStatus} /> : null}
-          {status === "register" ? (
-            <Register setStatus={setStatus} setUser={setUser} />
-          ) : null}
-          {status === "confirm" ? (
-            <Confirm setUser={setUser} user={user} />
-          ) : null}
-        </div>
-      </div>
-    </div>
+    <>
+      {conditionalComponent()}
+      <button onClick={handleSubmit}>
+        {page === 0 || page === 1 ? "Next" : "Submit"}
+      </button>
+    </>
   );
 }
