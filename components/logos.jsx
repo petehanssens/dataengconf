@@ -103,7 +103,7 @@ const sponsorLogo = [
   },
   {
     name: "Cloud Shuttle",
-    image: "images/sponsors/new-cloudshuttle-logo.png",
+    image: "images/sponsors/cloudshuttle_black.png",
     url: "https://www.cloudshuttle.com.au/",
   },
   {
