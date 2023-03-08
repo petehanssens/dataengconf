@@ -9,7 +9,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        '1/2': '50%',
+        full: '100%',
+      },
+      colors: {
+        'dark-black-blue': '#12042e',
+      }
+    },
     fontFamily: {
       sans: ['Inter var', 'sans-serif'],
       sans: ['Graphik', 'sans-serif'],
