@@ -11,8 +11,6 @@ import Schedule from "../components/speakers/schedule";
 import Keynotes from "../components/speakers/keynotes";
 import Image from "next/image";
 import { Router, useRouter } from "next/router";
-
-
 const eventDetails = {
   "@context": "https://schema.org",
   "@type": "Conference",
@@ -181,26 +179,34 @@ export default function Home() {
         <div className="font-sans italic text-4xl text-slate-200 mb-20 ">
           OUR ATTENDEES
         </div>
-        <div className="mt-6 flex flex-row text-white justify-around ">
-          <div
-            className="flex w-56 h-56 bg-red-600 rounded-full"
-          >
-            <p className="m-auto">DATA ENGINEERS</p>
+        <div className="mt-6 flex flex-row text-white ">
+          <div className=" shrink w-1/4 p-2 h-">
+            <div className="rounded-full bg-red-700 ">
+              <div className="rounded-full shadow-stone-400 border-none p-5  h-52">
+                DATA ENGINEERS
+              </div>
+            </div>
           </div>
-          <div
-            className="flex w-56 h-56 bg-red-600 rounded-full"
-          >
-            <p className="m-auto">BUSINESS STAKEHOLDERS</p>
+          <div className=" shrink w-1/4 p-2 ">
+            <div className="rounded-full bg-red-700 ">
+              <div className="rounded-full shadow-stone-400 border-none p-5 h-52 ">
+                BUSINESS STAKEHOLDERS
+              </div>
+            </div>
           </div>
-          <div
-            className="flex w-56 h-56 bg-red-600 rounded-full"
-          >
-            <p className="m-auto">ANALYTICS ENGINEERS</p>
+          <div className=" shrink w-1/4 p-2 ">
+            <div className="rounded-full bg-red-700 ">
+              <div className="rounded-full shadow-stone-400 border-none p-5 h-52">
+                ANALYTICS ENGINEERS
+              </div>
+            </div>
           </div>
-          <div
-            className="flex w-56 h-56 bg-red-600 rounded-full"
-          >
-            <p className="m-auto">MLOPS</p>
+          <div className=" shrink w-1/4 p-2">
+            <div className="rounded-full bg-red-700 ">
+              <div className="rounded-full shadow-stone-400 border-none p-5 h-52">
+                MLOPS
+              </div>
+            </div>
           </div>
         </div>
       </div>
