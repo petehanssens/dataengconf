@@ -164,7 +164,7 @@ export default function Home() {
         <div className="font-sans italic text-4xl text-slate-200 mb-10 ">
           WHY ATTEND?
         </div>
-        <div className="mt-6 flex flex-row gap-20 justify-around ">
+        <div className="mt-6 flex flex-col md:flex-row gap-20 justify-around items-center md:items-stretch ">
           <div className="py-12 px-8  bg-red-700 text-white rounded-2xl w-64">
             Network with professionals & like minded-individuals in the field.
           </div>
@@ -181,7 +181,7 @@ export default function Home() {
         <div className="font-sans italic text-4xl text-slate-200 mb-20 ">
           OUR ATTENDEES
         </div>
-        <div className="mt-6 flex flex-row text-white justify-around ">
+        <div className="mt-6 flex flex-col md:flex-row text-white gap-6 justify-around  items-center md:items-stretch">
           <div
             className="flex w-56 h-56 bg-red-600 rounded-full"
           >
