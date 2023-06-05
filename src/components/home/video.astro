@@ -1,21 +1,27 @@
+---
+import Nav from '../nav/clear-nav.astro'
+---
 <header
   class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
 >
   <div
-    class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"
+    class="relative z-30 p-5 text-white"
   >
-    Welcome to my site!
+  <Nav />
+    <h1 class="text-4xl font-bold tracking-tight text-white-900 sm:text-6xl">DataEngBytes</h1>
+    <p class="mt-6 text-lg leading-8 text-white-600">Run by data engineers, for data engineers</p>
   </div>
   <video
     autoplay
     loop
     muted
+    poster="video-screen.jpg"
     class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
   >
     <source
       src="output-smaller.webm"
       type="video/webm"
     />
-    Your browser does not support the video tag.
+    <img src="video-screen.jpg" title="Your browser does not support the <video> tag" />
   </video>
 </header>
