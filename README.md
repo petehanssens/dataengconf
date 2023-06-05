@@ -1,112 +1,55 @@
-# dataengconf
+# Astro Starter Kit: Basics
 
-Website for the [Sydney DataEngConf](https://dataengconf.com.au/)!
+```
+npm create astro@latest -- --template basics
+```
 
-## reatjs
- 
-[tutorial](https://reactjs.org/tutorial/tutorial.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-[Introducing Hooks](https://reactjs.org/docs/hooks-intro.html)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-[React Hooks - w3c shcool](https://www.w3schools.com/react/react_hooks.asp)
-
-[React Hooks - turorial](https://www.javatpoint.com/react-hooks#:~:text=Hooks%20are%20the%20new%20feature,does%20not%20work%20inside%20classes.)
-
-[Hooks API](https://reactjs.org/docs/hooks-reference.html)
-
-- Basic Hooks
-
-    - useState
-
-    - useEffect
-
-    - useContext
-
-- Additional Hooks
-
-    - useReducer
-
-    - useCallback
-
-    - useMemo
-
-    - useRef
-
-    - useImperativeHandle
-
-    - useLayoutEffect
-
-    - useDebugValue
-
-    - useDeferredValue
-
-    - useTransition
-
-    - useId
-
-- Library Hooks
-
-    - useSyncExternalStore
-
-    - useInsertionEffect
-
-## Graphsql
-
-[Queries and Mutations](https://graphql.org/learn/queries/)
-
-## Aws amplify
-
-[AWS Amplify](https://aws.amazon.com/amplify/#:~:text=AWS%20Amplify%20is%20a%20set,as%20your%20use%20cases%20evolve.)
-
-## list of sections
-
-- sponsors
-- code of conduct
-- call for papers
-- organisers
+![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
 
 
-## Getting started as a developer
+## 🚀 Project Structure
 
-1. Clone the repo
-2. Install node `brew install node` 
-3. Install yarn `npm install --global yarn`
-4. Install dependencies: `yarn install`
-5. Run the app: `yarn dev`
-6. Open the application: http://localhost:3000/
+Inside of your Astro project, you'll see the following folders and files:
 
-## Helpful tools
-- [Chrome React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+```
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## Setup SSH key on github profile with WSL installed
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-1. Make sure SSH is Installed by `sudo apt install openssh-client`
-2. Run the key generator by `ssh-keygen -t rsa`
-3. Press "Return" when asked for location to save the key in to save in default folder
-4. Use `cat ~/.ssh/id_rsa.pub` to get the key text
-5. Copy the whole text returned
-6. Go to your github settings/keys by visiting "https://github.com/settings/keys"
-7. Add a new key by giving it a title and pasting the key text in the "Key" Textbox
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-## Development environment on WSL
+Any static assets, like images, can be placed in the `public/` directory.
 
-Installation steps
+## 🧞 Commands
 
-1. Install WSL using powershell in administrator mode using command `wsl --install`
-Note: This will install Ubuntu as the default distribution
-2. Reboot after the whole process is completed
-3. Launch Ubuntu terminal
-4. Setup SSH key by completing the previous section if haven't already done
-5. Install cURL with `sudo apt-get install curl`
-6. Install nvm, with `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
-7. Close and reopen the Ubuntu terminal again
-8. To verify installation, enter `command -v nvm`. This should return "nvm"
-9. Install the current stable LTS release of Node.js (recommended for production applications) by `nvm install --lts`
-10. Make a directory using `mkdir cloudshuttle`. You can use any name you like
-11. Run `cd cloudshuttle` to jump into the directory
-12. Run `git clone git@github.com:petehanssens/dataengconf.git` to clone the project into your directory
-13. Run `cd dataengconf` to jump into the project folder
-14. Run `npx projen`
-15. Run `npm i`
-16. Run `npm run dev`. This will start server on 0.0.0.0:3000
-17. Open the application: http://localhost:3000/
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:3000`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
