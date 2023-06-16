@@ -6,7 +6,7 @@ sponsors: Array<object>;
 const sponsors = [
     {
         name: 'EnterpriseDB',
-        image: '../../../public/logos/edb.jpg',
+        image: './logos/edb.jpg',
         width: '158',
         height: '48',
         link: 'https://www.enterprisedb.com/',
@@ -16,7 +16,7 @@ const sponsors = [
     },
     {
         name: 'Snowflake',
-        image: '../../../public/logos/snowflake.png',
+        image: './logos/snowflake.png',
         width: '158',
         height: '48',
         link: 'https://www.snowflake.com/',
@@ -27,7 +27,7 @@ const sponsors = [
     },
     {
         name: 'Databricks',
-        image: '../../../public/logos/databricks.png',
+        image: './logos/databricks.png',
         width: '500',
         height: '100',
         link: 'https://www.databricks.com/',
@@ -38,7 +38,7 @@ const sponsors = [
     },
     {
         name: 'The Trade Desk',
-        image: '../../../public/logos/thetradedesk.png',
+        image: './logos/thetradedesk.png',
         width: '158',
         height: '100',
         link: 'https://www.thetradedesk.com',
@@ -49,7 +49,7 @@ const sponsors = [
     },
     {
         name: 'Mantel',
-        image: '../../../public/logos/mantel.png',
+        image: './logos/mantel.png',
         width: '158',
         height: '48',
         link: 'https://mantelgroup.com.au/',
@@ -59,7 +59,7 @@ const sponsors = [
     },
     {
         name: 'Aiven',
-        image: '../../../public/logos/aiven.png',
+        image: './logos/aiven.png',
         width: '158',
         height: '48',
         link: 'https://aiven.io/',
@@ -70,7 +70,7 @@ const sponsors = [
     },
     {
         name: 'Plural Sight',
-        image: '../../../public/logos/plural_sight.png',
+        image: './logos/plural_sight.png',
         width: '500',
         height: '100',
         link: 'https://www.pluralsight.com',
@@ -81,7 +81,7 @@ const sponsors = [
     },
     {
         name: 'Coalesce',
-        image: '../../../public/logos/coalesce.png',
+        image: './logos/coalesce.png',
         width: '158',
         height: '100',
         link: 'https://coalesce.io/',
@@ -92,7 +92,7 @@ const sponsors = [
     },
     {
         name: 'Omnata',
-        image: '../../../public/logos/omnata.svg',
+        image: './logos/omnata.svg',
         width: '158',
         height: '100',
         link: 'https://omnata.com/',
@@ -103,7 +103,7 @@ const sponsors = [
     },
     {
         name: 'Fivetran',
-        image: '../../../public/logos/fivetran.png',
+        image: './logos/fivetran.png',
         width: '158',
         height: '100',
         link: 'https://www.fivetran.com/',
@@ -113,7 +113,7 @@ const sponsors = [
         active: true
     },{
         name: 'Neo4j',
-        image: '../../../public/logos/neo4j.png',
+        image: './logos/neo4j.png',
         width: '158',
         height: '100',
         link: 'https://neo4j.com/',
@@ -123,7 +123,7 @@ const sponsors = [
         active: true
     },{
         name: 'ROKT',
-        image: '../../../public/logos/rokt.png',
+        image: './logos/rokt.png',
         width: '158',
         height: '100',
         link: 'https://www.rokt.com/',
@@ -134,7 +134,7 @@ const sponsors = [
     },
     {
         name: 'Cloudshuttle',
-        image: '../../../public/logos/cloudshuttle_black.png',
+        image: './logos/cloudshuttle_black.png',
         width: '158',
         height: '100',
         link: 'https://cloudshuttle.com.au',
@@ -148,11 +148,18 @@ const sponsors = [
 ---
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <h2 class="text-center text-2xl font-semibold leading-8 text-gray-900 font-roboto">Organisations supporting the data community in 2023</h2>
+      <h2 class="text-center font-openSans font-semibold text-3xl leading-8 text-gray-600">Organisations supporting the data community in 2023</h2>
       <div class="carousel carousel-center mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
         {
             sponsors.map(sponsor => {
-                return <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={sponsor.image} alt={sponsor.name} width={sponsor.width} height={sponsor.height}/>
+                return (
+                    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" 
+                        src={sponsor.image} 
+                        alt={sponsor.name} 
+                        width={sponsor.width} 
+                        height={sponsor.height}
+                    />
+                )
             })
         }
       </div>
