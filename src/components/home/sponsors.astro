@@ -6,7 +6,7 @@ sponsors: Array<object>;
 const sponsors = [
     {
         name: 'EnterpriseDB',
-        image: './logos/edb.jpg',
+        image: '../../../public/logos/edb.png',
         width: '158',
         height: '48',
         link: 'https://www.enterprisedb.com/',
@@ -16,7 +16,7 @@ const sponsors = [
     },
     {
         name: 'Snowflake',
-        image: './logos/snowflake.png',
+        image: '../../../public/logos/snowflake.png',
         width: '158',
         height: '48',
         link: 'https://www.snowflake.com/en/',
@@ -27,7 +27,7 @@ const sponsors = [
     },
     {
         name: 'Databricks',
-        image: './logos/databricks.png',
+        image: '../../../public/logos/databricks.png',
         width: '500',
         height: '100',
         link: 'https://www.databricks.com/',
@@ -38,7 +38,7 @@ const sponsors = [
     },
     {
         name: 'The Trade Desk',
-        image: './logos/xxx.png',
+        image: '../../../public/logos/the_trade_desk.png',
         width: '158',
         height: '100',
         link: 'https://www.thetradedesk.com',
@@ -47,18 +47,116 @@ const sponsors = [
         description: 'xxx',
         active: true
     },
+    {
+        name: 'Mantel',
+        image: '../../../public/logos/mantel.png',
+        width: '158',
+        height: '48',
+        link: 'https://mantelgroup.com.au/',
+        tier: 'Headline',
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Aiven',
+        image: '../../../public/logos/aiven.png',
+        width: '158',
+        height: '48',
+        link: 'https://aiven.io/',
+        tier: 'Headline',
+        cities: ['Sydney','Brisbane','Perth','Melbourne'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Plural Sight',
+        image: '../../../public/logos/plural_sight.png',
+        width: '500',
+        height: '100',
+        link: 'https://www.pluralsight.com',
+        tier: 'Headline',
+        cities: ['Sydney','Brisbane','Perth'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Coalesce',
+        image: '.',
+        width: '158',
+        height: '100',
+        link: 'https://coalesce.io/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Omnata',
+        image: '.',
+        width: '158',
+        height: '100',
+        link: 'https://omnata.com/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Fifvetran',
+        image: '.',
+        width: '158',
+        height: '100',
+        link: 'https://coalesce.io/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },{
+        name: 'Neo4j',
+        image: '.',
+        width: '158',
+        height: '100',
+        link: 'https://coalesce.io/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },{
+        name: 'ROKT',
+        image: '.',
+        width: '158',
+        height: '100',
+        link: 'https://coalesce.io/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Cloudshuttle',
+        image: '.',
+        width: '158',
+        height: '100',
+        link: 'https://cloudshuttle.com.au',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+
 ]
 ---
 <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <h2 class="text-center text-2xl font-semibold leading-8 text-gray-900 font-montserrat">Organisations supporting the data community in 2023</h2>
-      <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <h2 class="text-center text-2xl font-semibold leading-8 text-gray-900 font-roboto">Organisations supporting the data community in 2023</h2>
+      <div class="carousel carousel-center mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
         {
             sponsors.map(sponsor => {
-                return <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={sponsor.image} alt="Transistor" width={sponsor.width} height={sponsor.height}>
+                return <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src={sponsor.image} alt={sponsor.name} width={sponsor.width} height={sponsor.height}/>
             })
         }
       </div>
     </div>
 </div>
-  
+
+
