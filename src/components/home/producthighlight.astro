@@ -1,0 +1,44 @@
+---
+export interface Props {
+
+products: Array<object>;
+}
+const products = [
+    {
+        name: 'Meetups',
+        link: '/meetup',
+        description: 'Free Sessions that bring together industry thought-leaders to discuss, share and showcase',
+        active: true
+    },
+    {
+        name: 'Conferences',
+        link: '/conference',
+        description: 'The annual one-day immersive experience across four cities where Data people learn and grow',
+        active: false
+    },
+    {
+        name: 'Videos',
+        link: 'https://www.youtube.com/dataengau',
+        description: 'The on-demand video platform for continual data learning and exclusive content',
+        active: false
+    }
+]
+---
+
+<div class="bg-white py-24 sm:py-32 bg-gradient-to-r from-red-800 to-blue-900">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+        {
+            products.map(product => {
+                return (
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base leading-7 text-white-600 font-openSans">{product.description}</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-white-100">{product.name}</dd>
+                </div>
+                )
+            })
+        }
+      </dl>
+    </div>
+  </div>
+  
