@@ -1,0 +1,169 @@
+---
+export interface Props {
+
+sponsors: Array<object>;
+}
+const sponsors = [
+    {
+        name: 'EnterpriseDB',
+        image: './logos/edb.jpg',
+        width: '158',
+        height: '48',
+        link: 'https://www.enterprisedb.com/',
+        tier: 'Headline',
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Snowflake',
+        image: './logos/snowflake.png',
+        width: '158',
+        height: '48',
+        link: 'https://www.snowflake.com/',
+        tier: 'Headline',
+        cities: ['Sydney','Brisbane','Perth','Melbourne'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Databricks',
+        image: './logos/databricks.png',
+        width: '500',
+        height: '100',
+        link: 'https://www.databricks.com/',
+        tier: 'Headline',
+        cities: ['Sydney','Brisbane','Perth'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'The Trade Desk',
+        image: './logos/thetradedesk.png',
+        width: '158',
+        height: '100',
+        link: 'https://www.thetradedesk.com',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Mantel',
+        image: './logos/mantel.png',
+        width: '158',
+        height: '48',
+        link: 'https://mantelgroup.com.au/',
+        tier: 'Headline',
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Aiven',
+        image: './logos/aiven.png',
+        width: '158',
+        height: '48',
+        link: 'https://aiven.io/',
+        tier: 'Headline',
+        cities: ['Sydney','Brisbane','Perth','Melbourne'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Plural Sight',
+        image: './logos/plural_sight.png',
+        width: '500',
+        height: '100',
+        link: 'https://www.pluralsight.com',
+        tier: 'Headline',
+        cities: ['Sydney','Brisbane','Perth'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Coalesce',
+        image: './logos/coalesce.png',
+        width: '158',
+        height: '100',
+        link: 'https://coalesce.io/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Omnata',
+        image: './logos/omnata.svg',
+        width: '158',
+        height: '100',
+        link: 'https://omnata.com/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Fivetran',
+        image: './logos/fivetran.png',
+        width: '158',
+        height: '100',
+        link: 'https://www.fivetran.com/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },{
+        name: 'Neo4j',
+        image: './logos/neo4j.png',
+        width: '158',
+        height: '100',
+        link: 'https://neo4j.com/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },{
+        name: 'ROKT',
+        image: './logos/rokt.png',
+        width: '158',
+        height: '100',
+        link: 'https://www.rokt.com/',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+    {
+        name: 'Cloudshuttle',
+        image: './logos/cloudshuttle_black.png',
+        width: '158',
+        height: '100',
+        link: 'https://cloudshuttle.com.au',
+        tier: 'Gold',
+        cities: ['Sydney'],
+        description: 'xxx',
+        active: true
+    },
+
+]
+---
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-center font-openSans font-semibold text-3xl leading-8 text-gray-600">Organisations supporting the data community in 2023</h2>
+      <div class="carousel carousel-center mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        {
+            sponsors.map(sponsor => {
+                return (
+                    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" 
+                        src={sponsor.image} 
+                        alt={sponsor.name} 
+                        width={sponsor.width} 
+                        height={sponsor.height}
+                    />
+                )
+            })
+        }
+      </div>
+    </div>
+</div>
+
+

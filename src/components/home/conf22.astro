@@ -1,0 +1,48 @@
+---
+export interface Props {
+highlights: Array<object>;
+}
+const highlights = [
+    {
+        name: 'Volunteers',
+        image: './banners/volunteers.png',
+        active: true
+    },
+    {
+        name: 'Theatre',
+        image: './banners/theatre.png',
+        active: false
+    },
+    {
+        name: 'Panel',
+        image: './banners/panel.png',
+        active: false
+    }
+]
+---
+
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <a
+    href="https://tickettailor.com/dataengbytes/"
+    >
+      <div class="mx-auto max-w-8xl text-center">
+        <h2 class="text-center text-4xl font-montserrat font-semibold leading-8 text-gray-600">Be there in 2023! REGISTER NOW for the best deal on tickets to 
+            DataEngBytes Conference 2023</h2>
+      </div>
+      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        {
+            highlights.map(highlight => {
+                return <article class="flex flex-col items-start justify-between">
+                    <div class="relative w-full">
+                        <img src={highlight.image} alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+                        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                    </div>
+                </article>
+            })
+        }
+      </div>
+    </a>
+    </div>
+  </div>
+  
