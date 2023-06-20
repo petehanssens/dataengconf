@@ -3,6 +3,7 @@ export interface Props {
 	title: string;
 	description: string;
 }
+import { SEO } from "astro-seo";
 
 const { title, description } = Astro.props;
 import Nav from '../components/nav/nav.astro';
@@ -16,13 +17,52 @@ import Footer from '../components/footer/index.astro';
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<SEO
+      title={title}
+      description={description}
+      
+          
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          
+        ],
+      }}
+    />
+
+    <SEO
+      title={title}
+      description={description}
+      openGraph={{
+        basic: {
+          title: `title`,
+          type: "website",
+          image: "/logos/dataEngLogo.png",
+        }
+      }}
+      twitter={{
+        creator: "Peter Hanssens"
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          
+          { name: "twitter:title", content: "Welcome to DataEngBytes" },
+          { name: "twitter:description", content: "A collection of resources for data engineers." },
+        ],
+      }}
+    />
 		<link rel="sitemap" href="/sitemap-index.xml">
 		<meta charset="UTF-8" />
-		<meta name="description" content={description}>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.ico" /> -->
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		
+		
 	</head>
 	<nav>
 		<Nav />
