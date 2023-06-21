@@ -1,12 +1,15 @@
 ---
-
+import { Image, Picture } from '@astrojs/image/components';
+import MCBanner from '../../../public/banners/MCBanner.webp'
+import experience from '../../../public/banners/experience.webp'
 ---
 <div class="mx-auto">
-    <img src="/banners/MCBanner.png" alt="mcbanner" class="w-full flex">
-    <img src="/banners/experience.png" alt="experience" class="w-full flex">
+    <Image src={MCBanner} alt="mcbanner" class="w-full flex">
 </div>
 
-
+<div class="mx-auto">
+    <Image src={experience} alt="experience" class="w-full flex">
+</div>
 
 
 

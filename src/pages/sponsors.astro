@@ -1,10 +1,19 @@
 ---
 import Layout from '../layouts/layout.astro';
-import Sponsors from '../components/sponsors/index.astro';
+import Container from '../components/container.astro';
+// import Sponsors from '../components/sponsors/index.astro';
+import { Image, Picture } from '@astrojs/image/components';
+
+import sponsor_banner from '../../public/banners/sponsors_banner.webp'
 ---
 
 <Layout title="Sponsor DataEngBytes."
     description="Connect with the brightest data engineers this year!"
     >
-    <Sponsors />
+    <Container>
+        <div>
+            <Image src={sponsor_banner} alt=""  />
+        </div>
+    </Container>
+    <!-- <Sponsors /> -->
 </Layout>

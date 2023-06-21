@@ -4,6 +4,8 @@ import Host from './host.astro';
 import FAQ from './faq.astro';
 import Banners from './banners.astro';
 import Container from '../container.astro';
+import { Image } from '@astrojs/image/components';
+import perth_meetup from '../../../public/banners/perth_meetup.webp'
 ---
 
 <Speak />
@@ -12,7 +14,7 @@ import Container from '../container.astro';
 <Container>
     <div class="mx-auto">
         <a href="https://www.meetup.com/perth-data-engineering-meetup/events/294175386/">
-        <img src="/banners/perth_meetup.png" alt="" class="w-full flex">
+        <Image src={perth_meetup} alt="" class="w-full flex">
     </a>
   </div>
 </Container>

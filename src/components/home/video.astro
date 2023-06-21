@@ -1,5 +1,7 @@
 ---
-import ClearNav from "../nav/clear-nav.astro";
+
+import { Image, Picture } from '@astrojs/image/components';
+import videoscreen from '../../../public/video-screen.jpg'
 ---
 
 <header
@@ -27,6 +29,6 @@ import ClearNav from "../nav/clear-nav.astro";
       src="output-smaller.webm"
       type="video/webm"
     />
-    <img src="video-screen.jpg" title="Your browser does not support the <video> tag" />
+    <Image src={videoscreen} alt="" />
   </video>
 </header>

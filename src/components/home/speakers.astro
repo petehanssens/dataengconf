@@ -1,7 +1,8 @@
 ---
-
+import { Image, Picture } from '@astrojs/image/components';
+import speaker from '../../../public/banners/speakers.webp'
 ---
 <div class="mx-auto">
 
-    <img src="/banners/speakers.png" alt="speakers" class="w-full flex">
+    <Image src={speaker} alt="speakers" class="w-full flex">
 </div>

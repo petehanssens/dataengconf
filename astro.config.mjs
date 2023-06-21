@@ -7,5 +7,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://dataengconf.com.au',
-  integrations: [tailwind(), image(), sitemap()],
+  integrations: [tailwind(), image({
+    serviceEntryPoint: '@astrojs/image/sharp'
+  }), sitemap()],
 });
