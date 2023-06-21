@@ -31,6 +31,76 @@ import Footer from '../components/footer/index.astro';
         ],
       }}
     /> -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "DataEngBytes 2023",
+        
+        "location": [
+          {
+            "@type": "Place",
+            "name": "Sydney",
+            "startDate": "2023-08-25T09:00:00+10:00",
+            "endDate": "2023-08-25T17:30:00+10:00",
+            "address": {
+              "@type": "PostalAddress",
+              "location": "Hilton Sydney",
+              "streetAddress": "488 George St",
+              "addressLocality": "Sydney",
+              "addressState": "NSW",
+              "postalCode": "2000",
+              "addressCountry": "Australia"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Melbourne",
+            "startDate": "2023-08-31T09:00:00+10:00",
+            "endDate": "2023-08-31T17:30:00+10:00",
+            "address": {
+              "@type": "PostalAddress",
+              "location": "The Edge, Federation Square",
+              "streetAddress": "Swanston St &, Flinders St",
+              "addressLocality": "Melbourne",
+              "addressState": "VIC",
+              "postalCode": "3000",
+              "addressCountry": "Australia"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Perth",
+            "startDate": "2023-08-22T09:00:00+08:00",
+            "endDate": "2023-08-22T17:30:00+08:00",
+            "address": {
+              "@type": "PostalAddress",
+              "location": "The Ritz-Carlton",
+              "streetAddress": "1 Barrack St",
+              "addressLocality": "Perth",
+              "addressState": "WA",
+              "postalCode": "6000",
+              "addressCountry": "Australia"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Brisbane",
+            "startDate": "2023-08-29T09:00:00+10:00",
+            "endDate": "2023-08-29T17:30:00+10:00",
+            "address": {
+              "@type": "PostalAddress",
+              "location": "Brisbane Convention & Exhibition Centre",
+              "streetAddress": "Glenelg St",
+              "addressLocality": "South Brisbane",
+              "addressState": "QLD",
+              "postalCode": "4101",
+              "addressCountry": "Australia"
+            }
+          }
+        ]
+      }
+    </script>
 
     <SEO
       title={title}
