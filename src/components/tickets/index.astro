@@ -3,16 +3,19 @@ import HowTo from './how-to.astro';
 import Single from './single.astro';
 import Bulk from './bulk.astro';
 import Container from '../container.astro';
+import { Image } from '@astrojs/image/components';
+import special_price from '../../../public/banners/special_price.webp'
+import load_balancer from '../../../public/banners/load_balancer_tickets.webp'
 ---
 
 <Container>
   <div class="mx-auto">
         <a href="https://www.tickettailor.com/events/dataengbytes">
-        <img src="/banners/special_price.png" alt="" class="w-full flex">
+        <Image src={special_price} alt="" class="w-full flex">
     </a>
   </div>
   <div class="mx-auto">
     <a href="https://www.tickettailor.com/events/dataengbytes">
-    <img src="/banners/load_balancer_tickets.png" alt="" class="w-full flex"></a>
+    <Image src={load_balancer} alt="" class="w-full flex">
 </div>
 </Container>

@@ -1,8 +1,9 @@
 ---
-
+import { Image, Picture } from '@astrojs/image/components';
+import venues from '../../../public/banners/venues.png'
 ---
 
 <div class="mx-auto">
     <a href="https://www.tickettailor.com/events/dataengbytes">
-    <img src="./banners/venues.png" alt="" class="w-full flex"></a>
+    <Image src={venues} alt="" class="w-full flex"></a>
 </div>

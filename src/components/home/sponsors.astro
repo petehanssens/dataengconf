@@ -1,9 +1,14 @@
 ---
-import Container from '../container.astro';
+
+import { Image, Picture } from '@astrojs/image/components';
+import sponsor from '../../../public/banners/sponsors.webp';
 export interface Props {
 
 sponsors: Array<object>;
 }
+
+// import sponsor from "../../../../banners/sponsors.png"
+
 const sponsors = [
     {
         name: 'EnterpriseDB',
@@ -168,9 +173,9 @@ const sponsors = [
 </div> -->
 
 
-    <div class="mx-auto">
+<div class="mx-auto">
 
-        <img src="/banners/sponsors.png" alt="" class="w-full flex">
-  </div>
+    <Image src={sponsor} alt="" class="w-full flex " />
+</div>
 
 

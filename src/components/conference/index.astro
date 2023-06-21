@@ -1,8 +1,10 @@
 ---
 import Overview from './overview.astro';
 import Speakers from './speakers.astro';
-
+import { Image } from '@astrojs/image/components';
 import Container from '../container.astro';
+import conference_banner from '../../../public/banners/conference_banner.webp'
+import agenda from '../../../public/banners/agenda.webp'
 ---
 
 <Overview />
@@ -10,11 +12,11 @@ import Container from '../container.astro';
 <Container>
     <div class="mx-auto">
 
-        <img src="/banners/conference_banner.png" alt="" class="w-full flex">
+        <Image src={conference_banner} alt="" class="w-full flex">
   </div>
   <div class="mx-auto">
 
-    <img src="/banners/agenda.png" alt="" class="w-full flex">
+    <Image src={agenda} alt="" class="w-full flex">
 </div>
 
 </Container>

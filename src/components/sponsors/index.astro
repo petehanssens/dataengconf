@@ -1,13 +1,10 @@
 ---
 import Container from '../container.astro';
-import Info from './info.astro';
-import Recognition from './recognition.astro';
-import Showcase from './showcase.astro';
----
+import { Image, Picture } from '@astrojs/image/components';
+import sponsor_banner from '../../../public/banners/sponsors_banner.webp'
 
 <Container>
-    <div class="mx-auto">
-
-        <img src="/banners/sponsors_banner.png" alt="" class="w-full flex">
+  <div>
+    <Image src={sponsor_banner} alt=""  />
   </div>
 </Container>
