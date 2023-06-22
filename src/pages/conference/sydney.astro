@@ -1,12 +1,15 @@
 ---
-import Session from '../../components/conference/sydney/index.astro'
+
+import Speaker from '../../components/conference/sydney/speakers.astro'
+import Sessions from '../../components/conference/sydney/sessions.astro'
 import Container from '../../components/container.astro';
 import Layout from '../../layouts/layout.astro';
 ---
 <Layout>
     <Container>
-        <div class="mt-20 sm:px-6 lg:px-20">
-            <Session/>
+        
+            <Speaker/>
+            <Sessions/>
         </div>
     </Container>
 </Layout>

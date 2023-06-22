@@ -1,8 +1,8 @@
 ---
-import {fetchData} from '../sydney/allData.astro'
+import {fetchData} from './allData.astro'
 
-export async function getConfDetail() {
-    const conferenceData = await fetchData();
+export async function getConfDetail(apiUrl) {
+    const conferenceData = await fetchData(apiUrl);
     function FetchSpeakerDetails(id) {
     
         return conferenceData.speakers.filter(obj => {
