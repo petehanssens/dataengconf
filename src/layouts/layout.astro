@@ -36,7 +36,17 @@ import Footer from '../components/footer/index.astro';
         "@context": "https://schema.org",
         "@type": "Event",
         "name": "DataEngBytes 2023",
-        
+        "startDate": "2023-08-22T09:00:00+08:00",
+        "endDate": "2023-08-31T17:30:00+10:00",
+        "image": "https://dataengconf.com.au/video-screen.jpg",
+        "description": "DataEngBytes 2023 is a data engineering conference in Australia",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "organizer": {
+          "@type": "Organization",
+          "name": "DataEngBytes",
+          "url": "https://dataengconf.com.au/"
+        },
         "location": [
           {
             "@type": "Place",
@@ -129,7 +139,7 @@ import Footer from '../components/footer/index.astro';
 		<link rel="sitemap" href="/sitemap-index.xml">
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.ico" /> -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		
 		
