@@ -24,6 +24,39 @@ const navBar = [
     },
    
 ]
+const mobileNavBar = [
+    {
+        name: 'Meetup',
+        link: '/meetup',
+        active: true
+    },
+     {
+        name: 'Sydney',
+        link: '/conference/sydney',
+        active: true
+    },
+     {
+        name: 'Melbourne',
+        link: '/conference/melbourne',
+        active: true
+    },
+    {
+        name: 'Tickets',
+        link: '/tickets',
+        active: false
+    },
+    {
+        name: 'Sponsors',
+        link: '/sponsors',
+        active: false
+    },
+        {
+        name: 'Contact Us',
+        link: '/contact',
+        active: false
+    },
+   
+]
 ---
 <nav class="bg-white shadow">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -116,7 +149,7 @@ const navBar = [
   <div  class="mobile-menu sm:hidden hidden" id="mobile-menu">
     <div class="space-y-1 pb-3 pt-2">
     {
-      navBar.map((navItem) =>{
+      mobileNavBar.map((navItem) =>{
         return <a href={navItem.link} id="mobile" class=" mobile block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">
           {navItem.name}</a>
       })
