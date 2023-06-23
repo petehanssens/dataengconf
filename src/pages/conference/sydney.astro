@@ -1,15 +1,17 @@
 ---
-
-import Speaker from '../../components/conference/sydney/speakers.astro'
-import Sessions from '../../components/conference/sydney/sessions.astro'
+import Venue from '../../components/conference/sydney-venue.astro'
+import Speaker from '../../components/conference/speakers.astro'
+import Sessions from '../../components/conference/session.astro'
 import Container from '../../components/container.astro';
 import Layout from '../../layouts/layout.astro';
+const apiUrl="https://sessionize.com/api/v2/xvrqdvp3/view/All";
+
 ---
 <Layout>
     <Container>
-        
-            <Speaker/>
-            <Sessions/>
+            <Venue/>
+            <Speaker apiUrl={apiUrl}/>
+            <Sessions apiUrl={apiUrl}/>
         </div>
     </Container>
 </Layout>

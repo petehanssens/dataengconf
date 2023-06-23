@@ -1,15 +1,17 @@
 ---
-import Session from '../../components/conference/melbourne/sessions.astro'
-import Speakers from '../../components/conference/melbourne/speakers.astro';
+import Venue from '../../components/conference/melbourne-venue.astro'
+import Speaker from '../../components/conference/speakers.astro'
+import Sessions from '../../components/conference/session.astro'
 import Container from '../../components/container.astro';
 import Layout from '../../layouts/layout.astro';
+const apiUrl= "https://sessionize.com/api/v2/2gv8oeqy/view/All"
+const imagePath="../../../public/images/edge.webp"
 ---
 <Layout>
     <Container>
-
-            <Speakers />
-            <Session/>
-            
+            <Venue imagePath={imagePath} />
+            <Speaker apiUrl={apiUrl}/>
+            <Sessions apiUrl={apiUrl}/>
         </div>
     </Container>
 </Layout>
