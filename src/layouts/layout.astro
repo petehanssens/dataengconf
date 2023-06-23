@@ -32,84 +32,100 @@ import Footer from '../components/footer/index.astro';
       }}
     /> -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "DataEngBytes 2023",
-        "startDate": "2023-08-22T09:00:00+08:00",
-        "endDate": "2023-08-31T17:30:00+10:00",
-        "image": "https://dataengconf.com.au/video-screen.jpg",
-        "description": "DataEngBytes 2023 is a data engineering conference in Australia",
-        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "organizer": {
-          "@type": "Organization",
-          "name": "DataEngBytes",
-          "url": "https://dataengconf.com.au/"
-        },
-        "location": [
-          {
+    {
+      "@context": "https://schema.org",
+      "@type": "EventSeries",
+      "name": "DataEngBytes 2023",
+      "image": "https://dataengconf.com.au/video-screen.jpg",
+      "description": "DataEngBytes 2023 is a data engineering conference in Australia",
+      "startDate": "2023-08-22T09:00:00+08:00",
+      "endDate": "2023-08-31T17:30:00+10:00",
+      "organizer": {
+        "@type": "Organization",
+        "name": "DataEngBytes",
+        "url": "https://dataengconf.com.au/"
+      },
+      "subEvent": [
+        {
+          "@type": "Event",
+          "name": "DataEngBytes Perth 2023",
+          "startDate": "2023-08-22T09:00:00+08:00",
+          "endDate": "2023-08-22T17:30:00+08:00",
+          "eventAttendanceMode": "OfflineEvent",
+          "location": {
             "@type": "Place",
-            "name": "Sydney",
-            "startDate": "2023-08-25T09:00:00+10:00",
-            "endDate": "2023-08-25T17:30:00+10:00",
+            "name": "The Ritz-Carlton, Perth",
             "address": {
               "@type": "PostalAddress",
-              "location": "Hilton Sydney",
-              "streetAddress": "488 George St",
-              "addressLocality": "Sydney",
-              "addressState": "NSW",
-              "postalCode": "2000",
-              "addressCountry": "Australia"
-            }
-          },
-          {
-            "@type": "Place",
-            "name": "Melbourne",
-            "startDate": "2023-08-31T09:00:00+10:00",
-            "endDate": "2023-08-31T17:30:00+10:00",
-            "address": {
-              "@type": "PostalAddress",
-              "location": "The Edge, Federation Square",
-              "streetAddress": "Swanston St &, Flinders St",
-              "addressLocality": "Melbourne",
-              "addressState": "VIC",
-              "postalCode": "3000",
-              "addressCountry": "Australia"
-            }
-          },
-          {
-            "@type": "Place",
-            "name": "Perth",
-            "startDate": "2023-08-22T09:00:00+08:00",
-            "endDate": "2023-08-22T17:30:00+08:00",
-            "address": {
-              "@type": "PostalAddress",
-              "location": "The Ritz-Carlton",
               "streetAddress": "1 Barrack St",
               "addressLocality": "Perth",
-              "addressState": "WA",
+              "addressRegion": "WA",
               "postalCode": "6000",
               "addressCountry": "Australia"
             }
-          },
-          {
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "DataEngBytes Sydney 2023",
+          "startDate": "2023-08-25T09:00:00+10:00",
+          "endDate": "2023-08-25T17:30:00+10:00",
+          "eventAttendanceMode": "OfflineEvent",
+          "location": {
             "@type": "Place",
-            "name": "Brisbane",
-            "startDate": "2023-08-29T09:00:00+10:00",
-            "endDate": "2023-08-29T17:30:00+10:00",
+            "name": "Hilton, Sydney",
             "address": {
               "@type": "PostalAddress",
-              "location": "Brisbane Convention & Exhibition Centre",
+              "streetAddress": "488 George St",
+              "addressLocality": "Sydney",
+              "addressRegion": "NSW",
+              "postalCode": "2000",
+              "addressCountry": "Australia"
+            }
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "DataEngBytes Brisbane 2023",
+          "startDate": "2023-08-29T09:00:00+10:00",
+          "endDate": "2023-08-29T17:30:00+10:00",
+          "eventAttendanceMode": "OfflineEvent",
+          "location": {
+            "@type": "Place",
+            "name": "Brisbane Convention & Exhibition Centre",
+            "address": {
+              "@type": "PostalAddress",
               "streetAddress": "Glenelg St",
-              "addressLocality": "South Brisbane",
-              "addressState": "QLD",
+              "addressLocality": "Brisbane",
+              "addressRegion": "QLD",
               "postalCode": "4101",
               "addressCountry": "Australia"
             }
           }
-        ]
-      }
+        },
+        {
+          "@type": "Event",
+          "name": "DataEngBytes Melbourne 2023",
+          "startDate": "2023-08-31T09:00:00+10:00",
+          "endDate": "2023-08-31T17:30:00+10:00",
+          "eventAttendanceMode": "OfflineEvent",
+          "location": {
+            "@type": "Place",
+            "name": "The Edge, Federation Square",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Swanston St &, Flinders St",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC",
+              "postalCode": "3000",
+              "addressCountry": "Australia"
+            }
+          }
+        }
+      ]
+    }
+
+    
     </script>
 
     <SEO
