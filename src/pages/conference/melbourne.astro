@@ -5,11 +5,11 @@ import Sessions from '../../components/conference/session.astro'
 import Container from '../../components/container.astro';
 import Layout from '../../layouts/layout.astro';
 const apiUrl= "https://sessionize.com/api/v2/2gv8oeqy/view/All"
-const imagePath="../../../public/images/edge.webp"
+
 ---
 <Layout>
     <Container>
-            <Venue imagePath={imagePath} />
+            <Venue />
             <Speaker apiUrl={apiUrl}/>
             <Sessions apiUrl={apiUrl}/>
         </div>
