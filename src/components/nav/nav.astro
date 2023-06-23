@@ -11,10 +11,34 @@ const navBar = [
         link: '/meetup',
         active: true
     },
+    
     {
-        name: 'Conference',
-        link: '/conference',
+        name: 'Tickets',
+        link: '/tickets',
         active: false
+    },
+    {
+        name: 'Sponsors',
+        link: '/sponsors',
+        active: false
+    },
+   
+]
+const mobileNavBar = [
+    {
+        name: 'Meetup',
+        link: '/meetup',
+        active: true
+    },
+     {
+        name: 'Sydney',
+        link: '/conference/sydney',
+        active: true
+    },
+     {
+        name: 'Melbourne',
+        link: '/conference/melbourne',
+        active: true
     },
     {
         name: 'Tickets',
@@ -26,95 +50,146 @@ const navBar = [
         link: '/sponsors',
         active: false
     },
-    {
+        {
         name: 'Contact Us',
         link: '/contact',
         active: false
-    }
+    },
+   
 ]
 ---
 <nav class="bg-white shadow">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-16 justify-between">
-        <div class="flex">
-          <div class="flex flex-shrink-0 items-center">
-            <a href="/">
-            <Image class="block h-8 w-auto" src={logo} alt="DataEngBytes">
-            <!-- <Image class="lg:hidden h-8 w-auto block" src={logo} alt="DataEngBytes"> -->
-            </a>
-          </div>
-          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-            {
-              navBar.map((navItem) =>{
-                return <a href={navItem.link} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
-                  {navItem.name}</a>
-              })
-            }
-          </div>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 justify-between">
+      <div class="flex">
+        <div class="flex flex-shrink-0 items-center">
+          <a href="/">
+          <Image class="block h-8 w-auto" src={logo} alt="DataEngBytes">
+          </a>
         </div>
-        <!-- <div class="hidden sm:ml-6 sm:flex sm:items-center">
-          <button type="button" class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-            <span class="sr-only">View notifications</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-            </svg>
-          </button>
-  
-          Profile dropdown
+        <div class=" relative hidden sm:ml-6 sm:flex sm:space-x-8">
+          <div class=" relative my-auto text-center sm:ml-6 ">
+            <button id="conferenceButton" class="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+              Conference
           
-        </div> -->
-        <div class="-mr-2 flex items-center sm:hidden">
-          <!-- Mobile menu button -->
-          <button type="button" id="hamburger"class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <!--
-              Icon when menu is closed.
-  
-              Menu open: "hidden", Menu closed: "block"
-            -->
-            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            <!--
-              Icon when menu is open.
-  
-              Menu open: "block", Menu closed: "hidden"
-            -->
-            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+            </button>
+            <div id="conferenceDropdown" class="absolute z-20 hidden  mt-3 transform px-2 max-w-md sm:px-0 dropdown">
+              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden bg-white">
+                <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                  <!-- Dropdown items -->
+                  <a href="/conference/sydney" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Sydney</a>
+                  <a href="/conference/melbourne" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Melbourne</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+          {
+            navBar.map((navItem) =>{
+              return <a href={navItem.link} class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                {navItem.name}</a>
+            })
+          }
+          <div class=" relative my-auto text-center sm:ml-6 ">
+            <button id="aboutButton" class="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+              About
+          
+            </button>
+            <div id="aboutDropdown" class="  dropdown absolute z-20 hidden  mt-3 transform px-2 max-w-md sm:px-0">
+              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden bg-white">
+                <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                  <!-- Dropdown items -->
+                  <a href="/contact" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Contact Us</a>
+                  <a href="/content/codeofconduct" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Conduct</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+      <!-- <div class="hidden sm:ml-6 sm:flex sm:items-center">
+        <button type="button" class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          <span class="sr-only">View notifications</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+          </svg>
+        </button>
+
+        Profile dropdown
+        
+      </div> -->
+      <div class="-mr-2 flex items-center sm:hidden">
+        <!-- Mobile menu button -->
+        <button type="button" id="hamburger"class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
   
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div  class="mobile-menu sm:hidden hidden" id="mobile-menu">
-      <div class="space-y-1 pb-3 pt-2">
-        {
-          navBar.map((navItem) =>{
-            return <a href={navItem.link} id="mobile" class=" mobile block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">
-              {navItem.name}</a>
-          })
-        }
-        <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-        <!-- <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Meetup</a>
-        <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Conference</a>
-        <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Tickets</a>
-        <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Sponsors</a>
-        <a href="#" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">Contact Us</a> -->
-      </div>
-      
+  <div  class="mobile-menu sm:hidden hidden" id="mobile-menu">
+    <div class="space-y-1 pb-3 pt-2">
+    {
+      mobileNavBar.map((navItem) =>{
+        return <a href={navItem.link} id="mobile" class=" mobile block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700">
+          {navItem.name}</a>
+      })
+    }
     </div>
-    <script>
-      const menuButton = document.getElementById("hamburger");
-      menuButton.addEventListener("click", () => {
-        [...document.querySelectorAll(".mobile-menu")].forEach((Element) => {
-          Element.classList.toggle("hidden");
-        });
+    
+  </div>
+  <script>
+    const menuButton = document.getElementById("hamburger");
+    menuButton.addEventListener("click", () => {
+      [...document.querySelectorAll(".mobile-menu")].forEach((Element) => {
+        Element.classList.toggle("hidden");
       });
-      
-    </script>
-  </nav>
+    });
+    var conferencebutton = document.getElementById('conferenceButton');
+    var conferencedropdown = document.getElementById('conferenceDropdown');
+    function closeOtherDropdowns(currentDropdown) {
+      const dropdowns = document.querySelectorAll(".dropdown");
+      console.log(currentDropdown);
+      dropdowns.forEach((dropdown) => {
+        if (dropdown !== currentDropdown) {
+          dropdown.classList.add("hidden");
+        }
+      });
+    }
+    // Add a click event listener to the button
+    conferencebutton.addEventListener('click', function() {
+      // Toggle the 'hidden' class on the dropdown div
+      closeOtherDropdowns(conferencedropdown);
+      conferencedropdown.classList.toggle('hidden');
+    });
+    var aboutbutton = document.getElementById('aboutButton');
+    var aboutdropdown = document.getElementById('aboutDropdown');
+
+    // Add a click event listener to the button
+    aboutbutton.addEventListener('click', function() {
+      // Toggle the 'hidden' class on the dropdown div
+      closeOtherDropdowns(aboutdropdown);
+     aboutdropdown.classList.toggle('hidden');
+    });
+  </script>
+</nav>
   
