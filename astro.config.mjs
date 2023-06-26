@@ -10,4 +10,7 @@ export default defineConfig({
   integrations: [tailwind(), image({
     serviceEntryPoint: '@astrojs/image/sharp'
   }), sitemap()],
+  routes: {
+    "/sessions/:sessionid": "./src/pages/conference/session.astro"
+  }
 });

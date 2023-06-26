@@ -3,18 +3,17 @@ import Speak from './speak.astro';
 import Host from './host.astro';
 import FAQ from './faq.astro';
 import Banners from './banners.astro';
+
 import Container from '../container.astro';
-import { Image } from '@astrojs/image/components';
-import perth_meetup from '../../../public/banners/perth_meetup.webp'
 ---
 
-<Speak />
-<Host />
-<FAQ />
+
 <Container>
-    <div class="mx-auto">
+  <!-- <div class="mx-auto">
         <a href="https://www.meetup.com/perth-data-engineering-meetup/events/294175386/">
         <Image src={perth_meetup} alt="" class="w-full flex">
     </a>
-  </div>
+  </div> -->
+  <Banners />
+  <Host />
 </Container>
