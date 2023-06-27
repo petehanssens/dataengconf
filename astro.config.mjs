@@ -6,11 +6,9 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
   site: 'https://dataengconf.com.au',
   integrations: [tailwind(), image({
     serviceEntryPoint: '@astrojs/image/sharp'
   }), sitemap()],
-  routes: {
-    "/sessions/:sessionid": "./src/pages/conference/session.astro"
-  }
 });
