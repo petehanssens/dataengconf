@@ -14,12 +14,14 @@ const theConfDetails = await getConfDetail(apiUrl)
   <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
     {theConfDetails[0].sessions.map((session) => (
     // console.log(session)
+    <a href={`/speaker/${session.speakerObject[0].id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
     <div class="bg-gray-100 p-4">
-      <Image src={session.speakerObject[0].profilePicture} alt="" width={400} aspectRatio={16/16} class="w-full h-auto"/>
+      <img src={session.speakerObject[0].profilePicture} alt="" width={400} aspectRatio={16/16} class="w-full h-auto"/>
       <p class="mt-5 border-transparent px-1 pt-1 sm:text-sm lg:text-xl lg:font-medium text-gray-900 hover:text-gray-700">{session.speakerObject[0]?.fullName}</p>
       <p class="border-transparent px-1 pt-1 sm:text-xs lg:text-sm lg:font-medium text-gray-700 hover:text-gray-500">{session.speakerObject[0]?.tagLine}</p>
         
     </div>
+    </a>
 
 
     ))}

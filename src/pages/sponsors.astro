@@ -2,7 +2,7 @@
 import Layout from '../layouts/layout.astro';
 import Container from '../components/container.astro';
 // import Sponsors from '../components/sponsors/index.astro';
-import { Image, Picture } from '@astrojs/image/components';
+
 
 import sponsor_banner from '../../public/banners/sponsors_banner.webp'
 ---
@@ -12,7 +12,7 @@ import sponsor_banner from '../../public/banners/sponsors_banner.webp'
     >
     <Container>
         <div>
-            <Image src={sponsor_banner} alt=""  />
+            <img src="/banners/sponsors_banner.webp" alt=""  />
         </div>
     </Container>
     <!-- <Sponsors /> -->
