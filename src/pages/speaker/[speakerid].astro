@@ -3,7 +3,7 @@ import Layout from "../../layouts/layout.astro";
 import Container from "../../components/container.astro"
 // import { Image, Picture } from '@astrojs/image/components';
 import {getConfDetail} from "../../components/conference/groupedSessions.astro"
-export const prerender = true;
+export const prerender = false;
 const { speakerid } = Astro.params;
 const { url } = Astro.request
 const apiUrl = new URL(url);
