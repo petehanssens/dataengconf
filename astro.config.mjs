@@ -13,7 +13,5 @@ export default defineConfig({
   integrations: [tailwind(), image({
     serviceEntryPoint: '@astrojs/image/sharp'
   }), sitemap()],
-  adapter: node({
-    mode: "standalone"
-  })
+  adapter: node()
 });
