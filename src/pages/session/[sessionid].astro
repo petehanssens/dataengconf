@@ -1,8 +1,7 @@
 ---
 import Layout from "../../layouts/layout.astro";
 import Container from "../../components/container.astro"
-import { Image } from '@astrojs/image/components';
-
+// import { Image, Picture } from '@astrojs/image/components';
 import {getConfDetail} from "../../components/conference/groupedSessions.astro"
 import Nav from "../../components/nav/nav.astro";
 const { sessionid } = Astro.params;
@@ -27,7 +26,7 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
             <div class=" p-4">
                 
                 <a href={`/speaker/${session.speakerObject[0].id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
-                    <Image src={session.speakerObject[0].profilePicture} alt="" width={400} aspectRatio={9/9} class="lg:w-1/6 sm:w-1/2 h-auto"/>
+                  
                     <div class="min-w-0 my-10 flex-1">
                         <span class="absolute inset-0" aria-hidden="true" />
                         <p class="truncate text-xl font-medium text-gray-900">{session.title}</p>
