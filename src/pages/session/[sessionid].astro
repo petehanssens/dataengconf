@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/layout.astro";
 import Container from "../../components/container.astro"
-// import { Image, Picture } from '@astrojs/image/components';
+
 import {getConfDetail} from "../../components/conference/groupedSessions.astro"
 import Nav from "../../components/nav/nav.astro";
 export const prerender = false;
@@ -25,7 +25,7 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
     <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">About the Talk</div>
         {theConfDetails[0].sessions.filter((session) => session.id === sessionid).map((session) => (  
             <div class=" p-4">
-                
+                <img src={session.speakerObject[0].profilePicture} alt="" width={400} class="lg:w-1/6 sm:w-1/2 h-auto"/>
                 <a href={`/speaker/${session.speakerObject[0].id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
                   
                     <div class="min-w-0 my-10 flex-1">
