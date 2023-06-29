@@ -21,7 +21,7 @@ const theConfDetails = await getConfDetail(apiUrl);
             >
             
             <div class="flex justify-between space-x-3">
-                <img src={session.speakerObject[0].profilePicture} alt="" width={100} class="w-20 flex"/>
+                <img src={session.speakerObject[0].profilePicture} alt={session.speakerObject[0]?.fullName} width={100} class="w-20 flex"/>
                 <div class="min-w-0 flex-1">
                 <a href={`/session/${session.id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
                     <span class="absolute inset-0" aria-hidden="true" />
