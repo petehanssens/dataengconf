@@ -9,9 +9,13 @@ const apiUrl= "https://sessionize.com/api/v2/2gv8oeqy/view/All"
 ---
 <Layout  title="Melbourne Data Engineering Conference" description="Melbourne Conference Details">
     <Container>
-            <Venue />
+        <div>
+            <Venue/>
             <Speaker apiUrl={apiUrl}/>
             <Sessions apiUrl={apiUrl}/>
+            <img src="/banners/speakers.webp" alt="Our international speakers" class="w-full flex " />
+            <img src="/banners/org-melbourne.webp" alt="Our volunteers" class="w-full flex " />
+            <img src="/banners/org-core-team.webp" alt="Our core team of oganisers" class="w-full flex " />   
         </div>
     </Container>
 </Layout>
