@@ -1,5 +1,5 @@
 ---
-import { Image } from '@astrojs/image/components';
+// import { Image } from '@astrojs/image/components';
 import {fetchData} from './allData.astro';
 export interface Props {
 	apiUrl: string;
@@ -15,7 +15,7 @@ const speakerDetails = await fetchData(apiUrl)
     // console.log(session)
     <a href={`/speaker/${speaker?.id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
     <div class="bg-gray-100 p-4">
-      <Image src={speaker.profilePicture} alt={speaker?.fullName} class="w-full h-auto" width="500" aspectRatio="100"/>
+      <img src={speaker.profilePicture} alt={speaker?.fullName} class="w-full h-auto" />
       <p class="mt-5 border-transparent px-1 pt-1 sm:text-sm lg:text-xl lg:font-medium text-gray-900 hover:text-gray-700">{speaker?.fullName}</p>
       <p class="border-transparent px-1 pt-1 sm:text-xs lg:text-sm lg:font-medium text-gray-700 hover:text-gray-500">{speaker?.tagLine}</p>
         

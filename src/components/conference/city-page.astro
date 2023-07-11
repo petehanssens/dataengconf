@@ -1,5 +1,6 @@
 ---
 import Venue from './venue.astro'
+import Scheduel from './schedule.astro'
 import Speaker from './speakers.astro'
 import Sessions from './session.astro'
 import Layout from '../../layouts/layout.astro';
@@ -8,6 +9,7 @@ const {details} = Astro.props;
 <Layout  title=`${details.city} Data Engineering Conference` description=`${details.day}, ${details.date} at ${details.venue}`>
     <div>
         <Venue {details}/>
+        <Scheduel />
         <Speaker apiUrl={details.sessionizeUrl}/>
         <Sessions apiUrl={details.sessionizeUrl}/>
         <img src={details.speakerBanner} alt="Our international speakers" class="w-full flex " />
