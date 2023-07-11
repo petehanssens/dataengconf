@@ -1,9 +1,5 @@
 ---
-import Venue from '../../components/conference/venue.astro'
-import Speaker from '../../components/conference/speakers.astro'
-import Sessions from '../../components/conference/session.astro'
-import Layout from '../../layouts/layout.astro';
-const apiUrl="https://sessionize.com/api/v2/xvrqdvp3/view/All";
+import City from '../../components/conference/city-page.astro'
 const details = {
   city: "Sydney",
   image: "/images/sydney.webp",
@@ -11,16 +7,11 @@ const details = {
   date: "25th August",
   venue: "Hilton Sydney",
   address: "488 George St, Sydney NSW 2000",
-  url: "https://www.tickettailor.com/events/dataengbytes/859971" 
+  url: "https://www.tickettailor.com/events/dataengbytes/859971",
+  sessionizeUrl: "https://sessionize.com/api/v2/xvrqdvp3/view/All",
+  speakerBanner: "/banners/speakers.webp",
+  orgTeam: "/banners/org-sydney.webp",
+  orgCoreTeam: "/banners/org-core-team.webp",
 }
 ---
-<Layout  title="Sydney Data Engineering Conference" description="Sydney Conference Details">
-    <div>
-        <Venue {details}/>
-        <Speaker apiUrl={apiUrl}/>
-        <Sessions apiUrl={apiUrl}/>
-        <img src="/banners/speakers.webp" alt="Our international speakers" class="w-full flex " />
-        <img src="/banners/org-sydney.webp" alt="Our volunteers" class="w-full flex " />
-        <img src="/banners/org-core-team.webp" alt="Our core team of oganisers" class="w-full flex " />        
-    </div>
-</Layout>
+<City {details} />
