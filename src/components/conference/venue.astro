@@ -1,13 +1,6 @@
 ---
-const details = {
-  city: "Brisbane",
-  image: "/images/brisbane.webp",
-  day: "Tuesday",
-  date: "29th August",
-  venue: "Brisbane Convention & Exhibition Centre",
-  address: "Glenelg St, South Brisbane QLD 4101",
-  url: "https://www.tickettailor.com/events/dataengbytes/859970" 
-}
+import { Image } from '@astrojs/image/components';
+const {details} = Astro.props;
 ---
 <div class="relative isolate overflow-hidden pt-14">
   <img src={details.image} alt="" class="absolute inset-0 -z-10 h-full w-full object-cover grayscale brightness-50">
@@ -36,7 +29,7 @@ const details = {
       <p class="mt-6 text-lg leading-8 text-gray-300">{details.address}</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href={details.url} class="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Buy Tickets</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+        <a href="#speakers" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </div>

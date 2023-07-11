@@ -8,37 +8,31 @@ export const prerender = false;
 const { sessionid } = Astro.params;
 const { url } = Astro.request
 const apiUrl = new URL(url);
-// export interface Props {
-// 	apiUrl: string;
-// }
-
-
-// const { apiUrl} = Astro.props;
 const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
 
  
 ---
-<!-- <Layout title="speaker" description="speaker"> -->
-<div>
+{theConfDetails[0].sessions.filter((session) => session.id === sessionid).map((session) => (  
+<Layout title={session.title} description={session.description}>
+    <div>
 
-    <div class=" mt-20 sm:px-6 lg:px-20">
-    <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">About the Talk</div>
-        {theConfDetails[0].sessions.filter((session) => session.id === sessionid).map((session) => (  
-            <div class=" p-4">
-                <img src={session.speakerObject[0].profilePicture} alt="" width={400} class="lg:w-1/6 sm:w-1/2 h-auto"/>
-                <a href={`/speaker/${session.speakerObject[0].id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
-                  
-                    <div class="min-w-0 my-10 flex-1">
-                        <span class="absolute inset-0" aria-hidden="true" />
-                        <p class="truncate text-xl font-medium text-gray-900">{session.title}</p>
-                        
-                        <p class="truncate text-md text-gray-500">{session.speakerObject[0]?.fullName}</p>
-                        <p class="text-sm text-gray-600 mt-5">{session.description}</p>
-                    </div>
-                </a>
-            </div>
-        ))}
+        <div class=" mt-20 sm:px-6 lg:px-20">
+        <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">{session.speakerObject[0]?.fullName}</div>
+                <div class=" p-4">
+                    <img src={session.speakerObject[0].profilePicture} alt="" width={400} class="lg:w-1/6 sm:w-1/2 h-auto"/>
+                    <a href={`/speaker/${session.speakerObject[0].id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
+                    
+                        <div class="min-w-0 my-10 flex-1">
+                            <span class="absolute inset-0" aria-hidden="true" />
+                            <p class="truncate text-xl font-medium text-gray-900">{session.title}</p>
+                            
+                            <p class="truncate text-md text-gray-500">{session.speakerObject[0]?.fullName}</p>
+                            <p class="text-sm text-gray-600 mt-5">{session.description}</p>
+                        </div>
+                    </a>
+                </div>
+        </div>
     </div>
-</div>
 
-<!-- </Layout> -->
+</Layout>
+))}

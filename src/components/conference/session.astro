@@ -1,19 +1,21 @@
 ---
 import {getConfDetail} from './groupedSessions.astro'
+import {fetchData} from './AllData.astro'
 export interface Props {
 	apiUrl: string;
 }
 
 
 const { apiUrl} = Astro.props;
-const theConfDetails = await getConfDetail(apiUrl);
+const sessionDetails = await fetchData(apiUrl)
 
   
 ---
 <div class="mt-20 sm:px-6 lg:px-20">
     <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Schedule</div>
     <ul role="list" class="divide-y divide-gray-200">
-        {theConfDetails[0].sessions.map((session) => (  
+        {sessionDetails.sessions.map((session) => 
+            (  
             
             <li
             key={session.id}
@@ -21,13 +23,13 @@ const theConfDetails = await getConfDetail(apiUrl);
             >
             
             <div class="flex justify-between space-x-3">
-                <img src={session.speakerObject[0].profilePicture} alt={session.speakerObject[0]?.fullName} width={100} class="w-20 flex"/>
+                <img src={sessionDetails.speakers.find(x => x.id === session.speakers[0])?.profilePicture} alt={sessionDetails.speakers.find(x => x.id === session.speakers[0])?.fullName} width={100} class="w-20 flex"/>
                 <div class="min-w-0 flex-1">
-                <a href={`/session/${session.id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
+                <a href={`/session/${session.id}?apiUrl=${apiUrl}`}  class="block focus:outline-none">
                     <span class="absolute inset-0" aria-hidden="true" />
                     <p class="truncate text-xl font-medium text-gray-900">{session.title}</p>
                     
-                    <p class="truncate text-md text-gray-500">{session.speakerObject[0]?.fullName}</p>
+                    <p class="truncate text-md text-gray-500">{sessionDetails.speakers.find(x => x.id === session.speakers[0])?.fullName}</p>
                 </a>
                 </div>
             </div>

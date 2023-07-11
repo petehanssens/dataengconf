@@ -1,21 +1,27 @@
 ---
-import Venue from '../../components/conference/perth-venue.astro'
+import Venue from '../../components/conference/venue.astro'
 import Speaker from '../../components/conference/speakers.astro'
 import Sessions from '../../components/conference/session.astro'
 import Container from '../../components/container.astro';
 import Layout from '../../layouts/layout.astro';
 const apiUrl= "https://sessionize.com/api/v2/v0s39pyi/view/All"
-
+const details = {
+  city: "Perth",
+  image: "/images/perth.webp",
+  day: "Tuesday",
+  date: "22nd August",
+  venue: "The Ritz-Carlton, Perth",
+  address: "1 Barrack St, Perth WA 6000",
+  url: "https://www.tickettailor.com/events/dataengbytes/859973" 
+}
 ---
 <Layout  title="Perth Data Engineering Conference" description="Perth Conference Details">
-    <Container>
-        <div>
-            <Venue/>
-            <Speaker apiUrl={apiUrl}/>
-            <Sessions apiUrl={apiUrl}/>
-            <img src="/banners/perth-int-speakers.webp" alt="Our international speakers" class="w-full flex " />
-            <img src="/banners/org-perth.webp" alt="Our volunteers" class="w-full flex " />
-            <img src="/banners/org-core-team.webp" alt="Our core team of oganisers" class="w-full flex " />   
-        </div>
-    </Container>
+    <div>
+        <Venue {details}/>
+        <Speaker apiUrl={apiUrl}/>
+        <Sessions apiUrl={apiUrl}/>
+        <img src="/banners/perth-int-speakers.webp" alt="Our international speakers" class="w-full flex " />
+        <img src="/banners/org-perth.webp" alt="Our volunteers" class="w-full flex " />
+        <img src="/banners/org-core-team.webp" alt="Our core team of oganisers" class="w-full flex " />   
+    </div>
 </Layout>

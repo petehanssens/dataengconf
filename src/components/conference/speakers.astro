@@ -1,24 +1,23 @@
 ---
 import { Image } from '@astrojs/image/components';
-import {getConfDetail} from './groupedSessions.astro'
+import {fetchData} from './AllData.astro'
 export interface Props {
 	apiUrl: string;
 }
 
-
 const { apiUrl} = Astro.props;
-const theConfDetails = await getConfDetail(apiUrl)
+const speakerDetails = await fetchData(apiUrl)
 ---
 <div class="sm:px-6 lg:px-20">
   <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Speakers</div>
-  <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
-    {theConfDetails[0].sessions.map((session) => (
+  <div id="speakers" class="grid lg:grid-cols-4 grid-cols-2 gap-4">
+    {speakerDetails.speakers.map((speaker) => (
     // console.log(session)
-    <a href={`/speaker/${session.speakerObject[0].id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
+    <a href={`/speaker/${speaker?.id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
     <div class="bg-gray-100 p-4">
-      <img src={session.speakerObject[0].profilePicture} alt={session.speakerObject[0]?.fullName} class="w-full h-auto"/>
-      <p class="mt-5 border-transparent px-1 pt-1 sm:text-sm lg:text-xl lg:font-medium text-gray-900 hover:text-gray-700">{session.speakerObject[0]?.fullName}</p>
-      <p class="border-transparent px-1 pt-1 sm:text-xs lg:text-sm lg:font-medium text-gray-700 hover:text-gray-500">{session.speakerObject[0]?.tagLine}</p>
+      <Image src={speaker.profilePicture} alt={speaker?.fullName} class="w-full h-auto" width="500" aspectRatio="100"/>
+      <p class="mt-5 border-transparent px-1 pt-1 sm:text-sm lg:text-xl lg:font-medium text-gray-900 hover:text-gray-700">{speaker?.fullName}</p>
+      <p class="border-transparent px-1 pt-1 sm:text-xs lg:text-sm lg:font-medium text-gray-700 hover:text-gray-500">{speaker?.tagLine}</p>
         
     </div>
     </a>

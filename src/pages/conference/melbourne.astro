@@ -1,21 +1,26 @@
 ---
-import Venue from '../../components/conference/melbourne-venue.astro'
-import Speaker from '../../components/conference/speakers.astro'
-import Sessions from '../../components/conference/session.astro'
-import Container from '../../components/container.astro';
+import Venue from '../../components/conference/venue.astro';
+import Speaker from '../../components/conference/speakers.astro';
+import Sessions from '../../components/conference/session.astro';
 import Layout from '../../layouts/layout.astro';
 const apiUrl= "https://sessionize.com/api/v2/2gv8oeqy/view/All"
-
+const details = {
+  city: "Melbourne",
+  image: "/images/melbourne.webp",
+  day: "Thursday",
+  date: "31st August",
+  venue: "The Edge, Federation Square",
+  address: "Swanston St &, Flinders St, Melbourne VIC 3000",
+  url: "https://www.tickettailor.com/events/dataengbytes/859972" 
+}
 ---
 <Layout  title="Melbourne Data Engineering Conference" description="Melbourne Conference Details">
-    <Container>
-        <div>
-            <Venue/>
-            <Speaker apiUrl={apiUrl}/>
-            <Sessions apiUrl={apiUrl}/>
-            <img src="/banners/speakers.webp" alt="Our international speakers" class="w-full flex " />
-            <img src="/banners/org-melbourne.webp" alt="Our volunteers" class="w-full flex " />
-            <img src="/banners/org-core-team.webp" alt="Our core team of oganisers" class="w-full flex " />   
-        </div>
-    </Container>
+    <div>
+        <Venue {details}/>
+        <Speaker apiUrl={apiUrl}/>
+        <Sessions apiUrl={apiUrl}/>
+        <img src="/banners/speakers.webp" alt="Our international speakers" class="w-full flex " />
+        <img src="/banners/org-melbourne.webp" alt="Our volunteers" class="w-full flex " />
+        <img src="/banners/org-core-team.webp" alt="Our core team of oganisers" class="w-full flex " />   
+    </div>
 </Layout>
