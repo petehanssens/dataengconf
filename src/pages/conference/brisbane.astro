@@ -1,21 +1,17 @@
 ---
-import Venue from '../../components/conference/brisbane-venue.astro'
-import Speaker from '../../components/conference/speakers.astro'
-import Sessions from '../../components/conference/session.astro'
-import Container from '../../components/container.astro';
-import Layout from '../../layouts/layout.astro';
-const apiUrl= "https://sessionize.com/api/v2/bz5r6x7s/view/All"
-
+import City from '../../components/conference/city-page.astro'
+const details = {
+  city: "Brisbane",
+  image: "/images/brisbane.webp",
+  day: "Tuesday",
+  date: "29th August",
+  venue: "Brisbane Convention & Exhibition Centre",
+  address: "Glenelg St, South Brisbane QLD 4101",
+  url: "https://www.tickettailor.com/events/dataengbytes/859970",
+  sessionizeUrl: "https://sessionize.com/api/v2/bz5r6x7s/view/All",
+  speakerBanner: "/banners/speakers.webp",
+  orgTeam: "/banners/org-melbourne.webp",
+  orgCoreTeam: "/banners/org-core-team.webp",
+}
 ---
-<Layout title="Brisbane Data Engineering Conference" description="Bribane Conference Details">
-    <Container>
-        <div>
-            <Venue/>
-            <Speaker apiUrl={apiUrl}/>
-            <Sessions apiUrl={apiUrl}/>
-            <img src="/banners/speakers.webp" alt="Our international speakers" class="w-full flex " />
-            <img src="/banners/org-brisbane.webp" alt="Our volunteers" class="w-full flex " />
-            <img src="/banners/org-core-team.webp" alt="Our core team of oganisers" class="w-full flex " />   
-        </div>
-    </Container>
-</Layout>
+<City {details}>
