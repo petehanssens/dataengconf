@@ -8,7 +8,6 @@ const { speakerid } = Astro.params;
 const { url } = Astro.request
 const apiUrl = new URL(url);
 
-
 const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
 ---
 {theConfDetails[0].sessions.filter((session) => session.speakerObject[0].id === speakerid).map((session) => (
