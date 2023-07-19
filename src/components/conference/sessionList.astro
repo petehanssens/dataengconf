@@ -1,0 +1,44 @@
+---
+import {fetchData} from './allData.astro';
+
+const { city} = Astro.props;
+const sessionDetails = await fetchData(city.endpoint+'GridSmart')
+
+---
+
+<div class="bg-gray-900 py-12 sm:py-18">
+    <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+        <h1 class="text-5xl font-bold text-left">{city.venue}</h1>
+        {
+            sessionDetails[0].rooms.map((room) => {
+                return (
+                    
+                    <h2 class="text-3xl font-bold py-6 sm:py-9">Room: {room.name}</h2>
+                    <ul class="grid gap-4 grid-cols-3">
+                    {room.sessions.map((session) => {
+                        return (
+                        <li class="rounded-2xl bg-gray-800 px-8 py-10">
+                        <div class="card w-96 bg-base-100 shadow-xl">
+                            <div class="card-body items-center text-center">
+                                <div class="badge badge-outline">{session.startsAt}</div> 
+                                <h2 class="card-title">{session.title}</h2>
+                                <p>{session.speakers.map(function(item) {
+                                    return item['name'];
+                                })}</p>
+                                <div class="card-actions">
+                                    <a href={`/session/${session.id}?apiUrl=${city.endpoint+'All'}`} >
+                                        <button class="btn btn-primary">Find out more</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                        )
+                    
+                    })
+                    }</ul>
+                )
+            })
+        }
+    </div>
+</div>

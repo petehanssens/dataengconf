@@ -5,8 +5,10 @@ import Speaker from './speakers.astro'
 import Sessions from './session.astro'
 import Layout from '../../layouts/layout.astro';
 const {details} = Astro.props;
+const titleValue = `${details.city} Data Engineering Conference`
+const descriptionValue = `${details.day}, ${details.date} at ${details.venue}`
 ---
-<Layout  title=`${details.city} Data Engineering Conference` description=`${details.day}, ${details.date} at ${details.venue}`>
+<Layout  title={titleValue} description={descriptionValue}>
     <div>
         <Venue {details}/>
         <Scheduel />
