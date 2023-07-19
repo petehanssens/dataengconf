@@ -1,9 +1,7 @@
 ---
 import Layout from "../../layouts/layout.astro";
-import Container from "../../components/container.astro"
 
 import {getConfDetail} from "../../components/conference/groupedSessions.astro"
-import Nav from "../../components/nav/nav.astro";
 export const prerender = false;
 const { sessionid } = Astro.params;
 const { url } = Astro.request
@@ -17,20 +15,22 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
     <div>
 
         <div class=" mt-20 sm:px-6 lg:px-20">
-        <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">{session.speakerObject[0]?.fullName}</div>
-                <div class=" p-4">
-                    <img src={session.speakerObject[0].profilePicture} alt="" width={400} class="lg:w-1/6 sm:w-1/2 h-auto"/>
-                    <a href={`/speaker/${session.speakerObject[0].id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
-                    
+            <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-10">
+                {session.title}
+            </div>
+            <div class=" p-4">
+                {session.speakerObject.map((speaker) =>{
+                    return(<img src={speaker.profilePicture} alt="" width={400} class="lg:w-1/6 sm:w-1/2 h-auto"/>
+                    <a href={`/speaker/${speaker.id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
                         <div class="min-w-0 my-10 flex-1">
                             <span class="absolute inset-0" aria-hidden="true" />
-                            <p class="truncate text-xl font-medium text-gray-900">{session.title}</p>
-                            
-                            <p class="truncate text-md text-gray-500">{session.speakerObject[0]?.fullName}</p>
-                            <p class="text-sm text-gray-600 mt-5">{session.description}</p>
+                            <p class="truncate text-md text-gray-500">{speaker?.fullName}</p>
                         </div>
                     </a>
-                </div>
+                    )
+                })}
+                <p class="text-sm text-gray-600 mt-5">{session.description}</p>
+            </div>
         </div>
     </div>
 

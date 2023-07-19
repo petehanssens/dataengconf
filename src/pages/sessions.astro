@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/layout.astro';
+import SessionList from '../components/conference/sessionList.astro';
+const perth = {
+    endpoint: 'https://sessionize.com/api/v2/v0s39pyi/view/',
+    venue: 'The Ritz-Carlton, Perth'
+};
+const sydney = {
+    endpoint: 'https://sessionize.com/api/v2/xvrqdvp3/view/',
+    venue: 'Hilton Sydney'
+};
+const brisbane = {
+    endpoint: 'https://sessionize.com/api/v2/bz5r6x7s/view/',
+    venue: 'Brisbane Convention & Exhibition Centre'
+};
+const melbourne = {
+    endpoint: 'https://sessionize.com/api/v2/2gv8oeqy/view/',
+    venue: 'Melbourne - The Edge, Federation Square'
+};
+---
+
+<Layout title="Session information for DataEngBytes."
+    description="Every session for every city, all in the one place."
+    >
+    <SessionList city={perth} />
+    <SessionList city={sydney} />
+    <SessionList city={brisbane} />
+    <SessionList city={melbourne} />
+</Layout>
