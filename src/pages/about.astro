@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/layout.astro';
+import Sponsors from '../components/home/sponsors.astro';
+import Conf22 from '../components/home/conf22.astro';
+import Trust from '../components/home/trust.astro';
+import Venues from '../components/home/venues.astro';
+import WhatIsDeb from '../components/home/what-is-deb.astro';
+import Organisers from '../components/home/organisers.astro';
+---
+
+<Layout
+    title="About us"
+    description="Information about the organisers of DataEngBytes 2023"
+    image="/banners/venues.webp"
+    >
+    <Venues />
+    <WhatIsDeb/>
+    <Sponsors />
+    <Conf22 />
+    <Trust />
+    <Organisers />
+</Layout>

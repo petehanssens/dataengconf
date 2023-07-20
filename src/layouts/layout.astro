@@ -2,10 +2,11 @@
 export interface Props {
 	title: string;
 	description: string;
+  image: string;
 }
 import { SEO } from "astro-seo";
 
-const { title, description } = Astro.props;
+const { title, description, image } = Astro.props;
 import Nav from '../components/nav/nav.astro';
 import Footer from '../components/footer/index.astro';
 
@@ -17,20 +18,6 @@ import Footer from '../components/footer/index.astro';
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- <SEO
-      title={title}
-      description={description}
-      
-          
-      extend={{
-        // extending the default link tags
-        link: [{ rel: "icon", href: "/favicon.ico" }],
-        // extending the default meta tags
-        meta: [
-          
-        ],
-      }}
-    /> -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -149,7 +136,7 @@ import Footer from '../components/footer/index.astro';
         basic: {
           title: `${title}`,
           type: "website",
-          image: "/logos/dataEngLogo.png",
+          image: `${image}` || "/banners/venues.webp",
         }
       }}
       twitter={{
@@ -161,8 +148,8 @@ import Footer from '../components/footer/index.astro';
         // extending the default meta tags
         meta: [
           
-          { name: "twitter:title", content: "Welcome to DataEngBytes" },
-          { name: "twitter:description", content: "DataEngBytes 2023 - Sydney, Melbourne, Brisbane and Perth." },
+          { name: "twitter:title", content: title || "Welcome to DataEngBytes" },
+          { name: "twitter:description", content: description || "DataEngBytes 2023 - Sydney, Melbourne, Brisbane and Perth." },
         ],
       }}
     />

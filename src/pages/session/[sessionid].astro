@@ -11,7 +11,9 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
  
 ---
 {theConfDetails[0].sessions.filter((session) => session.id === sessionid).map((session) => (  
-<Layout title={session.title} description={session.description}>
+<Layout title={session.title} description={session.description}
+    image="/banners/venues.webp"
+    >
     <div>
 
         <div class=" mt-20 sm:px-6 lg:px-20">
