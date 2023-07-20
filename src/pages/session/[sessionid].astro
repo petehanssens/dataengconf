@@ -14,22 +14,27 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
 <Layout title={session.title} description={session.description}
     image="/banners/venues.webp"
     >
-    <div class="bg-white mt-20 sm:px-6 lg:px-20">
+    <div class="mx-auto max-w-7xl px-6 text-center mt-20 sm:px-6 lg:px-20">
         <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-10">
             {session.title}
         </div>
-        <div class=" p-4">
-            {session.speakerObject.map((speaker) =>{
-                return(<img src={speaker.profilePicture} alt="" width={400} class="lg:w-1/6 sm:w-1/2 h-auto"/>
-                <a href={`/speaker/${speaker.id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
-                    <div class="min-w-0 my-10 flex-1">
-                        <span class="absolute inset-0" aria-hidden="true" />
-                        <p class="truncate text-md text-gray-500">{speaker?.fullName}</p>
-                    </div>
-                </a>
-                )
-            })}
-            <p class="text-sm text-gray-600 mt-5">{session.description}</p>
+        <div>
+            <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                {session.speakerObject.map((speaker) =>{
+                    return(
+                    <li>
+                        <img class="aspect-[3/2] w-full rounded-2xl object-cover" src={speaker.profilePicture} alt={speaker?.fullName} width={400} />
+                        <a href={`/speaker/${speaker.id}?apiUrl=${apiUrl.searchParams.get("apiUrl")}`} class="block focus:outline-none">
+                            <div class="min-w-0 my-5 flex-1">
+                                <span class="absolute inset-0" aria-hidden="true" />
+                                <p class="truncate text-2xl text-bold text-gray-800">{speaker?.fullName}</p>
+                            </div>
+                        </a>
+                    </li>
+                    )
+                })}
+            </ul>
+            <p class="text-lg text-left text-gray-600 mt-5">{session.description}</p>
         </div>
     </div>
 </Layout>
