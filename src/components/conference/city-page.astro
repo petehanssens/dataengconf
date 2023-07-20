@@ -9,7 +9,7 @@ const titleValue = `${details.city} Data Engineering Conference`
 const descriptionValue = `${details.day}, ${details.date} at ${details.venue}`
 ---
 <Layout  title={titleValue} description={descriptionValue} image={details.image}>
-    <div>
+    <div class="bg-white shadow">
         <Venue {details}/>
         <Scheduel />
         <Speaker apiUrl={details.sessionizeUrl}/>
