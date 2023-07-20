@@ -2,51 +2,55 @@
 const speakerHighlights = [
   {
     name: "Abhinav Goyal",
-    image: "/speakers/abhinav-goyal.jpg",
+    image: "/speakers/abhinav-goyal.webp",
   },
   {
     name: "Alexei De Lauw",
-    image: "/speakers/alexei-de-lauw.jpg",
+    image: "/speakers/alexei-de-lauw.webp",
+  },
+  {
+    name: "Chad Sanderson",
+    image: "/speakers/chad-sanderson.webp",
   },
   {
     name: "Danica Fine",
-    image: "/speakers/danica-fine.png",
+    image: "/speakers/danica-fine.webp",
   },
   {
     name: "Emily Melhuish",
-    image: "/speakers/emily-melhuish.jpg",
+    image: "/speakers/emily-melhuish.webp",
   },
   {
     name: "Joe Reis",
-    image: "/speakers/joe-reis.png",
+    image: "/speakers/joe-reis.webp",
   },
   {
     name: "Josh Devlin",
-    image: "/speakers/josh-devlin.jpg",
+    image: "/speakers/josh-devlin.webp",
   },
   {
     name: "Larene Le Gassick",
-    image: "/speakers/larene-le-gassick.jpg",
+    image: "/speakers/larene-le-gassick.webp",
   },
   {
     name: "Lizzie Macneill",
-    image: "/speakers/lizzie-macneill.jpg",
+    image: "/speakers/lizzie-macneill.webp",
   },
   {
     name: "Mikiko Bazeley",
-    image: "/speakers/mikiko-bazeley.jpeg",
+    image: "/speakers/mikiko-bazeley.webp",
   },
   {
     name: "Mimoune Djouallah",
-    image: "/speakers/mimoune-djouallah.jpeg",
+    image: "/speakers/mimoune-djouallah.webp",
   },
   {
     name: "Nadia Reyhani",
-    image: "/speakers/nadia-reyhani.JPG",
+    image: "/speakers/nadia-reyhani.webp",
   },
   {
     name: "Nathan Glover",
-    image: "/speakers/nathan-glover.jpg",
+    image: "/speakers/nathan-glover.webp",
   },
 ]
 ---
@@ -55,7 +59,7 @@ const speakerHighlights = [
   {speakerHighlights.map((speaker) => {
     return (
       <div class="carousel-item	">
-        <img class=" mx-auto max-h-96" src={speaker.image} alt={speaker.name} />
+        <img class="object-cover h-96 w-72" src={speaker.image} alt={speaker.name} />
       </div>
     )
   })}
