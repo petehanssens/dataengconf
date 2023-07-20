@@ -14,8 +14,7 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
 <Layout title={session.title} description={session.description}
     image="/banners/venues.webp"
 >
-    <div>
-        <div class=" mt-20 sm:px-6 lg:px-20">
+        <div class="bg-white mt-20 sm:px-6 lg:px-20">
             <ul role="list" class="divide-y divide-gray-200">  
                     
                     <div class=" p-4">
@@ -30,6 +29,5 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
                 </div>
             </ul>
         </div>
-    </div>
 </Layout>
 ))}
