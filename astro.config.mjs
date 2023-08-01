@@ -10,7 +10,7 @@ export default defineConfig({
   output: 'hybrid',
   site: 'https://dataengconf.com.au',
   integrations: [tailwind(), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
+    serviceEntryPoint: '@astrojs/image/sharp',
   }), sitemap()],
   adapter: netlify(),
 
