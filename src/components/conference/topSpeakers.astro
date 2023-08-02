@@ -2,7 +2,7 @@
 const { data, apiUrl } = Astro.props;
 ---
 <div class="sm:px-6 lg:px-20">
-  <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Speakers</div>
+  <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Featured Speakers</div>
   <div id="speakers" class="grid lg:grid-cols-4 grid-cols-2 gap-4">
     {data.speakers.filter(
       x => x.isTopSpeaker == true
