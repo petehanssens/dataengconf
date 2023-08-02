@@ -1,7 +1,5 @@
 ---
-
-
-import videoscreen from '../../../public/video-screen.jpg'
+import { Image } from 'astro:assets'
 ---
 
 <header
@@ -30,6 +28,6 @@ import videoscreen from '../../../public/video-screen.jpg'
       src="output-smaller.webm"
       type="video/webm"
     />
-    <img class="h-fit	" src="/video-screen.jpg" alt="video-screen" />
+    <Image src="../../assets/video-screen.jpg" width={300} height={400} alt="video-screen" />
   </video>
 </header>

@@ -9,25 +9,24 @@ const { url } = Astro.request
 const apiUrl = new URL(url);
 
 const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
+const speakerDetails = theConfDetails[0].sessions.filter((session) => session.speakerObject[0].id === speakerid)[0]
 ---
-{theConfDetails[0].sessions.filter((session) => session.speakerObject[0].id === speakerid).map((session) => (
-<Layout title={session.title} description={session.description}
-    image="/banners/venues.webp"
+<Layout title={speakerDetails.title} description={speakerDetails.description}
+    image={speakerDetails.speakerObject[0].profilePicture}
 >
     <div class="mx-auto max-w-7xl px-6 text-center mt-20 sm:px-6 lg:px-20">
             <ul role="list" class="divide-y divide-gray-200">  
                     
                     <div class="mx-auto mt-20 grid max-w-2xl  gap-x-8 gap-y-16  lg:mx-0 lg:max-w-none ">
                         
-                        <img class="aspect-[3/2] w-full rounded-2xl object-cover" src={session.speakerObject[0].profilePicture} alt={session.speakerObject[0]?.fullName} width={400} />
+                        <img class="aspect-[3/2] w-full rounded-2xl object-cover" src={speakerDetails.speakerObject[0].profilePicture} alt={speakerDetails.speakerObject[0]?.fullName} width={400} />
                         <div class="min-w-0 my-10 flex-1">
                             <span class="absolute inset-0" aria-hidden="true" />
-                            <p class="truncate text-2xl font-bold text-gray-900">{session.speakerObject[0]?.fullName}</p>
-                            <p class="truncate text-xl text-gray-700">{session.speakerObject[0].tagLine}</p>
-                            <p class="text-lg text-gray-600 text-left mt-5">{session.speakerObject[0].bio}</p>
+                            <p class="truncate text-2xl font-bold text-gray-900">{speakerDetails.speakerObject[0]?.fullName}</p>
+                            <p class="truncate text-xl text-gray-700">{speakerDetails.speakerObject[0].tagLine}</p>
+                            <p class="text-lg text-gray-600 text-left mt-5">{speakerDetails.speakerObject[0].bio}</p>
                         </div>  
                 </div>
             </ul>
         </div>
 </Layout>
-))}

@@ -1,20 +1,26 @@
 ---
 import Venue from './venue.astro'
-import Scheduel from './schedule.astro'
+import Schedule from './schedule.astro'
+import TopSpeakers from './topSpeakers.astro'
 import Speaker from './speakers.astro'
 import Sessions from './session.astro'
 import Layout from '../../layouts/layout.astro';
+import {fetchData} from './allData.astro';
 const {details} = Astro.props;
 const titleValue = `${details.city} Data Engineering Conference`
 const descriptionValue = `${details.day}, ${details.date} at ${details.venue}`
+
+const allUrl = details.sessionizeUrl+'All'
+const sessionDetails = await fetchData(allUrl)
+const sessionGrid = await fetchData(`${details.sessionizeUrl}GridSmart`)
 ---
 <Layout  title={titleValue} description={descriptionValue} image={details.image}>
     <div class="bg-white shadow">
         <Venue {details}/>
-        <Scheduel />
-        <Speaker apiUrl={details.sessionizeUrl}/>
-        <Sessions apiUrl={details.sessionizeUrl}/>
-        <img src={details.speakerBanner} alt="Our international speakers" class="w-full flex " />
+        <Schedule data={sessionGrid} apiUrl={allUrl}/>
+        <TopSpeakers data={sessionDetails} apiUrl={allUrl}/>
+        <Speaker data={sessionDetails} apiUrl={allUrl}/>
+        <!-- <Sessions apiUrl={sessionDetails}/>  -->
         <img src={details.orgTeam} alt="Our volunteers" class="w-full flex " />
         <img src={details.orgCoreTeam} alt="Our core team of oganisers" class="w-full flex " />        
     </div>

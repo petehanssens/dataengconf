@@ -1,0 +1,24 @@
+---
+const { data, apiUrl } = Astro.props;
+---
+<div class="sm:px-6 lg:px-20">
+  <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Speakers</div>
+  <div id="speakers" class="grid lg:grid-cols-4 grid-cols-2 gap-4">
+    {data.speakers.filter(
+      x => x.isTopSpeaker == true
+    )
+    .map((speaker) => (
+    // console.log(session)
+    <a href={`/speaker/${speaker?.id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
+    <div class="bg-gray-100 p-4">
+      <img src={speaker.profilePicture} alt={speaker?.fullName} class="w-full h-auto" />
+      <p class="mt-5 border-transparent px-1 pt-1 sm:text-sm lg:text-xl lg:font-medium text-gray-900 hover:text-gray-700">{speaker?.fullName}</p>
+      <p class="border-transparent px-1 pt-1 sm:text-xs lg:text-sm lg:font-medium text-gray-700 hover:text-gray-500">{speaker?.tagLine}</p>
+        
+    </div>
+    </a>
+
+
+    ))}
+  </div>
+</div>

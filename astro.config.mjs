@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import image from '@astrojs/image';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
@@ -9,9 +8,12 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   output: 'hybrid',
   site: 'https://dataengconf.com.au',
-  integrations: [tailwind(), image({
-    serviceEntryPoint: '@astrojs/image/sharp',
-  }), sitemap()],
+  integrations: [
+    tailwind(), 
+    sitemap()
+  ],
   adapter: netlify(),
-
+  experimental: {
+    assets: true
+  }
 });

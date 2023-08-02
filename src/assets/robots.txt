@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dataengconf.com.au/sitemap-index.xml

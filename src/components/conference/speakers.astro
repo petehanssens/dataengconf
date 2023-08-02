@@ -1,17 +1,13 @@
 ---
-// import { Image } from '@astrojs/image/components';
-import {fetchData} from './allData.astro';
-export interface Props {
-	apiUrl: string;
-}
-
-const { apiUrl} = Astro.props;
-const speakerDetails = await fetchData(apiUrl)
+const { data, apiUrl } = Astro.props;
 ---
 <div class="sm:px-6 lg:px-20">
   <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Speakers</div>
   <div id="speakers" class="grid lg:grid-cols-4 grid-cols-2 gap-4">
-    {speakerDetails.speakers.map((speaker) => (
+    {data.speakers.filter(
+      x => x.isTopSpeaker == false
+    )
+    .map((speaker) => (
     // console.log(session)
     <a href={`/speaker/${speaker?.id}?apiUrl=${apiUrl}`} target="_blank" class="block focus:outline-none">
     <div class="bg-gray-100 p-4">

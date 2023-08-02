@@ -8,19 +8,18 @@ const { url } = Astro.request
 const apiUrl = new URL(url);
 const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
 
- 
+const sessionDetails = theConfDetails[0].sessions.filter((session) => session.id === sessionid)[0]
 ---
-{theConfDetails[0].sessions.filter((session) => session.id === sessionid).map((session) => (  
-<Layout title={session.title} description={session.description}
-    image="/banners/venues.webp"
+<Layout title={sessionDetails.title} description={sessionDetails.description}
+    image={sessionDetails.speakerObject[0].profilePicture}
     >
     <div class="mx-auto max-w-7xl px-6 text-center mt-20 sm:px-6 lg:px-20">
         <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-10">
-            {session.title}
+            {sessionDetails.title}
         </div>
         <div>
             <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                {session.speakerObject.map((speaker) =>{
+                {sessionDetails.speakerObject.map((speaker) =>{
                     return(
                     <li>
                         <img class="aspect-[3/2] w-full rounded-2xl object-cover" src={speaker.profilePicture} alt={speaker?.fullName} width={400} />
@@ -34,8 +33,7 @@ const theConfDetails = await getConfDetail(apiUrl.searchParams.get("apiUrl"));
                     )
                 })}
             </ul>
-            <p class="text-lg text-left text-gray-600 mt-5">{session.description}</p>
+            <p class="text-lg text-left text-gray-600 mt-5">{sessionDetails.description}</p>
         </div>
     </div>
 </Layout>
-))}
