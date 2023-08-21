@@ -1,8 +1,8 @@
 ---
 const { data, apiUrl, city } = Astro.props;
 const sessionDetails = data[0].rooms[0].sessions
-const room2Details = data[0].rooms[1].sessions
-const room3Details = data[0].rooms[2].sessions
+// const room2Details = data[0].rooms[1].sessions
+// const room3Details = data[0].rooms[2].sessions
 
 const schedule = [
     {
@@ -171,159 +171,159 @@ const schedule = [
     },
   ]
 
-const room2 = [
-{
-      day:"Mid Morning", 
-      events: [
-        { 
-          id: room2Details[0].id, 
-          name: room2Details[0].title, 
-          href: `/session/${room2Details[0].id}?apiUrl=${apiUrl}`, 
-          time: "10:30 AM", 
-          details: room2Details[0].description,
-          member: room2Details[0].speakers[0].name
-        },
-        { 
-          id: room2Details[1].id, 
-          name: room2Details[1].title, 
-          href: `/session/${room2Details[1].id}?apiUrl=${apiUrl}`, 
-          time: "11:10 AM", 
-          details: room2Details[1].description,
-          member: room2Details[1].speakers[0].name
-        },
-        { 
-          id: room2Details[2].id, 
-          name: room2Details[2].title, 
-          href: `/session/${room2Details[2].id}?apiUrl=${apiUrl}`, 
-          time: "11:40 AM", 
-          details: room2Details[2].description,
-          member: room2Details[2].speakers[0].name
-        },
-        { 
-          id: 3, 
-          name: "Lunch", 
-          href:"#link", 
-          time: "12:40 PM", 
-          details: "Relax and network with your fellow peers",
-          member: "Everyone"
-        },
-      ]
-    },
-    {
-      day:"Mid Afternoon", 
-      events: [
-        { 
-          id: room2Details[3].id, 
-          name: room2Details[3].title, 
-          href: `/session/${room2Details[3].id}?apiUrl=${apiUrl}`, 
-          time: "12:10 PM", 
-          details: room2Details[3].description,
-          member: room2Details[3].speakers[0].name
-        },
-        { 
-          id: room2Details[4].id, 
-          name: room2Details[4].title, 
-          href: `/session/${room2Details[4].id}?apiUrl=${apiUrl}`, 
-          time: "13:40 PM", 
-          details: room2Details[4].description,
-          member: room2Details[4].speakers[0].name
-        },
-        { 
-          id: room2Details[5].id, 
-          name: room2Details[5].title, 
-          href: `/session/${room2Details[5].id}?apiUrl=${apiUrl}`, 
-          time: "14:10 PM", 
-          details: room2Details[5].description,
-          member: room2Details[5].speakers[0].name
-        },
-        { 
-          id: 3, 
-          name: "Afternoon Tea", 
-          href:"#link", 
-          time: "15:10 PM", 
-          details: "Enjoy some delicious refreshments to keep you going into the afternoon.",
-          member: "Everyone"
-        },
-      ]
-    }
-]
+// const room2 = [
+// {
+//       day:"Mid Morning", 
+//       events: [
+//         { 
+//           id: room2Details[0].id, 
+//           name: room2Details[0].title, 
+//           href: `/session/${room2Details[0].id}?apiUrl=${apiUrl}`, 
+//           time: "10:30 AM", 
+//           details: room2Details[0].description,
+//           member: room2Details[0].speakers[0].name
+//         },
+//         { 
+//           id: room2Details[1].id, 
+//           name: room2Details[1].title, 
+//           href: `/session/${room2Details[1].id}?apiUrl=${apiUrl}`, 
+//           time: "11:10 AM", 
+//           details: room2Details[1].description,
+//           member: room2Details[1].speakers[0].name
+//         },
+//         { 
+//           id: room2Details[2].id, 
+//           name: room2Details[2].title, 
+//           href: `/session/${room2Details[2].id}?apiUrl=${apiUrl}`, 
+//           time: "11:40 AM", 
+//           details: room2Details[2].description,
+//           member: room2Details[2].speakers[0].name
+//         },
+//         { 
+//           id: 3, 
+//           name: "Lunch", 
+//           href:"#link", 
+//           time: "12:40 PM", 
+//           details: "Relax and network with your fellow peers",
+//           member: "Everyone"
+//         },
+//       ]
+//     },
+//     {
+//       day:"Mid Afternoon", 
+//       events: [
+//         { 
+//           id: room2Details[3].id, 
+//           name: room2Details[3].title, 
+//           href: `/session/${room2Details[3].id}?apiUrl=${apiUrl}`, 
+//           time: "12:10 PM", 
+//           details: room2Details[3].description,
+//           member: room2Details[3].speakers[0].name
+//         },
+//         { 
+//           id: room2Details[4].id, 
+//           name: room2Details[4].title, 
+//           href: `/session/${room2Details[4].id}?apiUrl=${apiUrl}`, 
+//           time: "13:40 PM", 
+//           details: room2Details[4].description,
+//           member: room2Details[4].speakers[0].name
+//         },
+//         { 
+//           id: room2Details[5].id, 
+//           name: room2Details[5].title, 
+//           href: `/session/${room2Details[5].id}?apiUrl=${apiUrl}`, 
+//           time: "14:10 PM", 
+//           details: room2Details[5].description,
+//           member: room2Details[5].speakers[0].name
+//         },
+//         { 
+//           id: 3, 
+//           name: "Afternoon Tea", 
+//           href:"#link", 
+//           time: "15:10 PM", 
+//           details: "Enjoy some delicious refreshments to keep you going into the afternoon.",
+//           member: "Everyone"
+//         },
+//       ]
+//     }
+// ]
 
-const room3 = [
-{
-      day:"Mid Morning", 
-      events: [
-        { 
-          id: room3Details[0].id, 
-          name: room3Details[0].title, 
-          href: `/session/${room3Details[0].id}?apiUrl=${apiUrl}`, 
-          time: "10:30 AM", 
-          details: room3Details[0].description,
-          member: room3Details[0].speakers[0].name
-        },
-        { 
-          id: room3Details[1].id, 
-          name: room3Details[1].title, 
-          href: `/session/${room3Details[1].id}?apiUrl=${apiUrl}`, 
-          time: "11:10 AM", 
-          details: room3Details[1].description,
-          member: room3Details[1].speakers[0].name
-        },
-        { 
-          id: room3Details[2].id, 
-          name: room3Details[2].title, 
-          href: `/session/${room3Details[2].id}?apiUrl=${apiUrl}`, 
-          time: "11:40 AM", 
-          details: room3Details[2].description,
-          member: room3Details[2].speakers[0].name
-        },
-        { 
-          id: 3, 
-          name: "Lunch", 
-          href:"#link", 
-          time: "12:40 PM", 
-          details: "Relax and network with your fellow peers",
-          member: "Everyone"
-        },
-      ]
-    },
-    {
-      day:"Mid Afternoon", 
-      events: [
-        { 
-          id: room3Details[3].id, 
-          name: room3Details[3].title, 
-          href: `/session/${room3Details[3].id}?apiUrl=${apiUrl}`, 
-          time: "12:10 PM", 
-          details: room3Details[3].description,
-          member: room3Details[3].speakers[0].name
-        },
-        { 
-          id: room3Details[4].id, 
-          name: room3Details[4].title, 
-          href: `/session/${room3Details[4].id}?apiUrl=${apiUrl}`, 
-          time: "13:40 PM", 
-          details: room3Details[4].description,
-          member: room3Details[4].speakers[0].name
-        },
-        { 
-          id: room3Details[5].id, 
-          name: room3Details[5].title, 
-          href: `/session/${room3Details[5].id}?apiUrl=${apiUrl}`, 
-          time: "14:10 PM", 
-          details: room3Details[5].description,
-          member: room3Details[5].speakers[0].name
-        },
-        { 
-          id: 3, 
-          name: "Afternoon Tea", 
-          href:"#link", 
-          time: "15:10 PM", 
-          details: "Enjoy some delicious refreshments to keep you going into the afternoon.",
-          member: "Everyone"
-        },
-      ]
-    }
-]
+// const room3 = [
+// {
+//       day:"Mid Morning", 
+//       events: [
+//         { 
+//           id: room3Details[0].id, 
+//           name: room3Details[0].title, 
+//           href: `/session/${room3Details[0].id}?apiUrl=${apiUrl}`, 
+//           time: "10:30 AM", 
+//           details: room3Details[0].description,
+//           member: room3Details[0].speakers[0].name
+//         },
+//         { 
+//           id: room3Details[1].id, 
+//           name: room3Details[1].title, 
+//           href: `/session/${room3Details[1].id}?apiUrl=${apiUrl}`, 
+//           time: "11:10 AM", 
+//           details: room3Details[1].description,
+//           member: room3Details[1].speakers[0].name
+//         },
+//         { 
+//           id: room3Details[2].id, 
+//           name: room3Details[2].title, 
+//           href: `/session/${room3Details[2].id}?apiUrl=${apiUrl}`, 
+//           time: "11:40 AM", 
+//           details: room3Details[2].description,
+//           member: room3Details[2].speakers[0].name
+//         },
+//         { 
+//           id: 3, 
+//           name: "Lunch", 
+//           href:"#link", 
+//           time: "12:40 PM", 
+//           details: "Relax and network with your fellow peers",
+//           member: "Everyone"
+//         },
+//       ]
+//     },
+//     {
+//       day:"Mid Afternoon", 
+//       events: [
+//         { 
+//           id: room3Details[3].id, 
+//           name: room3Details[3].title, 
+//           href: `/session/${room3Details[3].id}?apiUrl=${apiUrl}`, 
+//           time: "12:10 PM", 
+//           details: room3Details[3].description,
+//           member: room3Details[3].speakers[0].name
+//         },
+//         { 
+//           id: room3Details[4].id, 
+//           name: room3Details[4].title, 
+//           href: `/session/${room3Details[4].id}?apiUrl=${apiUrl}`, 
+//           time: "13:40 PM", 
+//           details: room3Details[4].description,
+//           member: room3Details[4].speakers[0].name
+//         },
+//         { 
+//           id: room3Details[5].id, 
+//           name: room3Details[5].title, 
+//           href: `/session/${room3Details[5].id}?apiUrl=${apiUrl}`, 
+//           time: "14:10 PM", 
+//           details: room3Details[5].description,
+//           member: room3Details[5].speakers[0].name
+//         },
+//         { 
+//           id: 3, 
+//           name: "Afternoon Tea", 
+//           href:"#link", 
+//           time: "15:10 PM", 
+//           details: "Enjoy some delicious refreshments to keep you going into the afternoon.",
+//           member: "Everyone"
+//         },
+//       ]
+//     }
+// ]
 
 ---
 <div class="mx-auto py-8 w-full max-w-7xl bg-white">

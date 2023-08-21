@@ -3,7 +3,6 @@ import Venue from './venue.astro'
 import Schedule from './schedule.astro'
 import TopSpeakers from './topSpeakers.astro'
 import Speaker from './speakers.astro'
-import Sessions from './session.astro'
 import Layout from '../../layouts/layout.astro';
 import {fetchData} from './allData.astro';
 const {details} = Astro.props;
@@ -20,7 +19,6 @@ const sessionGrid = await fetchData(`${details.sessionizeUrl}GridSmart`)
         <Schedule data={sessionGrid} apiUrl={allUrl} city={details.city} />
         <TopSpeakers data={sessionDetails} apiUrl={allUrl}/>
         <Speaker data={sessionDetails} apiUrl={allUrl}/>
-        <!-- <Sessions apiUrl={sessionDetails}/>  -->
         <img src={details.orgTeam} alt="Our volunteers" class="w-full flex " />
         <img src={details.orgCoreTeam} alt="Our core team of oganisers" class="w-full flex " />        
     </div>
