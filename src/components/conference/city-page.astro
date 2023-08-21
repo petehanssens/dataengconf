@@ -17,7 +17,7 @@ const sessionGrid = await fetchData(`${details.sessionizeUrl}GridSmart`)
 <Layout  title={titleValue} description={descriptionValue} image={details.image}>
     <div class="bg-white shadow">
         <Venue {details}/>
-        <Schedule data={sessionGrid} apiUrl={allUrl}/>
+        <Schedule data={sessionGrid} apiUrl={allUrl} city={details.city} />
         <TopSpeakers data={sessionDetails} apiUrl={allUrl}/>
         <Speaker data={sessionDetails} apiUrl={allUrl}/>
         <!-- <Sessions apiUrl={sessionDetails}/>  -->
