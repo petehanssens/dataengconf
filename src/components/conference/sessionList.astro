@@ -30,7 +30,7 @@ function timeStampConverter(timestamp: any) {
                         return (
                         <li class="rounded-2xl bg-gray-800 px-2 py-2">
                             <div class="card-body items-center text-center">
-                                <div class="badge badge-outline">{timeStampConverter(session.startsAt)}</div> 
+                                <div class="badge badge-outline text-gray-300 ">{timeStampConverter(session.startsAt)}</div> 
                                 <h2 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">{session.title}</h2>
                                 <p class="text-sm leading-6 text-gray-400">{session.speakers.map(function(item) {
                                     return item['name'];
