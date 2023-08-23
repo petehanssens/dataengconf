@@ -3,7 +3,7 @@ import {fetchData} from './allData.astro';
 
 const { city} = Astro.props;
 const sessionDetails = await fetchData(city.endpoint+'GridSmart')
-function timeStampConverter(timestamp) {
+function timeStampConverter(timestamp: any) {
 
   try {
     const data = new Date(timestamp).toLocaleTimeString();;
