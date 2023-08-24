@@ -12,14 +12,6 @@ if (cityWithExtraRooms.includes(city)){
         day:"Mid Morning", 
         events: [
           { 
-            id: room2Details[0].id, 
-            name: room2Details[0].title, 
-            href: `/session/${room2Details[0].id}?apiUrl=${apiUrl}`, 
-            time: "10:30 AM", 
-            details: room2Details[0].description,
-            member: room2Details[0].speakers[0].name
-          },
-          { 
             id: room2Details[1].id, 
             name: room2Details[1].title, 
             href: `/session/${room2Details[1].id}?apiUrl=${apiUrl}`, 
@@ -88,14 +80,6 @@ if (cityWithExtraRooms.includes(city)){
   {
         day:"Mid Morning", 
         events: [
-          { 
-            id: room3Details[0].id, 
-            name: room3Details[0].title, 
-            href: `/session/${room3Details[0].id}?apiUrl=${apiUrl}`, 
-            time: "10:30 AM", 
-            details: room3Details[0].description,
-            member: room3Details[0].speakers[0].name
-          },
           { 
             id: room3Details[1].id, 
             name: room3Details[1].title, 
