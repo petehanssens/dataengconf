@@ -1,5 +1,6 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from 'astro:assets';
+import auckland from '../../../public/meetup/auckland.webp'
 import brisbane from '../../../public/meetup/brisbane.webp'
 import melbourne from '../../../public/meetup/melbourne.webp'
 import perth from '../../../public/meetup/perth.webp'
@@ -7,19 +8,22 @@ import sydney from '../../../public/meetup/sydney.webp'
 
 ---
 <div class="mx-auto sm:px-6 lg:px-20">
-    <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Our Meetup</div>
+    <div class="text-3xl font-semibold tracking-tight sm:text-5xl font-openSans text-black my-20">Our Meetups</div>
     <div class="grid lg:grid-cols-2 sm:grid-cols-1 lg:mx-10 lg:my-10 sm:mx-2 sm:my-3 gap-10">
+        <a href="https://www.meetup.com/auckland-data-engineering-meetup/events/" target="_blank">
+            <Image src="/meetup/auckland.webp" alt="Auckland Data Engineering meetup" width="400" height="300" class="w-full flex"/>
+        </a>
         <a href="https://www.meetup.com/brisbane-data-engineering-meetup/events/" target="_blank">
-            <img src="/meetup/brisbane.webp" alt="" class="w-full flex">
+            <Image src="/meetup/brisbane.webp" alt="Brisbane Data Engineering meetup" width="400" height="300" class="w-full flex"/>
         </a>
         <a href="https://www.meetup.com/melbourne-data-engineering-meetup/events/" target="_blank">
-            <img src=/meetup/melbourne.webp alt="" class="w-full flex">
+            <Image src=/meetup/melbourne.webp alt="Melbourne Data Engineering meetup" width="400" height="300" class="w-full flex"/>
         </a>
         <a href="https://www.meetup.com/perth-data-engineering-meetup/events" target="_blank">
-            <img src="/meetup/perth.webp" alt="" class="w-full flex">
+            <Image src="/meetup/perth.webp" alt="Perth Data Engineering meetup" width="400" height="300" class="w-full flex"/>
         </a>
         <a href="https://www.meetup.com/sydney-data-engineering-meetup/events/" target="_blank">
-            <img src="/meetup/sydney.webp" alt="" class="w-full flex">
+            <Image src="/meetup/sydney.webp" alt="Sydney Data Engineering meetup" width="400" height="300" class="w-full flex"/>
         </a>
     </div>
 </div>
