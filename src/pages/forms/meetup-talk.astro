@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/layout.astro';
 import axios from 'axios';
+export const prerender = false;
+
 // const gaToken = import.meta.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || '';
 const apiGW = 'https://rxpeuyrg9d.execute-api.ap-southeast-2.amazonaws.com'
 const apiGWwithRoute = apiGW + '/speaker';
@@ -141,7 +143,7 @@ const meetupTalkDesc = {
           </div>
           <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
             By selecting this, you agree to our
-            <a class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
+            <a href="/content/privacy/" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
           </label>
         </div>
       </div>
