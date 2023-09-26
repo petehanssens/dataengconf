@@ -2,7 +2,8 @@
 import Layout from '../../layouts/layout.astro';
 import axios from 'axios';
 // const gaToken = import.meta.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || '';
-const apiGW = import.meta.env.DATAENGAU_API_GW + '/speaker';
+const apiGW = import.meta.env.DATAENGAU_API_GW || 'https://rxpeuyrg9d.execute-api.ap-southeast-2.amazonaws.com'
+const apiGWwithRoute = apiGW + '/speaker';
 console.log('apiGW: ',apiGW);
 if (Astro.request.method === "POST") {
   try {
@@ -17,7 +18,7 @@ if (Astro.request.method === "POST") {
     const talkSummary = data.get("talk-summary");
     const bio = data.get("biography");
 
-    await axios.post(apiGW, {
+    await axios.post(apiGWwithRoute, {
       "first-name": firstName,
       "last-name": lastName,
       "job-title": jobTitle,
@@ -31,9 +32,9 @@ if (Astro.request.method === "POST") {
       headers: {
         'Content-Type': 'application/json'
       }
-    }).then(function (response): void {
+    }).then(function (response) {
     console.log(response);
-    }).catch(function (error): void {
+    }).catch(function (error) {
       console.log(error);
     });
     // Do something with the data
